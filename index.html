@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>WOLF Dashboards</title>
+<style>
+  body { font-family: -apple-system, sans-serif; background:#08080d; color:#e0e0e0; padding:24px; }
+  h1 { color:#4ade80; }
+  a { display:block; padding:18px; background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; margin:12px 0; color:#4ade80; text-decoration:none; font-size:18px; }
+  .small { color:#888; font-size:12px; }
+</style>
+</head><body>
+<h1>WOLF Live Dashboards</h1>
+<a id="cc" href="WOLF_Command_Center.html">→ Command Center</a>
+<a id="cn" href="Agent_Wolf_Construct.html">→ Agent Wolf Construct</a>
+<p class="small">Cache-busted automatically. Tap a link above.</p>
+<script>
+  var t = Date.now();
+  document.getElementById('cc').href = 'WOLF_Command_Center.html?t=' + t;
+  document.getElementById('cn').href = 'Agent_Wolf_Construct.html?t=' + t;
+</script>
+</body></html>
