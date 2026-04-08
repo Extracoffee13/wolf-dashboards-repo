@@ -1,0 +1,169 @@
+{
+  "last_updated": "2026-04-08T14:51:57.088249",
+  "update_interval_seconds": 300,
+  "account": {
+    "portfolio_value": 99598.43,
+    "cash": 26353.35,
+    "buying_power": 125951.78,
+    "equity": 99598.43,
+    "unrealized_pl": 0.0,
+    "unrealized_plpc": 0.0,
+    "status": "ACTIVE"
+  },
+  "daily_pnl": {
+    "amount": 0.0,
+    "pct": 0.0,
+    "circuit_breaker_status": "green",
+    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.0% (buf: 3.0%) | Weekly: +0.0% (buf: 7.0%)"
+  },
+  "weekly_pnl": {
+    "amount": 0.0,
+    "pct": 0.0
+  },
+  "positions": [
+    {
+      "ticker": "MSFT",
+      "qty": 64.0,
+      "side": "long",
+      "avg_entry": 382.343593,
+      "current_price": 372.66,
+      "market_value": 23850.24,
+      "unrealized_pl": -619.749952,
+      "unrealized_plpc": -0.02533,
+      "cost_basis": 24469.989952
+    },
+    {
+      "ticker": "NVDA",
+      "qty": 140.0,
+      "side": "long",
+      "avg_entry": 184.050429,
+      "current_price": 181.8315,
+      "market_value": 25456.41,
+      "unrealized_pl": -310.65006,
+      "unrealized_plpc": -0.01206,
+      "cost_basis": 25767.06006
+    },
+    {
+      "ticker": "XLE",
+      "qty": 415.0,
+      "side": "long",
+      "avg_entry": 56.408675,
+      "current_price": 57.6866,
+      "market_value": 23939.939,
+      "unrealized_pl": 530.338875,
+      "unrealized_plpc": 0.02265,
+      "cost_basis": 23409.600125
+    }
+  ],
+  "todays_trades": [
+    {
+      "id": "a0bebef6-4c2e-4e57-aa19-ead18c85b16c",
+      "ticker": "MSFT",
+      "side": "buy",
+      "qty": 64.0,
+      "filled_price": 382.343593,
+      "status": "filled",
+      "created_at": "2026-04-07T23:35:16.872612Z",
+      "order_class": ""
+    },
+    {
+      "id": "c5db5cc7-fc3b-4db0-ab20-21910dc29638",
+      "ticker": "NVDA",
+      "side": "buy",
+      "qty": 140.0,
+      "filled_price": 184.050429,
+      "status": "filled",
+      "created_at": "2026-04-07T23:35:15.849404Z",
+      "order_class": ""
+    },
+    {
+      "id": "a4314e94-150b-484b-a79f-55e7cc72a363",
+      "ticker": "XLE",
+      "side": "buy",
+      "qty": 415.0,
+      "filled_price": 56.408675,
+      "status": "filled",
+      "created_at": "2026-04-07T23:35:18.051505Z",
+      "order_class": ""
+    }
+  ],
+  "strategy_performance": {
+    "small_cap_catalyst": {
+      "name": "Small Cap Catalyst",
+      "status": "ACTIVE",
+      "trades_today": 0,
+      "wins_today": 0,
+      "losses_today": 0,
+      "pnl_today": 0.0,
+      "win_rate_all_time": 0.607,
+      "sharpe_backtest": 1.5,
+      "max_dd_backtest": -0.033,
+      "profit_factor": 3.59,
+      "data_source": "real_alpaca"
+    },
+    "volatility_play": {
+      "name": "Volatility Play",
+      "status": "DISABLED \u2014 Sharpe 0.65 < 1.0 (real data)",
+      "trades_today": 0,
+      "wins_today": 0,
+      "losses_today": 0,
+      "pnl_today": 0.0,
+      "win_rate_all_time": 0.546,
+      "sharpe_backtest": 0.65,
+      "max_dd_backtest": -0.181,
+      "profit_factor": 1.49,
+      "data_source": "real_alpaca"
+    },
+    "macro_hedge": {
+      "name": "Macro Hedge",
+      "status": "DISABLED \u2014 Sharpe 0.43 < 1.0 (real data)",
+      "trades_today": 0,
+      "wins_today": 0,
+      "losses_today": 0,
+      "pnl_today": 0.0,
+      "win_rate_all_time": 0.546,
+      "sharpe_backtest": 0.43,
+      "max_dd_backtest": -0.142,
+      "profit_factor": 1.14,
+      "data_source": "real_alpaca"
+    }
+  },
+  "circuit_breaker": {
+    "status": "green",
+    "daily_triggered": false,
+    "weekly_triggered": false,
+    "halt_new_entries": false,
+    "halt_all_activity": false,
+    "message": "CLEAR \u2014 Daily: +0.0% (buf: 3.0%) | Weekly: +0.0% (buf: 7.0%)"
+  },
+  "backtest": {
+    "last_run_date": "2026-04-07",
+    "data_source": "REAL \u2014 Alpaca IEX feed (2024-04-07 to 2026-04-07)",
+    "strategies_passed": 1,
+    "strategies_failed": 7,
+    "best_strategy": "Small Cap Catalyst",
+    "best_sharpe": 1.5,
+    "report_path": "backtest/results/real_backtest_2026-04-07.md",
+    "note": "Real data sharpe ratios 45-61% lower than synthetic. Only Small Cap Catalyst passes."
+  },
+  "market_regime": {
+    "current": "UNKNOWN",
+    "vix": null,
+    "spy_trend": null,
+    "last_assessed": null
+  },
+  "wolf_status": {
+    "mode": "PAPER",
+    "phase": "Ascension Phase 2",
+    "approved_strategies": 1,
+    "disabled_strategies": 7,
+    "approved_strategy_names": [
+      "Small Cap Catalyst"
+    ],
+    "real_backtest_complete": true,
+    "total_trades_all_time": 0,
+    "total_pnl_all_time": 0.0,
+    "win_rate_all_time": 0.0,
+    "ready_for_monday": true
+  }
+}
