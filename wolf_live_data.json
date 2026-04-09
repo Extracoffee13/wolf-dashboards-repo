@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-04-09T17:09:31.435483",
+  "last_updated": "2026-04-09T17:14:32.772997",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 99631.38,
+    "portfolio_value": 99645.7,
     "cash": 26353.35,
-    "buying_power": 125984.73,
-    "equity": 99631.38,
+    "buying_power": 125999.05,
+    "equity": 99645.7,
     "last_equity": 99892.42,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -261.04,
-    "pct": -0.0026,
+    "amount": -246.72,
+    "pct": -0.0025,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: -0.3% (buf: 2.7%) | Weekly: -0.1% (buf: 6.9%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: -0.2% (buf: 2.8%) | Weekly: -0.1% (buf: 6.9%)"
   },
   "weekly_pnl": {
     "amount": -107.58,
@@ -27,10 +27,10 @@
       "qty": 64.0,
       "side": "long",
       "avg_entry": 382.343594,
-      "current_price": 373.82,
-      "market_value": 23924.48,
-      "unrealized_pl": -545.510016,
-      "unrealized_plpc": -0.02229,
+      "current_price": 373.7,
+      "market_value": 23916.8,
+      "unrealized_pl": -553.190016,
+      "unrealized_plpc": -0.02261,
       "cost_basis": 24469.990016
     },
     {
@@ -38,10 +38,10 @@
       "qty": 140.0,
       "side": "long",
       "avg_entry": 184.050429,
-      "current_price": 183.65,
-      "market_value": 25711.0,
-      "unrealized_pl": -56.06006,
-      "unrealized_plpc": -0.00218,
+      "current_price": 183.57,
+      "market_value": 25699.8,
+      "unrealized_pl": -67.26006,
+      "unrealized_plpc": -0.00261,
       "cost_basis": 25767.06006
     },
     {
@@ -49,10 +49,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 56.97,
-      "market_value": 23642.55,
-      "unrealized_pl": 232.949875,
-      "unrealized_plpc": 0.00995,
+      "current_price": 57.05,
+      "market_value": 23675.75,
+      "unrealized_pl": 266.149875,
+      "unrealized_plpc": 0.01137,
       "cost_basis": 23409.600125
     }
   ],
@@ -104,7 +104,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: -0.3% (buf: 2.7%) | Weekly: -0.1% (buf: 6.9%)"
+    "message": "CLEAR \u2014 Daily: -0.2% (buf: 2.8%) | Weekly: -0.1% (buf: 6.9%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
