@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-04-08T23:59:12.662748",
+  "last_updated": "2026-04-09T00:03:06.135817",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 99774.1,
+    "portfolio_value": 99740.82,
     "cash": 26353.35,
-    "buying_power": 126127.45,
-    "equity": 99774.1,
+    "buying_power": 126094.17,
+    "equity": 99740.82,
     "last_equity": 100000.0,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -225.9,
-    "pct": -0.0023,
+    "amount": -259.18,
+    "pct": -0.0026,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: -0.2% (buf: 2.8%) | Weekly: +0.0% (buf: 7.0%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: -0.3% (buf: 2.7%) | Weekly: +0.0% (buf: 7.0%)"
   },
   "weekly_pnl": {
     "amount": 0.0,
@@ -27,10 +27,10 @@
       "qty": 64.0,
       "side": "long",
       "avg_entry": 382.343593,
-      "current_price": 374.55,
-      "market_value": 23971.2,
-      "unrealized_pl": -498.789952,
-      "unrealized_plpc": -0.02038,
+      "current_price": 374.38,
+      "market_value": 23960.32,
+      "unrealized_pl": -509.669952,
+      "unrealized_plpc": -0.02083,
       "cost_basis": 24469.989952
     },
     {
@@ -38,10 +38,10 @@
       "qty": 140.0,
       "side": "long",
       "avg_entry": 184.050429,
-      "current_price": 180.66,
-      "market_value": 25292.4,
-      "unrealized_pl": -474.66006,
-      "unrealized_plpc": -0.01842,
+      "current_price": 180.5,
+      "market_value": 25270.0,
+      "unrealized_pl": -497.06006,
+      "unrealized_plpc": -0.01929,
       "cost_basis": 25767.06006
     },
     {
@@ -56,38 +56,7 @@
       "cost_basis": 23409.600125
     }
   ],
-  "todays_trades": [
-    {
-      "id": "a0bebef6-4c2e-4e57-aa19-ead18c85b16c",
-      "ticker": "MSFT",
-      "side": "buy",
-      "qty": 64.0,
-      "filled_price": 382.343593,
-      "status": "filled",
-      "created_at": "2026-04-07T23:35:16.872612Z",
-      "order_class": ""
-    },
-    {
-      "id": "c5db5cc7-fc3b-4db0-ab20-21910dc29638",
-      "ticker": "NVDA",
-      "side": "buy",
-      "qty": 140.0,
-      "filled_price": 184.050429,
-      "status": "filled",
-      "created_at": "2026-04-07T23:35:15.849404Z",
-      "order_class": ""
-    },
-    {
-      "id": "a4314e94-150b-484b-a79f-55e7cc72a363",
-      "ticker": "XLE",
-      "side": "buy",
-      "qty": 415.0,
-      "filled_price": 56.408675,
-      "status": "filled",
-      "created_at": "2026-04-07T23:35:18.051505Z",
-      "order_class": ""
-    }
-  ],
+  "todays_trades": [],
   "strategy_performance": {
     "small_cap_catalyst": {
       "name": "Small Cap Catalyst",
@@ -135,7 +104,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: -0.2% (buf: 2.8%) | Weekly: +0.0% (buf: 7.0%)"
+    "message": "CLEAR \u2014 Daily: -0.3% (buf: 2.7%) | Weekly: +0.0% (buf: 7.0%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
