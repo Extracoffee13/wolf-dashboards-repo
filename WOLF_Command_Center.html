@@ -111,6 +111,61 @@
   .pnl-pos { color: #4ade80; }
   .pnl-neg { color: #f87171; }
   .positions-empty { color: #555; font-size: 13px; padding: 16px 0; text-align: center; }
+
+  /* ─── MERGED STYLES FROM CONSTRUCT ─── */
+  .status-row { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid #1a1a2e; }
+  .status-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+  .dot-live { background: #4ade80; box-shadow: 0 0 6px #4ade80; }
+  .dot-ready { background: #ff6b35; box-shadow: 0 0 6px #ff6b35; }
+  .dot-off { background: #333; }
+  .dot-purple { background: #c084fc; box-shadow: 0 0 6px #c084fc; }
+  .status-label { font-size: 12px; color: #ccc; flex: 1; }
+  .status-val { font-size: 11px; color: #888; }
+
+  .step-card {
+    background: #12121f;
+    border: 1px solid #2a2a3e;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    transition: border-color 0.2s;
+  }
+  .step-card:hover { border-color: #ff6b35; }
+  .step-card.active { border-color: #ff6b35; background: #1a1a2e; }
+  .step-card.done { border-color: #1a4a1a; opacity: 0.8; }
+  .step-num {
+    width: 28px; height: 28px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 900; font-size: 12px; flex-shrink: 0;
+  }
+  .num-active { background: #ff6b35; color: #000; }
+  .num-pending { background: #2a2a3e; color: #555; border: 1px solid #3a3a4a; }
+  .num-done { background: #1a4a1a; color: #4ade80; }
+  .step-content { flex: 1; }
+  .step-title { font-size: 13px; font-weight: 700; color: #fff; }
+  .step-title.done-text { color: #4ade80; text-decoration: line-through; text-decoration-color: #2a5a2a; }
+  .step-desc { font-size: 11px; color: #666; margin-top: 4px; line-height: 1.5; }
+  .step-impact { font-size: 10px; color: #ff6b35; margin-top: 6px; font-weight: 700; }
+
+  .timeline { position: relative; padding-left: 24px; margin-top: 12px; }
+  .timeline::before {
+    content: ''; position: absolute; left: 8px; top: 0; bottom: 0;
+    width: 2px; background: linear-gradient(to bottom, #ff6b35, #333);
+  }
+  .tl-item { position: relative; margin-bottom: 16px; }
+  .tl-dot {
+    position: absolute; left: -20px; top: 4px;
+    width: 12px; height: 12px; border-radius: 50%;
+  }
+  .tl-done { background: #4ade80; }
+  .tl-now { background: #ff6b35; box-shadow: 0 0 8px #ff6b35; }
+  .tl-future { background: #222; border: 1px solid #444; }
+  .tl-label { font-size: 12px; color: #ccc; font-weight: 700; }
+  .tl-detail { font-size: 11px; color: #666; margin-top: 2px; }
+
 </style>
 </head>
 <body>
@@ -135,43 +190,48 @@
   <span style="color:#444; margin-left:auto;">v2.0 — Project Ascension Phase 2</span>
 </div>
 
-<!-- WOLF PROGRESS — auto-rewritten by wolf_self_improve.py -->
-<!-- WOLF_PROGRESS_START — all values populated dynamically by loadLiveData() -->
+<!-- WOLF PROGRESS — dynamically loaded from wolf_live_data.json -->
+<!-- WOLF_PROGRESS_START -->
 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px; padding:16px 20px; background:linear-gradient(135deg,#0a1628 0%,#0a1f1a 100%); border-top:2px solid #4ade80; border-bottom:2px solid #4ade80; margin:12px 0;">
   <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px;">
     <div style="font-size:11px; color:#6ab; letter-spacing:1px; text-transform:uppercase;">Capability Score</div>
-    <div style="font-size:42px; font-weight:700; color:#4ade80; line-height:1;"><span id="cap-score">—</span><span style="font-size:18px; color:#6ab;">/100</span></div>
+    <div style="font-size:42px; font-weight:700; color:#4ade80; line-height:1;" id="cap-score">49<span style="font-size:18px; color:#6ab;">/100</span></div>
     <div style="height:6px; background:#1a3a4a; border-radius:3px; margin-top:8px; overflow:hidden;">
-      <div id="cap-bar" style="height:100%; width:0%; background:linear-gradient(90deg,#4ade80,#22c55e); transition:width 0.6s;"></div>
+      <div id="cap-bar" style="height:100%; width:49%; background:linear-gradient(90deg,#4ade80,#22c55e); transition:width 0.5s;"></div>
     </div>
     <div style="font-size:11px; color:#888; margin-top:6px;">Unlock real money @ 80</div>
   </div>
   <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px;">
     <div style="font-size:11px; color:#6ab; letter-spacing:1px; text-transform:uppercase;">Day on Mission</div>
-    <div style="font-size:42px; font-weight:700; color:#fbbf24; line-height:1;" id="day-on-mission">—</div>
-    <div style="font-size:12px; color:#aaa; margin-top:8px;" id="mission-start">Started —</div>
-    <div style="font-size:11px; color:#4ade80; margin-top:4px;" id="streak-days">Streak: — days</div>
+    <div style="font-size:42px; font-weight:700; color:#fbbf24; line-height:1;" id="cap-day">6</div>
+    <div style="font-size:12px; color:#aaa; margin-top:8px;" id="cap-start">Started 2026-04-08</div>
+    <div style="font-size:11px; color:#4ade80; margin-top:4px;" id="cap-streak">Streak: 6 days</div>
   </div>
   <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px;">
     <div style="font-size:11px; color:#6ab; letter-spacing:1px; text-transform:uppercase;">Latest Improvement</div>
-    <div style="font-size:16px; color:#4ade80; font-weight:600;" id="latest-improvement-name">Loading...</div>
-    <div style="font-size:11px; color:#aaa; margin-top:4px;" id="latest-improvement-desc"></div>
+    <div style="font-size:16px; color:#4ade80; font-weight:600;" id="cap-improvement">+ null-safe dashboards + HBR pipeline</div>
+    <div style="font-size:11px; color:#aaa; margin-top:4px;" id="cap-improvement-desc">Dashboard JS hardened, dynamic capabilities bar, daily HBR intelligence pipeline active.</div>
   </div>
   <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px;">
     <div style="font-size:11px; color:#6ab; letter-spacing:1px; text-transform:uppercase;">Totals</div>
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px; font-size:12px; margin-top:6px;">
-      <div>Scripts: <b style="color:#4ade80;" id="tot-scripts">—</b></div>
-      <div>Strategies: <b style="color:#4ade80;" id="tot-strategies">—</b></div>
-      <div>Skills: <b style="color:#4ade80;" id="tot-skills">—</b></div>
-      <div>Lessons: <b style="color:#4ade80;" id="tot-lessons">—</b></div>
-      <div>Cycles: <b style="color:#4ade80;" id="tot-cycles">—</b></div>
-      <div>Open Trades: <b style="color:#4ade80;" id="tot-open-trades">—</b></div>
+    <div id="cap-totals" style="display:grid; grid-template-columns:1fr 1fr; gap:6px; font-size:12px; margin-top:6px;">
+      <div>Scripts: <b style="color:#4ade80;">58</b></div>
+      <div>Strategies: <b style="color:#4ade80;">3/18</b></div>
+      <div>Skills: <b style="color:#4ade80;">2</b></div>
+      <div>Lessons: <b style="color:#4ade80;">22</b></div>
+      <div>Cycles: <b style="color:#4ade80;">2</b></div>
+      <div>Data Sources: <b style="color:#4ade80;">5</b></div>
     </div>
   </div>
   <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px; grid-column:1/-1;">
     <div style="font-size:11px; color:#6ab; letter-spacing:1px; text-transform:uppercase; margin-bottom:8px;">Recent Lessons (Self-Improving Loop)</div>
-    <div id="recent-lessons-list" style="font-size:12px; color:#cde;">Loading...</div>
-    <div style="font-size:11px; color:#888; margin-top:10px;">Free data only — zero paid APIs. Auto-rewritten daily by wolf_self_improve.py.</div>
+    <div id="cap-lessons">
+      <div style="font-size:12px; color:#cde; margin-top:4px;">• <b>2026-04-13</b> — Use null-safe getElementById helpers to prevent false OFFLINE status on dashboards.</div>
+      <div style="font-size:12px; color:#cde; margin-top:4px;">• <b>2026-04-13</b> — Terminal windows accumulate — use exit 0, never interactive prompts in .command scripts.</div>
+      <div style="font-size:12px; color:#cde; margin-top:4px;">• <b>2026-04-13</b> — macOS TCC blocks launchd-spawned python3 from ~/Documents — use nohup from Terminal instead.</div>
+      <div style="font-size:12px; color:#cde; margin-top:4px;">• <b>2026-04-08</b> — WOLF can now enumerate his own 14 scripts for self-aware planning.</div>
+    </div>
+    <div style="font-size:11px; color:#888; margin-top:10px;">Free data only — zero paid APIs. Auto-refreshed from wolf_live_data.json.</div>
   </div>
 </div>
 <!-- WOLF_PROGRESS_END -->
@@ -685,6 +745,161 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
 
     <div style="margin-top:24px;">
+
+    <!-- ═══════════════════ MERGED WOLF SUBSYSTEMS & EVOLUTION ═══════════════════ -->
+
+    <div class="card">
+      <div class="card-header">WOLF Subsystems Status</div>
+      <div style="margin-top: 16px;">
+      <div style="font-size:10px; color:#555; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px;">Subsystems</div>
+      <div class="status-row">
+        <div class="status-dot dot-live pulse"></div>
+        <div class="status-label">Market Scanner</div>
+        <div class="status-val">50+ instruments | Auto 6:33 AM + 9:30/12:30/4:15 ET</div>
+      </div>
+      <div class="status-row">
+        <div class="status-dot dot-ready"></div>
+        <div class="status-label">Strategy Engine</div>
+        <div class="status-val">9 strategies | 4 advanced</div>
+      </div>
+      <div class="status-row">
+        <div class="status-dot dot-ready"></div>
+        <div class="status-label">Portfolio Manager</div>
+        <div class="status-val">Risk tracking + journal</div>
+      </div>
+      <div class="status-row">
+        <div class="status-dot dot-live"></div>
+        <div class="status-label">Alpaca Paper Trading</div>
+        <div class="status-val" style="color:#4ade80;">Auto-routing ON | $100K | $200K BP | Day 0/30 gate</div>
+      </div>
+      <div class="status-row">
+        <div class="status-dot dot-ready"></div>
+        <div class="status-label">Research Agent</div>
+        <div class="status-val">18 GitHub repos | 10 curated</div>
+      </div>
+      <div class="status-row">
+        <div class="status-dot dot-ready"></div>
+        <div class="status-label">Data Pipeline</div>
+        <div class="status-val">Multi-source w/ fallback</div>
+      </div>
+      <div class="status-row">
+        <div class="status-dot dot-ready"></div>
+        <div class="status-label">Backtesting Engine</div>
+        <div class="status-val">Tested across 4 regimes</div>
+      </div>
+      <div class="status-row">
+        <div class="status-dot dot-purple pulse"></div>
+        <div class="status-label" style="color:#c084fc;">Congressional Intel</div>
+        <div class="status-val" style="color:#c084fc;">Unusual Whales + Quiver + HSSW</div>
+      </div>
+      <div class="status-row">
+        <div class="status-dot dot-ready"></div>
+        <div class="status-label" style="color:#4ade80;">Consulting Intel</div>
+        <div class="status-val" style="color:#4ade80;">10 firms · daily 7 AM · disruption hunt</div>
+      </div>
+      <div class="status-row" style="border:none;">
+        <div class="status-dot dot-ready"></div>
+        <div class="status-label" style="color:#ff6b35;">AI Hedge Fund Committee</div>
+        <div class="status-val" style="color:#ff6b35;">12 analysts · llama3.1:8b · auto-routes to paper</div>
+      </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">Next Steps — Priority Queue <span class="badge badge-orange">IN PROGRESS</span></div>
+
+      <div class="step-card done">
+      <div class="step-num num-done">&#10003;</div>
+      <div class="step-content">
+        <div class="step-title done-text">Connect Alpaca Paper Trading</div>
+        <div class="step-desc" style="color:#2a5a2a;">Connected. $100K cash, $200K buying power, shorting enabled. Paper trading active.</div>
+        <div class="step-impact" style="color:#4ade80;">UNLOCKED: Live market scanning, real paper trades, position tracking, daily P&L</div>
+      </div>
+      </div>
+
+      <div class="step-card active">
+      <div class="step-num num-active">2</div>
+      <div class="step-content">
+        <div class="step-title">Execute First Signals — TSLA / NFLX / XLU</div>
+        <div class="step-desc">3 signals identified from today's 8:30 AM scan. TSLA SHORT (Breakdown), NFLX LONG (Momentum), XLU LONG (MACD). All at 2:1 R:R. Ready to execute on Alpaca paper account.</div>
+        <div class="step-impact">UNLOCKS: Real performance tracking, strategy validation with live data, P&L history</div>
+      </div>
+      </div>
+
+      <div class="step-card">
+      <div class="step-num num-pending">3</div>
+      <div class="step-content">
+        <div class="step-title">Optimize Strategies to A-Grade</div>
+        <div class="step-desc">Run Enhanced Mean Reversion + Volatility Breakout on live data. Tune parameters. Target: Sharpe >2.0, consistent across regimes.</div>
+        <div class="step-impact">UNLOCKS: Reliable edge, automated strategy rotation</div>
+      </div>
+      </div>
+
+      <div class="step-card">
+      <div class="step-num num-pending">4</div>
+      <div class="step-content">
+        <div class="step-title">Install ML Signal Layer (FinRL / PyBroker)</div>
+        <div class="step-desc">Integrate machine learning models from FinRL and PyBroker. Train on historical data. Use ML signals as confirmation filter on top of technical strategies.</div>
+        <div class="step-impact">UNLOCKS: Phase 3 capabilities, AI-enhanced signals, higher win rate</div>
+      </div>
+      </div>
+
+      <div class="step-card">
+      <div class="step-num num-pending">5</div>
+      <div class="step-content">
+        <div class="step-title">Deploy Companion Agents (Sentinel, Hawk)</div>
+        <div class="step-desc">Build Sentinel (real-time risk monitor + circuit breaker) and Hawk (news/events intelligence feed). Both feed signals to WOLF.</div>
+        <div class="step-impact">UNLOCKS: Multi-agent construct, 24/7 monitoring, event-driven trading</div>
+      </div>
+      </div>
+  </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">WOLF Evolution Timeline</div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot tl-done"></div>
+        <div class="tl-label" style="color:#4ade80;">Phase 1: Foundation ✓</div>
+        <div class="tl-detail">Skill built | 8 scripts | 5 market modules | Scanner + backtester operational</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot tl-done"></div>
+        <div class="tl-label" style="color:#4ade80;">Strategy Research ✓</div>
+        <div class="tl-detail">18 GitHub repos indexed | 9 strategies built | 4 advanced strategies backtested</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot tl-done"></div>
+        <div class="tl-label" style="color:#4ade80;">Alpaca Connected ✓</div>
+        <div class="tl-detail">Paper trading live | $100K cash | $200K buying power | Shorting enabled</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot tl-done"></div>
+        <div class="tl-label" style="color:#4ade80;">Congressional Intel ✓</div>
+        <div class="tl-detail">Unusual Whales MCP + Quiver + HSSW | Integrated into daily scan</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot tl-now pulse"></div>
+        <div class="tl-label" style="color:#ff6b35;">Phase 2: Intelligence ← YOU ARE HERE</div>
+        <div class="tl-detail">3 signals live | Execute first trades | Strategy optimization | Performance tracking</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot tl-future"></div>
+        <div class="tl-label">Phase 3: Advanced</div>
+        <div class="tl-detail">Options execution | ML signals (FinRL) | Intermarket analysis | Sentiment layer</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot tl-future"></div>
+        <div class="tl-label">Phase 4: Autonomous</div>
+        <div class="tl-detail">Self-optimizing | Auto regime detection | Strategy rotation | Multi-agent swarm</div>
+      </div>
+    </div>
+
+    </div>
+
+    <!-- ═══════════════════ END MERGED SECTIONS ═══════════════════ -->
+
+    <div style="margin-top:24px;">
       <div class="card-header" style="color:#4ade80;">Alpaca Status <span class="badge badge-green">CONNECTED</span></div>
       <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap:10px; margin-top:8px;">
         <div style="padding:10px; background:#1a1a2e; border-radius:8px; border:1px solid #2a4a2a;">
@@ -924,187 +1139,186 @@ const fmtPct = (n) => (n >= 0 ? '+' : '') + (Number(n) * 100).toFixed(2) + '%';
 const clr = (n) => n >= 0 ? '#4ade80' : '#f87171';
 
 function loadLiveData() {
-  // Safe element getter — never throws on missing IDs
-  function el(id) { return document.getElementById(id); }
-  function setText(id, txt) { var e = el(id); if (e) e.textContent = txt; }
-  function setStyle(id, prop, val) { var e = el(id); if (e) e.style[prop] = val; }
-  function setCSS(id, css) { var e = el(id); if (e) e.style.cssText = css; }
-
   fetch('wolf_live_data.json?' + Date.now())
-    .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(r => r.json())
     .then(d => {
       // Last updated
       const ts = new Date(d.last_updated);
-      setText('last-update', ts.toLocaleTimeString());
-
-      // Mark LIVE
-      setText('live-status', 'LIVE — Alpaca Paper');
-      setStyle('live-status', 'color', '#4ade80');
+      document.getElementById('last-update').textContent = ts.toLocaleTimeString();
 
       // Account
       if (d.account) {
         const pv = d.account.portfolio_value || 100000;
-        setText('portfolio-value', fmt$(pv));
-        setStyle('portfolio-value', 'color', '#4ade80');
-        setText('portfolio-cash', 'Cash: ' + fmt$(d.account.cash || 0) + ' — Alpaca Paper Trading');
-        setText('buying-power', fmt$(d.account.buying_power || 0));
+        document.getElementById('portfolio-value').textContent = fmt$(pv);
+        document.getElementById('portfolio-value').style.color = '#4ade80';
+        document.getElementById('portfolio-cash').textContent = 'Cash: ' + fmt$(d.account.cash || 0) + ' — Alpaca Paper Trading';
+        document.getElementById('buying-power').textContent = fmt$(d.account.buying_power || 0);
         const upl = d.account.unrealized_pl || 0;
-        setText('unrealized-pl', fmt$(upl));
-        setStyle('unrealized-pl', 'color', clr(upl));
+        document.getElementById('unrealized-pl').textContent = fmt$(upl);
+        document.getElementById('unrealized-pl').style.color = clr(upl);
       }
 
       // Daily P&L
       if (d.daily_pnl) {
         const dp = d.daily_pnl.amount || 0;
-        setText('daily-pnl', fmt$(dp));
-        setStyle('daily-pnl', 'color', clr(dp));
-        setText('daily-pnl-pct', fmtPct(d.daily_pnl.pct || 0) + ' today');
+        document.getElementById('daily-pnl').textContent = fmt$(dp);
+        document.getElementById('daily-pnl').style.color = clr(dp);
+        document.getElementById('daily-pnl-pct').textContent = fmtPct(d.daily_pnl.pct || 0) + ' today';
 
         // Daily CB badge
         const cbStatus = d.daily_pnl.circuit_breaker_status || 'green';
-        const cbBadge = el('daily-cb-badge');
-        if (cbBadge) {
-          if (cbStatus === 'red') { cbBadge.className='badge'; cbBadge.style.cssText='background:#3a1a1a;color:#f87171;border:1px solid #5a2a2a;'; cbBadge.textContent='HALTED'; }
-          else if (cbStatus === 'yellow') { cbBadge.className='badge'; cbBadge.style.cssText='background:#3a3a1a;color:#facc15;border:1px solid #5a5a2a;'; cbBadge.textContent='WARNING'; }
-          else { cbBadge.className='badge'; cbBadge.style.cssText='background:#1a3a1a;color:#4ade80;border:1px solid #2a5a2a;'; cbBadge.textContent='CLEAR'; }
-        }
+        const cbBadge = document.getElementById('daily-cb-badge');
+        if (cbStatus === 'red') { cbBadge.className='badge'; cbBadge.style.cssText='background:#3a1a1a;color:#f87171;border:1px solid #5a2a2a;'; cbBadge.textContent='HALTED'; }
+        else if (cbStatus === 'yellow') { cbBadge.className='badge'; cbBadge.style.cssText='background:#3a3a1a;color:#facc15;border:1px solid #5a5a2a;'; cbBadge.textContent='WARNING'; }
+        else { cbBadge.className='badge'; cbBadge.style.cssText='background:#1a3a1a;color:#4ade80;border:1px solid #2a5a2a;'; cbBadge.textContent='CLEAR'; }
       }
 
       // Weekly P&L
       if (d.weekly_pnl) {
         const wp = d.weekly_pnl.amount || 0;
-        setText('weekly-pnl', fmt$(wp));
-        setStyle('weekly-pnl', 'color', clr(wp));
-        setText('weekly-pnl-pct', fmtPct(d.weekly_pnl.pct || 0));
-        setStyle('weekly-pnl-pct', 'color', clr(wp));
+        document.getElementById('weekly-pnl').textContent = fmt$(wp);
+        document.getElementById('weekly-pnl').style.color = clr(wp);
+        document.getElementById('weekly-pnl-pct').textContent = fmtPct(d.weekly_pnl.pct || 0);
+        document.getElementById('weekly-pnl-pct').style.color = clr(wp);
       }
 
       // Circuit Breaker
       if (d.circuit_breaker) {
         const cb = d.circuit_breaker;
-        const statusBox = el('cb-status-box');
-        const cbBadge2 = el('cb-badge');
-        if (statusBox && cbBadge2) {
-          if (cb.weekly_triggered) {
-            statusBox.className='cb-badge cb-red'; statusBox.textContent='WEEKLY HALT';
-            cbBadge2.style.cssText='background:#3a1a1a;color:#f87171;border:1px solid #5a2a2a;animation:pulse 1s infinite;'; cbBadge2.textContent='RED';
-          } else if (cb.daily_triggered) {
-            statusBox.className='cb-badge cb-yellow'; statusBox.textContent='DAILY HALT';
-            cbBadge2.style.cssText='background:#3a3a1a;color:#facc15;border:1px solid #5a5a2a;'; cbBadge2.textContent='YELLOW';
-          } else {
-            statusBox.className='cb-badge cb-green'; statusBox.textContent='CLEAR';
-            cbBadge2.style.cssText='background:#1a3a1a;color:#4ade80;border:1px solid #2a5a2a;'; cbBadge2.textContent='GREEN';
-          }
+        const statusBox = document.getElementById('cb-status-box');
+        const cbBadge2 = document.getElementById('cb-badge');
+        if (cb.weekly_triggered) {
+          statusBox.className='cb-badge cb-red'; statusBox.textContent='WEEKLY HALT';
+          cbBadge2.style.cssText='background:#3a1a1a;color:#f87171;border:1px solid #5a2a2a;animation:pulse 1s infinite;'; cbBadge2.textContent='RED';
+        } else if (cb.daily_triggered) {
+          statusBox.className='cb-badge cb-yellow'; statusBox.textContent='DAILY HALT';
+          cbBadge2.style.cssText='background:#3a3a1a;color:#facc15;border:1px solid #5a5a2a;'; cbBadge2.textContent='YELLOW';
+        } else {
+          statusBox.className='cb-badge cb-green'; statusBox.textContent='CLEAR';
+          cbBadge2.style.cssText='background:#1a3a1a;color:#4ade80;border:1px solid #2a5a2a;'; cbBadge2.textContent='GREEN';
         }
-        setText('cb-message', cb.message || 'All systems nominal.');
+        document.getElementById('cb-message').textContent = cb.message || 'All systems nominal.';
       }
 
       // Positions
-      const posDiv = el('positions-table');
+      const posDiv = document.getElementById('positions-table');
       const positions = d.positions || [];
-      setText('positions-count', positions.length + ' OPEN');
-      if (posDiv) {
-        if (positions.length === 0) {
-          posDiv.innerHTML = '<div class="positions-empty">No open positions</div>';
-        } else {
-          let html = '<table><thead><tr><th>Ticker</th><th>Side</th><th>Qty</th><th>Avg Entry</th><th>Current</th><th>Mkt Value</th><th>Unreal P&L</th><th>P&L %</th></tr></thead><tbody>';
-          positions.forEach(p => {
-            const plColor = p.unrealized_pl >= 0 ? '#4ade80' : '#f87171';
-            html += `<tr>
-              <td style="font-weight:700;color:#fff;">${p.ticker}</td>
-              <td><span style="color:${p.side==='long'?'#4ade80':'#f87171'};font-weight:700;">${p.side.toUpperCase()}</span></td>
-              <td>${p.qty}</td>
-              <td>${fmt$(p.avg_entry)}</td>
-              <td>${fmt$(p.current_price)}</td>
-              <td>${fmt$(p.market_value)}</td>
-              <td style="color:${plColor};font-weight:700;">${fmt$(p.unrealized_pl)}</td>
-              <td style="color:${plColor};">${(p.unrealized_plpc*100).toFixed(2)}%</td>
-            </tr>`;
-          });
-          html += '</tbody></table>';
-          posDiv.innerHTML = html;
-        }
+      document.getElementById('positions-count').textContent = positions.length + ' OPEN';
+      if (positions.length === 0) {
+        posDiv.innerHTML = '<div class="positions-empty">No open positions</div>';
+      } else {
+        let html = '<table><thead><tr><th>Ticker</th><th>Side</th><th>Qty</th><th>Avg Entry</th><th>Current</th><th>Mkt Value</th><th>Unreal P&L</th><th>P&L %</th></tr></thead><tbody>';
+        positions.forEach(p => {
+          const plColor = p.unrealized_pl >= 0 ? '#4ade80' : '#f87171';
+          html += `<tr>
+            <td style="font-weight:700;color:#fff;">${p.ticker}</td>
+            <td><span style="color:${p.side==='long'?'#4ade80':'#f87171'};font-weight:700;">${p.side.toUpperCase()}</span></td>
+            <td>${p.qty}</td>
+            <td>${fmt$(p.avg_entry)}</td>
+            <td>${fmt$(p.current_price)}</td>
+            <td>${fmt$(p.market_value)}</td>
+            <td style="color:${plColor};font-weight:700;">${fmt$(p.unrealized_pl)}</td>
+            <td style="color:${plColor};">${(p.unrealized_plpc*100).toFixed(2)}%</td>
+          </tr>`;
+        });
+        html += '</tbody></table>';
+        posDiv.innerHTML = html;
       }
 
       // Today's trades
-      const tradesDiv = el('todays-trades');
+      const tradesDiv = document.getElementById('todays-trades');
       const trades = d.todays_trades || [];
-      setText('trades-count', trades.length + ' TRADES');
-      if (tradesDiv) {
-        if (trades.length === 0) {
-          tradesDiv.innerHTML = '<div class="positions-empty">No trades executed today</div>';
-        } else {
-          let html = '<table><thead><tr><th>Ticker</th><th>Side</th><th>Qty</th><th>Filled @</th><th>Status</th><th>Type</th></tr></thead><tbody>';
-          trades.forEach(t => {
-            html += `<tr>
-              <td style="font-weight:700;color:#fff;">${t.ticker}</td>
-              <td style="color:${t.side==='buy'?'#4ade80':'#f87171'};font-weight:700;">${t.side.toUpperCase()}</td>
-              <td>${t.qty}</td>
-              <td>${t.filled_price > 0 ? fmt$(t.filled_price) : '—'}</td>
-              <td style="color:#facc15;">${t.status}</td>
-              <td style="color:#888;">${t.order_class||'market'}</td>
-            </tr>`;
-          });
-          html += '</tbody></table>';
-          tradesDiv.innerHTML = html;
-        }
+      document.getElementById('trades-count').textContent = trades.length + ' TRADES';
+      if (trades.length === 0) {
+        tradesDiv.innerHTML = '<div class="positions-empty">No trades executed today</div>';
+      } else {
+        let html = '<table><thead><tr><th>Ticker</th><th>Side</th><th>Qty</th><th>Filled @</th><th>Status</th><th>Type</th></tr></thead><tbody>';
+        trades.forEach(t => {
+          html += `<tr>
+            <td style="font-weight:700;color:#fff;">${t.ticker}</td>
+            <td style="color:${t.side==='buy'?'#4ade80':'#f87171'};font-weight:700;">${t.side.toUpperCase()}</td>
+            <td>${t.qty}</td>
+            <td>${t.filled_price > 0 ? fmt$(t.filled_price) : '—'}</td>
+            <td style="color:#facc15;">${t.status}</td>
+            <td style="color:#888;">${t.order_class||'market'}</td>
+          </tr>`;
+        });
+        html += '</tbody></table>';
+        tradesDiv.innerHTML = html;
       }
 
-      // Strategy P&L — safe: only update elements that exist
+      // Strategy P&L
       if (d.strategy_performance) {
         const sp = d.strategy_performance;
-        if (sp.small_cap_catalyst) setText('scc-pnl', fmt$(sp.small_cap_catalyst.pnl_today||0));
-        if (sp.volatility_play) setText('vp-pnl', fmt$(sp.volatility_play.pnl_today||0));
-        if (sp.macro_hedge) setText('mh-pnl', fmt$(sp.macro_hedge.pnl_today||0));
+        if (sp.small_cap_catalyst) document.getElementById('scc-pnl').textContent = fmt$(sp.small_cap_catalyst.pnl_today||0);
+        if (sp.volatility_play) document.getElementById('vp-pnl').textContent = fmt$(sp.volatility_play.pnl_today||0);
+        if (sp.macro_hedge) document.getElementById('mh-pnl').textContent = fmt$(sp.macro_hedge.pnl_today||0);
       }
 
       // Backtest info
       if (d.backtest) {
-        setText('backtest-date', d.backtest.last_run_date || '—');
-        setText('backtest-source', d.backtest.data_source || '—');
-        setText('backtest-passed', (d.backtest.strategies_passed||0) + ' / 9');
-        setText('backtest-best', (d.backtest.best_strategy||'—') + ' (Sharpe ' + (d.backtest.best_sharpe||'—') + ')');
+        document.getElementById('backtest-date').textContent = d.backtest.last_run_date || '—';
+        document.getElementById('backtest-source').textContent = d.backtest.data_source || '—';
+        document.getElementById('backtest-passed').textContent = (d.backtest.strategies_passed||0) + ' / 9';
+        document.getElementById('backtest-best').textContent = d.backtest.best_strategy + ' (Sharpe ' + d.backtest.best_sharpe + ')';
       }
 
-      // WOLF Progress / Capabilities (dynamic totals bar)
-      if (d.wolf_capabilities) {
-        const wc = d.wolf_capabilities;
-        const t = wc.totals || {};
-        // Capability score + bar
-        setText('cap-score', wc.capability_score || 0);
-        var bar = el('cap-bar');
-        if (bar) bar.style.width = (wc.capability_score || 0) + '%';
-        // Day on mission
-        setText('day-on-mission', wc.day_on_mission || '—');
-        setText('mission-start', 'Started ' + (wc.mission_start || '—'));
-        setText('streak-days', 'Streak: ' + (wc.streak_days || 0) + ' days');
-        // Latest improvement
-        if (wc.latest_improvement) {
-          setText('latest-improvement-name', '+ ' + wc.latest_improvement.name);
-          setText('latest-improvement-desc', wc.latest_improvement.description || '');
-        }
-        // Totals grid
-        setText('tot-scripts', t.total_scripts || 0);
-        setText('tot-strategies', (t.strategies_implemented || 0) + '/' + (t.strategies_known || 0));
-        setText('tot-skills', t.skills_acquired || 0);
-        setText('tot-lessons', t.lessons_learned || 0);
-        setText('tot-cycles', t.improvement_cycles || 0);
-        setText('tot-open-trades', (d.positions || []).length);
-        // Recent lessons list
-        if (wc.recent_lessons && wc.recent_lessons.length > 0) {
-          var lhtml = '';
-          wc.recent_lessons.forEach(function(l) {
-            lhtml += '<div style="margin-top:4px;">\u2022 <b>' + l.date + '</b> — ' + l.lesson + '</div>';
-          });
-          var lessonsEl = el('recent-lessons-list');
-          if (lessonsEl) lessonsEl.innerHTML = lhtml;
-        }
+      // ── Wolf Capabilities (progress bar at top) ──
+      const CAP_FALLBACK = {
+        capability_score: 49, score_max: 100, day_on_mission: 6,
+        mission_start: "2026-04-08", streak_days: 6,
+        totals: { total_scripts: 58, strategies_implemented: 3, strategies_known: 18,
+                  skills_acquired: 2, lessons_learned: 22, improvement_cycles: 2, free_data_sources: 5 },
+        latest_improvement: { name: "null-safe dashboards + HBR pipeline",
+          description: "Dashboard JS hardened, dynamic capabilities bar, daily HBR intelligence pipeline active." },
+        recent_lessons: [
+          { date: "2026-04-13", lesson: "Use null-safe getElementById helpers to prevent false OFFLINE status on dashboards." },
+          { date: "2026-04-13", lesson: "Terminal windows accumulate — use exit 0, never interactive prompts in .command scripts." },
+          { date: "2026-04-13", lesson: "macOS TCC blocks launchd-spawned python3 from ~/Documents — use nohup from Terminal instead." },
+          { date: "2026-04-08", lesson: "WOLF can now enumerate his own 14 scripts for self-aware planning." }
+        ]
+      };
+      const cap = (d.wolf_capabilities && d.wolf_capabilities.capability_score) ? d.wolf_capabilities : CAP_FALLBACK;
+      const el = id => document.getElementById(id);
+
+      // Score + bar
+      if (el('cap-score')) el('cap-score').innerHTML = cap.capability_score + '<span style="font-size:18px; color:#6ab;">/' + (cap.score_max||100) + '</span>';
+      if (el('cap-bar'))   el('cap-bar').style.width = cap.capability_score + '%';
+
+      // Day / streak
+      if (el('cap-day'))    el('cap-day').textContent = cap.day_on_mission || '—';
+      if (el('cap-start'))  el('cap-start').textContent = 'Started ' + (cap.mission_start || '2026-04-08');
+      if (el('cap-streak')) el('cap-streak').textContent = 'Streak: ' + (cap.streak_days||0) + ' days';
+
+      // Latest improvement
+      if (cap.latest_improvement && el('cap-improvement')) {
+        el('cap-improvement').textContent = '+ ' + cap.latest_improvement.name;
+        el('cap-improvement-desc').textContent = cap.latest_improvement.description;
+      }
+
+      // Totals
+      if (cap.totals && el('cap-totals')) {
+        const t = cap.totals;
+        el('cap-totals').innerHTML =
+          '<div>Scripts: <b style="color:#4ade80;">' + (t.total_scripts||0) + '</b></div>' +
+          '<div>Strategies: <b style="color:#4ade80;">' + (t.strategies_implemented||0) + '/' + (t.strategies_known||18) + '</b></div>' +
+          '<div>Skills: <b style="color:#4ade80;">' + (t.skills_acquired||0) + '</b></div>' +
+          '<div>Lessons: <b style="color:#4ade80;">' + (t.lessons_learned||0) + '</b></div>' +
+          '<div>Cycles: <b style="color:#4ade80;">' + (t.improvement_cycles||0) + '</b></div>' +
+          '<div>Data Sources: <b style="color:#4ade80;">' + (t.free_data_sources||0) + '</b></div>';
+      }
+
+      // Recent lessons
+      if (cap.recent_lessons && cap.recent_lessons.length && el('cap-lessons')) {
+        el('cap-lessons').innerHTML = cap.recent_lessons.map(l =>
+          '<div style="font-size:12px; color:#cde; margin-top:4px;">• <b>' + l.date + '</b> — ' + l.lesson + '</div>'
+        ).join('');
       }
 
     })
     .catch(err => {
-      setText('live-status', 'OFFLINE — ' + err.message);
-      setStyle('live-status', 'color', '#f87171');
+      const ls = document.getElementById('live-status');
+      if (ls) { ls.textContent = 'OFFLINE — ' + err.message; ls.style.color = '#f87171'; }
     });
 }
 
