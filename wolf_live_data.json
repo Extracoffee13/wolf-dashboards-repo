@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-04-13T16:28:58.996174",
+  "last_updated": "2026-04-13T16:30:20.829530",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 101765.17,
+    "portfolio_value": 101751.7,
     "cash": -20870.79,
-    "buying_power": 80894.38,
-    "equity": 101765.17,
+    "buying_power": 80880.91,
+    "equity": 101751.7,
     "last_equity": 100127.33,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 1637.84,
-    "pct": 0.0164,
+    "amount": 1624.37,
+    "pct": 0.0162,
     "circuit_breaker_status": "green",
     "circuit_breaker_message": "CLEAR \u2014 Daily: +1.6% (buf: 3.0%) | Weekly: +0.1% (buf: 7.0%)"
   },
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 313.9901,
-      "market_value": 23863.2476,
-      "unrealized_pl": 551.7676,
-      "unrealized_plpc": 0.02367,
+      "current_price": 313.94,
+      "market_value": 23859.44,
+      "unrealized_pl": 547.96,
+      "unrealized_plpc": 0.02351,
       "cost_basis": 23311.48
     },
     {
@@ -38,10 +38,10 @@
       "qty": 64.0,
       "side": "long",
       "avg_entry": 382.343594,
-      "current_price": 384.85,
-      "market_value": 24630.4,
-      "unrealized_pl": 160.409984,
-      "unrealized_plpc": 0.00656,
+      "current_price": 384.63,
+      "market_value": 24616.32,
+      "unrealized_pl": 146.329984,
+      "unrealized_plpc": 0.00598,
       "cost_basis": 24469.990016
     },
     {
@@ -49,10 +49,10 @@
       "qty": 232.0,
       "side": "long",
       "avg_entry": 103.07181,
-      "current_price": 103.1802,
-      "market_value": 23937.8064,
-      "unrealized_pl": 25.14648,
-      "unrealized_plpc": 0.00105,
+      "current_price": 103.19,
+      "market_value": 23940.08,
+      "unrealized_pl": 27.42008,
+      "unrealized_plpc": 0.00115,
       "cost_basis": 23912.65992
     },
     {
@@ -60,10 +60,10 @@
       "qty": 140.0,
       "side": "long",
       "avg_entry": 184.050429,
-      "current_price": 189.1947,
-      "market_value": 26487.258,
-      "unrealized_pl": 720.19794,
-      "unrealized_plpc": 0.02795,
+      "current_price": 189.21,
+      "market_value": 26489.4,
+      "unrealized_pl": 722.33994,
+      "unrealized_plpc": 0.02803,
       "cost_basis": 25767.06006
     },
     {
@@ -180,5 +180,49 @@
     "total_pnl_all_time": 50.09,
     "win_rate_all_time": 0.0,
     "ready_for_monday": true
+  },
+  "wolf_capabilities": {
+    "capability_score": 49,
+    "score_max": 100,
+    "day_on_mission": 6,
+    "mission_start": "2026-04-08",
+    "streak_days": 6,
+    "totals": {
+      "core_modules": 14,
+      "root_scripts": 7,
+      "command_files": 30,
+      "strategies_implemented": 3,
+      "strategies_known": 18,
+      "backtest_utils": 7,
+      "total_scripts": 58,
+      "skills_acquired": 2,
+      "lessons_learned": 22,
+      "improvement_cycles": 2,
+      "committee_personas": 12,
+      "free_data_sources": 5
+    },
+    "latest_improvement": {
+      "name": "null-safe dashboards + HBR pipeline",
+      "description": "Dashboard JS hardened, dynamic capabilities bar, daily HBR intelligence pipeline active.",
+      "date": "2026-04-13"
+    },
+    "recent_lessons": [
+      {
+        "date": "2026-04-13",
+        "lesson": "Use null-safe getElementById helpers to prevent false OFFLINE status on dashboards."
+      },
+      {
+        "date": "2026-04-13",
+        "lesson": "Terminal windows accumulate \u2014 use exit 0, never interactive prompts in .command scripts."
+      },
+      {
+        "date": "2026-04-13",
+        "lesson": "macOS TCC blocks launchd-spawned python3 from ~/Documents \u2014 use nohup from Terminal instead."
+      },
+      {
+        "date": "2026-04-08",
+        "lesson": "WOLF can now enumerate his own 14 scripts for self-aware planning."
+      }
+    ]
   }
 }
