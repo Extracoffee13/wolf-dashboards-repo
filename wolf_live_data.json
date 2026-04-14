@@ -159,5 +159,49 @@
     "total_pnl_all_time": 50.09,
     "win_rate_all_time": 0.0,
     "ready_for_monday": true
+  },
+  "wolf_capabilities": {
+    "capability_score": 52,
+    "score_max": 100,
+    "day_on_mission": 7,
+    "mission_start": "2026-04-08",
+    "streak_days": 7,
+    "totals": {
+      "core_modules": 14,
+      "root_scripts": 7,
+      "command_files": 30,
+      "strategies_implemented": 3,
+      "strategies_known": 18,
+      "backtest_utils": 7,
+      "total_scripts": 58,
+      "skills_acquired": 3,
+      "lessons_learned": 30,
+      "improvement_cycles": 3,
+      "committee_personas": 12,
+      "free_data_sources": 5
+    },
+    "latest_improvement": {
+      "name": "dashboard root-cause fix + canon architecture",
+      "description": "Patched stuck capability_score/day_on_mission, locked Brand 9 canon (7 Layers + tagline), staged 8 new lessons.",
+      "date": "2026-04-14"
+    },
+    "recent_lessons": [
+      {
+        "date": "2026-04-14",
+        "lesson": "Dashboard stuck at OFFLINE \u2192 fetch of wolf_live_data.json was succeeding but file was missing wolf_capabilities key; updater fallback bypassed."
+      },
+      {
+        "date": "2026-04-14",
+        "lesson": "raw.githubusercontent.com serves HTML as text/plain \u2014 use GitHub Pages or htmlpreview for rendered dashboards."
+      },
+      {
+        "date": "2026-04-14",
+        "lesson": "Lock canon files (tagline, 7 Layers) to prevent fabrication across sessions."
+      },
+      {
+        "date": "2026-04-13",
+        "lesson": "Use null-safe getElementById helpers to prevent false OFFLINE status on dashboards."
+      }
+    ]
   }
 }
