@@ -1267,8 +1267,8 @@ function loadLiveData() {
 
     // === HEADER DATE (dynamic from JSON) ===
     _safe(() => {
-      const hd = el('header-date');
-      const hv = el('header-version');
+      const hd = document.getElementById('header-date');
+      const hv = document.getElementById('header-version');
       if (hd && d.last_updated) {
         const dt = new Date(d.last_updated);
         const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
