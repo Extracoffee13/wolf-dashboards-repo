@@ -3,9 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
 <title>WOLF Command Center</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -180,7 +177,7 @@
   <div style="display:flex; gap:12px; align-items:center;">
     <div class="status-badge pulse">&#9679; LIVE — PAPER TRADING</div>
     <div title="Claude Code cloud planning — Opus 4.6, 30min compute, browser document review. See data/capabilities/ultraplan.md" style="background:linear-gradient(135deg,#5b2c87,#2d1b4e); border:1px solid #8b5cf6; color:#e9d5ff; padding:4px 10px; border-radius:999px; font-size:11px; font-weight:600; letter-spacing:.04em;">&#9889; /ultraplan READY</div>
-    <div style="color:#666; font-size:12px;"><span id="header-version">v2.1</span> | <span id="header-date">loading...</span></div>
+    <div style="color:#666; font-size:12px;">v1.6 | Apr 14 2026</div>
   </div>
 </div>
 
@@ -191,12 +188,7 @@
   <span style="color:#666;">Last update: <span id="last-update" style="color:#888;">Loading...</span></span>
   <span style="color:#444;">|</span>
   <span style="color:#666;">Refresh: <span style="color:#888;">60s</span></span>
-  <span style="color:#444; margin-left:auto;">v2.1 — Project Ascension Phase 2 | Gate Tracker Live</span>
-</div>
-
-<!-- Stale Data Warning (hidden by default, shown by JS when data is >10min old) -->
-<div id="stale-warning" style="display:none; background:#3a1a1a; border:2px solid #f87171; padding:10px 20px; text-align:center; font-size:13px; color:#f87171; font-weight:700;">
-  ⚠️ DATA STALE — Last pipeline update: <span id="stale-age">?</span>. Check your Alpaca updater on Mac.
+  <span style="color:#444; margin-left:auto;">v2.0 — Project Ascension Phase 2</span>
 </div>
 
 <!-- WOLF PROGRESS — dynamically loaded from wolf_live_data.json -->
@@ -204,17 +196,17 @@
 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px; padding:16px 20px; background:linear-gradient(135deg,#0a1628 0%,#0a1f1a 100%); border-top:2px solid #4ade80; border-bottom:2px solid #4ade80; margin:12px 0;">
   <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px;">
     <div style="font-size:11px; color:#6ab; letter-spacing:1px; text-transform:uppercase;">Capability Score</div>
-    <div style="font-size:42px; font-weight:700; color:#4ade80; line-height:1;" id="cap-score">...<span style="font-size:18px; color:#6ab;">/100</span></div>
+    <div style="font-size:42px; font-weight:700; color:#4ade80; line-height:1;" id="cap-score">49<span style="font-size:18px; color:#6ab;">/100</span></div>
     <div style="height:6px; background:#1a3a4a; border-radius:3px; margin-top:8px; overflow:hidden;">
-      <div id="cap-bar" style="height:100%; width:0%; background:linear-gradient(90deg,#4ade80,#22c55e); transition:width 0.5s;"></div>
+      <div id="cap-bar" style="height:100%; width:49%; background:linear-gradient(90deg,#4ade80,#22c55e); transition:width 0.5s;"></div>
     </div>
     <div style="font-size:11px; color:#888; margin-top:6px;">Unlock real money @ 80</div>
   </div>
   <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px;">
     <div style="font-size:11px; color:#6ab; letter-spacing:1px; text-transform:uppercase;">Day on Mission</div>
-    <div style="font-size:42px; font-weight:700; color:#fbbf24; line-height:1;" id="cap-day">...</div>
+    <div style="font-size:42px; font-weight:700; color:#fbbf24; line-height:1;" id="cap-day">6</div>
     <div style="font-size:12px; color:#aaa; margin-top:8px;" id="cap-start">Started 2026-04-08</div>
-    <div style="font-size:11px; color:#4ade80; margin-top:4px;" id="cap-streak">Streak: loading...</div>
+    <div style="font-size:11px; color:#4ade80; margin-top:4px;" id="cap-streak">Streak: 6 days</div>
   </div>
   <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px;">
     <div style="font-size:11px; color:#6ab; letter-spacing:1px; text-transform:uppercase;">Latest Improvement</div>
@@ -244,83 +236,6 @@
   </div>
 </div>
 <!-- WOLF_PROGRESS_END -->
-
-<!-- GRADUATION GATE TRACKER — Phase 2 → Phase 3 -->
-<div style="background:linear-gradient(135deg,#0a1628 0%,#1a0d2e 100%); border:2px solid #ff6b35; border-radius:12px; margin:12px 16px; padding:16px 20px;">
-  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
-    <div style="font-size:14px; font-weight:700; color:#ff6b35; text-transform:uppercase; letter-spacing:2px;">&#127942; Graduation Gate — Real Money Unlock</div>
-    <div id="gate-countdown" style="font-size:13px; color:#fbbf24; font-weight:600;">Day ?/30</div>
-  </div>
-  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:10px;">
-    <!-- Days -->
-    <div style="background:#0d1b2a; border:1px solid #1a2a3a; border-radius:8px; padding:10px 12px;">
-      <div style="display:flex; justify-content:space-between; font-size:11px; color:#6ab; margin-bottom:6px;">
-        <span>Paper Days</span><span id="gate-days-val" style="color:#fbbf24; font-weight:700;">?/30</span>
-      </div>
-      <div style="height:6px; background:#1a2a3a; border-radius:3px; overflow:hidden;">
-        <div id="gate-days-bar" style="height:100%; width:0%; background:linear-gradient(90deg,#fbbf24,#f59e0b); transition:width 0.5s;"></div>
-      </div>
-    </div>
-    <!-- Trades -->
-    <div style="background:#0d1b2a; border:1px solid #1a2a3a; border-radius:8px; padding:10px 12px;">
-      <div style="display:flex; justify-content:space-between; font-size:11px; color:#6ab; margin-bottom:6px;">
-        <span>Total Trades</span><span id="gate-trades-val" style="color:#f87171; font-weight:700;">?/40</span>
-      </div>
-      <div style="height:6px; background:#1a2a3a; border-radius:3px; overflow:hidden;">
-        <div id="gate-trades-bar" style="height:100%; width:0%; background:linear-gradient(90deg,#f87171,#ef4444); transition:width 0.5s;"></div>
-      </div>
-    </div>
-    <!-- Win Rate -->
-    <div style="background:#0d1b2a; border:1px solid #1a2a3a; border-radius:8px; padding:10px 12px;">
-      <div style="display:flex; justify-content:space-between; font-size:11px; color:#6ab; margin-bottom:6px;">
-        <span>Win Rate</span><span id="gate-wr-val" style="color:#f87171; font-weight:700;">?% / 45%</span>
-      </div>
-      <div style="height:6px; background:#1a2a3a; border-radius:3px; overflow:hidden;">
-        <div id="gate-wr-bar" style="height:100%; width:0%; background:linear-gradient(90deg,#f87171,#ef4444); transition:width 0.5s;"></div>
-      </div>
-    </div>
-    <!-- Sharpe -->
-    <div style="background:#0d1b2a; border:1px solid #1a2a3a; border-radius:8px; padding:10px 12px;">
-      <div style="display:flex; justify-content:space-between; font-size:11px; color:#6ab; margin-bottom:6px;">
-        <span>Sharpe Ratio</span><span id="gate-sharpe-val" style="color:#888; font-weight:700;">? / 1.5</span>
-      </div>
-      <div style="height:6px; background:#1a2a3a; border-radius:3px; overflow:hidden;">
-        <div id="gate-sharpe-bar" style="height:100%; width:0%; background:linear-gradient(90deg,#60a5fa,#3b82f6); transition:width 0.5s;"></div>
-      </div>
-    </div>
-    <!-- Profit Factor -->
-    <div style="background:#0d1b2a; border:1px solid #1a2a3a; border-radius:8px; padding:10px 12px;">
-      <div style="display:flex; justify-content:space-between; font-size:11px; color:#6ab; margin-bottom:6px;">
-        <span>Profit Factor</span><span id="gate-pf-val" style="color:#888; font-weight:700;">? / 1.5</span>
-      </div>
-      <div style="height:6px; background:#1a2a3a; border-radius:3px; overflow:hidden;">
-        <div id="gate-pf-bar" style="height:100%; width:0%; background:linear-gradient(90deg,#a78bfa,#8b5cf6); transition:width 0.5s;"></div>
-      </div>
-    </div>
-    <!-- Max Drawdown -->
-    <div style="background:#0d1b2a; border:1px solid #1a2a3a; border-radius:8px; padding:10px 12px;">
-      <div style="display:flex; justify-content:space-between; font-size:11px; color:#6ab; margin-bottom:6px;">
-        <span>Max Drawdown</span><span id="gate-dd-val" style="color:#4ade80; font-weight:700;">? / &le;15%</span>
-      </div>
-      <div style="height:6px; background:#1a2a3a; border-radius:3px; overflow:hidden;">
-        <div id="gate-dd-bar" style="height:100%; width:0%; background:linear-gradient(90deg,#4ade80,#22c55e); transition:width 0.5s;"></div>
-      </div>
-    </div>
-  </div>
-  <div style="display:flex; justify-content:space-between; align-items:center; margin-top:12px;">
-    <div id="gate-verdict" style="font-size:12px; font-weight:700; color:#888; text-transform:uppercase; letter-spacing:1px;">Collecting data...</div>
-    <div id="gate-pace" style="font-size:11px; color:#888;">Need ~?.? trades/day to graduate on time</div>
-  </div>
-</div>
-
-<!-- Market Regime (Auto-Detected) -->
-<div style="background:#0d1b2a; border:1px solid #1a2a3a; border-radius:10px; margin:8px 16px; padding:12px 20px; display:flex; gap:24px; align-items:center; flex-wrap:wrap;">
-  <div style="font-size:11px; color:#6ab; text-transform:uppercase; letter-spacing:1px;">Market Regime</div>
-  <div id="regime-badge" style="font-size:13px; font-weight:700; color:#888; background:#1a2a3a; padding:4px 12px; border-radius:6px;">UNKNOWN</div>
-  <div style="font-size:11px; color:#888;">VIX: <span id="regime-vix" style="color:#fbbf24;">—</span></div>
-  <div style="font-size:11px; color:#888;">SPY Trend: <span id="regime-spy" style="color:#60a5fa;">—</span></div>
-  <div style="font-size:11px; color:#888;">Assessed: <span id="regime-time" style="color:#888;">—</span></div>
-</div>
 
 <!-- Portfolio Summary (Live) -->
 <div class="grid">
@@ -856,7 +771,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="status-row">
         <div class="status-dot dot-live"></div>
         <div class="status-label">Alpaca Paper Trading</div>
-        <div class="status-val" style="color:#4ade80;">Auto-routing ON | $100K | $200K BP | <span id="gate-day-inline">Day ?/30</span> gate</div>
+        <div class="status-val" style="color:#4ade80;">Auto-routing ON | $100K | $200K BP | Day 0/30 gate</div>
       </div>
       <div class="status-row">
         <div class="status-dot dot-ready"></div>
@@ -1214,7 +1129,7 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </div>
 
-<div class="footer">WOLF v2.1 | Wealth-Optimized Leverage Framework | Alpaca Paper Connected | AI Hedge Fund 18-Analyst Vote Active | Graduation Gate Tracker Live | Risk Management Protocol Enforced | Project Ascension Phase 2 | Built for Bobby | One mission: earn money</div>
+<div class="footer">WOLF v2.0 | Wealth-Optimized Leverage Framework | Alpaca Paper Connected | AI Hedge Fund 18-Analyst Vote Active | Risk Management Protocol Enforced | Project Ascension Phase 2 | Built for Bobby | One mission: earn money</div>
 
 <script>
 // WOLF Live Data Loader
@@ -1226,60 +1141,15 @@ const clr = (n) => n >= 0 ? '#4ade80' : '#f87171';
 
 function loadLiveData() {
   const _safe = (fn, tag) => { try { fn(); } catch(e) { console.warn('[WOLF][' + tag + ']', e.message); } };
-  fetch('https://raw.githubusercontent.com/Extracoffee13/wolf-dashboards-repo/main/wolf_live_data.json?t=' + Date.now(), { cache: 'no-store' })
+  fetch('wolf_live_data.json?' + Date.now())
     .then(r => r.json())
     .then(d => {
       // LIVE status first — flip green immediately on successful fetch
       _safe(() => { const ls = document.getElementById('live-status'); if (ls) { ls.textContent = 'LIVE'; ls.style.color = '#4ade80'; } }, 'live-status');
 
-      // === STALE DATA DETECTION ===
-      _safe(() => {
-        const luEl = document.getElementById('last-update');
-        const staleEl = document.getElementById('stale-warning');
-        const staleAge = document.getElementById('stale-age');
-        const ts = d.last_updated;
-        if (ts && luEl) {
-          const updated = new Date(ts);
-          const now = new Date();
-          const ageMs = now - updated;
-          const ageMins = Math.floor(ageMs / 60000);
-          const ageHrs = Math.floor(ageMins / 60);
-          const ageDays = Math.floor(ageHrs / 24);
-          // Display relative time
-          let ageStr;
-          if (ageDays > 0) ageStr = ageDays + 'd ' + (ageHrs % 24) + 'h ago';
-          else if (ageHrs > 0) ageStr = ageHrs + 'h ' + (ageMins % 60) + 'm ago';
-          else ageStr = ageMins + 'm ago';
-          luEl.textContent = new Date(ts).toLocaleString() + ' (' + ageStr + ')';
-          // Show stale warning if data >10min old
-          if (staleEl) {
-            if (ageMins > 10) {
-              staleEl.style.display = 'block';
-              if (staleAge) staleAge.textContent = ageStr;
-              luEl.style.color = '#f87171';
-            } else {
-              staleEl.style.display = 'none';
-              luEl.style.color = '#4ade80';
-            }
-          }
-        }
-      }, 'stale-detect');
-
-    // === HEADER DATE (dynamic from JSON) ===
-    _safe(() => {
-      const hd = document.getElementById('header-date');
-      const hv = document.getElementById('header-version');
-      if (hd && d.last_updated) {
-        const dt = new Date(d.last_updated);
-        const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-        hd.textContent = months[dt.getMonth()] + ' ' + dt.getDate() + ' ' + dt.getFullYear();
-      }
-      if (hv) hv.textContent = 'v2.1';
-    }, 'header-date');
-
       // Wolf Capabilities FIRST so the card never stays on fallback values
       _safe(() => {
-        const CAP_FALLBACK_EARLY = { capability_score: '...', score_max: 100, day_on_mission: '...', recent_lessons: [] };
+        const CAP_FALLBACK_EARLY = { capability_score: 49, score_max: 100, day_on_mission: 6, recent_lessons: [] };
         const el2 = (id) => document.getElementById(id);
         const cap = (d.wolf_capabilities && d.wolf_capabilities.capability_score) ? d.wolf_capabilities : CAP_FALLBACK_EARLY;
         if (el2('cap-score')) el2('cap-score').innerHTML = cap.capability_score + '<span style="font-size:18px; color:#6ab;">/' + (cap.score_max||100) + '</span>';
@@ -1289,113 +1159,6 @@ function loadLiveData() {
           el2('cap-lessons').innerHTML = cap.recent_lessons.map(l => '<div style="font-size:12px; color:#cde; margin-top:4px;">• <b>' + l.date + '</b> — ' + l.lesson + '</div>').join('');
         }
       }, 'capabilities');
-
-      // === GRADUATION GATE TRACKER ===
-      _safe(() => {
-        const el2 = (id) => document.getElementById(id);
-        const ws = d.wolf_status || {};
-        const cap = d.wolf_capabilities || {};
-        const ms = cap.mission_start || '2026-04-08';
-        const now = new Date(); now.setHours(0,0,0,0);
-        const dayOn = Math.max(1, Math.floor((now - new Date(ms + 'T00:00:00')) / 86400000) + 1);
-        const totalTrades = ws.total_trades_all_time || 0;
-        const winRate = (ws.win_rate_all_time || 0) * 100;
-        const bestSharpe = (d.backtest && d.backtest.best_sharpe) || 0;
-        const bestPF = (d.strategy_performance && d.strategy_performance.small_cap_catalyst) ? d.strategy_performance.small_cap_catalyst.profit_factor || 0 : 0;
-        // Max DD from best strategy backtest
-        const maxDD = (d.strategy_performance && d.strategy_performance.small_cap_catalyst) ? Math.abs(d.strategy_performance.small_cap_catalyst.max_dd_backtest || 0) * 100 : 0;
-
-        // Helper: set bar + value + color
-        const setGate = (id, current, target, unit, inverse) => {
-          const pct = inverse ? Math.max(0, Math.min(100, (1 - current/target) * 100)) : Math.min(100, (current/target) * 100);
-          const pass = inverse ? (current <= target) : (current >= target);
-          const color = pass ? '#4ade80' : (pct >= 50 ? '#fbbf24' : '#f87171');
-          if (el2(id + '-bar')) el2(id + '-bar').style.width = pct + '%';
-          if (el2(id + '-val')) { el2(id + '-val').style.color = color; }
-          return pass;
-        };
-
-        // Days
-        if (el2('gate-countdown')) el2('gate-countdown').textContent = 'Day ' + dayOn + '/30';
-        if (el2('gate-days-val')) el2('gate-days-val').textContent = dayOn + '/30';
-        if (el2('gate-day-inline')) el2('gate-day-inline').textContent = 'Day ' + dayOn + '/30';
-        setGate('gate-days', dayOn, 30, '');
-
-        // Trades
-        if (el2('gate-trades-val')) el2('gate-trades-val').textContent = totalTrades + '/40';
-        setGate('gate-trades', totalTrades, 40, '');
-
-        // Win Rate
-        if (el2('gate-wr-val')) el2('gate-wr-val').textContent = winRate.toFixed(1) + '% / 45%';
-        setGate('gate-wr', winRate, 45, '%');
-
-        // Sharpe
-        if (el2('gate-sharpe-val')) el2('gate-sharpe-val').textContent = bestSharpe.toFixed(2) + ' / 1.5';
-        setGate('gate-sharpe', bestSharpe, 1.5, '');
-
-        // Profit Factor
-        if (el2('gate-pf-val')) el2('gate-pf-val').textContent = bestPF.toFixed(2) + ' / 1.5';
-        setGate('gate-pf', bestPF, 1.5, '');
-
-        // Max DD (inverse — lower is better)
-        if (el2('gate-dd-val')) el2('gate-dd-val').textContent = maxDD.toFixed(1) + '% / ≤15%';
-        setGate('gate-dd', maxDD, 15, '%', true);
-
-        // Verdict
-        const gates = [dayOn >= 30, totalTrades >= 40, winRate >= 45, bestSharpe >= 1.5, bestPF >= 1.5, maxDD <= 15];
-        const passed = gates.filter(Boolean).length;
-        const verdict = el2('gate-verdict');
-        if (verdict) {
-          if (passed === 6) { verdict.textContent = '✅ ALL GATES PASSED — READY FOR REAL MONEY'; verdict.style.color = '#4ade80'; }
-          else if (passed >= 4) { verdict.textContent = passed + '/6 gates passed — almost there'; verdict.style.color = '#fbbf24'; }
-          else { verdict.textContent = passed + '/6 gates passed — keep grinding'; verdict.style.color = '#f87171'; }
-        }
-
-        // Pace calculator
-        const daysLeft = Math.max(1, 30 - dayOn);
-        const tradesNeeded = Math.max(0, 40 - totalTrades);
-        const pace = el2('gate-pace');
-        if (pace) {
-          if (tradesNeeded === 0) { pace.textContent = '✅ Trade count met'; pace.style.color = '#4ade80'; }
-          else { pace.textContent = 'Need ~' + (tradesNeeded / daysLeft).toFixed(1) + ' trades/day (' + tradesNeeded + ' in ' + daysLeft + ' days)'; }
-        }
-      }, 'graduation-gate');
-
-      // === MARKET REGIME AUTO-DETECT ===
-      _safe(() => {
-        const el2 = (id) => document.getElementById(id);
-        const regime = d.market_regime || {};
-        const badge = el2('regime-badge');
-
-        // If pipeline provides real values, use them
-        if (regime.current && regime.current !== 'UNKNOWN') {
-          if (badge) {
-            badge.textContent = regime.current;
-            const rc = { 'BULL': '#4ade80', 'BEAR': '#f87171', 'SIDEWAYS': '#fbbf24', 'HIGH_VOL': '#f87171' };
-            badge.style.color = rc[regime.current] || '#888';
-            badge.style.borderColor = rc[regime.current] || '#1a2a3a';
-            badge.style.border = '1px solid ' + (rc[regime.current] || '#1a2a3a');
-          }
-          if (el2('regime-vix')) el2('regime-vix').textContent = regime.vix || '—';
-          if (el2('regime-spy')) el2('regime-spy').textContent = regime.spy_trend || '—';
-          if (el2('regime-time')) el2('regime-time').textContent = regime.last_assessed ? new Date(regime.last_assessed).toLocaleString() : '—';
-        } else {
-          // Auto-estimate from portfolio P&L
-          const weekPct = (d.weekly_pnl && d.weekly_pnl.pct) || 0;
-          let est = 'SIDEWAYS';
-          if (weekPct > 0.03) est = 'BULL';
-          else if (weekPct < -0.03) est = 'BEAR';
-          if (badge) {
-            badge.textContent = est + ' (est.)';
-            const rc2 = { 'BULL': '#4ade80', 'BEAR': '#f87171', 'SIDEWAYS': '#fbbf24' };
-            badge.style.color = rc2[est];
-            badge.style.border = '1px solid ' + rc2[est];
-          }
-          if (el2('regime-vix')) el2('regime-vix').textContent = '— (add to pipeline)';
-          if (el2('regime-spy')) el2('regime-spy').textContent = weekPct >= 0 ? 'Positive (' + (weekPct*100).toFixed(1) + '% wk)' : 'Negative (' + (weekPct*100).toFixed(1) + '% wk)';
-          if (el2('regime-time')) el2('regime-time').textContent = 'Auto-estimated';
-        }
-      }, 'market-regime');
 
       _safe(() => {
       // Last updated
