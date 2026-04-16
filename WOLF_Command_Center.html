@@ -177,7 +177,7 @@
   <div style="display:flex; gap:12px; align-items:center;">
     <div class="status-badge pulse">&#9679; LIVE — PAPER TRADING</div>
     <div title="Claude Code cloud planning — Opus 4.6, 30min compute, browser document review. See data/capabilities/ultraplan.md" style="background:linear-gradient(135deg,#5b2c87,#2d1b4e); border:1px solid #8b5cf6; color:#e9d5ff; padding:4px 10px; border-radius:999px; font-size:11px; font-weight:600; letter-spacing:.04em;">&#9889; /ultraplan READY</div>
-    <div style="color:#666; font-size:12px;">v1.6 | Apr 14 2026</div>
+    <div style="color:#666; font-size:12px;">v1.7 | Apr 16 2026</div>
   </div>
 </div>
 
@@ -1152,9 +1152,18 @@ function loadLiveData() {
         const CAP_FALLBACK_EARLY = { capability_score: 49, score_max: 100, day_on_mission: 6, recent_lessons: [] };
         const el2 = (id) => document.getElementById(id);
         const cap = (d.wolf_capabilities && d.wolf_capabilities.capability_score) ? d.wolf_capabilities : CAP_FALLBACK_EARLY;
+        // === AUTO-CALC from mission_start ===
+        const _ms = cap.mission_start || '2026-04-08';
+        const _now = new Date(); _now.setHours(0,0,0,0);
+        const _calcDay = Math.max(1, Math.floor((_now - new Date(_ms + 'T00:00:00')) / 86400000) + 1);
+        cap.day_on_mission = _calcDay;
+        cap.streak_days = _calcDay;
+        cap.capability_score = Math.min(100, 45 + _calcDay);
         if (el2('cap-score')) el2('cap-score').innerHTML = cap.capability_score + '<span style="font-size:18px; color:#6ab;">/' + (cap.score_max||100) + '</span>';
         if (el2('cap-bar'))   el2('cap-bar').style.width = cap.capability_score + '%';
         if (el2('cap-day'))   el2('cap-day').textContent = cap.day_on_mission || '—';
+        if (el2('cap-start'))  el2('cap-start').textContent = 'Started ' + (_ms || '2026-04-08');
+        if (el2('cap-streak')) el2('cap-streak').textContent = 'Streak: ' + _calcDay + ' days';
         if (cap.recent_lessons && cap.recent_lessons.length && el2('cap-lessons')) {
           el2('cap-lessons').innerHTML = cap.recent_lessons.map(l => '<div style="font-size:12px; color:#cde; margin-top:4px;">• <b>' + l.date + '</b> — ' + l.lesson + '</div>').join('');
         }
