@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-04-16T06:26:25.905141",
+  "last_updated": "2026-04-16T06:31:27.976127",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 105080.67,
+    "portfolio_value": 105013.54,
     "cash": -20870.79,
-    "buying_power": 84209.88,
-    "equity": 105080.67,
+    "buying_power": 84142.75,
+    "equity": 105013.54,
     "last_equity": 104668.89,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 411.78,
-    "pct": 0.0039,
+    "amount": 344.65,
+    "pct": 0.0033,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.4% (buf: 3.0%) | Weekly: +4.7% (buf: 7.0%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.3% (buf: 3.0%) | Weekly: +4.7% (buf: 7.0%)"
   },
   "weekly_pnl": {
     "amount": 4776.47,
@@ -38,10 +38,10 @@
       "qty": 64.0,
       "side": "long",
       "avg_entry": 382.343594,
-      "current_price": 417.9,
-      "market_value": 26745.6,
-      "unrealized_pl": 2275.609984,
-      "unrealized_plpc": 0.093,
+      "current_price": 417.96,
+      "market_value": 26749.44,
+      "unrealized_pl": 2279.449984,
+      "unrealized_plpc": 0.09315,
       "cost_basis": 24469.990016
     },
     {
@@ -49,10 +49,10 @@
       "qty": 232.0,
       "side": "long",
       "avg_entry": 103.07181,
-      "current_price": 107.55,
-      "market_value": 24951.6,
-      "unrealized_pl": 1038.94008,
-      "unrealized_plpc": 0.04345,
+      "current_price": 107.39,
+      "market_value": 24914.48,
+      "unrealized_pl": 1001.82008,
+      "unrealized_plpc": 0.04189,
       "cost_basis": 23912.65992
     },
     {
@@ -60,10 +60,10 @@
       "qty": 140.0,
       "side": "long",
       "avg_entry": 184.050429,
-      "current_price": 199.1,
-      "market_value": 27874.0,
-      "unrealized_pl": 2106.93994,
-      "unrealized_plpc": 0.08177,
+      "current_price": 198.71,
+      "market_value": 27819.4,
+      "unrealized_pl": 2052.33994,
+      "unrealized_plpc": 0.07965,
       "cost_basis": 25767.06006
     },
     {
@@ -71,10 +71,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 55.82,
-      "market_value": 23165.3,
-      "unrealized_pl": -244.300125,
-      "unrealized_plpc": -0.01044,
+      "current_price": 55.87,
+      "market_value": 23186.05,
+      "unrealized_pl": -223.550125,
+      "unrealized_plpc": -0.00955,
       "cost_basis": 23409.600125
     }
   ],
@@ -126,7 +126,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: +0.4% (buf: 3.0%) | Weekly: +4.7% (buf: 7.0%)"
+    "message": "CLEAR \u2014 Daily: +0.3% (buf: 3.0%) | Weekly: +4.7% (buf: 7.0%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
@@ -203,12 +203,5 @@
         "lesson": "WOLF can now enumerate his own 14 scripts for self-aware planning."
       }
     ]
-  },
-  "last_morning_scan": {
-    "timestamp": "2026-04-16T06:30:15.801144",
-    "date": "2026-04-16",
-    "congressional_summary": "\ud83d\udc3a WOLF Congressional Scanner initializing...\n   Watchlist: 64 symbols | Lookback: 7 days\n  Fetching from House Stock Watcher API...\n  Fetching from Senate Stock Watcher API...\n  [!] quiver-quantitative not installed. Run: pip3 install quiver-quantitative --break-system-packages\n\n  [!] No congressional data available from any source.\n      Check network connectivity. All sources are public/free.",
-    "technical_summary": "\ud83d\udc3a WOLF scanning 51 symbols on 1Day timeframe...\n================================================================================\n\n  No actionable setups found. WOLF waits for edge.\n\n\n\ud83d\udc3a Scan complete. 0 setups found across 51 symbols.",
-    "portfolio_summary": "\ud83d\udc3a WOLF Paper Trading Account\n========================================\n  Status:        ACTIVE\n  Cash:          $-20,870.79\n  Portfolio:     $105,022.99\n  Buying Power:  $84,152.20\n  Day P&L:       $354.10\n========================================"
   }
 }
