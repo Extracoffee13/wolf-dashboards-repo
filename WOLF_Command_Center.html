@@ -180,7 +180,7 @@
   <div style="display:flex; gap:12px; align-items:center;">
     <div class="status-badge pulse">&#9679; LIVE — PAPER TRADING</div>
     <div title="Claude Code cloud planning — Opus 4.6, 30min compute, browser document review. See data/capabilities/ultraplan.md" style="background:linear-gradient(135deg,#5b2c87,#2d1b4e); border:1px solid #8b5cf6; color:#e9d5ff; padding:4px 10px; border-radius:999px; font-size:11px; font-weight:600; letter-spacing:.04em;">&#9889; /ultraplan READY</div>
-    <div style="color:#666; font-size:12px;">v1.6 | Apr 14 2026</div>
+    <div style="color:#666; font-size:12px;"><span id="header-version">v2.1</span> | <span id="header-date">loading...</span></div>
   </div>
 </div>
 
@@ -196,7 +196,7 @@
 
 <!-- Stale Data Warning (hidden by default, shown by JS when data is >10min old) -->
 <div id="stale-warning" style="display:none; background:#3a1a1a; border:2px solid #f87171; padding:10px 20px; text-align:center; font-size:13px; color:#f87171; font-weight:700;">
-  ⚠️ DATA STALE — Last pipeline update: <span id="stale-age">?</span> ago. Check your Alpaca updater on Mac.
+  ⚠️ DATA STALE — Last pipeline update: <span id="stale-age">?</span>. Check your Alpaca updater on Mac.
 </div>
 
 <!-- WOLF PROGRESS — dynamically loaded from wolf_live_data.json -->
@@ -1264,6 +1264,18 @@ function loadLiveData() {
           }
         }
       }, 'stale-detect');
+
+    // === HEADER DATE (dynamic from JSON) ===
+    _safe(() => {
+      const hd = el('header-date');
+      const hv = el('header-version');
+      if (hd && d.last_updated) {
+        const dt = new Date(d.last_updated);
+        const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        hd.textContent = months[dt.getMonth()] + ' ' + dt.getDate() + ' ' + dt.getFullYear();
+      }
+      if (hv) hv.textContent = 'v2.1';
+    }, 'header-date');
 
       // Wolf Capabilities FIRST so the card never stays on fallback values
       _safe(() => {
