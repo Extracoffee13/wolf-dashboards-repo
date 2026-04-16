@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>WOLF Command Center</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -191,22 +194,27 @@
   <span style="color:#444; margin-left:auto;">v2.1 — Project Ascension Phase 2 | Gate Tracker Live</span>
 </div>
 
+<!-- Stale Data Warning (hidden by default, shown by JS when data is >10min old) -->
+<div id="stale-warning" style="display:none; background:#3a1a1a; border:2px solid #f87171; padding:10px 20px; text-align:center; font-size:13px; color:#f87171; font-weight:700;">
+  ⚠️ DATA STALE — Last pipeline update: <span id="stale-age">?</span> ago. Check your Alpaca updater on Mac.
+</div>
+
 <!-- WOLF PROGRESS — dynamically loaded from wolf_live_data.json -->
 <!-- WOLF_PROGRESS_START -->
 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px; padding:16px 20px; background:linear-gradient(135deg,#0a1628 0%,#0a1f1a 100%); border-top:2px solid #4ade80; border-bottom:2px solid #4ade80; margin:12px 0;">
   <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px;">
     <div style="font-size:11px; color:#6ab; letter-spacing:1px; text-transform:uppercase;">Capability Score</div>
-    <div style="font-size:42px; font-weight:700; color:#4ade80; line-height:1;" id="cap-score">49<span style="font-size:18px; color:#6ab;">/100</span></div>
+    <div style="font-size:42px; font-weight:700; color:#4ade80; line-height:1;" id="cap-score">...<span style="font-size:18px; color:#6ab;">/100</span></div>
     <div style="height:6px; background:#1a3a4a; border-radius:3px; margin-top:8px; overflow:hidden;">
-      <div id="cap-bar" style="height:100%; width:49%; background:linear-gradient(90deg,#4ade80,#22c55e); transition:width 0.5s;"></div>
+      <div id="cap-bar" style="height:100%; width:0%; background:linear-gradient(90deg,#4ade80,#22c55e); transition:width 0.5s;"></div>
     </div>
     <div style="font-size:11px; color:#888; margin-top:6px;">Unlock real money @ 80</div>
   </div>
   <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px;">
     <div style="font-size:11px; color:#6ab; letter-spacing:1px; text-transform:uppercase;">Day on Mission</div>
-    <div style="font-size:42px; font-weight:700; color:#fbbf24; line-height:1;" id="cap-day">6</div>
+    <div style="font-size:42px; font-weight:700; color:#fbbf24; line-height:1;" id="cap-day">...</div>
     <div style="font-size:12px; color:#aaa; margin-top:8px;" id="cap-start">Started 2026-04-08</div>
-    <div style="font-size:11px; color:#4ade80; margin-top:4px;" id="cap-streak">Streak: 6 days</div>
+    <div style="font-size:11px; color:#4ade80; margin-top:4px;" id="cap-streak">Streak: loading...</div>
   </div>
   <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px;">
     <div style="font-size:11px; color:#6ab; letter-spacing:1px; text-transform:uppercase;">Latest Improvement</div>
@@ -1218,15 +1226,48 @@ const clr = (n) => n >= 0 ? '#4ade80' : '#f87171';
 
 function loadLiveData() {
   const _safe = (fn, tag) => { try { fn(); } catch(e) { console.warn('[WOLF][' + tag + ']', e.message); } };
-  fetch('wolf_live_data.json?' + Date.now())
+  fetch('https://raw.githubusercontent.com/Extracoffee13/wolf-dashboards-repo/main/wolf_live_data.json?t=' + Date.now(), { cache: 'no-store' })
     .then(r => r.json())
     .then(d => {
       // LIVE status first — flip green immediately on successful fetch
       _safe(() => { const ls = document.getElementById('live-status'); if (ls) { ls.textContent = 'LIVE'; ls.style.color = '#4ade80'; } }, 'live-status');
 
+      // === STALE DATA DETECTION ===
+      _safe(() => {
+        const luEl = document.getElementById('last-update');
+        const staleEl = document.getElementById('stale-warning');
+        const staleAge = document.getElementById('stale-age');
+        const ts = d.last_updated;
+        if (ts && luEl) {
+          const updated = new Date(ts);
+          const now = new Date();
+          const ageMs = now - updated;
+          const ageMins = Math.floor(ageMs / 60000);
+          const ageHrs = Math.floor(ageMins / 60);
+          const ageDays = Math.floor(ageHrs / 24);
+          // Display relative time
+          let ageStr;
+          if (ageDays > 0) ageStr = ageDays + 'd ' + (ageHrs % 24) + 'h ago';
+          else if (ageHrs > 0) ageStr = ageHrs + 'h ' + (ageMins % 60) + 'm ago';
+          else ageStr = ageMins + 'm ago';
+          luEl.textContent = new Date(ts).toLocaleString() + ' (' + ageStr + ')';
+          // Show stale warning if data >10min old
+          if (staleEl) {
+            if (ageMins > 10) {
+              staleEl.style.display = 'block';
+              if (staleAge) staleAge.textContent = ageStr;
+              luEl.style.color = '#f87171';
+            } else {
+              staleEl.style.display = 'none';
+              luEl.style.color = '#4ade80';
+            }
+          }
+        }
+      }, 'stale-detect');
+
       // Wolf Capabilities FIRST so the card never stays on fallback values
       _safe(() => {
-        const CAP_FALLBACK_EARLY = { capability_score: 49, score_max: 100, day_on_mission: 6, recent_lessons: [] };
+        const CAP_FALLBACK_EARLY = { capability_score: '...', score_max: 100, day_on_mission: '...', recent_lessons: [] };
         const el2 = (id) => document.getElementById(id);
         const cap = (d.wolf_capabilities && d.wolf_capabilities.capability_score) ? d.wolf_capabilities : CAP_FALLBACK_EARLY;
         if (el2('cap-score')) el2('cap-score').innerHTML = cap.capability_score + '<span style="font-size:18px; color:#6ab;">/' + (cap.score_max||100) + '</span>';
