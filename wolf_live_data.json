@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-04-16T19:49:30.791345",
+  "last_updated": "2026-04-16T19:54:32.947510",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103471.9,
+    "portfolio_value": 103445.92,
     "cash": -20870.79,
-    "buying_power": 82601.11,
-    "equity": 103471.9,
+    "buying_power": 82575.13,
+    "equity": 103445.92,
     "last_equity": 104668.89,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -1196.99,
-    "pct": -0.0114,
+    "amount": -1222.97,
+    "pct": -0.0117,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: -1.1% (buf: 1.9%) | Weekly: +4.8% (buf: 7.0%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: -1.2% (buf: 1.8%) | Weekly: +4.8% (buf: 7.0%)"
   },
   "weekly_pnl": {
     "amount": 4899.71,
@@ -38,10 +38,10 @@
       "qty": 64.0,
       "side": "long",
       "avg_entry": 382.343594,
-      "current_price": 420.6,
-      "market_value": 26918.4,
-      "unrealized_pl": 2448.409984,
-      "unrealized_plpc": 0.10006,
+      "current_price": 420.68,
+      "market_value": 26923.52,
+      "unrealized_pl": 2453.529984,
+      "unrealized_plpc": 0.10027,
       "cost_basis": 24469.990016
     },
     {
@@ -49,10 +49,10 @@
       "qty": 232.0,
       "side": "long",
       "avg_entry": 103.07181,
-      "current_price": 97.9,
-      "market_value": 22712.8,
-      "unrealized_pl": -1199.85992,
-      "unrealized_plpc": -0.05018,
+      "current_price": 97.7599,
+      "market_value": 22680.2968,
+      "unrealized_pl": -1232.36312,
+      "unrealized_plpc": -0.05154,
       "cost_basis": 23912.65992
     },
     {
@@ -126,7 +126,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: -1.1% (buf: 1.9%) | Weekly: +4.8% (buf: 7.0%)"
+    "message": "CLEAR \u2014 Daily: -1.2% (buf: 1.8%) | Weekly: +4.8% (buf: 7.0%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
