@@ -1,25 +1,25 @@
 {
-  "last_updated": "2026-04-17T09:25:51.554872",
+  "last_updated": "2026-04-17T09:30:53.652011",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103330.38,
-    "cash": -20870.79,
-    "buying_power": 82459.59,
-    "equity": 103330.38,
+    "portfolio_value": 102960.51,
+    "cash": -2072.79,
+    "buying_power": 100887.72,
+    "equity": 102960.51,
     "last_equity": 105839.03,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -2508.65,
-    "pct": -0.0237,
+    "amount": -2878.52,
+    "pct": -0.0272,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: -2.4% (buf: 0.6%) | Weekly: +6.0% (buf: 7.0%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: -2.7% (buf: 0.3%) | Weekly: +5.6% (buf: 7.0%)"
   },
   "weekly_pnl": {
-    "amount": 6069.85,
-    "pct": 0.0595
+    "amount": 5711.7,
+    "pct": 0.0559
   },
   "positions": [
     {
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 313.5,
-      "market_value": 23826.0,
-      "unrealized_pl": 514.52,
-      "unrealized_plpc": 0.02207,
+      "current_price": 312.775,
+      "market_value": 23770.9,
+      "unrealized_pl": 459.42,
+      "unrealized_plpc": 0.01971,
       "cost_basis": 23311.48
     },
     {
@@ -38,32 +38,32 @@
       "qty": 64.0,
       "side": "long",
       "avg_entry": 382.343594,
-      "current_price": 425.98,
-      "market_value": 27262.72,
-      "unrealized_pl": 2792.729984,
-      "unrealized_plpc": 0.11413,
+      "current_price": 423.46,
+      "market_value": 27101.44,
+      "unrealized_pl": 2631.449984,
+      "unrealized_plpc": 0.10754,
       "cost_basis": 24469.990016
     },
     {
       "ticker": "NFLX",
-      "qty": 232.0,
+      "qty": 37.0,
       "side": "long",
       "avg_entry": 103.07181,
-      "current_price": 97.0,
-      "market_value": 22504.0,
-      "unrealized_pl": -1408.65992,
-      "unrealized_plpc": -0.05891,
-      "cost_basis": 23912.65992
+      "current_price": 97.62,
+      "market_value": 3611.94,
+      "unrealized_pl": -201.71697,
+      "unrealized_plpc": -0.05289,
+      "cost_basis": 3813.65697
     },
     {
       "ticker": "NVDA",
       "qty": 140.0,
       "side": "long",
       "avg_entry": 184.050429,
-      "current_price": 200.345,
-      "market_value": 28048.3,
-      "unrealized_pl": 2281.23994,
-      "unrealized_plpc": 0.08853,
+      "current_price": 199.89,
+      "market_value": 27984.6,
+      "unrealized_pl": 2217.53994,
+      "unrealized_plpc": 0.08606,
       "cost_basis": 25767.06006
     },
     {
@@ -71,14 +71,25 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 54.35,
-      "market_value": 22555.25,
-      "unrealized_pl": -854.350125,
-      "unrealized_plpc": -0.0365,
+      "current_price": 54.4,
+      "market_value": 22576.0,
+      "unrealized_pl": -833.600125,
+      "unrealized_plpc": -0.03561,
       "cost_basis": 23409.600125
     }
   ],
-  "todays_trades": [],
+  "todays_trades": [
+    {
+      "id": "2b8ebeb0-38d0-45c8-8307-ec0203250b03",
+      "ticker": "NFLX",
+      "side": "sell",
+      "qty": 195.0,
+      "filled_price": 96.4,
+      "status": "partially_filled",
+      "created_at": "2026-04-16T21:33:23.128187Z",
+      "order_class": ""
+    }
+  ],
   "strategy_performance": {
     "small_cap_catalyst": {
       "name": "Small Cap Catalyst",
@@ -126,7 +137,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: -2.4% (buf: 0.6%) | Weekly: +6.0% (buf: 7.0%)"
+    "message": "CLEAR \u2014 Daily: -2.7% (buf: 0.3%) | Weekly: +5.6% (buf: 7.0%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
