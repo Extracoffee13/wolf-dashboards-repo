@@ -1,25 +1,25 @@
 {
-  "last_updated": "2026-04-17T19:33:35.474741",
+  "last_updated": "2026-04-17T19:38:37.934340",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103119.43,
+    "portfolio_value": 103108.8,
     "cash": 1532.39,
-    "buying_power": 104651.82,
-    "equity": 103119.43,
+    "buying_power": 104641.19,
+    "equity": 103108.8,
     "last_equity": 105839.03,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -2719.6,
-    "pct": -0.0257,
+    "amount": -2730.23,
+    "pct": -0.0258,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: -2.6% (buf: 0.4%) | Weekly: +5.6% (buf: 7.0%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: -2.6% (buf: 0.4%) | Weekly: +0.0% (buf: 7.0%)"
   },
   "weekly_pnl": {
-    "amount": 5711.7,
-    "pct": 0.0559
+    "amount": 0.0,
+    "pct": 0.0
   },
   "positions": [
     {
@@ -38,10 +38,10 @@
       "qty": 64.0,
       "side": "long",
       "avg_entry": 382.343594,
-      "current_price": 422.5,
-      "market_value": 27040.0,
-      "unrealized_pl": 2570.009984,
-      "unrealized_plpc": 0.10503,
+      "current_price": 422.3311,
+      "market_value": 27029.1904,
+      "unrealized_pl": 2559.200384,
+      "unrealized_plpc": 0.10459,
       "cost_basis": 24469.990016
     },
     {
@@ -49,10 +49,10 @@
       "qty": 140.0,
       "side": "long",
       "avg_entry": 184.050429,
-      "current_price": 201.0,
-      "market_value": 28140.0,
-      "unrealized_pl": 2372.93994,
-      "unrealized_plpc": 0.09209,
+      "current_price": 201.0013,
+      "market_value": 28140.182,
+      "unrealized_pl": 2373.12194,
+      "unrealized_plpc": 0.0921,
       "cost_basis": 25767.06006
     },
     {
@@ -126,7 +126,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: -2.6% (buf: 0.4%) | Weekly: +5.6% (buf: 7.0%)"
+    "message": "CLEAR \u2014 Daily: -2.6% (buf: 0.4%) | Weekly: +0.0% (buf: 7.0%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
