@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-04-19T20:42:07.267378",
+  "last_updated": "2026-04-19T20:47:09.967454",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 102974.24,
+    "portfolio_value": 103015.57,
     "cash": 1532.35,
-    "buying_power": 104506.59,
-    "equity": 102974.24,
+    "buying_power": 104547.92,
+    "equity": 103015.57,
     "last_equity": 103241.45,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -267.21,
-    "pct": -0.0026,
+    "amount": -225.88,
+    "pct": -0.0022,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: -0.3% (buf: 2.7%) | Weekly: +3.1% (buf: 7.0%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: -0.2% (buf: 2.8%) | Weekly: +3.1% (buf: 7.0%)"
   },
   "weekly_pnl": {
     "amount": 3114.12,
@@ -38,10 +38,10 @@
       "qty": 64.0,
       "side": "long",
       "avg_entry": 382.343594,
-      "current_price": 418.0,
-      "market_value": 26752.0,
-      "unrealized_pl": 2282.009984,
-      "unrealized_plpc": 0.09326,
+      "current_price": 418.97,
+      "market_value": 26814.08,
+      "unrealized_pl": 2344.089984,
+      "unrealized_plpc": 0.09579,
       "cost_basis": 24469.990016
     },
     {
@@ -60,10 +60,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 56.03,
-      "market_value": 23252.45,
-      "unrealized_pl": -157.150125,
-      "unrealized_plpc": -0.00671,
+      "current_price": 55.98,
+      "market_value": 23231.7,
+      "unrealized_pl": -177.900125,
+      "unrealized_plpc": -0.0076,
       "cost_basis": 23409.600125
     }
   ],
@@ -115,7 +115,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: -0.3% (buf: 2.7%) | Weekly: +3.1% (buf: 7.0%)"
+    "message": "CLEAR \u2014 Daily: -0.2% (buf: 2.8%) | Weekly: +3.1% (buf: 7.0%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
