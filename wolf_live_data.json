@@ -1,27 +1,72 @@
 {
-  "last_updated": "2026-04-20T02:20:25.194551",
+  "last_updated": "2026-04-20T02:25:27.538243",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 102730.45,
+    "portfolio_value": 102745.7,
     "cash": 1532.35,
-    "buying_power": 104262.8,
-    "equity": 102730.45,
+    "buying_power": 104278.05,
+    "equity": 102745.7,
     "last_equity": 103241.45,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 0.0,
-    "pct": 0.0,
+    "amount": -495.75,
+    "pct": -0.0048,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.0% (buf: 3.0%) | Weekly: +0.0% (buf: 7.0%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: -0.5% (buf: 2.5%) | Weekly: +3.1% (buf: 7.0%)"
   },
   "weekly_pnl": {
-    "amount": 0.0,
-    "pct": 0.0
+    "amount": 3114.12,
+    "pct": 0.0314
   },
-  "positions": [],
+  "positions": [
+    {
+      "ticker": "JPM",
+      "qty": 76.0,
+      "side": "long",
+      "avg_entry": 306.73,
+      "current_price": 307.75,
+      "market_value": 23389.0,
+      "unrealized_pl": 77.52,
+      "unrealized_plpc": 0.00333,
+      "cost_basis": 23311.48
+    },
+    {
+      "ticker": "MSFT",
+      "qty": 64.0,
+      "side": "long",
+      "avg_entry": 382.343594,
+      "current_price": 417.65,
+      "market_value": 26729.6,
+      "unrealized_pl": 2259.609984,
+      "unrealized_plpc": 0.09234,
+      "cost_basis": 24469.990016
+    },
+    {
+      "ticker": "NVDA",
+      "qty": 140.0,
+      "side": "long",
+      "avg_entry": 184.050429,
+      "current_price": 199.17,
+      "market_value": 27883.8,
+      "unrealized_pl": 2116.73994,
+      "unrealized_plpc": 0.08215,
+      "cost_basis": 25767.06006
+    },
+    {
+      "ticker": "XLE",
+      "qty": 415.0,
+      "side": "long",
+      "avg_entry": 56.408675,
+      "current_price": 55.93,
+      "market_value": 23210.95,
+      "unrealized_pl": -198.650125,
+      "unrealized_plpc": -0.00849,
+      "cost_basis": 23409.600125
+    }
+  ],
   "todays_trades": [],
   "strategy_performance": {
     "small_cap_catalyst": {
@@ -70,7 +115,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: +0.0% (buf: 3.0%) | Weekly: +0.0% (buf: 7.0%)"
+    "message": "CLEAR \u2014 Daily: -0.5% (buf: 2.5%) | Weekly: +3.1% (buf: 7.0%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
