@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-04-20T18:55:32.158834",
+  "last_updated": "2026-04-20T19:00:34.689514",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103642.2,
+    "portfolio_value": 103576.87,
     "cash": 28316.35,
-    "buying_power": 131958.55,
-    "equity": 103642.2,
+    "buying_power": 131893.22,
+    "equity": 103576.87,
     "last_equity": 103241.45,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 400.75,
-    "pct": 0.0039,
+    "amount": 335.42,
+    "pct": 0.0032,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.4% (buf: 3.0%) | Weekly: +1.6% (buf: 7.0%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.3% (buf: 3.0%) | Weekly: +1.6% (buf: 7.0%)"
   },
   "weekly_pnl": {
     "amount": 1535.71,
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 317.82,
-      "market_value": 24154.32,
-      "unrealized_pl": 842.84,
-      "unrealized_plpc": 0.03616,
+      "current_price": 316.99,
+      "market_value": 24091.24,
+      "unrealized_pl": 779.76,
+      "unrealized_plpc": 0.03345,
       "cost_basis": 23311.48
     },
     {
@@ -38,10 +38,10 @@
       "qty": 140.0,
       "side": "long",
       "avg_entry": 184.050429,
-      "current_price": 201.9461,
-      "market_value": 28272.454,
-      "unrealized_pl": 2505.39394,
-      "unrealized_plpc": 0.09723,
+      "current_price": 201.93,
+      "market_value": 28270.2,
+      "unrealized_pl": 2503.13994,
+      "unrealized_plpc": 0.09714,
       "cost_basis": 25767.06006
     },
     {
@@ -115,7 +115,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: +0.4% (buf: 3.0%) | Weekly: +1.6% (buf: 7.0%)"
+    "message": "CLEAR \u2014 Daily: +0.3% (buf: 3.0%) | Weekly: +1.6% (buf: 7.0%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
