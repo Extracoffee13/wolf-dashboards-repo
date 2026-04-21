@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-04-21T18:15:28.560733",
+  "last_updated": "2026-04-21T18:20:31.277997",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103554.67,
+    "portfolio_value": 103541.97,
     "cash": 28316.33,
-    "buying_power": 131871.0,
-    "equity": 103554.67,
+    "buying_power": 131858.3,
+    "equity": 103541.97,
     "last_equity": 103550.02,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 4.65,
-    "pct": 0.0,
+    "amount": -8.05,
+    "pct": -0.0001,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.0% (buf: 3.0%) | Weekly: +0.3% (buf: 7.0%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: -0.0% (buf: 3.0%) | Weekly: +0.3% (buf: 7.0%)"
   },
   "weekly_pnl": {
     "amount": 229.04,
@@ -38,10 +38,10 @@
       "qty": 140.0,
       "side": "long",
       "avg_entry": 184.050429,
-      "current_price": 200.456,
-      "market_value": 28063.84,
-      "unrealized_pl": 2296.77994,
-      "unrealized_plpc": 0.08914,
+      "current_price": 200.42,
+      "market_value": 28058.8,
+      "unrealized_pl": 2291.73994,
+      "unrealized_plpc": 0.08894,
       "cost_basis": 25767.06006
     },
     {
@@ -49,10 +49,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 55.9535,
-      "market_value": 23220.7025,
-      "unrealized_pl": -188.897625,
-      "unrealized_plpc": -0.00807,
+      "current_price": 55.96,
+      "market_value": 23223.4,
+      "unrealized_pl": -186.200125,
+      "unrealized_plpc": -0.00795,
       "cost_basis": 23409.600125
     }
   ],
@@ -104,7 +104,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: +0.0% (buf: 3.0%) | Weekly: +0.3% (buf: 7.0%)"
+    "message": "CLEAR \u2014 Daily: -0.0% (buf: 3.0%) | Weekly: +0.3% (buf: 7.0%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
