@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-04-21T01:33:48.683254",
+  "last_updated": "2026-04-21T01:38:51.671118",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103609.8,
+    "portfolio_value": 103569.6,
     "cash": 28316.35,
-    "buying_power": 131926.15,
-    "equity": 103609.8,
+    "buying_power": 131885.95,
+    "equity": 103569.6,
     "last_equity": 103241.45,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 368.35,
-    "pct": 0.0036,
+    "amount": 328.15,
+    "pct": 0.0032,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.4% (buf: 3.0%) | Weekly: +1.6% (buf: 7.0%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.3% (buf: 3.0%) | Weekly: +1.6% (buf: 7.0%)"
   },
   "weekly_pnl": {
     "amount": 1535.71,
@@ -38,10 +38,10 @@
       "qty": 140.0,
       "side": "long",
       "avg_entry": 184.050429,
-      "current_price": 201.79,
-      "market_value": 28250.6,
-      "unrealized_pl": 2483.53994,
-      "unrealized_plpc": 0.09638,
+      "current_price": 201.74,
+      "market_value": 28243.6,
+      "unrealized_pl": 2476.53994,
+      "unrealized_plpc": 0.09611,
       "cost_basis": 25767.06006
     },
     {
@@ -49,10 +49,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 55.23,
-      "market_value": 22920.45,
-      "unrealized_pl": -489.150125,
-      "unrealized_plpc": -0.0209,
+      "current_price": 55.15,
+      "market_value": 22887.25,
+      "unrealized_pl": -522.350125,
+      "unrealized_plpc": -0.02231,
       "cost_basis": 23409.600125
     }
   ],
@@ -104,7 +104,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: +0.4% (buf: 3.0%) | Weekly: +1.6% (buf: 7.0%)"
+    "message": "CLEAR \u2014 Daily: +0.3% (buf: 3.0%) | Weekly: +1.6% (buf: 7.0%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
