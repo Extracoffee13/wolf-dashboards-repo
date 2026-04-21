@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-04-21T02:59:32.292705",
+  "last_updated": "2026-04-21T03:04:34.824178",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103612.95,
+    "portfolio_value": 103565.75,
     "cash": 28316.35,
-    "buying_power": 131929.3,
-    "equity": 103612.95,
+    "buying_power": 131882.1,
+    "equity": 103565.75,
     "last_equity": 103241.45,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 371.5,
-    "pct": 0.0036,
+    "amount": 324.3,
+    "pct": 0.0031,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.4% (buf: 3.0%) | Weekly: +1.6% (buf: 7.0%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.3% (buf: 3.0%) | Weekly: +1.6% (buf: 7.0%)"
   },
   "weekly_pnl": {
     "amount": 1535.71,
@@ -38,10 +38,10 @@
       "qty": 140.0,
       "side": "long",
       "avg_entry": 184.050429,
-      "current_price": 202.02,
-      "market_value": 28282.8,
-      "unrealized_pl": 2515.73994,
-      "unrealized_plpc": 0.09763,
+      "current_price": 201.92,
+      "market_value": 28268.8,
+      "unrealized_pl": 2501.73994,
+      "unrealized_plpc": 0.09709,
       "cost_basis": 25767.06006
     },
     {
@@ -49,10 +49,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 55.16,
-      "market_value": 22891.4,
-      "unrealized_pl": -518.200125,
-      "unrealized_plpc": -0.02214,
+      "current_price": 55.08,
+      "market_value": 22858.2,
+      "unrealized_pl": -551.400125,
+      "unrealized_plpc": -0.02355,
       "cost_basis": 23409.600125
     }
   ],
@@ -104,7 +104,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: +0.4% (buf: 3.0%) | Weekly: +1.6% (buf: 7.0%)"
+    "message": "CLEAR \u2014 Daily: +0.3% (buf: 3.0%) | Weekly: +1.6% (buf: 7.0%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
