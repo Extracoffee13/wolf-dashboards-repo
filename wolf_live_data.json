@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-04-20T23:57:57.890110",
+  "last_updated": "2026-04-21T00:03:00.160269",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103627.19,
+    "portfolio_value": 103638.39,
     "cash": 28316.35,
-    "buying_power": 131943.54,
-    "equity": 103627.19,
+    "buying_power": 131954.74,
+    "equity": 103638.39,
     "last_equity": 103241.45,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 385.74,
-    "pct": 0.0037,
+    "amount": 396.94,
+    "pct": 0.0038,
     "circuit_breaker_status": "green",
     "circuit_breaker_message": "CLEAR \u2014 Daily: +0.4% (buf: 3.0%) | Weekly: +1.6% (buf: 7.0%)"
   },
@@ -38,10 +38,10 @@
       "qty": 140.0,
       "side": "long",
       "avg_entry": 184.050429,
-      "current_price": 201.69,
-      "market_value": 28236.6,
-      "unrealized_pl": 2469.53994,
-      "unrealized_plpc": 0.09584,
+      "current_price": 201.77,
+      "market_value": 28247.8,
+      "unrealized_pl": 2480.73994,
+      "unrealized_plpc": 0.09628,
       "cost_basis": 25767.06006
     },
     {
@@ -56,18 +56,7 @@
       "cost_basis": 23409.600125
     }
   ],
-  "todays_trades": [
-    {
-      "id": "1fad780c-e93c-4d2a-b058-97011e1d7023",
-      "ticker": "MSFT",
-      "side": "sell",
-      "qty": 64.0,
-      "filled_price": 418.5,
-      "status": "filled",
-      "created_at": "2026-04-16T21:33:25.877236Z",
-      "order_class": ""
-    }
-  ],
+  "todays_trades": [],
   "strategy_performance": {
     "small_cap_catalyst": {
       "name": "Small Cap Catalyst",
