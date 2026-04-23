@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-04-23T06:27:41.911108",
+  "last_updated": "2026-04-23T06:32:44.679437",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103749.81,
+    "portfolio_value": 103777.66,
     "cash": 28316.33,
-    "buying_power": 132066.14,
-    "equity": 103749.81,
+    "buying_power": 132093.99,
+    "equity": 103777.66,
     "last_equity": 103919.95,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -170.14,
-    "pct": -0.0016,
+    "amount": -142.29,
+    "pct": -0.0014,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: -0.2% (buf: 2.8%) | Weekly: -0.7% (buf: 6.3%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: -0.1% (buf: 2.9%) | Weekly: -0.7% (buf: 6.3%)"
   },
   "weekly_pnl": {
     "amount": -748.94,
@@ -38,10 +38,10 @@
       "qty": 140.0,
       "side": "long",
       "avg_entry": 184.050429,
-      "current_price": 200.95,
-      "market_value": 28133.0,
-      "unrealized_pl": 2365.93994,
-      "unrealized_plpc": 0.09182,
+      "current_price": 201.06,
+      "market_value": 28148.4,
+      "unrealized_pl": 2381.33994,
+      "unrealized_plpc": 0.09242,
       "cost_basis": 25767.06006
     },
     {
@@ -49,10 +49,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 56.88,
-      "market_value": 23605.2,
-      "unrealized_pl": 195.599875,
-      "unrealized_plpc": 0.00836,
+      "current_price": 56.91,
+      "market_value": 23617.65,
+      "unrealized_pl": 208.049875,
+      "unrealized_plpc": 0.00889,
       "cost_basis": 23409.600125
     }
   ],
@@ -104,7 +104,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: -0.2% (buf: 2.8%) | Weekly: -0.7% (buf: 6.3%)"
+    "message": "CLEAR \u2014 Daily: -0.1% (buf: 2.9%) | Weekly: -0.7% (buf: 6.3%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
@@ -181,12 +181,5 @@
         "lesson": "WOLF can now enumerate his own 14 scripts for self-aware planning."
       }
     ]
-  },
-  "last_morning_scan": {
-    "timestamp": "2026-04-23T06:30:14.088322",
-    "date": "2026-04-23",
-    "congressional_summary": "\ud83d\udc3a WOLF Congressional Scanner initializing...\n   Watchlist: 64 symbols | Lookback: 7 days\n  Fetching from House Stock Watcher API...\n  Fetching from Senate Stock Watcher API...\n  [!] quiver-quantitative not installed. Run: pip3 install quiver-quantitative --break-system-packages\n\n  [!] No congressional data available from any source.\n      Check network connectivity. All sources are public/free.",
-    "technical_summary": "\ud83d\udc3a WOLF scanning 51 symbols on 1Day timeframe...\n================================================================================\n\n  No actionable setups found. WOLF waits for edge.\n\n\n\ud83d\udc3a Scan complete. 0 setups found across 51 symbols.",
-    "portfolio_summary": "\ud83d\udc3a WOLF Paper Trading Account\n========================================\n  Status:        ACTIVE\n  Cash:          $28,316.33\n  Portfolio:     $103,744.26\n  Buying Power:  $132,060.59\n  Day P&L:       $-175.69\n========================================"
   }
 }
