@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-04-24T06:27:30.429929",
+  "last_updated": "2026-04-24T06:32:33.285596",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103225.17,
+    "portfolio_value": 103216.87,
     "cash": 55977.02,
-    "buying_power": 159202.19,
-    "equity": 103225.17,
+    "buying_power": 159193.89,
+    "equity": 103216.87,
     "last_equity": 103312.16,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -86.99,
-    "pct": -0.0008,
+    "amount": -95.29,
+    "pct": -0.0009,
     "circuit_breaker_status": "green",
     "circuit_breaker_message": "CLEAR \u2014 Daily: -0.1% (buf: 2.9%) | Weekly: -2.4% (buf: 4.6%)"
   },
@@ -38,10 +38,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 56.97,
-      "market_value": 23642.55,
-      "unrealized_pl": 232.949875,
-      "unrealized_plpc": 0.00995,
+      "current_price": 56.95,
+      "market_value": 23634.25,
+      "unrealized_pl": 224.649875,
+      "unrealized_plpc": 0.0096,
       "cost_basis": 23409.600125
     }
   ],
@@ -170,12 +170,5 @@
         "lesson": "WOLF can now enumerate his own 14 scripts for self-aware planning."
       }
     ]
-  },
-  "last_morning_scan": {
-    "timestamp": "2026-04-24T06:30:18.609414",
-    "date": "2026-04-24",
-    "congressional_summary": "\ud83d\udc3a WOLF Congressional Scanner initializing...\n   Watchlist: 64 symbols | Lookback: 7 days\n  Fetching from House Stock Watcher API...\n  Fetching from Senate Stock Watcher API...\n  [!] quiver-quantitative not installed. Run: pip3 install quiver-quantitative --break-system-packages\n\n  [!] No congressional data available from any source.\n      Check network connectivity. All sources are public/free.",
-    "technical_summary": "\ud83d\udc3a WOLF scanning 51 symbols on 1Day timeframe...\n================================================================================\n\n  No actionable setups found. WOLF waits for edge.\n\n\n\ud83d\udc3a Scan complete. 0 setups found across 51 symbols.",
-    "portfolio_summary": "\ud83d\udc3a WOLF Paper Trading Account\n========================================\n  Status:        ACTIVE\n  Cash:          $55,977.02\n  Portfolio:     $103,225.17\n  Buying Power:  $159,202.19\n  Day P&L:       $-86.99\n========================================"
   }
 }
