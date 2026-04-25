@@ -1,25 +1,25 @@
 {
-  "last_updated": "2026-04-25T04:19:41.979514",
+  "last_updated": "2026-04-25T04:24:44.792186",
   "update_interval_seconds": 300,
   "account": {
     "portfolio_value": 103007.35,
     "cash": 55977.02,
     "buying_power": 158984.37,
     "equity": 103007.35,
-    "last_equity": 103312.16,
+    "last_equity": 103007.35,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -304.81,
-    "pct": -0.003,
+    "amount": 0.0,
+    "pct": 0.0,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: -0.3% (buf: 2.7%) | Weekly: +0.1% (buf: 7.0%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.0% (buf: 3.0%) | Weekly: -0.2% (buf: 6.8%)"
   },
   "weekly_pnl": {
-    "amount": 70.71,
-    "pct": 0.0008
+    "amount": -234.1,
+    "pct": -0.0022
   },
   "positions": [
     {
@@ -93,7 +93,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: -0.3% (buf: 2.7%) | Weekly: +0.1% (buf: 7.0%)"
+    "message": "CLEAR \u2014 Daily: +0.0% (buf: 3.0%) | Weekly: -0.2% (buf: 6.8%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
