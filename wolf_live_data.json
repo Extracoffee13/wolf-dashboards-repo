@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-04-27T16:06:54.869648",
+  "last_updated": "2026-04-27T16:11:57.907700",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103205.72,
+    "portfolio_value": 103187.28,
     "cash": 55977.02,
-    "buying_power": 159182.74,
-    "equity": 103205.72,
+    "buying_power": 159164.3,
+    "equity": 103187.28,
     "last_equity": 103007.35,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 198.37,
-    "pct": 0.0019,
+    "amount": 179.93,
+    "pct": 0.0017,
     "circuit_breaker_status": "green",
     "circuit_breaker_message": "CLEAR \u2014 Daily: +0.2% (buf: 3.0%) | Weekly: -0.5% (buf: 6.5%)"
   },
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 311.6,
-      "market_value": 23681.6,
-      "unrealized_pl": 370.12,
-      "unrealized_plpc": 0.01588,
+      "current_price": 311.2482,
+      "market_value": 23654.8632,
+      "unrealized_pl": 343.3832,
+      "unrealized_plpc": 0.01473,
       "cost_basis": 23311.48
     },
     {
@@ -38,10 +38,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 56.74,
-      "market_value": 23547.1,
-      "unrealized_pl": 137.499875,
-      "unrealized_plpc": 0.00587,
+      "current_price": 56.76,
+      "market_value": 23555.4,
+      "unrealized_pl": 145.799875,
+      "unrealized_plpc": 0.00623,
       "cost_basis": 23409.600125
     }
   ],
@@ -128,23 +128,26 @@
     "ready_for_monday": true
   },
   "wolf_capabilities": {
-    "capability_score": 54,
+    "capability_score": 49,
     "score_max": 100,
-    "day_on_mission": 9,
+    "day_on_mission": 20,
     "mission_start": "2026-04-08",
-    "streak_days": 9,
+    "streak_days": 20,
     "totals": {
+      "scripts": 58,
       "core_modules": 14,
       "root_scripts": 7,
       "command_files": 30,
-      "strategies_implemented": 3,
-      "strategies_known": 18,
       "backtest_utils": 7,
-      "total_scripts": 58,
-      "skills_acquired": 2,
-      "lessons_learned": 22,
-      "improvement_cycles": 2,
+      "strategies_known": 18,
+      "strategies_implemented": 3,
       "committee_personas": 12,
+      "open_trades": 5,
+      "lessons_learned": 22,
+      "skills_acquired": 2,
+      "backtests_run": 1,
+      "improvement_cycles": 2,
+      "streak_days": 6,
       "free_data_sources": 5
     },
     "latest_improvement": {
@@ -154,21 +157,15 @@
     },
     "recent_lessons": [
       {
-        "date": "2026-04-13",
-        "lesson": "Use null-safe getElementById helpers to prevent false OFFLINE status on dashboards."
-      },
-      {
-        "date": "2026-04-13",
-        "lesson": "Terminal windows accumulate \u2014 use exit 0, never interactive prompts in .command scripts."
-      },
-      {
-        "date": "2026-04-13",
-        "lesson": "macOS TCC blocks launchd-spawned python3 from ~/Documents \u2014 use nohup from Terminal instead."
-      },
-      {
         "date": "2026-04-08",
         "lesson": "WOLF can now enumerate his own 14 scripts for self-aware planning."
       }
-    ]
+    ],
+    "real_money_unlocked": false,
+    "unlock_threshold": {
+      "capability_score": 80,
+      "consecutive_profitable_weeks": 4,
+      "max_drawdown_pct": 5.0
+    }
   }
 }
