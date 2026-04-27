@@ -204,43 +204,38 @@
 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px; padding:16px 20px; background:linear-gradient(135deg,#0a1628 0%,#0a1f1a 100%); border-top:2px solid #4ade80; border-bottom:2px solid #4ade80; margin:12px 0;">
   <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px;">
     <div style="font-size:11px; color:#6ab; letter-spacing:1px; text-transform:uppercase;">Capability Score</div>
-    <div style="font-size:42px; font-weight:700; color:#4ade80; line-height:1;" id="cap-score">...<span style="font-size:18px; color:#6ab;">/100</span></div>
+    <div style="font-size:42px; font-weight:700; color:#4ade80; line-height:1;">49<span style="font-size:18px; color:#6ab;">/100</span></div>
     <div style="height:6px; background:#1a3a4a; border-radius:3px; margin-top:8px; overflow:hidden;">
-      <div id="cap-bar" style="height:100%; width:0%; background:linear-gradient(90deg,#4ade80,#22c55e); transition:width 0.5s;"></div>
+      <div style="height:100%; width:49%; background:linear-gradient(90deg,#4ade80,#22c55e);"></div>
     </div>
     <div style="font-size:11px; color:#888; margin-top:6px;">Unlock real money @ 80</div>
   </div>
   <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px;">
     <div style="font-size:11px; color:#6ab; letter-spacing:1px; text-transform:uppercase;">Day on Mission</div>
-    <div style="font-size:42px; font-weight:700; color:#fbbf24; line-height:1;" id="cap-day">...</div>
-    <div style="font-size:12px; color:#aaa; margin-top:8px;" id="cap-start">Started 2026-04-08</div>
-    <div style="font-size:11px; color:#4ade80; margin-top:4px;" id="cap-streak">Streak: loading...</div>
+    <div style="font-size:42px; font-weight:700; color:#fbbf24; line-height:1;">6</div>
+    <div style="font-size:12px; color:#aaa; margin-top:8px;">Started 2026-04-08</div>
+    <div style="font-size:11px; color:#4ade80; margin-top:4px;">Streak: 6 days</div>
   </div>
   <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px;">
     <div style="font-size:11px; color:#6ab; letter-spacing:1px; text-transform:uppercase;">Latest Improvement</div>
-    <div style="font-size:16px; color:#4ade80; font-weight:600;" id="cap-improvement">+ null-safe dashboards + HBR pipeline</div>
-    <div style="font-size:11px; color:#aaa; margin-top:4px;" id="cap-improvement-desc">Dashboard JS hardened, dynamic capabilities bar, daily HBR intelligence pipeline active.</div>
+    <div style="font-size:16px; color:#4ade80; font-weight:600;">+ self_inventory</div>
+    <div style="font-size:11px; color:#aaa; margin-top:4px;">WOLF can now enumerate his own 14 scripts for self-aware planning.</div>
   </div>
   <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px;">
     <div style="font-size:11px; color:#6ab; letter-spacing:1px; text-transform:uppercase;">Totals</div>
-    <div id="cap-totals" style="display:grid; grid-template-columns:1fr 1fr; gap:6px; font-size:12px; margin-top:6px;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px; font-size:12px; margin-top:6px;">
       <div>Scripts: <b style="color:#4ade80;">58</b></div>
       <div>Strategies: <b style="color:#4ade80;">3/18</b></div>
       <div>Skills: <b style="color:#4ade80;">2</b></div>
       <div>Lessons: <b style="color:#4ade80;">22</b></div>
       <div>Cycles: <b style="color:#4ade80;">2</b></div>
-      <div>Data Sources: <b style="color:#4ade80;">5</b></div>
+      <div>Open Trades: <b style="color:#4ade80;">5</b></div>
     </div>
   </div>
   <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px; grid-column:1/-1;">
     <div style="font-size:11px; color:#6ab; letter-spacing:1px; text-transform:uppercase; margin-bottom:8px;">Recent Lessons (Self-Improving Loop)</div>
-    <div id="cap-lessons">
-      <div style="font-size:12px; color:#cde; margin-top:4px;">• <b>2026-04-13</b> — Use null-safe getElementById helpers to prevent false OFFLINE status on dashboards.</div>
-      <div style="font-size:12px; color:#cde; margin-top:4px;">• <b>2026-04-13</b> — Terminal windows accumulate — use exit 0, never interactive prompts in .command scripts.</div>
-      <div style="font-size:12px; color:#cde; margin-top:4px;">• <b>2026-04-13</b> — macOS TCC blocks launchd-spawned python3 from ~/Documents — use nohup from Terminal instead.</div>
-      <div style="font-size:12px; color:#cde; margin-top:4px;">• <b>2026-04-08</b> — WOLF can now enumerate his own 14 scripts for self-aware planning.</div>
-    </div>
-    <div style="font-size:11px; color:#888; margin-top:10px;">Free data only — zero paid APIs. Auto-refreshed from wolf_live_data.json.</div>
+    <div style="font-size:12px; color:#cde; margin-top:4px;">• <b>2026-04-08</b> — WOLF can now enumerate his own 14 scripts for self-aware planning.</div>
+    <div style="font-size:11px; color:#888; margin-top:10px;">Free data only — zero paid APIs. Auto-rewritten daily by wolf_self_improve.py.</div>
   </div>
 </div>
 <!-- WOLF_PROGRESS_END -->
