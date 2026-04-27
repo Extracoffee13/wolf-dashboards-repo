@@ -1,25 +1,25 @@
 {
-  "last_updated": "2026-04-27T09:28:08.064119",
+  "last_updated": "2026-04-27T09:33:10.842231",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103010.54,
+    "portfolio_value": 103404.19,
     "cash": 55977.02,
-    "buying_power": 158987.56,
-    "equity": 103010.54,
+    "buying_power": 159381.21,
+    "equity": 103404.19,
     "last_equity": 103007.35,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 3.19,
-    "pct": 0.0,
+    "amount": 396.84,
+    "pct": 0.0039,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.0% (buf: 3.0%) | Weekly: -0.2% (buf: 6.8%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.4% (buf: 3.0%) | Weekly: -0.5% (buf: 6.5%)"
   },
   "weekly_pnl": {
-    "amount": -234.1,
-    "pct": -0.0022
+    "amount": -542.67,
+    "pct": -0.0052
   },
   "positions": [
     {
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 306.52,
-      "market_value": 23295.52,
-      "unrealized_pl": -15.96,
-      "unrealized_plpc": -0.00068,
+      "current_price": 309.57,
+      "market_value": 23527.32,
+      "unrealized_pl": 215.84,
+      "unrealized_plpc": 0.00926,
       "cost_basis": 23311.48
     },
     {
@@ -38,10 +38,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 57.2,
-      "market_value": 23738.0,
-      "unrealized_pl": 328.399875,
-      "unrealized_plpc": 0.01403,
+      "current_price": 57.61,
+      "market_value": 23908.15,
+      "unrealized_pl": 498.549875,
+      "unrealized_plpc": 0.0213,
       "cost_basis": 23409.600125
     }
   ],
@@ -93,7 +93,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: +0.0% (buf: 3.0%) | Weekly: -0.2% (buf: 6.8%)"
+    "message": "CLEAR \u2014 Daily: +0.4% (buf: 3.0%) | Weekly: -0.5% (buf: 6.5%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
