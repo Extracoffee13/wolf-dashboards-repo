@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-04-29T06:29:19.324642",
+  "last_updated": "2026-04-29T06:34:21.950494",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103876.55,
+    "portfolio_value": 103884.85,
     "cash": 55977.02,
-    "buying_power": 159853.57,
-    "equity": 103876.55,
+    "buying_power": 159861.87,
+    "equity": 103884.85,
     "last_equity": 103596.87,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 279.68,
-    "pct": 0.0027,
+    "amount": 287.98,
+    "pct": 0.0028,
     "circuit_breaker_status": "green",
     "circuit_breaker_message": "CLEAR \u2014 Daily: +0.3% (buf: 3.0%) | Weekly: +0.3% (buf: 7.0%)"
   },
@@ -38,10 +38,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 58.47,
-      "market_value": 24265.05,
-      "unrealized_pl": 855.449875,
-      "unrealized_plpc": 0.03654,
+      "current_price": 58.49,
+      "market_value": 24273.35,
+      "unrealized_pl": 863.749875,
+      "unrealized_plpc": 0.0369,
       "cost_basis": 23409.600125
     }
   ],
@@ -167,12 +167,5 @@
       "consecutive_profitable_weeks": 4,
       "max_drawdown_pct": 5.0
     }
-  },
-  "last_morning_scan": {
-    "timestamp": "2026-04-29T06:30:18.218500",
-    "date": "2026-04-29",
-    "congressional_summary": "\ud83d\udc3a WOLF Congressional Scanner initializing...\n   Watchlist: 64 symbols | Lookback: 7 days\n  Fetching from House Stock Watcher API...\n  Fetching from Senate Stock Watcher API...\n  [!] quiver-quantitative not installed. Run: pip3 install quiver-quantitative --break-system-packages\n\n  [!] No congressional data available from any source.\n      Check network connectivity. All sources are public/free.",
-    "technical_summary": "\ud83d\udc3a WOLF scanning 51 symbols on 1Day timeframe...\n================================================================================\n\n  No actionable setups found. WOLF waits for edge.\n\n\n\ud83d\udc3a Scan complete. 0 setups found across 51 symbols.",
-    "portfolio_summary": "\ud83d\udc3a WOLF Paper Trading Account\n========================================\n  Status:        ACTIVE\n  Cash:          $55,977.02\n  Portfolio:     $103,868.25\n  Buying Power:  $159,845.27\n  Day P&L:       $271.38\n========================================"
   }
 }
