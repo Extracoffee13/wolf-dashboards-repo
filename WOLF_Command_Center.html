@@ -443,41 +443,123 @@
           <td style="color:#888; font-size:11px;">High-freq mean-reversion</td>
           <td style="color:#4ade80; font-weight:700;">3–6</td>
           <td style="color:#888; font-size:11px;">yfinance / Alpaca bars</td>
-          <td><span class="badge badge-green">FREE</span></td>
+          <td><span class="badge badge-green">SHIPPED</span></td>
         </tr>
         <tr>
           <td style="color:#fff; font-weight:700;">Overnight Gap Reversal</td>
           <td style="color:#888; font-size:11px;">Pre-market fade</td>
           <td style="color:#4ade80; font-weight:700;">2–4</td>
           <td style="color:#888; font-size:11px;">SEC RSS + Alpaca pre-mkt</td>
-          <td><span class="badge badge-green">FREE</span></td>
+          <td><span class="badge badge-green">SHIPPED</span></td>
         </tr>
         <tr>
           <td style="color:#fff; font-weight:700;">Insider Cluster (Form 4)</td>
           <td style="color:#888; font-size:11px;">≥2 insider buys / 5d</td>
           <td style="color:#4ade80; font-weight:700;">1–3</td>
           <td style="color:#888; font-size:11px;">SEC EDGAR Form 4 RSS</td>
-          <td><span class="badge badge-green">FREE</span></td>
+          <td><span class="badge badge-green">SHIPPED</span></td>
         </tr>
         <tr>
           <td style="color:#fff; font-weight:700;">Congress Follower</td>
           <td style="color:#888; font-size:11px;">Track-record member ≥$50K</td>
           <td style="color:#facc15; font-weight:700;">1–2/wk</td>
           <td style="color:#888; font-size:11px;">Senate eFD · House CHDP</td>
-          <td><span class="badge badge-green">FREE</span></td>
+          <td><span class="badge badge-green">SHIPPED</span></td>
         </tr>
         <tr style="border-bottom:none;">
           <td style="color:#fff; font-weight:700;">Sector ETF Rotation</td>
           <td style="color:#888; font-size:11px;">20d momentum rebalance</td>
           <td style="color:#facc15; font-weight:700;">2–4/wk</td>
           <td style="color:#888; font-size:11px;">yfinance</td>
-          <td><span class="badge badge-green">FREE</span></td>
+          <td><span class="badge badge-green">SHIPPED</span></td>
         </tr>
       </tbody>
     </table>
-    <div style="margin-top:14px; padding:11px 14px; background:rgba(248,113,113,0.08); border:1px solid rgba(248,113,113,0.32); border-radius:6px; color:#ffaaaa; font-size:11px; line-height:1.5;">
-      <span style="font-weight:bold; color:#f87171;">Combined expected: 7–15 signals/day.</span> Top-conviction third = 3–5 trades/day = gate clears. Zero new paid API keys. Slip Day-30 gate → Day-60 (2026-06-07) for strategy battery soak. WOLF Brief publication launches in parallel — gate slip does not affect publication schedule.
+    <div style="margin-top:14px; padding:11px 14px; background:rgba(74,222,128,0.08); border:1px solid rgba(74,222,128,0.32); border-radius:6px; color:#9fe7b8; font-size:11px; line-height:1.5;">
+      <span style="font-weight:bold; color:#4ade80;">SHIPPED 2026-04-30.</span> Combined expected signal flow: <strong>7–15/day</strong>. Top-conviction third = 3–5 trades/day = gate clears. Zero new paid API keys. Gate slipped Day-30 → Day-60 (target 2026-06-07) for strategy-battery soak. WOLF Brief publication launches in parallel — gate slip does not affect publication schedule.
     </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     PENDING REMINDERS / ROADMAP — added 2026-04-30
+     Surface every outstanding item with a date so nothing falls through.
+     ═══════════════════════════════════════════════════════════════════════ -->
+<div class="grid grid-2" style="padding: 20px 20px 0;">
+  <div class="card full-width" style="border-color:#facc15; background: linear-gradient(135deg, rgba(250,204,21,0.06) 0%, #12121f 100%);">
+    <div class="card-header" style="margin-bottom:6px; color:#facc15;">
+      Pending Reminders &amp; Roadmap
+      <span class="badge badge-yellow">9 OPEN</span>
+    </div>
+    <div style="font-size:11px; color:#888; margin-bottom:14px;">
+      Every outstanding move from the [RED] strategic review of 2026-04-30, with a date. Nothing slips silently.
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th style="width:120px;">Date</th>
+          <th>Item</th>
+          <th style="width:120px;">Owner</th>
+          <th style="width:90px;">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="color:#fbbf24; font-weight:700;">2026-05-01</td>
+          <td><strong style="color:#fff;">Backtest the 5 new strategy modules.</strong> Run <code style="color:#60a5fa;">python -m strategies.&lt;name&gt;</code> against 2-yr Alpaca real bars; record Sharpe / PF / DD per strategy; promote to active any with PF≥1.5 + Sharpe≥1.0.</td>
+          <td style="color:#888;">WOLF (auto)</td>
+          <td><span class="badge badge-yellow">QUEUED</span></td>
+        </tr>
+        <tr>
+          <td style="color:#fbbf24; font-weight:700;">2026-05-02</td>
+          <td><strong style="color:#fff;">Wire SEC EDGAR Form 4 RSS to the runtime feed.</strong> Replace backtest proxy in <code style="color:#60a5fa;">insider_cluster_form4.py</code> with live RSS poller. Free, rate-limit 10 req/s.</td>
+          <td style="color:#888;">WOLF (auto)</td>
+          <td><span class="badge badge-yellow">QUEUED</span></td>
+        </tr>
+        <tr>
+          <td style="color:#fbbf24; font-weight:700;">2026-05-02</td>
+          <td><strong style="color:#fff;">Wire Senate eFD + House CHDP scrapers</strong> to the live feed for <code style="color:#60a5fa;">congress_follower.py</code>. The WOLF Congressional Trading Watch routine writes to the same data store.</td>
+          <td style="color:#888;">WOLF (auto)</td>
+          <td><span class="badge badge-yellow">QUEUED</span></td>
+        </tr>
+        <tr>
+          <td style="color:#fbbf24; font-weight:700;">2026-05-03</td>
+          <td><strong style="color:#fff;">Pick WOLF Brief publication channel</strong> (recommendation: Substack + X cross-post). Stand up the publish-script trigger that picks up <code style="color:#60a5fa;">wolf-brief/{today}-*.md</code> from the routine outputs and posts.</td>
+          <td style="color:#888;">Bobby + Vector</td>
+          <td><span class="badge badge-yellow">DECISION</span></td>
+        </tr>
+        <tr>
+          <td style="color:#fbbf24; font-weight:700;">2026-05-04</td>
+          <td><strong style="color:#fff;">First public WOLF Brief post.</strong> Inaugural Friday Committee thesis for the upcoming week — sets the tone of the publication. Receipts, opinions, kill criterion in every post.</td>
+          <td style="color:#888;">WOLF + Vector</td>
+          <td><span class="badge badge-blue">SCHEDULED</span></td>
+        </tr>
+        <tr style="border-top:2px solid rgba(250,204,21,0.5);">
+          <td style="color:#facc15; font-weight:700;">2026-05-08</td>
+          <td><strong style="color:#fff;">Day-30 checkpoint.</strong> Are we hitting ≥3 trades/day with PF still ≥1.5? If yes → continue to Day-60. If no → cut the bottom-2 strategies and add directional pairs trading.</td>
+          <td style="color:#888;">Keystone</td>
+          <td><span class="badge badge-blue">SCHEDULED</span></td>
+        </tr>
+        <tr>
+          <td style="color:#facc15; font-weight:700;">2026-06-07</td>
+          <td><strong style="color:#fff;">Day-60 graduation review.</strong> If WOLF has 35+ trades, WR≥45%, Sharpe≥1.5, DD≤15%: unlock real money at $1K/position max. Scale weekly only if metrics hold.</td>
+          <td style="color:#888;">Keystone</td>
+          <td><span class="badge badge-blue">SCHEDULED</span></td>
+        </tr>
+        <tr style="border-top:2px solid rgba(250,204,21,0.5);">
+          <td style="color:#c084fc; font-weight:700;">2026-07-30</td>
+          <td><strong style="color:#fff;">Day-90 WOLF Brief kill / continue / double-down.</strong> Kill if: &lt;100 engaged subs AND paper Sharpe &lt;1.0 AND 0 family-office inbounds. Continue with conditions if 2/3 fail. Double-down if 0–1/3 fail.</td>
+          <td style="color:#888;">Keystone</td>
+          <td><span class="badge badge-purple">90-DAY</span></td>
+        </tr>
+        <tr>
+          <td style="color:#888;">ongoing</td>
+          <td><strong style="color:#fff;">PRAXIS lessons feed back into strategy thresholds.</strong> Each WOLF Post-Close Recap appends a PRAXIS_INBOX block; daily distill at 03:15 promotes recurring lessons (≥3 occurrences) into <code style="color:#60a5fa;">BROADCAST_wolf.md</code>. Strategy params auto-tighten when PRAXIS suggests it.</td>
+          <td style="color:#888;">PRAXIS pipeline</td>
+          <td><span class="badge badge-green">LIVE</span></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
 
