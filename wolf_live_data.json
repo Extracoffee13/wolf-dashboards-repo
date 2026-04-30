@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-04-30T10:31:15.643143",
+  "last_updated": "2026-04-30T10:36:18.319450",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 104314.07,
+    "portfolio_value": 104387.23,
     "cash": 55977.02,
-    "buying_power": 160291.09,
-    "equity": 104314.07,
+    "buying_power": 160364.25,
+    "equity": 104387.23,
     "last_equity": 103977.47,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 336.6,
-    "pct": 0.0032,
+    "amount": 409.76,
+    "pct": 0.0039,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.3% (buf: 3.0%) | Weekly: +0.6% (buf: 7.0%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.4% (buf: 3.0%) | Weekly: +0.6% (buf: 7.0%)"
   },
   "weekly_pnl": {
     "amount": 665.31,
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 312.915,
-      "market_value": 23781.54,
-      "unrealized_pl": 470.06,
-      "unrealized_plpc": 0.02016,
+      "current_price": 313.57,
+      "market_value": 23831.32,
+      "unrealized_pl": 519.84,
+      "unrealized_plpc": 0.0223,
       "cost_basis": 23311.48
     },
     {
@@ -38,10 +38,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 59.1699,
-      "market_value": 24555.5085,
-      "unrealized_pl": 1145.908375,
-      "unrealized_plpc": 0.04895,
+      "current_price": 59.2299,
+      "market_value": 24580.4085,
+      "unrealized_pl": 1170.808375,
+      "unrealized_plpc": 0.05001,
       "cost_basis": 23409.600125
     }
   ],
@@ -93,7 +93,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: +0.3% (buf: 3.0%) | Weekly: +0.6% (buf: 7.0%)"
+    "message": "CLEAR \u2014 Daily: +0.4% (buf: 3.0%) | Weekly: +0.6% (buf: 7.0%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
