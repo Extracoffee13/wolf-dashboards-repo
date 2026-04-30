@@ -504,11 +504,41 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr style="background:rgba(74,222,128,0.04);">
+          <td style="color:#4ade80; font-weight:700;">2026-04-30</td>
+          <td><strong style="color:#fff;">Risk Management module — Kelly + VaR + Vol targeting.</strong> <code style="color:#60a5fa;">risk/sizing.py</code>. SignalIntent → SizedOrder, fractional Kelly, 1% portfolio VaR cap, 15% gross / 10% net exposure caps, 25 bps per-trade vol budget.</td>
+          <td style="color:#888;">AP</td>
+          <td><span class="badge badge-green">SHIPPED</span></td>
+        </tr>
+        <tr style="background:rgba(74,222,128,0.04);">
+          <td style="color:#4ade80; font-weight:700;">2026-04-30</td>
+          <td><strong style="color:#fff;">Macro Regime Overlay — FRED + CFTC COT + SEC 13F.</strong> <code style="color:#60a5fa;">data_feeds/{fred,cftc_cot,sec_13f}.py</code>. 16 FRED series, 12 COT markets (commercial vs spec positioning), 10-fund 13F watchlist. Output: regime classification (risk_on/neutral/risk_off) consumed by Friday Committee.</td>
+          <td style="color:#888;">AP</td>
+          <td><span class="badge badge-green">SHIPPED</span></td>
+        </tr>
+        <tr style="background:rgba(74,222,128,0.04);">
+          <td style="color:#4ade80; font-weight:700;">2026-04-30</td>
+          <td><strong style="color:#fff;">Beehiiv publication scaffold.</strong> <code style="color:#60a5fa;">publisher/beehiiv_publish.py</code>. Auto-posts <code style="color:#60a5fa;">wolf-brief/{today}-*.md</code> as a single combined Beehiiv newsletter. Free up to 2,500 subs. X cross-post toggle.</td>
+          <td style="color:#888;">AP</td>
+          <td><span class="badge badge-green">SHIPPED</span></td>
+        </tr>
+        <tr style="background:rgba(74,222,128,0.04);">
+          <td style="color:#4ade80; font-weight:700;">2026-04-30</td>
+          <td><strong style="color:#fff;">Trade-Alert Webhooks — Discord + Telegram.</strong> <code style="color:#60a5fa;">notifiers/{discord,telegram}.py</code>. Trade fills, signal-fired, anomaly, daily summary builders. Both free, both push to phone, redundant by design.</td>
+          <td style="color:#888;">AP</td>
+          <td><span class="badge badge-green">SHIPPED</span></td>
+        </tr>
+        <tr style="border-top:1px solid #facc15;">
           <td style="color:#fbbf24; font-weight:700;">2026-05-01</td>
           <td><strong style="color:#fff;">Backtest the 5 new strategy modules.</strong> Run <code style="color:#60a5fa;">python -m strategies.&lt;name&gt;</code> against 2-yr Alpaca real bars; record Sharpe / PF / DD per strategy; promote to active any with PF≥1.5 + Sharpe≥1.0.</td>
           <td style="color:#888;">WOLF (auto)</td>
           <td><span class="badge badge-yellow">QUEUED</span></td>
+        </tr>
+        <tr>
+          <td style="color:#fbbf24; font-weight:700;">2026-05-01</td>
+          <td><strong style="color:#fff;">Set environment variables.</strong> <code style="color:#60a5fa;">FRED_API_KEY</code> (free signup), <code style="color:#60a5fa;">BEEHIIV_API_KEY</code> + <code style="color:#60a5fa;">BEEHIIV_PUB_ID</code> (free signup), <code style="color:#60a5fa;">DISCORD_WEBHOOK_URL</code>, <code style="color:#60a5fa;">TELEGRAM_BOT_TOKEN</code> + <code style="color:#60a5fa;">TELEGRAM_CHAT_ID</code>. ~10 minutes of one-time signups.</td>
+          <td style="color:#888;">Bobby</td>
+          <td><span class="badge badge-yellow">SETUP</span></td>
         </tr>
         <tr>
           <td style="color:#fbbf24; font-weight:700;">2026-05-02</td>
