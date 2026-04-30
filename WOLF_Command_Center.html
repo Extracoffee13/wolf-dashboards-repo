@@ -588,6 +588,45 @@
           <td style="color:#888;">PRAXIS pipeline</td>
           <td><span class="badge badge-green">LIVE</span></td>
         </tr>
+        <tr style="border-top:2px solid rgba(96,165,250,0.5);">
+          <td style="color:#60a5fa; font-weight:700;" colspan="4"><strong>NEXT-TIER capability roadmap (scheduled from [RED] review · 2026-04-30)</strong></td>
+        </tr>
+        <tr>
+          <td style="color:#60a5fa; font-weight:700;">2026-05-05</td>
+          <td><strong style="color:#fff;">Earnings Prep Skill.</strong> Daily 06:00 routine pulls next session's earnings calendar (yfinance, free), generates per-ticker "what to watch" doc with last 4 quarters' beat/miss, options-implied move, key metrics. Feeds Pre-Market Intel.</td>
+          <td style="color:#888;">WOLF (new routine)</td>
+          <td><span class="badge badge-blue">SCHEDULED</span></td>
+        </tr>
+        <tr>
+          <td style="color:#60a5fa; font-weight:700;">2026-05-06</td>
+          <td><strong style="color:#fff;">Wash Sale + Tax Efficiency Tracker.</strong> Tracks 30-day wash-sale violations, flags LTCG vs STCG holdings, surfaces tax-loss harvest opportunities. 200–500 bps/yr lift on taxable accounts. Required before Day-60 real money unlock.</td>
+          <td style="color:#888;">Ledger + WOLF</td>
+          <td><span class="badge badge-blue">SCHEDULED</span></td>
+        </tr>
+        <tr>
+          <td style="color:#60a5fa; font-weight:700;">2026-05-04</td>
+          <td><strong style="color:#fff;">Sentinel Compliance Review of WOLF Brief content.</strong> Triggered routine fires every time <code style="color:#60a5fa;">wolf-brief/*.md</code> is committed. Checks investment-advice disclaimers, no-misrepresentation, FINRA-style language. Required before inaugural public Brief post.</td>
+          <td style="color:#888;">Sentinel</td>
+          <td><span class="badge badge-blue">SCHEDULED</span></td>
+        </tr>
+        <tr>
+          <td style="color:#60a5fa; font-weight:700;">2026-05-07</td>
+          <td><strong style="color:#fff;">Public Performance Scorecard widget.</strong> New dashboard card auto-published to Brief footer: cumulative paper P&L vs SPX over 60-day soak, trade count, current Sharpe, max DD, gates-passed indicator. The receipt that builds Brief credibility.</td>
+          <td style="color:#888;">AP + Vector</td>
+          <td><span class="badge badge-blue">SCHEDULED</span></td>
+        </tr>
+        <tr>
+          <td style="color:#60a5fa; font-weight:700;">2026-05-15</td>
+          <td><strong style="color:#fff;">Reddit / StockTwits Sentiment Overlay (dark horse).</strong> Add as a *modifier* on <code style="color:#60a5fa;">mean_reversion_bb_rsi</code> — only fade RSI extremes when retail sentiment concurrently extreme. Reddit free API + StockTwits free tier. Re-evaluate at Day-30 (May 8) if signal flow needs more lift.</td>
+          <td style="color:#888;">WOLF</td>
+          <td><span class="badge badge-purple">DARK HORSE</span></td>
+        </tr>
+        <tr>
+          <td style="color:#60a5fa; font-weight:700;">2026-05-02</td>
+          <td><strong style="color:#fff;">Wire engineering skills into WOLF session prompt:</strong> <code style="color:#60a5fa;">engineering:debug</code> (root-cause when a strategy fails), <code style="color:#60a5fa;">engineering:testing-strategy</code> (formal walk-forward + OOS for new strategies), <code style="color:#60a5fa;">keystone</code> (self-call for Day-30/60/90 strategic gates).</td>
+          <td style="color:#888;">AP</td>
+          <td><span class="badge badge-blue">SCHEDULED</span></td>
+        </tr>
       </tbody>
     </table>
   </div>
