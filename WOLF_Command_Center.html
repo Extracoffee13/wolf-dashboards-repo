@@ -244,13 +244,13 @@
 <div style="background:linear-gradient(135deg,#0a1628 0%,#1a0d2e 100%); border:2px solid #ff6b35; border-radius:12px; margin:12px 16px; padding:16px 20px;">
   <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
     <div style="font-size:14px; font-weight:700; color:#ff6b35; text-transform:uppercase; letter-spacing:2px;">&#127942; Graduation Gate — Real Money Unlock</div>
-    <div id="gate-countdown" style="font-size:13px; color:#fbbf24; font-weight:600;">Day ?/30</div>
+    <div id="gate-countdown" style="font-size:13px; color:#fbbf24; font-weight:600;">Day ?/60</div>
   </div>
   <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:10px;">
     <!-- Days -->
     <div style="background:#0d1b2a; border:1px solid #1a2a3a; border-radius:8px; padding:10px 12px;">
       <div style="display:flex; justify-content:space-between; font-size:11px; color:#6ab; margin-bottom:6px;">
-        <span>Paper Days</span><span id="gate-days-val" style="color:#fbbf24; font-weight:700;">?/30</span>
+        <span>Paper Days</span><span id="gate-days-val" style="color:#fbbf24; font-weight:700;">?/60</span>
       </div>
       <div style="height:6px; background:#1a2a3a; border-radius:3px; overflow:hidden;">
         <div id="gate-days-bar" style="height:100%; width:0%; background:linear-gradient(90deg,#fbbf24,#f59e0b); transition:width 0.5s;"></div>
@@ -987,7 +987,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="status-row">
         <div class="status-dot dot-live"></div>
         <div class="status-label">Alpaca Paper Trading</div>
-        <div class="status-val" style="color:#4ade80;">Auto-routing ON | $100K | $200K BP | <span id="gate-day-inline">Day ?/30</span> gate</div>
+        <div class="status-val" style="color:#4ade80;">Auto-routing ON | $100K | $200K BP | <span id="gate-day-inline">Day ?/60</span> gate</div>
       </div>
       <div class="status-row">
         <div class="status-dot dot-ready"></div>
@@ -1452,9 +1452,9 @@ function loadLiveData() {
         };
 
         // Days
-        if (el2('gate-countdown')) el2('gate-countdown').textContent = 'Day ' + dayOn + '/30';
-        if (el2('gate-days-val')) el2('gate-days-val').textContent = dayOn + '/30';
-        if (el2('gate-day-inline')) el2('gate-day-inline').textContent = 'Day ' + dayOn + '/30';
+        if (el2('gate-countdown')) el2('gate-countdown').textContent = 'Day ' + dayOn + '/60';
+        if (el2('gate-days-val')) el2('gate-days-val').textContent = dayOn + '/60';
+        if (el2('gate-day-inline')) el2('gate-day-inline').textContent = 'Day ' + dayOn + '/60';
         setGate('gate-days', dayOn, 30, '');
 
         // Trades
