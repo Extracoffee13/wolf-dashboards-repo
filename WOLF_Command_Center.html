@@ -420,12 +420,12 @@
      ═══════════════════════════════════════════════════════════════════════ -->
 <div class="grid grid-2" style="padding: 20px 20px 0;">
   <div class="card full-width" style="border-color:#f87171; background: linear-gradient(135deg, rgba(248,113,113,0.06) 0%, #12121f 100%);">
-    <div class="card-header" style="margin-bottom:6px; color:#f87171;">
-      Strategy Battery Gap — Day-30 trade-pace diagnostic
-      <span class="badge badge-red">23× SLOW</span>
+    <div class="card-header" style="margin-bottom:6px; color:#4ade80;">
+      Strategy Battery — 5 Modules SHIPPED 2026-04-30
+      <span class="badge badge-green">8 ACTIVE</span>
     </div>
     <div style="font-size:11px; color:#888; margin-bottom:14px;">
-      Quality metrics are institutional (Sharpe 1.50 · PF 3.59 · DD 3.3%). The bottleneck is strategy <strong>diversity</strong>, not data. 3 catalyst/breakout strategies → ~0.2 trades/day. Gate needs 5/day.
+      Quality metrics already institutional (Sharpe 1.50 · PF 3.59 · DD 3.3%). 5 free-data modules deployed today to lift signal flow from ~0.2/day to 7–15/day. Gate slipped 30 → 60 days for soak. Files in <code style="color:#60a5fa;">strategies/</code>.
     </div>
     <table>
       <thead>
@@ -434,7 +434,7 @@
           <th>Family</th>
           <th>Expected /day</th>
           <th>Data source</th>
-          <th style="width:70px;">Cost</th>
+          <th style="width:80px;">Status</th>
         </tr>
       </thead>
       <tbody>
@@ -634,7 +634,7 @@
         &#128640; Market-open exec: <span style="color:#4ade80;">9:30 AM ET</span> &bull; Midday rescan: <span style="color:#4ade80;">12:30 PM ET</span><br>
         &#128202; EOD review: <span style="color:#4ade80;">4:15 PM ET</span> &bull; Gate status: <span style="color:#4ade80;">4:45 PM ET</span> &bull; Crypto 24/7: <span style="color:#4ade80;">every 6h</span><br>
         &#128737; Auto-route: <span style="color:#4ade80;">ON (paper)</span> &bull; Committee: <span style="color:#4ade80;">executes</span> &bull; Risk caps: <span style="color:#4ade80;">2%/trade, 10% heat, 3% daily stop</span><br>
-        &#128274; Real-money gate: <span style="color:#ff6b35;">30 days + Sharpe&ge;1.5 + DD&le;15% + 40 trades + WR&ge;45% + PF&ge;1.5</span>
+        &#128274; Real-money gate (v2.1 — extended for strategy battery soak): <span style="color:#ff6b35;">60 days + Sharpe&ge;1.5 + DD&le;15% + 40 trades + WR&ge;45% + PF&ge;1.5</span>
       </div>
     </div>
   </div>
@@ -1455,7 +1455,7 @@ function loadLiveData() {
         if (el2('gate-countdown')) el2('gate-countdown').textContent = 'Day ' + dayOn + '/60';
         if (el2('gate-days-val')) el2('gate-days-val').textContent = dayOn + '/60';
         if (el2('gate-day-inline')) el2('gate-day-inline').textContent = 'Day ' + dayOn + '/60';
-        setGate('gate-days', dayOn, 30, '');
+        setGate('gate-days', dayOn, 60, '');
 
         // Trades
         if (el2('gate-trades-val')) el2('gate-trades-val').textContent = totalTrades + '/40';
@@ -1478,7 +1478,7 @@ function loadLiveData() {
         setGate('gate-dd', maxDD, 15, '%', true);
 
         // Verdict
-        const gates = [dayOn >= 30, totalTrades >= 40, winRate >= 45, bestSharpe >= 1.5, bestPF >= 1.5, maxDD <= 15];
+        const gates = [dayOn >= 60, totalTrades >= 40, winRate >= 45, bestSharpe >= 1.5, bestPF >= 1.5, maxDD <= 15];
         const passed = gates.filter(Boolean).length;
         const verdict = el2('gate-verdict');
         if (verdict) {
