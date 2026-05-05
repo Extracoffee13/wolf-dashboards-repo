@@ -1,27 +1,50 @@
 {
-  "last_updated": "2026-05-05T04:51:14.021185",
+  "last_updated": "2026-05-05T04:56:15.034834",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 104067.07,
+    "portfolio_value": 104049.52,
     "cash": 55977.02,
-    "buying_power": 160044.09,
-    "equity": 104067.07,
+    "buying_power": 160026.54,
+    "equity": 104049.52,
     "last_equity": 104147.49,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 0.0,
-    "pct": 0.0,
+    "amount": -97.97,
+    "pct": -0.0009,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.0% (buf: 3.0%) | Weekly: +0.0% (buf: 7.0%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: -0.1% (buf: 2.9%) | Weekly: +0.9% (buf: 7.0%)"
   },
   "weekly_pnl": {
-    "amount": 0.0,
-    "pct": 0.0
+    "amount": 927.04,
+    "pct": 0.009
   },
-  "positions": [],
+  "positions": [
+    {
+      "ticker": "JPM",
+      "qty": 76.0,
+      "side": "long",
+      "avg_entry": 306.73,
+      "current_price": 308.97,
+      "market_value": 23481.72,
+      "unrealized_pl": 170.24,
+      "unrealized_plpc": 0.0073,
+      "cost_basis": 23311.48
+    },
+    {
+      "ticker": "XLE",
+      "qty": 415.0,
+      "side": "long",
+      "avg_entry": 56.408675,
+      "current_price": 59.2549,
+      "market_value": 24590.7835,
+      "unrealized_pl": 1181.183375,
+      "unrealized_plpc": 0.05046,
+      "cost_basis": 23409.600125
+    }
+  ],
   "todays_trades": [],
   "strategy_performance": {
     "small_cap_catalyst": {
@@ -70,7 +93,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: +0.0% (buf: 3.0%) | Weekly: +0.0% (buf: 7.0%)"
+    "message": "CLEAR \u2014 Daily: -0.1% (buf: 2.9%) | Weekly: +0.9% (buf: 7.0%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
