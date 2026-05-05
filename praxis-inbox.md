@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Why do commercial real estate developers procure signage late in the project timeline, even though visible signage affects leasing velocity?"
+outcome: delta category was novel
+lesson: When the corpus only explains a symptom (coordination friction), first-principles reasoning can surface the structural root cause (pro forma siloing, principal-agent mismatch) — always ask one level deeper than the practitioner literature goes
+tags: first-principles,praxis,reasoning
+confidence: 0.82
+~~~
