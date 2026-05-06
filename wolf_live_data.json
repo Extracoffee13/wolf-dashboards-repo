@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-05-06T09:51:17.610346",
+  "last_updated": "2026-05-06T09:51:40.241858",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103667.74,
+    "portfolio_value": 103692.3,
     "cash": 55977.02,
-    "buying_power": 159644.76,
-    "equity": 103667.74,
+    "buying_power": 159669.32,
+    "equity": 103692.3,
     "last_equity": 104163.17,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -495.43,
-    "pct": -0.0048,
+    "amount": -470.87,
+    "pct": -0.0045,
     "circuit_breaker_status": "green",
     "circuit_breaker_message": "CLEAR \u2014 Daily: -0.5% (buf: 2.5%) | Weekly: +0.2% (buf: 7.0%)"
   },
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 313.42,
-      "market_value": 23819.92,
-      "unrealized_pl": 508.44,
-      "unrealized_plpc": 0.02181,
+      "current_price": 313.634,
+      "market_value": 23836.184,
+      "unrealized_pl": 524.704,
+      "unrealized_plpc": 0.02251,
       "cost_basis": 23311.48
     },
     {
@@ -38,10 +38,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 57.51,
-      "market_value": 23866.65,
-      "unrealized_pl": 457.049875,
-      "unrealized_plpc": 0.01952,
+      "current_price": 57.54,
+      "market_value": 23879.1,
+      "unrealized_pl": 469.499875,
+      "unrealized_plpc": 0.02006,
       "cost_basis": 23409.600125
     }
   ],
@@ -58,33 +58,140 @@
       "sharpe_backtest": 1.5,
       "max_dd_backtest": -0.033,
       "profit_factor": 3.59,
-      "data_source": "real_alpaca"
+      "data_source": "real_alpaca",
+      "code_path": "strategies/small_cap_catalyst.py (legacy strategies.py)",
+      "wired_into_scan": true
     },
-    "volatility_play": {
-      "name": "Volatility Play",
-      "status": "DISABLED \u2014 Sharpe 0.65 < 1.0 (real data)",
+    "pead": {
+      "name": "PEAD (Post-Earnings Announcement Drift)",
+      "status": "ACTIVE",
       "trades_today": 0,
       "wins_today": 0,
       "losses_today": 0,
       "pnl_today": 0.0,
-      "win_rate_all_time": 0.546,
-      "sharpe_backtest": 0.65,
-      "max_dd_backtest": -0.181,
-      "profit_factor": 1.49,
-      "data_source": "real_alpaca"
+      "win_rate_all_time": null,
+      "sharpe_backtest": 1.76,
+      "max_dd_backtest": -0.125,
+      "profit_factor": null,
+      "data_source": "real_alpaca",
+      "code_path": "strategies/pead.py",
+      "wired_into_scan": true,
+      "academic_source": "Bernard & Thomas (1989)"
     },
-    "macro_hedge": {
-      "name": "Macro Hedge",
-      "status": "DISABLED \u2014 Sharpe 0.43 < 1.0 (real data)",
+    "breakout_52w": {
+      "name": "52-Week High Breakout",
+      "status": "ACTIVE",
       "trades_today": 0,
       "wins_today": 0,
       "losses_today": 0,
       "pnl_today": 0.0,
-      "win_rate_all_time": 0.546,
-      "sharpe_backtest": 0.43,
-      "max_dd_backtest": -0.142,
-      "profit_factor": 1.14,
-      "data_source": "real_alpaca"
+      "win_rate_all_time": null,
+      "sharpe_backtest": 1.91,
+      "max_dd_backtest": -0.068,
+      "profit_factor": null,
+      "data_source": "real_alpaca",
+      "code_path": "strategies/breakout_52w.py",
+      "wired_into_scan": true,
+      "academic_source": "George & Hwang (2004)",
+      "note": "BEST IN PORTFOLIO"
+    },
+    "congress_follower": {
+      "name": "Congressional Trade Follower",
+      "status": "BLOCKED \u2014 needs QUIVER_TOKEN for trade-level data",
+      "trades_today": 0,
+      "wins_today": 0,
+      "losses_today": 0,
+      "pnl_today": 0.0,
+      "win_rate_all_time": null,
+      "sharpe_backtest": null,
+      "max_dd_backtest": null,
+      "profit_factor": null,
+      "data_source": "House Clerk eFD (filing metadata working) + needs Quiver/CapitolTrades for ticker+amount",
+      "code_path": "strategies/congress_follower.py + .claude/skills/wolf/scripts/congressional_scan.py",
+      "wired_into_scan": false,
+      "academic_source": "Ziobrowski et al. (2004, 2011)",
+      "note": "Filing metadata fetches successfully (8 PTRs in last 7d as of 2026-05-06). Ticker + notional require paid Quiver API or CapitolTrades scrape. Without it, signals cannot be generated per spec (\u2265$50K notional buy from track-record member).",
+      "blocker_action": "Either provision QUIVER_TOKEN env var or implement CapitolTrades.com scraper"
+    },
+    "cross_sectional_momentum": {
+      "name": "Cross-Sectional Momentum",
+      "status": "PENDING_BACKTEST",
+      "trades_today": 0,
+      "wins_today": 0,
+      "losses_today": 0,
+      "pnl_today": 0.0,
+      "win_rate_all_time": null,
+      "sharpe_backtest": null,
+      "max_dd_backtest": null,
+      "profit_factor": null,
+      "data_source": null,
+      "code_path": "strategies/cross_sectional_momentum.py",
+      "wired_into_scan": false,
+      "note": "Coded 2026-04-30. Needs backtest + paper-trade gate before activation."
+    },
+    "insider_cluster_form4": {
+      "name": "Insider Cluster (Form 4)",
+      "status": "PENDING_BACKTEST",
+      "trades_today": 0,
+      "wins_today": 0,
+      "losses_today": 0,
+      "pnl_today": 0.0,
+      "win_rate_all_time": null,
+      "sharpe_backtest": null,
+      "max_dd_backtest": null,
+      "profit_factor": null,
+      "data_source": "SEC EDGAR Form 4 filings",
+      "code_path": "strategies/insider_cluster_form4.py",
+      "wired_into_scan": false,
+      "note": "Coded 2026-04-30. Needs backtest + paper-trade gate before activation."
+    },
+    "mean_reversion_bb_rsi": {
+      "name": "Mean Reversion (BB + RSI)",
+      "status": "PENDING_BACKTEST",
+      "trades_today": 0,
+      "wins_today": 0,
+      "losses_today": 0,
+      "pnl_today": 0.0,
+      "win_rate_all_time": null,
+      "sharpe_backtest": null,
+      "max_dd_backtest": null,
+      "profit_factor": null,
+      "data_source": null,
+      "code_path": "strategies/mean_reversion_bb_rsi.py",
+      "wired_into_scan": false,
+      "note": "Coded 2026-04-30. Replaces legacy mean_reversion strategy (Sharpe -1.16). Needs backtest."
+    },
+    "overnight_gap_reversal": {
+      "name": "Overnight Gap Reversal",
+      "status": "PENDING_BACKTEST",
+      "trades_today": 0,
+      "wins_today": 0,
+      "losses_today": 0,
+      "pnl_today": 0.0,
+      "win_rate_all_time": null,
+      "sharpe_backtest": null,
+      "max_dd_backtest": null,
+      "profit_factor": null,
+      "data_source": null,
+      "code_path": "strategies/overnight_gap_reversal.py",
+      "wired_into_scan": false,
+      "note": "Coded 2026-04-30. Needs backtest + paper-trade gate before activation."
+    },
+    "sector_etf_rotation": {
+      "name": "Sector ETF Rotation",
+      "status": "PENDING_BACKTEST",
+      "trades_today": 0,
+      "wins_today": 0,
+      "losses_today": 0,
+      "pnl_today": 0.0,
+      "win_rate_all_time": null,
+      "sharpe_backtest": null,
+      "max_dd_backtest": null,
+      "profit_factor": null,
+      "data_source": null,
+      "code_path": "strategies/sector_etf_rotation.py",
+      "wired_into_scan": false,
+      "note": "Coded 2026-04-30. Replaces legacy sector_rotation (Sharpe 0.77). Needs backtest."
     }
   },
   "circuit_breaker": {
@@ -128,11 +235,11 @@
     "ready_for_monday": true
   },
   "wolf_capabilities": {
-    "capability_score": 49,
+    "capability_score": 51,
     "score_max": 100,
-    "day_on_mission": 27,
+    "day_on_mission": 29,
     "mission_start": "2026-04-08",
-    "streak_days": 27,
+    "streak_days": 29,
     "totals": {
       "scripts": 58,
       "core_modules": 14,
@@ -143,11 +250,11 @@
       "strategies_implemented": 3,
       "committee_personas": 12,
       "open_trades": 5,
-      "lessons_learned": 22,
-      "skills_acquired": 2,
+      "lessons_learned": 23,
+      "skills_acquired": 3,
       "backtests_run": 1,
-      "improvement_cycles": 2,
-      "streak_days": 6,
+      "improvement_cycles": 3,
+      "streak_days": 7,
       "free_data_sources": 5
     },
     "latest_improvement": {
@@ -156,6 +263,10 @@
       "date": "2026-04-13"
     },
     "recent_lessons": [
+      {
+        "date": "2026-05-05",
+        "lesson": "Indexed 61 lessons across 3 files. Local-only capability proves loop survives offline data sources."
+      },
       {
         "date": "2026-04-08",
         "lesson": "WOLF can now enumerate his own 14 scripts for self-aware planning."
