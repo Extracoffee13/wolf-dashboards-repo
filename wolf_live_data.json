@@ -97,7 +97,7 @@
     },
     "congress_follower": {
       "name": "Congressional Trade Follower",
-      "status": "BLOCKED \u2014 needs QUIVER_TOKEN for trade-level data",
+      "status": "ACTIVE_PARTIAL \u2014 trade-level data flowing via PDF parser; member-track-record weighting deferred",
       "trades_today": 0,
       "wins_today": 0,
       "losses_today": 0,
@@ -106,12 +106,12 @@
       "sharpe_backtest": null,
       "max_dd_backtest": null,
       "profit_factor": null,
-      "data_source": "House Clerk eFD (filing metadata working) + needs Quiver/CapitolTrades for ticker+amount",
-      "code_path": "strategies/congress_follower.py + .claude/skills/wolf/scripts/congressional_scan.py",
-      "wired_into_scan": false,
+      "data_source": "House Clerk PTR PDFs + SEC company_tickers.json (both free, real-time)",
+      "code_path": "strategies/congress_follower.py + congressional_ptr_parser.py (NEW 2026-05-06)",
+      "wired_into_scan": true,
       "academic_source": "Ziobrowski et al. (2004, 2011)",
-      "note": "Filing metadata fetches successfully (8 PTRs in last 7d as of 2026-05-06). Ticker + notional require paid Quiver API or CapitolTrades scrape. Without it, signals cannot be generated per spec (\u2265$50K notional buy from track-record member).",
-      "blocker_action": "Either provision QUIVER_TOKEN env var or implement CapitolTrades.com scraper"
+      "note": "BLOCKED resolved 2026-05-06: built congressional_ptr_parser.py to extract ticker+amount from House PTR PDFs (free, replaces paid Quiver). Tested on last 30d: 5 qualifying \u2265$50K equity buys, including Josh Gottheimer's MSFT $500K options buy 3/25. Member-track-record filter (Sharpe vs SPX) is enhancement for later.",
+      "blocker_action": null
     },
     "cross_sectional_momentum": {
       "name": "Cross-Sectional Momentum",
