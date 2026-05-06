@@ -410,6 +410,16 @@
   </div>
 
   <div class="card">
+    <div class="card-header">Rejected Signals (Last 10) <span class="badge badge-yellow" id="rejected-count-badge">—</span></div>
+    <div id="rejected-list" style="font-size:11px; color:#aaa; max-height:280px; overflow-y:auto;">
+      <div style="color:#666; padding:8px 0;">Loading…</div>
+    </div>
+    <div style="font-size:10px; color:#666; margin-top:8px; border-top:1px solid #2a2a3e; padding-top:6px;">
+      Filtered by R:R &lt; 1.5 · staleness gate · qty &lt; 1 · regime mismatch. Updated daily.
+    </div>
+  </div>
+
+  <div class="card">
     <div class="card-header">Approved Strategy Performance <span class="badge badge-green">6 ACTIVE</span></div>
     <div id="strategy-perf">
       <div class="strategy-row">
@@ -1879,6 +1889,30 @@ function loadLiveData() {
       }
 
       // Strategy P&L
+      // Rejected Signals viewer
+      if (d.daily_summary && d.daily_summary.rejected) {
+        const rj = d.daily_summary.rejected;
+        const badge = document.getElementById('rejected-count-badge');
+        if (badge) badge.textContent = (rj.count || 0) + ' today';
+        const list = document.getElementById('rejected-list');
+        if (list) {
+          const recent = rj.recent || [];
+          if (recent.length === 0) {
+            list.innerHTML = '<div style="color:#666; padding:8px 0;">No filtered signals today.</div>';
+          } else {
+            list.innerHTML = recent.map(r => {
+              const time = r.rejected_at ? new Date(r.rejected_at).toLocaleTimeString() : '';
+              return `<div style="padding:6px 8px; margin-bottom:4px; background:#1a1a2e; border-left:2px solid #facc15; border-radius:4px;">
+                <div style="display:flex; justify-content:space-between; font-size:11px;">
+                  <span><strong style="color:#fff;">${r.ticker || '?'}</strong> <span style="color:#666;">· ${r.strategy || '?'}</span></span>
+                  <span style="color:#888; font-size:10px;">${time}</span>
+                </div>
+                <div style="color:#facc15; font-size:10px; margin-top:2px;">${r.reason || 'unknown'}</div>
+              </div>`;
+            }).join('');
+          }
+        }
+      }
       // Today's Activity widget — populated from daily_summary block
       if (d.daily_summary) {
         const ds = d.daily_summary;
