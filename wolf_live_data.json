@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-05-06T16:45:32.785977",
+  "last_updated": "2026-05-06T16:50:35.521136",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103514.67,
+    "portfolio_value": 103520.5,
     "cash": 55977.02,
-    "buying_power": 159491.69,
-    "equity": 103514.67,
+    "buying_power": 159497.52,
+    "equity": 103520.5,
     "last_equity": 104163.17,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -648.5,
+    "amount": -642.67,
     "pct": -0.0062,
     "circuit_breaker_status": "green",
     "circuit_breaker_message": "CLEAR \u2014 Daily: -0.6% (buf: 2.4%) | Weekly: +0.2% (buf: 7.0%)"
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 314.3,
-      "market_value": 23886.8,
-      "unrealized_pl": 575.32,
-      "unrealized_plpc": 0.02468,
+      "current_price": 314.3767,
+      "market_value": 23892.6292,
+      "unrealized_pl": 581.1492,
+      "unrealized_plpc": 0.02493,
       "cost_basis": 23311.48
     },
     {
@@ -297,41 +297,5 @@
       "consecutive_profitable_weeks": 4,
       "max_drawdown_pct": 5.0
     }
-  },
-  "daily_summary": {
-    "date": "2026-05-06",
-    "account": {
-      "portfolio_value": 103514.67,
-      "cash": 55977.02,
-      "buying_power": 159491.69,
-      "positions": 2,
-      "todays_trades": 0,
-      "daily_pnl_amount": -648.5,
-      "daily_pnl_pct": -0.0062,
-      "circuit_breaker": "green"
-    },
-    "log": {
-      "task_fires": {
-        "wolf-crypto-247": 2,
-        "wolf-midday-rescan": 1,
-        "wolf-daily-summary": 2,
-        "wolf-gate-status": 1
-      },
-      "errors": 0
-    },
-    "rejected": {
-      "count": 0,
-      "reasons": {},
-      "recent": []
-    },
-    "committee": {
-      "runs": 5,
-      "tickers_voted": 10,
-      "verdicts": {
-        "bullish": 2,
-        "hold": 8
-      }
-    }
-  },
-  "daily_summary_updated_at": "2026-05-06T16:50:01.093440"
+  }
 }
