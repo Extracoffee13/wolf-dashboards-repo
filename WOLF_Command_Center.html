@@ -379,6 +379,37 @@
   </div>
 
   <div class="card">
+    <div class="card-header">Today's Activity <span class="badge badge-green" id="activity-status">LIVE</span></div>
+    <div id="activity-summary" style="padding:8px 0;">
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:14px;">
+        <div>
+          <div style="font-size:10px; color:#888; text-transform:uppercase; letter-spacing:1px;">Task Fires</div>
+          <div style="font-size:24px; font-weight:700; color:#4ade80;" id="activity-fires">—</div>
+          <div style="font-size:10px; color:#666;" id="activity-fires-detail">scanner · committee · summary</div>
+        </div>
+        <div>
+          <div style="font-size:10px; color:#888; text-transform:uppercase; letter-spacing:1px;">Committee Runs</div>
+          <div style="font-size:24px; font-weight:700; color:#4ade80;" id="activity-committee">—</div>
+          <div style="font-size:10px; color:#666;" id="activity-committee-detail">tickers voted</div>
+        </div>
+        <div>
+          <div style="font-size:10px; color:#888; text-transform:uppercase; letter-spacing:1px;">Filtered Out</div>
+          <div style="font-size:24px; font-weight:700; color:#facc15;" id="activity-rejected">—</div>
+          <div style="font-size:10px; color:#666;" id="activity-rejected-detail">R:R · staleness · qty</div>
+        </div>
+        <div>
+          <div style="font-size:10px; color:#888; text-transform:uppercase; letter-spacing:1px;">Errors</div>
+          <div style="font-size:24px; font-weight:700; color:#f87171;" id="activity-errors">—</div>
+          <div style="font-size:10px; color:#666;" id="activity-errors-detail">log lines</div>
+        </div>
+      </div>
+      <div style="font-size:10px; color:#666; margin-top:12px; border-top:1px solid #2a2a3e; padding-top:8px;" id="activity-updated">
+        Auto-refreshed at 4:50 PM ET via wolf_daily_summary.py
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
     <div class="card-header">Approved Strategy Performance <span class="badge badge-green">6 ACTIVE</span></div>
     <div id="strategy-perf">
       <div class="strategy-row">
@@ -1848,6 +1879,28 @@ function loadLiveData() {
       }
 
       // Strategy P&L
+      // Today's Activity widget — populated from daily_summary block
+      if (d.daily_summary) {
+        const ds = d.daily_summary;
+        const fires = ds.log && ds.log.task_fires ? ds.log.task_fires : {};
+        const totalFires = Object.values(fires).reduce((a,b) => a + (Number(b)||0), 0);
+        const fireDetail = Object.entries(fires).map(([k,v]) => `${k.replace('wolf-','')}×${v}`).join(' · ') || '—';
+        const cm = ds.committee || {};
+        const rj = ds.rejected || {};
+        const errs = (ds.log && ds.log.errors) || 0;
+        const setText = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
+        setText('activity-fires', totalFires);
+        setText('activity-fires-detail', fireDetail);
+        setText('activity-committee', cm.runs || 0);
+        setText('activity-committee-detail', `${cm.tickers_voted || 0} tickers voted`);
+        setText('activity-rejected', rj.count || 0);
+        const reasonText = Object.entries(rj.reasons || {}).map(([k,v]) => `${k}×${v}`).join(' · ') || '—';
+        setText('activity-rejected-detail', reasonText);
+        setText('activity-errors', errs);
+        if (d.daily_summary_updated_at) {
+          setText('activity-updated', `Last updated: ${new Date(d.daily_summary_updated_at).toLocaleString()}`);
+        }
+      }
       if (d.strategy_performance) {
         const sp = d.strategy_performance;
         if (sp.small_cap_catalyst) document.getElementById('scc-pnl').textContent = fmt$(sp.small_cap_catalyst.pnl_today||0);

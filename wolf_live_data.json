@@ -297,5 +297,38 @@
       "consecutive_profitable_weeks": 4,
       "max_drawdown_pct": 5.0
     }
-  }
+  },
+  "daily_summary": {
+    "date": "2026-05-06",
+    "account": {
+      "portfolio_value": 103603.83,
+      "cash": 55977.02,
+      "buying_power": 159580.85,
+      "positions": 2,
+      "todays_trades": 0,
+      "daily_pnl_amount": -559.34,
+      "daily_pnl_pct": -0.0054,
+      "circuit_breaker": "green"
+    },
+    "log": {
+      "task_fires": {
+        "wolf-crypto-247": 2,
+        "wolf-midday-rescan": 1
+      },
+      "errors": 0
+    },
+    "rejected": {
+      "count": 0,
+      "reasons": {}
+    },
+    "committee": {
+      "runs": 5,
+      "tickers_voted": 10,
+      "verdicts": {
+        "bullish": 2,
+        "hold": 8
+      }
+    }
+  },
+  "daily_summary_updated_at": "2026-05-06T16:14:05.587351"
 }
