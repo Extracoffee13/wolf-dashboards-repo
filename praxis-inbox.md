@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Anthropic Finance Agent Templates (Score 5, published 2026-05-05)
+lesson: High-relevance skills are now shipping as vertically-targeted agent template bundles from Anthropic directly (finance, legal, ops), while the long-tail of infrastructure tooling (skill-to-mcp, skillforge-mcp) is concentrating on PyPI rather than npm or GitHub topics — monitor PyPI keyword:mcp weekly
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
