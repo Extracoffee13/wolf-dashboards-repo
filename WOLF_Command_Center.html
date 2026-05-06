@@ -1351,22 +1351,25 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </div>
 
-<!-- Validated Strategies (post-backtest 2026-04-07) -->
+<!-- Validated Strategies (post-backtest 2026-04-07 + 2026-05-06 expansion) -->
 <div style="padding: 0 20px 20px;">
   <div class="card full-width">
     <div class="card-header">
-      Validated Strategies — Real Backtest 2026-04-07
-      <span class="badge badge-green">3 APPROVED</span>
-      <span class="badge badge-red" style="margin-left:6px;">8 DISABLED</span>
+      Validated Strategies — Real Backtest (Apr 7 + May 6 expansion)
+      <span class="badge badge-green">6 APPROVED</span>
+      <span class="badge badge-yellow" style="margin-left:6px;">1 MARGINAL</span>
+      <span class="badge badge-red" style="margin-left:6px;">2 DISABLED</span>
+      <span class="badge" style="background:#444; color:#aaa; margin-left:6px;">2 RETIRED</span>
     </div>
     <div style="font-size:11px; color:#888; margin-bottom:14px;">
       Backtest period: 2024-04-07 → 2026-04-07 &bull; Data: Real Alpaca IEX &bull; Criteria: Sharpe &gt; 1.0 AND Max DD &lt; 25% &bull;
       <a href="../Agent Wolf/backtest/results/real_backtest_2026-04-07.md" style="color:#4ade80; text-decoration:none;">Phase 2 Report</a>
-      &bull; <a href="../Agent Wolf/backtest/results/new_strategies_2026-04-07.md" style="color:#4ade80; text-decoration:none;">New Strategies Report</a>
-      &bull; Last run: <strong style="color:#4ade80;">April 7, 2026</strong>
+      &bull; <a href="../Agent Wolf/backtest/results/new_strategies_2026-04-07.md" style="color:#4ade80; text-decoration:none;">New Strategies (Apr 7)</a>
+      &bull; <a href="../Agent Wolf/backtest/results/april30_strategies_2026-05-06.md" style="color:#4ade80; text-decoration:none;">April-30 Strategies (May 6)</a>
+      &bull; Last expansion: <strong style="color:#4ade80;">May 6, 2026</strong>
     </div>
 
-    <!-- APPROVED: 3 green cards -->
+    <!-- APPROVED: 6 green cards -->
     <div style="font-size:10px; color:#4ade80; text-transform:uppercase; letter-spacing:2px; margin-bottom:10px; font-weight:700;">&#9989; Approved — Trade Enabled</div>
     <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:12px; margin-bottom:20px;">
 
@@ -1400,91 +1403,88 @@ document.addEventListener('DOMContentLoaded', function() {
         <div style="font-size:11px; color:#666;">George &amp; Hwang (2004). Best Sharpe in portfolio. Win rate 60.3%. Approved 2026-04-07.</div>
       </div>
 
+      <div style="background:#0d1f0d; border:1px solid #2a5a2a; border-radius:10px; padding:16px; box-shadow:0 0 12px rgba(74,222,128,0.06);">
+        <div style="color:#4ade80; font-size:14px; font-weight:900; margin-bottom:6px;">Insider Cluster (Form 4) <span style="font-size:10px; color:#facc15; font-weight:600;">NEW 2026-05-06</span></div>
+        <div style="display:flex; gap:16px; margin-bottom:8px;">
+          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Sharpe</div><div style="color:#4ade80; font-size:18px; font-weight:900;">1.86</div></div>
+          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Max DD</div><div style="color:#4ade80; font-size:18px; font-weight:900;">-21.6%</div></div>
+          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Trades / 2yr</div><div style="color:#4ade80; font-size:18px; font-weight:900;">2,663</div></div>
+        </div>
+        <div style="font-size:11px; color:#666;">Cohen, Malloy, Pomorski (2012). Highest signal volume — 5+/day expected. Total return +232.8%.</div>
+      </div>
+
+      <div style="background:#0d1f0d; border:1px solid #2a5a2a; border-radius:10px; padding:16px; box-shadow:0 0 12px rgba(74,222,128,0.06);">
+        <div style="color:#4ade80; font-size:14px; font-weight:900; margin-bottom:6px;">Sector ETF Rotation <span style="font-size:10px; color:#facc15; font-weight:600;">NEW 2026-05-06</span></div>
+        <div style="display:flex; gap:16px; margin-bottom:8px;">
+          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Sharpe</div><div style="color:#4ade80; font-size:18px; font-weight:900;">1.69</div></div>
+          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Max DD</div><div style="color:#4ade80; font-size:18px; font-weight:900;">-7.1%</div></div>
+          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Ann. Return</div><div style="color:#4ade80; font-size:18px; font-weight:900;">+36.6%</div></div>
+        </div>
+        <div style="font-size:11px; color:#666;">Faber 10-month MA momentum (adapted to 20d). Top-3 of 11 SPDR sectors, weekly Friday rebalance.</div>
+      </div>
+
+      <div style="background:#0d1f0d; border:1px solid #2a5a2a; border-radius:10px; padding:16px; box-shadow:0 0 12px rgba(74,222,128,0.06);">
+        <div style="color:#4ade80; font-size:14px; font-weight:900; margin-bottom:6px;">Congress Follower <span style="font-size:10px; color:#facc15; font-weight:600;">UNBLOCKED 2026-05-06</span></div>
+        <div style="display:flex; gap:16px; margin-bottom:8px;">
+          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Status</div><div style="color:#4ade80; font-size:14px; font-weight:900;">ACTIVE_PARTIAL</div></div>
+          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Data Source</div><div style="color:#4ade80; font-size:14px; font-weight:900;">House PTR + SEC</div></div>
+        </div>
+        <div style="font-size:11px; color:#666;">Ziobrowski et al. (2004, 2011). PTR-PDF parser ships free; replaces $50/mo Quiver. 5 qualifying ≥$50K equity buys in last 30d.</div>
+      </div>
+
     </div>
 
-    <!-- DISABLED: 8 red/dim cards -->
-    <div style="font-size:10px; color:#f87171; text-transform:uppercase; letter-spacing:2px; margin-bottom:10px; font-weight:700;">&#10060; Disabled — Do Not Trade Until Rebuilt</div>
-    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:10px;">
+    <!-- MARGINAL: 1 yellow card -->
+    <div style="font-size:10px; color:#facc15; text-transform:uppercase; letter-spacing:2px; margin-bottom:10px; font-weight:700;">&#9888; Marginal — Below Threshold, Awaiting Redesign</div>
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:10px; margin-bottom:20px;">
 
-      <div style="background:#1a0d0d; border:1px solid #4a1a1a; border-radius:10px; padding:14px; opacity:0.85;">
-        <div style="color:#f87171; font-size:13px; font-weight:700; margin-bottom:4px;">Cross-Sectional Momentum</div>
+      <div style="background:#1f1a0d; border:1px solid #5a4a2a; border-radius:10px; padding:14px; opacity:0.9;">
+        <div style="color:#facc15; font-size:13px; font-weight:700; margin-bottom:4px;">Cross-Sectional Momentum</div>
         <div style="display:flex; gap:12px; margin-bottom:6px;">
-          <div><div style="color:#555; font-size:10px;">Sharpe</div><div style="color:#f87171; font-size:14px; font-weight:700;">1.00</div></div>
+          <div><div style="color:#555; font-size:10px;">Sharpe</div><div style="color:#facc15; font-size:14px; font-weight:700;">1.00</div></div>
           <div><div style="color:#555; font-size:10px;">Max DD</div><div style="color:#ccc; font-size:14px; font-weight:700;">-13.8%</div></div>
         </div>
-        <div style="font-size:10px; color:#f87171; background:#2a0d0d; padding:4px 8px; border-radius:4px;">Sharpe exactly 1.00 — just below &gt;1.0 threshold. Jegadeesh-Titman momentum. Re-test after universe expansion.</div>
+        <div style="font-size:10px; color:#facc15; background:#2a200d; padding:4px 8px; border-radius:4px;">Sharpe exactly 1.00 — just at the threshold. Jegadeesh-Titman momentum. Re-test after universe expansion.</div>
+      </div>
+
+    </div>
+
+    <!-- DISABLED: 2 red cards (real failures) -->
+    <div style="font-size:10px; color:#f87171; text-transform:uppercase; letter-spacing:2px; margin-bottom:10px; font-weight:700;">&#10060; Disabled — Real Backtest Failures (do not deploy)</div>
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:10px; margin-bottom:20px;">
+
+      <div style="background:#1a0d0d; border:1px solid #4a1a1a; border-radius:10px; padding:14px; opacity:0.85;">
+        <div style="color:#f87171; font-size:13px; font-weight:700; margin-bottom:4px;">Mean Reversion (BB+RSI) <span style="font-size:9px; color:#facc15;">NEW 2026-05-06</span></div>
+        <div style="display:flex; gap:12px; margin-bottom:6px;">
+          <div><div style="color:#555; font-size:10px;">Sharpe</div><div style="color:#ff4444; font-size:14px; font-weight:700;">-1.63</div></div>
+          <div><div style="color:#555; font-size:10px;">Max DD</div><div style="color:#ff4444; font-size:14px; font-weight:700;">-78.9%</div></div>
+        </div>
+        <div style="font-size:10px; color:#ff4444; background:#3a0505; padding:4px 8px; border-radius:4px; font-weight:700;">2,383 trades / 2yr blew up to -78.9%. Strategy fights trend. Possible regime-filter fix (only trade VIX&lt;20).</div>
       </div>
 
       <div style="background:#1a0d0d; border:1px solid #4a1a1a; border-radius:10px; padding:14px; opacity:0.85;">
-        <div style="color:#f87171; font-size:13px; font-weight:700; margin-bottom:4px;">Volatility Play</div>
+        <div style="color:#f87171; font-size:13px; font-weight:700; margin-bottom:4px;">Overnight Gap Reversal <span style="font-size:9px; color:#facc15;">NEW 2026-05-06</span></div>
         <div style="display:flex; gap:12px; margin-bottom:6px;">
-          <div><div style="color:#555; font-size:10px;">Sharpe</div><div style="color:#f87171; font-size:14px; font-weight:700;">0.65</div></div>
-          <div><div style="color:#555; font-size:10px;">Max DD</div><div style="color:#f87171; font-size:14px; font-weight:700;">-18.1%</div></div>
+          <div><div style="color:#555; font-size:10px;">Sharpe</div><div style="color:#ff4444; font-size:14px; font-weight:700;">-4.85</div></div>
+          <div><div style="color:#555; font-size:10px;">Max DD</div><div style="color:#ff4444; font-size:14px; font-weight:700;">-100%</div></div>
         </div>
-        <div style="font-size:10px; color:#f87171; background:#2a0d0d; padding:4px 8px; border-radius:4px;">Was approved under synthetic data. Real data: Sharpe 0.65. 4 tuned variants also failed. Phase 3 redesign needed.</div>
+        <div style="font-size:10px; color:#ff4444; background:#3a0505; padding:4px 8px; border-radius:4px; font-weight:700;">Total wipeout. Edge thesis appears wrong on liquid mid-large caps. DO NOT REVIVE.</div>
       </div>
 
-      <div style="background:#1a0d0d; border:1px solid #4a1a1a; border-radius:10px; padding:14px; opacity:0.85;">
-        <div style="color:#f87171; font-size:13px; font-weight:700; margin-bottom:4px;">Macro Hedge</div>
-        <div style="display:flex; gap:12px; margin-bottom:6px;">
-          <div><div style="color:#555; font-size:10px;">Sharpe</div><div style="color:#f87171; font-size:14px; font-weight:700;">0.43</div></div>
-          <div><div style="color:#555; font-size:10px;">Max DD</div><div style="color:#f87171; font-size:14px; font-weight:700;">-14.2%</div></div>
-        </div>
-        <div style="font-size:10px; color:#f87171; background:#2a0d0d; padding:4px 8px; border-radius:4px;">Was approved under synthetic data. Real data: Sharpe 0.43. 4 tuned variants also failed. Needs yield curve + credit spread data.</div>
+    </div>
+
+    <!-- RETIRED: 2 grey cards (no .py implementation) -->
+    <div style="font-size:10px; color:#888; text-transform:uppercase; letter-spacing:2px; margin-bottom:10px; font-weight:700;">&#128465;&#65039; Retired — No Implementation</div>
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:10px;">
+
+      <div style="background:#1a1a1a; border:1px solid #333; border-radius:10px; padding:14px; opacity:0.6;">
+        <div style="color:#888; font-size:13px; font-weight:700; margin-bottom:4px;">Volatility Play</div>
+        <div style="font-size:10px; color:#666;">Retired 2026-05-06. Sharpe 0.65 in real backtest, no .py implementation in strategies/.</div>
       </div>
 
-      <div style="background:#1a0d0d; border:1px solid #4a1a1a; border-radius:10px; padding:14px; opacity:0.85;">
-        <div style="color:#f87171; font-size:13px; font-weight:700; margin-bottom:4px;">Crypto Momentum</div>
-        <div style="display:flex; gap:12px; margin-bottom:6px;">
-          <div><div style="color:#555; font-size:10px;">Sharpe</div><div style="color:#ccc; font-size:14px; font-weight:700;">2.67</div></div>
-          <div><div style="color:#555; font-size:10px;">Max DD</div><div style="color:#f87171; font-size:14px; font-weight:700;">-28.8%</div></div>
-        </div>
-        <div style="font-size:10px; color:#f87171; background:#2a0d0d; padding:4px 8px; border-radius:4px;">DD exceeds 25% limit. Needs position sizing controls.</div>
-      </div>
-
-      <div style="background:#1a0d0d; border:1px solid #4a1a1a; border-radius:10px; padding:14px; opacity:0.85;">
-        <div style="color:#f87171; font-size:13px; font-weight:700; margin-bottom:4px;">Momentum (SMA)</div>
-        <div style="display:flex; gap:12px; margin-bottom:6px;">
-          <div><div style="color:#555; font-size:10px;">Sharpe</div><div style="color:#f87171; font-size:14px; font-weight:700;">0.67</div></div>
-          <div><div style="color:#555; font-size:10px;">Max DD</div><div style="color:#ccc; font-size:14px; font-weight:700;">-13.7%</div></div>
-        </div>
-        <div style="font-size:10px; color:#f87171; background:#2a0d0d; padding:4px 8px; border-radius:4px;">Sharpe &lt; 1.0. Underperforming. Needs parameter tuning.</div>
-      </div>
-
-      <div style="background:#1a0d0d; border:1px solid #4a1a1a; border-radius:10px; padding:14px; opacity:0.85;">
-        <div style="color:#f87171; font-size:13px; font-weight:700; margin-bottom:4px;">Sector Rotation</div>
-        <div style="display:flex; gap:12px; margin-bottom:6px;">
-          <div><div style="color:#555; font-size:10px;">Sharpe</div><div style="color:#f87171; font-size:14px; font-weight:700;">0.35</div></div>
-          <div><div style="color:#555; font-size:10px;">Max DD</div><div style="color:#ccc; font-size:14px; font-weight:700;">-10.6%</div></div>
-        </div>
-        <div style="font-size:10px; color:#f87171; background:#2a0d0d; padding:4px 8px; border-radius:4px;">Sharpe &lt; 1.0. Low edge. Combine with macro signals.</div>
-      </div>
-
-      <div style="background:#1a0d0d; border:1px solid #4a1a1a; border-radius:10px; padding:14px; opacity:0.85;">
-        <div style="color:#f87171; font-size:13px; font-weight:700; margin-bottom:4px;">AI/Tech Theme</div>
-        <div style="display:flex; gap:12px; margin-bottom:6px;">
-          <div><div style="color:#555; font-size:10px;">Sharpe</div><div style="color:#f87171; font-size:14px; font-weight:700;">0.32</div></div>
-          <div><div style="color:#555; font-size:10px;">Max DD</div><div style="color:#f87171; font-size:14px; font-weight:700;">-22.3%</div></div>
-        </div>
-        <div style="font-size:10px; color:#f87171; background:#2a0d0d; padding:4px 8px; border-radius:4px;">Weak Sharpe, high drawdown. Needs significant refinement.</div>
-      </div>
-
-      <div style="background:#1a0d0d; border:1px solid #4a1a1a; border-radius:10px; padding:14px; opacity:0.85;">
-        <div style="color:#f87171; font-size:13px; font-weight:700; margin-bottom:4px;">Earnings Drift</div>
-        <div style="display:flex; gap:12px; margin-bottom:6px;">
-          <div><div style="color:#555; font-size:10px;">Sharpe</div><div style="color:#f87171; font-size:14px; font-weight:700;">-0.55</div></div>
-          <div><div style="color:#555; font-size:10px;">Max DD</div><div style="color:#ccc; font-size:14px; font-weight:700;">-6.2%</div></div>
-        </div>
-        <div style="font-size:10px; color:#f87171; background:#2a0d0d; padding:4px 8px; border-radius:4px;">Negative Sharpe — loses money. Fundamental revision required.</div>
-      </div>
-
-      <div style="background:#2a0505; border:2px solid #6a1a1a; border-radius:10px; padding:14px;">
-        <div style="color:#ff4444; font-size:13px; font-weight:900; margin-bottom:4px;">&#9888; Mean Reversion</div>
-        <div style="display:flex; gap:12px; margin-bottom:6px;">
-          <div><div style="color:#555; font-size:10px;">Sharpe</div><div style="color:#ff4444; font-size:14px; font-weight:700;">-0.58</div></div>
-          <div><div style="color:#555; font-size:10px;">Max DD</div><div style="color:#ff4444; font-size:14px; font-weight:700;">-35.9%</div></div>
-        </div>
-        <div style="font-size:10px; color:#ff4444; background:#3a0505; padding:4px 8px; border-radius:4px; font-weight:700;">SUSPEND IMMEDIATELY. Fails both Sharpe AND drawdown criteria.</div>
+      <div style="background:#1a1a1a; border:1px solid #333; border-radius:10px; padding:14px; opacity:0.6;">
+        <div style="color:#888; font-size:13px; font-weight:700; margin-bottom:4px;">Macro Hedge</div>
+        <div style="font-size:10px; color:#666;">Retired 2026-05-06. Sharpe 0.43 in real backtest, no .py implementation in strategies/.</div>
       </div>
 
     </div>
