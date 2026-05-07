@@ -340,5 +340,69 @@
       "consecutive_profitable_weeks": 4,
       "max_drawdown_pct": 5.0
     }
+  },
+  "daily_summary": {
+    "date": "2026-05-07",
+    "account": {
+      "portfolio_value": 103045.46,
+      "cash": 3695.24,
+      "buying_power": 106740.7,
+      "positions": 4,
+      "todays_trades": 2,
+      "daily_pnl_amount": -518.96,
+      "daily_pnl_pct": -0.005,
+      "circuit_breaker": "green"
+    },
+    "log": {
+      "task_fires": {
+        "wolf-crypto-247": 5,
+        "wolf-market-open-exec": 1,
+        "wolf-midday-rescan": 1,
+        "wolf-gate-status": 1,
+        "wolf-daily-summary": 1
+      },
+      "errors": 0
+    },
+    "rejected": {
+      "count": 2,
+      "reasons": {
+        "R:R 1.4 < 1.5": 1,
+        "R:R 0.9 < 1.5": 1
+      },
+      "recent": [
+        {
+          "ticker": "TSLA",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 1.4 < 1.5",
+          "rejected_at": "2026-05-07T11:30:59.663670",
+          "risk_reward": 1.4,
+          "confidence": 4
+        },
+        {
+          "ticker": "V",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 0.9 < 1.5",
+          "rejected_at": "2026-05-07T11:30:59.663708",
+          "risk_reward": 0.9,
+          "confidence": 4
+        }
+      ]
+    },
+    "committee": {
+      "runs": 3,
+      "tickers_voted": 12,
+      "verdicts": {
+        "buy": 1,
+        "hold": 9,
+        "bullish": 2
+      }
+    }
+  },
+  "daily_summary_updated_at": "2026-05-07T16:50:05.628955",
+  "today_signals": {
+    "as_of": "2026-05-07 16:50:05",
+    "last_task": "EOD recap",
+    "count": 0,
+    "signals": []
   }
 }
