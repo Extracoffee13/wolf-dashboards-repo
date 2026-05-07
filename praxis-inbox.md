@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-ai
+decision: scanned anthropic + frontier labs + MCP registries + arxiv
+outcome: Anthropic Memory for Managed Agents (public beta) is the top finding — agents can now persist cross-session memories via filesystem, directly applicable to eliminating WOLF/PRAXIS cold-start overhead each session
+lesson: The agent ecosystem is consolidating around persistent memory and managed infrastructure (Google hosted MCP, Anthropic Managed Agents memory) — the competitive moat is shifting from model capability to how well agents retain and act on accumulated organizational context
+tags: ai,agent,ecosystem,construct
+confidence: 0.6
+~~~
