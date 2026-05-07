@@ -419,6 +419,21 @@
     </div>
   </div>
 
+  <!-- Today's Signals — populated by post_today_update in wolf-task-runner.sh -->
+  <div class="card" style="margin-bottom:0;">
+    <div class="card-header">
+      Today's Signals
+      <span class="badge badge-blue" id="today-signals-count">0 SIGNALS</span>
+      <span style="float:right; font-size:10px; color:#888; font-weight:400;" id="today-signals-stamp">—</span>
+    </div>
+    <div id="today-signals-body">
+      <div class="positions-empty">Awaiting next launchd fire — refreshes after every WOLF task.</div>
+    </div>
+    <div style="font-size:10px; color:#666; margin-top:8px; border-top:1px solid #2a2a3e; padding-top:6px;">
+      Auto-published by launchd after every market-open / midday / crypto / EOD fire. Same payload mirrored to iCloud Drive (Hartley Command/WOLF Today.md) and posted as a macOS notification banner.
+    </div>
+  </div>
+
   <div class="card">
     <div class="card-header">Approved Strategy Performance <span class="badge badge-green">6 ACTIVE</span></div>
     <div id="strategy-perf">
