@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-06T23:29:12.511528",
+  "last_updated": "2026-05-06T23:34:14.929255",
   "update_interval_seconds": 300,
   "account": {
     "portfolio_value": 103546.36,
@@ -12,10 +12,10 @@
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 15.68,
-    "pct": 0.0002,
+    "amount": -616.81,
+    "pct": -0.0059,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.0% (buf: 3.0%) | Weekly: +0.2% (buf: 7.0%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: -0.6% (buf: 2.4%) | Weekly: +0.2% (buf: 7.0%)"
   },
   "weekly_pnl": {
     "amount": 185.7,
@@ -219,7 +219,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: +0.0% (buf: 3.0%) | Weekly: +0.2% (buf: 7.0%)"
+    "message": "CLEAR \u2014 Daily: -0.6% (buf: 2.4%) | Weekly: +0.2% (buf: 7.0%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
