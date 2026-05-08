@@ -319,5 +319,114 @@
       "consecutive_profitable_weeks": 4,
       "max_drawdown_pct": 5.0
     }
+  },
+  "daily_summary": {
+    "date": "2026-05-08",
+    "account": {
+      "portfolio_value": 102603.73,
+      "cash": 3695.24,
+      "buying_power": 106298.97,
+      "positions": 4,
+      "todays_trades": 0,
+      "daily_pnl_amount": -321.79,
+      "daily_pnl_pct": -0.0031,
+      "circuit_breaker": "red"
+    },
+    "log": {
+      "task_fires": {
+        "wolf-crypto-247": 3,
+        "wolf-market-open-exec": 1,
+        "wolf-midday-rescan": 1,
+        "wolf-gate-status": 1,
+        "wolf-daily-summary": 1
+      },
+      "errors": 0
+    },
+    "rejected": {
+      "count": 2,
+      "reasons": {
+        "R:R 0.8 < 1.5": 1,
+        "R:R 0.7 < 1.5": 1
+      },
+      "recent": [
+        {
+          "ticker": "XLK",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 0.8 < 1.5",
+          "rejected_at": "2026-05-08T11:30:40.856509",
+          "risk_reward": 0.8,
+          "confidence": 6
+        },
+        {
+          "ticker": "XLF",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 0.7 < 1.5",
+          "rejected_at": "2026-05-08T11:30:40.856588",
+          "risk_reward": 0.7,
+          "confidence": 5
+        }
+      ]
+    },
+    "committee": {
+      "runs": 1,
+      "tickers_voted": 10,
+      "verdicts": {
+        "hold": 9,
+        "buy": 1
+      }
+    }
+  },
+  "daily_summary_updated_at": "2026-05-08T16:50:02.536721",
+  "today_signals": {
+    "as_of": "2026-05-08 16:50:02",
+    "last_task": "EOD recap",
+    "count": 3,
+    "signals": [
+      {
+        "ticker": "ETH/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 8,
+        "entry": 2979.836,
+        "stop": 2924.499821428571,
+        "target": 3090.5083571428568,
+        "symbol": "ETH/USD",
+        "price": 2979.836,
+        "rsi": 48.8,
+        "rvol": 5.68,
+        "atr": 36.89,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "DOGE/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 6,
+        "entry": 0.134367,
+        "stop": 0.131605125,
+        "target": 0.13989074999999998,
+        "symbol": "DOGE/USD",
+        "price": 0.134367,
+        "rsi": 65.1,
+        "rvol": 2.47,
+        "atr": 0.0,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "UNI/USD",
+        "direction": "SHORT",
+        "strategy": "Overbought Fade",
+        "confidence": 4,
+        "entry": 6.26,
+        "stop": 6.881037481214285,
+        "target": 5.335388,
+        "symbol": "UNI/USD",
+        "price": 6.26,
+        "rsi": 76.5,
+        "rvol": 0.76,
+        "atr": 0.31,
+        "risk_reward": 1.5
+      }
+    ]
   }
 }
