@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-05-08T05:55:35.944730",
+  "last_updated": "2026-05-08T06:00:38.520038",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103280.71,
+    "portfolio_value": 103307.61,
     "cash": 3695.24,
-    "buying_power": 106975.95,
-    "equity": 103280.71,
+    "buying_power": 107002.85,
+    "equity": 103307.61,
     "last_equity": 102925.52,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 355.19,
-    "pct": 0.0035,
+    "amount": 382.09,
+    "pct": 0.0037,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.3% (buf: 3.0%) | Weekly: -1.5% (buf: 5.5%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.4% (buf: 3.0%) | Weekly: -1.5% (buf: 5.5%)"
   },
   "weekly_pnl": {
     "amount": -1611.73,
@@ -49,10 +49,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 213.53,
-      "market_value": 26477.72,
-      "unrealized_pl": 761.36,
-      "unrealized_plpc": 0.02961,
+      "current_price": 213.68,
+      "market_value": 26496.32,
+      "unrealized_pl": 779.96,
+      "unrealized_plpc": 0.03033,
       "cost_basis": 25716.36
     },
     {
@@ -60,10 +60,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 55.93,
-      "market_value": 23210.95,
-      "unrealized_pl": -198.650125,
-      "unrealized_plpc": -0.00849,
+      "current_price": 55.95,
+      "market_value": 23219.25,
+      "unrealized_pl": -190.350125,
+      "unrealized_plpc": -0.00813,
       "cost_basis": 23409.600125
     }
   ],
@@ -241,7 +241,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: +0.3% (buf: 3.0%) | Weekly: -1.5% (buf: 5.5%)"
+    "message": "CLEAR \u2014 Daily: +0.4% (buf: 3.0%) | Weekly: -1.5% (buf: 5.5%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
@@ -319,57 +319,5 @@
       "consecutive_profitable_weeks": 4,
       "max_drawdown_pct": 5.0
     }
-  },
-  "today_signals": {
-    "as_of": "2026-05-08 06:00:11",
-    "last_task": "Crypto sweep",
-    "count": 3,
-    "signals": [
-      {
-        "ticker": "ETH/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 8,
-        "entry": 2979.836,
-        "stop": 2924.499821428571,
-        "target": 3090.5083571428568,
-        "symbol": "ETH/USD",
-        "price": 2979.836,
-        "rsi": 48.8,
-        "rvol": 5.68,
-        "atr": 36.89,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "DOGE/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 6,
-        "entry": 0.134367,
-        "stop": 0.131605125,
-        "target": 0.13989074999999998,
-        "symbol": "DOGE/USD",
-        "price": 0.134367,
-        "rsi": 65.1,
-        "rvol": 2.47,
-        "atr": 0.0,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "UNI/USD",
-        "direction": "SHORT",
-        "strategy": "Overbought Fade",
-        "confidence": 4,
-        "entry": 6.26,
-        "stop": 6.881037481214285,
-        "target": 5.335388,
-        "symbol": "UNI/USD",
-        "price": 6.26,
-        "rsi": 76.5,
-        "rvol": 0.76,
-        "atr": 0.31,
-        "risk_reward": 1.5
-      }
-    ]
   }
 }
