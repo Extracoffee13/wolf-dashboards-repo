@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-05-08T03:34:20.837463",
+  "last_updated": "2026-05-08T03:39:23.361336",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103199.62,
+    "portfolio_value": 103226.43,
     "cash": 3695.24,
-    "buying_power": 106894.86,
-    "equity": 103199.62,
+    "buying_power": 106921.67,
+    "equity": 103226.43,
     "last_equity": 103564.42,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -364.8,
-    "pct": -0.0035,
+    "amount": -337.99,
+    "pct": -0.0033,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: -0.4% (buf: 2.6%) | Weekly: -0.9% (buf: 6.1%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: -0.3% (buf: 2.7%) | Weekly: -0.9% (buf: 6.1%)"
   },
   "weekly_pnl": {
     "amount": -972.83,
@@ -38,10 +38,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 421.19,
-      "market_value": 26534.97,
-      "unrealized_pl": -30.449979,
-      "unrealized_plpc": -0.00115,
+      "current_price": 421.34,
+      "market_value": 26544.42,
+      "unrealized_pl": -20.999979,
+      "unrealized_plpc": -0.00079,
       "cost_basis": 26565.419979
     },
     {
@@ -49,10 +49,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 213.25,
-      "market_value": 26443.0,
-      "unrealized_pl": 726.64,
-      "unrealized_plpc": 0.02826,
+      "current_price": 213.39,
+      "market_value": 26460.36,
+      "unrealized_pl": 744.0,
+      "unrealized_plpc": 0.02893,
       "cost_basis": 25716.36
     },
     {
@@ -241,7 +241,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: -0.4% (buf: 2.6%) | Weekly: -0.9% (buf: 6.1%)"
+    "message": "CLEAR \u2014 Daily: -0.3% (buf: 2.7%) | Weekly: -0.9% (buf: 6.1%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
