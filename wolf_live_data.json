@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-05-08T16:46:36.474135",
+  "last_updated": "2026-05-08T16:51:39.031422",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 102603.73,
+    "portfolio_value": 102596.87,
     "cash": 3695.24,
-    "buying_power": 106298.97,
-    "equity": 102603.73,
+    "buying_power": 106292.11,
+    "equity": 102596.87,
     "last_equity": 102925.52,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -321.79,
-    "pct": -0.0031,
+    "amount": -328.65,
+    "pct": -0.0032,
     "circuit_breaker_status": "red",
     "circuit_breaker_message": "WEEKLY CIRCUIT BREAKER TRIGGERED \u2014 -101.2% (limit -7%). HALT ALL ACTIVITY. Mandatory Bobby review."
   },
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 302.13,
-      "market_value": 22961.88,
-      "unrealized_pl": -349.6,
-      "unrealized_plpc": -0.015,
+      "current_price": 302.2,
+      "market_value": 22967.2,
+      "unrealized_pl": -344.28,
+      "unrealized_plpc": -0.01477,
       "cost_basis": 23311.48
     },
     {
@@ -38,10 +38,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 415.02,
-      "market_value": 26146.26,
-      "unrealized_pl": -419.159979,
-      "unrealized_plpc": -0.01578,
+      "current_price": 414.9132,
+      "market_value": 26139.5316,
+      "unrealized_pl": -425.888379,
+      "unrealized_plpc": -0.01603,
       "cost_basis": 26565.419979
     },
     {
@@ -49,10 +49,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 215.1,
-      "market_value": 26672.4,
-      "unrealized_pl": 956.04,
-      "unrealized_plpc": 0.03718,
+      "current_price": 214.97,
+      "market_value": 26656.28,
+      "unrealized_pl": 939.92,
+      "unrealized_plpc": 0.03655,
       "cost_basis": 25716.36
     },
     {
@@ -60,10 +60,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 55.73,
-      "market_value": 23127.95,
-      "unrealized_pl": -281.650125,
-      "unrealized_plpc": -0.01203,
+      "current_price": 55.7557,
+      "market_value": 23138.6155,
+      "unrealized_pl": -270.984625,
+      "unrealized_plpc": -0.01158,
       "cost_basis": 23409.600125
     }
   ],
@@ -319,114 +319,5 @@
       "consecutive_profitable_weeks": 4,
       "max_drawdown_pct": 5.0
     }
-  },
-  "daily_summary": {
-    "date": "2026-05-08",
-    "account": {
-      "portfolio_value": 102603.73,
-      "cash": 3695.24,
-      "buying_power": 106298.97,
-      "positions": 4,
-      "todays_trades": 0,
-      "daily_pnl_amount": -321.79,
-      "daily_pnl_pct": -0.0031,
-      "circuit_breaker": "red"
-    },
-    "log": {
-      "task_fires": {
-        "wolf-crypto-247": 3,
-        "wolf-market-open-exec": 1,
-        "wolf-midday-rescan": 1,
-        "wolf-gate-status": 1,
-        "wolf-daily-summary": 1
-      },
-      "errors": 0
-    },
-    "rejected": {
-      "count": 2,
-      "reasons": {
-        "R:R 0.8 < 1.5": 1,
-        "R:R 0.7 < 1.5": 1
-      },
-      "recent": [
-        {
-          "ticker": "XLK",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 0.8 < 1.5",
-          "rejected_at": "2026-05-08T11:30:40.856509",
-          "risk_reward": 0.8,
-          "confidence": 6
-        },
-        {
-          "ticker": "XLF",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 0.7 < 1.5",
-          "rejected_at": "2026-05-08T11:30:40.856588",
-          "risk_reward": 0.7,
-          "confidence": 5
-        }
-      ]
-    },
-    "committee": {
-      "runs": 1,
-      "tickers_voted": 10,
-      "verdicts": {
-        "hold": 9,
-        "buy": 1
-      }
-    }
-  },
-  "daily_summary_updated_at": "2026-05-08T16:50:02.536721",
-  "today_signals": {
-    "as_of": "2026-05-08 16:50:02",
-    "last_task": "EOD recap",
-    "count": 3,
-    "signals": [
-      {
-        "ticker": "ETH/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 8,
-        "entry": 2979.836,
-        "stop": 2924.499821428571,
-        "target": 3090.5083571428568,
-        "symbol": "ETH/USD",
-        "price": 2979.836,
-        "rsi": 48.8,
-        "rvol": 5.68,
-        "atr": 36.89,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "DOGE/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 6,
-        "entry": 0.134367,
-        "stop": 0.131605125,
-        "target": 0.13989074999999998,
-        "symbol": "DOGE/USD",
-        "price": 0.134367,
-        "rsi": 65.1,
-        "rvol": 2.47,
-        "atr": 0.0,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "UNI/USD",
-        "direction": "SHORT",
-        "strategy": "Overbought Fade",
-        "confidence": 4,
-        "entry": 6.26,
-        "stop": 6.881037481214285,
-        "target": 5.335388,
-        "symbol": "UNI/USD",
-        "price": 6.26,
-        "rsi": 76.5,
-        "rvol": 0.76,
-        "atr": 0.31,
-        "risk_reward": 1.5
-      }
-    ]
   }
 }
