@@ -1,25 +1,25 @@
 {
-  "last_updated": "2026-05-09T04:17:45.283780",
+  "last_updated": "2026-05-09T04:22:47.823384",
   "update_interval_seconds": 300,
   "account": {
     "portfolio_value": 102607.7,
     "cash": 3695.24,
     "buying_power": 106302.94,
     "equity": 102607.7,
-    "last_equity": 102925.52,
+    "last_equity": 102607.7,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -317.82,
-    "pct": -0.0031,
+    "amount": 0.0,
+    "pct": 0.0,
     "circuit_breaker_status": "red",
-    "circuit_breaker_message": "WEEKLY CIRCUIT BREAKER TRIGGERED \u2014 -101.2% (limit -7%). HALT ALL ACTIVITY. Mandatory Bobby review."
+    "circuit_breaker_message": "WEEKLY CIRCUIT BREAKER TRIGGERED \u2014 -101.5% (limit -7%). HALT ALL ACTIVITY. Mandatory Bobby review."
   },
   "weekly_pnl": {
-    "amount": -105369.46,
-    "pct": -1.0117
+    "amount": -105687.28,
+    "pct": -1.0148
   },
   "positions": [
     {
@@ -241,7 +241,7 @@
     "weekly_triggered": true,
     "halt_new_entries": true,
     "halt_all_activity": true,
-    "message": "WEEKLY CIRCUIT BREAKER TRIGGERED \u2014 -101.2% (limit -7%). HALT ALL ACTIVITY. Mandatory Bobby review."
+    "message": "WEEKLY CIRCUIT BREAKER TRIGGERED \u2014 -101.5% (limit -7%). HALT ALL ACTIVITY. Mandatory Bobby review."
   },
   "backtest": {
     "last_run_date": "2026-04-07",
