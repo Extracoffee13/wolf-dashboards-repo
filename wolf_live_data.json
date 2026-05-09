@@ -319,5 +319,72 @@
       "consecutive_profitable_weeks": 4,
       "max_drawdown_pct": 5.0
     }
+  },
+  "today_signals": {
+    "as_of": "2026-05-09 00:00:13",
+    "last_task": "Crypto sweep",
+    "count": 4,
+    "signals": [
+      {
+        "ticker": "AAVE/USD",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 7,
+        "entry": 160.55,
+        "stop": 152.54578571428573,
+        "target": 177.71314999999998,
+        "symbol": "AAVE/USD",
+        "price": 160.55,
+        "rsi": 10.8,
+        "rvol": 0.82,
+        "atr": 4.0,
+        "risk_reward": 2.1
+      },
+      {
+        "ticker": "AVAX/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 4,
+        "entry": 12.4055,
+        "stop": 12.079990625,
+        "target": 13.056518749999999,
+        "symbol": "AVAX/USD",
+        "price": 12.4055,
+        "rsi": 56.0,
+        "rvol": 1.32,
+        "atr": 0.22,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "DOGE/USD",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 4,
+        "entry": 0.129435,
+        "stop": 0.13326317475,
+        "target": 0.12177865049999999,
+        "symbol": "DOGE/USD",
+        "price": 0.129435,
+        "rsi": 43.6,
+        "rvol": 1.83,
+        "atr": 0.0,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "LINK/USD",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 4,
+        "entry": 12.44525,
+        "stop": 12.771296428571429,
+        "target": 11.793157142857142,
+        "symbol": "LINK/USD",
+        "price": 12.44525,
+        "rsi": 41.5,
+        "rvol": 1.46,
+        "atr": 0.22,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
