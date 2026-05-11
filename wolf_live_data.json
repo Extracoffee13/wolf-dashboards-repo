@@ -319,5 +319,102 @@
       "consecutive_profitable_weeks": 4,
       "max_drawdown_pct": 5.0
     }
+  },
+  "today_signals": {
+    "as_of": "2026-05-11 11:30:33",
+    "last_task": "Midday rescan",
+    "count": 6,
+    "signals": [
+      {
+        "ticker": "MSFT",
+        "direction": "SHORT",
+        "strategy": "Overbought Fade",
+        "confidence": 7,
+        "entry": 488.74,
+        "stop": 491.8364285714286,
+        "target": 481.54349999999994,
+        "symbol": "MSFT",
+        "price": 488.74,
+        "rsi": 96.7,
+        "rvol": 1.05,
+        "atr": 1.55,
+        "risk_reward": 2.3
+      },
+      {
+        "ticker": "TLT",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 7,
+        "entry": 87.82,
+        "stop": 87.73642857142856,
+        "target": 87.98714285714284,
+        "symbol": "TLT",
+        "price": 87.82,
+        "rsi": 59.5,
+        "rvol": 3.31,
+        "atr": 0.06,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "ROKU",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 6,
+        "entry": 110.28,
+        "stop": 110.92339285714286,
+        "target": 108.99321428571429,
+        "symbol": "ROKU",
+        "price": 110.28,
+        "rsi": 32.0,
+        "rvol": 2.15,
+        "atr": 0.43,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "GS",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 5,
+        "entry": 874.84,
+        "stop": 879.3726785714287,
+        "target": 865.7746428571429,
+        "symbol": "GS",
+        "price": 874.84,
+        "rsi": 33.0,
+        "rvol": 1.48,
+        "atr": 3.02,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "GLD",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 5,
+        "entry": 398.065,
+        "stop": 399.9582142857143,
+        "target": 394.27857142857147,
+        "symbol": "GLD",
+        "price": 398.065,
+        "rsi": 44.7,
+        "rvol": 2.5,
+        "atr": 1.26,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "AAPL",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 4,
+        "entry": 270.865,
+        "stop": 272.12339285714285,
+        "target": 268.34821428571433,
+        "symbol": "AAPL",
+        "price": 270.865,
+        "rsi": 42.2,
+        "rvol": 1.72,
+        "atr": 0.84,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
