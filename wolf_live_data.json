@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-05-11T16:45:59.044286",
+  "last_updated": "2026-05-11T16:51:01.951693",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103390.2,
+    "portfolio_value": 103343.93,
     "cash": 3695.24,
-    "buying_power": 107085.44,
-    "equity": 103390.2,
+    "buying_power": 107039.17,
+    "equity": 103343.93,
     "last_equity": 102607.7,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 782.5,
-    "pct": 0.0076,
+    "amount": 736.23,
+    "pct": 0.0072,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.8% (buf: 3.0%) | Weekly: -1.5% (buf: 5.5%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.7% (buf: 3.0%) | Weekly: -1.5% (buf: 5.5%)"
   },
   "weekly_pnl": {
     "amount": -1555.47,
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 299.75,
-      "market_value": 22781.0,
-      "unrealized_pl": -530.48,
-      "unrealized_plpc": -0.02276,
+      "current_price": 299.77,
+      "market_value": 22782.52,
+      "unrealized_pl": -528.96,
+      "unrealized_plpc": -0.02269,
       "cost_basis": 23311.48
     },
     {
@@ -38,10 +38,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 412.05,
-      "market_value": 25959.15,
-      "unrealized_pl": -606.269979,
-      "unrealized_plpc": -0.02282,
+      "current_price": 412.1,
+      "market_value": 25962.3,
+      "unrealized_pl": -603.119979,
+      "unrealized_plpc": -0.0227,
       "cost_basis": 26565.419979
     },
     {
@@ -49,10 +49,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 219.39,
-      "market_value": 27204.36,
-      "unrealized_pl": 1488.0,
-      "unrealized_plpc": 0.05786,
+      "current_price": 219.18,
+      "market_value": 27178.32,
+      "unrealized_pl": 1461.96,
+      "unrealized_plpc": 0.05685,
       "cost_basis": 25716.36
     },
     {
@@ -60,10 +60,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 57.23,
-      "market_value": 23750.45,
-      "unrealized_pl": 340.849875,
-      "unrealized_plpc": 0.01456,
+      "current_price": 57.17,
+      "market_value": 23725.55,
+      "unrealized_pl": 315.949875,
+      "unrealized_plpc": 0.0135,
       "cost_basis": 23409.600125
     }
   ],
@@ -241,7 +241,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: +0.8% (buf: 3.0%) | Weekly: -1.5% (buf: 5.5%)"
+    "message": "CLEAR \u2014 Daily: +0.7% (buf: 3.0%) | Weekly: -1.5% (buf: 5.5%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
@@ -319,136 +319,5 @@
       "consecutive_profitable_weeks": 4,
       "max_drawdown_pct": 5.0
     }
-  },
-  "daily_summary": {
-    "date": "2026-05-11",
-    "account": {
-      "portfolio_value": 103390.2,
-      "cash": 3695.24,
-      "buying_power": 107085.44,
-      "positions": 4,
-      "todays_trades": 0,
-      "daily_pnl_amount": 782.5,
-      "daily_pnl_pct": 0.0076,
-      "circuit_breaker": "green"
-    },
-    "log": {
-      "task_fires": {
-        "wolf-crypto-247": 3,
-        "wolf-market-open-exec": 1,
-        "wolf-midday-rescan": 1,
-        "wolf-gate-status": 1,
-        "wolf-daily-summary": 1
-      },
-      "errors": 0
-    },
-    "rejected": {
-      "count": 10,
-      "reasons": {
-        "R:R 0.5 < 1.5": 3,
-        "R:R 0.6 < 1.5": 3,
-        "R:R 1.2 < 1.5": 1,
-        "R:R 1.1 < 1.5": 1,
-        "R:R 0.9 < 1.5": 1,
-        "R:R 1.4 < 1.5": 1
-      },
-      "recent": [
-        {
-          "ticker": "DOT/USD",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 0.5 < 1.5",
-          "rejected_at": "2026-05-11T00:00:08.422622",
-          "risk_reward": 0.5,
-          "confidence": 3
-        },
-        {
-          "ticker": "SOL/USD",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 0.6 < 1.5",
-          "rejected_at": "2026-05-11T00:00:08.422708",
-          "risk_reward": 0.6,
-          "confidence": 2
-        },
-        {
-          "ticker": "DOT/USD",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 0.5 < 1.5",
-          "rejected_at": "2026-05-11T06:00:11.588216",
-          "risk_reward": 0.5,
-          "confidence": 3
-        },
-        {
-          "ticker": "SOL/USD",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 0.6 < 1.5",
-          "rejected_at": "2026-05-11T06:00:11.588295",
-          "risk_reward": 0.6,
-          "confidence": 2
-        },
-        {
-          "ticker": "OXY",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 1.2 < 1.5",
-          "rejected_at": "2026-05-11T11:30:32.957513",
-          "risk_reward": 1.2,
-          "confidence": 6
-        },
-        {
-          "ticker": "CVX",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 1.1 < 1.5",
-          "rejected_at": "2026-05-11T11:30:32.957600",
-          "risk_reward": 1.1,
-          "confidence": 5
-        },
-        {
-          "ticker": "SPY",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 0.9 < 1.5",
-          "rejected_at": "2026-05-11T11:30:32.957636",
-          "risk_reward": 0.9,
-          "confidence": 5
-        },
-        {
-          "ticker": "MS",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 1.4 < 1.5",
-          "rejected_at": "2026-05-11T11:30:32.957667",
-          "risk_reward": 1.4,
-          "confidence": 4
-        },
-        {
-          "ticker": "DOT/USD",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 0.5 < 1.5",
-          "rejected_at": "2026-05-11T12:00:15.280560",
-          "risk_reward": 0.5,
-          "confidence": 3
-        },
-        {
-          "ticker": "SOL/USD",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 0.6 < 1.5",
-          "rejected_at": "2026-05-11T12:00:15.280618",
-          "risk_reward": 0.6,
-          "confidence": 2
-        }
-      ]
-    },
-    "committee": {
-      "runs": 1,
-      "tickers_voted": 10,
-      "verdicts": {
-        "hold": 8,
-        "buy": 2
-      }
-    }
-  },
-  "daily_summary_updated_at": "2026-05-11T16:50:04.651814",
-  "today_signals": {
-    "as_of": "2026-05-11 16:50:04",
-    "last_task": "EOD recap",
-    "count": 0,
-    "signals": []
   }
 }
