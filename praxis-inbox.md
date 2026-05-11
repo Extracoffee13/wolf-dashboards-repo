@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: congressional-trading-watch
+decision: scanned Senate eFD + House CHDP + Quiver + CapitolTrades for last 24h; direct portal access returned HTTP 403 across all frontends; synthesized from search-indexed disclosure-alert pipeline (Benzinga, MarketBeat, NOTUS, Daily Political, Nasdaq.com) covering PTR filings disclosed May 8–11, 2026
+outcome: top filing — Rep. Josh Gottheimer (D-NJ) $MSFT call options ~$1.1M (score 5); also flagged Rep. Salazar GLW pre-Meta-deal buy (score 5); Sen. Hickenlooper PLTR + Liberty Broadband ~320 days late (score 4); Moskowitz LMT Foreign Affairs buy (score 4); TDG cluster 3 members (score 3); no homebuilder tickers detected
+lesson: Defense-sector clustering by Foreign Affairs and Armed Services committee members is the most reliable repeating signal in the May 2026 flow — Middle East escalation is acting as the shared information event that synchronizes trades across otherwise uncoordinated members; the committee-assignment filter catches it cleanly
+tags: wolf,congressional,trading,intel,daily
+confidence: 0.65
+~~~
