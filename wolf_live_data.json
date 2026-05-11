@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-05-11T11:27:55.972512",
+  "last_updated": "2026-05-11T11:32:58.916316",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103421.66,
+    "portfolio_value": 103364.29,
     "cash": 3695.24,
-    "buying_power": 107116.9,
-    "equity": 103421.66,
+    "buying_power": 107059.53,
+    "equity": 103364.29,
     "last_equity": 102607.7,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 813.96,
-    "pct": 0.0079,
+    "amount": 756.59,
+    "pct": 0.0074,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.8% (buf: 3.0%) | Weekly: -1.5% (buf: 5.5%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.7% (buf: 3.0%) | Weekly: -1.5% (buf: 5.5%)"
   },
   "weekly_pnl": {
     "amount": -1555.47,
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 299.895,
-      "market_value": 22792.02,
-      "unrealized_pl": -519.46,
-      "unrealized_plpc": -0.02228,
+      "current_price": 299.64,
+      "market_value": 22772.64,
+      "unrealized_pl": -538.84,
+      "unrealized_plpc": -0.02311,
       "cost_basis": 23311.48
     },
     {
@@ -38,10 +38,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 411.94,
-      "market_value": 25952.22,
-      "unrealized_pl": -613.199979,
-      "unrealized_plpc": -0.02308,
+      "current_price": 410.69,
+      "market_value": 25873.47,
+      "unrealized_pl": -691.949979,
+      "unrealized_plpc": -0.02605,
       "cost_basis": 26565.419979
     },
     {
@@ -49,10 +49,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 221.167,
-      "market_value": 27424.708,
-      "unrealized_pl": 1708.348,
-      "unrealized_plpc": 0.06643,
+      "current_price": 221.48,
+      "market_value": 27463.52,
+      "unrealized_pl": 1747.16,
+      "unrealized_plpc": 0.06794,
       "cost_basis": 25716.36
     },
     {
@@ -60,10 +60,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 56.765,
-      "market_value": 23557.475,
-      "unrealized_pl": 147.874875,
-      "unrealized_plpc": 0.00632,
+      "current_price": 56.775,
+      "market_value": 23561.625,
+      "unrealized_pl": 152.024875,
+      "unrealized_plpc": 0.00649,
       "cost_basis": 23409.600125
     }
   ],
@@ -241,7 +241,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: +0.8% (buf: 3.0%) | Weekly: -1.5% (buf: 5.5%)"
+    "message": "CLEAR \u2014 Daily: +0.7% (buf: 3.0%) | Weekly: -1.5% (buf: 5.5%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
@@ -319,102 +319,5 @@
       "consecutive_profitable_weeks": 4,
       "max_drawdown_pct": 5.0
     }
-  },
-  "today_signals": {
-    "as_of": "2026-05-11 11:30:33",
-    "last_task": "Midday rescan",
-    "count": 6,
-    "signals": [
-      {
-        "ticker": "MSFT",
-        "direction": "SHORT",
-        "strategy": "Overbought Fade",
-        "confidence": 7,
-        "entry": 488.74,
-        "stop": 491.8364285714286,
-        "target": 481.54349999999994,
-        "symbol": "MSFT",
-        "price": 488.74,
-        "rsi": 96.7,
-        "rvol": 1.05,
-        "atr": 1.55,
-        "risk_reward": 2.3
-      },
-      {
-        "ticker": "TLT",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 7,
-        "entry": 87.82,
-        "stop": 87.73642857142856,
-        "target": 87.98714285714284,
-        "symbol": "TLT",
-        "price": 87.82,
-        "rsi": 59.5,
-        "rvol": 3.31,
-        "atr": 0.06,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "ROKU",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 6,
-        "entry": 110.28,
-        "stop": 110.92339285714286,
-        "target": 108.99321428571429,
-        "symbol": "ROKU",
-        "price": 110.28,
-        "rsi": 32.0,
-        "rvol": 2.15,
-        "atr": 0.43,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "GS",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 5,
-        "entry": 874.84,
-        "stop": 879.3726785714287,
-        "target": 865.7746428571429,
-        "symbol": "GS",
-        "price": 874.84,
-        "rsi": 33.0,
-        "rvol": 1.48,
-        "atr": 3.02,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "GLD",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 5,
-        "entry": 398.065,
-        "stop": 399.9582142857143,
-        "target": 394.27857142857147,
-        "symbol": "GLD",
-        "price": 398.065,
-        "rsi": 44.7,
-        "rvol": 2.5,
-        "atr": 1.26,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "AAPL",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 4,
-        "entry": 270.865,
-        "stop": 272.12339285714285,
-        "target": 268.34821428571433,
-        "symbol": "AAPL",
-        "price": 270.865,
-        "rsi": 42.2,
-        "rvol": 1.72,
-        "atr": 0.84,
-        "risk_reward": 2.0
-      }
-    ]
   }
 }
