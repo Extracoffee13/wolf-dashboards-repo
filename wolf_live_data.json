@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-05-12T11:30:03.962870",
+  "last_updated": "2026-05-12T11:35:06.836619",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 100853.53,
+    "portfolio_value": 100939.92,
     "cash": -75289.72,
-    "buying_power": 25563.81,
-    "equity": 100853.53,
+    "buying_power": 25650.2,
+    "equity": 100939.92,
     "last_equity": 103428.93,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -2575.4,
-    "pct": -0.0249,
+    "amount": -2489.01,
+    "pct": -0.0241,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: -2.5% (buf: 0.5%) | Weekly: -0.7% (buf: 6.3%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: -2.4% (buf: 0.6%) | Weekly: -0.7% (buf: 6.3%)"
   },
   "weekly_pnl": {
     "amount": -734.24,
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 299.96,
-      "market_value": 22796.96,
-      "unrealized_pl": -514.52,
-      "unrealized_plpc": -0.02207,
+      "current_price": 300.295,
+      "market_value": 22822.42,
+      "unrealized_pl": -489.06,
+      "unrealized_plpc": -0.02098,
       "cost_basis": 23311.48
     },
     {
@@ -38,10 +38,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 408.36,
-      "market_value": 25726.68,
-      "unrealized_pl": -838.739979,
-      "unrealized_plpc": -0.03157,
+      "current_price": 407.69,
+      "market_value": 25684.47,
+      "unrealized_pl": -880.949979,
+      "unrealized_plpc": -0.03316,
       "cost_basis": 26565.419979
     },
     {
@@ -49,10 +49,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 215.65,
-      "market_value": 26740.6,
-      "unrealized_pl": 1024.24,
-      "unrealized_plpc": 0.03983,
+      "current_price": 216.55,
+      "market_value": 26852.2,
+      "unrealized_pl": 1135.84,
+      "unrealized_plpc": 0.04417,
       "cost_basis": 25716.36
     },
     {
@@ -60,10 +60,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767116,
-      "current_price": 134.1999,
-      "market_value": 48848.7636,
-      "unrealized_pl": -934.466624,
-      "unrealized_plpc": -0.01877,
+      "current_price": 134.12,
+      "market_value": 48819.68,
+      "unrealized_pl": -963.550224,
+      "unrealized_plpc": -0.01935,
       "cost_basis": 49783.230224
     },
     {
@@ -71,10 +71,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 427.345,
-      "market_value": 28204.77,
-      "unrealized_pl": -996.96003,
-      "unrealized_plpc": -0.03414,
+      "current_price": 428.015,
+      "market_value": 28248.99,
+      "unrealized_pl": -952.74003,
+      "unrealized_plpc": -0.03263,
       "cost_basis": 29201.73003
     },
     {
@@ -82,10 +82,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 57.39,
-      "market_value": 23816.85,
-      "unrealized_pl": 407.249875,
-      "unrealized_plpc": 0.0174,
+      "current_price": 57.355,
+      "market_value": 23802.325,
+      "unrealized_pl": 392.724875,
+      "unrealized_plpc": 0.01678,
       "cost_basis": 23409.600125
     }
   ],
@@ -294,7 +294,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: -2.5% (buf: 0.5%) | Weekly: -0.7% (buf: 6.3%)"
+    "message": "CLEAR \u2014 Daily: -2.4% (buf: 0.6%) | Weekly: -0.7% (buf: 6.3%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
@@ -372,117 +372,5 @@
       "consecutive_profitable_weeks": 4,
       "max_drawdown_pct": 5.0
     }
-  },
-  "today_signals": {
-    "as_of": "2026-05-12 11:30:43",
-    "last_task": "Midday rescan",
-    "count": 7,
-    "signals": [
-      {
-        "ticker": "NVDA",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 8,
-        "entry": 180.265,
-        "stop": 178.81696428571428,
-        "target": 183.16107142857143,
-        "symbol": "NVDA",
-        "price": 180.265,
-        "rsi": 78.5,
-        "rvol": 2.69,
-        "atr": 0.97,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "ROKU",
-        "direction": "LONG",
-        "strategy": "Mean Reversion (Oversold)",
-        "confidence": 7,
-        "entry": 108.89,
-        "stop": 108.17071428571428,
-        "target": 111.20675000000001,
-        "symbol": "ROKU",
-        "price": 108.89,
-        "rsi": 14.9,
-        "rvol": 2.74,
-        "atr": 0.36,
-        "risk_reward": 3.2
-      },
-      {
-        "ticker": "BRK.B",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 6,
-        "entry": 499.72,
-        "stop": 500.8230357142857,
-        "target": 497.5139285714286,
-        "symbol": "BRK.B",
-        "price": 499.72,
-        "rsi": 27.6,
-        "rvol": 2.22,
-        "atr": 0.74,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "JNJ",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 6,
-        "entry": 208.26,
-        "stop": 208.68910714285713,
-        "target": 207.4017857142857,
-        "symbol": "JNJ",
-        "price": 208.26,
-        "rsi": 32.4,
-        "rvol": 1.88,
-        "atr": 0.29,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "SLV",
-        "direction": "SHORT",
-        "strategy": "Overbought Fade",
-        "confidence": 6,
-        "entry": 60.95,
-        "stop": 61.5,
-        "target": 59.96575,
-        "symbol": "SLV",
-        "price": 60.95,
-        "rsi": 87.8,
-        "rvol": 1.25,
-        "atr": 0.27,
-        "risk_reward": 1.8
-      },
-      {
-        "ticker": "SLB",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 5,
-        "entry": 38.095,
-        "stop": 38.22678571428571,
-        "target": 37.831428571428575,
-        "symbol": "SLB",
-        "price": 38.095,
-        "rsi": 40.0,
-        "rvol": 1.68,
-        "atr": 0.09,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "SPY",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 5,
-        "entry": 678.17,
-        "stop": 676.1637499999999,
-        "target": 682.1824999999999,
-        "symbol": "SPY",
-        "price": 678.17,
-        "rsi": 59.5,
-        "rvol": 1.85,
-        "atr": 1.34,
-        "risk_reward": 2.0
-      }
-    ]
   }
 }
