@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-05-12T04:22:43.219530",
+  "last_updated": "2026-05-12T04:27:46.325880",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103283.51,
+    "portfolio_value": 103240.74,
     "cash": 3695.24,
-    "buying_power": 106978.75,
-    "equity": 103283.51,
+    "buying_power": 106935.98,
+    "equity": 103240.74,
     "last_equity": 103428.93,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -145.42,
-    "pct": -0.0014,
+    "amount": -188.19,
+    "pct": -0.0018,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: -0.1% (buf: 2.9%) | Weekly: -0.7% (buf: 6.3%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: -0.2% (buf: 2.8%) | Weekly: -0.7% (buf: 6.3%)"
   },
   "weekly_pnl": {
     "amount": -734.24,
@@ -38,10 +38,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 411.25,
-      "market_value": 25908.75,
-      "unrealized_pl": -656.669979,
-      "unrealized_plpc": -0.02472,
+      "current_price": 411.26,
+      "market_value": 25909.38,
+      "unrealized_pl": -656.039979,
+      "unrealized_plpc": -0.0247,
       "cost_basis": 26565.419979
     },
     {
@@ -49,10 +49,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 216.89,
-      "market_value": 26894.36,
-      "unrealized_pl": 1178.0,
-      "unrealized_plpc": 0.04581,
+      "current_price": 216.54,
+      "market_value": 26850.96,
+      "unrealized_pl": 1134.6,
+      "unrealized_plpc": 0.04412,
       "cost_basis": 25716.36
     },
     {
@@ -241,7 +241,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: -0.1% (buf: 2.9%) | Weekly: -0.7% (buf: 6.3%)"
+    "message": "CLEAR \u2014 Daily: -0.2% (buf: 2.8%) | Weekly: -0.7% (buf: 6.3%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
