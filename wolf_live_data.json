@@ -372,5 +372,27 @@
       "consecutive_profitable_weeks": 4,
       "max_drawdown_pct": 5.0
     }
+  },
+  "today_signals": {
+    "as_of": "2026-05-12 16:45:02",
+    "last_task": "Gate status",
+    "count": 1,
+    "signals": [
+      {
+        "ticker": "AVAX/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 5,
+        "entry": 12.461,
+        "stop": 12.092258277607144,
+        "target": 13.198483444785714,
+        "symbol": "AVAX/USD",
+        "price": 12.461,
+        "rsi": 55.2,
+        "rvol": 1.83,
+        "atr": 0.25,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
