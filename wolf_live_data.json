@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-05-11T22:59:31.313278",
+  "last_updated": "2026-05-11T23:04:34.017120",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103384.74,
+    "portfolio_value": 103348.62,
     "cash": 3695.24,
-    "buying_power": 107079.98,
-    "equity": 103384.74,
+    "buying_power": 107043.86,
+    "equity": 103348.62,
     "last_equity": 102607.7,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 777.04,
-    "pct": 0.0076,
+    "amount": 740.92,
+    "pct": 0.0072,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.8% (buf: 3.0%) | Weekly: -1.5% (buf: 5.5%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.7% (buf: 3.0%) | Weekly: -1.5% (buf: 5.5%)"
   },
   "weekly_pnl": {
     "amount": -1555.47,
@@ -38,10 +38,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 412.21,
-      "market_value": 25969.23,
-      "unrealized_pl": -596.189979,
-      "unrealized_plpc": -0.02244,
+      "current_price": 412.05,
+      "market_value": 25959.15,
+      "unrealized_pl": -606.269979,
+      "unrealized_plpc": -0.02282,
       "cost_basis": 26565.419979
     },
     {
@@ -49,10 +49,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 218.69,
-      "market_value": 27117.56,
-      "unrealized_pl": 1401.2,
-      "unrealized_plpc": 0.05449,
+      "current_price": 218.48,
+      "market_value": 27091.52,
+      "unrealized_pl": 1375.16,
+      "unrealized_plpc": 0.05347,
       "cost_basis": 25716.36
     },
     {
@@ -241,7 +241,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: +0.8% (buf: 3.0%) | Weekly: -1.5% (buf: 5.5%)"
+    "message": "CLEAR \u2014 Daily: +0.7% (buf: 3.0%) | Weekly: -1.5% (buf: 5.5%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
