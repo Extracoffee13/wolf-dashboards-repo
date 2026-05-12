@@ -372,5 +372,127 @@
       "consecutive_profitable_weeks": 4,
       "max_drawdown_pct": 5.0
     }
+  },
+  "daily_summary": {
+    "date": "2026-05-12",
+    "account": {
+      "portfolio_value": 103049.19,
+      "cash": -75289.72,
+      "buying_power": 27759.47,
+      "positions": 6,
+      "todays_trades": 3,
+      "daily_pnl_amount": -379.74,
+      "daily_pnl_pct": -0.0037,
+      "circuit_breaker": "green"
+    },
+    "log": {
+      "task_fires": {
+        "wolf-crypto-247": 3,
+        "wolf-market-open-exec": 1,
+        "wolf-midday-rescan": 1,
+        "wolf-gate-status": 1,
+        "wolf-daily-summary": 1
+      },
+      "errors": 0
+    },
+    "rejected": {
+      "count": 7,
+      "reasons": {
+        "R:R 0.6 < 1.5": 3,
+        "R:R 1.2 < 1.5": 1,
+        "R:R 1.4 < 1.5": 2,
+        "R:R 1.3 < 1.5": 1
+      },
+      "recent": [
+        {
+          "ticker": "DOGE/USD",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 0.6 < 1.5",
+          "rejected_at": "2026-05-12T00:00:09.785705",
+          "risk_reward": 0.6,
+          "confidence": 2
+        },
+        {
+          "ticker": "DOGE/USD",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 0.6 < 1.5",
+          "rejected_at": "2026-05-12T06:00:09.198672",
+          "risk_reward": 0.6,
+          "confidence": 2
+        },
+        {
+          "ticker": "XLE",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 1.2 < 1.5",
+          "rejected_at": "2026-05-12T09:30:56.222265",
+          "risk_reward": 1.2,
+          "confidence": 7
+        },
+        {
+          "ticker": "PFE",
+          "strategy": "Overbought Fade",
+          "reason": "R:R 1.4 < 1.5",
+          "rejected_at": "2026-05-12T11:30:43.205806",
+          "risk_reward": 1.4,
+          "confidence": 6
+        },
+        {
+          "ticker": "OXY",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 1.3 < 1.5",
+          "rejected_at": "2026-05-12T11:30:43.205889",
+          "risk_reward": 1.3,
+          "confidence": 5
+        },
+        {
+          "ticker": "XLE",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 1.4 < 1.5",
+          "rejected_at": "2026-05-12T11:30:43.205925",
+          "risk_reward": 1.4,
+          "confidence": 5
+        },
+        {
+          "ticker": "DOGE/USD",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 0.6 < 1.5",
+          "rejected_at": "2026-05-12T12:00:19.040127",
+          "risk_reward": 0.6,
+          "confidence": 2
+        }
+      ]
+    },
+    "committee": {
+      "runs": 3,
+      "tickers_voted": 12,
+      "verdicts": {
+        "bullish": 3,
+        "buy": 2,
+        "hold": 7
+      }
+    }
+  },
+  "daily_summary_updated_at": "2026-05-12T16:50:01.695626",
+  "today_signals": {
+    "as_of": "2026-05-12 16:50:01",
+    "last_task": "EOD recap",
+    "count": 1,
+    "signals": [
+      {
+        "ticker": "AVAX/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 5,
+        "entry": 12.461,
+        "stop": 12.092258277607144,
+        "target": 13.198483444785714,
+        "symbol": "AVAX/USD",
+        "price": 12.461,
+        "rsi": 55.2,
+        "rvol": 1.83,
+        "atr": 0.25,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
