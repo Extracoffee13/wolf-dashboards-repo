@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-05-12T17:58:57.210733",
+  "last_updated": "2026-05-12T18:04:00.077140",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103339.59,
+    "portfolio_value": 103395.29,
     "cash": -75289.72,
-    "buying_power": 28049.87,
-    "equity": 103339.59,
+    "buying_power": 28105.57,
+    "equity": 103395.29,
     "last_equity": 103428.93,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -89.34,
-    "pct": -0.0009,
+    "amount": -33.64,
+    "pct": -0.0003,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: -0.1% (buf: 2.9%) | Weekly: -0.7% (buf: 6.3%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: -0.0% (buf: 3.0%) | Weekly: -0.7% (buf: 6.3%)"
   },
   "weekly_pnl": {
     "amount": -734.24,
@@ -38,10 +38,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 407.66,
-      "market_value": 25682.58,
-      "unrealized_pl": -882.839979,
-      "unrealized_plpc": -0.03323,
+      "current_price": 407.83,
+      "market_value": 25693.29,
+      "unrealized_pl": -872.129979,
+      "unrealized_plpc": -0.03283,
       "cost_basis": 26565.419979
     },
     {
@@ -49,10 +49,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 219.97,
-      "market_value": 27276.28,
-      "unrealized_pl": 1559.92,
-      "unrealized_plpc": 0.06066,
+      "current_price": 220.0,
+      "market_value": 27280.0,
+      "unrealized_pl": 1563.64,
+      "unrealized_plpc": 0.0608,
       "cost_basis": 25716.36
     },
     {
@@ -60,10 +60,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767116,
-      "current_price": 137.6701,
-      "market_value": 50111.9164,
-      "unrealized_pl": 328.686176,
-      "unrealized_plpc": 0.0066,
+      "current_price": 137.78,
+      "market_value": 50151.92,
+      "unrealized_pl": 368.689776,
+      "unrealized_plpc": 0.00741,
       "cost_basis": 49783.230224
     },
     {
@@ -71,10 +71,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 432.32,
-      "market_value": 28533.12,
-      "unrealized_pl": -668.61003,
-      "unrealized_plpc": -0.0229,
+      "current_price": 432.4605,
+      "market_value": 28542.393,
+      "unrealized_pl": -659.33703,
+      "unrealized_plpc": -0.02258,
       "cost_basis": 29201.73003
     },
     {
@@ -82,10 +82,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 57.5393,
-      "market_value": 23878.8095,
-      "unrealized_pl": 469.209375,
-      "unrealized_plpc": 0.02004,
+      "current_price": 57.52,
+      "market_value": 23870.8,
+      "unrealized_pl": 461.199875,
+      "unrealized_plpc": 0.0197,
       "cost_basis": 23409.600125
     }
   ],
@@ -294,7 +294,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: -0.1% (buf: 2.9%) | Weekly: -0.7% (buf: 6.3%)"
+    "message": "CLEAR \u2014 Daily: -0.0% (buf: 3.0%) | Weekly: -0.7% (buf: 6.3%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
@@ -372,27 +372,5 @@
       "consecutive_profitable_weeks": 4,
       "max_drawdown_pct": 5.0
     }
-  },
-  "today_signals": {
-    "as_of": "2026-05-12 18:00:15",
-    "last_task": "Crypto sweep",
-    "count": 1,
-    "signals": [
-      {
-        "ticker": "AVAX/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 5,
-        "entry": 12.461,
-        "stop": 12.092258277607144,
-        "target": 13.198483444785714,
-        "symbol": "AVAX/USD",
-        "price": 12.461,
-        "rsi": 55.2,
-        "rvol": 1.83,
-        "atr": 0.25,
-        "risk_reward": 2.0
-      }
-    ]
   }
 }
