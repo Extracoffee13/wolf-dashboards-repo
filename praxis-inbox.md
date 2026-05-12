@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Claude Managed Agents Multiagent+Dreaming+Outcomes (score 5, owner WOLF)
+lesson: First-party Anthropic platform releases (Managed Agents features) consistently score highest because they require zero integration work; the fastest new-capability wins come from watching anthropic.com/news before checking third-party registries
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
