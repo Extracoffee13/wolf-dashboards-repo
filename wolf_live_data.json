@@ -372,5 +372,117 @@
       "consecutive_profitable_weeks": 4,
       "max_drawdown_pct": 5.0
     }
+  },
+  "today_signals": {
+    "as_of": "2026-05-12 11:30:43",
+    "last_task": "Midday rescan",
+    "count": 7,
+    "signals": [
+      {
+        "ticker": "NVDA",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 8,
+        "entry": 180.265,
+        "stop": 178.81696428571428,
+        "target": 183.16107142857143,
+        "symbol": "NVDA",
+        "price": 180.265,
+        "rsi": 78.5,
+        "rvol": 2.69,
+        "atr": 0.97,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "ROKU",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 7,
+        "entry": 108.89,
+        "stop": 108.17071428571428,
+        "target": 111.20675000000001,
+        "symbol": "ROKU",
+        "price": 108.89,
+        "rsi": 14.9,
+        "rvol": 2.74,
+        "atr": 0.36,
+        "risk_reward": 3.2
+      },
+      {
+        "ticker": "BRK.B",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 6,
+        "entry": 499.72,
+        "stop": 500.8230357142857,
+        "target": 497.5139285714286,
+        "symbol": "BRK.B",
+        "price": 499.72,
+        "rsi": 27.6,
+        "rvol": 2.22,
+        "atr": 0.74,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "JNJ",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 6,
+        "entry": 208.26,
+        "stop": 208.68910714285713,
+        "target": 207.4017857142857,
+        "symbol": "JNJ",
+        "price": 208.26,
+        "rsi": 32.4,
+        "rvol": 1.88,
+        "atr": 0.29,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "SLV",
+        "direction": "SHORT",
+        "strategy": "Overbought Fade",
+        "confidence": 6,
+        "entry": 60.95,
+        "stop": 61.5,
+        "target": 59.96575,
+        "symbol": "SLV",
+        "price": 60.95,
+        "rsi": 87.8,
+        "rvol": 1.25,
+        "atr": 0.27,
+        "risk_reward": 1.8
+      },
+      {
+        "ticker": "SLB",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 5,
+        "entry": 38.095,
+        "stop": 38.22678571428571,
+        "target": 37.831428571428575,
+        "symbol": "SLB",
+        "price": 38.095,
+        "rsi": 40.0,
+        "rvol": 1.68,
+        "atr": 0.09,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "SPY",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 5,
+        "entry": 678.17,
+        "stop": 676.1637499999999,
+        "target": 682.1824999999999,
+        "symbol": "SPY",
+        "price": 678.17,
+        "rsi": 59.5,
+        "rvol": 1.85,
+        "atr": 1.34,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
