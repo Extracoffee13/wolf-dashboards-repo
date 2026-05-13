@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-05-13T16:47:39.488938",
+  "last_updated": "2026-05-13T16:52:42.232645",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 101794.43,
+    "portfolio_value": 101803.64,
     "cash": -100545.31,
-    "buying_power": 1249.12,
-    "equity": 101794.43,
+    "buying_power": 1258.33,
+    "equity": 101803.64,
     "last_equity": 102950.64,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -1156.21,
-    "pct": -0.0112,
+    "amount": -1147.0,
+    "pct": -0.0111,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 300.55,
-      "market_value": 22841.8,
-      "unrealized_pl": -469.68,
-      "unrealized_plpc": -0.02015,
+      "current_price": 300.47,
+      "market_value": 22835.72,
+      "unrealized_pl": -475.76,
+      "unrealized_plpc": -0.02041,
       "cost_basis": 23311.48
     },
     {
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 404.44,
-      "market_value": 25479.72,
-      "unrealized_pl": -1085.699979,
-      "unrealized_plpc": -0.04087,
+      "current_price": 404.45,
+      "market_value": 25480.35,
+      "unrealized_pl": -1085.069979,
+      "unrealized_plpc": -0.04085,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 226.45,
-      "market_value": 28079.8,
-      "unrealized_pl": 2363.44,
-      "unrealized_plpc": 0.0919,
+      "current_price": 226.38,
+      "market_value": 28071.12,
+      "unrealized_pl": 2354.76,
+      "unrealized_plpc": 0.09157,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 130.01,
-      "market_value": 47323.64,
-      "unrealized_pl": -2459.58986,
-      "unrealized_plpc": -0.04941,
+      "current_price": 130.0604,
+      "market_value": 47341.9856,
+      "unrealized_pl": -2441.24426,
+      "unrealized_plpc": -0.04904,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 446.0843,
-      "market_value": 29441.5638,
-      "unrealized_pl": 239.83377,
-      "unrealized_plpc": 0.00821,
+      "current_price": 446.16,
+      "market_value": 29446.56,
+      "unrealized_pl": 244.82997,
+      "unrealized_plpc": 0.00838,
       "cost_basis": 29201.73003
     },
     {
@@ -415,145 +415,5 @@
         }
       ]
     }
-  },
-  "daily_summary": {
-    "date": "2026-05-13",
-    "account": {
-      "portfolio_value": 101794.43,
-      "cash": -100545.31,
-      "buying_power": 1249.12,
-      "positions": 7,
-      "todays_trades": 1,
-      "daily_pnl_amount": -1156.21,
-      "daily_pnl_pct": -0.0112,
-      "circuit_breaker": "yellow"
-    },
-    "log": {
-      "task_fires": {
-        "wolf-crypto-247": 3,
-        "wolf-market-open-exec": 1,
-        "wolf-midday-rescan": 1,
-        "wolf-gate-status": 1,
-        "wolf-daily-summary": 1
-      },
-      "errors": 0
-    },
-    "rejected": {
-      "count": 9,
-      "reasons": {
-        "R:R 1.0 < 1.5": 3,
-        "R:R 0.8 < 1.5": 1,
-        "R:R 0.9 < 1.5": 1,
-        "R:R 0.5 < 1.5": 2,
-        "R:R 0.7 < 1.5": 1,
-        "R:R 0.6 < 1.5": 1
-      },
-      "recent": [
-        {
-          "ticker": "BCH/USD",
-          "strategy": "Overbought Fade",
-          "reason": "R:R 1.0 < 1.5",
-          "rejected_at": "2026-05-13T00:00:07.959767",
-          "risk_reward": 1.0,
-          "confidence": 2
-        },
-        {
-          "ticker": "BCH/USD",
-          "strategy": "Overbought Fade",
-          "reason": "R:R 1.0 < 1.5",
-          "rejected_at": "2026-05-13T06:00:09.846866",
-          "risk_reward": 1.0,
-          "confidence": 2
-        },
-        {
-          "ticker": "AAPL",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 0.8 < 1.5",
-          "rejected_at": "2026-05-13T09:30:48.514078",
-          "risk_reward": 0.8,
-          "confidence": 6
-        },
-        {
-          "ticker": "GS",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 0.9 < 1.5",
-          "rejected_at": "2026-05-13T09:30:48.514149",
-          "risk_reward": 0.9,
-          "confidence": 5
-        },
-        {
-          "ticker": "MS",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 0.5 < 1.5",
-          "rejected_at": "2026-05-13T09:30:48.514184",
-          "risk_reward": 0.5,
-          "confidence": 5
-        },
-        {
-          "ticker": "NFLX",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 0.7 < 1.5",
-          "rejected_at": "2026-05-13T11:30:40.833852",
-          "risk_reward": 0.7,
-          "confidence": 6
-        },
-        {
-          "ticker": "PLTR",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 0.6 < 1.5",
-          "rejected_at": "2026-05-13T11:30:40.833918",
-          "risk_reward": 0.6,
-          "confidence": 6
-        },
-        {
-          "ticker": "META",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 0.5 < 1.5",
-          "rejected_at": "2026-05-13T11:30:40.833950",
-          "risk_reward": 0.5,
-          "confidence": 5
-        },
-        {
-          "ticker": "BCH/USD",
-          "strategy": "Overbought Fade",
-          "reason": "R:R 1.0 < 1.5",
-          "rejected_at": "2026-05-13T12:00:13.397302",
-          "risk_reward": 1.0,
-          "confidence": 2
-        }
-      ]
-    },
-    "committee": {
-      "runs": 3,
-      "tickers_voted": 10,
-      "verdicts": {
-        "hold": 4,
-        "buy": 3,
-        "bullish": 3
-      }
-    }
-  },
-  "daily_summary_updated_at": "2026-05-13T16:50:05.112054",
-  "today_signals": {
-    "as_of": "2026-05-13 16:50:05",
-    "last_task": "EOD recap",
-    "count": 1,
-    "signals": [
-      {
-        "ticker": "ETH/USD",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 5,
-        "entry": 2931.071,
-        "stop": 2970.713982074,
-        "target": 2851.785035852,
-        "symbol": "ETH/USD",
-        "price": 2931.071,
-        "rsi": 35.7,
-        "rvol": 1.3,
-        "atr": 26.43,
-        "risk_reward": 2.0
-      }
-    ]
   }
 }
