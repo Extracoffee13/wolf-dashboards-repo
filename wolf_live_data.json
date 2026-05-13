@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-05-13T10:28:21.064136",
+  "last_updated": "2026-05-13T10:33:23.907542",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 101399.51,
+    "portfolio_value": 101139.03,
     "cash": -100545.31,
-    "buying_power": 854.2,
-    "equity": 101399.51,
+    "buying_power": 593.72,
+    "equity": 101139.03,
     "last_equity": 102950.64,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -1551.13,
-    "pct": -0.0151,
+    "amount": -1811.61,
+    "pct": -0.0176,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 301.605,
-      "market_value": 22921.98,
-      "unrealized_pl": -389.5,
-      "unrealized_plpc": -0.01671,
+      "current_price": 302.27,
+      "market_value": 22972.52,
+      "unrealized_pl": -338.96,
+      "unrealized_plpc": -0.01454,
       "cost_basis": 23311.48
     },
     {
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 403.38,
-      "market_value": 25412.94,
-      "unrealized_pl": -1152.479979,
-      "unrealized_plpc": -0.04338,
+      "current_price": 403.02,
+      "market_value": 25390.26,
+      "unrealized_pl": -1175.159979,
+      "unrealized_plpc": -0.04424,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 224.86,
-      "market_value": 27882.64,
-      "unrealized_pl": 2166.28,
-      "unrealized_plpc": 0.08424,
+      "current_price": 223.81,
+      "market_value": 27752.44,
+      "unrealized_pl": 2036.08,
+      "unrealized_plpc": 0.07917,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 130.25,
-      "market_value": 47411.0,
-      "unrealized_pl": -2372.22986,
-      "unrealized_plpc": -0.04765,
+      "current_price": 129.585,
+      "market_value": 47168.94,
+      "unrealized_pl": -2614.28986,
+      "unrealized_plpc": -0.05251,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 442.58,
-      "market_value": 29210.28,
-      "unrealized_pl": 8.54997,
-      "unrealized_plpc": 0.00029,
+      "current_price": 443.69,
+      "market_value": 29283.54,
+      "unrealized_pl": 81.80997,
+      "unrealized_plpc": 0.0028,
       "cost_basis": 29201.73003
     },
     {
@@ -93,10 +93,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 57.3687,
-      "market_value": 23808.0105,
-      "unrealized_pl": 398.410375,
-      "unrealized_plpc": 0.01702,
+      "current_price": 57.42,
+      "market_value": 23829.3,
+      "unrealized_pl": 419.699875,
+      "unrealized_plpc": 0.01793,
       "cost_basis": 23409.600125
     }
   ],
@@ -378,6 +378,42 @@
       "capability_score": 80,
       "consecutive_profitable_weeks": 4,
       "max_drawdown_pct": 5.0
+    },
+    "esoteric_strategies": {
+      "_meta": {
+        "purpose": "WOLF-ORIGINAL strategies developed in-house via open-source research synthesis (arxiv/SSRN/github/reddit/Lens) + cross-agent inputs. Tracked SEPARATELY from the 8 academic-grounded strategies (52-Week Breakout, PEAD, Insider Cluster, Sector Rotation, Small Cap Catalyst, Congress Follower, Cross-Sectional Momentum, PEAD-on-Options) so Bobby can see what WOLF discovered vs what was borrowed from the literature. Status pipeline: research \u2192 backtest \u2192 paper_gate \u2192 small_allocation \u2192 scale.",
+        "schema_per_strategy": {
+          "name": "human-readable strategy name",
+          "code_path": "strategies/esoteric/<file>.py",
+          "status": "research | backtest_pending | paper_pending | paper_active | small_real | full_real | retired",
+          "hypothesis": "one-sentence thesis",
+          "open_source_inspiration": "what arxiv paper, github repo, or research feed inspired this",
+          "cross_agent_inputs": "which Construct agents contribute signals (Lens, Atlas, Louis, etc.)",
+          "backtest_sharpe": "live measurement once backtest runs",
+          "backtest_max_dd": "live measurement",
+          "paper_pnl_to_date": "if paper-trading",
+          "discovered_date": "YYYY-MM-DD",
+          "promoted_date": "YYYY-MM-DD when moved to paper"
+        },
+        "graduation_to_real": "Must pass same gates as academic strategies (Sharpe \u2265 1.0 net, max-DD \u2264 12%, 30 mandate-compliant days). No special pass for being WOLF-original.",
+        "research_cadence": "wolf-tool-discovery fires daily; wolf-esoteric-research fires weekly Sundays to propose 1 new candidate from the week's research digest."
+      },
+      "strategies": [
+        {
+          "name": "Construct Synthesis Signal",
+          "code_path": "strategies/esoteric/construct_synthesis.py",
+          "status": "research",
+          "hypothesis": "The Lens daily intelligence brief synthesizes ~5 patterns per day from institutional research (HBR, MIT Sloan, Wharton, Stratechery, NBER, Fed). When \u22653 institutions converge on the same theme in one week, that's a high-conviction directional signal usable for sector/factor allocation. Bobby's Lens is the moat \u2014 no other quant uses this input.",
+          "open_source_inspiration": "Bobby's own Lens daily-scan output (Atlas/lens-briefs/) \u2014 a proprietary intelligence corpus built from open institutional sources.",
+          "cross_agent_inputs": "Lens (signal generator), Architect (allocation), Keystone (regime context), Helm (agent-economy theme detection).",
+          "backtest_sharpe": null,
+          "backtest_max_dd": null,
+          "paper_pnl_to_date": null,
+          "discovered_date": "2026-05-13",
+          "promoted_date": null,
+          "next_step": "Author construct_synthesis.py: parse Atlas/lens-briefs/*.md, extract pattern statements + routed agents, map to sector/factor ETF universe, backtest 30-day windows over the available Lens corpus."
+        }
+      ]
     }
   }
 }
