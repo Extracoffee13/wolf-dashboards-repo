@@ -283,7 +283,9 @@
     "status": "green",
     "daily_triggered": false,
     "weekly_triggered": false,
-    "halt_new_entries": false,
+    "halt_new_entries": true,
+    "halt_reason": "WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.9%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 24.4%, cash -$100K margin). Auto-rebalance runs at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries flips back to false after compliance achieved.",
+    "halt_until": "post-rebalance",
     "halt_all_activity": false,
     "message": "CLEAR \u2014 Daily: -1.8% (buf: 1.2%) | Weekly: -0.6% (buf: 6.4%)"
   },
