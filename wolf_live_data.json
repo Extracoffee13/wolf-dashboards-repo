@@ -415,5 +415,117 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-05-13 11:30:40",
+    "last_task": "Midday rescan",
+    "count": 7,
+    "signals": [
+      {
+        "ticker": "SPY",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 8,
+        "entry": 680.52,
+        "stop": 679.7035714285714,
+        "target": 682.1528571428571,
+        "symbol": "SPY",
+        "price": 680.52,
+        "rsi": 47.9,
+        "rvol": 7.08,
+        "atr": 0.54,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "IWM",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 8,
+        "entry": 253.0,
+        "stop": 252.35339285714286,
+        "target": 254.29321428571427,
+        "symbol": "IWM",
+        "price": 253.0,
+        "rsi": 79.7,
+        "rvol": 3.98,
+        "atr": 0.43,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "XLF",
+        "direction": "SHORT",
+        "strategy": "Overbought Fade",
+        "confidence": 7,
+        "entry": 55.425,
+        "stop": 55.605,
+        "target": 55.139250000000004,
+        "symbol": "XLF",
+        "price": 55.425,
+        "rsi": 90.8,
+        "rvol": 0.47,
+        "atr": 0.09,
+        "risk_reward": 1.6
+      },
+      {
+        "ticker": "NVDA",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 6,
+        "entry": 183.83,
+        "stop": 182.5507142857143,
+        "target": 186.38857142857145,
+        "symbol": "NVDA",
+        "price": 183.83,
+        "rsi": 68.8,
+        "rvol": 1.23,
+        "atr": 0.85,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "ROKU",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 6,
+        "entry": 110.065,
+        "stop": 109.32357142857143,
+        "target": 111.45224999999998,
+        "symbol": "ROKU",
+        "price": 110.065,
+        "rsi": 18.4,
+        "rvol": 0.47,
+        "atr": 0.37,
+        "risk_reward": 1.9
+      },
+      {
+        "ticker": "QQQ",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 6,
+        "entry": 617.205,
+        "stop": 616.3960714285715,
+        "target": 618.8228571428572,
+        "symbol": "QQQ",
+        "price": 617.205,
+        "rsi": 72.2,
+        "rvol": 1.45,
+        "atr": 0.54,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "GLD",
+        "direction": "SHORT",
+        "strategy": "Overbought Fade",
+        "confidence": 6,
+        "entry": 408.18,
+        "stop": 410.59357142857147,
+        "target": 404.445,
+        "symbol": "GLD",
+        "price": 408.18,
+        "rsi": 89.0,
+        "rvol": 0.9,
+        "atr": 1.21,
+        "risk_reward": 1.5
+      }
+    ]
   }
 }
