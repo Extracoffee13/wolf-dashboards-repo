@@ -415,5 +415,145 @@
         }
       ]
     }
+  },
+  "daily_summary": {
+    "date": "2026-05-13",
+    "account": {
+      "portfolio_value": 101794.43,
+      "cash": -100545.31,
+      "buying_power": 1249.12,
+      "positions": 7,
+      "todays_trades": 1,
+      "daily_pnl_amount": -1156.21,
+      "daily_pnl_pct": -0.0112,
+      "circuit_breaker": "yellow"
+    },
+    "log": {
+      "task_fires": {
+        "wolf-crypto-247": 3,
+        "wolf-market-open-exec": 1,
+        "wolf-midday-rescan": 1,
+        "wolf-gate-status": 1,
+        "wolf-daily-summary": 1
+      },
+      "errors": 0
+    },
+    "rejected": {
+      "count": 9,
+      "reasons": {
+        "R:R 1.0 < 1.5": 3,
+        "R:R 0.8 < 1.5": 1,
+        "R:R 0.9 < 1.5": 1,
+        "R:R 0.5 < 1.5": 2,
+        "R:R 0.7 < 1.5": 1,
+        "R:R 0.6 < 1.5": 1
+      },
+      "recent": [
+        {
+          "ticker": "BCH/USD",
+          "strategy": "Overbought Fade",
+          "reason": "R:R 1.0 < 1.5",
+          "rejected_at": "2026-05-13T00:00:07.959767",
+          "risk_reward": 1.0,
+          "confidence": 2
+        },
+        {
+          "ticker": "BCH/USD",
+          "strategy": "Overbought Fade",
+          "reason": "R:R 1.0 < 1.5",
+          "rejected_at": "2026-05-13T06:00:09.846866",
+          "risk_reward": 1.0,
+          "confidence": 2
+        },
+        {
+          "ticker": "AAPL",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 0.8 < 1.5",
+          "rejected_at": "2026-05-13T09:30:48.514078",
+          "risk_reward": 0.8,
+          "confidence": 6
+        },
+        {
+          "ticker": "GS",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 0.9 < 1.5",
+          "rejected_at": "2026-05-13T09:30:48.514149",
+          "risk_reward": 0.9,
+          "confidence": 5
+        },
+        {
+          "ticker": "MS",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 0.5 < 1.5",
+          "rejected_at": "2026-05-13T09:30:48.514184",
+          "risk_reward": 0.5,
+          "confidence": 5
+        },
+        {
+          "ticker": "NFLX",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 0.7 < 1.5",
+          "rejected_at": "2026-05-13T11:30:40.833852",
+          "risk_reward": 0.7,
+          "confidence": 6
+        },
+        {
+          "ticker": "PLTR",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 0.6 < 1.5",
+          "rejected_at": "2026-05-13T11:30:40.833918",
+          "risk_reward": 0.6,
+          "confidence": 6
+        },
+        {
+          "ticker": "META",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 0.5 < 1.5",
+          "rejected_at": "2026-05-13T11:30:40.833950",
+          "risk_reward": 0.5,
+          "confidence": 5
+        },
+        {
+          "ticker": "BCH/USD",
+          "strategy": "Overbought Fade",
+          "reason": "R:R 1.0 < 1.5",
+          "rejected_at": "2026-05-13T12:00:13.397302",
+          "risk_reward": 1.0,
+          "confidence": 2
+        }
+      ]
+    },
+    "committee": {
+      "runs": 3,
+      "tickers_voted": 10,
+      "verdicts": {
+        "hold": 4,
+        "buy": 3,
+        "bullish": 3
+      }
+    }
+  },
+  "daily_summary_updated_at": "2026-05-13T16:50:05.112054",
+  "today_signals": {
+    "as_of": "2026-05-13 16:50:05",
+    "last_task": "EOD recap",
+    "count": 1,
+    "signals": [
+      {
+        "ticker": "ETH/USD",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 5,
+        "entry": 2931.071,
+        "stop": 2970.713982074,
+        "target": 2851.785035852,
+        "symbol": "ETH/USD",
+        "price": 2931.071,
+        "rsi": 35.7,
+        "rvol": 1.3,
+        "atr": 26.43,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
