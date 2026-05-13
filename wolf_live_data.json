@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-05-13T11:28:57.443343",
+  "last_updated": "2026-05-13T11:34:00.521870",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 101854.76,
+    "portfolio_value": 102119.72,
     "cash": -100545.31,
-    "buying_power": 1309.45,
-    "equity": 101854.76,
+    "buying_power": 1574.41,
+    "equity": 102119.72,
     "last_equity": 102950.64,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -1095.88,
-    "pct": -0.0106,
+    "amount": -830.92,
+    "pct": -0.0081,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 301.67,
-      "market_value": 22926.92,
-      "unrealized_pl": -384.56,
-      "unrealized_plpc": -0.0165,
+      "current_price": 301.665,
+      "market_value": 22926.54,
+      "unrealized_pl": -384.94,
+      "unrealized_plpc": -0.01651,
       "cost_basis": 23311.48
     },
     {
@@ -38,10 +38,10 @@
       "qty": 333.0,
       "side": "long",
       "avg_entry": 75.842613,
-      "current_price": 75.78,
-      "market_value": 25234.74,
-      "unrealized_pl": -20.850129,
-      "unrealized_plpc": -0.00083,
+      "current_price": 75.83,
+      "market_value": 25251.39,
+      "unrealized_pl": -4.200129,
+      "unrealized_plpc": -0.00017,
       "cost_basis": 25255.590129
     },
     {
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 403.445,
-      "market_value": 25417.035,
-      "unrealized_pl": -1148.384979,
-      "unrealized_plpc": -0.04323,
+      "current_price": 404.2986,
+      "market_value": 25470.8118,
+      "unrealized_pl": -1094.608179,
+      "unrealized_plpc": -0.0412,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 226.16,
-      "market_value": 28043.84,
-      "unrealized_pl": 2327.48,
-      "unrealized_plpc": 0.09051,
+      "current_price": 225.86,
+      "market_value": 28006.64,
+      "unrealized_pl": 2290.28,
+      "unrealized_plpc": 0.08906,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 130.32,
-      "market_value": 47436.48,
-      "unrealized_pl": -2346.74986,
-      "unrealized_plpc": -0.04714,
+      "current_price": 130.505,
+      "market_value": 47503.82,
+      "unrealized_pl": -2279.40986,
+      "unrealized_plpc": -0.04579,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 449.365,
-      "market_value": 29658.09,
-      "unrealized_pl": 456.35997,
-      "unrealized_plpc": 0.01563,
+      "current_price": 451.9,
+      "market_value": 29825.4,
+      "unrealized_pl": 623.66997,
+      "unrealized_plpc": 0.02136,
       "cost_basis": 29201.73003
     },
     {
@@ -93,10 +93,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 57.065,
-      "market_value": 23681.975,
-      "unrealized_pl": 272.374875,
-      "unrealized_plpc": 0.01164,
+      "current_price": 57.039,
+      "market_value": 23671.185,
+      "unrealized_pl": 261.584875,
+      "unrealized_plpc": 0.01117,
       "cost_basis": 23409.600125
     }
   ],
@@ -415,117 +415,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-05-13 11:30:40",
-    "last_task": "Midday rescan",
-    "count": 7,
-    "signals": [
-      {
-        "ticker": "SPY",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 8,
-        "entry": 680.52,
-        "stop": 679.7035714285714,
-        "target": 682.1528571428571,
-        "symbol": "SPY",
-        "price": 680.52,
-        "rsi": 47.9,
-        "rvol": 7.08,
-        "atr": 0.54,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "IWM",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 8,
-        "entry": 253.0,
-        "stop": 252.35339285714286,
-        "target": 254.29321428571427,
-        "symbol": "IWM",
-        "price": 253.0,
-        "rsi": 79.7,
-        "rvol": 3.98,
-        "atr": 0.43,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "XLF",
-        "direction": "SHORT",
-        "strategy": "Overbought Fade",
-        "confidence": 7,
-        "entry": 55.425,
-        "stop": 55.605,
-        "target": 55.139250000000004,
-        "symbol": "XLF",
-        "price": 55.425,
-        "rsi": 90.8,
-        "rvol": 0.47,
-        "atr": 0.09,
-        "risk_reward": 1.6
-      },
-      {
-        "ticker": "NVDA",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 6,
-        "entry": 183.83,
-        "stop": 182.5507142857143,
-        "target": 186.38857142857145,
-        "symbol": "NVDA",
-        "price": 183.83,
-        "rsi": 68.8,
-        "rvol": 1.23,
-        "atr": 0.85,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "ROKU",
-        "direction": "LONG",
-        "strategy": "Mean Reversion (Oversold)",
-        "confidence": 6,
-        "entry": 110.065,
-        "stop": 109.32357142857143,
-        "target": 111.45224999999998,
-        "symbol": "ROKU",
-        "price": 110.065,
-        "rsi": 18.4,
-        "rvol": 0.47,
-        "atr": 0.37,
-        "risk_reward": 1.9
-      },
-      {
-        "ticker": "QQQ",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 6,
-        "entry": 617.205,
-        "stop": 616.3960714285715,
-        "target": 618.8228571428572,
-        "symbol": "QQQ",
-        "price": 617.205,
-        "rsi": 72.2,
-        "rvol": 1.45,
-        "atr": 0.54,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "GLD",
-        "direction": "SHORT",
-        "strategy": "Overbought Fade",
-        "confidence": 6,
-        "entry": 408.18,
-        "stop": 410.59357142857147,
-        "target": 404.445,
-        "symbol": "GLD",
-        "price": 408.18,
-        "rsi": 89.0,
-        "rvol": 0.9,
-        "atr": 1.21,
-        "risk_reward": 1.5
-      }
-    ]
   }
 }
