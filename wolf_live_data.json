@@ -404,5 +404,180 @@
         }
       ]
     }
+  },
+  "daily_summary": {
+    "date": "2026-05-14",
+    "account": {
+      "portfolio_value": 104494.76,
+      "cash": -100545.31,
+      "buying_power": 3949.45,
+      "positions": 7,
+      "todays_trades": 0,
+      "daily_pnl_amount": 2669.52,
+      "daily_pnl_pct": 0.0262,
+      "circuit_breaker": "yellow"
+    },
+    "log": {
+      "task_fires": {
+        "wolf-crypto-247": 3,
+        "wolf-market-open-exec": 1,
+        "wolf-midday-rescan": 1,
+        "wolf-gate-status": 1,
+        "wolf-daily-summary": 1
+      },
+      "errors": 1
+    },
+    "rejected": {
+      "count": 16,
+      "reasons": {
+        "R:R 0.7 < 1.5": 3,
+        "R:R 1.3 < 1.5": 1,
+        "R:R 1.2 < 1.5": 1,
+        "R:R 0.9 < 1.5": 1,
+        "R:R 1.1 < 1.5": 2,
+        "halt_new_entries=true in wolf_live_data.json": 6,
+        "R:R 1.4 < 1.5": 2
+      },
+      "recent": [
+        {
+          "ticker": "CVX",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-14T13:30:45Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "SPY",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-14T13:30:45Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "QQQ",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-14T13:30:45Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "IWM",
+          "strategy": "Overbought Fade",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-14T13:30:45Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "XLK",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-14T13:30:45Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "SPXL",
+          "strategy": "MACD Bullish Crossover",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-14T13:30:45Z",
+          "risk_reward": 2.0,
+          "confidence": 5
+        },
+        {
+          "ticker": "PFE",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 1.4 < 1.5",
+          "rejected_at": "2026-05-14T11:30:30.665066",
+          "risk_reward": 1.4,
+          "confidence": 7
+        },
+        {
+          "ticker": "IWM",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 1.1 < 1.5",
+          "rejected_at": "2026-05-14T11:30:30.665111",
+          "risk_reward": 1.1,
+          "confidence": 5
+        },
+        {
+          "ticker": "XLE",
+          "strategy": "Overbought Fade",
+          "reason": "R:R 1.4 < 1.5",
+          "rejected_at": "2026-05-14T11:30:30.665124",
+          "risk_reward": 1.4,
+          "confidence": 5
+        },
+        {
+          "ticker": "AAVE/USD",
+          "strategy": "Overbought Fade",
+          "reason": "R:R 0.7 < 1.5",
+          "rejected_at": "2026-05-14T12:00:15.719664",
+          "risk_reward": 0.7,
+          "confidence": 2
+        }
+      ]
+    },
+    "committee": {
+      "runs": 0,
+      "tickers_voted": 0,
+      "verdicts": {}
+    }
+  },
+  "daily_summary_updated_at": "2026-05-14T16:50:06.077798",
+  "today_signals": {
+    "as_of": "2026-05-14 16:50:06",
+    "last_task": "EOD recap",
+    "count": 3,
+    "signals": [
+      {
+        "ticker": "BCH/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 8,
+        "entry": 619.665,
+        "stop": 600.8016272018035,
+        "target": 657.3917455963929,
+        "symbol": "BCH/USD",
+        "price": 619.665,
+        "rsi": 68.2,
+        "rvol": 7.66,
+        "atr": 12.58,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "UNI/USD",
+        "direction": "LONG",
+        "strategy": "MACD Bullish Crossover",
+        "confidence": 5,
+        "entry": 5.890875,
+        "stop": 5.589987467928572,
+        "target": 6.4926500641428575,
+        "symbol": "UNI/USD",
+        "price": 5.890875,
+        "rsi": 55.1,
+        "rvol": 0.12,
+        "atr": 0.15,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "DOT/USD",
+        "direction": "SHORT",
+        "strategy": "Overbought Fade",
+        "confidence": 3,
+        "entry": 1.90907,
+        "stop": 2.009464574214286,
+        "target": 1.74712375,
+        "symbol": "DOT/USD",
+        "price": 1.90907,
+        "rsi": 74.5,
+        "rvol": 0.75,
+        "atr": 0.05,
+        "risk_reward": 1.6
+      }
+    ]
   }
 }
