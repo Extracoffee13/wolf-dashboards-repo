@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-05-14T11:28:12.649497",
+  "last_updated": "2026-05-14T11:33:15.205875",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 104627.84,
+    "portfolio_value": 104896.2,
     "cash": -100545.31,
-    "buying_power": 4082.53,
-    "equity": 104627.84,
+    "buying_power": 4350.89,
+    "equity": 104896.2,
     "last_equity": 101825.24,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 2802.6,
-    "pct": 0.0275,
+    "amount": 3070.96,
+    "pct": 0.0302,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 301.784,
-      "market_value": 22935.584,
-      "unrealized_pl": -375.896,
-      "unrealized_plpc": -0.01612,
+      "current_price": 301.96,
+      "market_value": 22948.96,
+      "unrealized_pl": -362.52,
+      "unrealized_plpc": -0.01555,
       "cost_basis": 23311.48
     },
     {
@@ -38,10 +38,10 @@
       "qty": 333.0,
       "side": "long",
       "avg_entry": 75.842613,
-      "current_price": 76.6699,
-      "market_value": 25531.0767,
-      "unrealized_pl": 275.486571,
-      "unrealized_plpc": 0.01091,
+      "current_price": 76.64,
+      "market_value": 25521.12,
+      "unrealized_pl": 265.529871,
+      "unrealized_plpc": 0.01051,
       "cost_basis": 25255.590129
     },
     {
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 411.0797,
-      "market_value": 25898.0211,
-      "unrealized_pl": -667.398879,
-      "unrealized_plpc": -0.02512,
+      "current_price": 411.685,
+      "market_value": 25936.155,
+      "unrealized_pl": -629.264979,
+      "unrealized_plpc": -0.02369,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 234.9,
-      "market_value": 29127.6,
-      "unrealized_pl": 3411.24,
-      "unrealized_plpc": 0.13265,
+      "current_price": 235.6401,
+      "market_value": 29219.3724,
+      "unrealized_pl": 3503.0124,
+      "unrealized_plpc": 0.13622,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 132.47,
-      "market_value": 48219.08,
-      "unrealized_pl": -1564.14986,
-      "unrealized_plpc": -0.03142,
+      "current_price": 132.975,
+      "market_value": 48402.9,
+      "unrealized_pl": -1380.32986,
+      "unrealized_plpc": -0.02773,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 446.7444,
-      "market_value": 29485.1304,
-      "unrealized_pl": 283.40037,
-      "unrealized_plpc": 0.0097,
+      "current_price": 446.3201,
+      "market_value": 29457.1266,
+      "unrealized_pl": 255.39657,
+      "unrealized_plpc": 0.00875,
       "cost_basis": 29201.73003
     },
     {
@@ -93,10 +93,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 57.74,
-      "market_value": 23962.1,
-      "unrealized_pl": 552.499875,
-      "unrealized_plpc": 0.0236,
+      "current_price": 57.725,
+      "market_value": 23955.875,
+      "unrealized_pl": 546.274875,
+      "unrealized_plpc": 0.02334,
       "cost_basis": 23409.600125
     }
   ],
@@ -404,117 +404,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-05-14 11:30:30",
-    "last_task": "Midday rescan",
-    "count": 7,
-    "signals": [
-      {
-        "ticker": "SPXS",
-        "direction": "LONG",
-        "strategy": "Mean Reversion (Oversold)",
-        "confidence": 7,
-        "entry": 34.45,
-        "stop": 34.375,
-        "target": 34.660250000000005,
-        "symbol": "SPXS",
-        "price": 34.45,
-        "rsi": 5.7,
-        "rvol": 0.68,
-        "atr": 0.04,
-        "risk_reward": 2.8
-      },
-      {
-        "ticker": "DIA",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 6,
-        "entry": 484.66,
-        "stop": 484.1558928571429,
-        "target": 485.66821428571427,
-        "symbol": "DIA",
-        "price": 484.66,
-        "rsi": 68.8,
-        "rvol": 1.75,
-        "atr": 0.34,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "SPXL",
-        "direction": "LONG",
-        "strategy": "Mean Reversion (Oversold)",
-        "confidence": 6,
-        "entry": 225.18,
-        "stop": 224.0207142857143,
-        "target": 227.233,
-        "symbol": "SPXL",
-        "price": 225.18,
-        "rsi": 17.9,
-        "rvol": 0.8,
-        "atr": 0.58,
-        "risk_reward": 1.8
-      },
-      {
-        "ticker": "CRM",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 5,
-        "entry": 263.24,
-        "stop": 262.6689285714286,
-        "target": 264.38214285714287,
-        "symbol": "CRM",
-        "price": 263.24,
-        "rsi": 66.7,
-        "rvol": 1.13,
-        "atr": 0.38,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "OXY",
-        "direction": "SHORT",
-        "strategy": "Overbought Fade",
-        "confidence": 5,
-        "entry": 40.175,
-        "stop": 40.294285714285714,
-        "target": 39.94075,
-        "symbol": "OXY",
-        "price": 40.175,
-        "rsi": 80.6,
-        "rvol": 0.74,
-        "atr": 0.06,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "LLY",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 5,
-        "entry": 1071.69,
-        "stop": 1074.3653571428572,
-        "target": 1066.3392857142858,
-        "symbol": "LLY",
-        "price": 1071.69,
-        "rsi": 40.4,
-        "rvol": 2.2,
-        "atr": 1.78,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "GLD",
-        "direction": "LONG",
-        "strategy": "MACD Bullish Crossover",
-        "confidence": 5,
-        "entry": 411.455,
-        "stop": 409.2907142857143,
-        "target": 415.7835714285714,
-        "symbol": "GLD",
-        "price": 411.455,
-        "rsi": 43.0,
-        "rvol": 0.41,
-        "atr": 1.08,
-        "risk_reward": 2.0
-      }
-    ]
   }
 }
