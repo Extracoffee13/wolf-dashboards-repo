@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-05-14T06:00:02.325306",
+  "last_updated": "2026-05-14T06:05:06.183520",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103008.25,
+    "portfolio_value": 103141.82,
     "cash": -100545.31,
-    "buying_power": 2462.94,
-    "equity": 103008.25,
+    "buying_power": 2596.51,
+    "equity": 103141.82,
     "last_equity": 101825.24,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 1183.01,
-    "pct": 0.0116,
+    "amount": 1316.58,
+    "pct": 0.0129,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 406.31,
-      "market_value": 25597.53,
-      "unrealized_pl": -967.889979,
-      "unrealized_plpc": -0.03643,
+      "current_price": 407.06,
+      "market_value": 25644.78,
+      "unrealized_pl": -920.639979,
+      "unrealized_plpc": -0.03466,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 230.24,
-      "market_value": 28549.76,
-      "unrealized_pl": 2833.4,
-      "unrealized_plpc": 0.11018,
+      "current_price": 231.075,
+      "market_value": 28653.3,
+      "unrealized_pl": 2936.94,
+      "unrealized_plpc": 0.11421,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 130.6,
-      "market_value": 47538.4,
-      "unrealized_pl": -2244.82986,
-      "unrealized_plpc": -0.04509,
+      "current_price": 130.6641,
+      "market_value": 47561.7324,
+      "unrealized_pl": -2221.49746,
+      "unrealized_plpc": -0.04462,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 447.4,
-      "market_value": 29528.4,
-      "unrealized_pl": 326.66997,
-      "unrealized_plpc": 0.01119,
+      "current_price": 447.2,
+      "market_value": 29515.2,
+      "unrealized_pl": 313.46997,
+      "unrealized_plpc": 0.01073,
       "cost_basis": 29201.73003
     },
     {
@@ -93,10 +93,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 57.64,
-      "market_value": 23920.6,
-      "unrealized_pl": 510.999875,
-      "unrealized_plpc": 0.02183,
+      "current_price": 57.5741,
+      "market_value": 23893.2515,
+      "unrealized_pl": 483.651375,
+      "unrealized_plpc": 0.02066,
       "cost_basis": 23409.600125
     }
   ],
@@ -404,57 +404,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-05-14 06:00:13",
-    "last_task": "Crypto sweep",
-    "count": 3,
-    "signals": [
-      {
-        "ticker": "BCH/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 8,
-        "entry": 619.665,
-        "stop": 600.8016272018035,
-        "target": 657.3917455963929,
-        "symbol": "BCH/USD",
-        "price": 619.665,
-        "rsi": 68.2,
-        "rvol": 7.66,
-        "atr": 12.58,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "UNI/USD",
-        "direction": "LONG",
-        "strategy": "MACD Bullish Crossover",
-        "confidence": 5,
-        "entry": 5.890875,
-        "stop": 5.589987467928572,
-        "target": 6.4926500641428575,
-        "symbol": "UNI/USD",
-        "price": 5.890875,
-        "rsi": 55.1,
-        "rvol": 0.12,
-        "atr": 0.15,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "DOT/USD",
-        "direction": "SHORT",
-        "strategy": "Overbought Fade",
-        "confidence": 3,
-        "entry": 1.90907,
-        "stop": 2.009464574214286,
-        "target": 1.74712375,
-        "symbol": "DOT/USD",
-        "price": 1.90907,
-        "rsi": 74.5,
-        "rvol": 0.75,
-        "atr": 0.05,
-        "risk_reward": 1.6
-      }
-    ]
   }
 }
