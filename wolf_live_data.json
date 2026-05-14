@@ -404,5 +404,117 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-05-14 11:30:30",
+    "last_task": "Midday rescan",
+    "count": 7,
+    "signals": [
+      {
+        "ticker": "SPXS",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 7,
+        "entry": 34.45,
+        "stop": 34.375,
+        "target": 34.660250000000005,
+        "symbol": "SPXS",
+        "price": 34.45,
+        "rsi": 5.7,
+        "rvol": 0.68,
+        "atr": 0.04,
+        "risk_reward": 2.8
+      },
+      {
+        "ticker": "DIA",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 6,
+        "entry": 484.66,
+        "stop": 484.1558928571429,
+        "target": 485.66821428571427,
+        "symbol": "DIA",
+        "price": 484.66,
+        "rsi": 68.8,
+        "rvol": 1.75,
+        "atr": 0.34,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "SPXL",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 6,
+        "entry": 225.18,
+        "stop": 224.0207142857143,
+        "target": 227.233,
+        "symbol": "SPXL",
+        "price": 225.18,
+        "rsi": 17.9,
+        "rvol": 0.8,
+        "atr": 0.58,
+        "risk_reward": 1.8
+      },
+      {
+        "ticker": "CRM",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 5,
+        "entry": 263.24,
+        "stop": 262.6689285714286,
+        "target": 264.38214285714287,
+        "symbol": "CRM",
+        "price": 263.24,
+        "rsi": 66.7,
+        "rvol": 1.13,
+        "atr": 0.38,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "OXY",
+        "direction": "SHORT",
+        "strategy": "Overbought Fade",
+        "confidence": 5,
+        "entry": 40.175,
+        "stop": 40.294285714285714,
+        "target": 39.94075,
+        "symbol": "OXY",
+        "price": 40.175,
+        "rsi": 80.6,
+        "rvol": 0.74,
+        "atr": 0.06,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "LLY",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 5,
+        "entry": 1071.69,
+        "stop": 1074.3653571428572,
+        "target": 1066.3392857142858,
+        "symbol": "LLY",
+        "price": 1071.69,
+        "rsi": 40.4,
+        "rvol": 2.2,
+        "atr": 1.78,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "GLD",
+        "direction": "LONG",
+        "strategy": "MACD Bullish Crossover",
+        "confidence": 5,
+        "entry": 411.455,
+        "stop": 409.2907142857143,
+        "target": 415.7835714285714,
+        "symbol": "GLD",
+        "price": 411.455,
+        "rsi": 43.0,
+        "rvol": 0.41,
+        "atr": 1.08,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
