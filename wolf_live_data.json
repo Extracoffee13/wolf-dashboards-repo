@@ -404,5 +404,57 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-05-14 12:00:17",
+    "last_task": "Crypto sweep",
+    "count": 3,
+    "signals": [
+      {
+        "ticker": "BCH/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 8,
+        "entry": 619.665,
+        "stop": 600.8016272018035,
+        "target": 657.3917455963929,
+        "symbol": "BCH/USD",
+        "price": 619.665,
+        "rsi": 68.2,
+        "rvol": 7.66,
+        "atr": 12.58,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "UNI/USD",
+        "direction": "LONG",
+        "strategy": "MACD Bullish Crossover",
+        "confidence": 5,
+        "entry": 5.890875,
+        "stop": 5.589987467928572,
+        "target": 6.4926500641428575,
+        "symbol": "UNI/USD",
+        "price": 5.890875,
+        "rsi": 55.1,
+        "rvol": 0.12,
+        "atr": 0.15,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "DOT/USD",
+        "direction": "SHORT",
+        "strategy": "Overbought Fade",
+        "confidence": 3,
+        "entry": 1.90907,
+        "stop": 2.009464574214286,
+        "target": 1.74712375,
+        "symbol": "DOT/USD",
+        "price": 1.90907,
+        "rsi": 74.5,
+        "rvol": 0.75,
+        "atr": 0.05,
+        "risk_reward": 1.6
+      }
+    ]
   }
 }
