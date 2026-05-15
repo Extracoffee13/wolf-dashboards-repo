@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "What is the correct pricing primitive for commercial signage — cost-plus, value-based, or attention-based?"
+outcome: delta category was novel
+lesson: When an industry universally uses cost-plus pricing, the correct check is whether the pricing variable (fabrication cost) is actually the variable that drives buyer value — often it isn't, and public data (traffic counts, impression volumes) can expose a better primitive the corpus hasn't adopted.
+tags: first-principles,praxis,reasoning
+confidence: 0.82
+~~~
