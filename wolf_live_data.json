@@ -404,5 +404,161 @@
         }
       ]
     }
+  },
+  "daily_summary": {
+    "date": "2026-05-15",
+    "account": {
+      "portfolio_value": 102995.26,
+      "cash": -100545.31,
+      "buying_power": 2449.95,
+      "positions": 7,
+      "todays_trades": 0,
+      "daily_pnl_amount": -1944.02,
+      "daily_pnl_pct": -0.0185,
+      "circuit_breaker": "yellow"
+    },
+    "log": {
+      "task_fires": {
+        "wolf-crypto-247": 3,
+        "wolf-market-open-exec": 1,
+        "wolf-midday-rescan": 1,
+        "wolf-gate-status": 1,
+        "wolf-daily-summary": 1
+      },
+      "errors": 1
+    },
+    "rejected": {
+      "count": 15,
+      "reasons": {
+        "halt_new_entries=true in wolf_live_data.json": 10,
+        "R:R 1.2 < 1.5": 2,
+        "R:R 1.1 < 1.5": 3
+      },
+      "recent": [
+        {
+          "ticker": "TLT",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-15T13:30:57Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "SQQQ",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-15T13:30:57Z",
+          "risk_reward": 1.6,
+          "confidence": 6
+        },
+        {
+          "ticker": "MSFT",
+          "strategy": "MACD Bullish Crossover",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-15T13:30:57Z",
+          "risk_reward": 2.0,
+          "confidence": 5
+        },
+        {
+          "ticker": "AMZN",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-15T13:30:57Z",
+          "risk_reward": 2.0,
+          "confidence": 5
+        },
+        {
+          "ticker": "PLTR",
+          "strategy": "Breakdown",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-15T13:30:57Z",
+          "risk_reward": 2.0,
+          "confidence": 5
+        },
+        {
+          "ticker": "PLTR",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 1.2 < 1.5",
+          "rejected_at": "2026-05-15T11:30:37.036794",
+          "risk_reward": 1.2,
+          "confidence": 5
+        },
+        {
+          "ticker": "XOM",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 1.1 < 1.5",
+          "rejected_at": "2026-05-15T11:30:37.036872",
+          "risk_reward": 1.1,
+          "confidence": 4
+        },
+        {
+          "ticker": "CVX",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 1.1 < 1.5",
+          "rejected_at": "2026-05-15T11:30:37.036908",
+          "risk_reward": 1.1,
+          "confidence": 4
+        },
+        {
+          "ticker": "SLB",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 1.2 < 1.5",
+          "rejected_at": "2026-05-15T11:30:37.036938",
+          "risk_reward": 1.2,
+          "confidence": 4
+        },
+        {
+          "ticker": "XLE",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 1.1 < 1.5",
+          "rejected_at": "2026-05-15T11:30:37.036965",
+          "risk_reward": 1.1,
+          "confidence": 4
+        }
+      ]
+    },
+    "committee": {
+      "runs": 0,
+      "tickers_voted": 0,
+      "verdicts": {}
+    }
+  },
+  "daily_summary_updated_at": "2026-05-15T16:50:03.742230",
+  "today_signals": {
+    "as_of": "2026-05-15 16:50:03",
+    "last_task": "EOD recap",
+    "count": 2,
+    "signals": [
+      {
+        "ticker": "DOT/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 8,
+        "entry": 1.89453,
+        "stop": 1.8117847458214287,
+        "target": 2.060020508357143,
+        "symbol": "DOT/USD",
+        "price": 1.89453,
+        "rsi": 73.4,
+        "rvol": 5.45,
+        "atr": 0.06,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "BCH/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 6,
+        "entry": 616.715,
+        "stop": 598.5242082125536,
+        "target": 653.0965835748929,
+        "symbol": "BCH/USD",
+        "price": 616.715,
+        "rsi": 64.3,
+        "rvol": 2.31,
+        "atr": 12.13,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
