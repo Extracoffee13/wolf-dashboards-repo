@@ -404,5 +404,87 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-05-15 11:30:37",
+    "last_task": "Midday rescan",
+    "count": 5,
+    "signals": [
+      {
+        "ticker": "QQQ",
+        "direction": "SHORT",
+        "strategy": "Overbought Fade",
+        "confidence": 6,
+        "entry": 622.28,
+        "stop": 622.8285714285714,
+        "target": 621.46825,
+        "symbol": "QQQ",
+        "price": 622.28,
+        "rsi": 89.9,
+        "rvol": 0.04,
+        "atr": 0.27,
+        "risk_reward": 1.5
+      },
+      {
+        "ticker": "SQQQ",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 6,
+        "entry": 67.25,
+        "stop": 67.07857142857144,
+        "target": 67.51899999999999,
+        "symbol": "SQQQ",
+        "price": 67.25,
+        "rsi": 15.9,
+        "rvol": 0.72,
+        "atr": 0.09,
+        "risk_reward": 1.6
+      },
+      {
+        "ticker": "ROKU",
+        "direction": "LONG",
+        "strategy": "MACD Bullish Crossover",
+        "confidence": 5,
+        "entry": 110.95,
+        "stop": 110.24571428571429,
+        "target": 112.35857142857142,
+        "symbol": "ROKU",
+        "price": 110.95,
+        "rsi": 60.3,
+        "rvol": 0.59,
+        "atr": 0.35,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "ABBV",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 5,
+        "entry": 229.29,
+        "stop": 229.87821428571428,
+        "target": 228.1135714285714,
+        "symbol": "ABBV",
+        "price": 229.29,
+        "rsi": 37.6,
+        "rvol": 1.46,
+        "atr": 0.39,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "OXY",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 4,
+        "entry": 39.69,
+        "stop": 39.497857142857136,
+        "target": 39.98,
+        "symbol": "OXY",
+        "price": 39.69,
+        "rsi": 26.5,
+        "rvol": 0.77,
+        "atr": 0.1,
+        "risk_reward": 1.5
+      }
+    ]
   }
 }
