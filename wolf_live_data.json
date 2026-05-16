@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-15T23:58:44.699865",
+  "last_updated": "2026-05-16T00:03:47.704866",
   "update_interval_seconds": 300,
   "account": {
     "portfolio_value": 103274.64,
@@ -315,9 +315,9 @@
   "wolf_capabilities": {
     "capability_score": 51,
     "score_max": 100,
-    "day_on_mission": 38,
+    "day_on_mission": 39,
     "mission_start": "2026-04-08",
-    "streak_days": 38,
+    "streak_days": 39,
     "totals": {
       "scripts": 58,
       "core_modules": 14,
@@ -404,27 +404,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-05-16 00:00:12",
-    "last_task": "Crypto sweep",
-    "count": 1,
-    "signals": [
-      {
-        "ticker": "AVAX/USD",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 7,
-        "entry": 12.33053625,
-        "stop": 12.60723689142857,
-        "target": 11.777134967142857,
-        "symbol": "AVAX/USD",
-        "price": 12.33053625,
-        "rsi": 32.1,
-        "rvol": 3.09,
-        "atr": 0.18,
-        "risk_reward": 2.0
-      }
-    ]
   }
 }
