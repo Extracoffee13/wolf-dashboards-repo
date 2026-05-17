@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17T05:55:32.887732",
+  "last_updated": "2026-05-17T06:00:35.558629",
   "update_interval_seconds": 300,
   "account": {
     "portfolio_value": 103274.64,
@@ -404,42 +404,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-05-17 06:00:10",
-    "last_task": "Crypto sweep",
-    "count": 2,
-    "signals": [
-      {
-        "ticker": "ETH/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 8,
-        "entry": 3043.8,
-        "stop": 3001.9361785714286,
-        "target": 3127.527642857143,
-        "symbol": "ETH/USD",
-        "price": 3043.8,
-        "rsi": 75.6,
-        "rvol": 2.8,
-        "atr": 27.91,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "SOL/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 7,
-        "entry": 124.195,
-        "stop": 121.652875,
-        "target": 129.27925,
-        "symbol": "SOL/USD",
-        "price": 124.195,
-        "rsi": 46.0,
-        "rvol": 4.68,
-        "atr": 1.69,
-        "risk_reward": 2.0
-      }
-    ]
   }
 }
