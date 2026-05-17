@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: praxis-daily-review
+decision: Capture velocity remains near-zero — 1 block in inbox first written 2026-05-15, still unprocessed after 55h; 0 new packets captured in the strict last-24h window.
+outcome: AP is the sole contributor across all 19 registered agents; Vector, Forge, Signal, Cipher, Spectra, Oracle, Nexus, Ledger, Atlas, Sentinel, Venture, Equity, Alpha, WOLF, Keystone, Cornerstone, Charlie, and Architect are all quiet.
+lesson: A daily review cron and at least one non-AP agent writing to the inbox are required to lift PRAXIS out of bootstrap state into active capture.
+tags: praxis,meta,review,daily
+confidence: 0.7
+~~~
