@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-05-18T11:27:37.691756",
+  "last_updated": "2026-05-18T11:32:41.158469",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 102160.25,
+    "portfolio_value": 102063.04,
     "cash": -100545.31,
-    "buying_power": 1614.94,
-    "equity": 102160.25,
+    "buying_power": 1517.73,
+    "equity": 102063.04,
     "last_equity": 103274.64,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -1114.39,
-    "pct": -0.0108,
+    "amount": -1211.6,
+    "pct": -0.0117,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 299.28,
-      "market_value": 22745.28,
-      "unrealized_pl": -566.2,
-      "unrealized_plpc": -0.02429,
+      "current_price": 299.74,
+      "market_value": 22780.24,
+      "unrealized_pl": -531.24,
+      "unrealized_plpc": -0.02279,
       "cost_basis": 23311.48
     },
     {
@@ -38,10 +38,10 @@
       "qty": 333.0,
       "side": "long",
       "avg_entry": 75.842613,
-      "current_price": 76.79,
-      "market_value": 25571.07,
-      "unrealized_pl": 315.479871,
-      "unrealized_plpc": 0.01249,
+      "current_price": 76.96,
+      "market_value": 25627.68,
+      "unrealized_pl": 372.089871,
+      "unrealized_plpc": 0.01473,
       "cost_basis": 25255.590129
     },
     {
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 417.74,
-      "market_value": 26317.62,
-      "unrealized_pl": -247.799979,
-      "unrealized_plpc": -0.00933,
+      "current_price": 417.565,
+      "market_value": 26306.595,
+      "unrealized_pl": -258.824979,
+      "unrealized_plpc": -0.00974,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 222.935,
-      "market_value": 27643.94,
-      "unrealized_pl": 1927.58,
-      "unrealized_plpc": 0.07496,
+      "current_price": 221.945,
+      "market_value": 27521.18,
+      "unrealized_pl": 1804.82,
+      "unrealized_plpc": 0.07018,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 132.88,
-      "market_value": 48368.32,
-      "unrealized_pl": -1414.90986,
-      "unrealized_plpc": -0.02842,
+      "current_price": 132.98,
+      "market_value": 48404.72,
+      "unrealized_pl": -1378.50986,
+      "unrealized_plpc": -0.02769,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 410.298,
-      "market_value": 27079.668,
-      "unrealized_pl": -2122.06203,
-      "unrealized_plpc": -0.07267,
+      "current_price": 408.71,
+      "market_value": 26974.86,
+      "unrealized_pl": -2226.87003,
+      "unrealized_plpc": -0.07626,
       "cost_basis": 29201.73003
     },
     {
@@ -93,10 +93,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 60.175,
-      "market_value": 24972.625,
-      "unrealized_pl": 1563.024875,
-      "unrealized_plpc": 0.06677,
+      "current_price": 60.245,
+      "market_value": 25001.675,
+      "unrealized_pl": 1592.074875,
+      "unrealized_plpc": 0.06801,
       "cost_basis": 23409.600125
     }
   ],
@@ -404,147 +404,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-05-18 11:30:33",
-    "last_task": "Midday rescan",
-    "count": 9,
-    "signals": [
-      {
-        "ticker": "OXY",
-        "direction": "SHORT",
-        "strategy": "Overbought Fade",
-        "confidence": 7,
-        "entry": 40.3,
-        "stop": 40.567142857142855,
-        "target": 39.851,
-        "symbol": "OXY",
-        "price": 40.3,
-        "rsi": 92.0,
-        "rvol": 0.71,
-        "atr": 0.13,
-        "risk_reward": 1.7
-      },
-      {
-        "ticker": "TLT",
-        "direction": "LONG",
-        "strategy": "Mean Reversion (Oversold)",
-        "confidence": 7,
-        "entry": 87.635,
-        "stop": 87.46000000000001,
-        "target": 87.95025000000001,
-        "symbol": "TLT",
-        "price": 87.635,
-        "rsi": 12.4,
-        "rvol": 0.99,
-        "atr": 0.09,
-        "risk_reward": 1.8
-      },
-      {
-        "ticker": "SPXL",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 7,
-        "entry": 225.56,
-        "stop": 225.95964285714285,
-        "target": 224.7607142857143,
-        "symbol": "SPXL",
-        "price": 225.56,
-        "rsi": 37.8,
-        "rvol": 5.97,
-        "atr": 0.27,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "BAC",
-        "direction": "LONG",
-        "strategy": "Mean Reversion (Oversold)",
-        "confidence": 6,
-        "entry": 55.47,
-        "stop": 55.239285714285714,
-        "target": 55.937749999999994,
-        "symbol": "BAC",
-        "price": 55.47,
-        "rsi": 17.8,
-        "rvol": 1.19,
-        "atr": 0.12,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "XOM",
-        "direction": "SHORT",
-        "strategy": "Overbought Fade",
-        "confidence": 6,
-        "entry": 120.715,
-        "stop": 121.42571428571428,
-        "target": 119.50475000000002,
-        "symbol": "XOM",
-        "price": 120.715,
-        "rsi": 88.3,
-        "rvol": 0.89,
-        "atr": 0.36,
-        "risk_reward": 1.7
-      },
-      {
-        "ticker": "XLK",
-        "direction": "LONG",
-        "strategy": "Mean Reversion (Oversold)",
-        "confidence": 6,
-        "entry": 145.555,
-        "stop": 145.05928571428572,
-        "target": 146.627,
-        "symbol": "XLK",
-        "price": 145.555,
-        "rsi": 16.1,
-        "rvol": 3.31,
-        "atr": 0.25,
-        "risk_reward": 2.2
-      },
-      {
-        "ticker": "MSFT",
-        "direction": "LONG",
-        "strategy": "MACD Bullish Crossover",
-        "confidence": 5,
-        "entry": 487.84,
-        "stop": 486.3585714285714,
-        "target": 490.80285714285714,
-        "symbol": "MSFT",
-        "price": 487.84,
-        "rsi": 56.7,
-        "rvol": 0.84,
-        "atr": 0.74,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "AMD",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 5,
-        "entry": 211.41,
-        "stop": 213.19285714285715,
-        "target": 207.84428571428572,
-        "symbol": "AMD",
-        "price": 211.41,
-        "rsi": 30.8,
-        "rvol": 1.46,
-        "atr": 1.19,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "NFLX",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 5,
-        "entry": 94.315,
-        "stop": 94.02892857142857,
-        "target": 94.88714285714285,
-        "symbol": "NFLX",
-        "price": 94.315,
-        "rsi": 55.8,
-        "rvol": 1.58,
-        "atr": 0.19,
-        "risk_reward": 2.0
-      }
-    ]
   }
 }
