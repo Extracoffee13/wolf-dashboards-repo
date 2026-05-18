@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: construct-standup
+decision: ran end-of-day standup synthesis across all active agents
+outcome: WOLF ran 47 live-data polls under MANUAL HALT while every other agent stayed silent — the portfolio gained +$349 on the day without executing a single trade
+lesson: compliance mechanisms and graduation criteria can pull in opposite directions — a rebalance that fixes concentration will reset P&L baseline and make the Day-60 profitable-weeks gate harder to pass
+tags: standup,construct,daily,synthesis
+confidence: 0.7
+~~~
