@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "What is the primary value driver of a commercial sign location: traffic volume, dwell time, or decision proximity?"
+outcome: delta category was rediscovered
+lesson: When an industry measures a proxy (DEC / traffic volume) instead of the outcome-driving variable (decision proximity), first-principles reasoning will outrun the traditional corpus — but converge with the leading edge; always check both the legacy standard and the current frontier of a field before declaring a novel finding.
+tags: first-principles,praxis,reasoning
+confidence: 0.82
+~~~
