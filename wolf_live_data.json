@@ -404,5 +404,57 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-05-18 06:00:13",
+    "last_task": "Crypto sweep",
+    "count": 3,
+    "signals": [
+      {
+        "ticker": "DOGE/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 8,
+        "entry": 0.139425,
+        "stop": 0.1337344277142857,
+        "target": 0.15080614457142857,
+        "symbol": "DOGE/USD",
+        "price": 0.139425,
+        "rsi": 77.0,
+        "rvol": 2.9,
+        "atr": 0.0,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "ETH/USD",
+        "direction": "SHORT",
+        "strategy": "Overbought Fade",
+        "confidence": 7,
+        "entry": 3126.2485,
+        "stop": 3190.7702142857142,
+        "target": 3013.6501749999998,
+        "symbol": "ETH/USD",
+        "price": 3126.2485,
+        "rsi": 97.4,
+        "rvol": 0.04,
+        "atr": 32.26,
+        "risk_reward": 1.7
+      },
+      {
+        "ticker": "BCH/USD",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 7,
+        "entry": 591.7365,
+        "stop": 601.9699887699107,
+        "target": 571.2695224601786,
+        "symbol": "BCH/USD",
+        "price": 591.7365,
+        "rsi": 42.4,
+        "rvol": 3.95,
+        "atr": 6.82,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
