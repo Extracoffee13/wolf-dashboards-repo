@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-05-18T16:41:16.096739",
+  "last_updated": "2026-05-18T16:46:19.198817",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103530.63,
+    "portfolio_value": 103608.56,
     "cash": -100545.31,
-    "buying_power": 2985.32,
-    "equity": 103530.63,
+    "buying_power": 3063.25,
+    "equity": 103608.56,
     "last_equity": 103274.64,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 255.99,
-    "pct": 0.0025,
+    "amount": 333.92,
+    "pct": 0.0032,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 423.25,
-      "market_value": 26664.75,
-      "unrealized_pl": 99.330021,
-      "unrealized_plpc": 0.00374,
+      "current_price": 423.7231,
+      "market_value": 26694.5553,
+      "unrealized_pl": 129.135321,
+      "unrealized_plpc": 0.00486,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 222.25,
-      "market_value": 27559.0,
-      "unrealized_pl": 1842.64,
-      "unrealized_plpc": 0.07165,
+      "current_price": 222.3,
+      "market_value": 27565.2,
+      "unrealized_pl": 1848.84,
+      "unrealized_plpc": 0.07189,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 134.8065,
-      "market_value": 49069.566,
-      "unrealized_pl": -713.66386,
-      "unrealized_plpc": -0.01434,
+      "current_price": 134.859,
+      "market_value": 49088.676,
+      "unrealized_pl": -694.55386,
+      "unrealized_plpc": -0.01395,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 409.68,
-      "market_value": 27038.88,
-      "unrealized_pl": -2162.85003,
-      "unrealized_plpc": -0.07407,
+      "current_price": 409.9,
+      "market_value": 27053.4,
+      "unrealized_pl": -2148.33003,
+      "unrealized_plpc": -0.07357,
       "cost_basis": 29201.73003
     },
     {
@@ -93,10 +93,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 60.58,
-      "market_value": 25140.7,
-      "unrealized_pl": 1731.099875,
-      "unrealized_plpc": 0.07395,
+      "current_price": 60.6,
+      "market_value": 25149.0,
+      "unrealized_pl": 1739.399875,
+      "unrealized_plpc": 0.0743,
       "cost_basis": 23409.600125
     }
   ],
@@ -404,57 +404,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-05-18 16:45:06",
-    "last_task": "Gate status",
-    "count": 3,
-    "signals": [
-      {
-        "ticker": "DOGE/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 8,
-        "entry": 0.139425,
-        "stop": 0.1337344277142857,
-        "target": 0.15080614457142857,
-        "symbol": "DOGE/USD",
-        "price": 0.139425,
-        "rsi": 77.0,
-        "rvol": 2.9,
-        "atr": 0.0,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "ETH/USD",
-        "direction": "SHORT",
-        "strategy": "Overbought Fade",
-        "confidence": 7,
-        "entry": 3126.2485,
-        "stop": 3190.7702142857142,
-        "target": 3013.6501749999998,
-        "symbol": "ETH/USD",
-        "price": 3126.2485,
-        "rsi": 97.4,
-        "rvol": 0.04,
-        "atr": 32.26,
-        "risk_reward": 1.7
-      },
-      {
-        "ticker": "BCH/USD",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 7,
-        "entry": 591.7365,
-        "stop": 601.9699887699107,
-        "target": 571.2695224601786,
-        "symbol": "BCH/USD",
-        "price": 591.7365,
-        "rsi": 42.4,
-        "rvol": 3.95,
-        "atr": 6.82,
-        "risk_reward": 2.0
-      }
-    ]
   }
 }
