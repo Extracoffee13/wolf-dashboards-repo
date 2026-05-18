@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-05-17T23:55:52.789869",
+  "last_updated": "2026-05-18T00:00:55.469270",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 102248.94,
+    "portfolio_value": 102310.96,
     "cash": -100545.31,
-    "buying_power": 1703.63,
-    "equity": 102248.94,
+    "buying_power": 1765.65,
+    "equity": 102310.96,
     "last_equity": 103274.64,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -1025.7,
-    "pct": -0.0099,
+    "amount": -963.68,
+    "pct": -0.0093,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 223.73,
-      "market_value": 27742.52,
-      "unrealized_pl": 2026.16,
-      "unrealized_plpc": 0.07879,
+      "current_price": 224.05,
+      "market_value": 27782.2,
+      "unrealized_pl": 2065.84,
+      "unrealized_plpc": 0.08033,
       "cost_basis": 25716.36
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 415.61,
-      "market_value": 27430.26,
-      "unrealized_pl": -1771.47003,
-      "unrealized_plpc": -0.06066,
+      "current_price": 416.2,
+      "market_value": 27469.2,
+      "unrealized_pl": -1732.53003,
+      "unrealized_plpc": -0.05933,
       "cost_basis": 29201.73003
     },
     {
@@ -93,10 +93,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 59.84,
-      "market_value": 24833.6,
-      "unrealized_pl": 1423.999875,
-      "unrealized_plpc": 0.06083,
+      "current_price": 59.8,
+      "market_value": 24817.0,
+      "unrealized_pl": 1407.399875,
+      "unrealized_plpc": 0.06012,
       "cost_basis": 23409.600125
     }
   ],
@@ -315,9 +315,9 @@
   "wolf_capabilities": {
     "capability_score": 51,
     "score_max": 100,
-    "day_on_mission": 40,
+    "day_on_mission": 41,
     "mission_start": "2026-04-08",
-    "streak_days": 40,
+    "streak_days": 41,
     "totals": {
       "scripts": 58,
       "core_modules": 14,
@@ -404,57 +404,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-05-18 00:00:09",
-    "last_task": "Crypto sweep",
-    "count": 3,
-    "signals": [
-      {
-        "ticker": "DOGE/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 8,
-        "entry": 0.139425,
-        "stop": 0.1337344277142857,
-        "target": 0.15080614457142857,
-        "symbol": "DOGE/USD",
-        "price": 0.139425,
-        "rsi": 77.0,
-        "rvol": 2.9,
-        "atr": 0.0,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "ETH/USD",
-        "direction": "SHORT",
-        "strategy": "Overbought Fade",
-        "confidence": 7,
-        "entry": 3126.2485,
-        "stop": 3190.7702142857142,
-        "target": 3013.6501749999998,
-        "symbol": "ETH/USD",
-        "price": 3126.2485,
-        "rsi": 97.4,
-        "rvol": 0.04,
-        "atr": 32.26,
-        "risk_reward": 1.7
-      },
-      {
-        "ticker": "BCH/USD",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 7,
-        "entry": 591.7365,
-        "stop": 601.9699887699107,
-        "target": 571.2695224601786,
-        "symbol": "BCH/USD",
-        "price": 591.7365,
-        "rsi": 42.4,
-        "rvol": 3.95,
-        "atr": 6.82,
-        "risk_reward": 2.0
-      }
-    ]
   }
 }
