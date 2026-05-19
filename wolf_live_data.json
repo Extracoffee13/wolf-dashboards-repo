@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-05-19T16:42:31.442810",
+  "last_updated": "2026-05-19T16:47:34.926731",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 102959.91,
+    "portfolio_value": 102867.07,
     "cash": -100545.31,
-    "buying_power": 2414.6,
-    "equity": 102959.91,
+    "buying_power": 2321.76,
+    "equity": 102867.07,
     "last_equity": 103699.43,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -739.52,
-    "pct": -0.0071,
+    "amount": -832.36,
+    "pct": -0.008,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 296.2,
-      "market_value": 22511.2,
-      "unrealized_pl": -800.28,
-      "unrealized_plpc": -0.03433,
+      "current_price": 296.0,
+      "market_value": 22496.0,
+      "unrealized_pl": -815.48,
+      "unrealized_plpc": -0.03498,
       "cost_basis": 23311.48
     },
     {
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 416.27,
-      "market_value": 26225.01,
-      "unrealized_pl": -340.409979,
-      "unrealized_plpc": -0.01281,
+      "current_price": 416.2,
+      "market_value": 26220.6,
+      "unrealized_pl": -344.819979,
+      "unrealized_plpc": -0.01298,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 221.05,
-      "market_value": 27410.2,
-      "unrealized_pl": 1693.84,
-      "unrealized_plpc": 0.06587,
+      "current_price": 220.66,
+      "market_value": 27361.84,
+      "unrealized_pl": 1645.48,
+      "unrealized_plpc": 0.06399,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 134.93,
-      "market_value": 49114.52,
-      "unrealized_pl": -668.70986,
-      "unrealized_plpc": -0.01343,
+      "current_price": 134.82,
+      "market_value": 49074.48,
+      "unrealized_pl": -708.74986,
+      "unrealized_plpc": -0.01424,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 403.6,
-      "market_value": 26637.6,
-      "unrealized_pl": -2564.13003,
-      "unrealized_plpc": -0.08781,
+      "current_price": 403.6419,
+      "market_value": 26640.3654,
+      "unrealized_pl": -2561.36463,
+      "unrealized_plpc": -0.08771,
       "cost_basis": 29201.73003
     },
     {
@@ -404,117 +404,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-05-19 16:45:06",
-    "last_task": "Gate status",
-    "count": 7,
-    "signals": [
-      {
-        "ticker": "AAVE/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 8,
-        "entry": 156.832,
-        "stop": 149.80963815657142,
-        "target": 170.8767236868571,
-        "symbol": "AAVE/USD",
-        "price": 156.832,
-        "rsi": 67.9,
-        "rvol": 3.71,
-        "atr": 4.68,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "SOL/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 7,
-        "entry": 132.2435,
-        "stop": 129.34247382617858,
-        "target": 138.04555234764288,
-        "symbol": "SOL/USD",
-        "price": 132.2435,
-        "rsi": 77.1,
-        "rvol": 1.6,
-        "atr": 1.93,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "BCH/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 7,
-        "entry": 626.626,
-        "stop": 609.7053505158035,
-        "target": 660.4672989683928,
-        "symbol": "BCH/USD",
-        "price": 626.626,
-        "rsi": 73.1,
-        "rvol": 1.7,
-        "atr": 11.28,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "LINK/USD",
-        "direction": "SHORT",
-        "strategy": "Overbought Fade",
-        "confidence": 6,
-        "entry": 13.31655,
-        "stop": 13.726825,
-        "target": 12.60539,
-        "symbol": "LINK/USD",
-        "price": 13.31655,
-        "rsi": 87.9,
-        "rvol": 0.13,
-        "atr": 0.21,
-        "risk_reward": 1.7
-      },
-      {
-        "ticker": "DOT/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 6,
-        "entry": 2.0062,
-        "stop": 1.9302990658214287,
-        "target": 2.158001868357143,
-        "symbol": "DOT/USD",
-        "price": 2.0062,
-        "rsi": 75.3,
-        "rvol": 1.35,
-        "atr": 0.05,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "LTC/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 6,
-        "entry": 81.345,
-        "stop": 79.69987767857143,
-        "target": 84.63524464285713,
-        "symbol": "LTC/USD",
-        "price": 81.345,
-        "rsi": 77.2,
-        "rvol": 1.23,
-        "atr": 1.1,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "AVAX/USD",
-        "direction": "SHORT",
-        "strategy": "Overbought Fade",
-        "confidence": 5,
-        "entry": 14.249,
-        "stop": 14.903512857142857,
-        "target": 12.963766812500001,
-        "symbol": "AVAX/USD",
-        "price": 14.249,
-        "rsi": 82.9,
-        "rvol": 8.45,
-        "atr": 0.33,
-        "risk_reward": 2.0
-      }
-    ]
   }
 }
