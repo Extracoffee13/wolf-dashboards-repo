@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: pre-market-intelligence
+decision: scanned overnight futures + Asia close + Europe open + day's catalysts
+outcome: Iran-oil at $110 and Warsh rate-hike risk (50% odds) are the twin macro anchors; ES 7,380 is the key level — STX -7% on AI demand doubts is today's tell
+lesson: when oil dominates macro and no tier-1 data is on deck, headline risk fills the vacuum — position size accordingly and treat Iran-related moves as binary, not tradeable on technicals
+tags: wolf,pre-market,markets,daily
+confidence: 0.7
+~~~
