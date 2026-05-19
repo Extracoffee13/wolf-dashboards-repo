@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: congressional-trading-watch
+decision: scanned Senate eFD + House CHDP + Quiver + CapitolTrades + Benzinga Gov Trades + CREW + Trendlyne for last 24h (broadened to May 5–17 window due to same-day indexing lag on disclosure portals)
+outcome: top filing — Sen. John Fetterman (D-PA) · MU (Micron Technology) · BUY $1K–15K · Score 4 · Commerce Committee member who oversees CHIPS Act awarding Micron $6.1B bought the dip Mar 30; stock +60%+ in four weeks; separate STOCK Act late-filing (~365 days) on same member compounds the pattern
+lesson: committee-conflict trades cluster around members who simultaneously advocate for reform — the advocacy itself signals awareness of the gray line, not constraint from it; track the reform-advocates as closely as the known active traders
+tags: wolf,congressional,trading,intel,daily
+confidence: 0.65
+~~~
