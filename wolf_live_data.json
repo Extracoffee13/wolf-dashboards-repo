@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-05-19T05:39:43.818756",
+  "last_updated": "2026-05-19T05:44:47.087844",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 102823.12,
+    "portfolio_value": 102760.61,
     "cash": -100545.31,
-    "buying_power": 2277.81,
-    "equity": 102823.12,
+    "buying_power": 2215.3,
+    "equity": 102760.61,
     "last_equity": 103699.43,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -876.31,
-    "pct": -0.0085,
+    "amount": -938.82,
+    "pct": -0.0091,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 424.22,
-      "market_value": 26725.86,
-      "unrealized_pl": 160.440021,
-      "unrealized_plpc": 0.00604,
+      "current_price": 424.3,
+      "market_value": 26730.9,
+      "unrealized_pl": 165.480021,
+      "unrealized_plpc": 0.00623,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 220.08,
-      "market_value": 27289.92,
-      "unrealized_pl": 1573.56,
-      "unrealized_plpc": 0.06119,
+      "current_price": 219.68,
+      "market_value": 27240.32,
+      "unrealized_pl": 1523.96,
+      "unrealized_plpc": 0.05926,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 134.09,
-      "market_value": 48808.76,
-      "unrealized_pl": -974.46986,
-      "unrealized_plpc": -0.01957,
+      "current_price": 134.0,
+      "market_value": 48776.0,
+      "unrealized_pl": -1007.22986,
+      "unrealized_plpc": -0.02023,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 405.2,
-      "market_value": 26743.2,
-      "unrealized_pl": -2458.53003,
-      "unrealized_plpc": -0.08419,
+      "current_price": 405.11,
+      "market_value": 26737.26,
+      "unrealized_pl": -2464.47003,
+      "unrealized_plpc": -0.08439,
       "cost_basis": 29201.73003
     },
     {
@@ -93,10 +93,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 60.63,
-      "market_value": 25161.45,
-      "unrealized_pl": 1751.849875,
-      "unrealized_plpc": 0.07483,
+      "current_price": 60.68,
+      "market_value": 25182.2,
+      "unrealized_pl": 1772.599875,
+      "unrealized_plpc": 0.07572,
       "cost_basis": 23409.600125
     }
   ],
@@ -341,22 +341,6 @@
       "date": "2026-05-13"
     },
     "recent_lessons": [
-      {
-        "date": "2026-05-19",
-        "lesson": "HBR/NBER: AlphaPortfolio (Cong/Tang/Wang, w35195) \u2014 transformer attention + RL on path-dependent objectives delivers OOS Sharpe >2, alpha >13% with monthly rebalancing. End-to-end direct construction beats step-by-step parametric rules."
-      },
-      {
-        "date": "2026-05-19",
-        "lesson": "HBR/Stratechery (Thompson, 2026-05-18): inference splits into 'answer' (human-in-loop, latency-bound) vs 'agentic' (no human, throughput-bound) \u2014 different architectures, different chip economics. Re-price NVDA vs custom-silicon and China-cohort accordingly."
-      },
-      {
-        "date": "2026-05-19",
-        "lesson": "HBR/Wharton (Gallino, 2026-05-12): scarcest AI resource is grid capacity, not chips/talent. Power infrastructure, transmission, and utility-adjacent names are an under-priced tell on AI-capex absorption."
-      },
-      {
-        "date": "2026-05-19",
-        "lesson": "HBR/Fed FEDS (Brunetti/Harris/Spyridopoulos, 2026-05-13): 44M-loan study finds bank consolidation has NOT harmed mortgage markets \u2014 competitive dynamics intact, 100+ lenders/county post-merger. Bank-M&A consolidation thesis without consumer-harm tail risk."
-      },
       {
         "date": "2026-05-13",
         "lesson": "Mandate enforcement must be MECHANICAL, not advisory. Writing a mandate document and not wiring pre-trade gates means new violations (e.g., MDT 24% entry) keep firing under the old strategy logic. The gate has to live in the runner."
