@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was CVE MCP Server (score 5, Sentinel owner, May 18 2026 — 27 security tools across 21 APIs)
+lesson: Security and finance are the fastest-moving MCP verticals this cycle; the highest-signal new servers are purpose-built domain tools (vuln-intel, pitchbook, KYC) rather than generic platform wrappers
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
