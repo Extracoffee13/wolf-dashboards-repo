@@ -404,5 +404,117 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-05-19 11:30:35",
+    "last_task": "Midday rescan",
+    "count": 7,
+    "signals": [
+      {
+        "ticker": "OXY",
+        "direction": "SHORT",
+        "strategy": "Overbought Fade",
+        "confidence": 7,
+        "entry": 41.34,
+        "stop": 41.62285714285714,
+        "target": 40.64425,
+        "symbol": "OXY",
+        "price": 41.34,
+        "rsi": 91.1,
+        "rvol": 0.94,
+        "atr": 0.14,
+        "risk_reward": 2.5
+      },
+      {
+        "ticker": "SLB",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 7,
+        "entry": 38.47,
+        "stop": 38.276607142857145,
+        "target": 38.856785714285714,
+        "symbol": "SLB",
+        "price": 38.47,
+        "rsi": 76.4,
+        "rvol": 1.94,
+        "atr": 0.13,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "TQQQ",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 7,
+        "entry": 54.2,
+        "stop": 53.87214285714286,
+        "target": 55.072,
+        "symbol": "TQQQ",
+        "price": 54.2,
+        "rsi": 11.8,
+        "rvol": 0.45,
+        "atr": 0.16,
+        "risk_reward": 2.7
+      },
+      {
+        "ticker": "MS",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 6,
+        "entry": 178.805,
+        "stop": 179.24214285714285,
+        "target": 177.9307142857143,
+        "symbol": "MS",
+        "price": 178.805,
+        "rsi": 26.5,
+        "rvol": 1.69,
+        "atr": 0.29,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "AAPL",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 5,
+        "entry": 272.83,
+        "stop": 273.59875,
+        "target": 271.29249999999996,
+        "symbol": "AAPL",
+        "price": 272.83,
+        "rsi": 33.5,
+        "rvol": 1.37,
+        "atr": 0.51,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "CVX",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 5,
+        "entry": 151.88,
+        "stop": 151.4155357142857,
+        "target": 152.80892857142857,
+        "symbol": "CVX",
+        "price": 151.88,
+        "rsi": 62.9,
+        "rvol": 1.53,
+        "atr": 0.31,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "XOM",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 4,
+        "entry": 120.73,
+        "stop": 120.27410714285715,
+        "target": 121.64178571428572,
+        "symbol": "XOM",
+        "price": 120.73,
+        "rsi": 52.2,
+        "rvol": 1.1,
+        "atr": 0.3,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
