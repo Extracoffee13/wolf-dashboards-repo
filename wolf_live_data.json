@@ -404,5 +404,87 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-05-20 12:00:22",
+    "last_task": "Crypto sweep",
+    "count": 5,
+    "signals": [
+      {
+        "ticker": "LTC/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 8,
+        "entry": 82.52365,
+        "stop": 80.81227857142858,
+        "target": 85.94639285714285,
+        "symbol": "LTC/USD",
+        "price": 82.52365,
+        "rsi": 67.1,
+        "rvol": 16.99,
+        "atr": 1.14,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "AAVE/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 8,
+        "entry": 164.31,
+        "stop": 155.75071404942858,
+        "target": 181.42857190114285,
+        "symbol": "AAVE/USD",
+        "price": 164.31,
+        "rsi": 75.3,
+        "rvol": 5.73,
+        "atr": 5.71,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "ETH/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 7,
+        "entry": 3223.7,
+        "stop": 3167.6205272321426,
+        "target": 3335.858945535714,
+        "symbol": "ETH/USD",
+        "price": 3223.7,
+        "rsi": 79.4,
+        "rvol": 1.76,
+        "atr": 37.39,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "SOL/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 7,
+        "entry": 133.758,
+        "stop": 130.56625507617858,
+        "target": 140.14148984764284,
+        "symbol": "SOL/USD",
+        "price": 133.758,
+        "rsi": 73.5,
+        "rvol": 2.65,
+        "atr": 2.13,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "DOT/USD",
+        "direction": "SHORT",
+        "strategy": "Overbought Fade",
+        "confidence": 7,
+        "entry": 2.163255,
+        "stop": 2.2744229063571426,
+        "target": 1.9142207500000001,
+        "symbol": "DOT/USD",
+        "price": 2.163255,
+        "rsi": 90.5,
+        "rvol": 3.08,
+        "atr": 0.06,
+        "risk_reward": 2.2
+      }
+    ]
   }
 }
