@@ -404,5 +404,117 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-05-20 11:30:44",
+    "last_task": "Midday rescan",
+    "count": 7,
+    "signals": [
+      {
+        "ticker": "SHOP",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 7,
+        "entry": 161.74,
+        "stop": 160.55857142857144,
+        "target": 164.24275000000003,
+        "symbol": "SHOP",
+        "price": 161.74,
+        "rsi": 9.2,
+        "rvol": 0.94,
+        "atr": 0.59,
+        "risk_reward": 2.1
+      },
+      {
+        "ticker": "XLK",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 7,
+        "entry": 145.01,
+        "stop": 144.64071428571427,
+        "target": 145.611,
+        "symbol": "XLK",
+        "price": 145.01,
+        "rsi": 14.9,
+        "rvol": 0.78,
+        "atr": 0.18,
+        "risk_reward": 1.6
+      },
+      {
+        "ticker": "AAPL",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 6,
+        "entry": 271.905,
+        "stop": 272.5285714285714,
+        "target": 270.6578571428571,
+        "symbol": "AAPL",
+        "price": 271.905,
+        "rsi": 28.3,
+        "rvol": 1.74,
+        "atr": 0.42,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "SLV",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 6,
+        "entry": 69.925,
+        "stop": 69.12517857142858,
+        "target": 71.52464285714285,
+        "symbol": "SLV",
+        "price": 69.925,
+        "rsi": 62.9,
+        "rvol": 1.75,
+        "atr": 0.53,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "ROKU",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 5,
+        "entry": 110.21,
+        "stop": 110.79928571428572,
+        "target": 109.03142857142856,
+        "symbol": "ROKU",
+        "price": 110.21,
+        "rsi": 38.1,
+        "rvol": 1.31,
+        "atr": 0.39,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "DIA",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 5,
+        "entry": 481.9,
+        "stop": 481.05,
+        "target": 483.30125,
+        "symbol": "DIA",
+        "price": 481.9,
+        "rsi": 24.8,
+        "rvol": 0.6,
+        "atr": 0.42,
+        "risk_reward": 1.6
+      },
+      {
+        "ticker": "TLT",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 5,
+        "entry": 87.87,
+        "stop": 87.98517857142858,
+        "target": 87.63964285714286,
+        "symbol": "TLT",
+        "price": 87.87,
+        "rsi": 37.8,
+        "rvol": 2.21,
+        "atr": 0.08,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
