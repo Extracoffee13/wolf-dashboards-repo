@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-05-20T00:28:04.801164",
+  "last_updated": "2026-05-20T00:33:08.672876",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 102573.16,
+    "portfolio_value": 102570.76,
     "cash": -100545.31,
-    "buying_power": 2027.85,
-    "equity": 102573.16,
+    "buying_power": 2025.45,
+    "equity": 102570.76,
     "last_equity": 103699.43,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -1126.27,
+    "amount": -1128.67,
     "pct": -0.0109,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 221.49,
-      "market_value": 27464.76,
-      "unrealized_pl": 1748.4,
-      "unrealized_plpc": 0.06799,
+      "current_price": 221.48,
+      "market_value": 27463.52,
+      "unrealized_pl": 1747.16,
+      "unrealized_plpc": 0.06794,
       "cost_basis": 25716.36
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 402.84,
-      "market_value": 26587.44,
-      "unrealized_pl": -2614.29003,
-      "unrealized_plpc": -0.08953,
+      "current_price": 402.86,
+      "market_value": 26588.76,
+      "unrealized_pl": -2612.97003,
+      "unrealized_plpc": -0.08948,
       "cost_basis": 29201.73003
     },
     {
