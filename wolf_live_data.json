@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-05-20T05:41:41.811387",
+  "last_updated": "2026-05-20T05:46:45.088758",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103355.8,
+    "portfolio_value": 103372.47,
     "cash": -100545.31,
-    "buying_power": 2810.49,
-    "equity": 103355.8,
+    "buying_power": 2827.16,
+    "equity": 103372.47,
     "last_equity": 103089.38,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 266.42,
-    "pct": 0.0026,
+    "amount": 283.09,
+    "pct": 0.0027,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 415.87,
-      "market_value": 26199.81,
-      "unrealized_pl": -365.609979,
-      "unrealized_plpc": -0.01376,
+      "current_price": 416.1,
+      "market_value": 26214.3,
+      "unrealized_pl": -351.119979,
+      "unrealized_plpc": -0.01322,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 224.38,
-      "market_value": 27823.12,
-      "unrealized_pl": 2106.76,
-      "unrealized_plpc": 0.08192,
+      "current_price": 224.4599,
+      "market_value": 27833.0276,
+      "unrealized_pl": 2116.6676,
+      "unrealized_plpc": 0.08231,
       "cost_basis": 25716.36
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 407.98,
-      "market_value": 26926.68,
-      "unrealized_pl": -2275.05003,
-      "unrealized_plpc": -0.07791,
+      "current_price": 407.8,
+      "market_value": 26914.8,
+      "unrealized_pl": -2286.93003,
+      "unrealized_plpc": -0.07831,
       "cost_basis": 29201.73003
     },
     {
@@ -93,10 +93,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 60.97,
-      "market_value": 25302.55,
-      "unrealized_pl": 1892.949875,
-      "unrealized_plpc": 0.08086,
+      "current_price": 60.98,
+      "market_value": 25306.7,
+      "unrealized_pl": 1897.099875,
+      "unrealized_plpc": 0.08104,
       "cost_basis": 23409.600125
     }
   ],
@@ -341,18 +341,6 @@
       "date": "2026-05-13"
     },
     "recent_lessons": [
-      {
-        "date": "2026-05-20",
-        "lesson": "HBR: war-exclusion clauses are not automatic outs — Johansmeyer (HBR 2026-05-04) maps where coverage can still apply when conflict harms a business. Re-price geopolitical-risk legs accordingly."
-      },
-      {
-        "date": "2026-05-20",
-        "lesson": "HBR: agentic-AI convergence trap — when every firm uses the same AI tools to inform strategy, advantage erodes (van Esch et al, HBR 2026-05-13). Implication for WOLF: alpha sources that any quant shop can buy off-the-shelf are decaying fastest."
-      },
-      {
-        "date": "2026-05-20",
-        "lesson": "Markets: global long bond yields at 20-year high + dollar at 6-week high + EM defending currencies (Indonesia hike) = bond/equity rotation thesis is now consensus. Position before, not after."
-      },
       {
         "date": "2026-05-13",
         "lesson": "Mandate enforcement must be MECHANICAL, not advisory. Writing a mandate document and not wiring pre-trade gates means new violations (e.g., MDT 24% entry) keep firing under the old strategy logic. The gate has to live in the runner."
