@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "What is the primary unit of value in commercial signage for a small business — attention, identity, wayfinding, or persistence?"
+outcome: delta category was novel
+lesson: industries inherit measurement frameworks from adjacent domains without re-deriving whether the primitives transfer — always check if the metric was built for the same distance/context regime as the thing you are pricing
+tags: first-principles,praxis,reasoning
+confidence: 0.70
+~~~
