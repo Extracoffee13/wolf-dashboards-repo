@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-05-20T17:55:20.263798",
+  "last_updated": "2026-05-20T18:00:23.696091",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103945.72,
+    "portfolio_value": 103775.19,
     "cash": -100545.31,
-    "buying_power": 3400.41,
-    "equity": 103945.72,
+    "buying_power": 3229.88,
+    "equity": 103775.19,
     "last_equity": 103089.38,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 856.34,
-    "pct": 0.0083,
+    "amount": 685.81,
+    "pct": 0.0067,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 301.89,
-      "market_value": 22943.64,
-      "unrealized_pl": -367.84,
-      "unrealized_plpc": -0.01578,
+      "current_price": 301.637,
+      "market_value": 22924.412,
+      "unrealized_pl": -387.068,
+      "unrealized_plpc": -0.0166,
       "cost_basis": 23311.48
     },
     {
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 419.69,
-      "market_value": 26440.47,
-      "unrealized_pl": -124.949979,
-      "unrealized_plpc": -0.0047,
+      "current_price": 419.8299,
+      "market_value": 26449.2837,
+      "unrealized_pl": -116.136279,
+      "unrealized_plpc": -0.00437,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 221.55,
-      "market_value": 27472.2,
-      "unrealized_pl": 1755.84,
-      "unrealized_plpc": 0.06828,
+      "current_price": 220.8305,
+      "market_value": 27382.982,
+      "unrealized_pl": 1666.622,
+      "unrealized_plpc": 0.06481,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 136.06,
-      "market_value": 49525.84,
-      "unrealized_pl": -257.38986,
-      "unrealized_plpc": -0.00517,
+      "current_price": 136.0301,
+      "market_value": 49514.9564,
+      "unrealized_pl": -268.27346,
+      "unrealized_plpc": -0.00539,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 416.199,
-      "market_value": 27469.134,
-      "unrealized_pl": -1732.59603,
-      "unrealized_plpc": -0.05933,
+      "current_price": 415.61,
+      "market_value": 27430.26,
+      "unrealized_pl": -1771.47003,
+      "unrealized_plpc": -0.06066,
       "cost_basis": 29201.73003
     },
     {
@@ -404,87 +404,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-05-20 18:00:16",
-    "last_task": "Crypto sweep",
-    "count": 5,
-    "signals": [
-      {
-        "ticker": "LTC/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 8,
-        "entry": 82.52365,
-        "stop": 80.81227857142858,
-        "target": 85.94639285714285,
-        "symbol": "LTC/USD",
-        "price": 82.52365,
-        "rsi": 67.1,
-        "rvol": 16.99,
-        "atr": 1.14,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "AAVE/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 8,
-        "entry": 164.31,
-        "stop": 155.75071404942858,
-        "target": 181.42857190114285,
-        "symbol": "AAVE/USD",
-        "price": 164.31,
-        "rsi": 75.3,
-        "rvol": 5.73,
-        "atr": 5.71,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "ETH/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 7,
-        "entry": 3223.7,
-        "stop": 3167.6205272321426,
-        "target": 3335.858945535714,
-        "symbol": "ETH/USD",
-        "price": 3223.7,
-        "rsi": 79.4,
-        "rvol": 1.76,
-        "atr": 37.39,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "SOL/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 7,
-        "entry": 133.758,
-        "stop": 130.56625507617858,
-        "target": 140.14148984764284,
-        "symbol": "SOL/USD",
-        "price": 133.758,
-        "rsi": 73.5,
-        "rvol": 2.65,
-        "atr": 2.13,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "DOT/USD",
-        "direction": "SHORT",
-        "strategy": "Overbought Fade",
-        "confidence": 7,
-        "entry": 2.163255,
-        "stop": 2.2744229063571426,
-        "target": 1.9142207500000001,
-        "symbol": "DOT/USD",
-        "price": 2.163255,
-        "rsi": 90.5,
-        "rvol": 3.08,
-        "atr": 0.06,
-        "risk_reward": 2.2
-      }
-    ]
   }
 }
