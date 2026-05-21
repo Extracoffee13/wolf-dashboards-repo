@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-05-21T05:38:28.678153",
+  "last_updated": "2026-05-21T05:43:33.418546",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 105014.04,
+    "portfolio_value": 104927.32,
     "cash": -100545.31,
-    "buying_power": 4468.73,
-    "equity": 105014.04,
+    "buying_power": 4382.01,
+    "equity": 104927.32,
     "last_equity": 104944.94,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 69.1,
-    "pct": 0.0007,
+    "amount": -17.62,
+    "pct": -0.0002,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 419.4,
-      "market_value": 26422.2,
-      "unrealized_pl": -143.219979,
-      "unrealized_plpc": -0.00539,
+      "current_price": 419.34,
+      "market_value": 26418.42,
+      "unrealized_pl": -146.999979,
+      "unrealized_plpc": -0.00553,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 223.97,
-      "market_value": 27772.28,
-      "unrealized_pl": 2055.92,
-      "unrealized_plpc": 0.07995,
+      "current_price": 223.99,
+      "market_value": 27774.76,
+      "unrealized_pl": 2058.4,
+      "unrealized_plpc": 0.08004,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 136.36,
-      "market_value": 49635.04,
-      "unrealized_pl": -148.18986,
-      "unrealized_plpc": -0.00298,
+      "current_price": 136.18,
+      "market_value": 49569.52,
+      "unrealized_pl": -213.70986,
+      "unrealized_plpc": -0.00429,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 424.5,
-      "market_value": 28017.0,
-      "unrealized_pl": -1184.73003,
-      "unrealized_plpc": -0.04057,
+      "current_price": 424.45,
+      "market_value": 28013.7,
+      "unrealized_pl": -1188.03003,
+      "unrealized_plpc": -0.04068,
       "cost_basis": 29201.73003
     },
     {
@@ -93,10 +93,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 59.64,
-      "market_value": 24750.6,
-      "unrealized_pl": 1340.999875,
-      "unrealized_plpc": 0.05728,
+      "current_price": 59.6,
+      "market_value": 24734.0,
+      "unrealized_pl": 1324.399875,
+      "unrealized_plpc": 0.05658,
       "cost_basis": 23409.600125
     }
   ],
@@ -360,10 +360,6 @@
       {
         "date": "2026-04-08",
         "lesson": "WOLF can now enumerate his own 14 scripts for self-aware planning."
-      },
-      {
-        "date": "2026-05-21",
-        "lesson": "HBR: Predictable strategies are now mimicable \u2014 fund managers with novel strategies outperform peers whose trades AI can clone. Sameness of tools erodes alpha. Cohen, HBS WK 2026-05-20 + van Esch HBR 2026-05-13."
       }
     ],
     "real_money_unlocked": false,
