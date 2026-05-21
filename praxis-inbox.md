@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Anthropic Finance Agents + Moody's MCP App (score 5, owner: Ledger/Equity/Alpha)
+lesson: The most durable new skills this cycle are emerging from Anthropic's own vertical agent launches (finance, legal) bundled with first-party MCP apps and data connectors — third-party skill wrappers are proliferating but lag official releases by weeks
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
