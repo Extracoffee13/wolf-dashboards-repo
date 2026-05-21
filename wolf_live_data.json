@@ -404,5 +404,146 @@
         }
       ]
     }
+  },
+  "daily_summary": {
+    "date": "2026-05-21",
+    "account": {
+      "portfolio_value": 104209.47,
+      "cash": -100545.31,
+      "buying_power": 3664.16,
+      "positions": 7,
+      "todays_trades": 0,
+      "daily_pnl_amount": -735.47,
+      "daily_pnl_pct": -0.007,
+      "circuit_breaker": "yellow"
+    },
+    "log": {
+      "task_fires": {
+        "wolf-crypto-247": 3,
+        "wolf-market-open-exec": 1,
+        "wolf-midday-rescan": 1,
+        "wolf-gate-status": 1,
+        "wolf-daily-summary": 1
+      },
+      "errors": 1
+    },
+    "rejected": {
+      "count": 12,
+      "reasons": {
+        "halt_new_entries=true in wolf_live_data.json": 10,
+        "R:R 1.3 < 1.5": 1,
+        "R:R 1.1 < 1.5": 1
+      },
+      "recent": [
+        {
+          "ticker": "AAPL",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-21T13:30:57Z",
+          "risk_reward": 2.0,
+          "confidence": 5
+        },
+        {
+          "ticker": "NVDA",
+          "strategy": "Breakdown",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-21T13:30:57Z",
+          "risk_reward": 2.0,
+          "confidence": 5
+        },
+        {
+          "ticker": "PFE",
+          "strategy": "MACD Bullish Crossover",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-21T13:30:57Z",
+          "risk_reward": 2.0,
+          "confidence": 5
+        },
+        {
+          "ticker": "IWM",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-21T13:30:57Z",
+          "risk_reward": 2.0,
+          "confidence": 5
+        },
+        {
+          "ticker": "XLK",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-21T13:30:57Z",
+          "risk_reward": 1.6,
+          "confidence": 5
+        },
+        {
+          "ticker": "GLD",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-21T13:30:57Z",
+          "risk_reward": 2.0,
+          "confidence": 5
+        },
+        {
+          "ticker": "CRM",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-21T13:30:57Z",
+          "risk_reward": 1.6,
+          "confidence": 4
+        },
+        {
+          "ticker": "NFLX",
+          "strategy": "Breakdown",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-21T13:30:57Z",
+          "risk_reward": 2.0,
+          "confidence": 4
+        },
+        {
+          "ticker": "CVX",
+          "strategy": "Overbought Fade",
+          "reason": "R:R 1.3 < 1.5",
+          "rejected_at": "2026-05-21T11:30:39.498127",
+          "risk_reward": 1.3,
+          "confidence": 4
+        },
+        {
+          "ticker": "SPY",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 1.1 < 1.5",
+          "rejected_at": "2026-05-21T11:30:39.498175",
+          "risk_reward": 1.1,
+          "confidence": 4
+        }
+      ]
+    },
+    "committee": {
+      "runs": 0,
+      "tickers_voted": 0,
+      "verdicts": {}
+    }
+  },
+  "daily_summary_updated_at": "2026-05-21T16:50:02.217296",
+  "today_signals": {
+    "as_of": "2026-05-21 16:50:02",
+    "last_task": "EOD recap",
+    "count": 1,
+    "signals": [
+      {
+        "ticker": "ETH/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 8,
+        "entry": 3271.0595,
+        "stop": 3203.8725004464286,
+        "target": 3405.433499107143,
+        "symbol": "ETH/USD",
+        "price": 3271.0595,
+        "rsi": 79.7,
+        "rvol": 2.17,
+        "atr": 44.79,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
