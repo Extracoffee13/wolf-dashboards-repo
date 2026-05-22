@@ -404,5 +404,132 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-05-22 11:30:47",
+    "last_task": "Midday rescan",
+    "count": 8,
+    "signals": [
+      {
+        "ticker": "SPXS",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 8,
+        "entry": 35.31,
+        "stop": 35.20821428571429,
+        "target": 35.51357142857143,
+        "symbol": "SPXS",
+        "price": 35.31,
+        "rsi": 66.9,
+        "rvol": 3.33,
+        "atr": 0.07,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "PFE",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 7,
+        "entry": 24.92,
+        "stop": 24.97357142857143,
+        "target": 24.812857142857144,
+        "symbol": "PFE",
+        "price": 24.92,
+        "rsi": 30.4,
+        "rvol": 3.0,
+        "atr": 0.04,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "ROKU",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 6,
+        "entry": 109.275,
+        "stop": 109.575,
+        "target": 108.67500000000001,
+        "symbol": "ROKU",
+        "price": 109.275,
+        "rsi": 32.8,
+        "rvol": 2.18,
+        "atr": 0.2,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "SNOW",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 6,
+        "entry": 219.9,
+        "stop": 220.4507142857143,
+        "target": 218.79857142857145,
+        "symbol": "SNOW",
+        "price": 219.9,
+        "rsi": 41.6,
+        "rvol": 2.83,
+        "atr": 0.37,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "PLTR",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 6,
+        "entry": 178.1,
+        "stop": 178.8505357142857,
+        "target": 176.59892857142856,
+        "symbol": "PLTR",
+        "price": 178.1,
+        "rsi": 27.9,
+        "rvol": 1.44,
+        "atr": 0.5,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "JNJ",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 5,
+        "entry": 207.2,
+        "stop": 206.95089285714283,
+        "target": 207.69821428571427,
+        "symbol": "JNJ",
+        "price": 207.2,
+        "rsi": 64.5,
+        "rvol": 1.47,
+        "atr": 0.17,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "SPXL",
+        "direction": "SHORT",
+        "strategy": "Overbought Fade",
+        "confidence": 5,
+        "entry": 226.795,
+        "stop": 228.7942857142857,
+        "target": 221.60699999999997,
+        "symbol": "SPXL",
+        "price": 226.795,
+        "rsi": 82.7,
+        "rvol": 0.54,
+        "atr": 1.0,
+        "risk_reward": 2.6
+      },
+      {
+        "ticker": "UVXY",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 5,
+        "entry": 35.3,
+        "stop": 35.50410714285714,
+        "target": 34.89178571428572,
+        "symbol": "UVXY",
+        "price": 35.3,
+        "rsi": 39.9,
+        "rvol": 1.62,
+        "atr": 0.14,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
