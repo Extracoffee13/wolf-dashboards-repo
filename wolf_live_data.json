@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-05-22T06:26:23.413492",
+  "last_updated": "2026-05-22T06:31:26.443694",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 104293.64,
+    "portfolio_value": 104071.58,
     "cash": -100545.31,
-    "buying_power": 3748.33,
-    "equity": 104293.64,
+    "buying_power": 3526.27,
+    "equity": 104071.58,
     "last_equity": 104264.66,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 28.98,
-    "pct": 0.0003,
+    "amount": -193.08,
+    "pct": -0.0019,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 419.01,
-      "market_value": 26397.63,
-      "unrealized_pl": -167.789979,
-      "unrealized_plpc": -0.00632,
+      "current_price": 418.45,
+      "market_value": 26362.35,
+      "unrealized_pl": -203.069979,
+      "unrealized_plpc": -0.00764,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 219.81,
-      "market_value": 27256.44,
-      "unrealized_pl": 1540.08,
-      "unrealized_plpc": 0.05989,
+      "current_price": 219.41,
+      "market_value": 27206.84,
+      "unrealized_pl": 1490.48,
+      "unrealized_plpc": 0.05796,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 137.19,
-      "market_value": 49937.16,
-      "unrealized_pl": 153.93014,
-      "unrealized_plpc": 0.00309,
+      "current_price": 136.96,
+      "market_value": 49853.44,
+      "unrealized_pl": 70.21014,
+      "unrealized_plpc": 0.00141,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 417.71,
-      "market_value": 27568.86,
-      "unrealized_pl": -1632.87003,
-      "unrealized_plpc": -0.05592,
+      "current_price": 416.9,
+      "market_value": 27515.4,
+      "unrealized_pl": -1686.33003,
+      "unrealized_plpc": -0.05775,
       "cost_basis": 29201.73003
     },
     {
@@ -404,12 +404,5 @@
         }
       ]
     }
-  },
-  "last_morning_scan": {
-    "timestamp": "2026-05-22T06:30:21.239490",
-    "date": "2026-05-22",
-    "congressional_summary": "\ud83d\udc3a WOLF Congressional Scanner initializing...\n   Watchlist: 64 symbols | Lookback: 7 days\n  Fetching House PTR index (2026)...\n  House PTRs filed in last 7d: 10 members\n\n  [!] No trade-level data (set QUIVER_TOKEN to enable). Showing PTR filings only.\n\n\n\ud83c\udfdb\ufe0f  WOLF CONGRESSIONAL FILING SCAN \u2014 2026-05-22 06:30\n   Lookback: 7 days | Source: House Clerk eFD (official)\n======================================================================\n\n  10 House Periodic Transaction Reports filed in last 7 days:\n\n ",
-    "technical_summary": "\ud83d\udc3a WOLF scanning 58 symbols on 1Day timeframe...\n================================================================================\n\n  #1 \ud83d\udc3a WOLF SIGNAL\n  \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n  Instrument:  BCH/USD\n  Direction:   LONG\n  Strategy:    Mean Reversion (Oversold)\n  Entry:       $369.99\n  Stop Loss:   $332.37\n  Target:      $435.89\n  R:R:         1.8:1\n  RSI:         14.7\n  Rel Volume:  1.87x\n  Confidence:  7/10\n  \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n  #2 \ud83d\udc3a WOLF SIGNAL\n  \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
-    "portfolio_summary": "\ud83d\udc3a WOLF Paper Trading Account\n========================================\n  Status:        ACTIVE\n  Cash:          $-100,545.31\n  Portfolio:     $104,118.75\n  Buying Power:  $3,573.44\n  Day P&L:       $-145.91\n========================================"
   }
 }
