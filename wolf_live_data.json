@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-05-22T11:29:58.824659",
+  "last_updated": "2026-05-22T11:35:01.904679",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 104856.43,
+    "portfolio_value": 104608.99,
     "cash": -100545.31,
-    "buying_power": 4311.12,
-    "equity": 104856.43,
+    "buying_power": 4063.68,
+    "equity": 104608.99,
     "last_equity": 104264.66,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 591.77,
-    "pct": 0.0057,
+    "amount": 344.33,
+    "pct": 0.0033,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 305.92,
-      "market_value": 23249.92,
-      "unrealized_pl": -61.56,
-      "unrealized_plpc": -0.00264,
+      "current_price": 305.6,
+      "market_value": 23225.6,
+      "unrealized_pl": -85.88,
+      "unrealized_plpc": -0.00368,
       "cost_basis": 23311.48
     },
     {
@@ -38,10 +38,10 @@
       "qty": 333.0,
       "side": "long",
       "avg_entry": 75.842613,
-      "current_price": 78.44,
-      "market_value": 26120.52,
-      "unrealized_pl": 864.929871,
-      "unrealized_plpc": 0.03425,
+      "current_price": 78.455,
+      "market_value": 26125.515,
+      "unrealized_pl": 869.924871,
+      "unrealized_plpc": 0.03444,
       "cost_basis": 25255.590129
     },
     {
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 419.325,
-      "market_value": 26417.475,
-      "unrealized_pl": -147.944979,
-      "unrealized_plpc": -0.00557,
+      "current_price": 419.096,
+      "market_value": 26403.048,
+      "unrealized_pl": -162.371979,
+      "unrealized_plpc": -0.00611,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 218.1301,
-      "market_value": 27048.1324,
-      "unrealized_pl": 1331.7724,
-      "unrealized_plpc": 0.05179,
+      "current_price": 218.02,
+      "market_value": 27034.48,
+      "unrealized_pl": 1318.12,
+      "unrealized_plpc": 0.05126,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 136.59,
-      "market_value": 49718.76,
-      "unrealized_pl": -64.46986,
-      "unrealized_plpc": -0.0013,
+      "current_price": 136.338,
+      "market_value": 49627.032,
+      "unrealized_pl": -156.19786,
+      "unrealized_plpc": -0.00314,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 428.56,
-      "market_value": 28284.96,
-      "unrealized_pl": -916.77003,
-      "unrealized_plpc": -0.03139,
+      "current_price": 426.84,
+      "market_value": 28171.44,
+      "unrealized_pl": -1030.29003,
+      "unrealized_plpc": -0.03528,
       "cost_basis": 29201.73003
     },
     {
@@ -93,10 +93,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 59.1801,
-      "market_value": 24559.7415,
-      "unrealized_pl": 1150.141375,
-      "unrealized_plpc": 0.04913,
+      "current_price": 59.205,
+      "market_value": 24570.075,
+      "unrealized_pl": 1160.474875,
+      "unrealized_plpc": 0.04957,
       "cost_basis": 23409.600125
     }
   ],
@@ -404,132 +404,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-05-22 11:30:47",
-    "last_task": "Midday rescan",
-    "count": 8,
-    "signals": [
-      {
-        "ticker": "SPXS",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 8,
-        "entry": 35.31,
-        "stop": 35.20821428571429,
-        "target": 35.51357142857143,
-        "symbol": "SPXS",
-        "price": 35.31,
-        "rsi": 66.9,
-        "rvol": 3.33,
-        "atr": 0.07,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "PFE",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 7,
-        "entry": 24.92,
-        "stop": 24.97357142857143,
-        "target": 24.812857142857144,
-        "symbol": "PFE",
-        "price": 24.92,
-        "rsi": 30.4,
-        "rvol": 3.0,
-        "atr": 0.04,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "ROKU",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 6,
-        "entry": 109.275,
-        "stop": 109.575,
-        "target": 108.67500000000001,
-        "symbol": "ROKU",
-        "price": 109.275,
-        "rsi": 32.8,
-        "rvol": 2.18,
-        "atr": 0.2,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "SNOW",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 6,
-        "entry": 219.9,
-        "stop": 220.4507142857143,
-        "target": 218.79857142857145,
-        "symbol": "SNOW",
-        "price": 219.9,
-        "rsi": 41.6,
-        "rvol": 2.83,
-        "atr": 0.37,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "PLTR",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 6,
-        "entry": 178.1,
-        "stop": 178.8505357142857,
-        "target": 176.59892857142856,
-        "symbol": "PLTR",
-        "price": 178.1,
-        "rsi": 27.9,
-        "rvol": 1.44,
-        "atr": 0.5,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "JNJ",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 5,
-        "entry": 207.2,
-        "stop": 206.95089285714283,
-        "target": 207.69821428571427,
-        "symbol": "JNJ",
-        "price": 207.2,
-        "rsi": 64.5,
-        "rvol": 1.47,
-        "atr": 0.17,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "SPXL",
-        "direction": "SHORT",
-        "strategy": "Overbought Fade",
-        "confidence": 5,
-        "entry": 226.795,
-        "stop": 228.7942857142857,
-        "target": 221.60699999999997,
-        "symbol": "SPXL",
-        "price": 226.795,
-        "rsi": 82.7,
-        "rvol": 0.54,
-        "atr": 1.0,
-        "risk_reward": 2.6
-      },
-      {
-        "ticker": "UVXY",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 5,
-        "entry": 35.3,
-        "stop": 35.50410714285714,
-        "target": 34.89178571428572,
-        "symbol": "UVXY",
-        "price": 35.3,
-        "rsi": 39.9,
-        "rvol": 1.62,
-        "atr": 0.14,
-        "risk_reward": 2.0
-      }
-    ]
   }
 }
