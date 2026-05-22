@@ -404,5 +404,42 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-05-22 12:00:20",
+    "last_task": "Crypto sweep",
+    "count": 2,
+    "signals": [
+      {
+        "ticker": "AAVE/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 8,
+        "entry": 170.9335,
+        "stop": 165.09704017857143,
+        "target": 182.60641964285716,
+        "symbol": "AAVE/USD",
+        "price": 170.9335,
+        "rsi": 69.4,
+        "rvol": 5.96,
+        "atr": 3.89,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "ETH/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 4,
+        "entry": 3160.885,
+        "stop": 3074.416571875,
+        "target": 3333.82185625,
+        "symbol": "ETH/USD",
+        "price": 3160.885,
+        "rsi": 50.6,
+        "rvol": 1.37,
+        "atr": 57.65,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
