@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-22T23:58:03.536043",
+  "last_updated": "2026-05-23T00:03:06.467805",
   "update_interval_seconds": 300,
   "account": {
     "portfolio_value": 104613.53,
@@ -315,9 +315,9 @@
   "wolf_capabilities": {
     "capability_score": 51,
     "score_max": 100,
-    "day_on_mission": 45,
+    "day_on_mission": 46,
     "mission_start": "2026-04-08",
-    "streak_days": 45,
+    "streak_days": 46,
     "totals": {
       "scripts": 58,
       "core_modules": 14,
@@ -404,42 +404,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-05-23 00:00:09",
-    "last_task": "Crypto sweep",
-    "count": 2,
-    "signals": [
-      {
-        "ticker": "LINK/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 8,
-        "entry": 13.99035,
-        "stop": 13.558795714285713,
-        "target": 14.853458571428572,
-        "symbol": "LINK/USD",
-        "price": 13.99035,
-        "rsi": 73.3,
-        "rvol": 4.17,
-        "atr": 0.29,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "SOL/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 7,
-        "entry": 137.485,
-        "stop": 132.19367310041073,
-        "target": 148.0676537991786,
-        "symbol": "SOL/USD",
-        "price": 137.485,
-        "rsi": 58.4,
-        "rvol": 4.08,
-        "atr": 3.53,
-        "risk_reward": 2.0
-      }
-    ]
   }
 }
