@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was QuickBooks Official MCP Server (Intuit x Anthropic)
+lesson: Accounting/CRM MCP integrations are the fastest-maturing category in May 2026 — Intuit's Anthropic partnership and Apideck's unified layer signal that financial-workflow agents no longer need custom connectors; watch the MCP Spec RC (stateless, Extensions) for Q3 breaking changes
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
