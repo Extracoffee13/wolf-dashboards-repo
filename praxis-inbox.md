@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-ai
+decision: scanned anthropic + frontier labs + MCP registries + arxiv
+outcome: Anthropic's Claude Design + Claude for Small Business (Canva/HubSpot connectors, Opus 4.7) is the top finding — it directly overlaps The Construct's visual production and proposal workflow and is deployable today without custom integration.
+lesson: The agent ecosystem is converging on context engineering (not prompt engineering) as the architectural primitive; isolation and provenance of agent context will define which platforms enterprises trust with multi-client, permission-sensitive workflows.
+tags: ai,agent,ecosystem,construct
+confidence: 0.6
+~~~
