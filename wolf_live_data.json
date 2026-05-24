@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-23T23:57:52.847302",
+  "last_updated": "2026-05-24T00:02:55.930778",
   "update_interval_seconds": 300,
   "account": {
     "portfolio_value": 104613.53,
@@ -315,9 +315,9 @@
   "wolf_capabilities": {
     "capability_score": 51,
     "score_max": 100,
-    "day_on_mission": 46,
+    "day_on_mission": 47,
     "mission_start": "2026-04-08",
-    "streak_days": 46,
+    "streak_days": 47,
     "totals": {
       "scripts": 58,
       "core_modules": 14,
@@ -404,42 +404,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-05-24 00:00:09",
-    "last_task": "Crypto sweep",
-    "count": 2,
-    "signals": [
-      {
-        "ticker": "AVAX/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 8,
-        "entry": 14.4745,
-        "stop": 13.765977155607144,
-        "target": 15.891545688785715,
-        "symbol": "AVAX/USD",
-        "price": 14.4745,
-        "rsi": 64.6,
-        "rvol": 6.67,
-        "atr": 0.47,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "DOT/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 6,
-        "entry": 2.19796,
-        "stop": 2.10680425,
-        "target": 2.3802715000000005,
-        "symbol": "DOT/USD",
-        "price": 2.19796,
-        "rsi": 59.8,
-        "rvol": 2.64,
-        "atr": 0.06,
-        "risk_reward": 2.0
-      }
-    ]
   }
 }
