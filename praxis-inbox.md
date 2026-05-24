@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Anthropic Finance Agents (10 pre-built financial agent templates, score 5, owner: Ledger)
+lesson: The highest-leverage new skills this cycle are shipping directly from Anthropic as domain-specific agent template bundles (finance, then likely legal/HR next) — monitoring anthropic.com/news is now more valuable per minute than scanning community repos
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
