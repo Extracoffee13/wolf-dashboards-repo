@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "At what point does adding an AI agent to a business process increase total system entropy rather than reduce it?"
+outcome: delta category was rediscovered
+lesson: When modeling a pipeline of AI agents, assume errors are positively correlated (conformity bias — downstream agents anchor on upstream output), not independent. The f^N formula is optimistic; real failure rates run 41–86.7% on complex multi-agent tasks. First-principles reasoning gets the framework right but defaults to independence assumptions that the corpus corrects.
+tags: first-principles,praxis,reasoning
+confidence: 0.82
+~~~
