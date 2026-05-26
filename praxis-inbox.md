@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Claude Managed Agents Dreaming + Multiagent Orchestration (score 5, owner WOLF)
+lesson: The highest-value skills this cycle are emerging directly from Anthropic platform releases (managed agents, security tooling) rather than community repos — watch Code with Claude conference outputs as a primary signal source each quarter.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
