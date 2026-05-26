@@ -404,5 +404,102 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-05-26 11:31:22",
+    "last_task": "Midday rescan",
+    "count": 6,
+    "signals": [
+      {
+        "ticker": "ROKU",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 7,
+        "entry": 115.805,
+        "stop": 115.07803571428572,
+        "target": 117.25892857142858,
+        "symbol": "ROKU",
+        "price": 115.805,
+        "rsi": 76.1,
+        "rvol": 2.35,
+        "atr": 0.48,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "IWM",
+        "direction": "SHORT",
+        "strategy": "Overbought Fade",
+        "confidence": 6,
+        "entry": 252.0,
+        "stop": 253.07,
+        "target": 249.086,
+        "symbol": "IWM",
+        "price": 252.0,
+        "rsi": 86.6,
+        "rvol": 0.95,
+        "atr": 0.54,
+        "risk_reward": 2.7
+      },
+      {
+        "ticker": "TSLA",
+        "direction": "SHORT",
+        "strategy": "Overbought Fade",
+        "confidence": 5,
+        "entry": 454.86,
+        "stop": 460.29857142857145,
+        "target": 445.96274999999997,
+        "symbol": "TSLA",
+        "price": 454.86,
+        "rsi": 80.2,
+        "rvol": 1.25,
+        "atr": 2.72,
+        "risk_reward": 1.6
+      },
+      {
+        "ticker": "SHOP",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 4,
+        "entry": 166.56,
+        "stop": 165.53839285714287,
+        "target": 168.6032142857143,
+        "symbol": "SHOP",
+        "price": 166.56,
+        "rsi": 53.4,
+        "rvol": 1.25,
+        "atr": 0.68,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "SPY",
+        "direction": "SHORT",
+        "strategy": "Overbought Fade",
+        "confidence": 4,
+        "entry": 688.625,
+        "stop": 690.625,
+        "target": 685.5097499999999,
+        "symbol": "SPY",
+        "price": 688.625,
+        "rsi": 78.5,
+        "rvol": 0.7,
+        "atr": 1.0,
+        "risk_reward": 1.6
+      },
+      {
+        "ticker": "SLV",
+        "direction": "SHORT",
+        "strategy": "Overbought Fade",
+        "confidence": 4,
+        "entry": 68.06,
+        "stop": 68.99928571428572,
+        "target": 65.7005,
+        "symbol": "SLV",
+        "price": 68.06,
+        "rsi": 77.9,
+        "rvol": 0.02,
+        "atr": 0.47,
+        "risk_reward": 2.5
+      }
+    ]
   }
 }
