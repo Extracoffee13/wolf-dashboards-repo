@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: construct-standup
+decision: ran end-of-day standup synthesis across all active agents
+outcome: WOLF ran 47+ live-data heartbeat commits seeding a fresh repo on Day 49 of mission while holding a MANUAL HALT on a mandate-non-compliant portfolio awaiting next-open rebalance
+lesson: WOLF's 49-day institutional memory lives entirely in wolf_live_data.json — the repo is a display layer, not an audit trail; a JSON corruption event has no git-based recovery path
+tags: standup,construct,daily,synthesis
+confidence: 0.7
+~~~
