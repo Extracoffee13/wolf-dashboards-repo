@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-05-26T05:44:21.921632",
+  "last_updated": "2026-05-26T05:49:24.811253",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 104908.91,
+    "portfolio_value": 104988.26,
     "cash": -100545.31,
-    "buying_power": 4363.6,
-    "equity": 104908.91,
+    "buying_power": 4442.95,
+    "equity": 104988.26,
     "last_equity": 104613.53,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 295.38,
-    "pct": 0.0028,
+    "amount": 374.73,
+    "pct": 0.0036,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 419.28,
-      "market_value": 26414.64,
-      "unrealized_pl": -150.779979,
-      "unrealized_plpc": -0.00568,
+      "current_price": 419.25,
+      "market_value": 26412.75,
+      "unrealized_pl": -152.669979,
+      "unrealized_plpc": -0.00575,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 217.19,
-      "market_value": 26931.56,
-      "unrealized_pl": 1215.2,
-      "unrealized_plpc": 0.04725,
+      "current_price": 217.29,
+      "market_value": 26943.96,
+      "unrealized_pl": 1227.6,
+      "unrealized_plpc": 0.04774,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 136.47,
-      "market_value": 49675.08,
-      "unrealized_pl": -108.14986,
-      "unrealized_plpc": -0.00217,
+      "current_price": 136.52,
+      "market_value": 49693.28,
+      "unrealized_pl": -89.94986,
+      "unrealized_plpc": -0.00181,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 429.01,
-      "market_value": 28314.66,
-      "unrealized_pl": -887.07003,
-      "unrealized_plpc": -0.03038,
+      "current_price": 429.4,
+      "market_value": 28340.4,
+      "unrealized_pl": -861.33003,
+      "unrealized_plpc": -0.0295,
       "cost_basis": 29201.73003
     },
     {
@@ -93,10 +93,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 58.88,
-      "market_value": 24435.2,
-      "unrealized_pl": 1025.599875,
-      "unrealized_plpc": 0.04381,
+      "current_price": 58.94,
+      "market_value": 24460.1,
+      "unrealized_pl": 1050.499875,
+      "unrealized_plpc": 0.04487,
       "cost_basis": 23409.600125
     }
   ],
@@ -360,14 +360,6 @@
       {
         "date": "2026-04-08",
         "lesson": "WOLF can now enumerate his own 14 scripts for self-aware planning."
-      },
-      {
-        "date": "2026-05-26",
-        "lesson": "HBR: Agentic AI startups now magazine-confirmed as incumbent threat (Lee/Mantia/McNeill, July-Aug 2026) \u2014 operating-model itself is the wedge; non-AI defensive sleeve thesis (Goldman) emerging as third leg of AI-rotation trade."
-      },
-      {
-        "date": "2026-05-26",
-        "lesson": "HBR: False Alignment Trap (Dhar/Ellmer/Jameson, July-Aug 2026) \u2014 most transformations fail because leaders only PERFORM agreement on why/what/how; add false-alignment screen to portco diligence."
       }
     ],
     "real_money_unlocked": false,
