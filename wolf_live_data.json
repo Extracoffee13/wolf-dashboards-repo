@@ -404,5 +404,135 @@
         }
       ]
     }
+  },
+  "daily_summary": {
+    "date": "2026-05-26",
+    "account": {
+      "portfolio_value": 103542.56,
+      "cash": -100545.31,
+      "buying_power": 2997.25,
+      "positions": 7,
+      "todays_trades": 0,
+      "daily_pnl_amount": -1070.97,
+      "daily_pnl_pct": -0.0102,
+      "circuit_breaker": "yellow"
+    },
+    "log": {
+      "task_fires": {
+        "wolf-crypto-247": 3,
+        "wolf-market-open-exec": 1,
+        "wolf-midday-rescan": 1,
+        "wolf-gate-status": 1,
+        "wolf-daily-summary": 1
+      },
+      "errors": 1
+    },
+    "rejected": {
+      "count": 19,
+      "reasons": {
+        "R:R 0.6 < 1.5": 2,
+        "R:R 0.5 < 1.5": 3,
+        "R:R 1.3 < 1.5": 2,
+        "halt_new_entries=true in wolf_live_data.json": 9,
+        "R:R 1.2 < 1.5": 2,
+        "R:R 1.1 < 1.5": 1
+      },
+      "recent": [
+        {
+          "ticker": "NVDA",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-26T13:31:32Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "BRK.B",
+          "strategy": "Breakdown",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-26T13:31:32Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "LLY",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-26T13:31:32Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "SLV",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-26T13:31:32Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "BAC",
+          "strategy": "Breakdown",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-26T13:31:32Z",
+          "risk_reward": 2.0,
+          "confidence": 5
+        },
+        {
+          "ticker": "AMD",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 1.2 < 1.5",
+          "rejected_at": "2026-05-26T11:31:22.778550",
+          "risk_reward": 1.2,
+          "confidence": 7
+        },
+        {
+          "ticker": "AAPL",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 1.3 < 1.5",
+          "rejected_at": "2026-05-26T11:31:22.778621",
+          "risk_reward": 1.3,
+          "confidence": 6
+        },
+        {
+          "ticker": "OXY",
+          "strategy": "Overbought Fade",
+          "reason": "R:R 1.2 < 1.5",
+          "rejected_at": "2026-05-26T11:31:22.778658",
+          "risk_reward": 1.2,
+          "confidence": 5
+        },
+        {
+          "ticker": "CVX",
+          "strategy": "Overbought Fade",
+          "reason": "R:R 1.1 < 1.5",
+          "rejected_at": "2026-05-26T11:31:22.778690",
+          "risk_reward": 1.1,
+          "confidence": 4
+        },
+        {
+          "ticker": "AVAX/USD",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 0.5 < 1.5",
+          "rejected_at": "2026-05-26T12:00:49.350596",
+          "risk_reward": 0.5,
+          "confidence": 3
+        }
+      ]
+    },
+    "committee": {
+      "runs": 1,
+      "tickers_voted": 3,
+      "verdicts": {
+        "bullish": 3
+      }
+    }
+  },
+  "daily_summary_updated_at": "2026-05-26T16:50:02.569574",
+  "today_signals": {
+    "as_of": "2026-05-26 16:50:02",
+    "last_task": "EOD recap",
+    "count": 0,
+    "signals": []
   }
 }
