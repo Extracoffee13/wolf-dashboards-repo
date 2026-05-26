@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "What is the correct unit of pricing for commercial sign fabrication?"
+outcome: delta category was novel
+lesson: Cost-plus pricing is a solution to an information-asymmetry problem, not a statement about value — wherever you can reduce that asymmetry (traffic data, visibility scoring, demographic proxies), you can price closer to value and capture the gap as margin rather than gifting it to the buyer.
+tags: first-principles,praxis,reasoning
+confidence: 0.78
+~~~
