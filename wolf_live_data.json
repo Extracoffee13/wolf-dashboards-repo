@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-05-27T16:47:23.306577",
+  "last_updated": "2026-05-27T16:52:26.192326",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 101101.36,
+    "portfolio_value": 101118.74,
     "cash": -100545.31,
-    "buying_power": 556.05,
-    "equity": 101101.36,
+    "buying_power": 573.43,
+    "equity": 101118.74,
     "last_equity": 103807.35,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -2705.99,
-    "pct": -0.0261,
+    "amount": -2688.61,
+    "pct": -0.0259,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 413.61,
-      "market_value": 26057.43,
-      "unrealized_pl": -507.989979,
-      "unrealized_plpc": -0.01912,
+      "current_price": 414.03,
+      "market_value": 26083.89,
+      "unrealized_pl": -481.529979,
+      "unrealized_plpc": -0.01813,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 212.39,
-      "market_value": 26336.36,
-      "unrealized_pl": 620.0,
-      "unrealized_plpc": 0.02411,
+      "current_price": 212.4,
+      "market_value": 26337.6,
+      "unrealized_pl": 621.24,
+      "unrealized_plpc": 0.02416,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 133.11,
-      "market_value": 48452.04,
-      "unrealized_pl": -1331.18986,
-      "unrealized_plpc": -0.02674,
+      "current_price": 133.08,
+      "market_value": 48441.12,
+      "unrealized_pl": -1342.10986,
+      "unrealized_plpc": -0.02696,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 439.99,
-      "market_value": 29039.34,
-      "unrealized_pl": -162.39003,
-      "unrealized_plpc": -0.00556,
+      "current_price": 439.999,
+      "market_value": 29039.934,
+      "unrealized_pl": -161.79603,
+      "unrealized_plpc": -0.00554,
       "cost_basis": 29201.73003
     },
     {
@@ -404,146 +404,5 @@
         }
       ]
     }
-  },
-  "daily_summary": {
-    "date": "2026-05-27",
-    "account": {
-      "portfolio_value": 101101.36,
-      "cash": -100545.31,
-      "buying_power": 556.05,
-      "positions": 7,
-      "todays_trades": 0,
-      "daily_pnl_amount": -2705.99,
-      "daily_pnl_pct": -0.0261,
-      "circuit_breaker": "yellow"
-    },
-    "log": {
-      "task_fires": {
-        "wolf-crypto-247": 3,
-        "wolf-market-open-exec": 1,
-        "wolf-midday-rescan": 1,
-        "wolf-gate-status": 1,
-        "wolf-daily-summary": 1
-      },
-      "errors": 1
-    },
-    "rejected": {
-      "count": 11,
-      "reasons": {
-        "R:R 1.4 < 1.5": 1,
-        "halt_new_entries=true in wolf_live_data.json": 9,
-        "R:R 0.9 < 1.5": 1
-      },
-      "recent": [
-        {
-          "ticker": "AAPL",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-05-27T13:31:31Z",
-          "risk_reward": 2.0,
-          "confidence": 7
-        },
-        {
-          "ticker": "NFLX",
-          "strategy": "Momentum Breakout",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-05-27T13:31:31Z",
-          "risk_reward": 2.0,
-          "confidence": 7
-        },
-        {
-          "ticker": "UNH",
-          "strategy": "Overbought Fade",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-05-27T13:31:31Z",
-          "risk_reward": 2.1,
-          "confidence": 7
-        },
-        {
-          "ticker": "GLD",
-          "strategy": "Momentum Breakout",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-05-27T13:31:31Z",
-          "risk_reward": 2.0,
-          "confidence": 7
-        },
-        {
-          "ticker": "SLB",
-          "strategy": "Momentum Breakout",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-05-27T13:31:31Z",
-          "risk_reward": 2.0,
-          "confidence": 6
-        },
-        {
-          "ticker": "DIA",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-05-27T13:31:31Z",
-          "risk_reward": 1.8,
-          "confidence": 6
-        },
-        {
-          "ticker": "BAC",
-          "strategy": "Breakdown",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-05-27T13:31:31Z",
-          "risk_reward": 2.0,
-          "confidence": 5
-        },
-        {
-          "ticker": "GS",
-          "strategy": "MACD Bullish Crossover",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-05-27T13:31:31Z",
-          "risk_reward": 2.0,
-          "confidence": 5
-        },
-        {
-          "ticker": "JNJ",
-          "strategy": "Momentum Breakout",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-05-27T13:31:31Z",
-          "risk_reward": 2.0,
-          "confidence": 5
-        },
-        {
-          "ticker": "MA",
-          "strategy": "Overbought Fade",
-          "reason": "R:R 0.9 < 1.5",
-          "rejected_at": "2026-05-27T11:30:44.619644",
-          "risk_reward": 0.9,
-          "confidence": 5
-        }
-      ]
-    },
-    "committee": {
-      "runs": 0,
-      "tickers_voted": 0,
-      "verdicts": {}
-    }
-  },
-  "daily_summary_updated_at": "2026-05-27T16:50:00.974209",
-  "today_signals": {
-    "as_of": "2026-05-27 16:50:01",
-    "last_task": "EOD recap",
-    "count": 1,
-    "signals": [
-      {
-        "ticker": "LINK/USD",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 5,
-        "entry": 13.27565,
-        "stop": 13.692065426910714,
-        "target": 12.442819146178573,
-        "symbol": "LINK/USD",
-        "price": 13.27565,
-        "rsi": 29.3,
-        "rvol": 1.4,
-        "atr": 0.28,
-        "risk_reward": 2.0
-      }
-    ]
   }
 }
