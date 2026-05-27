@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-05-27T06:15:14.880099",
+  "last_updated": "2026-05-27T06:20:18.181889",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103627.73,
+    "portfolio_value": 103524.63,
     "cash": -100545.31,
-    "buying_power": 3082.42,
-    "equity": 103627.73,
+    "buying_power": 2979.32,
+    "equity": 103524.63,
     "last_equity": 103807.35,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -179.62,
-    "pct": -0.0017,
+    "amount": -282.72,
+    "pct": -0.0027,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 308.0,
-      "market_value": 23408.0,
-      "unrealized_pl": 96.52,
-      "unrealized_plpc": 0.00414,
+      "current_price": 308.01,
+      "market_value": 23408.76,
+      "unrealized_pl": 97.28,
+      "unrealized_plpc": 0.00417,
       "cost_basis": 23311.48
     },
     {
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 414.1607,
-      "market_value": 26092.1241,
-      "unrealized_pl": -473.295879,
-      "unrealized_plpc": -0.01782,
+      "current_price": 413.95,
+      "market_value": 26078.85,
+      "unrealized_pl": -486.569979,
+      "unrealized_plpc": -0.01832,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 216.14,
-      "market_value": 26801.36,
-      "unrealized_pl": 1085.0,
-      "unrealized_plpc": 0.04219,
+      "current_price": 215.85,
+      "market_value": 26765.4,
+      "unrealized_pl": 1049.04,
+      "unrealized_plpc": 0.04079,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 134.7199,
-      "market_value": 49038.0436,
-      "unrealized_pl": -745.18626,
-      "unrealized_plpc": -0.01497,
+      "current_price": 134.67,
+      "market_value": 49019.88,
+      "unrealized_pl": -763.34986,
+      "unrealized_plpc": -0.01533,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 441.3573,
-      "market_value": 29129.5818,
-      "unrealized_pl": -72.14823,
-      "unrealized_plpc": -0.00247,
+      "current_price": 441.0,
+      "market_value": 29106.0,
+      "unrealized_pl": -95.73003,
+      "unrealized_plpc": -0.00328,
       "cost_basis": 29201.73003
     },
     {
@@ -93,10 +93,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 57.35,
-      "market_value": 23800.25,
-      "unrealized_pl": 390.649875,
-      "unrealized_plpc": 0.01669,
+      "current_price": 57.31,
+      "market_value": 23783.65,
+      "unrealized_pl": 374.049875,
+      "unrealized_plpc": 0.01598,
       "cost_basis": 23409.600125
     }
   ],
