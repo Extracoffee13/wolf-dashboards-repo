@@ -404,5 +404,146 @@
         }
       ]
     }
+  },
+  "daily_summary": {
+    "date": "2026-05-27",
+    "account": {
+      "portfolio_value": 101101.36,
+      "cash": -100545.31,
+      "buying_power": 556.05,
+      "positions": 7,
+      "todays_trades": 0,
+      "daily_pnl_amount": -2705.99,
+      "daily_pnl_pct": -0.0261,
+      "circuit_breaker": "yellow"
+    },
+    "log": {
+      "task_fires": {
+        "wolf-crypto-247": 3,
+        "wolf-market-open-exec": 1,
+        "wolf-midday-rescan": 1,
+        "wolf-gate-status": 1,
+        "wolf-daily-summary": 1
+      },
+      "errors": 1
+    },
+    "rejected": {
+      "count": 11,
+      "reasons": {
+        "R:R 1.4 < 1.5": 1,
+        "halt_new_entries=true in wolf_live_data.json": 9,
+        "R:R 0.9 < 1.5": 1
+      },
+      "recent": [
+        {
+          "ticker": "AAPL",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-27T13:31:31Z",
+          "risk_reward": 2.0,
+          "confidence": 7
+        },
+        {
+          "ticker": "NFLX",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-27T13:31:31Z",
+          "risk_reward": 2.0,
+          "confidence": 7
+        },
+        {
+          "ticker": "UNH",
+          "strategy": "Overbought Fade",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-27T13:31:31Z",
+          "risk_reward": 2.1,
+          "confidence": 7
+        },
+        {
+          "ticker": "GLD",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-27T13:31:31Z",
+          "risk_reward": 2.0,
+          "confidence": 7
+        },
+        {
+          "ticker": "SLB",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-27T13:31:31Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "DIA",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-27T13:31:31Z",
+          "risk_reward": 1.8,
+          "confidence": 6
+        },
+        {
+          "ticker": "BAC",
+          "strategy": "Breakdown",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-27T13:31:31Z",
+          "risk_reward": 2.0,
+          "confidence": 5
+        },
+        {
+          "ticker": "GS",
+          "strategy": "MACD Bullish Crossover",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-27T13:31:31Z",
+          "risk_reward": 2.0,
+          "confidence": 5
+        },
+        {
+          "ticker": "JNJ",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-05-27T13:31:31Z",
+          "risk_reward": 2.0,
+          "confidence": 5
+        },
+        {
+          "ticker": "MA",
+          "strategy": "Overbought Fade",
+          "reason": "R:R 0.9 < 1.5",
+          "rejected_at": "2026-05-27T11:30:44.619644",
+          "risk_reward": 0.9,
+          "confidence": 5
+        }
+      ]
+    },
+    "committee": {
+      "runs": 0,
+      "tickers_voted": 0,
+      "verdicts": {}
+    }
+  },
+  "daily_summary_updated_at": "2026-05-27T16:50:00.974209",
+  "today_signals": {
+    "as_of": "2026-05-27 16:50:01",
+    "last_task": "EOD recap",
+    "count": 1,
+    "signals": [
+      {
+        "ticker": "LINK/USD",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 5,
+        "entry": 13.27565,
+        "stop": 13.692065426910714,
+        "target": 12.442819146178573,
+        "symbol": "LINK/USD",
+        "price": 13.27565,
+        "rsi": 29.3,
+        "rvol": 1.4,
+        "atr": 0.28,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
