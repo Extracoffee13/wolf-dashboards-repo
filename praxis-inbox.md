@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was skillforge-mcp
+lesson: The skill-persistence and skill-discovery layer is maturing fast — multiple independent teams shipped wrappers this cycle that let agents accumulate and reuse skills across sessions; the next growth edge is fintech/compliance MCP servers targeting regulated workflows
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
