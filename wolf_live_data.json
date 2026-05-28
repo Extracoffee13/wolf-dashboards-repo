@@ -404,5 +404,42 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-05-28 18:00:31",
+    "last_task": "Crypto sweep",
+    "count": 2,
+    "signals": [
+      {
+        "ticker": "BCH/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 8,
+        "entry": 653.017,
+        "stop": 638.3040357142858,
+        "target": 682.4429285714286,
+        "symbol": "BCH/USD",
+        "price": 653.017,
+        "rsi": 71.4,
+        "rvol": 5.52,
+        "atr": 9.81,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "AAVE/USD",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 5,
+        "entry": 165.0175,
+        "stop": 170.28925,
+        "target": 154.47400000000002,
+        "symbol": "AAVE/USD",
+        "price": 165.0175,
+        "rsi": 42.9,
+        "rvol": 1.9,
+        "atr": 3.51,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
