@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Is a paper-trading Sharpe ratio a valid predictor of live-trading performance, and what multiplier should WOLF apply to its 90-day kill criterion?"
+outcome: delta category was rediscovered
+lesson: First principles can reliably derive direction and magnitude of well-studied phenomena (Sharpe estimation noise, paper-to-live friction); where first principles falls short is in missing already-formalized tools (PSR, Lo 2002) — retrieve *after* deriving to discover the vocabulary, not the answer.
+tags: first-principles,praxis,reasoning
+confidence: 0.82
+~~~
