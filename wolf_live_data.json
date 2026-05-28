@@ -404,5 +404,117 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-05-28 11:30:39",
+    "last_task": "Midday rescan",
+    "count": 7,
+    "signals": [
+      {
+        "ticker": "ABBV",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 8,
+        "entry": 235.865,
+        "stop": 234.2251785714286,
+        "target": 239.14464285714286,
+        "symbol": "ABBV",
+        "price": 235.865,
+        "rsi": 79.3,
+        "rvol": 5.51,
+        "atr": 1.09,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "QQQ",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 8,
+        "entry": 623.46,
+        "stop": 622.7041071428572,
+        "target": 624.9717857142857,
+        "symbol": "QQQ",
+        "price": 623.46,
+        "rsi": 77.3,
+        "rvol": 6.04,
+        "atr": 0.5,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "GOOGL",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 7,
+        "entry": 324.335,
+        "stop": 322.3592857142857,
+        "target": 328.28642857142853,
+        "symbol": "GOOGL",
+        "price": 324.335,
+        "rsi": 72.2,
+        "rvol": 1.89,
+        "atr": 1.32,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "PFE",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 6,
+        "entry": 25.6,
+        "stop": 25.46446428571429,
+        "target": 25.87107142857143,
+        "symbol": "PFE",
+        "price": 25.6,
+        "rsi": 56.1,
+        "rvol": 2.53,
+        "atr": 0.09,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "SLV",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 5,
+        "entry": 70.11,
+        "stop": 68.94428571428571,
+        "target": 72.63775,
+        "symbol": "SLV",
+        "price": 70.11,
+        "rsi": 24.9,
+        "rvol": 0.01,
+        "atr": 0.58,
+        "risk_reward": 2.2
+      },
+      {
+        "ticker": "SPXL",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 5,
+        "entry": 229.71,
+        "stop": 228.13982142857142,
+        "target": 232.85035714285715,
+        "symbol": "SPXL",
+        "price": 229.71,
+        "rsi": 58.6,
+        "rvol": 1.18,
+        "atr": 1.05,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "SPXS",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 4,
+        "entry": 33.91,
+        "stop": 34.02303571428571,
+        "target": 33.68392857142857,
+        "symbol": "SPXS",
+        "price": 33.91,
+        "rsi": 40.1,
+        "rvol": 1.32,
+        "atr": 0.08,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
