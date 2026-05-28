@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: pre-market-intelligence
+decision: scanned overnight futures + Asia close + Europe open + day's catalysts
+outcome: Iran war binary dominates 2026-05-28 setup — Brent $96.30, SPX futures flat at 7,538, PCE at 8:30 ET is the rate pivot and SPX 7,500 is the line in the sand
+lesson: When a geopolitical binary (Iran deal/no-deal) coincides with a tier-1 data print (PCE), futures flatness is not complacency — it's genuine two-way optionality; the direction after 8:30 will be decisive and fast
+tags: wolf,pre-market,markets,daily
+confidence: 0.7
+~~~
