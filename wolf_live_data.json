@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-05-28T11:29:21.861262",
+  "last_updated": "2026-05-28T11:34:25.444316",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 103866.36,
+    "portfolio_value": 103848.44,
     "cash": -100545.31,
-    "buying_power": 3321.05,
-    "equity": 103866.36,
+    "buying_power": 3303.13,
+    "equity": 103848.44,
     "last_equity": 100810.17,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 3056.19,
-    "pct": 0.0303,
+    "amount": 3038.27,
+    "pct": 0.0301,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 297.905,
-      "market_value": 22640.78,
-      "unrealized_pl": -670.7,
-      "unrealized_plpc": -0.02877,
+      "current_price": 297.505,
+      "market_value": 22610.38,
+      "unrealized_pl": -701.1,
+      "unrealized_plpc": -0.03008,
       "cost_basis": 23311.48
     },
     {
@@ -38,10 +38,10 @@
       "qty": 333.0,
       "side": "long",
       "avg_entry": 75.842613,
-      "current_price": 75.43,
-      "market_value": 25118.19,
-      "unrealized_pl": -137.400129,
-      "unrealized_plpc": -0.00544,
+      "current_price": 75.52,
+      "market_value": 25148.16,
+      "unrealized_pl": -107.430129,
+      "unrealized_plpc": -0.00425,
       "cost_basis": 25255.590129
     },
     {
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 425.29,
-      "market_value": 26793.27,
-      "unrealized_pl": 227.850021,
-      "unrealized_plpc": 0.00858,
+      "current_price": 424.3,
+      "market_value": 26730.9,
+      "unrealized_pl": 165.480021,
+      "unrealized_plpc": 0.00623,
       "cost_basis": 26565.419979
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 139.025,
-      "market_value": 50605.1,
-      "unrealized_pl": 821.87014,
-      "unrealized_plpc": 0.01651,
+      "current_price": 139.19,
+      "market_value": 50665.16,
+      "unrealized_pl": 881.93014,
+      "unrealized_plpc": 0.01772,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 441.47,
-      "market_value": 29137.02,
-      "unrealized_pl": -64.71003,
-      "unrealized_plpc": -0.00222,
+      "current_price": 441.24,
+      "market_value": 29121.84,
+      "unrealized_pl": -79.89003,
+      "unrealized_plpc": -0.00274,
       "cost_basis": 29201.73003
     },
     {
@@ -404,117 +404,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-05-28 11:30:39",
-    "last_task": "Midday rescan",
-    "count": 7,
-    "signals": [
-      {
-        "ticker": "ABBV",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 8,
-        "entry": 235.865,
-        "stop": 234.2251785714286,
-        "target": 239.14464285714286,
-        "symbol": "ABBV",
-        "price": 235.865,
-        "rsi": 79.3,
-        "rvol": 5.51,
-        "atr": 1.09,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "QQQ",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 8,
-        "entry": 623.46,
-        "stop": 622.7041071428572,
-        "target": 624.9717857142857,
-        "symbol": "QQQ",
-        "price": 623.46,
-        "rsi": 77.3,
-        "rvol": 6.04,
-        "atr": 0.5,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "GOOGL",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 7,
-        "entry": 324.335,
-        "stop": 322.3592857142857,
-        "target": 328.28642857142853,
-        "symbol": "GOOGL",
-        "price": 324.335,
-        "rsi": 72.2,
-        "rvol": 1.89,
-        "atr": 1.32,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "PFE",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 6,
-        "entry": 25.6,
-        "stop": 25.46446428571429,
-        "target": 25.87107142857143,
-        "symbol": "PFE",
-        "price": 25.6,
-        "rsi": 56.1,
-        "rvol": 2.53,
-        "atr": 0.09,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "SLV",
-        "direction": "LONG",
-        "strategy": "Mean Reversion (Oversold)",
-        "confidence": 5,
-        "entry": 70.11,
-        "stop": 68.94428571428571,
-        "target": 72.63775,
-        "symbol": "SLV",
-        "price": 70.11,
-        "rsi": 24.9,
-        "rvol": 0.01,
-        "atr": 0.58,
-        "risk_reward": 2.2
-      },
-      {
-        "ticker": "SPXL",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 5,
-        "entry": 229.71,
-        "stop": 228.13982142857142,
-        "target": 232.85035714285715,
-        "symbol": "SPXL",
-        "price": 229.71,
-        "rsi": 58.6,
-        "rvol": 1.18,
-        "atr": 1.05,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "SPXS",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 4,
-        "entry": 33.91,
-        "stop": 34.02303571428571,
-        "target": 33.68392857142857,
-        "symbol": "SPXS",
-        "price": 33.91,
-        "rsi": 40.1,
-        "rvol": 1.32,
-        "atr": 0.08,
-        "risk_reward": 2.0
-      }
-    ]
   }
 }
