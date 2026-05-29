@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Claude Opus 4.8 + Dynamic Workflows
+lesson: The highest-signal releases now land simultaneously on anthropic.com/news AND as direct model upgrades in the Claude Code runtime — monitoring the anthropic news feed daily is more reliable than polling PyPI/npm alone, because foundational model releases subsume many individual skill improvements
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
