@@ -404,5 +404,57 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-05-29 18:00:16",
+    "last_task": "Crypto sweep",
+    "count": 3,
+    "signals": [
+      {
+        "ticker": "ETH/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 8,
+        "entry": 3323.605,
+        "stop": 3244.2715535714283,
+        "target": 3482.271892857143,
+        "symbol": "ETH/USD",
+        "price": 3323.605,
+        "rsi": 79.1,
+        "rvol": 4.37,
+        "atr": 52.89,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "SOL/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 7,
+        "entry": 139.4975,
+        "stop": 136.93351785714285,
+        "target": 144.6254642857143,
+        "symbol": "SOL/USD",
+        "price": 139.4975,
+        "rsi": 54.9,
+        "rvol": 3.66,
+        "atr": 1.71,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "DOGE/USD",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 5,
+        "entry": 0.13947,
+        "stop": 0.1429754577857143,
+        "target": 0.13245908442857146,
+        "symbol": "DOGE/USD",
+        "price": 0.13947,
+        "rsi": 39.6,
+        "rvol": 1.91,
+        "atr": 0.0,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
