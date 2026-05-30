@@ -404,5 +404,42 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-05-30 00:00:14",
+    "last_task": "Crypto sweep",
+    "count": 2,
+    "signals": [
+      {
+        "ticker": "ETH/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 7,
+        "entry": 3366.9075,
+        "stop": 3277.815589285714,
+        "target": 3545.0913214285715,
+        "symbol": "ETH/USD",
+        "price": 3366.9075,
+        "rsi": 77.9,
+        "rvol": 1.95,
+        "atr": 59.39,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "LINK/USD",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 5,
+        "entry": 13.096,
+        "stop": 13.379392857142857,
+        "target": 12.529214285714286,
+        "symbol": "LINK/USD",
+        "price": 13.096,
+        "rsi": 44.5,
+        "rvol": 2.52,
+        "atr": 0.19,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
