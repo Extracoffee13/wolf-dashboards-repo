@@ -404,5 +404,57 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-05-31 18:00:12",
+    "last_task": "Crypto sweep",
+    "count": 3,
+    "signals": [
+      {
+        "ticker": "SOL/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 8,
+        "entry": 143.3895,
+        "stop": 138.56884257798214,
+        "target": 153.03081484403572,
+        "symbol": "SOL/USD",
+        "price": 143.3895,
+        "rsi": 68.5,
+        "rvol": 7.34,
+        "atr": 3.21,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "AVAX/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 6,
+        "entry": 14.3546,
+        "stop": 13.871401785714285,
+        "target": 15.320996428571428,
+        "symbol": "AVAX/USD",
+        "price": 14.3546,
+        "rsi": 62.4,
+        "rvol": 2.64,
+        "atr": 0.32,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "UNI/USD",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 6,
+        "entry": 5.388685,
+        "stop": 5.529974285714285,
+        "target": 5.106106428571429,
+        "symbol": "UNI/USD",
+        "price": 5.388685,
+        "rsi": 33.4,
+        "rvol": 2.14,
+        "atr": 0.09,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
