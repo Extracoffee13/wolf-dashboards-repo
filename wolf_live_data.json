@@ -404,5 +404,72 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-06-01 12:00:19",
+    "last_task": "Crypto sweep",
+    "count": 4,
+    "signals": [
+      {
+        "ticker": "LINK/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 8,
+        "entry": 14.2265,
+        "stop": 13.797979873142857,
+        "target": 15.083540253714286,
+        "symbol": "LINK/USD",
+        "price": 14.2265,
+        "rsi": 77.9,
+        "rvol": 2.64,
+        "atr": 0.29,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "DOT/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 8,
+        "entry": 2.28135,
+        "stop": 2.167007508696429,
+        "target": 2.510034982607143,
+        "symbol": "DOT/USD",
+        "price": 2.28135,
+        "rsi": 74.1,
+        "rvol": 5.06,
+        "atr": 0.08,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "UNI/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 6,
+        "entry": 5.7264,
+        "stop": 5.542821964285714,
+        "target": 6.093556071428571,
+        "symbol": "UNI/USD",
+        "price": 5.7264,
+        "rsi": 69.8,
+        "rvol": 1.97,
+        "atr": 0.12,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "SOL/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 4,
+        "entry": 143.7215,
+        "stop": 138.94806701599998,
+        "target": 153.268365968,
+        "symbol": "SOL/USD",
+        "price": 143.7215,
+        "rsi": 53.8,
+        "rvol": 1.29,
+        "atr": 3.18,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
