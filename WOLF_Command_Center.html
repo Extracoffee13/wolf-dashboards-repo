@@ -212,9 +212,9 @@
   </div>
   <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px;">
     <div style="font-size:11px; color:#6ab; letter-spacing:1px; text-transform:uppercase;">Day on Mission</div>
-    <div style="font-size:42px; font-weight:700; color:#fbbf24; line-height:1;">28</div>
+    <div id="hydrate-day" style="font-size:42px; font-weight:700; color:#fbbf24; line-height:1;">28</div>
     <div style="font-size:12px; color:#aaa; margin-top:8px;">Started 2026-04-08</div>
-    <div style="font-size:11px; color:#4ade80; margin-top:4px;">Streak: 28 days</div>
+    <div id="hydrate-streak" style="font-size:11px; color:#4ade80; margin-top:4px;">Streak: 28 days</div>
   </div>
   <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px;">
     <div style="font-size:11px; color:#6ab; letter-spacing:1px; text-transform:uppercase;">Latest Improvement</div>
@@ -224,12 +224,12 @@
   <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px;">
     <div style="font-size:11px; color:#6ab; letter-spacing:1px; text-transform:uppercase;">Totals</div>
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px; font-size:12px; margin-top:6px;">
-      <div>Scripts: <b style="color:#4ade80;">54</b></div>
-      <div>Strategies: <b style="color:#4ade80;">6/10</b></div>
-      <div>Skills: <b style="color:#4ade80;">3</b></div>
-      <div>Lessons: <b style="color:#4ade80;">61</b></div>
-      <div>Cycles: <b style="color:#4ade80;">3</b></div>
-      <div>Open Trades: <b style="color:#4ade80;">2</b></div>
+      <div>Scripts: <b id="hydrate-scripts" style="color:#4ade80;">54</b></div>
+      <div>Strategies: <b id="hydrate-strategies" style="color:#4ade80;">6/10</b></div>
+      <div>Skills: <b id="hydrate-skills" style="color:#4ade80;">3</b></div>
+      <div>Lessons: <b id="hydrate-lessons" style="color:#4ade80;">61</b></div>
+      <div>Cycles: <b id="hydrate-cycles" style="color:#4ade80;">3</b></div>
+      <div>Open Trades: <b id="hydrate-open-trades" style="color:#4ade80;">2</b></div>
     </div>
   </div>
   <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px; grid-column:1/-1;">
@@ -2071,83 +2071,69 @@ loadLiveData();
 setInterval(loadLiveData, 60000);
 </script>
 
-<!-- WOLF_HYDRATE_BEGIN — written by construct flock 2026-06-01. Hydrates stale top widgets from /Atlas/wolf/state.json mirrored via dashboard-state.json -->
+
+<!-- WOLF_HYDRATE_V2_BEGIN — by-ID hydration · 2026-06-01 -->
 <script>
 (function() {
   function fmtAge(iso) {
-    if (!iso) return "never";
+    if (!iso) return 'never';
     var ms = Date.now() - new Date(iso).getTime();
-    if (ms < 0) return "just now";
-    var m = Math.floor(ms/60000); if (m<1) return "just now";
-    if (m<60) return m+"m ago";
-    var h = Math.floor(m/60); if (h<24) return h+"h ago";
-    return Math.floor(h/24)+"d ago";
+    if (ms < 0) return 'just now';
+    var m = Math.floor(ms/60000); if (m<1) return 'just now';
+    if (m<60) return m+'m ago';
+    var h = Math.floor(m/60); if (h<24) return h+'h ago';
+    return Math.floor(h/24)+'d ago';
   }
-  async function fetchJSON(url) {
-    try { var r = await fetch(url + "?nocache=" + Date.now(), {cache:"no-store"});
-      return r.ok ? r.json() : null; } catch(e) { return null; }
-  }
-  function setNumberInElement(el, value) {
-    if (!el || value === null || value === undefined) return;
-    // Replace the first number-like text content
-    var walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null);
-    var n;
-    while ((n = walker.nextNode())) {
-      if (/^\s*\d/.test(n.nodeValue) || /\d/.test(n.nodeValue)) {
-        var match = n.nodeValue.match(/(\d+(?:[\.,]\d+)?)/);
-        if (match) {
-          n.nodeValue = n.nodeValue.replace(match[0], String(value));
-          return true;
-        }
-      }
+  function setTxt(id, val) {
+    var el = document.getElementById(id);
+    if (el && val !== null && val !== undefined) {
+      el.textContent = String(val);
+      el.style.outline = '1px solid #00d4ff';
+      el.style.outlineOffset = '2px';
+      setTimeout(function(){ el.style.outline = 'none'; }, 1500);
     }
   }
+  async function fetchJSON(url) {
+    try { var r = await fetch(url + '?nocache=' + Date.now(), {cache:'no-store'});
+      return r.ok ? await r.json() : null; } catch(e) { console.error('WOLF_HYDRATE fetch failed:', e); return null; }
+  }
   (async () => {
-    var ds = await fetchJSON("https://extracoffee13.github.io/hartley-command/dashboard-state.json");
-    if (!ds || !ds.wolf) { console.warn("WOLF_HYDRATE: no state.json"); return; }
+    var ds = await fetchJSON('https://extracoffee13.github.io/hartley-command/dashboard-state.json');
+    if (!ds || !ds.wolf) { console.warn('WOLF_HYDRATE_V2: no state.json'); return; }
     var w = ds.wolf;
+    var m = w.mission || {};
+    var c = w.capability || {};
+    var tr = w.tracking || {};
 
-    // DAY ON MISSION widget — find by label text
-    var labels = Array.from(document.querySelectorAll("*"));
-    labels.forEach(function(el) {
-      var t = (el.textContent || "").trim();
-      // Top "DAY ON MISSION" widget
-      if (el.children.length === 0 && /^\d+$/.test(t)) {
-        var parent = el.parentElement;
-        var prev = parent && parent.previousElementSibling;
-        var label = parent ? (parent.querySelector(".label") || parent.firstElementChild) : null;
-        var ctx = (parent && parent.textContent || "").toUpperCase();
-        if (ctx.includes("DAY ON MISSION") && w.mission && w.mission.calendar_day_on_mission != null) {
-          el.textContent = w.mission.calendar_day_on_mission;
-        } else if (ctx.includes("CAPABILITY SCORE") && w.capability && w.capability.score != null) {
-          el.textContent = w.capability.score;
-        } else if (ctx.includes("SCRIPTS") && w.tracking && w.tracking.scripts != null && parseInt(t) !== w.tracking.scripts) {
-          el.textContent = w.tracking.scripts;
-        }
-      }
-    });
+    setTxt('hydrate-day', m.calendar_day_on_mission);
+    setTxt('hydrate-cap-score', c.score);
+    setTxt('hydrate-scripts', tr.scripts);
+    setTxt('hydrate-strategies', (tr.strategies_active || '') + '/' + (tr.strategies_max || ''));
+    setTxt('hydrate-skills', tr.skills);
+    setTxt('hydrate-lessons', tr.lessons_indexed);
+    setTxt('hydrate-cycles', tr.improvement_cycles_total);
+    setTxt('hydrate-open-trades', tr.open_trades);
+    var s = document.getElementById('hydrate-streak');
+    if (s && m.calendar_day_on_mission) s.textContent = 'Streak: ' + m.calendar_day_on_mission + ' days';
 
-    // Streak text "Streak: 28 days" — replace number
-    document.body.innerHTML = document.body.innerHTML.replace(/Streak:\s*\d+\s*days/g, "Streak: " + (w.mission && w.mission.calendar_day_on_mission ? w.mission.calendar_day_on_mission : "?") + " days");
-
-    // FRESHNESS PANEL — always visible top-right
-    var panel = document.createElement("div");
-    panel.id = "wolf-data-freshness";
-    panel.style.cssText = "position:fixed;top:8px;right:8px;z-index:9999;background:rgba(0,0,0,0.92);border:1px solid #39ff14;padding:8px 12px;font-family:monospace;font-size:10px;color:#39ff14;line-height:1.5;max-width:320px;cursor:pointer";
-    var html = "<div style="color:#00d4ff;font-weight:bold;margin-bottom:4px">DATA FRESHNESS</div>";
-    html += "state.json: <span style="color:#fff">" + fmtAge(ds._generated_at) + "</span><br>";
-    html += "wolf day: <span style="color:#fff">" + (w.mission && w.mission.calendar_day_on_mission) + "</span> · ";
-    html += "score: <span style="color:#fff">" + (w.capability && w.capability.score) + "</span><br>";
-    html += "scripts: <span style="color:#fff">" + (w.tracking && w.tracking.scripts) + "</span> · ";
-    html += "strategies: <span style="color:#fff">" + (w.tracking && w.tracking.strategies_active) + "/" + (w.tracking && w.tracking.strategies_max) + "</span><br>";
-    html += "next reassess: <span style="color:#fff">" + (w.mission && w.mission.next_reassess) + "</span><br>";
-    html += "<div style="margin-top:4px;opacity:0.55;font-size:9px;border-top:1px solid rgba(57,255,20,0.2);padding-top:4px">hydrated from state.json — top widgets are LIVE</div>";
+    // DATA FRESHNESS panel
+    var panel = document.createElement('div');
+    panel.id = 'wolf-data-freshness';
+    panel.style.cssText = 'position:fixed;top:8px;right:8px;z-index:9999;background:rgba(0,0,0,0.92);border:1px solid #39ff14;padding:8px 12px;font-family:monospace;font-size:10px;color:#39ff14;line-height:1.5;max-width:320px;cursor:pointer';
+    var html = '<div style="color:#00d4ff;font-weight:bold;margin-bottom:4px">DATA FRESHNESS · v2</div>';
+    html += 'state.json: <span style="color:#fff">' + fmtAge(ds._generated_at) + '</span><br>';
+    html += 'day: <span style="color:#fff">' + m.calendar_day_on_mission + '</span> · ';
+    html += 'score: <span style="color:#fff">' + c.score + '</span><br>';
+    html += 'scripts: <span style="color:#fff">' + tr.scripts + '</span> · ';
+    html += 'strategies: <span style="color:#fff">' + tr.strategies_active + '/' + tr.strategies_max + '</span><br>';
+    html += 'next reassess: <span style="color:#fff">' + m.next_reassess + '</span>';
+    html += '<div style="margin-top:4px;opacity:0.55;font-size:9px;border-top:1px solid rgba(57,255,20,0.2);padding-top:4px">writer: dashboard-data-writer</div>';
     panel.innerHTML = html;
-    panel.addEventListener("click", function() { panel.style.opacity = panel.style.opacity === "0.25" ? "1" : "0.25"; });
+    panel.addEventListener('click', function(){ panel.style.opacity = panel.style.opacity === '0.25' ? '1' : '0.25'; });
     document.body.appendChild(panel);
   })();
 })();
 </script>
-<!-- WOLF_HYDRATE_END -->
+<!-- WOLF_HYDRATE_V2_END -->
 </body>
 </html>
