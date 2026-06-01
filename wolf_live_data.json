@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-06-01T16:40:26.388380",
+  "last_updated": "2026-06-01T16:45:28.522943",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 112760.81,
+    "portfolio_value": 112504.17,
     "cash": -100545.31,
-    "buying_power": 12215.5,
-    "equity": 112760.81,
+    "buying_power": 11958.86,
+    "equity": 112504.17,
     "last_equity": 110430.51,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 2330.3,
-    "pct": 0.0211,
+    "amount": 2073.66,
+    "pct": 0.0188,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 459.68,
-      "market_value": 28959.84,
-      "unrealized_pl": 2394.420021,
-      "unrealized_plpc": 0.09013,
+      "current_price": 459.0,
+      "market_value": 28917.0,
+      "unrealized_pl": 2351.580021,
+      "unrealized_plpc": 0.08852,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 224.3215,
-      "market_value": 27815.866,
-      "unrealized_pl": 2099.506,
-      "unrealized_plpc": 0.08164,
+      "current_price": 224.32,
+      "market_value": 27815.68,
+      "unrealized_pl": 2099.32,
+      "unrealized_plpc": 0.08163,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 159.63,
-      "market_value": 58105.32,
-      "unrealized_pl": 8322.09014,
-      "unrealized_plpc": 0.16717,
+      "current_price": 159.12,
+      "market_value": 57919.68,
+      "unrealized_pl": 8136.45014,
+      "unrealized_plpc": 0.16344,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 415.99,
-      "market_value": 27455.34,
-      "unrealized_pl": -1746.39003,
-      "unrealized_plpc": -0.0598,
+      "current_price": 415.5662,
+      "market_value": 27427.3692,
+      "unrealized_pl": -1774.36083,
+      "unrealized_plpc": -0.06076,
       "cost_basis": 29201.73003
     },
     {
@@ -404,72 +404,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-06-01 16:45:01",
-    "last_task": "Gate status",
-    "count": 4,
-    "signals": [
-      {
-        "ticker": "LINK/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 8,
-        "entry": 14.2265,
-        "stop": 13.797979873142857,
-        "target": 15.083540253714286,
-        "symbol": "LINK/USD",
-        "price": 14.2265,
-        "rsi": 77.9,
-        "rvol": 2.64,
-        "atr": 0.29,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "DOT/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 8,
-        "entry": 2.28135,
-        "stop": 2.167007508696429,
-        "target": 2.510034982607143,
-        "symbol": "DOT/USD",
-        "price": 2.28135,
-        "rsi": 74.1,
-        "rvol": 5.06,
-        "atr": 0.08,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "UNI/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 6,
-        "entry": 5.7264,
-        "stop": 5.542821964285714,
-        "target": 6.093556071428571,
-        "symbol": "UNI/USD",
-        "price": 5.7264,
-        "rsi": 69.8,
-        "rvol": 1.97,
-        "atr": 0.12,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "SOL/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 4,
-        "entry": 143.7215,
-        "stop": 138.94806701599998,
-        "target": 153.268365968,
-        "symbol": "SOL/USD",
-        "price": 143.7215,
-        "rsi": 53.8,
-        "rvol": 1.29,
-        "atr": 3.18,
-        "risk_reward": 2.0
-      }
-    ]
   }
 }
