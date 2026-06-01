@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "What is the first-order economic determinant of monument vs. wall-mounted signage value in commercial real estate — and does the standard industry answer explain the mechanism correctly?"
+outcome: delta category was novel
+lesson: Retrieving the corpus answer tells you what is true; deriving from first principles tells you why it is true — the corpus often holds the conclusion without the load-bearing mechanism, and that gap is where durable insight lives
+tags: first-principles,praxis,reasoning
+confidence: 0.72
+~~~
