@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: construct-standup
+decision: ran end-of-day standup synthesis across all active agents
+outcome: hermes-flock shipped live dashboard hydration for WOLF_Command_Center while WOLF maintained 49-commit telemetry cadence in a MANUAL HALT — the whole day was observability-and-readiness work, zero execution
+lesson: when telemetry is perfect and the actor is paused, all downstream instrumentation work risks becoming elaborate preparation theater — the rebalance at tomorrow's market open is the only thing that converts watching into doing
+tags: standup,construct,daily,synthesis
+confidence: 0.7
+~~~
