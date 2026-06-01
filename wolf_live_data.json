@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-06-01T09:26:24.210038",
+  "last_updated": "2026-06-01T09:31:27.175090",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 112530.35,
+    "portfolio_value": 112213.98,
     "cash": -100545.31,
-    "buying_power": 11985.04,
-    "equity": 112530.35,
+    "buying_power": 11668.67,
+    "equity": 112213.98,
     "last_equity": 110430.51,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 2099.84,
-    "pct": 0.019,
+    "amount": 1783.47,
+    "pct": 0.0162,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 297.0,
-      "market_value": 22572.0,
-      "unrealized_pl": -739.48,
-      "unrealized_plpc": -0.03172,
+      "current_price": 296.125,
+      "market_value": 22505.5,
+      "unrealized_pl": -805.98,
+      "unrealized_plpc": -0.03457,
       "cost_basis": 23311.48
     },
     {
@@ -38,10 +38,10 @@
       "qty": 333.0,
       "side": "long",
       "avg_entry": 75.842613,
-      "current_price": 73.67,
-      "market_value": 24532.11,
-      "unrealized_pl": -723.480129,
-      "unrealized_plpc": -0.02865,
+      "current_price": 74.245,
+      "market_value": 24723.585,
+      "unrealized_pl": -532.005129,
+      "unrealized_plpc": -0.02106,
       "cost_basis": 25255.590129
     },
     {
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 460.9775,
-      "market_value": 29041.5825,
-      "unrealized_pl": 2476.162521,
-      "unrealized_plpc": 0.09321,
+      "current_price": 464.31,
+      "market_value": 29251.53,
+      "unrealized_pl": 2686.110021,
+      "unrealized_plpc": 0.10111,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 215.5601,
-      "market_value": 26729.4524,
-      "unrealized_pl": 1013.0924,
-      "unrealized_plpc": 0.03939,
+      "current_price": 217.5682,
+      "market_value": 26978.4568,
+      "unrealized_pl": 1262.0968,
+      "unrealized_plpc": 0.04908,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 160.0005,
-      "market_value": 58240.182,
-      "unrealized_pl": 8456.95214,
-      "unrealized_plpc": 0.16988,
+      "current_price": 158.0,
+      "market_value": 57512.0,
+      "unrealized_pl": 7728.77014,
+      "unrealized_plpc": 0.15525,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 428.5543,
-      "market_value": 28284.5838,
-      "unrealized_pl": -917.14623,
-      "unrealized_plpc": -0.03141,
+      "current_price": 424.81,
+      "market_value": 28037.46,
+      "unrealized_pl": -1164.27003,
+      "unrealized_plpc": -0.03987,
       "cost_basis": 29201.73003
     },
     {
@@ -93,10 +93,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 57.05,
-      "market_value": 23675.75,
-      "unrealized_pl": 266.149875,
-      "unrealized_plpc": 0.01137,
+      "current_price": 57.09,
+      "market_value": 23692.35,
+      "unrealized_pl": 282.749875,
+      "unrealized_plpc": 0.01208,
       "cost_basis": 23409.600125
     }
   ],
@@ -404,11 +404,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-06-01 09:31:01",
-    "last_task": "Market open scan",
-    "count": 0,
-    "signals": []
   }
 }
