@@ -404,5 +404,72 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-06-02 16:45:01",
+    "last_task": "Gate status",
+    "count": 4,
+    "signals": [
+      {
+        "ticker": "DOT/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 6,
+        "entry": 2.16785,
+        "stop": 2.0501860301964285,
+        "target": 2.403177939607143,
+        "symbol": "DOT/USD",
+        "price": 2.16785,
+        "rsi": 62.1,
+        "rvol": 2.17,
+        "atr": 0.08,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "DOGE/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 5,
+        "entry": 0.1436,
+        "stop": 0.13817827132142857,
+        "target": 0.15444345735714285,
+        "symbol": "DOGE/USD",
+        "price": 0.1436,
+        "rsi": 62.1,
+        "rvol": 1.58,
+        "atr": 0.0,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "LINK/USD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 5,
+        "entry": 13.79,
+        "stop": 13.293362194571428,
+        "target": 14.783275610857142,
+        "symbol": "LINK/USD",
+        "price": 13.79,
+        "rsi": 55.1,
+        "rvol": 1.86,
+        "atr": 0.33,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "LTC/USD",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 5,
+        "entry": 72.355,
+        "stop": 75.92645928571429,
+        "target": 65.21208142857144,
+        "symbol": "LTC/USD",
+        "price": 72.355,
+        "rsi": 37.5,
+        "rvol": 1.49,
+        "atr": 2.38,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
