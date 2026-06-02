@@ -404,5 +404,102 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-06-02 11:30:41",
+    "last_task": "Midday rescan",
+    "count": 6,
+    "signals": [
+      {
+        "ticker": "TSLA",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 8,
+        "entry": 434.905,
+        "stop": 432.6973214285714,
+        "target": 439.3203571428571,
+        "symbol": "TSLA",
+        "price": 434.905,
+        "rsi": 59.3,
+        "rvol": 5.7,
+        "atr": 1.47,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "UNH",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 6,
+        "entry": 345.77,
+        "stop": 344.8405357142857,
+        "target": 347.62892857142856,
+        "symbol": "UNH",
+        "price": 345.77,
+        "rsi": 63.3,
+        "rvol": 2.09,
+        "atr": 0.62,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "IWM",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 6,
+        "entry": 260.58,
+        "stop": 259.48017857142855,
+        "target": 262.77964285714285,
+        "symbol": "IWM",
+        "price": 260.58,
+        "rsi": 69.0,
+        "rvol": 1.16,
+        "atr": 0.73,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "SLV",
+        "direction": "SHORT",
+        "strategy": "Overbought Fade",
+        "confidence": 6,
+        "entry": 70.95,
+        "stop": 71.60142857142857,
+        "target": 69.30375000000001,
+        "symbol": "SLV",
+        "price": 70.95,
+        "rsi": 85.3,
+        "rvol": 0.14,
+        "atr": 0.33,
+        "risk_reward": 2.5
+      },
+      {
+        "ticker": "ABBV",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 5,
+        "entry": 219.905,
+        "stop": 220.94,
+        "target": 217.835,
+        "symbol": "ABBV",
+        "price": 219.905,
+        "rsi": 37.1,
+        "rvol": 1.45,
+        "atr": 0.69,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "PFE",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 4,
+        "entry": 25.345,
+        "stop": 25.218035714285712,
+        "target": 25.59892857142857,
+        "symbol": "PFE",
+        "price": 25.345,
+        "rsi": 55.0,
+        "rvol": 1.16,
+        "atr": 0.08,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
