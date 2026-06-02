@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-06-02T17:58:07.782656",
+  "last_updated": "2026-06-02T18:03:09.851191",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 109285.92,
+    "portfolio_value": 109328.25,
     "cash": -100545.31,
-    "buying_power": 8740.61,
-    "equity": 109285.92,
+    "buying_power": 8782.94,
+    "equity": 109328.25,
     "last_equity": 113167.69,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -3881.77,
-    "pct": -0.0343,
+    "amount": -3839.44,
+    "pct": -0.0339,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -3.4% (limit -3%). No new entries."
   },
@@ -38,10 +38,10 @@
       "qty": 333.0,
       "side": "long",
       "avg_entry": 75.842613,
-      "current_price": 73.8391,
-      "market_value": 24588.4203,
-      "unrealized_pl": -667.169829,
-      "unrealized_plpc": -0.02642,
+      "current_price": 73.94,
+      "market_value": 24622.02,
+      "unrealized_pl": -633.570129,
+      "unrealized_plpc": -0.02509,
       "cost_basis": 25255.590129
     },
     {
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 440.65,
-      "market_value": 27760.95,
-      "unrealized_pl": 1195.530021,
-      "unrealized_plpc": 0.045,
+      "current_price": 440.6,
+      "market_value": 27757.8,
+      "unrealized_pl": 1192.380021,
+      "unrealized_plpc": 0.04488,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 222.51,
-      "market_value": 27591.24,
-      "unrealized_pl": 1874.88,
-      "unrealized_plpc": 0.07291,
+      "current_price": 222.4,
+      "market_value": 27577.6,
+      "unrealized_pl": 1861.24,
+      "unrealized_plpc": 0.07238,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 151.3885,
-      "market_value": 55105.414,
-      "unrealized_pl": 5322.18414,
-      "unrealized_plpc": 0.10691,
+      "current_price": 151.48,
+      "market_value": 55138.72,
+      "unrealized_pl": 5355.49014,
+      "unrealized_plpc": 0.10758,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 422.2304,
-      "market_value": 27867.2064,
-      "unrealized_pl": -1334.52363,
-      "unrealized_plpc": -0.0457,
+      "current_price": 422.1124,
+      "market_value": 27859.4184,
+      "unrealized_pl": -1342.31163,
+      "unrealized_plpc": -0.04597,
       "cost_basis": 29201.73003
     },
     {
@@ -404,72 +404,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-06-02 18:00:13",
-    "last_task": "Crypto sweep",
-    "count": 4,
-    "signals": [
-      {
-        "ticker": "DOT/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 6,
-        "entry": 2.16785,
-        "stop": 2.0501860301964285,
-        "target": 2.403177939607143,
-        "symbol": "DOT/USD",
-        "price": 2.16785,
-        "rsi": 62.1,
-        "rvol": 2.17,
-        "atr": 0.08,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "DOGE/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 5,
-        "entry": 0.1436,
-        "stop": 0.13817827132142857,
-        "target": 0.15444345735714285,
-        "symbol": "DOGE/USD",
-        "price": 0.1436,
-        "rsi": 62.1,
-        "rvol": 1.58,
-        "atr": 0.0,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "LINK/USD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 5,
-        "entry": 13.79,
-        "stop": 13.293362194571428,
-        "target": 14.783275610857142,
-        "symbol": "LINK/USD",
-        "price": 13.79,
-        "rsi": 55.1,
-        "rvol": 1.86,
-        "atr": 0.33,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "LTC/USD",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 5,
-        "entry": 72.355,
-        "stop": 75.92645928571429,
-        "target": 65.21208142857144,
-        "symbol": "LTC/USD",
-        "price": 72.355,
-        "rsi": 37.5,
-        "rvol": 1.49,
-        "atr": 2.38,
-        "risk_reward": 2.0
-      }
-    ]
   }
 }
