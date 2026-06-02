@@ -1,25 +1,25 @@
 {
-  "last_updated": "2026-06-02T09:28:48.465375",
+  "last_updated": "2026-06-02T09:33:51.056157",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 110986.36,
+    "portfolio_value": 111044.81,
     "cash": -100545.31,
-    "buying_power": 10441.05,
-    "equity": 110986.36,
+    "buying_power": 10499.5,
+    "equity": 111044.81,
     "last_equity": 113167.69,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -2181.33,
-    "pct": -0.0193,
+    "amount": -2122.88,
+    "pct": -0.0188,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
   "weekly_pnl": {
-    "amount": 8554.16,
-    "pct": 0.0815
+    "amount": 9360.34,
+    "pct": 0.0892
   },
   "positions": [
     {
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 295.56,
-      "market_value": 22462.56,
-      "unrealized_pl": -848.92,
-      "unrealized_plpc": -0.03642,
+      "current_price": 297.77,
+      "market_value": 22630.52,
+      "unrealized_pl": -680.96,
+      "unrealized_plpc": -0.02921,
       "cost_basis": 23311.48
     },
     {
@@ -38,10 +38,10 @@
       "qty": 333.0,
       "side": "long",
       "avg_entry": 75.842613,
-      "current_price": 73.97,
-      "market_value": 24632.01,
-      "unrealized_pl": -623.580129,
-      "unrealized_plpc": -0.02469,
+      "current_price": 73.4747,
+      "market_value": 24467.0751,
+      "unrealized_pl": -788.515029,
+      "unrealized_plpc": -0.03122,
       "cost_basis": 25255.590129
     },
     {
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 446.77,
-      "market_value": 28146.51,
-      "unrealized_pl": 1581.090021,
-      "unrealized_plpc": 0.05952,
+      "current_price": 450.875,
+      "market_value": 28405.125,
+      "unrealized_pl": 1839.705021,
+      "unrealized_plpc": 0.06925,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 227.42,
-      "market_value": 28200.08,
-      "unrealized_pl": 2483.72,
-      "unrealized_plpc": 0.09658,
+      "current_price": 225.605,
+      "market_value": 27975.02,
+      "unrealized_pl": 2258.66,
+      "unrealized_plpc": 0.08783,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 156.04,
-      "market_value": 56798.56,
-      "unrealized_pl": 7015.33014,
-      "unrealized_plpc": 0.14092,
+      "current_price": 156.2,
+      "market_value": 56856.8,
+      "unrealized_pl": 7073.57014,
+      "unrealized_plpc": 0.14209,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 418.05,
-      "market_value": 27591.3,
-      "unrealized_pl": -1610.43003,
-      "unrealized_plpc": -0.05515,
+      "current_price": 414.385,
+      "market_value": 27349.41,
+      "unrealized_pl": -1852.32003,
+      "unrealized_plpc": -0.06343,
       "cost_basis": 29201.73003
     },
     {
@@ -93,10 +93,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 57.11,
-      "market_value": 23700.65,
-      "unrealized_pl": 291.049875,
-      "unrealized_plpc": 0.01243,
+      "current_price": 57.61,
+      "market_value": 23908.15,
+      "unrealized_pl": 498.549875,
+      "unrealized_plpc": 0.0213,
       "cost_basis": 23409.600125
     }
   ],
@@ -404,11 +404,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-06-02 09:30:48",
-    "last_task": "Market open scan",
-    "count": 0,
-    "signals": []
   }
 }
