@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: praxis-daily-review
+decision: Capture velocity is zero for 24h; the only packet on record is 48h old and unprocessed — the pipeline is stalled.
+outcome: AP is the only contributing agent (1 bootstrap packet); all other 18 agents (Vector, Forge, Signal, Cipher, Spectra, Oracle, Nexus, Ledger, Atlas, Sentinel, Venture, Equity, Alpha, WOLF, Keystone, Cornerstone, Charlie, Architect) are silent.
+lesson: A daily review commit acts as a heartbeat — without it, the watcher has no signal and drift accumulates silently.
+tags: praxis,meta,review,daily
+confidence: 0.7
+~~~
