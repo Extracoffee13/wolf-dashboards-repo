@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-06-03T19:40:24.091369",
+  "last_updated": "2026-06-03T19:45:28.890069",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 104958.51,
+    "portfolio_value": 104876.78,
     "cash": -100545.31,
-    "buying_power": 4413.2,
-    "equity": 104958.51,
+    "buying_power": 4331.47,
+    "equity": 104876.78,
     "last_equity": 110354.87,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -5396.36,
-    "pct": -0.0489,
+    "amount": -5478.09,
+    "pct": -0.0496,
     "circuit_breaker_status": "yellow",
-    "circuit_breaker_message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -4.9% (limit -3%). No new entries."
+    "circuit_breaker_message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -5.0% (limit -3%). No new entries."
   },
   "weekly_pnl": {
     "amount": 9544.7,
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 427.35,
-      "market_value": 26923.05,
-      "unrealized_pl": 357.630021,
-      "unrealized_plpc": 0.01346,
+      "current_price": 427.25,
+      "market_value": 26916.75,
+      "unrealized_pl": 351.330021,
+      "unrealized_plpc": 0.01323,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 213.6,
-      "market_value": 26486.4,
-      "unrealized_pl": 770.04,
-      "unrealized_plpc": 0.02994,
+      "current_price": 213.6301,
+      "market_value": 26490.1324,
+      "unrealized_pl": 773.7724,
+      "unrealized_plpc": 0.03009,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 140.41,
-      "market_value": 51109.24,
-      "unrealized_pl": 1326.01014,
-      "unrealized_plpc": 0.02664,
+      "current_price": 140.15,
+      "market_value": 51014.6,
+      "unrealized_pl": 1231.37014,
+      "unrealized_plpc": 0.02473,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 420.12,
-      "market_value": 27727.92,
-      "unrealized_pl": -1473.81003,
-      "unrealized_plpc": -0.05047,
+      "current_price": 420.04,
+      "market_value": 27722.64,
+      "unrealized_pl": -1479.09003,
+      "unrealized_plpc": -0.05065,
       "cost_basis": 29201.73003
     },
     {
@@ -93,10 +93,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 58.82,
-      "market_value": 24410.3,
-      "unrealized_pl": 1000.699875,
-      "unrealized_plpc": 0.04275,
+      "current_price": 58.87,
+      "market_value": 24431.05,
+      "unrealized_pl": 1021.449875,
+      "unrealized_plpc": 0.04363,
       "cost_basis": 23409.600125
     }
   ],
@@ -148,7 +148,7 @@
     "weekly_triggered": false,
     "halt_new_entries": true,
     "halt_all_activity": false,
-    "message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -4.9% (limit -3%). No new entries."
+    "message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -5.0% (limit -3%). No new entries."
   },
   "backtest": {
     "last_run_date": "2026-04-07",
