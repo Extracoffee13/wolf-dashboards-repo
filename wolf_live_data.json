@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-06-03T16:48:15.428623",
+  "last_updated": "2026-06-03T16:53:17.336991",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 105532.09,
+    "portfolio_value": 105342.38,
     "cash": -100545.31,
-    "buying_power": 4986.78,
-    "equity": 105532.09,
+    "buying_power": 4797.07,
+    "equity": 105342.38,
     "last_equity": 110354.87,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -4822.78,
-    "pct": -0.0437,
+    "amount": -5012.49,
+    "pct": -0.0454,
     "circuit_breaker_status": "yellow",
-    "circuit_breaker_message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -4.4% (limit -3%). No new entries."
+    "circuit_breaker_message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -4.5% (limit -3%). No new entries."
   },
   "weekly_pnl": {
     "amount": 9544.7,
@@ -38,10 +38,10 @@
       "qty": 333.0,
       "side": "long",
       "avg_entry": 75.842613,
-      "current_price": 78.35,
-      "market_value": 26090.55,
-      "unrealized_pl": 834.959871,
-      "unrealized_plpc": 0.03306,
+      "current_price": 78.05,
+      "market_value": 25990.65,
+      "unrealized_pl": 735.059871,
+      "unrealized_plpc": 0.0291,
       "cost_basis": 25255.590129
     },
     {
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 425.6022,
-      "market_value": 26812.9386,
-      "unrealized_pl": 247.518621,
-      "unrealized_plpc": 0.00932,
+      "current_price": 425.8,
+      "market_value": 26825.4,
+      "unrealized_pl": 259.980021,
+      "unrealized_plpc": 0.00979,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 215.06,
-      "market_value": 26667.44,
-      "unrealized_pl": 951.08,
-      "unrealized_plpc": 0.03698,
+      "current_price": 215.08,
+      "market_value": 26669.92,
+      "unrealized_pl": 953.56,
+      "unrealized_plpc": 0.03708,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 141.11,
-      "market_value": 51364.04,
-      "unrealized_pl": 1580.81014,
-      "unrealized_plpc": 0.03175,
+      "current_price": 140.98,
+      "market_value": 51316.72,
+      "unrealized_pl": 1533.49014,
+      "unrealized_plpc": 0.0308,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 422.8,
-      "market_value": 27904.8,
-      "unrealized_pl": -1296.93003,
-      "unrealized_plpc": -0.04441,
+      "current_price": 422.37,
+      "market_value": 27876.42,
+      "unrealized_pl": -1325.31003,
+      "unrealized_plpc": -0.04538,
       "cost_basis": 29201.73003
     },
     {
@@ -93,10 +93,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 58.86,
-      "market_value": 24426.9,
-      "unrealized_pl": 1017.299875,
-      "unrealized_plpc": 0.04346,
+      "current_price": 58.79,
+      "market_value": 24397.85,
+      "unrealized_pl": 988.249875,
+      "unrealized_plpc": 0.04222,
       "cost_basis": 23409.600125
     }
   ],
@@ -274,7 +274,7 @@
     "weekly_triggered": false,
     "halt_new_entries": true,
     "halt_all_activity": false,
-    "message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -4.4% (limit -3%). No new entries.",
+    "message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -4.5% (limit -3%). No new entries.",
     "halt_reason": "WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13).",
     "halt_until": "post-rebalance"
   },
@@ -404,145 +404,5 @@
         }
       ]
     }
-  },
-  "daily_summary": {
-    "date": "2026-06-03",
-    "account": {
-      "portfolio_value": 105532.09,
-      "cash": -100545.31,
-      "buying_power": 4986.78,
-      "positions": 7,
-      "todays_trades": 0,
-      "daily_pnl_amount": -4822.78,
-      "daily_pnl_pct": -0.0437,
-      "circuit_breaker": "yellow"
-    },
-    "log": {
-      "task_fires": {
-        "wolf-crypto-247": 3,
-        "wolf-market-open-exec": 1,
-        "wolf-midday-rescan": 1,
-        "wolf-gate-status": 1,
-        "wolf-daily-summary": 1
-      },
-      "errors": 1
-    },
-    "rejected": {
-      "count": 10,
-      "reasons": {
-        "R:R 1.2 < 1.5": 1,
-        "halt_new_entries=true in wolf_live_data.json": 9
-      },
-      "recent": [
-        {
-          "ticker": "AAPL",
-          "strategy": "Overbought Fade",
-          "reason": "R:R 1.2 < 1.5",
-          "rejected_at": "2026-06-03T09:31:18.153206",
-          "risk_reward": 1.2,
-          "confidence": 5
-        },
-        {
-          "ticker": "SLV",
-          "strategy": "Momentum Breakout",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-06-03T13:31:18Z",
-          "risk_reward": 2.0,
-          "confidence": 8
-        },
-        {
-          "ticker": "XOM",
-          "strategy": "Momentum Breakout",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-06-03T13:31:18Z",
-          "risk_reward": 2.0,
-          "confidence": 7
-        },
-        {
-          "ticker": "JNJ",
-          "strategy": "Momentum Breakout",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-06-03T13:31:18Z",
-          "risk_reward": 2.0,
-          "confidence": 7
-        },
-        {
-          "ticker": "SNOW",
-          "strategy": "Momentum Breakout",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-06-03T13:31:18Z",
-          "risk_reward": 2.0,
-          "confidence": 6
-        },
-        {
-          "ticker": "SLB",
-          "strategy": "Momentum Breakout",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-06-03T13:31:18Z",
-          "risk_reward": 2.0,
-          "confidence": 6
-        },
-        {
-          "ticker": "GLD",
-          "strategy": "Overbought Fade",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-06-03T13:31:18Z",
-          "risk_reward": 1.8,
-          "confidence": 6
-        },
-        {
-          "ticker": "GOOGL",
-          "strategy": "Momentum Breakout",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-06-03T13:31:18Z",
-          "risk_reward": 2.0,
-          "confidence": 5
-        },
-        {
-          "ticker": "NVDA",
-          "strategy": "Momentum Breakout",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-06-03T13:31:18Z",
-          "risk_reward": 2.0,
-          "confidence": 5
-        },
-        {
-          "ticker": "AMD",
-          "strategy": "Momentum Breakout",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-06-03T13:31:18Z",
-          "risk_reward": 2.0,
-          "confidence": 5
-        }
-      ]
-    },
-    "committee": {
-      "runs": 0,
-      "tickers_voted": 0,
-      "verdicts": {}
-    }
-  },
-  "daily_summary_updated_at": "2026-06-03T16:50:01.677348",
-  "today_signals": {
-    "as_of": "2026-06-03 16:50:01",
-    "last_task": "EOD recap",
-    "count": 1,
-    "signals": [
-      {
-        "ticker": "LTC/USD",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 4,
-        "entry": 74.21345,
-        "stop": 77.66465214285714,
-        "target": 67.31104571428571,
-        "symbol": "LTC/USD",
-        "price": 74.21345,
-        "rsi": 39.3,
-        "rvol": 1.33,
-        "atr": 2.3,
-        "risk_reward": 2.0
-      }
-    ]
   }
 }
