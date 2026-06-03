@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-06-03T17:03:21.353315",
+  "last_updated": "2026-06-03T17:08:23.449328",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 105425.32,
+    "portfolio_value": 105446.75,
     "cash": -100545.31,
-    "buying_power": 4880.01,
-    "equity": 105425.32,
+    "buying_power": 4901.44,
+    "equity": 105446.75,
     "last_equity": 110354.87,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -4929.55,
-    "pct": -0.0447,
+    "amount": -4908.12,
+    "pct": -0.0445,
     "circuit_breaker_status": "yellow",
-    "circuit_breaker_message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -4.5% (limit -3%). No new entries."
+    "circuit_breaker_message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -4.4% (limit -3%). No new entries."
   },
   "weekly_pnl": {
     "amount": 9544.7,
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 300.5,
-      "market_value": 22838.0,
-      "unrealized_pl": -473.48,
-      "unrealized_plpc": -0.02031,
+      "current_price": 300.01,
+      "market_value": 22800.76,
+      "unrealized_pl": -510.72,
+      "unrealized_plpc": -0.02191,
       "cost_basis": 23311.48
     },
     {
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 425.824,
-      "market_value": 26826.912,
-      "unrealized_pl": 261.492021,
-      "unrealized_plpc": 0.00984,
+      "current_price": 426.73,
+      "market_value": 26883.99,
+      "unrealized_pl": 318.570021,
+      "unrealized_plpc": 0.01199,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 215.0099,
-      "market_value": 26661.2276,
-      "unrealized_pl": 944.8676,
-      "unrealized_plpc": 0.03674,
+      "current_price": 215.0,
+      "market_value": 26660.0,
+      "unrealized_pl": 943.64,
+      "unrealized_plpc": 0.03669,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 140.9899,
-      "market_value": 51320.3236,
-      "unrealized_pl": 1537.09374,
-      "unrealized_plpc": 0.03088,
+      "current_price": 140.9999,
+      "market_value": 51323.9636,
+      "unrealized_pl": 1540.73374,
+      "unrealized_plpc": 0.03095,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 422.51,
-      "market_value": 27885.66,
-      "unrealized_pl": -1316.07003,
-      "unrealized_plpc": -0.04507,
+      "current_price": 422.5,
+      "market_value": 27885.0,
+      "unrealized_pl": -1316.73003,
+      "unrealized_plpc": -0.04509,
       "cost_basis": 29201.73003
     },
     {
@@ -93,10 +93,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 58.7099,
-      "market_value": 24364.6085,
-      "unrealized_pl": 955.008375,
-      "unrealized_plpc": 0.0408,
+      "current_price": 58.7095,
+      "market_value": 24364.4425,
+      "unrealized_pl": 954.842375,
+      "unrealized_plpc": 0.04079,
       "cost_basis": 23409.600125
     }
   ],
@@ -274,7 +274,7 @@
     "weekly_triggered": false,
     "halt_new_entries": true,
     "halt_all_activity": false,
-    "message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -4.5% (limit -3%). No new entries.",
+    "message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -4.4% (limit -3%). No new entries.",
     "halt_reason": "WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13).",
     "halt_until": "post-rebalance"
   },
