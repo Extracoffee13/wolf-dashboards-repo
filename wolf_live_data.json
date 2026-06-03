@@ -404,5 +404,145 @@
         }
       ]
     }
+  },
+  "daily_summary": {
+    "date": "2026-06-03",
+    "account": {
+      "portfolio_value": 105532.09,
+      "cash": -100545.31,
+      "buying_power": 4986.78,
+      "positions": 7,
+      "todays_trades": 0,
+      "daily_pnl_amount": -4822.78,
+      "daily_pnl_pct": -0.0437,
+      "circuit_breaker": "yellow"
+    },
+    "log": {
+      "task_fires": {
+        "wolf-crypto-247": 3,
+        "wolf-market-open-exec": 1,
+        "wolf-midday-rescan": 1,
+        "wolf-gate-status": 1,
+        "wolf-daily-summary": 1
+      },
+      "errors": 1
+    },
+    "rejected": {
+      "count": 10,
+      "reasons": {
+        "R:R 1.2 < 1.5": 1,
+        "halt_new_entries=true in wolf_live_data.json": 9
+      },
+      "recent": [
+        {
+          "ticker": "AAPL",
+          "strategy": "Overbought Fade",
+          "reason": "R:R 1.2 < 1.5",
+          "rejected_at": "2026-06-03T09:31:18.153206",
+          "risk_reward": 1.2,
+          "confidence": 5
+        },
+        {
+          "ticker": "SLV",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-03T13:31:18Z",
+          "risk_reward": 2.0,
+          "confidence": 8
+        },
+        {
+          "ticker": "XOM",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-03T13:31:18Z",
+          "risk_reward": 2.0,
+          "confidence": 7
+        },
+        {
+          "ticker": "JNJ",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-03T13:31:18Z",
+          "risk_reward": 2.0,
+          "confidence": 7
+        },
+        {
+          "ticker": "SNOW",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-03T13:31:18Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "SLB",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-03T13:31:18Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "GLD",
+          "strategy": "Overbought Fade",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-03T13:31:18Z",
+          "risk_reward": 1.8,
+          "confidence": 6
+        },
+        {
+          "ticker": "GOOGL",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-03T13:31:18Z",
+          "risk_reward": 2.0,
+          "confidence": 5
+        },
+        {
+          "ticker": "NVDA",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-03T13:31:18Z",
+          "risk_reward": 2.0,
+          "confidence": 5
+        },
+        {
+          "ticker": "AMD",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-03T13:31:18Z",
+          "risk_reward": 2.0,
+          "confidence": 5
+        }
+      ]
+    },
+    "committee": {
+      "runs": 0,
+      "tickers_voted": 0,
+      "verdicts": {}
+    }
+  },
+  "daily_summary_updated_at": "2026-06-03T16:50:01.677348",
+  "today_signals": {
+    "as_of": "2026-06-03 16:50:01",
+    "last_task": "EOD recap",
+    "count": 1,
+    "signals": [
+      {
+        "ticker": "LTC/USD",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 4,
+        "entry": 74.21345,
+        "stop": 77.66465214285714,
+        "target": 67.31104571428571,
+        "symbol": "LTC/USD",
+        "price": 74.21345,
+        "rsi": 39.3,
+        "rvol": 1.33,
+        "atr": 2.3,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
