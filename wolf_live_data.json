@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-06-03T15:01:04.501762",
+  "last_updated": "2026-06-03T15:06:09.516582",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 106120.32,
+    "portfolio_value": 105879.52,
     "cash": -100545.31,
-    "buying_power": 5575.01,
-    "equity": 106120.32,
+    "buying_power": 5334.21,
+    "equity": 105879.52,
     "last_equity": 110354.87,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -4234.55,
-    "pct": -0.0384,
+    "amount": -4475.35,
+    "pct": -0.0406,
     "circuit_breaker_status": "yellow",
-    "circuit_breaker_message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -3.8% (limit -3%). No new entries."
+    "circuit_breaker_message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -4.1% (limit -3%). No new entries."
   },
   "weekly_pnl": {
     "amount": 9544.7,
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 301.51,
-      "market_value": 22914.76,
-      "unrealized_pl": -396.72,
-      "unrealized_plpc": -0.01702,
+      "current_price": 301.465,
+      "market_value": 22911.34,
+      "unrealized_pl": -400.14,
+      "unrealized_plpc": -0.01716,
       "cost_basis": 23311.48
     },
     {
@@ -38,10 +38,10 @@
       "qty": 333.0,
       "side": "long",
       "avg_entry": 75.842613,
-      "current_price": 77.815,
-      "market_value": 25912.395,
-      "unrealized_pl": 656.804871,
-      "unrealized_plpc": 0.02601,
+      "current_price": 77.8,
+      "market_value": 25907.4,
+      "unrealized_pl": 651.809871,
+      "unrealized_plpc": 0.02581,
       "cost_basis": 25255.590129
     },
     {
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 427.965,
-      "market_value": 26961.795,
-      "unrealized_pl": 396.375021,
-      "unrealized_plpc": 0.01492,
+      "current_price": 427.5,
+      "market_value": 26932.5,
+      "unrealized_pl": 367.080021,
+      "unrealized_plpc": 0.01382,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 216.08,
-      "market_value": 26793.92,
-      "unrealized_pl": 1077.56,
-      "unrealized_plpc": 0.0419,
+      "current_price": 215.9299,
+      "market_value": 26775.3076,
+      "unrealized_pl": 1058.9476,
+      "unrealized_plpc": 0.04118,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 142.3251,
-      "market_value": 51806.3364,
-      "unrealized_pl": 2023.10654,
-      "unrealized_plpc": 0.04064,
+      "current_price": 141.92,
+      "market_value": 51658.88,
+      "unrealized_pl": 1875.65014,
+      "unrealized_plpc": 0.03768,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 422.4708,
-      "market_value": 27883.0728,
-      "unrealized_pl": -1318.65723,
-      "unrealized_plpc": -0.04516,
+      "current_price": 421.54,
+      "market_value": 27821.64,
+      "unrealized_pl": -1380.09003,
+      "unrealized_plpc": -0.04726,
       "cost_basis": 29201.73003
     },
     {
@@ -93,10 +93,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 58.78,
-      "market_value": 24393.7,
-      "unrealized_pl": 984.099875,
-      "unrealized_plpc": 0.04204,
+      "current_price": 58.83,
+      "market_value": 24414.45,
+      "unrealized_pl": 1004.849875,
+      "unrealized_plpc": 0.04292,
       "cost_basis": 23409.600125
     }
   ],
@@ -148,7 +148,7 @@
     "weekly_triggered": false,
     "halt_new_entries": true,
     "halt_all_activity": false,
-    "message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -3.8% (limit -3%). No new entries."
+    "message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -4.1% (limit -3%). No new entries."
   },
   "backtest": {
     "last_run_date": "2026-04-07",
