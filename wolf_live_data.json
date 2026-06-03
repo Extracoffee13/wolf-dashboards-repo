@@ -404,5 +404,27 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-06-03 12:00:12",
+    "last_task": "Crypto sweep",
+    "count": 1,
+    "signals": [
+      {
+        "ticker": "LTC/USD",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 4,
+        "entry": 74.21345,
+        "stop": 77.66465214285714,
+        "target": 67.31104571428571,
+        "symbol": "LTC/USD",
+        "price": 74.21345,
+        "rsi": 39.3,
+        "rvol": 1.33,
+        "atr": 2.3,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
