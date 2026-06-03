@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-06-03T16:58:19.278340",
+  "last_updated": "2026-06-03T17:03:21.353315",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 105304.06,
+    "portfolio_value": 105425.32,
     "cash": -100545.31,
-    "buying_power": 4758.75,
-    "equity": 105304.06,
+    "buying_power": 4880.01,
+    "equity": 105425.32,
     "last_equity": 110354.87,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -5050.81,
-    "pct": -0.0458,
+    "amount": -4929.55,
+    "pct": -0.0447,
     "circuit_breaker_status": "yellow",
-    "circuit_breaker_message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -4.6% (limit -3%). No new entries."
+    "circuit_breaker_message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -4.5% (limit -3%). No new entries."
   },
   "weekly_pnl": {
     "amount": 9544.7,
@@ -38,10 +38,10 @@
       "qty": 333.0,
       "side": "long",
       "avg_entry": 75.842613,
-      "current_price": 78.05,
-      "market_value": 25990.65,
-      "unrealized_pl": 735.059871,
-      "unrealized_plpc": 0.0291,
+      "current_price": 78.3,
+      "market_value": 26073.9,
+      "unrealized_pl": 818.309871,
+      "unrealized_plpc": 0.0324,
       "cost_basis": 25255.590129
     },
     {
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 425.5468,
-      "market_value": 26809.4484,
-      "unrealized_pl": 244.028421,
-      "unrealized_plpc": 0.00919,
+      "current_price": 425.824,
+      "market_value": 26826.912,
+      "unrealized_pl": 261.492021,
+      "unrealized_plpc": 0.00984,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 214.98,
-      "market_value": 26657.52,
-      "unrealized_pl": 941.16,
-      "unrealized_plpc": 0.0366,
+      "current_price": 215.0099,
+      "market_value": 26661.2276,
+      "unrealized_pl": 944.8676,
+      "unrealized_plpc": 0.03674,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 140.86,
-      "market_value": 51273.04,
-      "unrealized_pl": 1489.81014,
-      "unrealized_plpc": 0.02993,
+      "current_price": 140.9899,
+      "market_value": 51320.3236,
+      "unrealized_pl": 1537.09374,
+      "unrealized_plpc": 0.03088,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 422.5695,
-      "market_value": 27889.587,
-      "unrealized_pl": -1312.14303,
-      "unrealized_plpc": -0.04493,
+      "current_price": 422.51,
+      "market_value": 27885.66,
+      "unrealized_pl": -1316.07003,
+      "unrealized_plpc": -0.04507,
       "cost_basis": 29201.73003
     },
     {
@@ -93,10 +93,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 58.79,
-      "market_value": 24397.85,
-      "unrealized_pl": 988.249875,
-      "unrealized_plpc": 0.04222,
+      "current_price": 58.7099,
+      "market_value": 24364.6085,
+      "unrealized_pl": 955.008375,
+      "unrealized_plpc": 0.0408,
       "cost_basis": 23409.600125
     }
   ],
@@ -274,7 +274,7 @@
     "weekly_triggered": false,
     "halt_new_entries": true,
     "halt_all_activity": false,
-    "message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -4.6% (limit -3%). No new entries.",
+    "message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -4.5% (limit -3%). No new entries.",
     "halt_reason": "WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13).",
     "halt_until": "post-rebalance"
   },
