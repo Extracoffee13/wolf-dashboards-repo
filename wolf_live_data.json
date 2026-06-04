@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-06-04T16:49:15.321767",
+  "last_updated": "2026-06-04T16:54:17.518134",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 107608.29,
+    "portfolio_value": 107591.2,
     "cash": -100545.31,
-    "buying_power": 14125.97,
-    "equity": 107608.29,
+    "buying_power": 14091.79,
+    "equity": 107591.2,
     "last_equity": 105917.71,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 1690.58,
-    "pct": 0.016,
+    "amount": 1673.49,
+    "pct": 0.0158,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 427.412,
-      "market_value": 26926.956,
-      "unrealized_pl": 361.536021,
-      "unrealized_plpc": 0.01361,
+      "current_price": 427.19,
+      "market_value": 26912.97,
+      "unrealized_pl": 347.550021,
+      "unrealized_plpc": 0.01308,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 217.7206,
-      "market_value": 26997.3544,
-      "unrealized_pl": 1280.9944,
-      "unrealized_plpc": 0.04981,
+      "current_price": 217.87,
+      "market_value": 27015.88,
+      "unrealized_pl": 1299.52,
+      "unrealized_plpc": 0.05053,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 141.35,
-      "market_value": 51451.4,
-      "unrealized_pl": 1668.17014,
-      "unrealized_plpc": 0.03351,
+      "current_price": 141.276,
+      "market_value": 51424.464,
+      "unrealized_pl": 1641.23414,
+      "unrealized_plpc": 0.03297,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 417.2996,
-      "market_value": 27541.7736,
-      "unrealized_pl": -1659.95643,
-      "unrealized_plpc": -0.05684,
+      "current_price": 417.38,
+      "market_value": 27547.08,
+      "unrealized_pl": -1654.65003,
+      "unrealized_plpc": -0.05666,
       "cost_basis": 29201.73003
     },
     {
@@ -404,177 +404,5 @@
         }
       ]
     }
-  },
-  "daily_summary": {
-    "date": "2026-06-04",
-    "account": {
-      "portfolio_value": 107608.29,
-      "cash": -100545.31,
-      "buying_power": 14125.97,
-      "positions": 7,
-      "todays_trades": 0,
-      "daily_pnl_amount": 1690.58,
-      "daily_pnl_pct": 0.016,
-      "circuit_breaker": "yellow"
-    },
-    "log": {
-      "task_fires": {
-        "wolf-crypto-247": 3,
-        "wolf-market-open-exec": 1,
-        "wolf-midday-rescan": 1,
-        "wolf-gate-status": 1,
-        "wolf-daily-summary": 1
-      },
-      "errors": 1
-    },
-    "rejected": {
-      "count": 15,
-      "reasons": {
-        "R:R 1.2 < 1.5": 4,
-        "R:R 1.1 < 1.5": 1,
-        "halt_new_entries=true in wolf_live_data.json": 9,
-        "R:R 0.8 < 1.5": 1
-      },
-      "recent": [
-        {
-          "ticker": "SNOW",
-          "strategy": "Breakdown",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-06-04T13:30:51Z",
-          "risk_reward": 2.0,
-          "confidence": 7
-        },
-        {
-          "ticker": "OXY",
-          "strategy": "Momentum Breakout",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-06-04T13:30:51Z",
-          "risk_reward": 2.0,
-          "confidence": 7
-        },
-        {
-          "ticker": "SLV",
-          "strategy": "Overbought Fade",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-06-04T13:30:51Z",
-          "risk_reward": 3.5,
-          "confidence": 7
-        },
-        {
-          "ticker": "XOM",
-          "strategy": "Overbought Fade",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-06-04T13:30:51Z",
-          "risk_reward": 1.9,
-          "confidence": 6
-        },
-        {
-          "ticker": "CVX",
-          "strategy": "Momentum Breakout",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-06-04T13:30:51Z",
-          "risk_reward": 2.0,
-          "confidence": 6
-        },
-        {
-          "ticker": "SLB",
-          "strategy": "Breakdown",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-06-04T13:30:51Z",
-          "risk_reward": 2.0,
-          "confidence": 6
-        },
-        {
-          "ticker": "XLK",
-          "strategy": "Overbought Fade",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-06-04T13:30:51Z",
-          "risk_reward": 1.9,
-          "confidence": 6
-        },
-        {
-          "ticker": "JPM",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 1.2 < 1.5",
-          "rejected_at": "2026-06-04T11:30:47.180278",
-          "risk_reward": 1.2,
-          "confidence": 5
-        },
-        {
-          "ticker": "DIA",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 0.8 < 1.5",
-          "rejected_at": "2026-06-04T11:30:47.180353",
-          "risk_reward": 0.8,
-          "confidence": 5
-        },
-        {
-          "ticker": "ETH/USD",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 1.2 < 1.5",
-          "rejected_at": "2026-06-04T12:00:19.370916",
-          "risk_reward": 1.2,
-          "confidence": 5
-        }
-      ]
-    },
-    "committee": {
-      "runs": 0,
-      "tickers_voted": 0,
-      "verdicts": {}
-    }
-  },
-  "daily_summary_updated_at": "2026-06-04T16:50:04.927365",
-  "today_signals": {
-    "as_of": "2026-06-04 16:50:05",
-    "last_task": "EOD recap",
-    "count": 3,
-    "signals": [
-      {
-        "ticker": "SOL/USD",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 5,
-        "entry": 137.7875,
-        "stop": 140.5255892857143,
-        "target": 132.3113214285714,
-        "symbol": "SOL/USD",
-        "price": 137.7875,
-        "rsi": 39.3,
-        "rvol": 1.54,
-        "atr": 1.83,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "AAVE/USD",
-        "direction": "LONG",
-        "strategy": "MACD Bullish Crossover",
-        "confidence": 5,
-        "entry": 176.4475,
-        "stop": 169.67971428571428,
-        "target": 189.98307142857144,
-        "symbol": "AAVE/USD",
-        "price": 176.4475,
-        "rsi": 51.9,
-        "rvol": 0.51,
-        "atr": 3.38,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "LINK/USD",
-        "direction": "LONG",
-        "strategy": "Mean Reversion (Oversold)",
-        "confidence": 4,
-        "entry": 12.85985,
-        "stop": 12.415389461,
-        "target": 13.654895,
-        "symbol": "LINK/USD",
-        "price": 12.85985,
-        "rsi": 26.6,
-        "rvol": 0.77,
-        "atr": 0.22,
-        "risk_reward": 1.8
-      }
-    ]
   }
 }
