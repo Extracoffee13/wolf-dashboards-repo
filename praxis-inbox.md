@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: pre-market-intelligence
+decision: scanned overnight futures + Asia close + Europe open + day's catalysts
+outcome: AVGO -14% "sell the news" drags NQ -1.1%; SPX 7,600 record level is today's bull/bear line with Warsh FOMC starting Saturday
+lesson: When the AI narrative requires perpetual guidance escalation, a "no raise" is functionally a miss — Broadcom's 143% AI revenue growth wasn't enough because the market was priced for a raised ceiling, not a reiterated one
+tags: wolf,pre-market,markets,daily
+confidence: 0.7
+~~~
