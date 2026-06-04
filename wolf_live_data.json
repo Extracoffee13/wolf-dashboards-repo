@@ -404,5 +404,132 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-06-04 11:30:47",
+    "last_task": "Midday rescan",
+    "count": 8,
+    "signals": [
+      {
+        "ticker": "SPY",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 8,
+        "entry": 695.185,
+        "stop": 694.6112499999999,
+        "target": 696.3325,
+        "symbol": "SPY",
+        "price": 695.185,
+        "rsi": 63.4,
+        "rvol": 3.95,
+        "atr": 0.38,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "QQQ",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 8,
+        "entry": 627.19,
+        "stop": 626.4582142857143,
+        "target": 628.6535714285715,
+        "symbol": "QQQ",
+        "price": 627.19,
+        "rsi": 46.7,
+        "rvol": 5.76,
+        "atr": 0.49,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "ROKU",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 7,
+        "entry": 112.17,
+        "stop": 111.62678571428572,
+        "target": 113.25642857142859,
+        "symbol": "ROKU",
+        "price": 112.17,
+        "rsi": 71.8,
+        "rvol": 1.98,
+        "atr": 0.36,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "AMD",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 6,
+        "entry": 221.88,
+        "stop": 218.72089285714284,
+        "target": 228.19821428571427,
+        "symbol": "AMD",
+        "price": 221.88,
+        "rsi": 72.5,
+        "rvol": 1.24,
+        "atr": 2.11,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "ABBV",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 6,
+        "entry": 219.84,
+        "stop": 219.1875,
+        "target": 221.145,
+        "symbol": "ABBV",
+        "price": 219.84,
+        "rsi": 64.1,
+        "rvol": 1.91,
+        "atr": 0.43,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "UVXY",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 6,
+        "entry": 35.89,
+        "stop": 35.42232142857143,
+        "target": 36.82535714285714,
+        "symbol": "UVXY",
+        "price": 35.89,
+        "rsi": 68.2,
+        "rvol": 1.46,
+        "atr": 0.31,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "NVDA",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 5,
+        "entry": 187.09,
+        "stop": 185.7094642857143,
+        "target": 189.85107142857143,
+        "symbol": "NVDA",
+        "price": 187.09,
+        "rsi": 65.0,
+        "rvol": 1.41,
+        "atr": 0.92,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "PFE",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 5,
+        "entry": 25.06,
+        "stop": 25.158035714285713,
+        "target": 24.863928571428573,
+        "symbol": "PFE",
+        "price": 25.06,
+        "rsi": 39.0,
+        "rvol": 1.91,
+        "atr": 0.07,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
