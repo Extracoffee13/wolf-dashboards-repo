@@ -404,5 +404,57 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-06-04 00:00:10",
+    "last_task": "Crypto sweep",
+    "count": 3,
+    "signals": [
+      {
+        "ticker": "SOL/USD",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 5,
+        "entry": 137.7875,
+        "stop": 140.5255892857143,
+        "target": 132.3113214285714,
+        "symbol": "SOL/USD",
+        "price": 137.7875,
+        "rsi": 39.3,
+        "rvol": 1.54,
+        "atr": 1.83,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "AAVE/USD",
+        "direction": "LONG",
+        "strategy": "MACD Bullish Crossover",
+        "confidence": 5,
+        "entry": 176.4475,
+        "stop": 169.67971428571428,
+        "target": 189.98307142857144,
+        "symbol": "AAVE/USD",
+        "price": 176.4475,
+        "rsi": 51.9,
+        "rvol": 0.51,
+        "atr": 3.38,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "LINK/USD",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 4,
+        "entry": 12.85985,
+        "stop": 12.415389461,
+        "target": 13.654895,
+        "symbol": "LINK/USD",
+        "price": 12.85985,
+        "rsi": 26.6,
+        "rvol": 0.77,
+        "atr": 0.22,
+        "risk_reward": 1.8
+      }
+    ]
   }
 }
