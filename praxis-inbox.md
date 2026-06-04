@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: construct-standup
+decision: ran end-of-day standup synthesis across all active agents
+outcome: WOLF ran 50 live-data commits (+1.7% daily P&L, $107K equity, 7 open positions) while capability metadata sits frozen at April 13 — the real-money unlock gate may be evaluating stale scores
+lesson: A live trading system with a stale capability score is a hidden governance gap — the unlock threshold needs to reference current codebase state, not bootstrap metadata
+tags: standup,construct,daily,synthesis
+confidence: 0.7
+~~~
