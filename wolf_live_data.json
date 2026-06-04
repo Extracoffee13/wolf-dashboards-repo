@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-06-04T05:59:02.071870",
+  "last_updated": "2026-06-04T06:04:04.034701",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 106771.33,
+    "portfolio_value": 106707.2,
     "cash": -100545.31,
-    "buying_power": 12452.04,
-    "equity": 106771.33,
+    "buying_power": 12323.78,
+    "equity": 106707.2,
     "last_equity": 105917.71,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 853.62,
-    "pct": 0.0081,
+    "amount": 789.49,
+    "pct": 0.0075,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 213.01,
-      "market_value": 26413.24,
-      "unrealized_pl": 696.88,
-      "unrealized_plpc": 0.0271,
+      "current_price": 212.99,
+      "market_value": 26410.76,
+      "unrealized_pl": 694.4,
+      "unrealized_plpc": 0.027,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 143.83,
-      "market_value": 52354.12,
-      "unrealized_pl": 2570.89014,
-      "unrealized_plpc": 0.05164,
+      "current_price": 143.7,
+      "market_value": 52306.8,
+      "unrealized_pl": 2523.57014,
+      "unrealized_plpc": 0.05069,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 420.6,
-      "market_value": 27759.6,
-      "unrealized_pl": -1442.13003,
-      "unrealized_plpc": -0.04939,
+      "current_price": 420.32,
+      "market_value": 27741.12,
+      "unrealized_pl": -1460.61003,
+      "unrealized_plpc": -0.05002,
       "cost_basis": 29201.73003
     },
     {
@@ -93,10 +93,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 58.81,
-      "market_value": 24406.15,
-      "unrealized_pl": 996.549875,
-      "unrealized_plpc": 0.04257,
+      "current_price": 58.82,
+      "market_value": 24410.3,
+      "unrealized_pl": 1000.699875,
+      "unrealized_plpc": 0.04275,
       "cost_basis": 23409.600125
     }
   ],
@@ -404,57 +404,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-06-04 06:00:10",
-    "last_task": "Crypto sweep",
-    "count": 3,
-    "signals": [
-      {
-        "ticker": "SOL/USD",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 5,
-        "entry": 137.7875,
-        "stop": 140.5255892857143,
-        "target": 132.3113214285714,
-        "symbol": "SOL/USD",
-        "price": 137.7875,
-        "rsi": 39.3,
-        "rvol": 1.54,
-        "atr": 1.83,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "AAVE/USD",
-        "direction": "LONG",
-        "strategy": "MACD Bullish Crossover",
-        "confidence": 5,
-        "entry": 176.4475,
-        "stop": 169.67971428571428,
-        "target": 189.98307142857144,
-        "symbol": "AAVE/USD",
-        "price": 176.4475,
-        "rsi": 51.9,
-        "rvol": 0.51,
-        "atr": 3.38,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "LINK/USD",
-        "direction": "LONG",
-        "strategy": "Mean Reversion (Oversold)",
-        "confidence": 4,
-        "entry": 12.85985,
-        "stop": 12.415389461,
-        "target": 13.654895,
-        "symbol": "LINK/USD",
-        "price": 12.85985,
-        "rsi": 26.6,
-        "rvol": 0.77,
-        "atr": 0.22,
-        "risk_reward": 1.8
-      }
-    ]
   }
 }
