@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was claude-skills-mcp (K-Dense-AI) — vector search over the full Agent Skills library, score 5, assigned to Vector
+lesson: The most valuable new skills this cycle are meta-skills: tools that find, port, or auto-generate other skills — skill discovery infrastructure is itself becoming a first-class capability
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
