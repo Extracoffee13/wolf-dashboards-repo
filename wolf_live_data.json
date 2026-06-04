@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-06-03T23:56:21.083889",
+  "last_updated": "2026-06-04T00:01:23.148527",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 105498.66,
+    "portfolio_value": 105548.62,
     "cash": -100545.31,
-    "buying_power": 9906.7,
-    "equity": 105498.66,
+    "buying_power": 10006.62,
+    "equity": 105548.62,
     "last_equity": 110354.87,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -4856.21,
-    "pct": -0.044,
+    "amount": -4806.25,
+    "pct": -0.0436,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -4.4% (limit -3%). No new entries."
   },
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 427.05,
-      "market_value": 26904.15,
-      "unrealized_pl": 338.730021,
-      "unrealized_plpc": 0.01275,
+      "current_price": 427.23,
+      "market_value": 26915.49,
+      "unrealized_pl": 350.070021,
+      "unrealized_plpc": 0.01318,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 215.0,
-      "market_value": 26660.0,
-      "unrealized_pl": 943.64,
-      "unrealized_plpc": 0.03669,
+      "current_price": 215.25,
+      "market_value": 26691.0,
+      "unrealized_pl": 974.64,
+      "unrealized_plpc": 0.0379,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 141.47,
-      "market_value": 51495.08,
-      "unrealized_pl": 1711.85014,
-      "unrealized_plpc": 0.03439,
+      "current_price": 141.5,
+      "market_value": 51506.0,
+      "unrealized_pl": 1722.77014,
+      "unrealized_plpc": 0.03461,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 422.09,
-      "market_value": 27857.94,
-      "unrealized_pl": -1343.79003,
-      "unrealized_plpc": -0.04602,
+      "current_price": 422.04,
+      "market_value": 27854.64,
+      "unrealized_pl": -1347.09003,
+      "unrealized_plpc": -0.04613,
       "cost_basis": 29201.73003
     },
     {
@@ -315,9 +315,9 @@
   "wolf_capabilities": {
     "capability_score": 51,
     "score_max": 100,
-    "day_on_mission": 57,
+    "day_on_mission": 58,
     "mission_start": "2026-04-08",
-    "streak_days": 57,
+    "streak_days": 58,
     "totals": {
       "scripts": 58,
       "core_modules": 14,
@@ -404,57 +404,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-06-04 00:00:10",
-    "last_task": "Crypto sweep",
-    "count": 3,
-    "signals": [
-      {
-        "ticker": "SOL/USD",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 5,
-        "entry": 137.7875,
-        "stop": 140.5255892857143,
-        "target": 132.3113214285714,
-        "symbol": "SOL/USD",
-        "price": 137.7875,
-        "rsi": 39.3,
-        "rvol": 1.54,
-        "atr": 1.83,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "AAVE/USD",
-        "direction": "LONG",
-        "strategy": "MACD Bullish Crossover",
-        "confidence": 5,
-        "entry": 176.4475,
-        "stop": 169.67971428571428,
-        "target": 189.98307142857144,
-        "symbol": "AAVE/USD",
-        "price": 176.4475,
-        "rsi": 51.9,
-        "rvol": 0.51,
-        "atr": 3.38,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "LINK/USD",
-        "direction": "LONG",
-        "strategy": "Mean Reversion (Oversold)",
-        "confidence": 4,
-        "entry": 12.85985,
-        "stop": 12.415389461,
-        "target": 13.654895,
-        "symbol": "LINK/USD",
-        "price": 12.85985,
-        "rsi": 26.6,
-        "rvol": 0.77,
-        "atr": 0.22,
-        "risk_reward": 1.8
-      }
-    ]
   }
 }
