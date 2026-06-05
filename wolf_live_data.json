@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-06-05T11:27:58.303501",
+  "last_updated": "2026-06-05T11:33:00.888068",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 104030.11,
+    "portfolio_value": 103886.76,
     "cash": -100545.31,
-    "buying_power": 6969.6,
-    "equity": 104030.11,
+    "buying_power": 6682.89,
+    "equity": 103886.76,
     "last_equity": 108023.76,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -3993.65,
-    "pct": -0.037,
+    "amount": -4137.0,
+    "pct": -0.0383,
     "circuit_breaker_status": "yellow",
-    "circuit_breaker_message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -3.7% (limit -3%). No new entries."
+    "circuit_breaker_message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -3.8% (limit -3%). No new entries."
   },
   "weekly_pnl": {
     "amount": -2406.75,
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 313.05,
-      "market_value": 23791.8,
-      "unrealized_pl": 480.32,
-      "unrealized_plpc": 0.0206,
+      "current_price": 312.315,
+      "market_value": 23735.94,
+      "unrealized_pl": 424.46,
+      "unrealized_plpc": 0.01821,
       "cost_basis": 23311.48
     },
     {
@@ -38,10 +38,10 @@
       "qty": 333.0,
       "side": "long",
       "avg_entry": 75.842613,
-      "current_price": 82.28,
-      "market_value": 27399.24,
-      "unrealized_pl": 2143.649871,
-      "unrealized_plpc": 0.08488,
+      "current_price": 82.245,
+      "market_value": 27387.585,
+      "unrealized_pl": 2131.994871,
+      "unrealized_plpc": 0.08442,
       "cost_basis": 25255.590129
     },
     {
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 421.55,
-      "market_value": 26557.65,
-      "unrealized_pl": -7.769979,
-      "unrealized_plpc": -0.00029,
+      "current_price": 422.16,
+      "market_value": 26596.08,
+      "unrealized_pl": 30.660021,
+      "unrealized_plpc": 0.00115,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 208.65,
-      "market_value": 25872.6,
-      "unrealized_pl": 156.24,
-      "unrealized_plpc": 0.00608,
+      "current_price": 208.3899,
+      "market_value": 25840.3476,
+      "unrealized_pl": 123.9876,
+      "unrealized_plpc": 0.00482,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 137.615,
-      "market_value": 50091.86,
-      "unrealized_pl": 308.63014,
-      "unrealized_plpc": 0.0062,
+      "current_price": 137.65,
+      "market_value": 50104.6,
+      "unrealized_pl": 321.37014,
+      "unrealized_plpc": 0.00646,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 402.89,
-      "market_value": 26590.74,
-      "unrealized_pl": -2610.99003,
-      "unrealized_plpc": -0.08941,
+      "current_price": 402.03,
+      "market_value": 26533.98,
+      "unrealized_pl": -2667.75003,
+      "unrealized_plpc": -0.09136,
       "cost_basis": 29201.73003
     },
     {
@@ -93,10 +93,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 58.49,
-      "market_value": 24273.35,
-      "unrealized_pl": 863.749875,
-      "unrealized_plpc": 0.0369,
+      "current_price": 58.4,
+      "market_value": 24236.0,
+      "unrealized_pl": 826.399875,
+      "unrealized_plpc": 0.0353,
       "cost_basis": 23409.600125
     }
   ],
@@ -274,7 +274,7 @@
     "weekly_triggered": false,
     "halt_new_entries": true,
     "halt_all_activity": false,
-    "message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -3.7% (limit -3%). No new entries.",
+    "message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -3.8% (limit -3%). No new entries.",
     "halt_reason": "WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13).",
     "halt_until": "post-rebalance"
   },
@@ -404,147 +404,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-06-05 11:30:59",
-    "last_task": "Midday rescan",
-    "count": 9,
-    "signals": [
-      {
-        "ticker": "SPXL",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 7,
-        "entry": 232.06,
-        "stop": 230.68589285714285,
-        "target": 234.80821428571429,
-        "symbol": "SPXL",
-        "price": 232.06,
-        "rsi": 75.9,
-        "rvol": 2.41,
-        "atr": 0.92,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "OXY",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 6,
-        "entry": 45.09,
-        "stop": 44.877321428571435,
-        "target": 45.51535714285714,
-        "symbol": "OXY",
-        "price": 45.09,
-        "rsi": 68.1,
-        "rvol": 1.47,
-        "atr": 0.14,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "XLE",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 6,
-        "entry": 48.515,
-        "stop": 48.315714285714286,
-        "target": 48.91357142857143,
-        "symbol": "XLE",
-        "price": 48.515,
-        "rsi": 74.5,
-        "rvol": 1.14,
-        "atr": 0.13,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "SLV",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 6,
-        "entry": 78.52,
-        "stop": 79.49874999999999,
-        "target": 76.5625,
-        "symbol": "SLV",
-        "price": 78.52,
-        "rsi": 26.5,
-        "rvol": 1.44,
-        "atr": 0.65,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "TSLA",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 5,
-        "entry": 440.05,
-        "stop": 443.27714285714285,
-        "target": 433.5957142857143,
-        "symbol": "TSLA",
-        "price": 440.05,
-        "rsi": 36.6,
-        "rvol": 1.97,
-        "atr": 2.15,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "XOM",
-        "direction": "SHORT",
-        "strategy": "Overbought Fade",
-        "confidence": 5,
-        "entry": 131.52,
-        "stop": 132.34928571428574,
-        "target": 129.88225,
-        "symbol": "XOM",
-        "price": 131.52,
-        "rsi": 81.1,
-        "rvol": 0.97,
-        "atr": 0.41,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "SLB",
-        "direction": "LONG",
-        "strategy": "MACD Bullish Crossover",
-        "confidence": 5,
-        "entry": 47.44,
-        "stop": 46.982857142857135,
-        "target": 48.354285714285716,
-        "symbol": "SLB",
-        "price": 47.44,
-        "rsi": 70.6,
-        "rvol": 0.87,
-        "atr": 0.23,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "IWM",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 5,
-        "entry": 262.0,
-        "stop": 261.17125,
-        "target": 263.6575,
-        "symbol": "IWM",
-        "price": 262.0,
-        "rsi": 52.5,
-        "rvol": 1.77,
-        "atr": 0.55,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "GLD",
-        "direction": "LONG",
-        "strategy": "Momentum Breakout",
-        "confidence": 5,
-        "entry": 424.32,
-        "stop": 422.64696428571426,
-        "target": 427.6660714285714,
-        "symbol": "GLD",
-        "price": 424.32,
-        "rsi": 59.4,
-        "rvol": 1.98,
-        "atr": 1.12,
-        "risk_reward": 2.0
-      }
-    ]
   }
 }
