@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Claude Finance Agents + Data Connectors (score 5, owner Ledger)
+lesson: Highest-yield skill discoveries consistently originate from first-party Anthropic platform releases (Finance Agents, Claude Code plugin auto-loading) rather than community packages — monitor anthropic.com/news and releasebot.io/updates/anthropic as primary signals; community PyPI/npm packages fill persistence and heterogeneous-agent gaps that Anthropic has not formally addressed
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
