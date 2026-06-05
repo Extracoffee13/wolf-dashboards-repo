@@ -1,27 +1,105 @@
 {
-  "last_updated": "2026-06-05T03:39:20.371414",
+  "last_updated": "2026-06-05T03:44:21.654400",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 106963.26,
+    "portfolio_value": 106976.68,
     "cash": -100545.31,
-    "buying_power": 12835.9,
-    "equity": 106963.26,
+    "buying_power": 12862.74,
+    "equity": 106976.68,
     "last_equity": 105917.71,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 0.0,
-    "pct": 0.0,
+    "amount": 1058.97,
+    "pct": 0.01,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
   "weekly_pnl": {
-    "amount": 0.0,
-    "pct": 0.0
+    "amount": 290.75,
+    "pct": 0.0052
   },
-  "positions": [],
+  "positions": [
+    {
+      "ticker": "JPM",
+      "qty": 76.0,
+      "side": "long",
+      "avg_entry": 306.73,
+      "current_price": 311.25,
+      "market_value": 23655.0,
+      "unrealized_pl": 343.52,
+      "unrealized_plpc": 0.01474,
+      "cost_basis": 23311.48
+    },
+    {
+      "ticker": "MDT",
+      "qty": 333.0,
+      "side": "long",
+      "avg_entry": 75.842613,
+      "current_price": 82.0,
+      "market_value": 27306.0,
+      "unrealized_pl": 2050.409871,
+      "unrealized_plpc": 0.08119,
+      "cost_basis": 25255.590129
+    },
+    {
+      "ticker": "MSFT",
+      "qty": 63.0,
+      "side": "long",
+      "avg_entry": 421.673333,
+      "current_price": 426.85,
+      "market_value": 26891.55,
+      "unrealized_pl": 326.130021,
+      "unrealized_plpc": 0.01228,
+      "cost_basis": 26565.419979
+    },
+    {
+      "ticker": "NVDA",
+      "qty": 124.0,
+      "side": "long",
+      "avg_entry": 207.39,
+      "current_price": 215.25,
+      "market_value": 26691.0,
+      "unrealized_pl": 974.64,
+      "unrealized_plpc": 0.0379,
+      "cost_basis": 25716.36
+    },
+    {
+      "ticker": "PLTR",
+      "qty": 364.0,
+      "side": "long",
+      "avg_entry": 136.767115,
+      "current_price": 140.31,
+      "market_value": 51072.84,
+      "unrealized_pl": 1289.61014,
+      "unrealized_plpc": 0.0259,
+      "cost_basis": 49783.22986
+    },
+    {
+      "ticker": "TSLA",
+      "qty": 66.0,
+      "side": "long",
+      "avg_entry": 442.450455,
+      "current_price": 417.25,
+      "market_value": 27538.5,
+      "unrealized_pl": -1663.23003,
+      "unrealized_plpc": -0.05696,
+      "cost_basis": 29201.73003
+    },
+    {
+      "ticker": "XLE",
+      "qty": 415.0,
+      "side": "long",
+      "avg_entry": 56.408675,
+      "current_price": 58.7,
+      "market_value": 24360.5,
+      "unrealized_pl": 950.899875,
+      "unrealized_plpc": 0.04062,
+      "cost_basis": 23409.600125
+    }
+  ],
   "todays_trades": [],
   "strategy_performance": {
     "small_cap_catalyst": {
