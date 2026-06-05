@@ -404,5 +404,134 @@
         }
       ]
     }
+  },
+  "daily_summary": {
+    "date": "2026-06-05",
+    "account": {
+      "portfolio_value": 100611.84,
+      "cash": -100545.31,
+      "buying_power": 140440.39,
+      "positions": 7,
+      "todays_trades": 0,
+      "daily_pnl_amount": -7411.92,
+      "daily_pnl_pct": -0.0686,
+      "circuit_breaker": "yellow"
+    },
+    "log": {
+      "task_fires": {
+        "wolf-crypto-247": 3,
+        "wolf-market-open-exec": 1,
+        "wolf-midday-rescan": 1,
+        "wolf-gate-status": 1,
+        "wolf-daily-summary": 1
+      },
+      "errors": 1
+    },
+    "rejected": {
+      "count": 17,
+      "reasons": {
+        "R:R 1.2 < 1.5": 3,
+        "R:R 1.1 < 1.5": 3,
+        "R:R 1.3 < 1.5": 1,
+        "halt_new_entries=true in wolf_live_data.json": 9,
+        "R:R 0.6 < 1.5": 1
+      },
+      "recent": [
+        {
+          "ticker": "SLB",
+          "strategy": "Breakdown",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-05T13:31:07Z",
+          "risk_reward": 2.0,
+          "confidence": 7
+        },
+        {
+          "ticker": "XLK",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-05T13:31:07Z",
+          "risk_reward": 2.0,
+          "confidence": 7
+        },
+        {
+          "ticker": "BAC",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-05T13:31:07Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "PFE",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-05T13:31:07Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "XLE",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-05T13:31:07Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "GOOGL",
+          "strategy": "Breakdown",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-05T13:31:07Z",
+          "risk_reward": 2.0,
+          "confidence": 5
+        },
+        {
+          "ticker": "ROKU",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-05T13:31:07Z",
+          "risk_reward": 1.9,
+          "confidence": 5
+        },
+        {
+          "ticker": "QQQ",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 0.6 < 1.5",
+          "rejected_at": "2026-06-05T11:30:59.711472",
+          "risk_reward": 0.6,
+          "confidence": 5
+        },
+        {
+          "ticker": "AAVE/USD",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 1.2 < 1.5",
+          "rejected_at": "2026-06-05T12:00:26.675102",
+          "risk_reward": 1.2,
+          "confidence": 3
+        },
+        {
+          "ticker": "UNI/USD",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 1.1 < 1.5",
+          "rejected_at": "2026-06-05T12:00:26.675166",
+          "risk_reward": 1.1,
+          "confidence": 2
+        }
+      ]
+    },
+    "committee": {
+      "runs": 1,
+      "tickers_voted": 3,
+      "verdicts": {
+        "bullish": 3
+      }
+    }
+  },
+  "daily_summary_updated_at": "2026-06-05T16:50:05.914569",
+  "today_signals": {
+    "as_of": "2026-06-05 16:50:06",
+    "last_task": "EOD recap",
+    "count": 0,
+    "signals": []
   }
 }
