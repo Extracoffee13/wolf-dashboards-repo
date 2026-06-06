@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-06T07:20:09.840509",
+  "last_updated": "2026-06-06T07:25:15.358143",
   "update_interval_seconds": 300,
   "account": {
     "portfolio_value": 101145.5,
@@ -12,8 +12,8 @@
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -6878.26,
-    "pct": -0.0637,
+    "amount": 0.0,
+    "pct": 0.0,
     "circuit_breaker_status": "red",
     "circuit_breaker_message": "WEEKLY CIRCUIT BREAKER TRIGGERED \u2014 -8.4% (limit -7%). HALT ALL ACTIVITY. Mandatory Bobby review."
   },
@@ -21,7 +21,85 @@
     "amount": -9285.01,
     "pct": -0.0841
   },
-  "positions": [],
+  "positions": [
+    {
+      "ticker": "JPM",
+      "qty": 76.0,
+      "side": "long",
+      "avg_entry": 306.73,
+      "current_price": 312.37,
+      "market_value": 23740.12,
+      "unrealized_pl": 428.64,
+      "unrealized_plpc": 0.01839,
+      "cost_basis": 23311.48
+    },
+    {
+      "ticker": "MDT",
+      "qty": 333.0,
+      "side": "long",
+      "avg_entry": 75.842613,
+      "current_price": 81.67,
+      "market_value": 27196.11,
+      "unrealized_pl": 1940.519871,
+      "unrealized_plpc": 0.07684,
+      "cost_basis": 25255.590129
+    },
+    {
+      "ticker": "MSFT",
+      "qty": 63.0,
+      "side": "long",
+      "avg_entry": 421.673333,
+      "current_price": 416.67,
+      "market_value": 26250.21,
+      "unrealized_pl": -315.209979,
+      "unrealized_plpc": -0.01187,
+      "cost_basis": 26565.419979
+    },
+    {
+      "ticker": "NVDA",
+      "qty": 124.0,
+      "side": "long",
+      "avg_entry": 207.39,
+      "current_price": 205.1,
+      "market_value": 25432.4,
+      "unrealized_pl": -283.96,
+      "unrealized_plpc": -0.01104,
+      "cost_basis": 25716.36
+    },
+    {
+      "ticker": "PLTR",
+      "qty": 364.0,
+      "side": "long",
+      "avg_entry": 136.767115,
+      "current_price": 135.53,
+      "market_value": 49332.92,
+      "unrealized_pl": -450.30986,
+      "unrealized_plpc": -0.00905,
+      "cost_basis": 49783.22986
+    },
+    {
+      "ticker": "TSLA",
+      "qty": 66.0,
+      "side": "long",
+      "avg_entry": 442.450455,
+      "current_price": 391.0,
+      "market_value": 25806.0,
+      "unrealized_pl": -3395.73003,
+      "unrealized_plpc": -0.11629,
+      "cost_basis": 29201.73003
+    },
+    {
+      "ticker": "XLE",
+      "qty": 415.0,
+      "side": "long",
+      "avg_entry": 56.408675,
+      "current_price": 57.67,
+      "market_value": 23933.05,
+      "unrealized_pl": 523.449875,
+      "unrealized_plpc": 0.02236,
+      "cost_basis": 23409.600125
+    }
+  ],
   "todays_trades": [],
   "strategy_performance": {
     "small_cap_catalyst": {
@@ -66,7 +144,7 @@
   },
   "circuit_breaker": {
     "status": "red",
-    "daily_triggered": true,
+    "daily_triggered": false,
     "weekly_triggered": true,
     "halt_new_entries": true,
     "halt_all_activity": true,
