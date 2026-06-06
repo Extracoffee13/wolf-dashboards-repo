@@ -1,25 +1,25 @@
 {
-  "last_updated": "2026-06-06T04:17:50.720979",
+  "last_updated": "2026-06-06T04:22:53.134192",
   "update_interval_seconds": 300,
   "account": {
     "portfolio_value": 101145.5,
     "cash": -100545.31,
     "buying_power": 141908.23,
     "equity": 101145.5,
-    "last_equity": 108023.76,
+    "last_equity": 101145.5,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -6878.26,
-    "pct": -0.0637,
-    "circuit_breaker_status": "yellow",
-    "circuit_breaker_message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -6.4% (limit -3%). No new entries."
+    "amount": 0.0,
+    "pct": 0.0,
+    "circuit_breaker_status": "red",
+    "circuit_breaker_message": "WEEKLY CIRCUIT BREAKER TRIGGERED \u2014 -8.4% (limit -7%). HALT ALL ACTIVITY. Mandatory Bobby review."
   },
   "weekly_pnl": {
-    "amount": -2406.75,
-    "pct": -0.0204
+    "amount": -9285.01,
+    "pct": -0.0841
   },
   "positions": [
     {
@@ -269,12 +269,12 @@
     }
   },
   "circuit_breaker": {
-    "status": "yellow",
-    "daily_triggered": true,
-    "weekly_triggered": false,
+    "status": "red",
+    "daily_triggered": false,
+    "weekly_triggered": true,
     "halt_new_entries": true,
-    "halt_all_activity": false,
-    "message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -6.4% (limit -3%). No new entries.",
+    "halt_all_activity": true,
+    "message": "WEEKLY CIRCUIT BREAKER TRIGGERED \u2014 -8.4% (limit -7%). HALT ALL ACTIVITY. Mandatory Bobby review.",
     "halt_reason": "WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13).",
     "halt_until": "post-rebalance"
   },
