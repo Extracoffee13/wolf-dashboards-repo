@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-05T23:59:49.358935",
+  "last_updated": "2026-06-06T00:04:51.656308",
   "update_interval_seconds": 300,
   "account": {
     "portfolio_value": 101145.5,
@@ -315,9 +315,9 @@
   "wolf_capabilities": {
     "capability_score": 51,
     "score_max": 100,
-    "day_on_mission": 59,
+    "day_on_mission": 60,
     "mission_start": "2026-04-08",
-    "streak_days": 59,
+    "streak_days": 60,
     "totals": {
       "scripts": 58,
       "core_modules": 14,
@@ -404,57 +404,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-06-06 00:00:10",
-    "last_task": "Crypto sweep",
-    "count": 3,
-    "signals": [
-      {
-        "ticker": "LINK/USD",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 7,
-        "entry": 12.165,
-        "stop": 12.553599243857143,
-        "target": 11.387801512285714,
-        "symbol": "LINK/USD",
-        "price": 12.165,
-        "rsi": 25.5,
-        "rvol": 3.72,
-        "atr": 0.26,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "AAVE/USD",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 7,
-        "entry": 160.725,
-        "stop": 166.4946406544464,
-        "target": 149.18571869110713,
-        "symbol": "AAVE/USD",
-        "price": 160.725,
-        "rsi": 25.3,
-        "rvol": 12.44,
-        "atr": 3.85,
-        "risk_reward": 2.0
-      },
-      {
-        "ticker": "ETH/USD",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 6,
-        "entry": 3051.86,
-        "stop": 3159.697213265311,
-        "target": 2836.185573469379,
-        "symbol": "ETH/USD",
-        "price": 3051.86,
-        "rsi": 32.3,
-        "rvol": 2.12,
-        "atr": 71.89,
-        "risk_reward": 2.0
-      }
-    ]
   }
 }
