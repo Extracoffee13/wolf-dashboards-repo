@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was agentskills-mcp
+lesson: The MCP skills portability layer is converging rapidly — three independent projects (agentskills-mcp, SkillKit, skillport) shipped within weeks of each other solving the same cross-agent skill distribution problem; evaluate now before the field consolidates around a standard the team didn't choose.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
