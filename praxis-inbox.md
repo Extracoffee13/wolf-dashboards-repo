@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was claude-agent-sdk (Anthropic official, released June 6 2026)
+lesson: The skill/MCP boundary is collapsing — skill-to-mcp and agentskills-mcp treat Skills as first-class MCP artifacts, and Anthropic's own SDK formalises in-process MCP servers; new capabilities now deploy in a single pip/npm install rather than custom wiring
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
