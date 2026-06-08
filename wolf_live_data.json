@@ -404,5 +404,149 @@
         }
       ]
     }
+  },
+  "daily_summary": {
+    "date": "2026-06-08",
+    "account": {
+      "portfolio_value": 102335.8,
+      "cash": -100545.31,
+      "buying_power": 144326.57,
+      "positions": 7,
+      "todays_trades": 0,
+      "daily_pnl_amount": 1190.3,
+      "daily_pnl_pct": 0.0118,
+      "circuit_breaker": "red"
+    },
+    "log": {
+      "task_fires": {
+        "wolf-crypto-247": 3,
+        "wolf-market-open-exec": 1,
+        "wolf-midday-rescan": 1,
+        "wolf-gate-status": 1,
+        "wolf-daily-summary": 1
+      },
+      "errors": 1
+    },
+    "rejected": {
+      "count": 15,
+      "reasons": {
+        "R:R 1.3 < 1.5": 1,
+        "R:R 1.1 < 1.5": 1,
+        "halt_new_entries=true in wolf_live_data.json": 8,
+        "R:R 1.2 < 1.5": 2,
+        "R:R 0.9 < 1.5": 1,
+        "R:R 0.2 < 1.5": 2
+      },
+      "recent": [
+        {
+          "ticker": "SQQQ",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-08T13:30:47Z",
+          "risk_reward": 2.3,
+          "confidence": 6
+        },
+        {
+          "ticker": "TSLA",
+          "strategy": "Breakdown",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-08T13:30:47Z",
+          "risk_reward": 2.0,
+          "confidence": 5
+        },
+        {
+          "ticker": "AMD",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-08T13:30:47Z",
+          "risk_reward": 2.0,
+          "confidence": 5
+        },
+        {
+          "ticker": "ABBV",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-08T13:30:47Z",
+          "risk_reward": 2.0,
+          "confidence": 5
+        },
+        {
+          "ticker": "QQQ",
+          "strategy": "Overbought Fade",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-08T13:30:47Z",
+          "risk_reward": 2.3,
+          "confidence": 5
+        },
+        {
+          "ticker": "MA",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 1.2 < 1.5",
+          "rejected_at": "2026-06-08T11:30:34.489975",
+          "risk_reward": 1.2,
+          "confidence": 5
+        },
+        {
+          "ticker": "OXY",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 0.9 < 1.5",
+          "rejected_at": "2026-06-08T11:30:34.490027",
+          "risk_reward": 0.9,
+          "confidence": 5
+        },
+        {
+          "ticker": "XLF",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 0.2 < 1.5",
+          "rejected_at": "2026-06-08T11:30:34.490041",
+          "risk_reward": 0.2,
+          "confidence": 5
+        },
+        {
+          "ticker": "GOOGL",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 0.2 < 1.5",
+          "rejected_at": "2026-06-08T11:30:34.490053",
+          "risk_reward": 0.2,
+          "confidence": 4
+        },
+        {
+          "ticker": "JNJ",
+          "strategy": "Overbought Fade",
+          "reason": "R:R 1.2 < 1.5",
+          "rejected_at": "2026-06-08T11:30:34.490064",
+          "risk_reward": 1.2,
+          "confidence": 4
+        }
+      ]
+    },
+    "committee": {
+      "runs": 0,
+      "tickers_voted": 0,
+      "verdicts": {}
+    }
+  },
+  "daily_summary_updated_at": "2026-06-08T16:50:05.897883",
+  "today_signals": {
+    "as_of": "2026-06-08 16:50:06",
+    "last_task": "EOD recap",
+    "count": 1,
+    "signals": [
+      {
+        "ticker": "AAVE/USD",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 4,
+        "entry": 158.9785,
+        "stop": 163.75032142857143,
+        "target": 149.43485714285714,
+        "symbol": "AAVE/USD",
+        "price": 158.9785,
+        "rsi": 43.3,
+        "rvol": 1.47,
+        "atr": 3.18,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
