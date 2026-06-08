@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-06-08T16:46:00.496617",
+  "last_updated": "2026-06-08T16:51:02.760686",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 102335.8,
+    "portfolio_value": 102334.32,
     "cash": -100545.31,
-    "buying_power": 144326.57,
-    "equity": 102335.8,
+    "buying_power": 144319.46,
+    "equity": 102334.32,
     "last_equity": 101145.5,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 1190.3,
+    "amount": 1188.82,
     "pct": 0.0118,
     "circuit_breaker_status": "red",
     "circuit_breaker_message": "WEEKLY CIRCUIT BREAKER TRIGGERED \u2014 -10.9% (limit -7%). HALT ALL ACTIVITY. Mandatory Bobby review."
@@ -27,10 +27,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 310.78,
-      "market_value": 23619.28,
-      "unrealized_pl": 307.8,
-      "unrealized_plpc": 0.0132,
+      "current_price": 311.11,
+      "market_value": 23644.36,
+      "unrealized_pl": 332.88,
+      "unrealized_plpc": 0.01428,
       "cost_basis": 23311.48
     },
     {
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 410.9,
-      "market_value": 25886.7,
-      "unrealized_pl": -678.719979,
-      "unrealized_plpc": -0.02555,
+      "current_price": 410.71,
+      "market_value": 25874.73,
+      "unrealized_pl": -690.689979,
+      "unrealized_plpc": -0.026,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 208.0501,
-      "market_value": 25798.2124,
-      "unrealized_pl": 81.8524,
-      "unrealized_plpc": 0.00318,
+      "current_price": 208.0698,
+      "market_value": 25800.6552,
+      "unrealized_pl": 84.2952,
+      "unrealized_plpc": 0.00328,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 136.16,
-      "market_value": 49562.24,
-      "unrealized_pl": -220.98986,
-      "unrealized_plpc": -0.00444,
+      "current_price": 136.11,
+      "market_value": 49544.04,
+      "unrealized_pl": -239.18986,
+      "unrealized_plpc": -0.0048,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 408.32,
-      "market_value": 26949.12,
-      "unrealized_pl": -2252.61003,
-      "unrealized_plpc": -0.07714,
+      "current_price": 408.376,
+      "market_value": 26952.816,
+      "unrealized_pl": -2248.91403,
+      "unrealized_plpc": -0.07701,
       "cost_basis": 29201.73003
     },
     {
@@ -93,10 +93,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 58.31,
-      "market_value": 24198.65,
-      "unrealized_pl": 789.049875,
-      "unrealized_plpc": 0.03371,
+      "current_price": 58.3039,
+      "market_value": 24196.1185,
+      "unrealized_pl": 786.518375,
+      "unrealized_plpc": 0.0336,
       "cost_basis": 23409.600125
     }
   ],
@@ -404,149 +404,5 @@
         }
       ]
     }
-  },
-  "daily_summary": {
-    "date": "2026-06-08",
-    "account": {
-      "portfolio_value": 102335.8,
-      "cash": -100545.31,
-      "buying_power": 144326.57,
-      "positions": 7,
-      "todays_trades": 0,
-      "daily_pnl_amount": 1190.3,
-      "daily_pnl_pct": 0.0118,
-      "circuit_breaker": "red"
-    },
-    "log": {
-      "task_fires": {
-        "wolf-crypto-247": 3,
-        "wolf-market-open-exec": 1,
-        "wolf-midday-rescan": 1,
-        "wolf-gate-status": 1,
-        "wolf-daily-summary": 1
-      },
-      "errors": 1
-    },
-    "rejected": {
-      "count": 15,
-      "reasons": {
-        "R:R 1.3 < 1.5": 1,
-        "R:R 1.1 < 1.5": 1,
-        "halt_new_entries=true in wolf_live_data.json": 8,
-        "R:R 1.2 < 1.5": 2,
-        "R:R 0.9 < 1.5": 1,
-        "R:R 0.2 < 1.5": 2
-      },
-      "recent": [
-        {
-          "ticker": "SQQQ",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-06-08T13:30:47Z",
-          "risk_reward": 2.3,
-          "confidence": 6
-        },
-        {
-          "ticker": "TSLA",
-          "strategy": "Breakdown",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-06-08T13:30:47Z",
-          "risk_reward": 2.0,
-          "confidence": 5
-        },
-        {
-          "ticker": "AMD",
-          "strategy": "Momentum Breakout",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-06-08T13:30:47Z",
-          "risk_reward": 2.0,
-          "confidence": 5
-        },
-        {
-          "ticker": "ABBV",
-          "strategy": "Momentum Breakout",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-06-08T13:30:47Z",
-          "risk_reward": 2.0,
-          "confidence": 5
-        },
-        {
-          "ticker": "QQQ",
-          "strategy": "Overbought Fade",
-          "reason": "halt_new_entries=true in wolf_live_data.json",
-          "rejected_at": "2026-06-08T13:30:47Z",
-          "risk_reward": 2.3,
-          "confidence": 5
-        },
-        {
-          "ticker": "MA",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 1.2 < 1.5",
-          "rejected_at": "2026-06-08T11:30:34.489975",
-          "risk_reward": 1.2,
-          "confidence": 5
-        },
-        {
-          "ticker": "OXY",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 0.9 < 1.5",
-          "rejected_at": "2026-06-08T11:30:34.490027",
-          "risk_reward": 0.9,
-          "confidence": 5
-        },
-        {
-          "ticker": "XLF",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 0.2 < 1.5",
-          "rejected_at": "2026-06-08T11:30:34.490041",
-          "risk_reward": 0.2,
-          "confidence": 5
-        },
-        {
-          "ticker": "GOOGL",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 0.2 < 1.5",
-          "rejected_at": "2026-06-08T11:30:34.490053",
-          "risk_reward": 0.2,
-          "confidence": 4
-        },
-        {
-          "ticker": "JNJ",
-          "strategy": "Overbought Fade",
-          "reason": "R:R 1.2 < 1.5",
-          "rejected_at": "2026-06-08T11:30:34.490064",
-          "risk_reward": 1.2,
-          "confidence": 4
-        }
-      ]
-    },
-    "committee": {
-      "runs": 0,
-      "tickers_voted": 0,
-      "verdicts": {}
-    }
-  },
-  "daily_summary_updated_at": "2026-06-08T16:50:05.897883",
-  "today_signals": {
-    "as_of": "2026-06-08 16:50:06",
-    "last_task": "EOD recap",
-    "count": 1,
-    "signals": [
-      {
-        "ticker": "AAVE/USD",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 4,
-        "entry": 158.9785,
-        "stop": 163.75032142857143,
-        "target": 149.43485714285714,
-        "symbol": "AAVE/USD",
-        "price": 158.9785,
-        "rsi": 43.3,
-        "rvol": 1.47,
-        "atr": 3.18,
-        "risk_reward": 2.0
-      }
-    ]
   }
 }
