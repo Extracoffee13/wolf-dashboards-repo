@@ -404,5 +404,87 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-06-08 11:30:34",
+    "last_task": "Midday rescan",
+    "count": 5,
+    "signals": [
+      {
+        "ticker": "SPY",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 8,
+        "entry": 690.62,
+        "stop": 688.9662500000001,
+        "target": 693.9275,
+        "symbol": "SPY",
+        "price": 690.62,
+        "rsi": 78.3,
+        "rvol": 5.14,
+        "atr": 1.1,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "GS",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 7,
+        "entry": 974.965,
+        "stop": 970.1017857142857,
+        "target": 984.6914285714286,
+        "symbol": "GS",
+        "price": 974.965,
+        "rsi": 67.7,
+        "rvol": 2.76,
+        "atr": 3.24,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "TSLA",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 6,
+        "entry": 442.88,
+        "stop": 440.075,
+        "target": 448.48999999999995,
+        "symbol": "TSLA",
+        "price": 442.88,
+        "rsi": 71.4,
+        "rvol": 1.43,
+        "atr": 1.87,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "GLD",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 6,
+        "entry": 423.17,
+        "stop": 424.61,
+        "target": 420.28999999999996,
+        "symbol": "GLD",
+        "price": 423.17,
+        "rsi": 33.9,
+        "rvol": 2.23,
+        "atr": 0.96,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "SLV",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 6,
+        "entry": 84.555,
+        "stop": 83.60678571428572,
+        "target": 86.45142857142858,
+        "symbol": "SLV",
+        "price": 84.555,
+        "rsi": 71.9,
+        "rvol": 1.49,
+        "atr": 0.63,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
