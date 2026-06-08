@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: praxis-daily-review
+decision: Capture velocity is minimal — 1 packet in 24h, all from AP; the 38-day review gap confirms the cadence was broken and is now being re-established.
+outcome: Only AP is actively contributing; all other agents (Vector, Forge, Signal, Cipher, Spectra, Oracle, Nexus, Ledger, Atlas, Sentinel, Venture, Equity, Alpha, WOLF, Keystone, Cornerstone, Charlie, Architect) are silent.
+lesson: Run the daily review every 24h without exception — gaps longer than 2 days make drift detection meaningless and lose the compounding value of the capture log.
+tags: praxis,meta,review,daily
+confidence: 0.7
+~~~
