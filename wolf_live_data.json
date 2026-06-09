@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-09T03:02:55.632770",
+  "last_updated": "2026-06-09T03:08:56.236507",
   "update_interval_seconds": 300,
   "account": {
     "portfolio_value": 102890.87,
@@ -12,94 +12,16 @@
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 1745.37,
-    "pct": 0.0173,
-    "circuit_breaker_status": "red",
-    "circuit_breaker_message": "WEEKLY CIRCUIT BREAKER TRIGGERED \u2014 -10.9% (limit -7%). HALT ALL ACTIVITY. Mandatory Bobby review."
+    "amount": 0.0,
+    "pct": 0.0,
+    "circuit_breaker_status": "green",
+    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.0% (buf: 3.0%) | Weekly: +0.0% (buf: 7.0%)"
   },
   "weekly_pnl": {
-    "amount": -12022.19,
-    "pct": -0.1089
+    "amount": 0.0,
+    "pct": 0.0
   },
-  "positions": [
-    {
-      "ticker": "JPM",
-      "qty": 76.0,
-      "side": "long",
-      "avg_entry": 306.73,
-      "current_price": 311.74,
-      "market_value": 23692.24,
-      "unrealized_pl": 380.76,
-      "unrealized_plpc": 0.01633,
-      "cost_basis": 23311.48
-    },
-    {
-      "ticker": "MDT",
-      "qty": 333.0,
-      "side": "long",
-      "avg_entry": 75.842613,
-      "current_price": 80.69,
-      "market_value": 26869.77,
-      "unrealized_pl": 1614.179871,
-      "unrealized_plpc": 0.06391,
-      "cost_basis": 25255.590129
-    },
-    {
-      "ticker": "MSFT",
-      "qty": 63.0,
-      "side": "long",
-      "avg_entry": 421.673333,
-      "current_price": 411.9,
-      "market_value": 25949.7,
-      "unrealized_pl": -615.719979,
-      "unrealized_plpc": -0.02318,
-      "cost_basis": 26565.419979
-    },
-    {
-      "ticker": "NVDA",
-      "qty": 124.0,
-      "side": "long",
-      "avg_entry": 207.39,
-      "current_price": 209.99,
-      "market_value": 26038.76,
-      "unrealized_pl": 322.4,
-      "unrealized_plpc": 0.01254,
-      "cost_basis": 25716.36
-    },
-    {
-      "ticker": "PLTR",
-      "qty": 364.0,
-      "side": "long",
-      "avg_entry": 136.767115,
-      "current_price": 136.59,
-      "market_value": 49718.76,
-      "unrealized_pl": -64.46986,
-      "unrealized_plpc": -0.0013,
-      "cost_basis": 49783.22986
-    },
-    {
-      "ticker": "TSLA",
-      "qty": 66.0,
-      "side": "long",
-      "avg_entry": 442.450455,
-      "current_price": 411.0,
-      "market_value": 27126.0,
-      "unrealized_pl": -2075.73003,
-      "unrealized_plpc": -0.07108,
-      "cost_basis": 29201.73003
-    },
-    {
-      "ticker": "XLE",
-      "qty": 415.0,
-      "side": "long",
-      "avg_entry": 56.408675,
-      "current_price": 57.93,
-      "market_value": 24040.95,
-      "unrealized_pl": 631.349875,
-      "unrealized_plpc": 0.02697,
-      "cost_basis": 23409.600125
-    }
-  ],
+  "positions": [],
   "todays_trades": [],
   "strategy_performance": {
     "small_cap_catalyst": {
@@ -143,12 +65,12 @@
     }
   },
   "circuit_breaker": {
-    "status": "red",
+    "status": "green",
     "daily_triggered": false,
-    "weekly_triggered": true,
-    "halt_new_entries": true,
-    "halt_all_activity": true,
-    "message": "WEEKLY CIRCUIT BREAKER TRIGGERED \u2014 -10.9% (limit -7%). HALT ALL ACTIVITY. Mandatory Bobby review."
+    "weekly_triggered": false,
+    "halt_new_entries": false,
+    "halt_all_activity": false,
+    "message": "CLEAR \u2014 Daily: +0.0% (buf: 3.0%) | Weekly: +0.0% (buf: 7.0%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
