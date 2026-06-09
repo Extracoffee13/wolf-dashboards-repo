@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-06-08T23:59:49.588338",
+  "last_updated": "2026-06-09T00:04:51.800839",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 102940.42,
+    "portfolio_value": 102926.32,
     "cash": -100545.31,
-    "buying_power": 145986.24,
-    "equity": 102940.42,
+    "buying_power": 145959.96,
+    "equity": 102926.32,
     "last_equity": 101145.5,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 1794.92,
-    "pct": 0.0177,
+    "amount": 1780.82,
+    "pct": 0.0176,
     "circuit_breaker_status": "red",
     "circuit_breaker_message": "WEEKLY CIRCUIT BREAKER TRIGGERED \u2014 -10.9% (limit -7%). HALT ALL ACTIVITY. Mandatory Bobby review."
   },
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 209.3,
-      "market_value": 25953.2,
-      "unrealized_pl": 236.84,
-      "unrealized_plpc": 0.00921,
+      "current_price": 209.29,
+      "market_value": 25951.96,
+      "unrealized_pl": 235.6,
+      "unrealized_plpc": 0.00916,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 136.75,
-      "market_value": 49777.0,
-      "unrealized_pl": -6.22986,
-      "unrealized_plpc": -0.00013,
+      "current_price": 136.76,
+      "market_value": 49780.64,
+      "unrealized_pl": -2.58986,
+      "unrealized_plpc": -5e-05,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 408.95,
-      "market_value": 26990.7,
-      "unrealized_pl": -2211.03003,
-      "unrealized_plpc": -0.07572,
+      "current_price": 408.7,
+      "market_value": 26974.2,
+      "unrealized_pl": -2227.53003,
+      "unrealized_plpc": -0.07628,
       "cost_basis": 29201.73003
     },
     {
@@ -315,9 +315,9 @@
   "wolf_capabilities": {
     "capability_score": 51,
     "score_max": 100,
-    "day_on_mission": 62,
+    "day_on_mission": 63,
     "mission_start": "2026-04-08",
-    "streak_days": 62,
+    "streak_days": 63,
     "totals": {
       "scripts": 58,
       "core_modules": 14,
@@ -404,27 +404,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-06-09 00:00:09",
-    "last_task": "Crypto sweep",
-    "count": 1,
-    "signals": [
-      {
-        "ticker": "BCH/USD",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 6,
-        "entry": 574.4,
-        "stop": 585.2363649718571,
-        "target": 552.7272700562858,
-        "symbol": "BCH/USD",
-        "price": 574.4,
-        "rsi": 28.7,
-        "rvol": 1.92,
-        "atr": 7.22,
-        "risk_reward": 2.0
-      }
-    ]
   }
 }
