@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-06-09T09:30:00.012336",
+  "last_updated": "2026-06-09T09:35:04.323701",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 102294.47,
-    "cash": -100545.31,
-    "buying_power": 120258.04,
-    "equity": 102294.47,
+    "portfolio_value": 102983.44,
+    "cash": -124401.28,
+    "buying_power": 117090.65,
+    "equity": 102983.44,
     "last_equity": 102652.53,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -358.06,
-    "pct": -0.0035,
+    "amount": 330.91,
+    "pct": 0.0032,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -23,14 +23,25 @@
   },
   "positions": [
     {
+      "ticker": "ACN",
+      "qty": 137.0,
+      "side": "long",
+      "avg_entry": 174.131168,
+      "current_price": 174.035,
+      "market_value": 23842.795,
+      "unrealized_pl": -13.175016,
+      "unrealized_plpc": -0.00055,
+      "cost_basis": 23855.970016
+    },
+    {
       "ticker": "JPM",
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 313.58,
-      "market_value": 23832.08,
-      "unrealized_pl": 520.6,
-      "unrealized_plpc": 0.02233,
+      "current_price": 314.36,
+      "market_value": 23891.36,
+      "unrealized_pl": 579.88,
+      "unrealized_plpc": 0.02488,
       "cost_basis": 23311.48
     },
     {
@@ -38,10 +49,10 @@
       "qty": 333.0,
       "side": "long",
       "avg_entry": 75.842613,
-      "current_price": 80.48,
-      "market_value": 26799.84,
-      "unrealized_pl": 1544.249871,
-      "unrealized_plpc": 0.06114,
+      "current_price": 80.885,
+      "market_value": 26934.705,
+      "unrealized_pl": 1679.114871,
+      "unrealized_plpc": 0.06648,
       "cost_basis": 25255.590129
     },
     {
@@ -49,10 +60,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 409.01,
-      "market_value": 25767.63,
-      "unrealized_pl": -797.789979,
-      "unrealized_plpc": -0.03003,
+      "current_price": 409.025,
+      "market_value": 25768.575,
+      "unrealized_pl": -796.844979,
+      "unrealized_plpc": -0.03,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +71,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 210.67,
-      "market_value": 26123.08,
-      "unrealized_pl": 406.72,
-      "unrealized_plpc": 0.01582,
+      "current_price": 209.69,
+      "market_value": 26001.56,
+      "unrealized_pl": 285.2,
+      "unrealized_plpc": 0.01109,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +82,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 134.8,
-      "market_value": 49067.2,
-      "unrealized_pl": -716.02986,
-      "unrealized_plpc": -0.01438,
+      "current_price": 135.75,
+      "market_value": 49413.0,
+      "unrealized_pl": -370.22986,
+      "unrealized_plpc": -0.00744,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +93,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 411.0,
-      "market_value": 27126.0,
-      "unrealized_pl": -2075.73003,
-      "unrealized_plpc": -0.07108,
+      "current_price": 416.128,
+      "market_value": 27464.448,
+      "unrealized_pl": -1737.28203,
+      "unrealized_plpc": -0.05949,
       "cost_basis": 29201.73003
     },
     {
@@ -93,14 +104,25 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 58.13,
-      "market_value": 24123.95,
-      "unrealized_pl": 714.349875,
-      "unrealized_plpc": 0.03052,
+      "current_price": 57.94,
+      "market_value": 24045.1,
+      "unrealized_pl": 635.499875,
+      "unrealized_plpc": 0.02715,
       "cost_basis": 23409.600125
     }
   ],
-  "todays_trades": [],
+  "todays_trades": [
+    {
+      "id": "ded66076-d529-4b8c-9869-f5a0b15a00e1",
+      "ticker": "ACN",
+      "side": "buy",
+      "qty": 137.0,
+      "filled_price": 174.131168,
+      "status": "filled",
+      "created_at": "2026-06-09T11:05:11.60742Z",
+      "order_class": ""
+    }
+  ],
   "strategy_performance": {
     "small_cap_catalyst": {
       "name": "Small Cap Catalyst",
@@ -404,11 +426,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-06-09 09:30:57",
-    "last_task": "Market open scan",
-    "count": 0,
-    "signals": []
   }
 }
