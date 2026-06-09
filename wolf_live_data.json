@@ -426,5 +426,27 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-06-09 12:00:19",
+    "last_task": "Crypto sweep",
+    "count": 1,
+    "signals": [
+      {
+        "ticker": "BCH/USD",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 6,
+        "entry": 574.4,
+        "stop": 585.2363649718571,
+        "target": 552.7272700562858,
+        "symbol": "BCH/USD",
+        "price": 574.4,
+        "rsi": 28.7,
+        "rvol": 1.92,
+        "atr": 7.22,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
