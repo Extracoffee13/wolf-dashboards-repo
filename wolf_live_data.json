@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-09T03:06:25.919947",
+  "last_updated": "2026-06-09T03:11:27.947452",
   "update_interval_seconds": 300,
   "account": {
     "portfolio_value": 102967.09,
@@ -12,94 +12,16 @@
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 1821.59,
-    "pct": 0.018,
-    "circuit_breaker_status": "red",
-    "circuit_breaker_message": "WEEKLY CIRCUIT BREAKER TRIGGERED \u2014 -10.9% (limit -7%). HALT ALL ACTIVITY. Mandatory Bobby review."
+    "amount": 0.0,
+    "pct": 0.0,
+    "circuit_breaker_status": "yellow",
+    "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
   "weekly_pnl": {
-    "amount": -12022.19,
-    "pct": -0.1089
+    "amount": 0.0,
+    "pct": 0.0
   },
-  "positions": [
-    {
-      "ticker": "JPM",
-      "qty": 76.0,
-      "side": "long",
-      "avg_entry": 306.73,
-      "current_price": 311.74,
-      "market_value": 23692.24,
-      "unrealized_pl": 380.76,
-      "unrealized_plpc": 0.01633,
-      "cost_basis": 23311.48
-    },
-    {
-      "ticker": "MDT",
-      "qty": 333.0,
-      "side": "long",
-      "avg_entry": 75.842613,
-      "current_price": 80.69,
-      "market_value": 26869.77,
-      "unrealized_pl": 1614.179871,
-      "unrealized_plpc": 0.06391,
-      "cost_basis": 25255.590129
-    },
-    {
-      "ticker": "MSFT",
-      "qty": 63.0,
-      "side": "long",
-      "avg_entry": 421.673333,
-      "current_price": 411.69,
-      "market_value": 25936.47,
-      "unrealized_pl": -628.949979,
-      "unrealized_plpc": -0.02368,
-      "cost_basis": 26565.419979
-    },
-    {
-      "ticker": "NVDA",
-      "qty": 124.0,
-      "side": "long",
-      "avg_entry": 207.39,
-      "current_price": 210.23,
-      "market_value": 26068.52,
-      "unrealized_pl": 352.16,
-      "unrealized_plpc": 0.01369,
-      "cost_basis": 25716.36
-    },
-    {
-      "ticker": "PLTR",
-      "qty": 364.0,
-      "side": "long",
-      "avg_entry": 136.767115,
-      "current_price": 136.69,
-      "market_value": 49755.16,
-      "unrealized_pl": -28.06986,
-      "unrealized_plpc": -0.00056,
-      "cost_basis": 49783.22986
-    },
-    {
-      "ticker": "TSLA",
-      "qty": 66.0,
-      "side": "long",
-      "avg_entry": 442.450455,
-      "current_price": 411.29,
-      "market_value": 27145.14,
-      "unrealized_pl": -2056.59003,
-      "unrealized_plpc": -0.07043,
-      "cost_basis": 29201.73003
-    },
-    {
-      "ticker": "XLE",
-      "qty": 415.0,
-      "side": "long",
-      "avg_entry": 56.408675,
-      "current_price": 57.94,
-      "market_value": 24045.1,
-      "unrealized_pl": 635.499875,
-      "unrealized_plpc": 0.02715,
-      "cost_basis": 23409.600125
-    }
-  ],
+  "positions": [],
   "todays_trades": [],
   "strategy_performance": {
     "small_cap_catalyst": {
@@ -269,12 +191,12 @@
     }
   },
   "circuit_breaker": {
-    "status": "red",
+    "status": "yellow",
     "daily_triggered": false,
-    "weekly_triggered": true,
+    "weekly_triggered": false,
     "halt_new_entries": true,
-    "halt_all_activity": true,
-    "message": "WEEKLY CIRCUIT BREAKER TRIGGERED \u2014 -10.9% (limit -7%). HALT ALL ACTIVITY. Mandatory Bobby review.",
+    "halt_all_activity": false,
+    "message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13).",
     "halt_reason": "WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13).",
     "halt_until": "post-rebalance"
   },
