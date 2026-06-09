@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Claude Managed Agents Self-Hosted Sandboxes + MCP Tunnels
+lesson: The highest-value new skills are emerging from Anthropic's own platform layer (managed agents, enterprise sandboxing, legal connectors) rather than third-party npm/pypi packages — watch anthropic.com/news and platform.claude.com release notes first on every sweep before broader ecosystem searches.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
