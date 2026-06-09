@@ -426,5 +426,146 @@
         }
       ]
     }
+  },
+  "daily_summary": {
+    "date": "2026-06-09",
+    "account": {
+      "portfolio_value": 99918.2,
+      "cash": -124401.28,
+      "buying_power": 109514.97,
+      "positions": 8,
+      "todays_trades": 1,
+      "daily_pnl_amount": -2734.33,
+      "daily_pnl_pct": -0.0266,
+      "circuit_breaker": "yellow"
+    },
+    "log": {
+      "task_fires": {
+        "wolf-crypto-247": 3,
+        "wolf-market-open-exec": 1,
+        "wolf-midday-rescan": 1,
+        "wolf-gate-status": 1,
+        "wolf-daily-summary": 1
+      },
+      "errors": 1
+    },
+    "rejected": {
+      "count": 10,
+      "reasons": {
+        "halt_new_entries=true in wolf_live_data.json": 10
+      },
+      "recent": [
+        {
+          "ticker": "SNOW",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-09T13:30:56Z",
+          "risk_reward": 2.9,
+          "confidence": 7
+        },
+        {
+          "ticker": "BAC",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-09T13:30:56Z",
+          "risk_reward": 2.0,
+          "confidence": 7
+        },
+        {
+          "ticker": "GOOGL",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-09T13:30:56Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "AMD",
+          "strategy": "Breakdown",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-09T13:30:56Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "CRM",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-09T13:30:56Z",
+          "risk_reward": 2.5,
+          "confidence": 6
+        },
+        {
+          "ticker": "NFLX",
+          "strategy": "Breakdown",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-09T13:30:56Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "PLTR",
+          "strategy": "Breakdown",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-09T13:30:56Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "MA",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-09T13:30:56Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "ABBV",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-09T13:30:56Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "TLT",
+          "strategy": "Breakdown",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-09T13:30:56Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        }
+      ]
+    },
+    "committee": {
+      "runs": 2,
+      "tickers_voted": 3,
+      "verdicts": {
+        "bullish": 3
+      }
+    }
+  },
+  "daily_summary_updated_at": "2026-06-09T16:50:01.078793",
+  "today_signals": {
+    "as_of": "2026-06-09 16:50:01",
+    "last_task": "EOD recap",
+    "count": 1,
+    "signals": [
+      {
+        "ticker": "BCH/USD",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 6,
+        "entry": 574.4,
+        "stop": 585.2363649718571,
+        "target": 552.7272700562858,
+        "symbol": "BCH/USD",
+        "price": 574.4,
+        "rsi": 28.7,
+        "rvol": 1.92,
+        "atr": 7.22,
+        "risk_reward": 2.0
+      }
+    ]
   }
 }
