@@ -1,27 +1,105 @@
 {
-  "last_updated": "2026-06-09T03:11:27.947452",
+  "last_updated": "2026-06-09T03:16:39.528425",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 102967.09,
+    "portfolio_value": 102830.99,
     "cash": -100545.31,
-    "buying_power": 145937.37,
-    "equity": 102967.09,
+    "buying_power": 145572.13,
+    "equity": 102830.99,
     "last_equity": 101145.5,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 0.0,
-    "pct": 0.0,
-    "circuit_breaker_status": "yellow",
-    "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
+    "amount": 1685.49,
+    "pct": 0.0167,
+    "circuit_breaker_status": "red",
+    "circuit_breaker_message": "WEEKLY CIRCUIT BREAKER TRIGGERED \u2014 -10.9% (limit -7%). HALT ALL ACTIVITY. Mandatory Bobby review."
   },
   "weekly_pnl": {
-    "amount": 0.0,
-    "pct": 0.0
+    "amount": -12022.19,
+    "pct": -0.1089
   },
-  "positions": [],
+  "positions": [
+    {
+      "ticker": "JPM",
+      "qty": 76.0,
+      "side": "long",
+      "avg_entry": 306.73,
+      "current_price": 311.74,
+      "market_value": 23692.24,
+      "unrealized_pl": 380.76,
+      "unrealized_plpc": 0.01633,
+      "cost_basis": 23311.48
+    },
+    {
+      "ticker": "MDT",
+      "qty": 333.0,
+      "side": "long",
+      "avg_entry": 75.842613,
+      "current_price": 80.69,
+      "market_value": 26869.77,
+      "unrealized_pl": 1614.179871,
+      "unrealized_plpc": 0.06391,
+      "cost_basis": 25255.590129
+    },
+    {
+      "ticker": "MSFT",
+      "qty": 63.0,
+      "side": "long",
+      "avg_entry": 421.673333,
+      "current_price": 411.0,
+      "market_value": 25893.0,
+      "unrealized_pl": -672.419979,
+      "unrealized_plpc": -0.02531,
+      "cost_basis": 26565.419979
+    },
+    {
+      "ticker": "NVDA",
+      "qty": 124.0,
+      "side": "long",
+      "avg_entry": 207.39,
+      "current_price": 210.1,
+      "market_value": 26052.4,
+      "unrealized_pl": 336.04,
+      "unrealized_plpc": 0.01307,
+      "cost_basis": 25716.36
+    },
+    {
+      "ticker": "PLTR",
+      "qty": 364.0,
+      "side": "long",
+      "avg_entry": 136.767115,
+      "current_price": 136.5,
+      "market_value": 49686.0,
+      "unrealized_pl": -97.22986,
+      "unrealized_plpc": -0.00195,
+      "cost_basis": 49783.22986
+    },
+    {
+      "ticker": "TSLA",
+      "qty": 66.0,
+      "side": "long",
+      "avg_entry": 442.450455,
+      "current_price": 410.99,
+      "market_value": 27125.34,
+      "unrealized_pl": -2076.39003,
+      "unrealized_plpc": -0.07111,
+      "cost_basis": 29201.73003
+    },
+    {
+      "ticker": "XLE",
+      "qty": 415.0,
+      "side": "long",
+      "avg_entry": 56.408675,
+      "current_price": 57.97,
+      "market_value": 24057.55,
+      "unrealized_pl": 647.949875,
+      "unrealized_plpc": 0.02768,
+      "cost_basis": 23409.600125
+    }
+  ],
   "todays_trades": [],
   "strategy_performance": {
     "small_cap_catalyst": {
@@ -191,12 +269,12 @@
     }
   },
   "circuit_breaker": {
-    "status": "yellow",
+    "status": "red",
     "daily_triggered": false,
-    "weekly_triggered": false,
+    "weekly_triggered": true,
     "halt_new_entries": true,
-    "halt_all_activity": false,
-    "message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13).",
+    "halt_all_activity": true,
+    "message": "WEEKLY CIRCUIT BREAKER TRIGGERED \u2014 -10.9% (limit -7%). HALT ALL ACTIVITY. Mandatory Bobby review.",
     "halt_reason": "WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13).",
     "halt_until": "post-rebalance"
   },
