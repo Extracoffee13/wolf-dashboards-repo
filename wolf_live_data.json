@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-06-09T05:58:07.252045",
+  "last_updated": "2026-06-09T06:03:09.444642",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 102727.77,
+    "portfolio_value": 102751.91,
     "cash": -100545.31,
-    "buying_power": 145261.99,
-    "equity": 102727.77,
+    "buying_power": 145297.38,
+    "equity": 102751.91,
     "last_equity": 102652.53,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 75.24,
-    "pct": 0.0007,
+    "amount": 99.38,
+    "pct": 0.001,
     "circuit_breaker_status": "red",
     "circuit_breaker_message": "WEEKLY CIRCUIT BREAKER TRIGGERED \u2014 -9.4% (limit -7%). HALT ALL ACTIVITY. Mandatory Bobby review."
   },
@@ -49,10 +49,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 411.15,
-      "market_value": 25902.45,
-      "unrealized_pl": -662.969979,
-      "unrealized_plpc": -0.02496,
+      "current_price": 410.75,
+      "market_value": 25877.25,
+      "unrealized_pl": -688.169979,
+      "unrealized_plpc": -0.0259,
       "cost_basis": 26565.419979
     },
     {
@@ -60,10 +60,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 210.2004,
-      "market_value": 26064.8496,
-      "unrealized_pl": 348.4896,
-      "unrealized_plpc": 0.01355,
+      "current_price": 210.32,
+      "market_value": 26079.68,
+      "unrealized_pl": 363.32,
+      "unrealized_plpc": 0.01413,
       "cost_basis": 25716.36
     },
     {
@@ -71,10 +71,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 136.05,
-      "market_value": 49522.2,
-      "unrealized_pl": -261.02986,
-      "unrealized_plpc": -0.00524,
+      "current_price": 136.0,
+      "market_value": 49504.0,
+      "unrealized_pl": -279.22986,
+      "unrealized_plpc": -0.00561,
       "cost_basis": 49783.22986
     },
     {
@@ -82,10 +82,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 411.39,
-      "market_value": 27151.74,
-      "unrealized_pl": -2049.99003,
-      "unrealized_plpc": -0.0702,
+      "current_price": 412.0,
+      "market_value": 27192.0,
+      "unrealized_pl": -2009.73003,
+      "unrealized_plpc": -0.06882,
       "cost_basis": 29201.73003
     },
     {
@@ -93,10 +93,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 57.96,
-      "market_value": 24053.4,
-      "unrealized_pl": 643.799875,
-      "unrealized_plpc": 0.0275,
+      "current_price": 57.99,
+      "market_value": 24065.85,
+      "unrealized_pl": 656.249875,
+      "unrealized_plpc": 0.02803,
       "cost_basis": 23409.600125
     }
   ],
@@ -404,27 +404,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-06-09 06:00:10",
-    "last_task": "Crypto sweep",
-    "count": 1,
-    "signals": [
-      {
-        "ticker": "BCH/USD",
-        "direction": "SHORT",
-        "strategy": "Breakdown",
-        "confidence": 6,
-        "entry": 574.4,
-        "stop": 585.2363649718571,
-        "target": 552.7272700562858,
-        "symbol": "BCH/USD",
-        "price": 574.4,
-        "rsi": 28.7,
-        "rvol": 1.92,
-        "atr": 7.22,
-        "risk_reward": 2.0
-      }
-    ]
   }
 }
