@@ -1,172 +1,248 @@
 {
-  "_comment": "WOLF authoritative state. Mounted location both Cowork agents and Hermes can read/write. Replaces the chronic-regression ephemeral counter pattern. See /Atlas/wolf-audit-2026-05-28.md for the why.",
-  "_schema_version": 1,
-  "_location": "/Users/alfredpennyworth/Documents/Claude/Projects/Atlas/wolf/state.json",
-  "_writer_protocol": "Every WOLF agent run must: (1) READ this file, (2) compute new state from today's activity + prior state, (3) WRITE updated file atomically (write to .tmp, mv to final). Do NOT generate state from session memory.",
-  "mission": {
-    "started": "2026-04-08",
-    "calendar_day_today_iso": "2026-06-03",
-    "calendar_day_on_mission": 57,
-    "phase": "paper-trading-under-mandate",
-    "mandate_locked": "2026-05-13",
-    "next_reassess": "2026-06-05",
-    "kill_criterion": "2026-07-23",
-    "days_to_reassess": 2
+  "last_updated": "2026-06-09T12:20:25.094120",
+  "update_interval_seconds": 300,
+  "account": {
+    "portfolio_value": 95943.09,
+    "cash": -124401.28,
+    "buying_power": 98899.1,
+    "equity": 95943.09,
+    "last_equity": 102652.53,
+    "unrealized_pl": 0.0,
+    "unrealized_plpc": 0.0,
+    "status": "ACTIVE"
   },
-  "capability": {
-    "score": 50.0,
-    "score_max": 100,
-    "unlock_threshold_real_money": 80,
-    "score_as_of": "2026-06-03",
-    "stale_days": 0,
-    "stale_reason": ""
+  "daily_pnl": {
+    "amount": -6709.44,
+    "pct": -0.0654,
+    "circuit_breaker_status": "yellow",
+    "circuit_breaker_message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -6.5% (limit -3%). No new entries."
   },
-  "tracking": {
-    "scripts": 65,
-    "strategies_active": 6,
-    "strategies_max": 10,
-    "skills": 3,
-    "lessons_indexed": 61,
-    "improvement_cycles_total": 3,
-    "open_trades": 2,
-    "last_improvement_date": "2026-05-05",
-    "last_improvement_label": "lessons_corpus_index \u2014 Indexed 61 lessons across 3 files"
+  "weekly_pnl": {
+    "amount": -7702.34,
+    "pct": -0.0691
   },
-  "infrastructure_status": {
-    "wolf_tool_discovery_cowork": "active \u00b7 daily 06:09 ET \u00b7 output /Atlas/wolf-discovery-inbox.md",
-    "wolf_tool_discovery_hermes": "staged \u00b7 setup paste at /Atlas/hermes-sandbox/wolf-cron-setup-prompt.md \u00b7 awaiting Bobby paste",
-    "market_open_exec": "active \u00b7 launchd com.wolf.market-open-exec \u00b7 9:30 ET weekdays",
-    "daily_summary": "active \u00b7 launchd com.wolf.daily-summary \u00b7 4:50 PM ET weekdays",
-    "mandate_gate": "active since 2026-05-13",
-    "esoteric_research": "active \u00b7 Sunday 10:06 AM weekly \u00b7 Cowork",
-    "consulting_intel": "active \u00b7 daily 7:03 ET \u00b7 Cowork"
-  },
-  "fix_history": {
-    "_comment": "Three prior persistent-state fixes that ran and regressed. Pattern repeated \u2014 patching the symptom instead of moving state authority.",
-    "wolf-capability-score-fix": {
-      "fired": "2026-04-14",
-      "outcome": "regressed within days"
+  "positions": [
+    {
+      "ticker": "ACN",
+      "qty": 137.0,
+      "side": "long",
+      "avg_entry": 174.131168,
+      "current_price": 170.895,
+      "market_value": 23412.615,
+      "unrealized_pl": -443.355016,
+      "unrealized_plpc": -0.01858,
+      "cost_basis": 23855.970016
     },
-    "wolf-progress-fix-now": {
-      "fired": "2026-04-20",
-      "outcome": "regressed within days"
+    {
+      "ticker": "JPM",
+      "qty": 76.0,
+      "side": "long",
+      "avg_entry": 306.73,
+      "current_price": 310.505,
+      "market_value": 23598.38,
+      "unrealized_pl": 286.9,
+      "unrealized_plpc": 0.01231,
+      "cost_basis": 23311.48
     },
-    "wolf-cornerstone-dashboard-fix": {
-      "fired": "2026-05-12",
-      "outcome": "regressed within days"
+    {
+      "ticker": "MDT",
+      "qty": 333.0,
+      "side": "long",
+      "avg_entry": 75.842613,
+      "current_price": 82.11,
+      "market_value": 27342.63,
+      "unrealized_pl": 2087.039871,
+      "unrealized_plpc": 0.08264,
+      "cost_basis": 25255.590129
+    },
+    {
+      "ticker": "MSFT",
+      "qty": 63.0,
+      "side": "long",
+      "avg_entry": 421.673333,
+      "current_price": 400.605,
+      "market_value": 25238.115,
+      "unrealized_pl": -1327.304979,
+      "unrealized_plpc": -0.04996,
+      "cost_basis": 26565.419979
+    },
+    {
+      "ticker": "NVDA",
+      "qty": 124.0,
+      "side": "long",
+      "avg_entry": 207.39,
+      "current_price": 200.14,
+      "market_value": 24817.36,
+      "unrealized_pl": -899.0,
+      "unrealized_plpc": -0.03496,
+      "cost_basis": 25716.36
+    },
+    {
+      "ticker": "PLTR",
+      "qty": 364.0,
+      "side": "long",
+      "avg_entry": 136.767115,
+      "current_price": 128.34,
+      "market_value": 46715.76,
+      "unrealized_pl": -3067.46986,
+      "unrealized_plpc": -0.06162,
+      "cost_basis": 49783.22986
+    },
+    {
+      "ticker": "TSLA",
+      "qty": 66.0,
+      "side": "long",
+      "avg_entry": 442.450455,
+      "current_price": 387.5199,
+      "market_value": 25576.3134,
+      "unrealized_pl": -3625.41663,
+      "unrealized_plpc": -0.12415,
+      "cost_basis": 29201.73003
+    },
+    {
+      "ticker": "XLE",
+      "qty": 415.0,
+      "side": "long",
+      "avg_entry": 56.408675,
+      "current_price": 56.99,
+      "market_value": 23650.85,
+      "unrealized_pl": 241.249875,
+      "unrealized_plpc": 0.01031,
+      "cost_basis": 23409.600125
     }
-  },
-  "day60_reassess_metrics_needed": {
-    "_status": "UNBLOCKED 2026-05-28 12:38 ET \u2014 wolf_live_data.json IS publicly accessible at extracoffee13.github.io/wolf-dashboards-repo/wolf_live_data.json. Dryrun written to /Atlas/wolf/wolf_day60_dryrun.json. Critical finding: ALL positions in mandate violation, gate-1 currently FAIL.",
-    "sharpe_day19_to_day60": "not in public mirror \u00b7 needs daily_pnl_history field",
-    "max_drawdown_pct": "not in public mirror \u00b7 needs historical equity series",
-    "win_rate_closed_trades": "not in public mirror",
-    "position_cap_compliance_pct_today": 0,
-    "consecutive_compliant_days": 0,
-    "rejected_signals_count": "not in public mirror \u00b7 needs rejected_signals.jsonl",
-    "strategy_attribution_per_strategy": "not in public mirror"
-  },
-  "compliance_state_2026_05_28": {
-    "compliant": false,
-    "severity": "critical",
-    "positions_in_violation": [
-      "PLTR 48%",
-      "NVDA 26%",
-      "MSFT 26%",
-      "MDT 25%",
-      "JPM 22%"
-    ],
-    "circuit_breaker": "YELLOW \u00b7 MANUAL HALT",
-    "auto_rebalance_status": "scheduled but not effective \u00b7 investigation required",
-    "pre_staged_day60_verdict": "EXTEND to Day 90 (2026-07-23) \u00b7 GRADUATE blocked on gate-1",
-    "consecutive_compliant_days_running": 0,
-    "compliant_today": false
-  },
-  "hermes_lanes_planned": {
-    "wolf-discovery-parallel": {
-      "status": "staged",
-      "frequency": "daily 06:30 ET",
-      "purpose": "A/B against Cowork wolf-tool-discovery"
-    },
-    "lesson-capture": {
-      "status": "specced",
-      "frequency": "nightly",
-      "purpose": "fix the broken lesson-feed by promoting recurring PRAXIS_INBOX patterns"
-    },
-    "strategy-benchmark": {
-      "status": "specced",
-      "frequency": "nightly",
-      "purpose": "lift cycle rate 0.4/wk \u2192 7+/wk by auto-backtesting discovered methodologies"
-    },
-    "mandate-poll": {
-      "status": "specced",
-      "frequency": "every 4hr",
-      "purpose": "feed Day-60 gate-1 (30 consecutive compliant days)"
-    },
-    "esoteric-research-daily": {
-      "status": "specced",
-      "frequency": "daily 10:00 ET",
-      "purpose": "migrate Cowork weekly to Hermes daily \u2014 same dollar cost, 7\u00d7 throughput"
-    }
-  },
-  "_state_truth_chain": [
-    "2026-05-28 12:55 ET \u00b7 Claude audit identified Day 28 vs Day 50 dashboard lie \u00b7 state authority moved to this file as the canonical writer \u00b7 upstream wolf-dashboards-repo HTML still needs to be rewired to read from here"
   ],
-  "live_market_data": {
-    "last_synced_at": "2026-06-03T08:28:51",
-    "public_mirror_ts": "2026-06-01T14:14:11.086855",
-    "portfolio_value": 114237.76,
-    "today_pnl": {
-      "amount": 3807.25,
-      "pct": 0.0345,
-      "circuit_breaker_status": "yellow",
-      "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
+  "todays_trades": [
+    {
+      "id": "ded66076-d529-4b8c-9869-f5a0b15a00e1",
+      "ticker": "ACN",
+      "side": "buy",
+      "qty": 137.0,
+      "filled_price": 174.131168,
+      "status": "filled",
+      "created_at": "2026-06-09T11:05:11.60742Z",
+      "order_class": ""
+    }
+  ],
+  "strategy_performance": {
+    "small_cap_catalyst": {
+      "name": "Small Cap Catalyst",
+      "status": "ACTIVE",
+      "trades_today": 0,
+      "wins_today": 0,
+      "losses_today": 0,
+      "pnl_today": 0.0,
+      "win_rate_all_time": 0.607,
+      "sharpe_backtest": 1.5,
+      "max_dd_backtest": -0.033,
+      "profit_factor": 3.59,
+      "data_source": "real_alpaca"
     },
-    "weekly_pnl": {
-      "amount": 5816.98,
-      "pct": 0.0567
+    "volatility_play": {
+      "name": "Volatility Play",
+      "status": "DISABLED \u2014 Sharpe 0.65 < 1.0 (real data)",
+      "trades_today": 0,
+      "wins_today": 0,
+      "losses_today": 0,
+      "pnl_today": 0.0,
+      "win_rate_all_time": 0.546,
+      "sharpe_backtest": 0.65,
+      "max_dd_backtest": -0.181,
+      "profit_factor": 1.49,
+      "data_source": "real_alpaca"
     },
-    "positions_count": 7
-  },
-  "infrastructure_status_live": {
-    "wolf-state-updater": {
-      "loaded": true,
-      "pid": "-",
-      "last_exit": "0"
-    },
-    "wolf-state-watcher": {
-      "loaded": true,
-      "pid": "-",
-      "last_exit": "0"
-    },
-    "wolf-dashboard-autosync": {
-      "loaded": true,
-      "pid": "-",
-      "last_exit": "0"
-    },
-    "market-open-exec": {
-      "loaded": true,
-      "pid": "-",
-      "last_exit": "0"
-    },
-    "daily-summary": {
-      "loaded": true,
-      "pid": "-",
-      "last_exit": "0"
+    "macro_hedge": {
+      "name": "Macro Hedge",
+      "status": "DISABLED \u2014 Sharpe 0.43 < 1.0 (real data)",
+      "trades_today": 0,
+      "wins_today": 0,
+      "losses_today": 0,
+      "pnl_today": 0.0,
+      "win_rate_all_time": 0.546,
+      "sharpe_backtest": 0.43,
+      "max_dd_backtest": -0.142,
+      "profit_factor": 1.14,
+      "data_source": "real_alpaca"
     }
   },
-  "_last_writer": "wolf-state-updater",
-  "_last_write_iso": "2026-06-03T08:28:51",
-  "capability_score": 54.5,
-  "score_as_of": "2026-06-09",
-  "skills_count": 15,
-  "scripts_count": 27,
-  "strategies_active": 10,
-  "latest_improvement": {
-    "title": "12_institutional_lens_deployment",
-    "summary": "Deployed 12 named-firm decision lenses (Citadel quant + alloc, Two Sigma backtest, Bridgewater all-weather + macro, Renaissance pattern, GS tech, JPM fundamental, DE Shaw options, AQR factor, Jane Street microstructure, Pershing concentrated). Each invocable at WOLF promotion gates and HC/VC/PE diligence.",
-    "dated": "2026-06-09"
+  "circuit_breaker": {
+    "status": "yellow",
+    "daily_triggered": true,
+    "weekly_triggered": false,
+    "halt_new_entries": true,
+    "halt_all_activity": false,
+    "message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -6.5% (limit -3%). No new entries."
   },
-  "last_indexed": "2026-06-09T16:07:51.937687+00:00",
-  "data_freshness": "live"
+  "backtest": {
+    "last_run_date": "2026-04-07",
+    "data_source": "REAL \u2014 Alpaca IEX feed (2024-04-07 to 2026-04-07)",
+    "strategies_passed": 1,
+    "strategies_failed": 7,
+    "best_strategy": "Small Cap Catalyst",
+    "best_sharpe": 1.5,
+    "report_path": "backtest/results/real_backtest_2026-04-07.md",
+    "note": "Real data sharpe ratios 45-61% lower than synthetic. Only Small Cap Catalyst passes."
+  },
+  "market_regime": {
+    "current": "UNKNOWN",
+    "vix": null,
+    "spy_trend": null,
+    "last_assessed": null
+  },
+  "wolf_status": {
+    "mode": "PAPER",
+    "phase": "Ascension Phase 2",
+    "approved_strategies": 3,
+    "disabled_strategies": 7,
+    "approved_strategy_names": [
+      "Small Cap Catalyst",
+      "PEAD",
+      "52-Week High Breakout"
+    ],
+    "real_backtest_complete": true,
+    "total_trades_all_time": 5,
+    "total_pnl_all_time": 50.09,
+    "win_rate_all_time": 0.0,
+    "ready_for_monday": true
+  },
+  "wolf_capabilities": {
+    "capability_score": 49,
+    "score_max": 100,
+    "day_on_mission": 59,
+    "mission_start": "2026-04-08",
+    "streak_days": 59,
+    "totals": {
+      "scripts": 58,
+      "core_modules": 14,
+      "root_scripts": 7,
+      "command_files": 30,
+      "backtest_utils": 7,
+      "strategies_known": 18,
+      "strategies_implemented": 3,
+      "committee_personas": 12,
+      "open_trades": 5,
+      "lessons_learned": 22,
+      "skills_acquired": 2,
+      "backtests_run": 1,
+      "improvement_cycles": 2,
+      "streak_days": 6,
+      "free_data_sources": 5
+    },
+    "latest_improvement": {
+      "name": "null-safe dashboards + HBR pipeline",
+      "description": "Dashboard JS hardened, dynamic capabilities bar, daily HBR intelligence pipeline active.",
+      "date": "2026-04-13"
+    },
+    "recent_lessons": [
+      {
+        "date": "2026-04-08",
+        "lesson": "WOLF can now enumerate his own 14 scripts for self-aware planning."
+      }
+    ],
+    "real_money_unlocked": false,
+    "unlock_threshold": {
+      "capability_score": 80,
+      "consecutive_profitable_weeks": 4,
+      "max_drawdown_pct": 5.0
+    }
+  }
 }
