@@ -415,5 +415,150 @@
         }
       ]
     }
+  },
+  "daily_summary": {
+    "date": "2026-06-10",
+    "account": {
+      "portfolio_value": 95341.95,
+      "cash": -124401.29,
+      "buying_power": 97582.87,
+      "positions": 8,
+      "todays_trades": 0,
+      "daily_pnl_amount": -4388.29,
+      "daily_pnl_pct": -0.044,
+      "circuit_breaker": "yellow"
+    },
+    "log": {
+      "task_fires": {
+        "wolf-crypto-247": 3,
+        "wolf-market-open-exec": 1,
+        "wolf-midday-rescan": 1,
+        "wolf-gate-status": 1,
+        "wolf-daily-summary": 1
+      },
+      "errors": 1
+    },
+    "rejected": {
+      "count": 21,
+      "reasons": {
+        "R:R 0.7 < 1.5": 3,
+        "R:R 0.8 < 1.5": 3,
+        "R:R 0.6 < 1.5": 3,
+        "R:R 0.9 < 1.5": 1,
+        "halt_new_entries=true in wolf_live_data.json": 9,
+        "R:R 1.4 < 1.5": 1,
+        "R:R 1.3 < 1.5": 1
+      },
+      "recent": [
+        {
+          "ticker": "PFE",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-10T13:30:55Z",
+          "risk_reward": 2.0,
+          "confidence": 7
+        },
+        {
+          "ticker": "GLD",
+          "strategy": "Breakdown",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-10T13:30:55Z",
+          "risk_reward": 2.0,
+          "confidence": 7
+        },
+        {
+          "ticker": "BRK.B",
+          "strategy": "Overbought Fade",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-10T13:30:55Z",
+          "risk_reward": 2.7,
+          "confidence": 6
+        },
+        {
+          "ticker": "LLY",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-10T13:30:55Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "DIA",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-10T13:30:55Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "BRK.B",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 1.4 < 1.5",
+          "rejected_at": "2026-06-10T11:30:45.867776",
+          "risk_reward": 1.4,
+          "confidence": 6
+        },
+        {
+          "ticker": "DIA",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 1.3 < 1.5",
+          "rejected_at": "2026-06-10T11:30:45.867868",
+          "risk_reward": 1.3,
+          "confidence": 6
+        },
+        {
+          "ticker": "SOL/USD",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 0.7 < 1.5",
+          "rejected_at": "2026-06-10T12:00:18.219853",
+          "risk_reward": 0.7,
+          "confidence": 4
+        },
+        {
+          "ticker": "AVAX/USD",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 0.8 < 1.5",
+          "rejected_at": "2026-06-10T12:00:18.219938",
+          "risk_reward": 0.8,
+          "confidence": 3
+        },
+        {
+          "ticker": "DOGE/USD",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 0.6 < 1.5",
+          "rejected_at": "2026-06-10T12:00:18.219972",
+          "risk_reward": 0.6,
+          "confidence": 2
+        }
+      ]
+    },
+    "committee": {
+      "runs": 0,
+      "tickers_voted": 0,
+      "verdicts": {}
+    }
+  },
+  "daily_summary_updated_at": "2026-06-10T16:50:02.519802",
+  "today_signals": {
+    "as_of": "2026-06-10 16:50:02",
+    "last_task": "EOD recap",
+    "count": 1,
+    "signals": [
+      {
+        "ticker": "LINK/USD",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 7,
+        "entry": 11.4181,
+        "stop": 11.105835714285714,
+        "target": 12.146135,
+        "symbol": "LINK/USD",
+        "price": 11.4181,
+        "rsi": 8.7,
+        "rvol": 7.48,
+        "atr": 0.16,
+        "risk_reward": 2.3
+      }
+    ]
   }
 }
