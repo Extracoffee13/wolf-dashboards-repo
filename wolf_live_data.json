@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-06-09T23:58:53.844727",
+  "last_updated": "2026-06-10T00:03:56.248176",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 98921.12,
+    "portfolio_value": 98894.28,
     "cash": -124401.28,
-    "buying_power": 106923.44,
-    "equity": 98921.12,
+    "buying_power": 106849.87,
+    "equity": 98894.28,
     "last_equity": 102652.53,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -3731.41,
-    "pct": -0.0363,
+    "amount": -3758.25,
+    "pct": -0.0366,
     "circuit_breaker_status": "yellow",
-    "circuit_breaker_message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -3.6% (limit -3%). No new entries."
+    "circuit_breaker_message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -3.7% (limit -3%). No new entries."
   },
   "weekly_pnl": {
     "amount": -7702.34,
@@ -60,10 +60,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 403.03,
-      "market_value": 25390.89,
-      "unrealized_pl": -1174.529979,
-      "unrealized_plpc": -0.04421,
+      "current_price": 402.97,
+      "market_value": 25387.11,
+      "unrealized_pl": -1178.309979,
+      "unrealized_plpc": -0.04436,
       "cost_basis": 26565.419979
     },
     {
@@ -71,10 +71,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 206.05,
-      "market_value": 25550.2,
-      "unrealized_pl": -166.16,
-      "unrealized_plpc": -0.00646,
+      "current_price": 205.88,
+      "market_value": 25529.12,
+      "unrealized_pl": -187.24,
+      "unrealized_plpc": -0.00728,
       "cost_basis": 25716.36
     },
     {
@@ -93,10 +93,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 393.45,
-      "market_value": 25967.7,
-      "unrealized_pl": -3234.03003,
-      "unrealized_plpc": -0.11075,
+      "current_price": 393.42,
+      "market_value": 25965.72,
+      "unrealized_pl": -3236.01003,
+      "unrealized_plpc": -0.11082,
       "cost_basis": 29201.73003
     },
     {
@@ -111,18 +111,7 @@
       "cost_basis": 23409.600125
     }
   ],
-  "todays_trades": [
-    {
-      "id": "ded66076-d529-4b8c-9869-f5a0b15a00e1",
-      "ticker": "ACN",
-      "side": "buy",
-      "qty": 137.0,
-      "filled_price": 174.131168,
-      "status": "filled",
-      "created_at": "2026-06-09T11:05:11.60742Z",
-      "order_class": ""
-    }
-  ],
+  "todays_trades": [],
   "strategy_performance": {
     "small_cap_catalyst": {
       "name": "Small Cap Catalyst",
@@ -296,7 +285,7 @@
     "weekly_triggered": false,
     "halt_new_entries": true,
     "halt_all_activity": false,
-    "message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -3.6% (limit -3%). No new entries.",
+    "message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -3.7% (limit -3%). No new entries.",
     "halt_reason": "WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13).",
     "halt_until": "post-rebalance"
   },
@@ -337,9 +326,9 @@
   "wolf_capabilities": {
     "capability_score": 51,
     "score_max": 100,
-    "day_on_mission": 63,
+    "day_on_mission": 64,
     "mission_start": "2026-04-08",
-    "streak_days": 63,
+    "streak_days": 64,
     "totals": {
       "scripts": 58,
       "core_modules": 14,
@@ -426,27 +415,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-06-10 00:00:13",
-    "last_task": "Crypto sweep",
-    "count": 1,
-    "signals": [
-      {
-        "ticker": "LINK/USD",
-        "direction": "LONG",
-        "strategy": "Mean Reversion (Oversold)",
-        "confidence": 7,
-        "entry": 11.4181,
-        "stop": 11.105835714285714,
-        "target": 12.146135,
-        "symbol": "LINK/USD",
-        "price": 11.4181,
-        "rsi": 8.7,
-        "rvol": 7.48,
-        "atr": 0.16,
-        "risk_reward": 2.3
-      }
-    ]
   }
 }
