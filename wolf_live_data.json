@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-06-10T16:12:58.500259",
+  "last_updated": "2026-06-10T16:18:02.133013",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 95642.77,
+    "portfolio_value": 95709.18,
     "cash": -124401.29,
-    "buying_power": 98390.84,
-    "equity": 95642.77,
+    "buying_power": 98584.18,
+    "equity": 95709.18,
     "last_equity": 99730.24,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -4087.47,
-    "pct": -0.041,
+    "amount": -4021.06,
+    "pct": -0.0403,
     "circuit_breaker_status": "yellow",
-    "circuit_breaker_message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -4.1% (limit -3%). No new entries."
+    "circuit_breaker_message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -4.0% (limit -3%). No new entries."
   },
   "weekly_pnl": {
     "amount": -6187.47,
@@ -49,10 +49,10 @@
       "qty": 333.0,
       "side": "long",
       "avg_entry": 75.842613,
-      "current_price": 80.25,
-      "market_value": 26723.25,
-      "unrealized_pl": 1467.659871,
-      "unrealized_plpc": 0.05811,
+      "current_price": 80.45,
+      "market_value": 26789.85,
+      "unrealized_pl": 1534.259871,
+      "unrealized_plpc": 0.06075,
       "cost_basis": 25255.590129
     },
     {
@@ -60,10 +60,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 397.5,
-      "market_value": 25042.5,
-      "unrealized_pl": -1522.919979,
-      "unrealized_plpc": -0.05733,
+      "current_price": 397.7686,
+      "market_value": 25059.4218,
+      "unrealized_pl": -1505.998179,
+      "unrealized_plpc": -0.05669,
       "cost_basis": 26565.419979
     },
     {
@@ -71,10 +71,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 200.16,
-      "market_value": 24819.84,
-      "unrealized_pl": -896.52,
-      "unrealized_plpc": -0.03486,
+      "current_price": 199.9942,
+      "market_value": 24799.2808,
+      "unrealized_pl": -917.0792,
+      "unrealized_plpc": -0.03566,
       "cost_basis": 25716.36
     },
     {
@@ -82,10 +82,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 129.812,
-      "market_value": 47251.568,
-      "unrealized_pl": -2531.66186,
-      "unrealized_plpc": -0.05085,
+      "current_price": 129.87,
+      "market_value": 47272.68,
+      "unrealized_pl": -2510.54986,
+      "unrealized_plpc": -0.05043,
       "cost_basis": 49783.22986
     },
     {
@@ -93,10 +93,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 381.2,
-      "market_value": 25159.2,
-      "unrealized_pl": -4042.53003,
-      "unrealized_plpc": -0.13843,
+      "current_price": 381.06,
+      "market_value": 25149.96,
+      "unrealized_pl": -4051.77003,
+      "unrealized_plpc": -0.13875,
       "cost_basis": 29201.73003
     },
     {
@@ -104,10 +104,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 58.28,
-      "market_value": 24186.2,
-      "unrealized_pl": 776.599875,
-      "unrealized_plpc": 0.03317,
+      "current_price": 58.2597,
+      "market_value": 24177.7755,
+      "unrealized_pl": 768.175375,
+      "unrealized_plpc": 0.03281,
       "cost_basis": 23409.600125
     }
   ],
@@ -285,7 +285,7 @@
     "weekly_triggered": false,
     "halt_new_entries": true,
     "halt_all_activity": false,
-    "message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -4.1% (limit -3%). No new entries.",
+    "message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -4.0% (limit -3%). No new entries.",
     "halt_reason": "WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13).",
     "halt_until": "post-rebalance"
   },
