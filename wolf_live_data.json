@@ -415,5 +415,27 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-06-10 06:00:13",
+    "last_task": "Crypto sweep",
+    "count": 1,
+    "signals": [
+      {
+        "ticker": "LINK/USD",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 7,
+        "entry": 11.4181,
+        "stop": 11.105835714285714,
+        "target": 12.146135,
+        "symbol": "LINK/USD",
+        "price": 11.4181,
+        "rsi": 8.7,
+        "rvol": 7.48,
+        "atr": 0.16,
+        "risk_reward": 2.3
+      }
+    ]
   }
 }
