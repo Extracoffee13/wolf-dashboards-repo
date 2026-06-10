@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-06-10T11:15:13.796303",
+  "last_updated": "2026-06-10T11:20:16.827954",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 97551.05,
+    "portfolio_value": 97476.58,
     "cash": -124401.29,
-    "buying_power": 103570.89,
-    "equity": 97551.05,
+    "buying_power": 103381.37,
+    "equity": 97476.58,
     "last_equity": 99730.24,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -2179.19,
-    "pct": -0.0219,
+    "amount": -2253.66,
+    "pct": -0.0226,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -27,10 +27,10 @@
       "qty": 137.0,
       "side": "long",
       "avg_entry": 174.131168,
-      "current_price": 171.165,
-      "market_value": 23449.605,
-      "unrealized_pl": -406.365016,
-      "unrealized_plpc": -0.01703,
+      "current_price": 171.04,
+      "market_value": 23432.48,
+      "unrealized_pl": -423.490016,
+      "unrealized_plpc": -0.01775,
       "cost_basis": 23855.970016
     },
     {
@@ -38,10 +38,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 310.8782,
-      "market_value": 23626.7432,
-      "unrealized_pl": 315.2632,
-      "unrealized_plpc": 0.01352,
+      "current_price": 310.81,
+      "market_value": 23621.56,
+      "unrealized_pl": 310.08,
+      "unrealized_plpc": 0.0133,
       "cost_basis": 23311.48
     },
     {
@@ -49,10 +49,10 @@
       "qty": 333.0,
       "side": "long",
       "avg_entry": 75.842613,
-      "current_price": 81.32,
-      "market_value": 27079.56,
-      "unrealized_pl": 1823.969871,
-      "unrealized_plpc": 0.07222,
+      "current_price": 81.23,
+      "market_value": 27049.59,
+      "unrealized_pl": 1793.999871,
+      "unrealized_plpc": 0.07103,
       "cost_basis": 25255.590129
     },
     {
@@ -60,10 +60,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 401.65,
-      "market_value": 25303.95,
-      "unrealized_pl": -1261.469979,
-      "unrealized_plpc": -0.04749,
+      "current_price": 401.88,
+      "market_value": 25318.44,
+      "unrealized_pl": -1246.979979,
+      "unrealized_plpc": -0.04694,
       "cost_basis": 26565.419979
     },
     {
@@ -71,10 +71,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 202.2,
-      "market_value": 25072.8,
-      "unrealized_pl": -643.56,
-      "unrealized_plpc": -0.02503,
+      "current_price": 202.165,
+      "market_value": 25068.46,
+      "unrealized_pl": -647.9,
+      "unrealized_plpc": -0.02519,
       "cost_basis": 25716.36
     },
     {
@@ -82,10 +82,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 131.15,
-      "market_value": 47738.6,
-      "unrealized_pl": -2044.62986,
-      "unrealized_plpc": -0.04107,
+      "current_price": 131.16,
+      "market_value": 47742.24,
+      "unrealized_pl": -2040.98986,
+      "unrealized_plpc": -0.041,
       "cost_basis": 49783.22986
     },
     {
@@ -93,10 +93,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 384.285,
-      "market_value": 25362.81,
-      "unrealized_pl": -3838.92003,
-      "unrealized_plpc": -0.13146,
+      "current_price": 383.93,
+      "market_value": 25339.38,
+      "unrealized_pl": -3862.35003,
+      "unrealized_plpc": -0.13226,
       "cost_basis": 29201.73003
     },
     {
@@ -104,10 +104,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 58.615,
-      "market_value": 24325.225,
-      "unrealized_pl": 915.624875,
-      "unrealized_plpc": 0.03911,
+      "current_price": 58.57,
+      "market_value": 24306.55,
+      "unrealized_pl": 896.949875,
+      "unrealized_plpc": 0.03832,
       "cost_basis": 23409.600125
     }
   ],
