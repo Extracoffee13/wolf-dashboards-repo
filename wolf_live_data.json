@@ -415,5 +415,132 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-06-10 11:30:46",
+    "last_task": "Midday rescan",
+    "count": 8,
+    "signals": [
+      {
+        "ticker": "AMZN",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 7,
+        "entry": 230.74,
+        "stop": 229.29642857142858,
+        "target": 233.07424999999998,
+        "symbol": "AMZN",
+        "price": 230.74,
+        "rsi": 14.5,
+        "rvol": 0.64,
+        "atr": 0.72,
+        "risk_reward": 1.6
+      },
+      {
+        "ticker": "JPM",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 7,
+        "entry": 303.095,
+        "stop": 301.34857142857146,
+        "target": 307.52325,
+        "symbol": "JPM",
+        "price": 303.095,
+        "rsi": 1.7,
+        "rvol": 3.66,
+        "atr": 0.87,
+        "risk_reward": 2.5
+      },
+      {
+        "ticker": "BAC",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 7,
+        "entry": 52.15,
+        "stop": 51.83,
+        "target": 52.7965,
+        "symbol": "BAC",
+        "price": 52.15,
+        "rsi": 7.1,
+        "rvol": 0.94,
+        "atr": 0.16,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "SPY",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 7,
+        "entry": 681.24,
+        "stop": 678.4614285714285,
+        "target": 689.731,
+        "symbol": "SPY",
+        "price": 681.24,
+        "rsi": 10.1,
+        "rvol": 0.01,
+        "atr": 1.39,
+        "risk_reward": 3.1
+      },
+      {
+        "ticker": "IWM",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 7,
+        "entry": 260.61,
+        "stop": 259.4535714285714,
+        "target": 265.43875,
+        "symbol": "IWM",
+        "price": 260.61,
+        "rsi": 5.7,
+        "rvol": 0.01,
+        "atr": 0.58,
+        "risk_reward": 4.2
+      },
+      {
+        "ticker": "GLD",
+        "direction": "SHORT",
+        "strategy": "Overbought Fade",
+        "confidence": 7,
+        "entry": 435.85,
+        "stop": 438.66071428571433,
+        "target": 425.6095,
+        "symbol": "GLD",
+        "price": 435.85,
+        "rsi": 90.5,
+        "rvol": 0.06,
+        "atr": 1.41,
+        "risk_reward": 3.6
+      },
+      {
+        "ticker": "OXY",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 6,
+        "entry": 42.19,
+        "stop": 41.945,
+        "target": 42.5495,
+        "symbol": "OXY",
+        "price": 42.19,
+        "rsi": 19.3,
+        "rvol": 0.7,
+        "atr": 0.12,
+        "risk_reward": 1.5
+      },
+      {
+        "ticker": "CRM",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 5,
+        "entry": 222.4,
+        "stop": 220.97857142857143,
+        "target": 224.86875,
+        "symbol": "CRM",
+        "price": 222.4,
+        "rsi": 23.7,
+        "rvol": 1.17,
+        "atr": 0.71,
+        "risk_reward": 1.7
+      }
+    ]
   }
 }
