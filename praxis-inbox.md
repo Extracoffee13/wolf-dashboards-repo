@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-ai
+decision: scanned anthropic + frontier labs + MCP registries + arxiv
+outcome: Claude Managed Agents (public beta, cron + vault + browser) is the most immediately applicable finding — it can replace manual scheduling across The Construct's recurring content and signage-refresh pipelines with zero new infra
+lesson: The agent ecosystem is bifurcating into orchestration layer (who schedules/coordinates agents) and execution layer (what agents can do); the fastest-moving products right now are those that own the orchestration surface — Perplexity's Comet browser, Anthropic's Managed Agents, and Glean's enterprise knowledge layer are all competing for that position
+tags: ai,agent,ecosystem,construct
+confidence: 0.75
+~~~
