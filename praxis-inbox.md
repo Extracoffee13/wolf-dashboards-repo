@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Claude Managed Agents (Cron Schedules + Self-Hosted Sandboxes) — score 5, owner WOLF/AP
+lesson: The managed-agent infrastructure layer (cron, vaults, self-hosted sandboxes) is converging with multi-agent ecosystem patterns faster than expected; tools that productize agent orchestration are now the fastest-moving quadrant of the MCP ecosystem
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
