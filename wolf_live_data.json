@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-06-11T02:34:07.330879",
+  "last_updated": "2026-06-11T02:39:13.488060",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 96577.17,
+    "portfolio_value": 96598.57,
     "cash": -124401.29,
-    "buying_power": 100781.71,
-    "equity": 96577.17,
+    "buying_power": 100837.41,
+    "equity": 96598.57,
     "last_equity": 99730.24,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -3153.07,
-    "pct": -0.0316,
+    "amount": -3131.67,
+    "pct": -0.0314,
     "circuit_breaker_status": "yellow",
-    "circuit_breaker_message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -3.2% (limit -3%). No new entries."
+    "circuit_breaker_message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -3.1% (limit -3%). No new entries."
   },
   "weekly_pnl": {
     "amount": -6187.47,
@@ -71,10 +71,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 202.17,
-      "market_value": 25069.08,
-      "unrealized_pl": -647.28,
-      "unrealized_plpc": -0.02517,
+      "current_price": 202.3,
+      "market_value": 25085.2,
+      "unrealized_pl": -631.16,
+      "unrealized_plpc": -0.02454,
       "cost_basis": 25716.36
     },
     {
@@ -93,10 +93,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 385.47,
-      "market_value": 25441.02,
-      "unrealized_pl": -3760.71003,
-      "unrealized_plpc": -0.12878,
+      "current_price": 385.55,
+      "market_value": 25446.3,
+      "unrealized_pl": -3755.43003,
+      "unrealized_plpc": -0.1286,
       "cost_basis": 29201.73003
     },
     {
@@ -159,7 +159,7 @@
     "weekly_triggered": false,
     "halt_new_entries": true,
     "halt_all_activity": false,
-    "message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -3.2% (limit -3%). No new entries."
+    "message": "DAILY CIRCUIT BREAKER TRIGGERED \u2014 -3.1% (limit -3%). No new entries."
   },
   "backtest": {
     "last_run_date": "2026-04-07",
