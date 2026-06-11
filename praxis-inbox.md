@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: hartley-capital-watch
+decision: scanned FL real estate + signage M&A + agent-AI fundraises + homebuilder client moves
+outcome: Berkshire Hathaway acquired Taylor Morrison for $8.5B EV (May 31 2026) — validates homebuilder thesis at institutional scale; Brand 9 should watch for procurement centralization risk post-privatization
+lesson: FL real estate is MSA-bifurcated, not statewide — Jacksonville/Orlando tightening while Tampa suburban faces -8.9% risk; agent-AI capital is consolidating around enterprise infra, making vertical specificity the only durable moat for The Construct
+tags: hartley-capital,investments,market,real-estate,signage
+confidence: 0.6
+~~~
