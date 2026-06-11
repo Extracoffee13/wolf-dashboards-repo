@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-06-11T11:58:55.292225",
+  "last_updated": "2026-06-11T12:03:57.181614",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 95048.95,
+    "portfolio_value": 94814.7,
     "cash": -124401.29,
-    "buying_power": 96429.82,
-    "equity": 95048.95,
+    "buying_power": 95771.28,
+    "equity": 94814.7,
     "last_equity": 95815.99,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -767.04,
-    "pct": -0.008,
+    "amount": -1001.29,
+    "pct": -0.0105,
     "circuit_breaker_status": "red",
     "circuit_breaker_message": "WEEKLY CIRCUIT BREAKER TRIGGERED \u2014 -11.7% (limit -7%). HALT ALL ACTIVITY. Mandatory Bobby review."
   },
@@ -27,10 +27,10 @@
       "qty": 137.0,
       "side": "long",
       "avg_entry": 174.131168,
-      "current_price": 166.515,
-      "market_value": 22812.555,
-      "unrealized_pl": -1043.415016,
-      "unrealized_plpc": -0.04374,
+      "current_price": 165.975,
+      "market_value": 22738.575,
+      "unrealized_pl": -1117.395016,
+      "unrealized_plpc": -0.04684,
       "cost_basis": 23855.970016
     },
     {
@@ -38,10 +38,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 310.28,
-      "market_value": 23581.28,
-      "unrealized_pl": 269.8,
-      "unrealized_plpc": 0.01157,
+      "current_price": 310.08,
+      "market_value": 23566.08,
+      "unrealized_pl": 254.6,
+      "unrealized_plpc": 0.01092,
       "cost_basis": 23311.48
     },
     {
@@ -49,10 +49,10 @@
       "qty": 333.0,
       "side": "long",
       "avg_entry": 75.842613,
-      "current_price": 80.09,
-      "market_value": 26669.97,
-      "unrealized_pl": 1414.379871,
-      "unrealized_plpc": 0.056,
+      "current_price": 80.11,
+      "market_value": 26676.63,
+      "unrealized_pl": 1421.039871,
+      "unrealized_plpc": 0.05627,
       "cost_basis": 25255.590129
     },
     {
@@ -60,10 +60,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 386.7,
-      "market_value": 24362.1,
-      "unrealized_pl": -2203.319979,
-      "unrealized_plpc": -0.08294,
+      "current_price": 386.465,
+      "market_value": 24347.295,
+      "unrealized_pl": -2218.124979,
+      "unrealized_plpc": -0.0835,
       "cost_basis": 26565.419979
     },
     {
@@ -71,10 +71,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 201.45,
-      "market_value": 24979.8,
-      "unrealized_pl": -736.56,
-      "unrealized_plpc": -0.02864,
+      "current_price": 201.235,
+      "market_value": 24953.14,
+      "unrealized_pl": -763.22,
+      "unrealized_plpc": -0.02968,
       "cost_basis": 25716.36
     },
     {
@@ -82,10 +82,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 129.8461,
-      "market_value": 47263.9804,
-      "unrealized_pl": -2519.24946,
-      "unrealized_plpc": -0.0506,
+      "current_price": 129.59,
+      "market_value": 47170.76,
+      "unrealized_pl": -2612.46986,
+      "unrealized_plpc": -0.05248,
       "cost_basis": 49783.22986
     },
     {
@@ -93,10 +93,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 386.85,
-      "market_value": 25532.1,
-      "unrealized_pl": -3669.63003,
-      "unrealized_plpc": -0.12566,
+      "current_price": 386.9,
+      "market_value": 25535.4,
+      "unrealized_pl": -3666.33003,
+      "unrealized_plpc": -0.12555,
       "cost_basis": 29201.73003
     },
     {
@@ -104,10 +104,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 58.43,
-      "market_value": 24248.45,
-      "unrealized_pl": 838.849875,
-      "unrealized_plpc": 0.03583,
+      "current_price": 58.375,
+      "market_value": 24225.625,
+      "unrealized_pl": 816.024875,
+      "unrealized_plpc": 0.03486,
       "cost_basis": 23409.600125
     }
   ],
@@ -415,42 +415,5 @@
         }
       ]
     }
-  },
-  "today_signals": {
-    "as_of": "2026-06-11 12:00:32",
-    "last_task": "Crypto sweep",
-    "count": 2,
-    "signals": [
-      {
-        "ticker": "ETH/USD",
-        "direction": "LONG",
-        "strategy": "Mean Reversion (Oversold)",
-        "confidence": 7,
-        "entry": 2814.831,
-        "stop": 2747.4027733137145,
-        "target": 2933.655275,
-        "symbol": "ETH/USD",
-        "price": 2814.831,
-        "rsi": 12.3,
-        "rvol": 1.36,
-        "atr": 33.71,
-        "risk_reward": 1.8
-      },
-      {
-        "ticker": "AAVE/USD",
-        "direction": "LONG",
-        "strategy": "Mean Reversion (Oversold)",
-        "confidence": 7,
-        "entry": 146.0,
-        "stop": 139.32282070614286,
-        "target": 155.92745,
-        "symbol": "AAVE/USD",
-        "price": 146.0,
-        "rsi": 9.5,
-        "rvol": 0.49,
-        "atr": 3.34,
-        "risk_reward": 1.5
-      }
-    ]
   }
 }
