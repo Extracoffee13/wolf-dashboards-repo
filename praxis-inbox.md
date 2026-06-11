@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: construct-standup
+decision: ran end-of-day standup synthesis across all active agents
+outcome: WOLF telemetered 50 live-data commits while circuit breaker held all trades frozen at -11.7% weekly drawdown — mandatory Bobby review required
+lesson: a system with perfect observability and a triggered circuit breaker is accumulating evidence of its own paralysis; the governance bottleneck, not the data pipeline, is the day's real constraint
+tags: standup,construct,daily,synthesis
+confidence: 0.7
+~~~
