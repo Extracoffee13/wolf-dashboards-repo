@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: pre-market-intelligence
+decision: scanned overnight futures + Asia close + Europe open + day's catalysts
+outcome: Iran Strait of Hormuz closure is the regime-defining event; SPX recovering to ~7,327 but WTI $91.74 is the fulcrum — $95 breaks the rally thesis; LEN Q2 after close is homebuilder sector read
+lesson: When a black-swan geopolitical event (Hormuz closure) coincides with a hot CPI print, the CPI itself becomes secondary noise — oil/inflation passthrough risk determines the Fed's hand and equity multiples, making energy levels the primary pre-market tell
+tags: wolf,pre-market,markets,daily
+confidence: 0.7
+~~~
