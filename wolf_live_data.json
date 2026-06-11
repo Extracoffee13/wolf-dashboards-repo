@@ -415,5 +415,164 @@
         }
       ]
     }
+  },
+  "daily_summary": {
+    "date": "2026-06-11",
+    "account": {
+      "portfolio_value": 97016.58,
+      "cash": -124401.29,
+      "buying_power": 101374.77,
+      "positions": 8,
+      "todays_trades": 0,
+      "daily_pnl_amount": 1200.59,
+      "daily_pnl_pct": 0.0125,
+      "circuit_breaker": "red"
+    },
+    "log": {
+      "task_fires": {
+        "wolf-crypto-247": 3,
+        "wolf-market-open-exec": 1,
+        "wolf-midday-rescan": 1,
+        "wolf-gate-status": 1,
+        "wolf-daily-summary": 1
+      },
+      "errors": 1
+    },
+    "rejected": {
+      "count": 18,
+      "reasons": {
+        "R:R 0.3 < 1.5": 6,
+        "R:R 1.1 < 1.5": 1,
+        "R:R 1.0 < 1.5": 1,
+        "halt_new_entries=true in wolf_live_data.json": 8,
+        "R:R 1.3 < 1.5": 1,
+        "R:R 1.2 < 1.5": 1
+      },
+      "recent": [
+        {
+          "ticker": "GS",
+          "strategy": "Breakdown",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-11T13:30:57Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "XLK",
+          "strategy": "Breakdown",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-11T13:30:57Z",
+          "risk_reward": 2.0,
+          "confidence": 6
+        },
+        {
+          "ticker": "SHOP",
+          "strategy": "Breakdown",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-11T13:30:57Z",
+          "risk_reward": 2.0,
+          "confidence": 5
+        },
+        {
+          "ticker": "ROKU",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-11T13:30:57Z",
+          "risk_reward": 2.0,
+          "confidence": 5
+        },
+        {
+          "ticker": "V",
+          "strategy": "MACD Bullish Crossover",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-11T13:30:57Z",
+          "risk_reward": 2.0,
+          "confidence": 5
+        },
+        {
+          "ticker": "CVX",
+          "strategy": "Momentum Breakout",
+          "reason": "halt_new_entries=true in wolf_live_data.json",
+          "rejected_at": "2026-06-11T13:30:57Z",
+          "risk_reward": 2.0,
+          "confidence": 5
+        },
+        {
+          "ticker": "QQQ",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 1.3 < 1.5",
+          "rejected_at": "2026-06-11T11:30:47.710612",
+          "risk_reward": 1.3,
+          "confidence": 7
+        },
+        {
+          "ticker": "TLT",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 1.2 < 1.5",
+          "rejected_at": "2026-06-11T11:30:47.710709",
+          "risk_reward": 1.2,
+          "confidence": 7
+        },
+        {
+          "ticker": "DOT/USD",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 0.3 < 1.5",
+          "rejected_at": "2026-06-11T12:00:31.437795",
+          "risk_reward": 0.3,
+          "confidence": 2
+        },
+        {
+          "ticker": "UNI/USD",
+          "strategy": "Mean Reversion (Oversold)",
+          "reason": "R:R 0.3 < 1.5",
+          "rejected_at": "2026-06-11T12:00:31.437854",
+          "risk_reward": 0.3,
+          "confidence": 2
+        }
+      ]
+    },
+    "committee": {
+      "runs": 0,
+      "tickers_voted": 0,
+      "verdicts": {}
+    }
+  },
+  "daily_summary_updated_at": "2026-06-11T16:50:03.766375",
+  "today_signals": {
+    "as_of": "2026-06-11 16:50:03",
+    "last_task": "EOD recap",
+    "count": 2,
+    "signals": [
+      {
+        "ticker": "ETH/USD",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 7,
+        "entry": 2814.831,
+        "stop": 2747.4027733137145,
+        "target": 2933.655275,
+        "symbol": "ETH/USD",
+        "price": 2814.831,
+        "rsi": 12.3,
+        "rvol": 1.36,
+        "atr": 33.71,
+        "risk_reward": 1.8
+      },
+      {
+        "ticker": "AAVE/USD",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 7,
+        "entry": 146.0,
+        "stop": 139.32282070614286,
+        "target": 155.92745,
+        "symbol": "AAVE/USD",
+        "price": 146.0,
+        "rsi": 9.5,
+        "rvol": 0.49,
+        "atr": 3.34,
+        "risk_reward": 1.5
+      }
+    ]
   }
 }
