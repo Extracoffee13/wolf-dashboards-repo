@@ -415,5 +415,132 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-06-11 11:30:47",
+    "last_task": "Midday rescan",
+    "count": 8,
+    "signals": [
+      {
+        "ticker": "NVDA",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 7,
+        "entry": 182.75,
+        "stop": 181.37053571428572,
+        "target": 185.50892857142858,
+        "symbol": "NVDA",
+        "price": 182.75,
+        "rsi": 73.2,
+        "rvol": 2.05,
+        "atr": 0.92,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "SHOP",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 7,
+        "entry": 139.84,
+        "stop": 141.66785714285714,
+        "target": 136.18428571428572,
+        "symbol": "SHOP",
+        "price": 139.84,
+        "rsi": 35.2,
+        "rvol": 4.19,
+        "atr": 1.22,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "MS",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 7,
+        "entry": 185.92,
+        "stop": 184.61660714285713,
+        "target": 188.52678571428572,
+        "symbol": "MS",
+        "price": 185.92,
+        "rsi": 66.8,
+        "rvol": 2.77,
+        "atr": 0.87,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "MA",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 7,
+        "entry": 527.35,
+        "stop": 529.4135714285715,
+        "target": 523.2228571428573,
+        "symbol": "MA",
+        "price": 527.35,
+        "rsi": 32.4,
+        "rvol": 3.4,
+        "atr": 1.38,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "PLTR",
+        "direction": "SHORT",
+        "strategy": "Breakdown",
+        "confidence": 6,
+        "entry": 162.725,
+        "stop": 164.9117857142857,
+        "target": 158.35142857142856,
+        "symbol": "PLTR",
+        "price": 162.725,
+        "rsi": 34.2,
+        "rvol": 2.87,
+        "atr": 1.46,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "JNJ",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 6,
+        "entry": 217.525,
+        "stop": 216.32714285714286,
+        "target": 219.9207142857143,
+        "symbol": "JNJ",
+        "price": 217.525,
+        "rsi": 71.5,
+        "rvol": 1.61,
+        "atr": 0.8,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "IWM",
+        "direction": "LONG",
+        "strategy": "Momentum Breakout",
+        "confidence": 6,
+        "entry": 264.98,
+        "stop": 264.06982142857146,
+        "target": 266.80035714285714,
+        "symbol": "IWM",
+        "price": 264.98,
+        "rsi": 69.3,
+        "rvol": 1.41,
+        "atr": 0.61,
+        "risk_reward": 2.0
+      },
+      {
+        "ticker": "TQQQ",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 6,
+        "entry": 50.61,
+        "stop": 50.028571428571425,
+        "target": 51.653999999999996,
+        "symbol": "TQQQ",
+        "price": 50.61,
+        "rsi": 18.0,
+        "rvol": 0.93,
+        "atr": 0.29,
+        "risk_reward": 1.8
+      }
+    ]
   }
 }
