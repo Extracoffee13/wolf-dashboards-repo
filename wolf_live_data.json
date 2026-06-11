@@ -415,5 +415,42 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-06-11 00:00:11",
+    "last_task": "Crypto sweep",
+    "count": 2,
+    "signals": [
+      {
+        "ticker": "ETH/USD",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 7,
+        "entry": 2814.831,
+        "stop": 2747.4027733137145,
+        "target": 2933.655275,
+        "symbol": "ETH/USD",
+        "price": 2814.831,
+        "rsi": 12.3,
+        "rvol": 1.36,
+        "atr": 33.71,
+        "risk_reward": 1.8
+      },
+      {
+        "ticker": "AAVE/USD",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 7,
+        "entry": 146.0,
+        "stop": 139.32282070614286,
+        "target": 155.92745,
+        "symbol": "AAVE/USD",
+        "price": 146.0,
+        "rsi": 9.5,
+        "rvol": 0.49,
+        "atr": 3.34,
+        "risk_reward": 1.5
+      }
+    ]
   }
 }
