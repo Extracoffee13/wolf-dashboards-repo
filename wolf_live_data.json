@@ -1,25 +1,25 @@
 {
-  "last_updated": "2026-06-12T04:17:43.577919",
+  "last_updated": "2026-06-12T04:22:45.774888",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 97491.71,
+    "portfolio_value": 97623.95,
     "cash": -124401.29,
-    "buying_power": 102591.07,
-    "equity": 97491.71,
-    "last_equity": 95815.99,
+    "buying_power": 102929.66,
+    "equity": 97623.95,
+    "last_equity": 96881.2,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 1675.72,
-    "pct": 0.0175,
+    "amount": 742.75,
+    "pct": 0.0077,
     "circuit_breaker_status": "red",
-    "circuit_breaker_message": "WEEKLY CIRCUIT BREAKER TRIGGERED \u2014 -11.7% (limit -7%). HALT ALL ACTIVITY. Mandatory Bobby review."
+    "circuit_breaker_message": "WEEKLY CIRCUIT BREAKER TRIGGERED \u2014 -10.5% (limit -7%). HALT ALL ACTIVITY. Mandatory Bobby review."
   },
   "weekly_pnl": {
-    "amount": -12207.77,
-    "pct": -0.1165
+    "amount": -11142.56,
+    "pct": -0.1054
   },
   "positions": [
     {
@@ -60,10 +60,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 392.61,
-      "market_value": 24734.43,
-      "unrealized_pl": -1830.989979,
-      "unrealized_plpc": -0.06892,
+      "current_price": 392.98,
+      "market_value": 24757.74,
+      "unrealized_pl": -1807.679979,
+      "unrealized_plpc": -0.06805,
       "cost_basis": 26565.419979
     },
     {
@@ -71,10 +71,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 205.8,
-      "market_value": 25519.2,
-      "unrealized_pl": -197.16,
-      "unrealized_plpc": -0.00767,
+      "current_price": 206.24,
+      "market_value": 25573.76,
+      "unrealized_pl": -142.6,
+      "unrealized_plpc": -0.00555,
       "cost_basis": 25716.36
     },
     {
@@ -82,10 +82,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 131.35,
-      "market_value": 47811.4,
-      "unrealized_pl": -1971.82986,
-      "unrealized_plpc": -0.03961,
+      "current_price": 131.63,
+      "market_value": 47913.32,
+      "unrealized_pl": -1869.90986,
+      "unrealized_plpc": -0.03756,
       "cost_basis": 49783.22986
     },
     {
@@ -93,10 +93,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 399.7,
-      "market_value": 26380.2,
-      "unrealized_pl": -2821.53003,
-      "unrealized_plpc": -0.09662,
+      "current_price": 400.3,
+      "market_value": 26419.8,
+      "unrealized_pl": -2781.93003,
+      "unrealized_plpc": -0.09527,
       "cost_basis": 29201.73003
     },
     {
@@ -104,10 +104,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 56.85,
-      "market_value": 23592.75,
-      "unrealized_pl": 183.149875,
-      "unrealized_plpc": 0.00782,
+      "current_price": 56.64,
+      "market_value": 23505.6,
+      "unrealized_pl": 95.999875,
+      "unrealized_plpc": 0.0041,
       "cost_basis": 23409.600125
     }
   ],
@@ -285,7 +285,7 @@
     "weekly_triggered": true,
     "halt_new_entries": true,
     "halt_all_activity": true,
-    "message": "WEEKLY CIRCUIT BREAKER TRIGGERED \u2014 -11.7% (limit -7%). HALT ALL ACTIVITY. Mandatory Bobby review.",
+    "message": "WEEKLY CIRCUIT BREAKER TRIGGERED \u2014 -10.5% (limit -7%). HALT ALL ACTIVITY. Mandatory Bobby review.",
     "halt_reason": "WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13).",
     "halt_until": "post-rebalance"
   },
