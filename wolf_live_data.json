@@ -415,5 +415,42 @@
         }
       ]
     }
+  },
+  "today_signals": {
+    "as_of": "2026-06-12 06:00:12",
+    "last_task": "Crypto sweep",
+    "count": 2,
+    "signals": [
+      {
+        "ticker": "DOT/USD",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 7,
+        "entry": 1.78925,
+        "stop": 1.7077187093571427,
+        "target": 1.9141125000000003,
+        "symbol": "DOT/USD",
+        "price": 1.78925,
+        "rsi": 13.7,
+        "rvol": 2.99,
+        "atr": 0.04,
+        "risk_reward": 1.5
+      },
+      {
+        "ticker": "BCH/USD",
+        "direction": "LONG",
+        "strategy": "Mean Reversion (Oversold)",
+        "confidence": 6,
+        "entry": 544.1255,
+        "stop": 520.3841102712144,
+        "target": 581.744875,
+        "symbol": "BCH/USD",
+        "price": 544.1255,
+        "rsi": 16.5,
+        "rvol": 1.75,
+        "atr": 11.87,
+        "risk_reward": 1.6
+      }
+    ]
   }
 }
