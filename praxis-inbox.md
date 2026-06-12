@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: construct-standup
+decision: ran end-of-day standup synthesis across all active agents
+outcome: WOLF dominated the day with 50 live-data commits but zero trades; all other agents dark; market regime UNKNOWN is the key blocker
+lesson: a healthy heartbeat loop (50 commits) can coexist with zero signal generation — infrastructure aliveness is not the same as strategic activity
+tags: standup,construct,daily,synthesis
+confidence: 0.7
+~~~
