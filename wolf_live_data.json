@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-06-12T16:45:57.202752",
+  "last_updated": "2026-06-12T16:50:59.503062",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 97318.05,
+    "portfolio_value": 97246.0,
     "cash": -124401.29,
-    "buying_power": 101795.41,
-    "equity": 97318.05,
+    "buying_power": 101607.84,
+    "equity": 97246.0,
     "last_equity": 96881.2,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 436.85,
-    "pct": 0.0045,
+    "amount": 364.8,
+    "pct": 0.0038,
     "circuit_breaker_status": "yellow",
     "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
@@ -60,10 +60,10 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 390.5,
-      "market_value": 24601.5,
-      "unrealized_pl": -1963.919979,
-      "unrealized_plpc": -0.07393,
+      "current_price": 390.2046,
+      "market_value": 24582.8898,
+      "unrealized_pl": -1982.530179,
+      "unrealized_plpc": -0.07463,
       "cost_basis": 26565.419979
     },
     {
@@ -71,10 +71,10 @@
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 205.2871,
-      "market_value": 25455.6004,
-      "unrealized_pl": -260.7596,
-      "unrealized_plpc": -0.01014,
+      "current_price": 205.295,
+      "market_value": 25456.58,
+      "unrealized_pl": -259.78,
+      "unrealized_plpc": -0.0101,
       "cost_basis": 25716.36
     },
     {
@@ -82,10 +82,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 128.2,
-      "market_value": 46664.8,
-      "unrealized_pl": -3118.42986,
-      "unrealized_plpc": -0.06264,
+      "current_price": 128.1,
+      "market_value": 46628.4,
+      "unrealized_pl": -3154.82986,
+      "unrealized_plpc": -0.06337,
       "cost_basis": 49783.22986
     },
     {
@@ -93,10 +93,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 405.56,
-      "market_value": 26766.96,
-      "unrealized_pl": -2434.77003,
-      "unrealized_plpc": -0.08338,
+      "current_price": 405.2921,
+      "market_value": 26749.2786,
+      "unrealized_pl": -2452.45143,
+      "unrealized_plpc": -0.08398,
       "cost_basis": 29201.73003
     },
     {
@@ -104,10 +104,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 57.55,
-      "market_value": 23883.25,
-      "unrealized_pl": 473.649875,
-      "unrealized_plpc": 0.02023,
+      "current_price": 57.5492,
+      "market_value": 23882.918,
+      "unrealized_pl": 473.317875,
+      "unrealized_plpc": 0.02022,
       "cost_basis": 23409.600125
     }
   ],
@@ -415,66 +415,5 @@
         }
       ]
     }
-  },
-  "daily_summary": {
-    "date": "2026-06-12",
-    "account": {
-      "portfolio_value": 97318.05,
-      "cash": -124401.29,
-      "buying_power": 101795.41,
-      "positions": 8,
-      "todays_trades": 0,
-      "daily_pnl_amount": 436.85,
-      "daily_pnl_pct": 0.0045,
-      "circuit_breaker": "yellow"
-    },
-    "log": {
-      "task_fires": {
-        "wolf-crypto-247": 3,
-        "wolf-market-open-exec": 1,
-        "wolf-midday-rescan": 1,
-        "wolf-gate-status": 1,
-        "wolf-daily-summary": 1
-      },
-      "errors": 1
-    },
-    "rejected": {
-      "count": 2,
-      "reasons": {
-        "R:R 1.0 < 1.5": 2
-      },
-      "recent": [
-        {
-          "ticker": "LTC/USD",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 1.0 < 1.5",
-          "rejected_at": "2026-06-12T00:00:12.288843",
-          "risk_reward": 1.0,
-          "confidence": 2
-        },
-        {
-          "ticker": "LTC/USD",
-          "strategy": "Mean Reversion (Oversold)",
-          "reason": "R:R 1.0 < 1.5",
-          "rejected_at": "2026-06-12T06:00:11.172786",
-          "risk_reward": 1.0,
-          "confidence": 2
-        }
-      ]
-    },
-    "committee": {
-      "runs": 1,
-      "tickers_voted": 3,
-      "verdicts": {
-        "bullish": 3
-      }
-    }
-  },
-  "daily_summary_updated_at": "2026-06-12T16:50:05.700710",
-  "today_signals": {
-    "as_of": "2026-06-12 16:50:05",
-    "last_task": "EOD recap",
-    "count": 0,
-    "signals": []
   }
 }
