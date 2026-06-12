@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: pre-market-intelligence
+decision: scanned overnight futures + Asia close + Europe open + day's catalysts
+outcome: SPX at 7,375 (+0.6% futures) targeting ATH 7,616 on Iran ceasefire + SpaceX SPCX IPO open; KOSPI +7% is the credibility tell on the deal; LEN earnings call today is the homebuilder sector trigger; FOMC June 16-17 hold certain but Iran oil drop seeds first H2 cut narrative
+lesson: KOSPI single-day magnitude is the most reliable real-time geopolitical risk barometer — Korea's structural oil dependency makes it a cleaner Iran signal than oil futures, which can be manipulated intraday
+tags: wolf,pre-market,markets,daily
+confidence: 0.7
+~~~
