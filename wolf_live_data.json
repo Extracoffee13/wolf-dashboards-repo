@@ -1,27 +1,116 @@
 {
-  "last_updated": "2026-06-12T17:22:58.065027",
+  "last_updated": "2026-06-12T17:28:04.266273",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 97331.42,
+    "portfolio_value": 97364.12,
     "cash": -124401.29,
-    "buying_power": 101828.1,
-    "equity": 97331.42,
+    "buying_power": 101912.27,
+    "equity": 97364.12,
     "last_equity": 96881.2,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 1065.21,
-    "pct": 0.0111,
+    "amount": 482.92,
+    "pct": 0.005,
     "circuit_breaker_status": "green",
-    "circuit_breaker_message": "CLEAR \u2014 Daily: +1.1% (buf: 3.0%) | Weekly: -4.2% (buf: 2.8%)"
+    "circuit_breaker_message": "CLEAR \u2014 Daily: +0.5% (buf: 3.0%) | Weekly: -4.2% (buf: 2.8%)"
   },
   "weekly_pnl": {
     "amount": -4264.3,
     "pct": -0.0417
   },
-  "positions": [],
+  "positions": [
+    {
+      "ticker": "ACN",
+      "qty": 137.0,
+      "side": "long",
+      "avg_entry": 174.131168,
+      "current_price": 170.4328,
+      "market_value": 23349.2936,
+      "unrealized_pl": -506.676416,
+      "unrealized_plpc": -0.02124,
+      "cost_basis": 23855.970016
+    },
+    {
+      "ticker": "JPM",
+      "qty": 76.0,
+      "side": "long",
+      "avg_entry": 306.73,
+      "current_price": 320.65,
+      "market_value": 24369.4,
+      "unrealized_pl": 1057.92,
+      "unrealized_plpc": 0.04538,
+      "cost_basis": 23311.48
+    },
+    {
+      "ticker": "MDT",
+      "qty": 333.0,
+      "side": "long",
+      "avg_entry": 75.842613,
+      "current_price": 80.2459,
+      "market_value": 26721.8847,
+      "unrealized_pl": 1466.294571,
+      "unrealized_plpc": 0.05806,
+      "cost_basis": 25255.590129
+    },
+    {
+      "ticker": "MSFT",
+      "qty": 63.0,
+      "side": "long",
+      "avg_entry": 421.673333,
+      "current_price": 390.47,
+      "market_value": 24599.61,
+      "unrealized_pl": -1965.809979,
+      "unrealized_plpc": -0.074,
+      "cost_basis": 26565.419979
+    },
+    {
+      "ticker": "NVDA",
+      "qty": 124.0,
+      "side": "long",
+      "avg_entry": 207.39,
+      "current_price": 205.31,
+      "market_value": 25458.44,
+      "unrealized_pl": -257.92,
+      "unrealized_plpc": -0.01003,
+      "cost_basis": 25716.36
+    },
+    {
+      "ticker": "PLTR",
+      "qty": 364.0,
+      "side": "long",
+      "avg_entry": 136.767115,
+      "current_price": 128.06,
+      "market_value": 46613.84,
+      "unrealized_pl": -3169.38986,
+      "unrealized_plpc": -0.06366,
+      "cost_basis": 49783.22986
+    },
+    {
+      "ticker": "TSLA",
+      "qty": 66.0,
+      "side": "long",
+      "avg_entry": 442.450455,
+      "current_price": 405.79,
+      "market_value": 26782.14,
+      "unrealized_pl": -2419.59003,
+      "unrealized_plpc": -0.08286,
+      "cost_basis": 29201.73003
+    },
+    {
+      "ticker": "XLE",
+      "qty": 415.0,
+      "side": "long",
+      "avg_entry": 56.408675,
+      "current_price": 57.52,
+      "market_value": 23870.8,
+      "unrealized_pl": 461.199875,
+      "unrealized_plpc": 0.0197,
+      "cost_basis": 23409.600125
+    }
+  ],
   "todays_trades": [],
   "strategy_performance": {
     "small_cap_catalyst": {
@@ -70,7 +159,7 @@
     "weekly_triggered": false,
     "halt_new_entries": false,
     "halt_all_activity": false,
-    "message": "CLEAR \u2014 Daily: +1.1% (buf: 3.0%) | Weekly: -4.2% (buf: 2.8%)"
+    "message": "CLEAR \u2014 Daily: +0.5% (buf: 3.0%) | Weekly: -4.2% (buf: 2.8%)"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
