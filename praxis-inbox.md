@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Anthropic Finance Agents (score 5, owner Ledger/Equity/Alpha)
+lesson: vertical-MCP depth is the dominant pattern this cycle — domain platforms (signage, marketing, financial data) are racing to ship tenant-scoped MCP servers, making the integration unit a governed endpoint rather than a bespoke connector; the team that owns a skill registry (skill-to-mcp or equivalent) will onboard new capabilities in minutes
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
