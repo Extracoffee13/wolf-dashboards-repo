@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Claude Fable 5 (score 5, WOLF)
+lesson: The github claude-skill topic is the highest-velocity discovery surface right now — 12 new repos in 24h — and skills are rapidly converging into three archetypes: security-audit checklists, SaaS-integration automation (Gmail/Slack), and media-generation wrappers; monitor this topic daily rather than weekly.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
