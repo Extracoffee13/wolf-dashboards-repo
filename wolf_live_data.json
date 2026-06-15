@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-06-15T09:39:08.804671",
+  "last_updated": "2026-06-15T09:44:11.452221",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 99728.63,
-    "cash": -149658.54,
-    "buying_power": 77702.82,
-    "equity": 99728.63,
+    "portfolio_value": 99234.86,
+    "cash": -149977.84,
+    "buying_power": 76140.85,
+    "equity": 99234.86,
     "last_equity": 97364.56,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": 2364.07,
-    "pct": 0.0243,
+    "amount": 1870.3,
+    "pct": 0.0192,
     "circuit_breaker_status": "yellow",
-    "circuit_breaker_message": "MANUAL HALT — WOLF mandate v1.0 enforcement — portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh → mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
+    "circuit_breaker_message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13)."
   },
   "weekly_pnl": {
     "amount": -5287.97,
@@ -27,10 +27,10 @@
       "qty": 137.0,
       "side": "long",
       "avg_entry": 174.131168,
-      "current_price": 172.22,
-      "market_value": 23594.14,
-      "unrealized_pl": -261.830016,
-      "unrealized_plpc": -0.01098,
+      "current_price": 171.12,
+      "market_value": 23443.44,
+      "unrealized_pl": -412.530016,
+      "unrealized_plpc": -0.01729,
       "cost_basis": 23855.970016
     },
     {
@@ -38,10 +38,10 @@
       "qty": 76.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 323.1,
-      "market_value": 24555.6,
-      "unrealized_pl": 1244.12,
-      "unrealized_plpc": 0.05337,
+      "current_price": 322.2,
+      "market_value": 24487.2,
+      "unrealized_pl": 1175.72,
+      "unrealized_plpc": 0.05044,
       "cost_basis": 23311.48
     },
     {
@@ -49,10 +49,10 @@
       "qty": 333.0,
       "side": "long",
       "avg_entry": 75.842613,
-      "current_price": 80.725,
-      "market_value": 26881.425,
-      "unrealized_pl": 1625.834871,
-      "unrealized_plpc": 0.06438,
+      "current_price": 80.255,
+      "market_value": 26724.915,
+      "unrealized_pl": 1469.324871,
+      "unrealized_plpc": 0.05818,
       "cost_basis": 25255.590129
     },
     {
@@ -60,32 +60,32 @@
       "qty": 63.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 396.49,
-      "market_value": 24978.87,
-      "unrealized_pl": -1586.549979,
-      "unrealized_plpc": -0.05972,
+      "current_price": 397.05,
+      "market_value": 25014.15,
+      "unrealized_pl": -1551.269979,
+      "unrealized_plpc": -0.05839,
       "cost_basis": 26565.419979
     },
     {
       "ticker": "NOW",
-      "qty": 239.0,
+      "qty": 242.0,
       "side": "long",
-      "avg_entry": 105.67887,
-      "current_price": 106.325,
-      "market_value": 25411.675,
-      "unrealized_pl": 154.42507,
-      "unrealized_plpc": 0.00611,
-      "cost_basis": 25257.24993
+      "avg_entry": 105.688222,
+      "current_price": 106.1,
+      "market_value": 25676.2,
+      "unrealized_pl": 99.650276,
+      "unrealized_plpc": 0.0039,
+      "cost_basis": 25576.549724
     },
     {
       "ticker": "NVDA",
       "qty": 124.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 209.6825,
-      "market_value": 26000.63,
-      "unrealized_pl": 284.27,
-      "unrealized_plpc": 0.01105,
+      "current_price": 208.955,
+      "market_value": 25910.42,
+      "unrealized_pl": 194.06,
+      "unrealized_plpc": 0.00755,
       "cost_basis": 25716.36
     },
     {
@@ -93,10 +93,10 @@
       "qty": 364.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 131.76,
-      "market_value": 47960.64,
-      "unrealized_pl": -1822.58986,
-      "unrealized_plpc": -0.03661,
+      "current_price": 131.23,
+      "market_value": 47767.72,
+      "unrealized_pl": -2015.50986,
+      "unrealized_plpc": -0.04049,
       "cost_basis": 49783.22986
     },
     {
@@ -104,10 +104,10 @@
       "qty": 66.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 409.6601,
-      "market_value": 27037.5666,
-      "unrealized_pl": -2164.16343,
-      "unrealized_plpc": -0.07411,
+      "current_price": 411.89,
+      "market_value": 27184.74,
+      "unrealized_pl": -2016.99003,
+      "unrealized_plpc": -0.06907,
       "cost_basis": 29201.73003
     },
     {
@@ -115,10 +115,10 @@
       "qty": 415.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 55.32,
-      "market_value": 22957.8,
-      "unrealized_pl": -451.800125,
-      "unrealized_plpc": -0.0193,
+      "current_price": 55.43,
+      "market_value": 23003.45,
+      "unrealized_pl": -406.150125,
+      "unrealized_plpc": -0.01735,
       "cost_basis": 23409.600125
     }
   ],
@@ -127,9 +127,9 @@
       "id": "8cf3a061-e76f-4b25-8a0b-3f8351232b8b",
       "ticker": "NOW",
       "side": "buy",
-      "qty": 239.0,
-      "filled_price": 105.67887,
-      "status": "partially_filled",
+      "qty": 242.0,
+      "filled_price": 105.688222,
+      "status": "filled",
       "created_at": "2026-06-15T11:05:05.899723Z",
       "order_class": ""
     }
@@ -185,7 +185,7 @@
     },
     "congress_follower": {
       "name": "Congressional Trade Follower",
-      "status": "ACTIVE_PARTIAL — trade-level data flowing via PDF parser; member-track-record weighting deferred",
+      "status": "ACTIVE_PARTIAL \u2014 trade-level data flowing via PDF parser; member-track-record weighting deferred",
       "trades_today": 0,
       "wins_today": 0,
       "losses_today": 0,
@@ -198,7 +198,7 @@
       "code_path": "strategies/congress_follower.py + congressional_ptr_parser.py (NEW 2026-05-06)",
       "wired_into_scan": true,
       "academic_source": "Ziobrowski et al. (2004, 2011)",
-      "note": "BLOCKED resolved 2026-05-06: built congressional_ptr_parser.py to extract ticker+amount from House PTR PDFs (free, replaces paid Quiver). Tested on last 30d: 5 qualifying ≥$50K equity buys, including Josh Gottheimer's MSFT $500K options buy 3/25. Member-track-record filter (Sharpe vs SPX) is enhancement for later.",
+      "note": "BLOCKED resolved 2026-05-06: built congressional_ptr_parser.py to extract ticker+amount from House PTR PDFs (free, replaces paid Quiver). Tested on last 30d: 5 qualifying \u2265$50K equity buys, including Josh Gottheimer's MSFT $500K options buy 3/25. Member-track-record filter (Sharpe vs SPX) is enhancement for later.",
       "blocker_action": null
     },
     "cross_sectional_momentum": {
@@ -236,7 +236,7 @@
     },
     "mean_reversion_bb_rsi": {
       "name": "Mean Reversion (BB + RSI)",
-      "status": "DISABLED — Sharpe -1.63, Max DD -78.9% (real backtest 2026-05-06)",
+      "status": "DISABLED \u2014 Sharpe -1.63, Max DD -78.9% (real backtest 2026-05-06)",
       "trades_today": 0,
       "wins_today": 0,
       "losses_today": 0,
@@ -248,11 +248,11 @@
       "data_source": null,
       "code_path": "strategies/mean_reversion_bb_rsi.py",
       "wired_into_scan": false,
-      "note": "Backtest 2026-05-06: 2383 trades, blew up to -78.9% return. Bollinger/RSI mean reversion fights trend on this universe. DO NOT ACTIVATE without redesign — possible fix: regime-filter (only trade during VIX < 20)."
+      "note": "Backtest 2026-05-06: 2383 trades, blew up to -78.9% return. Bollinger/RSI mean reversion fights trend on this universe. DO NOT ACTIVATE without redesign \u2014 possible fix: regime-filter (only trade during VIX < 20)."
     },
     "overnight_gap_reversal": {
       "name": "Overnight Gap Reversal",
-      "status": "DISABLED — Sharpe -4.85, Max DD -100% (real backtest 2026-05-06)",
+      "status": "DISABLED \u2014 Sharpe -4.85, Max DD -100% (real backtest 2026-05-06)",
       "trades_today": 0,
       "wins_today": 0,
       "losses_today": 0,
@@ -264,7 +264,7 @@
       "data_source": null,
       "code_path": "strategies/overnight_gap_reversal.py",
       "wired_into_scan": false,
-      "note": "Backtest 2026-05-06: 1763 trades, total wipeout. Gap-fade strategy doesn't survive. DO NOT ACTIVATE — fundamental edge thesis appears wrong on liquid mid-large caps."
+      "note": "Backtest 2026-05-06: 1763 trades, total wipeout. Gap-fade strategy doesn't survive. DO NOT ACTIVATE \u2014 fundamental edge thesis appears wrong on liquid mid-large caps."
     },
     "sector_etf_rotation": {
       "name": "Sector ETF Rotation",
@@ -285,7 +285,7 @@
     },
     "pead_options": {
       "name": "PEAD on Options",
-      "status": "PAPER_PENDING — paper-trade only until 30 days of real option fills inform Sharpe",
+      "status": "PAPER_PENDING \u2014 paper-trade only until 30 days of real option fills inform Sharpe",
       "trades_today": 0,
       "wins_today": 0,
       "losses_today": 0,
@@ -297,7 +297,7 @@
       "data_source": "Alpaca paper options + same gap-up proxy as pead",
       "code_path": "strategies/pead_options.py (NEW 2026-05-06)",
       "wired_into_scan": false,
-      "academic_source": "Bernard & Thomas (1989) — drift edge applied to leveraged option contract",
+      "academic_source": "Bernard & Thomas (1989) \u2014 drift edge applied to leveraged option contract",
       "note": "Built 2026-05-06. Same signal trigger as pead (Sharpe 1.76); buys 30-DTE 5%-OTM call instead of stock. Defined-risk leverage 3-5x. Paper-trade only until Alpaca paper records 30 days of real option fills, then evaluate Sharpe vs stock-PEAD. Position size capped at 1% portfolio per trade."
     }
   },
@@ -307,13 +307,13 @@
     "weekly_triggered": false,
     "halt_new_entries": true,
     "halt_all_activity": false,
-    "message": "MANUAL HALT — WOLF mandate v1.0 enforcement — portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh → mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13).",
-    "halt_reason": "WOLF mandate v1.0 enforcement — portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh → mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13).",
+    "message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13).",
+    "halt_reason": "WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13).",
     "halt_until": "post-rebalance"
   },
   "backtest": {
     "last_run_date": "2026-04-07",
-    "data_source": "REAL — Alpaca IEX feed (2024-04-07 to 2026-04-07)",
+    "data_source": "REAL \u2014 Alpaca IEX feed (2024-04-07 to 2026-04-07)",
     "strategies_passed": 1,
     "strategies_failed": 7,
     "best_strategy": "Small Cap Catalyst",
@@ -329,7 +329,7 @@
   },
   "wolf_status": {
     "mode": "PAPER",
-    "phase": "Mandate v1.0 enforced · paper through 2026-06-05",
+    "phase": "Mandate v1.0 enforced \u00b7 paper through 2026-06-05",
     "approved_strategies": 3,
     "disabled_strategies": 7,
     "approved_strategy_names": [
@@ -341,7 +341,7 @@
     "total_trades_all_time": 5,
     "total_pnl_all_time": 50.09,
     "win_rate_all_time": 0.0,
-    "mandate_v1_status": "ENFORCED — gate active, rebalance pending at next market-open",
+    "mandate_v1_status": "ENFORCED \u2014 gate active, rebalance pending at next market-open",
     "mandate_enforcement_wired_date": "2026-05-13",
     "day_60_reassess_date": "2026-06-05"
   },
@@ -384,7 +384,7 @@
       },
       {
         "date": "2026-05-12",
-        "lesson": "Paper trading window extended 30 → 60 days. The Day-30 reassess fired 5/7 but did not graduate. Day-60 reassess (2026-06-05) is the next forcing function."
+        "lesson": "Paper trading window extended 30 \u2192 60 days. The Day-30 reassess fired 5/7 but did not graduate. Day-60 reassess (2026-06-05) is the next forcing function."
       },
       {
         "date": "2026-05-05",
@@ -393,10 +393,6 @@
       {
         "date": "2026-04-08",
         "lesson": "WOLF can now enumerate his own 14 scripts for self-aware planning."
-      },
-      {
-        "date": "2026-06-15",
-        "lesson": "HBR: agentic-AI operating model shrinks the time and capital to build a company — startups supercharged, incumbents exposed (Lee/Mantia/McNeill, Jul-Aug 2026)."
       }
     ],
     "real_money_unlocked": false,
@@ -407,7 +403,7 @@
     },
     "esoteric_strategies": {
       "_meta": {
-        "purpose": "WOLF-ORIGINAL strategies developed in-house via open-source research synthesis (arxiv/SSRN/github/reddit/Lens) + cross-agent inputs. Tracked SEPARATELY from the 8 academic-grounded strategies (52-Week Breakout, PEAD, Insider Cluster, Sector Rotation, Small Cap Catalyst, Congress Follower, Cross-Sectional Momentum, PEAD-on-Options) so Bobby can see what WOLF discovered vs what was borrowed from the literature. Status pipeline: research → backtest → paper_gate → small_allocation → scale.",
+        "purpose": "WOLF-ORIGINAL strategies developed in-house via open-source research synthesis (arxiv/SSRN/github/reddit/Lens) + cross-agent inputs. Tracked SEPARATELY from the 8 academic-grounded strategies (52-Week Breakout, PEAD, Insider Cluster, Sector Rotation, Small Cap Catalyst, Congress Follower, Cross-Sectional Momentum, PEAD-on-Options) so Bobby can see what WOLF discovered vs what was borrowed from the literature. Status pipeline: research \u2192 backtest \u2192 paper_gate \u2192 small_allocation \u2192 scale.",
         "schema_per_strategy": {
           "name": "human-readable strategy name",
           "code_path": "strategies/esoteric/<file>.py",
@@ -421,7 +417,7 @@
           "discovered_date": "YYYY-MM-DD",
           "promoted_date": "YYYY-MM-DD when moved to paper"
         },
-        "graduation_to_real": "Must pass same gates as academic strategies (Sharpe ≥ 1.0 net, max-DD ≤ 12%, 30 mandate-compliant days). No special pass for being WOLF-original.",
+        "graduation_to_real": "Must pass same gates as academic strategies (Sharpe \u2265 1.0 net, max-DD \u2264 12%, 30 mandate-compliant days). No special pass for being WOLF-original.",
         "research_cadence": "wolf-tool-discovery fires daily; wolf-esoteric-research fires weekly Sundays to propose 1 new candidate from the week's research digest."
       },
       "strategies": [
@@ -429,8 +425,8 @@
           "name": "Construct Synthesis Signal",
           "code_path": "strategies/esoteric/construct_synthesis.py",
           "status": "research",
-          "hypothesis": "The Lens daily intelligence brief synthesizes ~5 patterns per day from institutional research (HBR, MIT Sloan, Wharton, Stratechery, NBER, Fed). When ≥3 institutions converge on the same theme in one week, that's a high-conviction directional signal usable for sector/factor allocation. Bobby's Lens is the moat — no other quant uses this input.",
-          "open_source_inspiration": "Bobby's own Lens daily-scan output (Atlas/lens-briefs/) — a proprietary intelligence corpus built from open institutional sources.",
+          "hypothesis": "The Lens daily intelligence brief synthesizes ~5 patterns per day from institutional research (HBR, MIT Sloan, Wharton, Stratechery, NBER, Fed). When \u22653 institutions converge on the same theme in one week, that's a high-conviction directional signal usable for sector/factor allocation. Bobby's Lens is the moat \u2014 no other quant uses this input.",
+          "open_source_inspiration": "Bobby's own Lens daily-scan output (Atlas/lens-briefs/) \u2014 a proprietary intelligence corpus built from open institutional sources.",
           "cross_agent_inputs": "Lens (signal generator), Architect (allocation), Keystone (regime context), Helm (agent-economy theme detection).",
           "backtest_sharpe": null,
           "backtest_max_dd": null,
