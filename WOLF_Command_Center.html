@@ -260,9 +260,11 @@ function render(d){
 }
 
 function loadScout(){
-  // Best-effort: scout_state.json lives in the local data dir (not on Pages).
-  // Shows live sleeve P&L when viewed locally; stays static otherwise.
-  fetch(".claude/skills/wolf/data/scout_state.json?t="+Date.now(),{cache:"no-store"})
+  // Scout state is published to the repo root by the sync runner, so it shows
+  // live on Pages (phone/web) too. Local view reads the data dir directly.
+  const isLocal=location.hostname!=="extracoffee13.github.io";
+  const surl=(isLocal?".claude/skills/wolf/data/scout_state.json?t=":"scout_state.json?t=")+Date.now();
+  fetch(surl,{cache:"no-store"})
     .then(r=>r.ok?r.json():Promise.reject()).then(s=>{
       if(s.halted){$("scout-status").textContent="HALTED — daily loss limit (paper)";}
       else{$("scout-status").textContent="PAPER · active "+(s.date||"");}
