@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: pre-market-intelligence
+decision: scanned overnight futures + Asia close + Europe open + day's catalysts
+outcome: US-Iran peace deal (Strait of Hormuz reopening) dominates tape; Asia +5.5-5.7%, US futures flat digesting Monday's surge; Warsh's first FOMC dot plot Wednesday is the week's live grenade — watch NDX 20,500 as the pivot
+lesson: When a single macro event (Iran deal) drives Asia +5%+ overnight, the pre-market US flat is not weakness — it is positioning ahead of a second binary event (dot plot), and the real trade isn't Monday's open but Wednesday's 2:30 PM press conference
+tags: wolf,pre-market,markets,daily
+confidence: 0.7
+~~~
