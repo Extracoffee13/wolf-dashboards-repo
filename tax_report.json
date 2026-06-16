@@ -1,0 +1,70 @@
+{
+  "as_of": "2026-06-16T20:50:04Z",
+  "tax_year": 2026,
+  "realized": {
+    "short_term_gain": -972.69,
+    "long_term_gain": 0.0,
+    "total_realized": -972.69,
+    "estimated_tax": 0.0,
+    "stcg_rate": 0.37,
+    "ltcg_rate": 0.2
+  },
+  "wash_sale_flags": [],
+  "wash_sale_blocklist": {
+    "NOW": "2026-07-16",
+    "TSLA": "2026-07-16",
+    "XLE": "2026-07-16",
+    "PLTR": "2026-07-16",
+    "MSFT": "2026-07-16",
+    "ACN": "2026-07-16"
+  },
+  "approaching_ltcg": [],
+  "tax_loss_harvest_candidates": [
+    {
+      "ticker": "TSLA",
+      "qty": 20.0,
+      "buy_px": 442.450455,
+      "buy_dt": "2026-05-12",
+      "days_held": 35,
+      "term": "ST",
+      "days_to_ltcg": 330,
+      "current_px": 403.65,
+      "unrealized_loss": -776.01
+    },
+    {
+      "ticker": "MSFT",
+      "qty": 20.0,
+      "buy_px": 421.673333,
+      "buy_dt": "2026-05-07",
+      "days_held": 40,
+      "term": "ST",
+      "days_to_ltcg": 325,
+      "current_px": 392.8195,
+      "unrealized_loss": -577.08
+    },
+    {
+      "ticker": "XLE",
+      "qty": 270.0,
+      "buy_px": 56.408675,
+      "buy_dt": "2026-04-08",
+      "days_held": 69,
+      "term": "ST",
+      "days_to_ltcg": 296,
+      "current_px": 55.41,
+      "unrealized_loss": -269.64
+    },
+    {
+      "ticker": "PLTR",
+      "qty": 60.0,
+      "buy_px": 136.744231,
+      "buy_dt": "2026-05-12",
+      "days_held": 35,
+      "term": "ST",
+      "days_to_ltcg": 330,
+      "current_px": 132.75,
+      "unrealized_loss": -239.65
+    }
+  ],
+  "open_lot_count": 11,
+  "note": "Estimate only \u2014 not tax advice. FIFO basis; consult a CPA before filing."
+}

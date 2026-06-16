@@ -585,5 +585,61 @@
         }
       ]
     }
-  }
+  },
+  "daily_summary": {
+    "date": "2026-06-16",
+    "account": {
+      "portfolio_value": 97514.87,
+      "cash": -1150.9,
+      "buying_power": 265202.15,
+      "positions": 11,
+      "todays_trades": 11,
+      "daily_pnl_amount": -2159.11,
+      "daily_pnl_pct": -0.0217,
+      "circuit_breaker": "yellow"
+    },
+    "log": {
+      "task_fires": {
+        "wolf-crypto-247": 3,
+        "wolf-market-open-exec": 1,
+        "wolf-midday-rescan": 1,
+        "wolf-gate-status": 1,
+        "wolf-daily-summary": 1
+      },
+      "errors": 0
+    },
+    "rejected": {
+      "count": 2,
+      "reasons": {
+        "wash-sale block: NVDA loss realized <30d ago (blocked until 2026-07-06)": 1,
+        "would breach 1.00x leverage cap: current 2.52x, post-trade 2.56x": 1
+      },
+      "recent": [
+        {
+          "ticker": "NVDA",
+          "strategy": "pead",
+          "reason": "wash-sale block: NVDA loss realized <30d ago (blocked until 2026-07-06)",
+          "rejected_at": "2026-06-16T13:03:37Z",
+          "risk_reward": null,
+          "confidence": null
+        },
+        {
+          "ticker": "AAPL",
+          "strategy": "breakout_52w",
+          "reason": "would breach 1.00x leverage cap: current 2.52x, post-trade 2.56x",
+          "rejected_at": "2026-06-16T13:03:37Z",
+          "risk_reward": null,
+          "confidence": null
+        }
+      ]
+    },
+    "committee": {
+      "runs": 1,
+      "tickers_voted": 3,
+      "verdicts": {
+        "bullish": 3
+      }
+    }
+  },
+  "daily_summary_updated_at": "2026-06-16T16:50:04.287741"
 }
