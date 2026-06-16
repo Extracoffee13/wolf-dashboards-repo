@@ -89,7 +89,26 @@
     <div class="srow"><span><span class="nm">Trend Overlay</span> <span class="meta">time-series momentum · vault de-risking switch</span></span><span><span class="pill p-ok">PASS</span> <span class="meta">Sharpe 2.02 · DD −7.2% · +61.7%</span></span></div>
     <div class="srow"><span><span class="nm">Residual Momentum</span> <span class="meta">beta-neutral cross-sectional momentum</span></span><span><span class="pill p-warn">SHORT</span> <span class="meta">Sharpe 0.83 · DD −12.9% · research</span></span></div>
     <div class="srow"><span><span class="nm">Regime-gated Mean-Reversion</span> <span class="meta">revival test of the killed BB+RSI</span></span><span><span class="pill p-bad">KILL CONFIRMED</span> <span class="meta">Sharpe −1.00 · DD −26.7% (was −78.9%)</span></span></div>
-    <div class="srow"><span><span class="nm">Construct Synthesis Signal</span> <span class="meta">Lens cross-institution convergence → sector tilt (the moat)</span></span><span><span class="pill p-cy">RESEARCH</span> <span class="meta">event-study pending</span></span></div>
+    <div class="srow"><span><span class="nm">Construct Synthesis Signal</span> <span class="meta">Lens cross-institution convergence → sector tilt (the moat)</span></span><span><span class="pill p-cy">RESEARCH</span> <span class="meta">faint 10d edge (52% win, +0.31% vs SPY) · decays by 21d</span></span></div>
+  </div>
+
+  <h2>Day-trading sleeve — Scout <span style="color:var(--dim);text-transform:none;letter-spacing:0;">(ring-fenced · paper R&D)</span></h2>
+  <div class="grid g2">
+    <div class="card k cy">
+      <div class="srow"><span class="nm">Status</span><span><span class="pill p-cy" id="scout-status">PAPER · opt-in (not auto-running)</span></span></div>
+      <div class="srow"><span class="nm">Sleeve equity</span><span class="meta" id="scout-eq">≤5% of book · ring-fenced</span></div>
+      <div class="srow"><span class="nm">Day P&L</span><span class="meta" id="scout-pnl">—</span></div>
+      <div class="srow"><span class="nm">Trades today</span><span class="meta" id="scout-trades">—</span></div>
+    </div>
+    <div class="card">
+      <div class="k-label">Ring-fence (cannot touch the vault)</div>
+      <ul class="rules">
+        <li>≤5% of book, sized off its own equity · long-only, no margin</li>
+        <li>−2% daily loss limit · own circuit breaker · max 6 trades/day</li>
+        <li>Flat by 15:55 ET — no overnight gap risk</li>
+        <li>Strategy: Opening-Range Breakout · kill check 2026-09-16</li>
+      </ul>
+    </div>
   </div>
 
   <h2>Market regime</h2>
