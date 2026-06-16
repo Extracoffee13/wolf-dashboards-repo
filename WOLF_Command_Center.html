@@ -198,6 +198,7 @@ function render(d){
     chip("Strategy attribution","ok","wired"),
     chip("Tax-alpha / wash-sale","ok","enforced pre-trade"),
     chip("Vault de-risk (trend)","cy","weekly · armed"),
+    chip("Scout fast sleeve","cy","paper · ≤5% ring-fenced"),
     chip("Control heartbeat","ok","EOD daily"),
     chip("Live performance",trades<10?"warn":"ok",wr.toFixed(0)+"% over "+trades+" trades"),
   ].join("");
@@ -258,6 +259,18 @@ function render(d){
     Principle: <b>fix the controls before adding alpha.</b>`;
 }
 
+function loadScout(){
+  // Best-effort: scout_state.json lives in the local data dir (not on Pages).
+  // Shows live sleeve P&L when viewed locally; stays static otherwise.
+  fetch(".claude/skills/wolf/data/scout_state.json?t="+Date.now(),{cache:"no-store"})
+    .then(r=>r.ok?r.json():Promise.reject()).then(s=>{
+      if(s.halted){$("scout-status").textContent="HALTED — daily loss limit (paper)";}
+      else{$("scout-status").textContent="PAPER · active "+(s.date||"");}
+      if(s.sleeve_equity!=null)$("scout-eq").textContent=f2(s.sleeve_equity)+" · ring-fenced";
+      $("scout-pnl").innerHTML='<span class="'+((s.day_pnl||0)>=0?'ok':'bad')+'">'+((s.day_pnl||0)>=0?'+':'')+f$(s.day_pnl)+'</span>';
+      $("scout-trades").textContent=(s.trades_today||0)+" / 6";
+    }).catch(()=>{ /* not running yet — keep static defaults */ });
+}
 function load(){
   const isLocal=location.hostname!=="extracoffee13.github.io";
   const url=(isLocal?"wolf_live_data.json?t=":RAW+"?t=")+Date.now();
@@ -265,6 +278,7 @@ function load(){
     $("live-status").textContent="OFFLINE"; $("live-status").style.color="var(--amber)";
     $("verdict").innerHTML=`<span class="warn">⚠ live feed unreachable (${e.message}). Retrying every 60s.</span>`;
   });
+  loadScout();
 }
 load();
 setInterval(load,60000);
