@@ -2073,5 +2073,86 @@ loadLiveData();
 setInterval(loadLiveData, 60000);
 </script>
 
+<script>
+// ===== AUDIT COMPLIANCE BANNER (2026-06-16, audit P0-3 / P1-1) =====
+// Self-contained: own fetch, own render. Surfaces the truth the rest of the
+// dashboard buried — mandate compliance + control health — and ALARMS on breach
+// instead of painting everything green. Independent of loadLiveData() above.
+(function(){
+  var ETF = {XLE:1,VOO:1,SHV:1,BIL:1,TLT:1,SPY:1,QQQ:1,IWM:1,DIA:1,XLF:1,XLK:1,XLV:1,XLI:1,XLP:1,XLU:1,XLY:1,XLB:1,XLRE:1,XLC:1};
+  var VAULT = {SHV:1,VOO:1,BIL:1,TLT:1};
+  var HALT_SINCE = new Date("2026-05-13T00:00:00Z");
+  var GREEN="#4ade80", AMBER="#fbbf24", RED="#f87171", MUTED="#8a94a6";
+  function f$(n){return "$"+Number(n).toLocaleString("en-US",{maximumFractionDigits:0});}
+  function tile(k,val,color,lim){
+    return '<div style="background:#11161e;border:1px solid #1f2630;border-left:3px solid '+color+';border-radius:8px;padding:10px 12px;min-width:150px;flex:1;">'+
+      '<div style="font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:'+MUTED+';">'+k+'</div>'+
+      '<div style="font-size:21px;font-weight:700;font-family:ui-monospace,Menlo,monospace;color:'+color+';margin-top:3px;">'+val+'</div>'+
+      '<div style="font-size:10px;color:#6b7688;font-family:ui-monospace,Menlo,monospace;margin-top:3px;">'+(lim||'')+'</div></div>';
+  }
+  function chip(label,state,detail){
+    var c = state==='bad'?RED:(state==='warn'?AMBER:GREEN);
+    return '<div style="display:flex;align-items:center;gap:8px;padding:7px 10px;background:#11161e;border:1px solid #1f2630;border-radius:7px;font-size:11.5px;">'+
+      '<span style="width:8px;height:8px;border-radius:50%;background:'+c+';flex:none;"></span>'+
+      '<span style="color:#e6e9ef;">'+label+'</span><span style="color:'+MUTED+';">— '+detail+'</span></div>';
+  }
+  function render(d, liveStr){
+    var a = d.account||{}, eq=+(a.equity||a.portfolio_value||0), cash=+(a.cash||0);
+    var lev = eq>0 ? (eq+Math.max(0,-cash))/eq : 0;
+    var pos = (d.positions||[]).map(function(p){return {t:p.ticker,mv:+(p.market_value||0)};}).sort(function(x,y){return y.mv-x.mv;});
+    var top = pos[0]||{t:'—',mv:0}, topPct = eq>0?top.mv/eq*100:0;
+    var vault = pos.filter(function(p){return VAULT[p.t];}).reduce(function(s,p){return s+p.mv;},0);
+    var vaultPct = eq>0?vault/eq*100:0;
+    var over = pos.filter(function(p){var c=ETF[p.t]?15:8;return eq>0&&p.mv/eq*100>c;}).length;
+    var halt = !!(d.circuit_breaker&&d.circuit_breaker.halt_new_entries);
+    var haltDays = Math.floor((Date.now()-HALT_SINCE)/864e5);
+    var regime = (d.market_regime&&d.market_regime.current)||'UNKNOWN';
+    var trades = +((d.wolf_status&&d.wolf_status.total_trades_all_time)||0);
+    var wr = +((d.wolf_status&&d.wolf_status.win_rate_all_time)||0)*100;
+    var breaches = [lev>1.01, topPct>8, vaultPct<60, cash<0, over>0].filter(Boolean).length;
+    var hdrColor = breaches>=3?RED:(breaches>0?AMBER:GREEN);
+    var msg = breaches>=3
+      ? 'NON-COMPLIANT — '+breaches+'/5 mandate pillars breached. Rebalance overdue '+haltDays+' days.'
+      : (breaches>0 ? breaches+'/5 mandate pillars breached.' : 'Compliant under mandate v1.0.');
+    var html =
+      '<div style="background:#0f1217;border:1px solid '+hdrColor+';border-radius:12px;padding:14px 16px;margin:14px 0 4px;">'+
+        '<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:10px;">'+
+          '<div style="font-size:13px;font-weight:700;letter-spacing:.04em;color:'+hdrColor+';">⚠ MANDATE COMPLIANCE — '+msg+'</div>'+
+          '<div style="font-size:10.5px;color:'+MUTED+';font-family:ui-monospace,Menlo,monospace;">audit overlay · '+liveStr+'</div>'+
+        '</div>'+
+        '<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;">'+
+          tile('Leverage', lev.toFixed(2)+'×', lev>1.01?RED:GREEN, 'limit 1.00×')+
+          tile('Margin / cash', f$(cash), cash<0?RED:GREEN, 'limit ≥ $0')+
+          tile('Largest', topPct.toFixed(0)+'% '+top.t, topPct>8?RED:GREEN, 'limit 8%')+
+          tile('Vault', vaultPct.toFixed(0)+'%', vaultPct<60?RED:GREEN, 'floor 60%')+
+          tile('Names over cap', over+'/'+pos.length, over>0?RED:GREEN, 'target 0')+
+        '</div>'+
+        '<div style="display:flex;gap:8px;flex-wrap:wrap;">'+
+          chip('Rebalance control', haltDays>2&&halt?'bad':'ok', haltDays>2&&halt?('halt stuck '+haltDays+'d — verify rebalance ran'):'ok')+
+          chip('Entry halt', halt?'bad':'ok', halt?'ON — no new entries permitted':'clear')+
+          chip('Regime detector', regime==='UNKNOWN'?'warn':'ok', regime)+
+          chip('Live performance', trades<10?'warn':'ok', wr.toFixed(0)+'% win over '+trades+' trades')+
+          chip('Graduation gates', 'warn', 'below reflect BACKTEST, not live results')+
+        '</div>'+
+      '</div>';
+    var el = document.getElementById('wolf-audit-banner');
+    if (el) el.innerHTML = html;
+  }
+  function load(){
+    var isLocal = location.hostname !== 'extracoffee13.github.io';
+    var url = isLocal ? 'wolf_live_data.json?t='+Date.now()
+      : 'https://raw.githubusercontent.com/Extracoffee13/wolf-dashboards-repo/main/wolf_live_data.json?t='+Date.now();
+    fetch(url,{cache:'no-store'}).then(function(r){return r.json();})
+      .then(function(d){ render(d, new Date().toLocaleTimeString()); })
+      .catch(function(e){
+        var el=document.getElementById('wolf-audit-banner');
+        if(el) el.innerHTML='<div style="background:#0f1217;border:1px solid '+AMBER+';border-radius:12px;padding:12px 16px;margin:14px 0 4px;color:'+AMBER+';font-size:12px;">⚠ audit overlay: live feed unreachable ('+e.message+')</div>';
+      });
+  }
+  load();
+  setInterval(load, 60000);
+})();
+</script>
+
 </body>
 </html>
