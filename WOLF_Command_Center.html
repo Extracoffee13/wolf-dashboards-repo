@@ -1,2158 +1,254 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>WOLF Command Center</title>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace; background: #0a0a0f; color: #e0e0e0; min-height: 100vh; }
-
-  .header { background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1a 100%); border-bottom: 2px solid #ff6b35; padding: 20px 30px; display: flex; align-items: center; justify-content: space-between; }
-  .logo { font-size: 28px; font-weight: 900; color: #ff6b35; letter-spacing: 4px; }
-  .logo span { color: #888; font-size: 14px; letter-spacing: 1px; }
-  .status-badge { background: #1a3a1a; color: #4ade80; padding: 6px 14px; border-radius: 20px; font-size: 12px; border: 1px solid #4ade80; }
-
-  /* ─── AUTO-FIT GRIDS ─── no @media dependency. Cards naturally wrap at any
-     viewport (iPhone QuickLook, Safari, Chrome). A 390px iPhone shows 1 column;
-     a 1440px desktop shows 3-4. */
-  html, body { overflow-x: hidden; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; padding: 20px; }
-  .grid-2 { grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); }
-  .full-width { grid-column: 1 / -1; }
-  .card { padding: 20px; word-wrap: break-word; }
-  code { word-break: break-all; }
-
-  .card { background: #12121f; border: 1px solid #2a2a3e; border-radius: 12px; padding: 20px; }
-  .card-header { color: #ff6b35; font-size: 12px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 14px; display: flex; justify-content: space-between; align-items: center; }
-  .card-header .badge { font-size: 10px; padding: 2px 8px; border-radius: 10px; }
-  .badge-green { background: #1a3a1a; color: #4ade80; border: 1px solid #2a5a2a; }
-  .badge-yellow { background: #3a3a1a; color: #facc15; border: 1px solid #5a5a2a; }
-  .badge-red { background: #3a1a1a; color: #f87171; border: 1px solid #5a2a2a; }
-  .badge-blue { background: #1a1a3a; color: #60a5fa; border: 1px solid #2a2a5a; }
-  .badge-purple { background: #2a1a3a; color: #c084fc; border: 1px solid #3a2a5a; }
-
-  .big-number { font-size: 36px; font-weight: 900; color: #fff; }
-  .big-number.green { color: #4ade80; }
-  .big-number.red { color: #f87171; }
-  .big-number.orange { color: #ff6b35; }
-  .sub-text { color: #666; font-size: 12px; margin-top: 4px; }
-
-  table { width: 100%; border-collapse: collapse; font-size: 13px; }
-  th { text-align: left; color: #666; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; padding: 8px 6px; border-bottom: 1px solid #2a2a3e; }
-  td { padding: 10px 6px; border-bottom: 1px solid #1a1a2e; }
-  tr:hover { background: #1a1a2e; }
-
-  .signal-row { display: flex; gap: 12px; align-items: center; padding: 12px 0; border-bottom: 1px solid #1a1a2e; }
-  .signal-dir { font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 6px; }
-  .signal-long { background: #1a3a1a; color: #4ade80; }
-  .signal-short { background: #3a1a1a; color: #f87171; }
-  .signal-ticker { font-weight: 700; color: #fff; font-size: 15px; min-width: 60px; }
-  .signal-strategy { color: #888; font-size: 12px; flex: 1; }
-  .signal-conf { color: #ff6b35; font-weight: 700; }
-
-  .signal-detail { display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 4px; margin-top: 6px; }
-  .signal-detail-item { font-size: 10px; }
-  .sd-label { color: #555; text-transform: uppercase; letter-spacing: 0.5px; }
-  .sd-val { color: #ccc; font-weight: 700; }
-
-  .progress-bar { background: #1a1a2e; height: 8px; border-radius: 4px; margin-top: 8px; overflow: hidden; }
-  .progress-fill { height: 100%; border-radius: 4px; transition: width 0.5s; }
-  .fill-green { background: linear-gradient(90deg, #4ade80, #22c55e); }
-  .fill-orange { background: linear-gradient(90deg, #ff6b35, #ea580c); }
-  .fill-red { background: linear-gradient(90deg, #f87171, #dc2626); }
-
-  .strategy-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid #1a1a2e; }
-  .strat-name { color: #ccc; font-size: 13px; }
-  .strat-grade { font-weight: 900; font-size: 14px; padding: 2px 10px; border-radius: 6px; }
-  .grade-a { background: #1a3a1a; color: #4ade80; }
-  .grade-b { background: #1a3a2e; color: #86efac; }
-  .grade-c { background: #3a3a1a; color: #facc15; }
-  .grade-d { background: #3a2a1a; color: #fb923c; }
-  .grade-f { background: #3a1a1a; color: #f87171; }
-
-  .repo-item { padding: 8px 0; border-bottom: 1px solid #1a1a2e; }
-  .repo-name { color: #60a5fa; font-size: 13px; text-decoration: none; }
-  .repo-name:hover { text-decoration: underline; }
-  .repo-stars { color: #facc15; font-size: 11px; }
-  .repo-desc { color: #666; font-size: 11px; margin-top: 2px; }
-  .repo-priority { font-size: 10px; padding: 1px 6px; border-radius: 4px; margin-left: 8px; }
-
-  .phase-item { display: flex; align-items: center; gap: 10px; padding: 8px 0; }
-  .phase-dot { width: 12px; height: 12px; border-radius: 50%; }
-  .dot-active { background: #ff6b35; box-shadow: 0 0 8px #ff6b35; }
-  .dot-pending { background: #333; border: 1px solid #555; }
-  .dot-done { background: #4ade80; }
-  .phase-label { font-size: 13px; }
-  .phase-label.active { color: #ff6b35; font-weight: 700; }
-  .phase-label.pending { color: #555; }
-
-  .regime-bar { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid #1a1a2e; }
-  .regime-label { font-size: 12px; color: #888; min-width: 90px; }
-  .regime-val { font-size: 13px; color: #fff; font-weight: 700; }
-  .regime-tag { font-size: 10px; padding: 2px 8px; border-radius: 8px; margin-left: auto; }
-
-  .congress-source { display: flex; align-items: center; gap: 8px; padding: 8px 0; border-bottom: 1px solid #1a1a2e; }
-  .congress-dot { width: 8px; height: 8px; border-radius: 50%; background: #4ade80; box-shadow: 0 0 4px #4ade80; flex-shrink: 0; }
-  .congress-name { font-size: 12px; color: #ccc; flex: 1; }
-  .congress-status { font-size: 10px; color: #4ade80; }
-
-  .footer { text-align: center; padding: 20px; color: #333; font-size: 11px; }
-
-  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
-  .pulse { animation: pulse 2s infinite; }
-
-  /* Live data styles */
-  .cb-green { background: #1a3a1a; color: #4ade80; border: 1px solid #2a5a2a; }
-  .cb-yellow { background: #3a3a1a; color: #facc15; border: 1px solid #5a5a2a; }
-  .cb-red { background: #3a1a1a; color: #f87171; border: 1px solid #5a2a2a; animation: pulse 1s infinite; }
-  .cb-badge { font-size: 13px; font-weight: 900; padding: 8px 18px; border-radius: 8px; display: inline-block; margin-top: 8px; }
-  .live-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #4ade80; box-shadow: 0 0 6px #4ade80; margin-right: 6px; animation: pulse 2s infinite; }
-  .pnl-pos { color: #4ade80; }
-  .pnl-neg { color: #f87171; }
-  .positions-empty { color: #555; font-size: 13px; padding: 16px 0; text-align: center; }
-
-  /* ─── MERGED STYLES FROM CONSTRUCT ─── */
-  .status-row { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid #1a1a2e; }
-  .status-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
-  .dot-live { background: #4ade80; box-shadow: 0 0 6px #4ade80; }
-  .dot-ready { background: #ff6b35; box-shadow: 0 0 6px #ff6b35; }
-  .dot-off { background: #333; }
-  .dot-purple { background: #c084fc; box-shadow: 0 0 6px #c084fc; }
-  .status-label { font-size: 12px; color: #ccc; flex: 1; }
-  .status-val { font-size: 11px; color: #888; }
-
-  .step-card {
-    background: #12121f;
-    border: 1px solid #2a2a3e;
-    border-radius: 10px;
-    padding: 16px;
-    margin-bottom: 10px;
-    display: flex;
-    gap: 14px;
-    align-items: flex-start;
-    transition: border-color 0.2s;
-  }
-  .step-card:hover { border-color: #ff6b35; }
-  .step-card.active { border-color: #ff6b35; background: #1a1a2e; }
-  .step-card.done { border-color: #1a4a1a; opacity: 0.8; }
-  .step-num {
-    width: 28px; height: 28px; border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-weight: 900; font-size: 12px; flex-shrink: 0;
-  }
-  .num-active { background: #ff6b35; color: #000; }
-  .num-pending { background: #2a2a3e; color: #555; border: 1px solid #3a3a4a; }
-  .num-done { background: #1a4a1a; color: #4ade80; }
-  .step-content { flex: 1; }
-  .step-title { font-size: 13px; font-weight: 700; color: #fff; }
-  .step-title.done-text { color: #4ade80; text-decoration: line-through; text-decoration-color: #2a5a2a; }
-  .step-desc { font-size: 11px; color: #666; margin-top: 4px; line-height: 1.5; }
-  .step-impact { font-size: 10px; color: #ff6b35; margin-top: 6px; font-weight: 700; }
-
-  .timeline { position: relative; padding-left: 24px; margin-top: 12px; }
-  .timeline::before {
-    content: ''; position: absolute; left: 8px; top: 0; bottom: 0;
-    width: 2px; background: linear-gradient(to bottom, #ff6b35, #333);
-  }
-  .tl-item { position: relative; margin-bottom: 16px; }
-  .tl-dot {
-    position: absolute; left: -20px; top: 4px;
-    width: 12px; height: 12px; border-radius: 50%;
-  }
-  .tl-done { background: #4ade80; }
-  .tl-now { background: #ff6b35; box-shadow: 0 0 8px #ff6b35; }
-  .tl-future { background: #222; border: 1px solid #444; }
-  .tl-label { font-size: 12px; color: #ccc; font-weight: 700; }
-  .tl-detail { font-size: 11px; color: #666; margin-top: 2px; }
-
+  :root{color-scheme:dark;--bg:#0b0d10;--panel:#11161e;--panel2:#151a21;--border:#1f2630;--border-h:#2a3442;
+        --fg:#e6e9ef;--muted:#8a94a6;--dim:#6b7688;--mint:#4ade80;--cyan:#00d4ff;--amber:#fbbf24;--red:#f87171;--lav:#b388ff;}
+  *{box-sizing:border-box;}
+  body{font-family:-apple-system,system-ui,sans-serif;background:var(--bg);color:var(--fg);margin:0;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1220px;margin:0 auto;padding:1.1rem 1.25rem 3rem;}
+  .top{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:.6rem;border-bottom:1px solid var(--border);padding-bottom:.8rem;}
+  .logo{font-size:1.5rem;font-weight:800;letter-spacing:.06em;}
+  .logo span{font-size:.62rem;color:var(--muted);font-weight:500;letter-spacing:.16em;display:block;margin-top:.1rem;}
+  .badge{font-size:.62rem;letter-spacing:.12em;padding:.18rem .5rem;border-radius:5px;font-family:ui-monospace,Menlo,monospace;border:1px solid;}
+  .b-paper{color:var(--cyan);border-color:rgba(0,212,255,.35);}
+  .stamp{text-align:right;font-size:.7rem;font-family:ui-monospace,Menlo,monospace;color:var(--dim);}
+  #live-status{color:var(--mint);font-weight:700;}
+  #stale-warning{display:none;color:var(--red);}
+  h2{font-size:.68rem;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);margin:1.7rem 0 .6rem;font-weight:600;}
+  .verdict{margin:1rem 0 .2rem;padding:.8rem 1rem;border-radius:10px;font-size:.85rem;line-height:1.5;border:1px solid var(--border);}
+  .grid{display:grid;gap:.6rem;}
+  .g5{grid-template-columns:repeat(auto-fit,minmax(170px,1fr));}
+  .g4{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));}
+  .g3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
+  .g2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr));}
+  .card{background:var(--panel2);border:1px solid var(--border);border-radius:10px;padding:.85rem .95rem;position:relative;overflow:hidden;}
+  .card.acc::before,.card.k::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--dim);}
+  .card.ok::before{background:var(--mint);}.card.warn::before{background:var(--amber);}.card.bad::before{background:var(--red);}
+  .k-label{font-size:.64rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);}
+  .k-val{font-size:1.45rem;font-weight:700;font-family:ui-monospace,Menlo,monospace;margin-top:.25rem;line-height:1.1;}
+  .k-sub{font-size:.66rem;color:var(--dim);margin-top:.3rem;font-family:ui-monospace,Menlo,monospace;}
+  .ok{color:var(--mint);}.warn{color:var(--amber);}.bad{color:var(--red);}.cy{color:var(--cyan);}
+  table{width:100%;border-collapse:collapse;font-size:.76rem;}
+  th{text-align:left;color:var(--muted);font-weight:600;font-size:.62rem;text-transform:uppercase;letter-spacing:.08em;padding:.4rem .55rem;border-bottom:1px solid var(--border);}
+  td{padding:.42rem .55rem;border-bottom:1px solid rgba(31,38,48,.55);font-family:ui-monospace,Menlo,monospace;}
+  tr:hover td{background:rgba(255,255,255,.02);}
+  .pill{display:inline-block;font-size:.6rem;letter-spacing:.04em;padding:.1rem .42rem;border-radius:4px;font-family:ui-monospace,Menlo,monospace;}
+  .p-bad{background:rgba(248,113,113,.14);color:var(--red);}.p-ok{background:rgba(74,222,128,.12);color:var(--mint);}
+  .p-warn{background:rgba(251,191,36,.14);color:var(--amber);}.p-dim{background:rgba(108,118,136,.15);color:var(--dim);}.p-cy{background:rgba(0,212,255,.12);color:var(--cyan);}
+  .chip{display:flex;align-items:center;gap:8px;padding:8px 11px;background:var(--panel2);border:1px solid var(--border);border-radius:8px;font-size:.74rem;}
+  .dot{width:8px;height:8px;border-radius:50%;flex:none;}
+  .chip .d{color:var(--muted);}
+  .srow{display:flex;justify-content:space-between;align-items:center;gap:.6rem;padding:.5rem .6rem;border-bottom:1px solid rgba(31,38,48,.55);font-size:.78rem;}
+  .srow:last-child{border-bottom:none;}
+  .srow .nm{font-weight:600;}.srow .meta{font-size:.66rem;color:var(--dim);font-family:ui-monospace,Menlo,monospace;}
+  .note{background:rgba(0,212,255,.04);border:1px solid rgba(0,212,255,.16);border-radius:8px;padding:.6rem .9rem;font-size:.72rem;color:rgba(160,210,235,.85);line-height:1.55;}
+  .foot{margin-top:1.8rem;color:var(--dim);font-size:.68rem;line-height:1.6;border-top:1px solid var(--border);padding-top:.8rem;}
+  ul.rules{margin:.3rem 0 0;padding-left:1.1rem;font-size:.74rem;color:var(--fg);line-height:1.6;}
+  ul.rules li{margin:.15rem 0;}
+  a{color:var(--cyan);text-decoration:none;}
 </style>
 </head>
 <body>
-
-<div id="wolf-audit-banner" style="max-width:1200px;margin:0 auto;padding:0 16px;"></div>
-
-<div class="header">
-  <div>
-    <div class="logo">WOLF <span>Wealth-Optimized Leverage Framework</span></div>
-  </div>
-  <div style="display:flex; gap:12px; align-items:center;">
-    <div class="status-badge pulse">&#9679; LIVE — PAPER TRADING</div>
-    <div title="Claude Code cloud planning — Opus 4.6, 30min compute, browser document review. See data/capabilities/ultraplan.md" style="background:linear-gradient(135deg,#5b2c87,#2d1b4e); border:1px solid #8b5cf6; color:#e9d5ff; padding:4px 10px; border-radius:999px; font-size:11px; font-weight:600; letter-spacing:.04em;">&#9889; /ultraplan READY</div>
-    <div style="color:#666; font-size:12px;"><span id="header-version">v2.1</span> | <span id="header-date">loading...</span></div>
-  </div>
-</div>
-
-<!-- Live data status bar -->
-<div style="background:#0f0f1a; border-bottom:1px solid #1a1a2e; padding:8px 20px; display:flex; align-items:center; gap:16px; font-size:11px;">
-  <span><span class="live-dot"></span><span id="live-status" style="color:#4ade80;">LIVE — Alpaca Paper</span></span>
-  <span style="color:#444;">|</span>
-  <span style="color:#666;">Last update: <span id="last-update" style="color:#888;">Loading...</span></span>
-  <span style="color:#444;">|</span>
-  <span style="color:#666;">Refresh: <span style="color:#888;">60s</span></span>
-  <span style="color:#444; margin-left:auto;">v2.1 — Project Ascension Phase 2 | Gate Tracker Live</span>
-</div>
-
-<!-- Stale Data Warning (hidden by default, shown by JS when data is >10min old) -->
-<div id="stale-warning" style="display:none; background:#3a1a1a; border:2px solid #f87171; padding:10px 20px; text-align:center; font-size:13px; color:#f87171; font-weight:700;">
-  ⚠️ DATA STALE — Last pipeline update: <span id="stale-age">?</span>. Check your Alpaca updater on Mac.
-</div>
-
-<!-- WOLF PROGRESS — dynamically loaded from wolf_live_data.json -->
-<!-- WOLF_PROGRESS_START -->
-<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px; padding:16px 20px; background:linear-gradient(135deg,#0a1628 0%,#0a1f1a 100%); border-top:2px solid #4ade80; border-bottom:2px solid #4ade80; margin:12px 0;">
-  <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px;">
-    <div style="font-size:11px; color:#6ab; letter-spacing:1px; text-transform:uppercase;">Capability Score</div>
-    <div style="font-size:42px; font-weight:700; color:#4ade80; line-height:1;">51<span style="font-size:18px; color:#6ab;">/100</span></div>
-    <div style="height:6px; background:#1a3a4a; border-radius:3px; margin-top:8px; overflow:hidden;">
-      <div style="height:100%; width:51%; background:linear-gradient(90deg,#4ade80,#22c55e);"></div>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <div class="logo">WOLF <span>Wealth-Optimized Leverage Framework · generational mandate v1.0</span></div>
     </div>
-    <div style="font-size:11px; color:#888; margin-top:6px;">Unlock real money @ 80</div>
-  </div>
-  <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px;">
-    <div style="font-size:11px; color:#6ab; letter-spacing:1px; text-transform:uppercase;">Day on Mission</div>
-    <div style="font-size:42px; font-weight:700; color:#fbbf24; line-height:1;">28</div>
-    <div style="font-size:12px; color:#aaa; margin-top:8px;">Started 2026-04-08</div>
-    <div style="font-size:11px; color:#4ade80; margin-top:4px;">Streak: 28 days</div>
-  </div>
-  <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px;">
-    <div style="font-size:11px; color:#6ab; letter-spacing:1px; text-transform:uppercase;">Latest Improvement</div>
-    <div style="font-size:16px; color:#4ade80; font-weight:600;">+ lessons_corpus_index</div>
-    <div style="font-size:11px; color:#aaa; margin-top:4px;">Indexed 61 lessons across 3 files. Local-only capability proves loop survives offline data sources.</div>
-  </div>
-  <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px;">
-    <div style="font-size:11px; color:#6ab; letter-spacing:1px; text-transform:uppercase;">Totals</div>
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px; font-size:12px; margin-top:6px;">
-      <div>Scripts: <b style="color:#4ade80;">54</b></div>
-      <div>Strategies: <b style="color:#4ade80;">6/10</b></div>
-      <div>Skills: <b style="color:#4ade80;">3</b></div>
-      <div>Lessons: <b style="color:#4ade80;">61</b></div>
-      <div>Cycles: <b style="color:#4ade80;">3</b></div>
-      <div>Open Trades: <b style="color:#4ade80;">2</b></div>
+    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:.35rem;">
+      <div style="display:flex;gap:.5rem;align-items:center;">
+        <span class="badge b-paper">● <span id="live-status">CONNECTING</span> · PAPER</span>
+        <span class="badge b-paper" id="header-version">v3.0</span>
+      </div>
+      <div class="stamp">updated <span id="last-update">—</span> <span id="stale-warning">⚠ STALE <span id="stale-age"></span></span></div>
     </div>
   </div>
-  <div style="background:#0d1b2a; border:1px solid #1a3a4a; border-radius:10px; padding:14px; grid-column:1/-1;">
-    <div style="font-size:11px; color:#6ab; letter-spacing:1px; text-transform:uppercase; margin-bottom:8px;">Recent Lessons (Self-Improving Loop)</div>
-    <div style="font-size:12px; color:#cde; margin-top:4px;">• <b>2026-05-05</b> — Indexed 61 lessons across 3 files. Local-only capability proves loop survives offline data sources.</div><div style="font-size:12px; color:#cde; margin-top:4px;">• <b>2026-04-08</b> — WOLF can now enumerate his own 14 scripts for self-aware planning.</div>
-    <div style="font-size:11px; color:#888; margin-top:10px;">Free data only — zero paid APIs. Auto-rewritten daily by wolf_self_improve.py.</div>
-  </div>
-</div>
-<!-- WOLF_PROGRESS_END -->
 
-<!-- GRADUATION GATE TRACKER — Phase 2 → Phase 3 -->
-<div style="background:linear-gradient(135deg,#0a1628 0%,#1a0d2e 100%); border:2px solid #ff6b35; border-radius:12px; margin:12px 16px; padding:16px 20px;">
-  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
-    <div style="font-size:14px; font-weight:700; color:#ff6b35; text-transform:uppercase; letter-spacing:2px;">&#127942; Graduation Gate — Real Money Unlock</div>
-    <div id="gate-countdown" style="font-size:13px; color:#fbbf24; font-weight:600;">Day ?/60</div>
-  </div>
-  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:10px;">
-    <!-- Days -->
-    <div style="background:#0d1b2a; border:1px solid #1a2a3a; border-radius:8px; padding:10px 12px;">
-      <div style="display:flex; justify-content:space-between; font-size:11px; color:#6ab; margin-bottom:6px;">
-        <span>Paper Days</span><span id="gate-days-val" style="color:#fbbf24; font-weight:700;">?/60</span>
-      </div>
-      <div style="height:6px; background:#1a2a3a; border-radius:3px; overflow:hidden;">
-        <div id="gate-days-bar" style="height:100%; width:0%; background:linear-gradient(90deg,#fbbf24,#f59e0b); transition:width 0.5s;"></div>
-      </div>
-    </div>
-    <!-- Trades -->
-    <div style="background:#0d1b2a; border:1px solid #1a2a3a; border-radius:8px; padding:10px 12px;">
-      <div style="display:flex; justify-content:space-between; font-size:11px; color:#6ab; margin-bottom:6px;">
-        <span>Total Trades</span><span id="gate-trades-val" style="color:#f87171; font-weight:700;">?/40</span>
-      </div>
-      <div style="height:6px; background:#1a2a3a; border-radius:3px; overflow:hidden;">
-        <div id="gate-trades-bar" style="height:100%; width:0%; background:linear-gradient(90deg,#f87171,#ef4444); transition:width 0.5s;"></div>
-      </div>
-    </div>
-    <!-- Win Rate -->
-    <div style="background:#0d1b2a; border:1px solid #1a2a3a; border-radius:8px; padding:10px 12px;">
-      <div style="display:flex; justify-content:space-between; font-size:11px; color:#6ab; margin-bottom:6px;">
-        <span>Win Rate</span><span id="gate-wr-val" style="color:#f87171; font-weight:700;">?% / 45%</span>
-      </div>
-      <div style="height:6px; background:#1a2a3a; border-radius:3px; overflow:hidden;">
-        <div id="gate-wr-bar" style="height:100%; width:0%; background:linear-gradient(90deg,#f87171,#ef4444); transition:width 0.5s;"></div>
-      </div>
-    </div>
-    <!-- Sharpe -->
-    <div style="background:#0d1b2a; border:1px solid #1a2a3a; border-radius:8px; padding:10px 12px;">
-      <div style="display:flex; justify-content:space-between; font-size:11px; color:#6ab; margin-bottom:6px;">
-        <span>Sharpe Ratio</span><span id="gate-sharpe-val" style="color:#888; font-weight:700;">? / 1.5</span>
-      </div>
-      <div style="height:6px; background:#1a2a3a; border-radius:3px; overflow:hidden;">
-        <div id="gate-sharpe-bar" style="height:100%; width:0%; background:linear-gradient(90deg,#60a5fa,#3b82f6); transition:width 0.5s;"></div>
-      </div>
-    </div>
-    <!-- Profit Factor -->
-    <div style="background:#0d1b2a; border:1px solid #1a2a3a; border-radius:8px; padding:10px 12px;">
-      <div style="display:flex; justify-content:space-between; font-size:11px; color:#6ab; margin-bottom:6px;">
-        <span>Profit Factor</span><span id="gate-pf-val" style="color:#888; font-weight:700;">? / 1.5</span>
-      </div>
-      <div style="height:6px; background:#1a2a3a; border-radius:3px; overflow:hidden;">
-        <div id="gate-pf-bar" style="height:100%; width:0%; background:linear-gradient(90deg,#a78bfa,#8b5cf6); transition:width 0.5s;"></div>
-      </div>
-    </div>
-    <!-- Max Drawdown -->
-    <div style="background:#0d1b2a; border:1px solid #1a2a3a; border-radius:8px; padding:10px 12px;">
-      <div style="display:flex; justify-content:space-between; font-size:11px; color:#6ab; margin-bottom:6px;">
-        <span>Max Drawdown</span><span id="gate-dd-val" style="color:#4ade80; font-weight:700;">? / &le;15%</span>
-      </div>
-      <div style="height:6px; background:#1a2a3a; border-radius:3px; overflow:hidden;">
-        <div id="gate-dd-bar" style="height:100%; width:0%; background:linear-gradient(90deg,#4ade80,#22c55e); transition:width 0.5s;"></div>
-      </div>
-    </div>
-  </div>
-  <div style="display:flex; justify-content:space-between; align-items:center; margin-top:12px;">
-    <div id="gate-verdict" style="font-size:12px; font-weight:700; color:#888; text-transform:uppercase; letter-spacing:1px;">Collecting data...</div>
-    <div id="gate-pace" style="font-size:11px; color:#888;">Need ~?.? trades/day to graduate on time</div>
-  </div>
-</div>
+  <div class="verdict" id="verdict">Loading live state…</div>
 
-<!-- Market Regime (Auto-Detected) -->
-<div style="background:#0d1b2a; border:1px solid #1a2a3a; border-radius:10px; margin:8px 16px; padding:12px 20px; display:flex; gap:24px; align-items:center; flex-wrap:wrap;">
-  <div style="font-size:11px; color:#6ab; text-transform:uppercase; letter-spacing:1px;">Market Regime</div>
-  <div id="regime-badge" style="font-size:13px; font-weight:700; color:#888; background:#1a2a3a; padding:4px 12px; border-radius:6px;">UNKNOWN</div>
-  <div style="font-size:11px; color:#888;">VIX: <span id="regime-vix" style="color:#fbbf24;">—</span></div>
-  <div style="font-size:11px; color:#888;">SPY Trend: <span id="regime-spy" style="color:#60a5fa;">—</span></div>
-  <div style="font-size:11px; color:#888;">Assessed: <span id="regime-time" style="color:#888;">—</span></div>
-</div>
+  <h2>Mandate compliance — live</h2>
+  <div class="grid g5" id="compliance"></div>
 
-<!-- Portfolio Summary (Live) -->
-<div class="grid">
+  <h2>Control &amp; system health</h2>
+  <div class="grid g3" id="controls"></div>
+
+  <h2>Account</h2>
+  <div class="grid g4" id="account"></div>
+
+  <h2>Positions vs caps <span style="color:var(--dim);text-transform:none;letter-spacing:0;">(8% single-name · 15% ETF)</span></h2>
+  <table id="positions-table"><thead><tr><th>Ticker</th><th>Qty</th><th>Mkt value</th><th>% equity</th><th>Unreal. P&L</th><th>Status</th></tr></thead><tbody><tr><td colspan="6" style="color:var(--dim)">loading…</td></tr></tbody></table>
+
+  <h2>Strategy book — live registry</h2>
+  <div id="strategies"></div>
+
+  <h2>Strategy expansion — backtested 2026-06-16 (real Alpaca 2y)</h2>
   <div class="card">
-    <div class="card-header">Portfolio Value <span class="badge badge-green" id="acct-status-badge">ALPACA CONNECTED</span></div>
-    <div class="big-number green" id="portfolio-value">$100,000</div>
-    <div class="sub-text" id="portfolio-cash">Cash: $100,000 — Alpaca Paper Trading</div>
-    <div style="margin-top:10px; display:flex; gap:16px;">
-      <div>
-        <div style="color:#ff6b35; font-size:16px; font-weight:900;" id="buying-power">$200,000</div>
-        <div style="color:#555; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Buying Power</div>
-      </div>
-      <div>
-        <div id="unrealized-pl" style="color:#4ade80; font-size:16px; font-weight:900;">$0.00</div>
-        <div style="color:#555; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Unrealized P&amp;L</div>
-      </div>
-    </div>
+    <div class="srow"><span><span class="nm">Trend Overlay</span> <span class="meta">time-series momentum · vault de-risking switch</span></span><span><span class="pill p-ok">PASS</span> <span class="meta">Sharpe 2.02 · DD −7.2% · +61.7%</span></span></div>
+    <div class="srow"><span><span class="nm">Residual Momentum</span> <span class="meta">beta-neutral cross-sectional momentum</span></span><span><span class="pill p-warn">SHORT</span> <span class="meta">Sharpe 0.83 · DD −12.9% · research</span></span></div>
+    <div class="srow"><span><span class="nm">Regime-gated Mean-Reversion</span> <span class="meta">revival test of the killed BB+RSI</span></span><span><span class="pill p-bad">KILL CONFIRMED</span> <span class="meta">Sharpe −1.00 · DD −26.7% (was −78.9%)</span></span></div>
+    <div class="srow"><span><span class="nm">Construct Synthesis Signal</span> <span class="meta">Lens cross-institution convergence → sector tilt (the moat)</span></span><span><span class="pill p-cy">RESEARCH</span> <span class="meta">event-study pending</span></span></div>
   </div>
 
-  <div class="card">
-    <div class="card-header">Daily P&amp;L <span class="badge" id="daily-cb-badge" style="background:#1a3a1a;color:#4ade80;border:1px solid #2a5a2a;">CLEAR</span></div>
-    <div class="big-number" id="daily-pnl" style="color:#4ade80;">$0.00</div>
-    <div class="sub-text" id="daily-pnl-pct">0.00% today</div>
-    <div style="margin-top:8px; display:flex; gap:16px;">
-      <div>
-        <div id="weekly-pnl" style="color:#c084fc; font-size:16px; font-weight:900;">$0.00</div>
-        <div style="color:#555; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Weekly P&amp;L</div>
-      </div>
-      <div>
-        <div id="weekly-pnl-pct" style="color:#888; font-size:14px; font-weight:700;">0.00%</div>
-        <div style="color:#555; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Weekly %</div>
-      </div>
-    </div>
+  <h2>Market regime</h2>
+  <div class="grid g4" id="regime"></div>
+
+  <h2>Today's fills</h2>
+  <table id="trades"><thead><tr><th>Time</th><th>Ticker</th><th>Side</th><th>Qty</th><th>Fill</th><th>Strategy</th></tr></thead><tbody><tr><td colspan="6" style="color:var(--dim)">loading…</td></tr></tbody></table>
+
+  <h2>Risk discipline — mandate hard limits (circuit breaker enforces)</h2>
+  <div class="grid g2">
+    <div class="card"><div class="k-label">Position &amp; leverage</div>
+      <ul class="rules">
+        <li>Max single-name: <b>8%</b> · ETF: <b>15%</b> of equity</li>
+        <li>Max leverage: <b>1.00×</b> — no margin (paper + first 12 months real)</li>
+        <li>Vault floor: <b>60%</b> in SHV + VOO · max 12 single-name positions</li>
+        <li>Wash-sale: re-buy within 30d of a realized loss is blocked</li>
+      </ul></div>
+    <div class="card"><div class="k-label">Drawdown gates</div>
+      <ul class="rules">
+        <li>Daily −1.5% halt new entries · −2.5% close losers + Architect review</li>
+        <li>Weekly −4% halt 5d · −6.5% liquidate to 80% vault</li>
+        <li>Monthly −7% Architect ratify · −10% pause 30d</li>
+        <li>Peak-to-trough −20% full reset to vault + mandate review</li>
+      </ul></div>
   </div>
 
-  <div class="card">
-    <div class="card-header">Circuit Breaker <span class="badge" id="cb-badge" style="background:#1a3a1a;color:#4ade80;border:1px solid #2a5a2a;">GREEN</span></div>
-    <div class="cb-badge cb-green" id="cb-status-box">CLEAR</div>
-    <div style="margin-top:10px; font-size:11px; color:#888; line-height:1.7;" id="cb-message">All systems nominal. Ready for trading.</div>
-    <div style="margin-top:8px; font-size:10px; color:#555;">Daily limit: -3% | Weekly limit: -7%</div>
-  </div>
+  <div class="foot" id="foot"></div>
 </div>
 
-<!-- Live Positions -->
-<div style="padding: 0 20px 0;">
-  <div class="card full-width">
-    <div class="card-header">Open Positions <span class="badge badge-blue" id="positions-count">0 OPEN</span></div>
-    <div id="positions-table">
-      <div class="positions-empty">No open positions — cash fully deployed in buying power</div>
-    </div>
-  </div>
-</div>
-
-<!-- Today's Trades + Strategy Performance -->
-<div class="grid grid-2" style="padding: 20px 20px 0;">
-  <div class="card">
-    <div class="card-header">Today's Trades <span class="badge badge-blue" id="trades-count">0 TRADES</span></div>
-    <div id="todays-trades">
-      <div class="positions-empty">No trades today — market not yet open or no signals executed</div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-header">Today's Activity <span class="badge badge-green" id="activity-status">LIVE</span></div>
-    <div id="activity-summary" style="padding:8px 0;">
-      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:14px;">
-        <div>
-          <div style="font-size:10px; color:#888; text-transform:uppercase; letter-spacing:1px;">Task Fires</div>
-          <div style="font-size:24px; font-weight:700; color:#4ade80;" id="activity-fires">—</div>
-          <div style="font-size:10px; color:#666;" id="activity-fires-detail">scanner · committee · summary</div>
-        </div>
-        <div>
-          <div style="font-size:10px; color:#888; text-transform:uppercase; letter-spacing:1px;">Committee Runs</div>
-          <div style="font-size:24px; font-weight:700; color:#4ade80;" id="activity-committee">—</div>
-          <div style="font-size:10px; color:#666;" id="activity-committee-detail">tickers voted</div>
-        </div>
-        <div>
-          <div style="font-size:10px; color:#888; text-transform:uppercase; letter-spacing:1px;">Filtered Out</div>
-          <div style="font-size:24px; font-weight:700; color:#facc15;" id="activity-rejected">—</div>
-          <div style="font-size:10px; color:#666;" id="activity-rejected-detail">R:R · staleness · qty</div>
-        </div>
-        <div>
-          <div style="font-size:10px; color:#888; text-transform:uppercase; letter-spacing:1px;">Errors</div>
-          <div style="font-size:24px; font-weight:700; color:#f87171;" id="activity-errors">—</div>
-          <div style="font-size:10px; color:#666;" id="activity-errors-detail">log lines</div>
-        </div>
-      </div>
-      <div style="font-size:10px; color:#666; margin-top:12px; border-top:1px solid #2a2a3e; padding-top:8px;" id="activity-updated">
-        Auto-refreshed at 4:50 PM ET via wolf_daily_summary.py
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-header">Rejected Signals (Last 10) <span class="badge badge-yellow" id="rejected-count-badge">—</span></div>
-    <div id="rejected-list" style="font-size:11px; color:#aaa; max-height:280px; overflow-y:auto;">
-      <div style="color:#666; padding:8px 0;">Loading…</div>
-    </div>
-    <div style="font-size:10px; color:#666; margin-top:8px; border-top:1px solid #2a2a3e; padding-top:6px;">
-      Filtered by R:R &lt; 1.5 · staleness gate · qty &lt; 1 · regime mismatch. Updated daily.
-    </div>
-  </div>
-
-  <!-- Today's Signals — populated by post_today_update in wolf-task-runner.sh -->
-  <div class="card" style="margin-bottom:0;">
-    <div class="card-header">
-      Today's Signals
-      <span class="badge badge-blue" id="today-signals-count">0 SIGNALS</span>
-      <span style="float:right; font-size:10px; color:#888; font-weight:400;" id="today-signals-stamp">—</span>
-    </div>
-    <div id="today-signals-body">
-      <div class="positions-empty">Awaiting next launchd fire — refreshes after every WOLF task.</div>
-    </div>
-    <div style="font-size:10px; color:#666; margin-top:8px; border-top:1px solid #2a2a3e; padding-top:6px;">
-      Auto-published by launchd after every market-open / midday / crypto / EOD fire. Same payload mirrored to iCloud Drive (Hartley Command/WOLF Today.md) and posted as a macOS notification banner.
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-header">Approved Strategy Performance <span class="badge badge-green">6 ACTIVE</span></div>
-    <div id="strategy-perf">
-      <div class="strategy-row">
-        <div>
-          <div class="strat-name">Small Cap Catalyst</div>
-          <div style="color:#555; font-size:10px;">Sharpe: 1.50 (real) | DD: -3.3% | WR: 60.7%</div>
-        </div>
-        <div style="text-align:right;">
-          <span class="strat-grade grade-a">A</span>
-          <div style="color:#4ade80; font-size:11px; margin-top:2px;" id="scc-pnl">$0</div>
-        </div>
-      </div>
-      <div class="strategy-row">
-        <div>
-          <div class="strat-name">PEAD</div>
-          <div style="color:#555; font-size:10px;">Sharpe: 1.76 (real) | DD: -12.5% | WR: 51.1% — New 2026-04-07</div>
-        </div>
-        <div style="text-align:right;">
-          <span class="strat-grade grade-a">A</span>
-        </div>
-      </div>
-      <div class="strategy-row">
-        <div>
-          <div class="strat-name">52-Week High Breakout</div>
-          <div style="color:#555; font-size:10px;">Sharpe: 1.91 (real) | DD: -6.8% | WR: 60.3% — New 2026-04-07</div>
-        </div>
-        <div style="text-align:right;">
-          <span class="strat-grade grade-a">A+</span>
-        </div>
-      </div>
-      <div class="strategy-row">
-        <div>
-          <div class="strat-name">Insider Cluster (Form 4)</div>
-          <div style="color:#555; font-size:10px;">Sharpe: 1.86 | DD: -21.6% | 2,663 trades / 2yr — New 2026-05-06</div>
-        </div>
-        <div style="text-align:right;">
-          <span class="strat-grade grade-a">A</span>
-        </div>
-      </div>
-      <div class="strategy-row">
-        <div>
-          <div class="strat-name">Sector ETF Rotation</div>
-          <div style="color:#555; font-size:10px;">Sharpe: 1.69 | DD: -7.1% | +73.2% return / 2yr — New 2026-05-06</div>
-        </div>
-        <div style="text-align:right;">
-          <span class="strat-grade grade-a">A</span>
-        </div>
-      </div>
-      <div class="strategy-row" style="border-bottom:none;">
-        <div>
-          <div class="strat-name">Congress Follower</div>
-          <div style="color:#555; font-size:10px;">ACTIVE_PARTIAL | PTR-PDF parser shipped 2026-05-06 (free, replaces Quiver)</div>
-        </div>
-        <div style="text-align:right;">
-          <span class="strat-grade grade-b">B+</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════════════════
-     STRATEGY BATTERY GAP — diagnostic · added 2026-04-30
-     Trade pace is 23× too slow vs Day-30 gate. Diagnosis: strategy
-     monoculture (3 catalyst/breakout strategies), not a data problem.
-     ═══════════════════════════════════════════════════════════════════════ -->
-<div class="grid grid-2" style="padding: 20px 20px 0;">
-  <div class="card full-width" style="border-color:#f87171; background: linear-gradient(135deg, rgba(248,113,113,0.06) 0%, #12121f 100%);">
-    <div class="card-header" style="margin-bottom:6px; color:#4ade80;">
-      Strategy Battery — Backtest Verdicts SHIPPED 2026-05-06
-      <span class="badge badge-green">6 ACTIVE · 2 DISABLED · 1 MARGINAL</span>
-    </div>
-    <div style="font-size:11px; color:#888; margin-bottom:14px;">
-      All 5 April-30 strategies backtested 2026-05-06 against real 2-yr Alpaca data. <strong style="color:#4ade80;">2 PROMOTED</strong> (insider_cluster_form4 Sharpe 1.86 / 2,663 trades · sector_etf_rotation Sharpe 1.69). <strong style="color:#f87171;">2 DISABLED</strong> (mean_reversion_bb_rsi blew up −78.9% · overnight_gap_reversal −100% wipeout). <strong style="color:#facc15;">1 MARGINAL</strong> (cross_sectional_momentum Sharpe 1.00, just below threshold). <strong style="color:#4ade80;">Congress Follower UNBLOCKED</strong> via free PTR-PDF parser (replaces $50/mo Quiver). Combined expected signal flow: <strong>5–7/day</strong>.
-    </div>
-    <table>
-      <thead>
-        <tr>
-          <th>Add</th>
-          <th>Family</th>
-          <th>Expected /day</th>
-          <th>Data source</th>
-          <th style="width:80px;">Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td style="color:#fff; font-weight:700;">Mean-Reversion (BB/RSI)</td>
-          <td style="color:#888; font-size:11px;">High-freq mean-reversion</td>
-          <td style="color:#4ade80; font-weight:700;">3–6</td>
-          <td style="color:#888; font-size:11px;">yfinance / Alpaca bars</td>
-          <td><span class="badge badge-green">SHIPPED</span></td>
-        </tr>
-        <tr>
-          <td style="color:#fff; font-weight:700;">Overnight Gap Reversal</td>
-          <td style="color:#888; font-size:11px;">Pre-market fade</td>
-          <td style="color:#4ade80; font-weight:700;">2–4</td>
-          <td style="color:#888; font-size:11px;">SEC RSS + Alpaca pre-mkt</td>
-          <td><span class="badge badge-green">SHIPPED</span></td>
-        </tr>
-        <tr>
-          <td style="color:#fff; font-weight:700;">Insider Cluster (Form 4)</td>
-          <td style="color:#888; font-size:11px;">≥2 insider buys / 5d</td>
-          <td style="color:#4ade80; font-weight:700;">1–3</td>
-          <td style="color:#888; font-size:11px;">SEC EDGAR Form 4 RSS</td>
-          <td><span class="badge badge-green">SHIPPED</span></td>
-        </tr>
-        <tr>
-          <td style="color:#fff; font-weight:700;">Congress Follower</td>
-          <td style="color:#888; font-size:11px;">Track-record member ≥$50K</td>
-          <td style="color:#facc15; font-weight:700;">1–2/wk</td>
-          <td style="color:#888; font-size:11px;">Senate eFD · House CHDP</td>
-          <td><span class="badge badge-green">SHIPPED</span></td>
-        </tr>
-        <tr style="border-bottom:none;">
-          <td style="color:#fff; font-weight:700;">Sector ETF Rotation</td>
-          <td style="color:#888; font-size:11px;">20d momentum rebalance</td>
-          <td style="color:#facc15; font-weight:700;">2–4/wk</td>
-          <td style="color:#888; font-size:11px;">yfinance</td>
-          <td><span class="badge badge-green">SHIPPED</span></td>
-        </tr>
-      </tbody>
-    </table>
-    <div style="margin-top:14px; padding:11px 14px; background:rgba(74,222,128,0.08); border:1px solid rgba(74,222,128,0.32); border-radius:6px; color:#9fe7b8; font-size:11px; line-height:1.5;">
-      <span style="font-weight:bold; color:#4ade80;">SHIPPED 2026-04-30.</span> Combined expected signal flow: <strong>7–15/day</strong>. Top-conviction third = 3–5 trades/day = gate clears. Zero new paid API keys. Gate slipped Day-30 → Day-60 (target 2026-06-07) for strategy-battery soak. WOLF Brief publication launches in parallel — gate slip does not affect publication schedule.
-    </div>
-  </div>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════════════════
-     PENDING REMINDERS / ROADMAP — added 2026-04-30
-     Surface every outstanding item with a date so nothing falls through.
-     ═══════════════════════════════════════════════════════════════════════ -->
-<div class="grid grid-2" style="padding: 20px 20px 0;">
-  <div class="card full-width" style="border-color:#facc15; background: linear-gradient(135deg, rgba(250,204,21,0.06) 0%, #12121f 100%);">
-    <div class="card-header" style="margin-bottom:6px; color:#facc15;">
-      Pending Reminders &amp; Roadmap
-      <span class="badge badge-green">10 SHIPPED 2026-05-06 · queue cleared</span>
-    </div>
-    <div style="font-size:11px; color:#888; margin-bottom:14px;">
-      Massive build day 2026-05-06: <strong style="color:#4ade80;">10 items shipped</strong>. Strategy registry overhauled (1→6 ACTIVE), 4 dead Cowork schedulers migrated to launchd 24/7, congress_follower unblocked via free PTR-PDF parser, market_scanner expanded 5→12 crypto pairs with looser bands, crypto_direct_route bypass with staleness gate, pead_options strategy class shipped, wolf-tool-discovery daily scan registered (6:04 AM ET, 11 free academic + community sources). Dashboard sync repaired (com.wolf.dashboard-sync + com.bobby.wolf.data-updater both live). Trade-volume pipe now correct end-to-end; rate-limited only by signal freshness gate. Zero new paid API keys.
-    </div>
-    <table>
-      <thead>
-        <tr>
-          <th style="width:120px;">Date</th>
-          <th>Item</th>
-          <th style="width:120px;">Owner</th>
-          <th style="width:90px;">Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr style="background:rgba(74,222,128,0.04);">
-          <td style="color:#4ade80; font-weight:700;">2026-04-30</td>
-          <td><strong style="color:#fff;">Risk Management module — Kelly + VaR + Vol targeting.</strong> <code style="color:#60a5fa;">risk/sizing.py</code>. SignalIntent → SizedOrder, fractional Kelly, 1% portfolio VaR cap, 15% gross / 10% net exposure caps, 25 bps per-trade vol budget.</td>
-          <td style="color:#888;">AP</td>
-          <td><span class="badge badge-green">SHIPPED</span></td>
-        </tr>
-        <tr style="background:rgba(74,222,128,0.04);">
-          <td style="color:#4ade80; font-weight:700;">2026-04-30</td>
-          <td><strong style="color:#fff;">Macro Regime Overlay — FRED + CFTC COT + SEC 13F.</strong> <code style="color:#60a5fa;">data_feeds/{fred,cftc_cot,sec_13f}.py</code>. 16 FRED series, 12 COT markets (commercial vs spec positioning), 10-fund 13F watchlist. Output: regime classification (risk_on/neutral/risk_off) consumed by Friday Committee.</td>
-          <td style="color:#888;">AP</td>
-          <td><span class="badge badge-green">SHIPPED</span></td>
-        </tr>
-        <tr style="background:rgba(74,222,128,0.04);">
-          <td style="color:#4ade80; font-weight:700;">2026-04-30</td>
-          <td><strong style="color:#fff;">Substack publication scaffold.</strong> <code style="color:#60a5fa;">publisher/substack_publish.py</code> at <code style="color:#60a5fa;">wolfbrief.substack.com</code>. Auto-creates daily draft from <code style="color:#60a5fa;">wolf-brief/{today}-*.md</code>; you click Publish in Substack UI. Free until monetization, no sub ceiling. <em>Beehiiv removed free tier — pivot was the right call.</em></td>
-          <td style="color:#888;">AP</td>
-          <td><span class="badge badge-green">SHIPPED</span></td>
-        </tr>
-        <tr style="background:rgba(74,222,128,0.04);">
-          <td style="color:#4ade80; font-weight:700;">2026-04-30</td>
-          <td><strong style="color:#fff;">Trade-Alert Webhooks — Discord + Telegram.</strong> <code style="color:#60a5fa;">notifiers/{discord,telegram}.py</code>. Trade fills, signal-fired, anomaly, daily summary builders. Both free, both push to phone, redundant by design.</td>
-          <td style="color:#888;">AP</td>
-          <td><span class="badge badge-green">SHIPPED</span></td>
-        </tr>
-        <tr style="background:rgba(74,222,128,0.04); border-top:1px solid #facc15;">
-          <td style="color:#4ade80; font-weight:700;">2026-05-06</td>
-          <td><strong style="color:#fff;">Backtest the 5 new strategy modules — DONE.</strong> 2-yr Alpaca real bars. Promoted: <code style="color:#4ade80;">insider_cluster_form4</code> (Sharpe 1.86) + <code style="color:#4ade80;">sector_etf_rotation</code> (Sharpe 1.69). Disabled: <code style="color:#f87171;">mean_reversion_bb_rsi</code> (-78.9%) + <code style="color:#f87171;">overnight_gap_reversal</code> (-100% wipeout). Marginal: <code style="color:#facc15;">cross_sectional_momentum</code> (Sharpe 1.00).</td>
-          <td style="color:#888;">AP</td>
-          <td><span class="badge badge-green">SHIPPED</span></td>
-        </tr>
-        <tr>
-          <td style="color:#fbbf24; font-weight:700;">2026-05-01</td>
-          <td><strong style="color:#fff;">Set environment variables.</strong> <span style="color:#4ade80;">✓ FRED_API_KEY (verified live · regime classifier returning risk_on)</span> · <code style="color:#60a5fa;">SUBSTACK_SESSION</code> + <code style="color:#60a5fa;">SUBSTACK_PUB</code> (extract from Substack browser cookie) · <code style="color:#60a5fa;">DISCORD_WEBHOOK_URL</code> · <code style="color:#60a5fa;">TELEGRAM_BOT_TOKEN</code> + <code style="color:#60a5fa;">TELEGRAM_CHAT_ID</code>.</td>
-          <td style="color:#888;">Bobby</td>
-          <td><span class="badge badge-yellow">SETUP</span></td>
-        </tr>
-        <tr style="background:rgba(74,222,128,0.04);">
-          <td style="color:#4ade80; font-weight:700;">2026-05-06</td>
-          <td><strong style="color:#fff;">SEC EDGAR Form 4 — promoted via backtest.</strong> insider_cluster_form4 ACTIVE on synthetic-event proxy backtest (Sharpe 1.86 / 2,663 trades). Live SEC EDGAR Form 4 RSS poller now follow-up enhancement.</td>
-          <td style="color:#888;">AP</td>
-          <td><span class="badge badge-green">SHIPPED</span></td>
-        </tr>
-        <tr style="background:rgba(74,222,128,0.04);">
-          <td style="color:#4ade80; font-weight:700;">2026-05-06</td>
-          <td><strong style="color:#fff;">House PTR PDF parser + SEC ticker resolver shipped.</strong> <code style="color:#4ade80;">congressional_ptr_parser.py</code> downloads House Clerk PTR PDFs via pdfplumber + maps company-name → ticker via free SEC company_tickers.json. Replaces $50/mo Quiver. Last 30d test: 5 qualifying ≥$50K equity buys (incl. Josh Gottheimer's MSFT $500K options 3/25). <code style="color:#4ade80;">congress_follower</code> promoted BLOCKED → ACTIVE_PARTIAL.</td>
-          <td style="color:#888;">AP</td>
-          <td><span class="badge badge-green">SHIPPED</span></td>
-        </tr>
-        <tr style="background:rgba(74,222,128,0.04);">
-          <td style="color:#4ade80; font-weight:700;">2026-04-30</td>
-          <td><strong style="color:#fff;">Publication channel picked + provisioned: Substack.</strong> Live at <code style="color:#60a5fa;">apennyworth.substack.com</code> (display name: <strong>WOLF Brief</strong>, primary category: Finance). Cookie auth via <code style="color:#60a5fa;">install_substack_cookie.command</code> reads from Chrome cookie store, persists to <code style="color:#60a5fa;">~/.zshrc</code>. Beehiiv pivot triggered after they killed the free tier — Substack is genuinely the right home for this content category.</td>
-          <td style="color:#888;">AP</td>
-          <td><span class="badge badge-green">SHIPPED</span></td>
-        </tr>
-        <tr style="background:rgba(74,222,128,0.04);">
-          <td style="color:#4ade80; font-weight:700;">2026-04-30</td>
-          <td><strong style="color:#fff;">Substack launch trio: Welcome email + About page + inaugural post.</strong> Welcome email (subject + body) saved. About page replaced with WOLF Brief manifesto (4 roles · 90-day kill criterion · receipts-public commitment · Behind the desk attribution). Inaugural post <em>"Why the WOLF Brief Exists"</em> <strong>PUBLISHED</strong> 19:36:56 GMT to Everyone audience, email delivery on. <a href="https://apennyworth.substack.com/p/why-the-wolf-brief-exists" target="_blank" style="color:#60a5fa;">Live at /p/why-the-wolf-brief-exists</a>. Substack Note posted internally; outbound LinkedIn/X/IG/FB broadcast deliberately deferred to Day-30 (with track record attached).</td>
-          <td style="color:#888;">AP</td>
-          <td><span class="badge badge-green">SHIPPED</span></td>
-        </tr>
-        <tr style="background:rgba(74,222,128,0.04);">
-          <td style="color:#4ade80; font-weight:700;">2026-04-30</td>
-          <td><strong style="color:#fff;">Research Substrate — local Perplexity / Grok / YouTube bridge.</strong> <code style="color:#60a5fa;">praxis/research_bridge.py</code> + <code style="color:#60a5fa;">research_bridge_runner.sh</code> + <code style="color:#60a5fa;">com.construct.research-bridge.plist</code>. launchd fires every 30 min, polls <code style="color:#60a5fa;">wolf-dashboards-repo</code> for <code style="color:#60a5fa;">RESEARCH_TARGETS</code> blocks, dispatches to the obsidian-second-brain skill (<code style="color:#60a5fa;">scripts/research/{research-deep,research,x-pulse,x-read,youtube}</code>), commits synthesis to <code style="color:#60a5fa;">wolf-intel/research-deep/</code>, mirrors lessons into PRAXIS via <code style="color:#60a5fa;">PRAXIS_INBOX</code>. WOLF — Consulting Pulse routine prompt updated to emit RESEARCH_TARGETS blocks. Daily caps: 1 research-deep + 2 research + 2 x-pulse + 5 x-read + 10 youtube · ~$45/mo ceiling. No-ops gracefully when API keys unset. Installer: <code style="color:#60a5fa;">install_research_bridge.command</code>. <strong style="color:#facc15;">Key state at launch:</strong> NO PAID KEYS — both Perplexity and xAI require card-on-file with no free tier. YouTube (free) executes; everything else queues a "skip" log entry. Substrate runs at $0/mo. Re-evaluate after 7 days of emitted targets prove the value.</td>
-          <td style="color:#888;">AP</td>
-          <td><span class="badge badge-green">SHIPPED</span></td>
-        </tr>
-        <tr>
-          <td style="color:#60a5fa; font-weight:700;">2026-05-07</td>
-          <td><strong style="color:#fff;">Day-7 review: add Perplexity API key (≈$5/mo) if substrate has earned it.</strong> Trigger: ≥5 <code style="color:#60a5fa;">RESEARCH_TARGETS</code> blocks emitted by cloud routines in the last 7 days where the deep-research output would have meaningfully sharpened a WOLF thesis. Check <code style="color:#60a5fa;">wolf-dashboards-repo/praxis-inbox.md</code> + bridge log <code style="color:#60a5fa;">~/Library/Logs/construct/research-bridge.log</code> for skip count. If yes → fund Perplexity with $5, generate key, re-run <code style="color:#60a5fa;">install_research_api_keys.command</code>. If no → defer another 7 days, run perplexity.ai manually as needed.</td>
-          <td style="color:#888;">Bobby + Keystone</td>
-          <td><span class="badge badge-blue">SCHEDULED</span></td>
-        </tr>
-        <tr>
-          <td style="color:#60a5fa; font-weight:700;">2026-05-30</td>
-          <td><strong style="color:#fff;">Day-30 review: re-evaluate xAI Grok API for x-pulse / x-read.</strong> Higher bar than Perplexity because (a) per-call cost ~5× and (b) X-discourse signal is unproven for WOLF strategies. At Day-30, ask: did at least one paper-trade thesis hinge on real-time X chatter that would have flagged it earlier? If yes → fund xAI, generate key. If no → defer another 30 days.</td>
-          <td style="color:#888;">Bobby + Keystone</td>
-          <td><span class="badge badge-blue">SCHEDULED</span></td>
-        </tr>
-        <tr>
-          <td style="color:#60a5fa; font-weight:700;">2026-05-30</td>
-          <td><strong style="color:#fff;">Day-30 broadcast push — outbound social (LinkedIn / X / FB / IG / Instagram Reel).</strong> By this date: 30 days of paper-trade P&L, ~30 daily intel posts, 4 Friday Committee theses, lessons in PRAXIS. Story arc: <em>"30 days ago I started an AI Hedge Fund Committee experiment. Here's what happened."</em> Receipts attach to name, not promises. Vector designs the broadcast asset.</td>
-          <td style="color:#888;">Bobby + Vector + WOLF</td>
-          <td><span class="badge badge-blue">SCHEDULED</span></td>
-        </tr>
-        <tr>
-          <td style="color:#fbbf24; font-weight:700;">2026-05-04</td>
-          <td><strong style="color:#fff;">First public WOLF Brief post.</strong> Inaugural Friday Committee thesis for the upcoming week — sets the tone of the publication. Receipts, opinions, kill criterion in every post.</td>
-          <td style="color:#888;">WOLF + Vector</td>
-          <td><span class="badge badge-blue">SCHEDULED</span></td>
-        </tr>
-        <tr style="border-top:2px solid rgba(250,204,21,0.5);">
-          <td style="color:#facc15; font-weight:700;">2026-05-08</td>
-          <td><strong style="color:#fff;">Day-30 checkpoint.</strong> Are we hitting ≥3 trades/day with PF still ≥1.5? If yes → continue to Day-60. If no → cut the bottom-2 strategies and add directional pairs trading.</td>
-          <td style="color:#888;">Keystone</td>
-          <td><span class="badge badge-blue">SCHEDULED</span></td>
-        </tr>
-        <tr>
-          <td style="color:#facc15; font-weight:700;">2026-06-07</td>
-          <td><strong style="color:#fff;">Day-60 graduation review.</strong> If WOLF has 35+ trades, WR≥45%, Sharpe≥1.5, DD≤15%: unlock real money at $1K/position max. Scale weekly only if metrics hold.</td>
-          <td style="color:#888;">Keystone</td>
-          <td><span class="badge badge-blue">SCHEDULED</span></td>
-        </tr>
-        <tr style="border-top:2px solid rgba(250,204,21,0.5);">
-          <td style="color:#c084fc; font-weight:700;">2026-07-30</td>
-          <td><strong style="color:#fff;">Day-90 WOLF Brief kill / continue / double-down.</strong> Kill if: &lt;100 engaged subs AND paper Sharpe &lt;1.0 AND 0 family-office inbounds. Continue with conditions if 2/3 fail. Double-down if 0–1/3 fail.</td>
-          <td style="color:#888;">Keystone</td>
-          <td><span class="badge badge-purple">90-DAY</span></td>
-        </tr>
-        <tr>
-          <td style="color:#888;">ongoing</td>
-          <td><strong style="color:#fff;">PRAXIS lessons feed back into strategy thresholds.</strong> Each WOLF Post-Close Recap appends a PRAXIS_INBOX block; daily distill at 03:15 promotes recurring lessons (≥3 occurrences) into <code style="color:#60a5fa;">BROADCAST_wolf.md</code>. Strategy params auto-tighten when PRAXIS suggests it.</td>
-          <td style="color:#888;">PRAXIS pipeline</td>
-          <td><span class="badge badge-green">LIVE</span></td>
-        </tr>
-        <tr style="border-top:2px solid rgba(96,165,250,0.5);">
-          <td style="color:#60a5fa; font-weight:700;" colspan="4"><strong>NEXT-TIER capability roadmap (scheduled from [RED] review · 2026-04-30)</strong></td>
-        </tr>
-        <tr>
-          <td style="color:#60a5fa; font-weight:700;">2026-05-05</td>
-          <td><strong style="color:#fff;">Earnings Prep Skill.</strong> Daily 06:00 routine pulls next session's earnings calendar (yfinance, free), generates per-ticker "what to watch" doc with last 4 quarters' beat/miss, options-implied move, key metrics. Feeds Pre-Market Intel.</td>
-          <td style="color:#888;">WOLF (new routine)</td>
-          <td><span class="badge badge-blue">SCHEDULED</span></td>
-        </tr>
-        <tr>
-          <td style="color:#60a5fa; font-weight:700;">2026-05-06</td>
-          <td><strong style="color:#fff;">Wash Sale + Tax Efficiency Tracker.</strong> Tracks 30-day wash-sale violations, flags LTCG vs STCG holdings, surfaces tax-loss harvest opportunities. 200–500 bps/yr lift on taxable accounts. Required before Day-60 real money unlock.</td>
-          <td style="color:#888;">Ledger + WOLF</td>
-          <td><span class="badge badge-blue">SCHEDULED</span></td>
-        </tr>
-        <tr>
-          <td style="color:#60a5fa; font-weight:700;">2026-05-04</td>
-          <td><strong style="color:#fff;">Sentinel Compliance Review of WOLF Brief content.</strong> Triggered routine fires every time <code style="color:#60a5fa;">wolf-brief/*.md</code> is committed. Checks investment-advice disclaimers, no-misrepresentation, FINRA-style language. Required before inaugural public Brief post.</td>
-          <td style="color:#888;">Sentinel</td>
-          <td><span class="badge badge-blue">SCHEDULED</span></td>
-        </tr>
-        <tr>
-          <td style="color:#60a5fa; font-weight:700;">2026-05-07</td>
-          <td><strong style="color:#fff;">Public Performance Scorecard widget.</strong> New dashboard card auto-published to Brief footer: cumulative paper P&L vs SPX over 60-day soak, trade count, current Sharpe, max DD, gates-passed indicator. The receipt that builds Brief credibility.</td>
-          <td style="color:#888;">AP + Vector</td>
-          <td><span class="badge badge-blue">SCHEDULED</span></td>
-        </tr>
-        <tr>
-          <td style="color:#60a5fa; font-weight:700;">2026-05-15</td>
-          <td><strong style="color:#fff;">Reddit / StockTwits Sentiment Overlay (dark horse).</strong> Add as a *modifier* on <code style="color:#60a5fa;">mean_reversion_bb_rsi</code> — only fade RSI extremes when retail sentiment concurrently extreme. Reddit free API + StockTwits free tier. Re-evaluate at Day-30 (May 8) if signal flow needs more lift.</td>
-          <td style="color:#888;">WOLF</td>
-          <td><span class="badge badge-purple">DARK HORSE</span></td>
-        </tr>
-        <tr>
-          <td style="color:#60a5fa; font-weight:700;">2026-05-02</td>
-          <td><strong style="color:#fff;">Wire engineering skills into WOLF session prompt:</strong> <code style="color:#60a5fa;">engineering:debug</code> (root-cause when a strategy fails), <code style="color:#60a5fa;">engineering:testing-strategy</code> (formal walk-forward + OOS for new strategies), <code style="color:#60a5fa;">keystone</code> (self-call for Day-30/60/90 strategic gates).</td>
-          <td style="color:#888;">AP</td>
-          <td><span class="badge badge-blue">SCHEDULED</span></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════════════════════
-     WOLF SUB-CADENCE — Cloud Routines · added 2026-04-30
-     5 routines wired to claude.ai/code/routines, all writing to
-     Extracoffee13/wolf-dashboards-repo. Each commits a PRAXIS_INBOX block
-     to praxis-inbox.md → local watcher → capture.py → daily distill.
-     ═══════════════════════════════════════════════════════════════════════ -->
-<div class="grid grid-2" style="padding: 20px 20px 0;">
-  <div class="card full-width" style="border-color:#ff6b35; background: linear-gradient(135deg, rgba(255,107,53,0.06) 0%, #12121f 100%);">
-    <div class="card-header" style="margin-bottom:6px;">
-      WOLF Sub-Cadence — Cloud Routines
-      <span class="badge badge-green">5 LIVE</span>
-    </div>
-    <div style="font-size:11px; color:#888; margin-bottom:14px;">
-      Daily intel + Friday committee. Each run writes <code style="color:#60a5fa;">wolf-intel/{date}/*.md</code> (internal) + <code style="color:#60a5fa;">wolf-brief/{date}-*.md</code> (public WOLF Brief). Repo: <code style="color:#60a5fa;">Extracoffee13/wolf-dashboards-repo</code>.
-    </div>
-    <table>
-      <thead>
-        <tr>
-          <th style="width:80px;">When</th>
-          <th>Routine</th>
-          <th>What it owns</th>
-          <th style="width:70px;">Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td style="color:#facc15; font-weight:700;">09:00 wd</td>
-          <td style="color:#fff; font-weight:700;">Pre-Market Intel</td>
-          <td style="color:#888; font-size:11px;">Futures · Asia close · Europe open · today's catalysts · pre-market gappers · homebuilder + B9 client tickers</td>
-          <td><span class="badge badge-green">LIVE</span></td>
-        </tr>
-        <tr>
-          <td style="color:#facc15; font-weight:700;">09:30 wd</td>
-          <td style="color:#fff; font-weight:700;">Congressional Trading Watch</td>
-          <td style="color:#888; font-size:11px;">Senate eFD · House CHDP · Quiver · CapitolTrades · scored 1–5 · STOCK Act drift flagger · auto-bump on homebuilder/B9 tickers</td>
-          <td><span class="badge badge-green">LIVE</span></td>
-        </tr>
-        <tr>
-          <td style="color:#facc15; font-weight:700;">11:00 wd</td>
-          <td style="color:#fff; font-weight:700;">Consulting Pulse <span style="color:#ff6b35;">★ dark horse</span></td>
-          <td style="color:#888; font-size:11px;">McKinsey · BCG · Bain · Deloitte · KPMG · EY · PwC · Strategy& · Oliver Wyman · Roland Berger · arxiv top-3</td>
-          <td><span class="badge badge-green">LIVE</span></td>
-        </tr>
-        <tr>
-          <td style="color:#facc15; font-weight:700;">16:30 wd</td>
-          <td style="color:#fff; font-weight:700;">Post-Close Recap</td>
-          <td style="color:#888; font-size:11px;">SPX/sector close · B9 client moves · today's signal post-mortem · Alpaca P&L · tomorrow's setup</td>
-          <td><span class="badge badge-green">LIVE</span></td>
-        </tr>
-        <tr style="border-top:1px solid #ff6b35;">
-          <td style="color:#c084fc; font-weight:700;">Fri 17:00</td>
-          <td style="color:#fff; font-weight:700;">AI Hedge Fund Committee</td>
-          <td style="color:#888; font-size:11px;">4-role committee (Generalist · Quant · Skeptic · Operator) → vote Risk-On/Neutral/Risk-Off → thesis-of-record → public WOLF Brief weekly post</td>
-          <td><span class="badge badge-purple">WEEKLY</span></td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div style="margin-top:14px; padding:11px 14px; background:rgba(255,107,53,0.08); border:1px solid rgba(255,107,53,0.32); border-radius:6px; color:#ffb888; font-size:11px; line-height:1.5;">
-      <span style="font-weight:bold; color:#ff6b35;">Strategic frame · AI Hedge Fund Committee.</span> WOLF reframed from "trading bot" (feature, ~14/25 Coca-Cola) to <strong>productized public Brief</strong> (moonshot, 22/25). Trading is the proof, the Brief is the product.
-      <br><br>
-      <span style="font-weight:bold; color:#ff6b35;">90-day kill criterion · Day-90 = 2026-07-30.</span> Kill the productize thesis if ALL three: &lt;100 engaged subs · paper Sharpe &lt;1.0 · 0 family-office inbounds. Continue with conditions if 2/3 fail. Double-down if 0–1/3 fail.
-      <br><br>
-      <span style="font-weight:bold; color:#ff6b35;">The wedge.</span> Daily Brief published from the routine outputs (Substack + X). Friday Committee = headline weekly thesis post. Paid tier (90–180d) = full thesis archive + paper-trade scorecard. Managed-account tier (180–365d) = WOLF executes against the brief.
-    </div>
-  </div>
-</div>
-
-<!-- Backtest status bar -->
-<div style="padding: 16px 20px 0;">
-  <div class="card" style="border-color:#2a2a3e;">
-    <div style="display:flex; align-items:center; gap:20px; flex-wrap:wrap;">
-      <div>
-        <div style="font-size:10px; color:#666; text-transform:uppercase; letter-spacing:1px;">Last Backtest</div>
-        <div style="color:#fff; font-size:13px; font-weight:700;" id="backtest-date">2026-04-07</div>
-      </div>
-      <div>
-        <div style="font-size:10px; color:#666; text-transform:uppercase; letter-spacing:1px;">Data Source</div>
-        <div style="color:#4ade80; font-size:13px; font-weight:700;" id="backtest-source">Real Alpaca IEX ✅</div>
-      </div>
-      <div>
-        <div style="font-size:10px; color:#666; text-transform:uppercase; letter-spacing:1px;">Strategies Passed</div>
-        <div style="color:#4ade80; font-size:13px; font-weight:700;" id="backtest-passed">3 / 11</div>
-      </div>
-      <div>
-        <div style="font-size:10px; color:#666; text-transform:uppercase; letter-spacing:1px;">Best Strategy</div>
-        <div style="color:#ff6b35; font-size:13px; font-weight:700;" id="backtest-best">52-Week High Breakout (Sharpe 1.91 real)</div>
-      </div>
-      <div style="margin-left:auto; display:flex; gap:8px;">
-        <a href="backtest/results/real_backtest_2026-04-07.md" style="color:#4ade80; font-size:12px; text-decoration:none; padding:6px 12px; border:1px solid #2a5a2a; border-radius:6px; background:#1a3a1a;">Real Data Report</a>
-        <a href="backtest/results/backtest_2026-04-07.md" style="color:#60a5fa; font-size:12px; text-decoration:none; padding:6px 12px; border:1px solid #2a2a5a; border-radius:6px; background:#1a1a3a;">Synthetic Report</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Active Signals + Strategy Performance -->
-<div class="grid grid-2" style="padding: 0 20px 20px;">
-  <div class="card">
-    <div class="card-header">Active Signals — Today <span class="badge badge-green">3 LIVE</span></div>
-
-    <!-- TSLA SHORT -->
-    <div class="signal-row" style="flex-direction:column; align-items:flex-start; cursor:pointer;" onclick="switchChart('NASDAQ:TSLA'); window.scrollTo({top:document.getElementById('tv_main').getBoundingClientRect().top+scrollY-80,behavior:'smooth'});" title="View TSLA chart">
-      <div style="display:flex; gap:12px; align-items:center; width:100%;">
-        <span class="signal-dir signal-short">SHORT</span>
-        <span class="signal-ticker">TSLA</span>
-        <span class="signal-strategy">Breakdown</span>
-        <span class="signal-conf">R:R 2:1</span>
-      </div>
-      <div class="signal-detail" style="width:100%; margin-top:8px;">
-        <div class="signal-detail-item"><div class="sd-label">Entry</div><div class="sd-val">$360.47</div></div>
-        <div class="signal-detail-item"><div class="sd-label">Stop</div><div class="sd-val" style="color:#f87171;">$381.36</div></div>
-        <div class="signal-detail-item"><div class="sd-label">Target</div><div class="sd-val" style="color:#4ade80;">$318.70</div></div>
-      </div>
-    </div>
-
-    <!-- NFLX LONG -->
-    <div class="signal-row" style="flex-direction:column; align-items:flex-start; cursor:pointer;" onclick="switchChart('NASDAQ:NFLX'); window.scrollTo({top:document.getElementById('tv_main').getBoundingClientRect().top+scrollY-80,behavior:'smooth'});" title="View NFLX chart">
-      <div style="display:flex; gap:12px; align-items:center; width:100%;">
-        <span class="signal-dir signal-long">LONG</span>
-        <span class="signal-ticker">NFLX</span>
-        <span class="signal-strategy">Momentum Breakout</span>
-        <span class="signal-conf">R:R 2:1</span>
-      </div>
-      <div class="signal-detail" style="width:100%; margin-top:8px;">
-        <div class="signal-detail-item"><div class="sd-label">Entry</div><div class="sd-val">$98.69</div></div>
-        <div class="signal-detail-item"><div class="sd-label">Stop</div><div class="sd-val" style="color:#f87171;">$94.61</div></div>
-        <div class="signal-detail-item"><div class="sd-label">Target</div><div class="sd-val" style="color:#4ade80;">$106.84</div></div>
-      </div>
-    </div>
-
-    <!-- XLU LONG -->
-    <div class="signal-row" style="flex-direction:column; align-items:flex-start; border-bottom:none; cursor:pointer;" onclick="switchChart('AMEX:XLU'); window.scrollTo({top:document.getElementById('tv_main').getBoundingClientRect().top+scrollY-80,behavior:'smooth'});" title="View XLU chart">
-      <div style="display:flex; gap:12px; align-items:center; width:100%;">
-        <span class="signal-dir signal-long">LONG</span>
-        <span class="signal-ticker">XLU</span>
-        <span class="signal-strategy">MACD Bullish Cross</span>
-        <span class="signal-conf">R:R 2:1</span>
-      </div>
-      <div class="signal-detail" style="width:100%; margin-top:8px;">
-        <div class="signal-detail-item"><div class="sd-label">Entry</div><div class="sd-val">$46.36</div></div>
-        <div class="signal-detail-item"><div class="sd-label">Stop</div><div class="sd-val" style="color:#f87171;">$44.85</div></div>
-        <div class="signal-detail-item"><div class="sd-label">Target</div><div class="sd-val" style="color:#4ade80;">$49.38</div></div>
-      </div>
-    </div>
-
-    <div style="margin-top:14px; padding:10px; background:#1a1a2e; border-radius:8px; border-left:3px solid #4ade80;">
-      <div style="font-size:11px; color:#4ade80; font-weight:bold; text-transform:uppercase; letter-spacing:1px;">&#9889; FULLY AUTOMATIC &mdash; 30-DAY PAPER GATE ENFORCED</div>
-      <div style="font-size:11px; color:#888; margin-top:6px; line-height:1.7;">
-        &#128200; Pre-market scan: <span style="color:#4ade80;">6:33 AM</span> &bull; Consulting intel: <span style="color:#4ade80;">7:03 AM</span><br>
-        &#128640; Market-open exec: <span style="color:#4ade80;">9:30 AM ET</span> &bull; Midday rescan: <span style="color:#4ade80;">12:30 PM ET</span><br>
-        &#128202; EOD review: <span style="color:#4ade80;">4:15 PM ET</span> &bull; Gate status: <span style="color:#4ade80;">4:45 PM ET</span> &bull; Crypto 24/7: <span style="color:#4ade80;">every 6h</span><br>
-        &#128737; Auto-route: <span style="color:#4ade80;">ON (paper)</span> &bull; Committee: <span style="color:#4ade80;">executes</span> &bull; Risk caps: <span style="color:#4ade80;">2%/trade, 10% heat, 3% daily stop</span><br>
-        &#128274; Real-money gate (v2.1 — extended for strategy battery soak): <span style="color:#ff6b35;">60 days + Sharpe&ge;1.5 + DD&le;15% + 40 trades + WR&ge;45% + PF&ge;1.5</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-header">Strategy Backtest Results <span class="badge badge-green">9 TESTED</span></div>
-    <div style="font-size:11px; color:#ff6b35; margin-bottom:8px; text-transform:uppercase; letter-spacing:1px;">Advanced Strategies (4 market scenarios each)</div>
-    <div class="strategy-row">
-      <span class="strat-name">Enhanced Mean Reversion ★</span>
-      <div><span style="color:#888; font-size:11px; margin-right:8px;">82% WR | 6.1x PF | Sharpe 1.63</span><span class="strat-grade grade-b">B</span></div>
-    </div>
-    <div class="strategy-row">
-      <span class="strat-name">Volatility Breakout (Squeeze)</span>
-      <div><span style="color:#888; font-size:11px; margin-right:8px;">93% WR | 8.2x PF | Sharpe 1.53</span><span class="strat-grade grade-b">B</span></div>
-    </div>
-    <div class="strategy-row">
-      <span class="strat-name">Multi-Factor Momentum</span>
-      <div><span style="color:#888; font-size:11px; margin-right:8px;">+2.4% avg | Sharpe 0.20 | needs tuning</span><span class="strat-grade grade-d">D</span></div>
-    </div>
-    <div class="strategy-row">
-      <span class="strat-name">WOLF Composite (Master)</span>
-      <div><span style="color:#888; font-size:11px; margin-right:8px;">+1.7% avg | Sharpe 0.13 | needs tuning</span><span class="strat-grade grade-d">D</span></div>
-    </div>
-    <div style="font-size:11px; color:#555; margin-top:10px; text-transform:uppercase; letter-spacing:1px;">Basic Strategies</div>
-    <div class="strategy-row">
-      <span class="strat-name">SMA Crossover / WOLF Adaptive / MACD / BB / RSI</span>
-      <div><span style="color:#888; font-size:11px; margin-right:8px;">D-F grades</span><span class="strat-grade grade-d">D</span></div>
-    </div>
-    <div class="sub-text" style="margin-top:10px; text-align:center;">★ Mean Reversion: 82% WR, 6.1x PF in ranging markets. Volatility Breakout: 93% WR in choppy conditions. WOLF rotates strategies based on detected regime.</div>
-  </div>
-</div>
-
-<!-- ═══════════════════ LIVE MARKETS ═══════════════════ -->
-<div style="padding: 0 20px 20px;">
-  <div class="card">
-    <div class="card-header">📊 Live Markets <span class="badge badge-green">REAL-TIME</span></div>
-
-    <!-- Symbol switcher buttons -->
-    <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px;">
-      <button onclick="switchChart('NASDAQ:QQQ')"   class="tv-btn" id="btn-QQQ">QQQ</button>
-      <button onclick="switchChart('AMEX:SPY')"     class="tv-btn" id="btn-SPY">SPY</button>
-      <button onclick="switchChart('AMEX:IWM')"     class="tv-btn" id="btn-IWM">IWM</button>
-      <button onclick="switchChart('NASDAQ:AAPL')"  class="tv-btn" id="btn-AAPL">AAPL</button>
-      <button onclick="switchChart('NASDAQ:NVDA')"  class="tv-btn" id="btn-NVDA">NVDA</button>
-      <button onclick="switchChart('NASDAQ:TSLA')"  class="tv-btn" id="btn-TSLA">TSLA</button>
-      <button onclick="switchChart('NASDAQ:NFLX')"  class="tv-btn" id="btn-NFLX">NFLX</button>
-      <input id="tv-custom-symbol" placeholder="Type ticker…" onkeydown="if(event.key==='Enter'){var s=this.value.toUpperCase();switchChart(s.includes(':')?s:'NASDAQ:'+s);}" style="background:#0a0a1a; border:1px solid #2a2a3e; color:#e0e0e0; padding:4px 10px; border-radius:6px; font-family:inherit; font-size:12px; width:120px;" />
-    </div>
-
-    <!-- Main chart -->
-    <div class="tradingview-widget-container" style="margin-bottom:16px;">
-      <div id="tv_main"></div>
-    </div>
-
-    <!-- Mini watchlist row -->
-    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:12px; margin-top:4px;">
-      <div>
-        <div style="font-size:10px; color:#666; text-transform:uppercase; letter-spacing:1px; margin-bottom:6px;">QQQ</div>
-        <div class="tradingview-widget-container"><div id="tv_QQQ"></div></div>
-      </div>
-      <div>
-        <div style="font-size:10px; color:#666; text-transform:uppercase; letter-spacing:1px; margin-bottom:6px;">IWM</div>
-        <div class="tradingview-widget-container"><div id="tv_IWM"></div></div>
-      </div>
-      <div>
-        <div style="font-size:10px; color:#666; text-transform:uppercase; letter-spacing:1px; margin-bottom:6px;">AAPL</div>
-        <div class="tradingview-widget-container"><div id="tv_AAPL"></div></div>
-      </div>
-      <div>
-        <div style="font-size:10px; color:#666; text-transform:uppercase; letter-spacing:1px; margin-bottom:6px;">NVDA</div>
-        <div class="tradingview-widget-container"><div id="tv_NVDA"></div></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<style>
-  .tv-btn { background:#12121f; border:1px solid #2a2a3e; color:#888; padding:4px 12px; border-radius:6px; font-family:inherit; font-size:12px; cursor:pointer; transition:all .15s; }
-  .tv-btn:hover, .tv-btn.active { background:#1a1a2e; border-color:#ff6b35; color:#ff6b35; }
-</style>
-
-<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
 <script>
-var _tvMain = null;
+const RAW="https://raw.githubusercontent.com/Extracoffee13/wolf-dashboards-repo/main/wolf_live_data.json";
+const ETF=new Set(["XLE","VOO","SHV","BIL","TLT","SPY","QQQ","IWM","DIA","XLF","XLK","XLV","XLI","XLP","XLU","XLY","XLB","XLRE","XLC","GLD","EFA"]);
+const VAULT=new Set(["SHV","VOO","BIL","TLT"]);
+const HALT_SINCE=new Date("2026-05-13T00:00:00Z");
+const $=id=>document.getElementById(id);
+const f$=n=>"$"+Number(n||0).toLocaleString("en-US",{maximumFractionDigits:0});
+const f2=n=>"$"+Number(n||0).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
+const pct=n=>(n>=0?"+":"")+(Number(n||0)*100).toFixed(2)+"%";
+const cl=(b,w)=>b?"bad":(w?"warn":"ok");
 
-function buildWidget(containerId, symbol, height) {
-  return new TradingView.widget({
-    width: "100%",
-    height: height,
-    symbol: symbol,
-    interval: "D",
-    timezone: "America/New_York",
-    theme: "dark",
-    style: "1",
-    locale: "en",
-    toolbar_bg: "#1a1a2e",
-    enable_publishing: false,
-    allow_symbol_change: true,
-    hide_side_toolbar: false,
-    container_id: containerId
+function kcard(label,val,vc,sub){return `<div class="card k ${vc}"><div class="k-label">${label}</div><div class="k-val ${vc}">${val}</div><div class="k-sub">${sub||""}</div></div>`;}
+function chip(label,state,detail){const c=state==='bad'?'var(--red)':(state==='warn'?'var(--amber)':(state==='cy'?'var(--cyan)':'var(--mint)'));
+  return `<div class="chip"><span class="dot" style="background:${c}"></span><span style="flex:1">${label}</span><span class="d">${detail}</span></div>`;}
+
+function render(d){
+  $("live-status").textContent="LIVE";
+  const a=d.account||{}, eq=+(a.equity||a.portfolio_value||0), cash=+(a.cash||0);
+  const lev=eq>0?(eq+Math.max(0,-cash))/eq:0;
+  const pos=(d.positions||[]).slice().sort((x,y)=>(+y.market_value||0)-(+x.market_value||0));
+  const top=pos[0]||{ticker:"—",market_value:0}; const topPct=eq>0?(+top.market_value)/eq*100:0;
+  const vault=pos.filter(p=>VAULT.has(p.ticker)).reduce((s,p)=>s+(+p.market_value||0),0);
+  const vaultPct=eq>0?vault/eq*100:0;
+  const over=pos.filter(p=>{const c=ETF.has(p.ticker)?15:8;return eq>0&&(+p.market_value)/eq*100>c;}).length;
+  const halt=!!(d.circuit_breaker&&d.circuit_breaker.halt_new_entries);
+  const haltDays=Math.floor((Date.now()-HALT_SINCE)/864e5);
+  const regime=(d.market_regime&&d.market_regime.current)||"UNKNOWN";
+  const ws=d.wolf_status||{}; const trades=+(ws.total_trades_all_time||0); const wr=+(ws.win_rate_all_time||0)*100;
+
+  // staleness
+  const ts=d.last_updated?new Date(d.last_updated):null;
+  if(ts){const m=Math.floor((Date.now()-ts)/6e4);const ag=m>1440?Math.floor(m/1440)+"d":(m>60?Math.floor(m/60)+"h":m+"m");
+    $("last-update").textContent=ts.toLocaleString()+" ("+ag+" ago)";
+    $("stale-warning").style.display=m>15?"inline":"none"; $("stale-age").textContent=ag+" ago";}
+
+  // verdict
+  const breaches=[lev>1.01,topPct>8,vaultPct<60,cash<0,over>0].filter(Boolean).length;
+  const vc=breaches>=3?"bad":(breaches>0?"warn":"ok");
+  $("verdict").style.borderColor=breaches>=3?"rgba(248,113,113,.45)":(breaches>0?"rgba(251,191,36,.4)":"rgba(74,222,128,.4)");
+  $("verdict").innerHTML=breaches>=3
+    ? `<b class="bad">⚠ NON-COMPLIANT — ${breaches}/5 mandate pillars breached.</b> Leverage ${lev.toFixed(2)}× · margin ${f$(cash)} · top ${topPct.toFixed(0)}% (${top.ticker}) · vault ${vaultPct.toFixed(0)}%. Rebalance overdue ${haltDays}d — run <code>mandate_rebalance.py</code> to restore compliance and seed the vault.`
+    : (breaches>0?`<b class="warn">${breaches}/5 pillars breached</b> — see tiles below.`:`<b class="ok">✓ Compliant under mandate v1.0.</b>`);
+
+  // compliance hero
+  $("compliance").innerHTML=[
+    kcard("Leverage",lev.toFixed(2)+"×",cl(lev>1.01,false),"limit 1.00×"),
+    kcard("Margin / cash",f$(cash),cl(cash<0,false),"limit ≥ $0"),
+    kcard("Largest",topPct.toFixed(0)+"% <span style='font-size:.7rem;color:var(--dim)'>"+top.ticker+"</span>",cl(topPct>8,topPct>6),"limit 8%"),
+    kcard("Vault",vaultPct.toFixed(0)+"%",cl(vaultPct<60,vaultPct<70),"floor 60%"),
+    kcard("Over cap",over+" / "+pos.length,cl(over>0,false),"target 0"),
+  ].join("");
+
+  // controls
+  $("controls").innerHTML=[
+    chip("Rebalance control",(halt&&haltDays>2)?"bad":"ok",(halt&&haltDays>2)?("halt "+haltDays+"d — run it"):"healthy"),
+    chip("Entry halt",halt?"bad":"ok",halt?"ON":"clear"),
+    chip("Regime detector",regime==="UNKNOWN"?"warn":"ok",regime),
+    chip("Strategy attribution","ok","wired"),
+    chip("Tax-alpha / wash-sale","ok","enforced pre-trade"),
+    chip("Vault de-risk (trend)","cy","weekly · armed"),
+    chip("Control heartbeat","ok","EOD daily"),
+    chip("Live performance",trades<10?"warn":"ok",wr.toFixed(0)+"% over "+trades+" trades"),
+  ].join("");
+
+  // account
+  const dp=d.daily_pnl||{}, wp=d.weekly_pnl||{};
+  $("account").innerHTML=[
+    kcard("Equity",f2(eq),"acc","portfolio value"),
+    kcard("Cash",f2(cash),cl(cash<0,false),"buying power "+f$(a.buying_power)),
+    kcard("Daily P&L",(dp.amount>=0?"+":"")+f$(dp.amount),dp.amount>=0?"ok":"bad",pct(dp.pct)),
+    kcard("Weekly P&L",(wp.amount>=0?"+":"")+f$(wp.amount),wp.amount>=0?"ok":"bad",pct(wp.pct)),
+  ].join("");
+
+  // positions
+  const tb=$("positions-table").querySelector("tbody");
+  tb.innerHTML=pos.length?pos.map(p=>{const mv=+p.market_value||0;const pp=eq>0?mv/eq*100:0;const cap=ETF.has(p.ticker)?15:8;const bad=pp>cap;
+    const upl=+p.unrealized_pl||0;
+    return `<tr><td><b>${p.ticker}</b></td><td>${(+p.qty||0).toLocaleString()}</td><td>${f$(mv)}</td>
+      <td class="${bad?'bad':'ok'}">${pp.toFixed(1)}%</td>
+      <td class="${upl>=0?'ok':'bad'}">${(upl>=0?'+':'')+f$(upl)}</td>
+      <td>${bad?'<span class="pill p-bad">OVER '+(pp/cap).toFixed(1)+'×</span>':'<span class="pill p-ok">ok</span>'}</td></tr>`;
+  }).join(""):`<tr><td colspan="6" style="color:var(--dim)">no open positions</td></tr>`;
+
+  // strategy registry (live, from JSON)
+  const sp=d.strategy_performance||{};
+  const rows=Object.keys(sp).map(k=>{const s=sp[k];const st=(s.status||"").toUpperCase();
+    const active=st.startsWith("ACTIVE");const dis=st.startsWith("DISABLED");
+    const pill=active?'<span class="pill p-ok">ACTIVE</span>':(dis?'<span class="pill p-bad">DISABLED</span>':'<span class="pill p-warn">'+ (st.split("—")[0].trim().slice(0,16)||"PENDING") +'</span>');
+    const sh=s.sharpe_backtest!=null?("Sharpe "+s.sharpe_backtest):"";
+    const dd=s.max_dd_backtest!=null?(" · DD "+(s.max_dd_backtest*100).toFixed(1)+"%"):"";
+    const tt=(s.trades_today!=null)?(" · today "+s.trades_today):"";
+    return {active,dis,html:`<div class="srow"><span><span class="nm">${s.name||k}</span> <span class="meta">${s.academic_source||s.data_source||""}</span></span>
+      <span>${pill} <span class="meta">${sh}${dd}${tt}</span></span></div>`};
+  });
+  rows.sort((a,b)=>(b.active-a.active)||(a.dis-b.dis));
+  $("strategies").innerHTML=`<div class="card">${rows.map(r=>r.html).join("")||'<div class="srow">no registry data</div>'}</div>`;
+
+  // regime
+  const r=d.market_regime||{};
+  const rc=r.current==="BULL"?"ok":(r.current==="BEAR"||r.current==="HIGH_VOL"?"bad":(r.current==="SIDEWAYS"?"warn":""));
+  $("regime").innerHTML=[
+    kcard("Regime",r.current||"UNKNOWN",rc||"",r.source||"regime bridge"),
+    kcard("VIX",r.vix!=null?r.vix:"—","", r.vix!=null&&r.vix>=25?"elevated":"calm/normal"),
+    kcard("SPY trend",(r.spy_trend||"—").toString().slice(0,22).replace(/"/g,''),"",""),
+    kcard("Assessed",r.last_assessed?new Date(r.last_assessed).toLocaleDateString():"—","","auto"),
+  ].join("");
+
+  // trades
+  const tt=$("trades").querySelector("tbody");
+  const trs=d.todays_trades||[];
+  tt.innerHTML=trs.length?trs.map(t=>`<tr><td>${t.created_at?new Date(t.created_at).toLocaleTimeString():'—'}</td>
+    <td><b>${t.ticker}</b></td><td class="${t.side==='buy'?'ok':'warn'}">${(t.side||'').toUpperCase()}</td>
+    <td>${(+t.qty||0).toLocaleString()}</td><td>${f2(t.filled_price)}</td>
+    <td class="meta">${t.strategy||'—'}</td></tr>`).join(""):`<tr><td colspan="6" style="color:var(--dim)">no fills today</td></tr>`;
+
+  $("foot").innerHTML=`WOLF Command Center v3.0 · rebuilt 2026-06-16 audit overhaul · reads <code>wolf_live_data.json</code> every 60s · mode PAPER.
+    Controls verified: rebalance (alpaca-py-free + verify-before-clear), halt enforced at every entry path, regime+VIX bridged, strategy attribution, tax-alpha wash-sale gate, trend-overlay vault de-risking, EOD control-health heartbeat.
+    Principle: <b>fix the controls before adding alpha.</b>`;
+}
+
+function load(){
+  const isLocal=location.hostname!=="extracoffee13.github.io";
+  const url=(isLocal?"wolf_live_data.json?t=":RAW+"?t=")+Date.now();
+  fetch(url,{cache:"no-store"}).then(r=>r.json()).then(render).catch(e=>{
+    $("live-status").textContent="OFFLINE"; $("live-status").style.color="var(--amber)";
+    $("verdict").innerHTML=`<span class="warn">⚠ live feed unreachable (${e.message}). Retrying every 60s.</span>`;
   });
 }
-
-function switchChart(symbol) {
-  // Rebuild main chart with new symbol
-  document.getElementById('tv_main').innerHTML = '';
-  _tvMain = buildWidget('tv_main', symbol, 600);
-
-  // Update active button highlight
-  document.querySelectorAll('.tv-btn').forEach(function(b) { b.classList.remove('active'); });
-  var ticker = symbol.split(':').pop();
-  var btn = document.getElementById('btn-' + ticker);
-  if (btn) btn.classList.add('active');
-}
-
-// On load: build main (SPY) + 4 mini charts
-document.addEventListener('DOMContentLoaded', function() {
-  _tvMain = buildWidget('tv_main', 'AMEX:SPY', 600);
-  document.getElementById('btn-SPY').classList.add('active');
-  buildWidget('tv_QQQ',  'NASDAQ:QQQ',  300);
-  buildWidget('tv_IWM',  'AMEX:IWM',    300);
-  buildWidget('tv_AAPL', 'NASDAQ:AAPL', 300);
-  buildWidget('tv_NVDA', 'NASDAQ:NVDA', 300);
-});
+load();
+setInterval(load,60000);
 </script>
-
-<!-- Market Regime -->
-<div style="padding: 0 20px 20px;">
-  <div class="card">
-    <div class="card-header">Market Regime <span class="badge badge-yellow">CORRECTIVE PULLBACK</span></div>
-    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap:16px;">
-      <div>
-        <div class="regime-bar" style="flex-direction:column; align-items:flex-start; gap:6px; border-bottom:none;">
-          <div style="font-size:10px; color:#555; text-transform:uppercase; letter-spacing:1px;">SPY</div>
-          <div style="color:#f87171; font-size:14px; font-weight:900;">Below 50MA</div>
-          <div style="font-size:10px; color:#666;">Corrective phase</div>
-        </div>
-      </div>
-      <div>
-        <div class="regime-bar" style="flex-direction:column; align-items:flex-start; gap:6px; border-bottom:none;">
-          <div style="font-size:10px; color:#555; text-transform:uppercase; letter-spacing:1px;">QQQ</div>
-          <div style="color:#f87171; font-size:14px; font-weight:900;">Below 50MA</div>
-          <div style="font-size:10px; color:#666;">Tech under pressure</div>
-        </div>
-      </div>
-      <div>
-        <div class="regime-bar" style="flex-direction:column; align-items:flex-start; gap:6px; border-bottom:none;">
-          <div style="font-size:10px; color:#555; text-transform:uppercase; letter-spacing:1px;">IWM</div>
-          <div style="color:#f87171; font-size:14px; font-weight:900;">Below 50MA</div>
-          <div style="font-size:10px; color:#666;">Small caps weak</div>
-        </div>
-      </div>
-      <div>
-        <div class="regime-bar" style="flex-direction:column; align-items:flex-start; gap:6px; border-bottom:none;">
-          <div style="font-size:10px; color:#555; text-transform:uppercase; letter-spacing:1px;">RSI (SPY)</div>
-          <div style="color:#facc15; font-size:14px; font-weight:900;">~46</div>
-          <div style="font-size:10px; color:#666;">Neutral — transitional</div>
-        </div>
-      </div>
-    </div>
-    <div style="margin-top:12px; padding:10px; background:#1a1a2e; border-radius:8px; border-left:3px solid #facc15;">
-      <div style="font-size:12px; color:#facc15; font-weight:700; margin-bottom:4px;">&#9888; Regime Assessment: Transitional / Uncertain</div>
-      <div style="font-size:11px; color:#888;">SPY, QQQ, and IWM all trading below their 50-day moving averages. RSI ~46 suggests no immediate oversold bounce. Corrective pullback in progress — WOLF favoring shorts and defensive longs (XLU). High selectivity mode active.</div>
-    </div>
-  </div>
-</div>
-
-<!-- Congressional Trading Intelligence -->
-<div style="padding: 0 20px 20px;">
-  <div class="card" style="border-color: #c084fc; box-shadow: 0 0 20px rgba(192,132,252,0.06);">
-    <div class="card-header" style="color: #c084fc;">Congressional Trading Intelligence <span class="badge badge-purple">NEW — ACTIVE</span></div>
-    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:16px;">
-
-      <!-- Sources -->
-      <div>
-        <div style="font-size:10px; color:#555; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px;">Data Sources</div>
-        <div class="congress-source">
-          <div class="congress-dot"></div>
-          <div class="congress-name">Unusual Whales MCP</div>
-          <div class="congress-status">LIVE</div>
-        </div>
-        <div class="congress-source">
-          <div class="congress-dot"></div>
-          <div class="congress-name">Quiver Quantitative API</div>
-          <div class="congress-status">ACTIVE</div>
-        </div>
-        <div class="congress-source" style="border-bottom:none;">
-          <div class="congress-dot"></div>
-          <div class="congress-name">House/Senate Stock Watcher</div>
-          <div class="congress-status">ACTIVE</div>
-        </div>
-      </div>
-
-      <!-- Capabilities -->
-      <div>
-        <div style="font-size:10px; color:#555; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px;">Capabilities</div>
-        <div style="font-size:12px; color:#888; line-height:1.9;">
-          <span style="color:#c084fc;">&#9654;</span> Track all congressional trades<br>
-          <span style="color:#c084fc;">&#9654;</span> Cross-reference with WOLF signals<br>
-          <span style="color:#c084fc;">&#9654;</span> Cluster buy detection (sector focus)<br>
-          <span style="color:#c084fc;">&#9654;</span> Unusual options activity overlay<br>
-          <span style="color:#c084fc;">&#9654;</span> Committee membership cross-check
-        </div>
-      </div>
-
-      <!-- Integration status -->
-      <div>
-        <div style="font-size:10px; color:#555; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px;">Integration</div>
-        <div style="padding:10px; background:#1a0d2a; border-radius:8px; border:1px solid #3a1a5a;">
-          <div style="color:#c084fc; font-size:13px; font-weight:700; margin-bottom:6px;">&#128202; Status: Active</div>
-          <div style="font-size:11px; color:#888; line-height:1.7;">
-            Integrated into daily 8:30 AM scan<br>
-            Congressional trades flagged on signals<br>
-            Skill: <code style="background:#0a0a14; color:#c084fc; padding:1px 4px; border-radius:3px; font-size:10px;">/wolf-congress-tracker</code>
-          </div>
-        </div>
-        <div style="margin-top:10px; font-size:11px; color:#555; text-align:center;">Auto-runs weekdays 6:33 AM<br>No button required</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Intelligence Feeds -->
-<div class="grid grid-2" style="padding: 0 20px 20px;">
-  <div class="card">
-    <div class="card-header">Consulting Intelligence Feed <span class="badge badge-green">DAILY 7AM</span></div>
-    <div class="sub-text" style="margin-bottom:10px;">Autonomous scan of top global consulting firms for white papers on disrupted markets. Scored on disruption keywords, industries and named tickers.</div>
-    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap:6px; font-size:11px;">
-      <div style="padding:6px 10px; background:#1a1a2e; border-radius:6px;">🟠 PwC — Insights + CEO Survey</div>
-      <div style="padding:6px 10px; background:#1a1a2e; border-radius:6px;">🔵 McKinsey — Featured + Quarterly</div>
-      <div style="padding:6px 10px; background:#1a1a2e; border-radius:6px;">🟢 Deloitte — Insights</div>
-      <div style="padding:6px 10px; background:#1a1a2e; border-radius:6px;">🟣 BCG — Publications</div>
-      <div style="padding:6px 10px; background:#1a1a2e; border-radius:6px;">🔴 Bain — Insights</div>
-      <div style="padding:6px 10px; background:#1a1a2e; border-radius:6px;">🟡 EY — Insights</div>
-      <div style="padding:6px 10px; background:#1a1a2e; border-radius:6px;">🔷 KPMG — Our Insights</div>
-      <div style="padding:6px 10px; background:#1a1a2e; border-radius:6px;">🟪 Accenture — Insights Index</div>
-      <div style="padding:6px 10px; background:#1a1a2e; border-radius:6px;">⚫ Oliver Wyman</div>
-      <div style="padding:6px 10px; background:#1a1a2e; border-radius:6px;">⚪ Gartner — Research</div>
-    </div>
-    <div class="sub-text" style="margin-top:10px; text-align:center;">Scheduled task <code style="background:#1a1a2e; color:#ff6b35; padding:2px 4px; border-radius:3px;">wolf-consulting-intel</code> — weekdays 7:00 AM local. Output briefings saved to <code style="background:#1a1a2e; color:#ff6b35; padding:2px 4px; border-radius:3px;">data/briefings/</code>.</div>
-  </div>
-
-  <div class="card">
-    <div class="card-header">AI Hedge Fund Committee <span class="badge badge-green">LIVE — ONLINE</span></div>
-    <div class="sub-text" style="margin-bottom:10px;">virattt/ai-hedge-fund — 50K⭐ multi-agent investment committee, wired into the C-Suite as WOLF's research bench. Running locally on Ollama (llama3.1:8b) through a dedicated Python 3.12 venv bridge. First live committee vote on NVDA completed 2026-04-06.</div>
-    <div style="font-size:11px; display:grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap:4px;">
-      <div>🎯 Damodaran — Valuation</div>
-      <div>💎 Graham — Deep Value</div>
-      <div>🏰 Buffett / Munger — Quality</div>
-      <div>⚡ Ackman — Activist</div>
-      <div>🚀 Cathie Wood — Growth</div>
-      <div>🩸 Burry — Contrarian Short</div>
-      <div>🔍 Peter Lynch — GARP</div>
-      <div>📈 Druckenmiller — Macro</div>
-      <div>📊 Technicals Agent</div>
-      <div>📰 Sentiment Agent</div>
-      <div>⚖ Risk Manager</div>
-      <div>🎯 Portfolio Manager</div>
-    </div>
-    <div class="sub-text" style="margin-top:10px;">Stack: Ollama <code style="background:#1a1a2e; color:#ff6b35; padding:1px 3px; border-radius:2px;">llama3.1:8b</code> (free, local) with OpenAI fallback reserved for trades &gt;$5K notional. WOLF convenes the committee per-ticker via <code style="background:#1a1a2e; color:#ff6b35; padding:1px 3px; border-radius:2px;">run_committee.command</code>, the bridge subprocess (<code style="background:#1a1a2e; color:#ff6b35; padding:1px 3px; border-radius:2px;">~/.wolf-venv</code>) runs the full LangGraph pipeline, Portfolio Manager aggregates votes, and WOLF's hard risk rules (paper-only, ≤2%/trade, ≤10% portfolio heat) overrule. Committee outputs written to <code style="background:#1a1a2e; color:#ff6b35; padding:1px 3px; border-radius:2px;">data/committee/*.json</code> + daily briefing.</div>
-    <div class="sub-text" style="margin-top:8px; color:#4ade80;">✓ First vote (NVDA, 2026-04-06): committee split 6 bullish / 6 bearish — Buffett/Lynch/Ackman/Fisher/Munger/Wood conflicted with Damodaran/Graham/Burry/Druckenmiller/Sentiment/Technicals. Advisory only while 30-day grading period runs.</div>
-  </div>
-</div>
-
-<!-- Research + Growth Path -->
-<div class="grid grid-2" style="padding: 0 20px 20px;">
-  <div class="card">
-    <div class="card-header">Strategy Research Library <span class="badge badge-green">18 SOURCED</span></div>
-    <div class="repo-item">
-      <a class="repo-name" href="https://github.com/freqtrade/freqtrade" target="_blank">freqtrade/freqtrade</a>
-      <span class="repo-stars"> 48K</span>
-      <span class="repo-priority badge-green" style="font-size:10px; padding:1px 6px; border-radius:4px;">HIGH</span>
-      <div class="repo-desc">Crypto trading bot with backtesting, ML, Telegram</div>
-    </div>
-    <div class="repo-item">
-      <a class="repo-name" href="https://github.com/mementum/backtrader" target="_blank">mementum/backtrader</a>
-      <span class="repo-stars"> 21K</span>
-      <span class="repo-priority badge-green" style="font-size:10px; padding:1px 6px; border-radius:4px;">HIGH</span>
-      <div class="repo-desc">Python backtesting library for trading strategies</div>
-    </div>
-    <div class="repo-item">
-      <a class="repo-name" href="https://github.com/quantopian/zipline" target="_blank">quantopian/zipline</a>
-      <span class="repo-stars"> 20K</span>
-      <span class="repo-priority badge-yellow" style="font-size:10px; padding:1px 6px; border-radius:4px;">MED</span>
-      <div class="repo-desc">Pythonic Algorithmic Trading Library</div>
-    </div>
-    <div class="repo-item">
-      <a class="repo-name" href="https://github.com/QuantConnect/Lean" target="_blank">QuantConnect/Lean</a>
-      <span class="repo-stars"> 18K</span>
-      <span class="repo-priority badge-green" style="font-size:10px; padding:1px 6px; border-radius:4px;">HIGH</span>
-      <div class="repo-desc">Algorithmic Trading Engine - multi-asset</div>
-    </div>
-    <div class="repo-item">
-      <a class="repo-name" href="https://github.com/AI4Finance-Foundation/FinRL" target="_blank">AI4Finance-Foundation/FinRL</a>
-      <span class="repo-stars"> 12K</span>
-      <span class="repo-priority badge-green" style="font-size:10px; padding:1px 6px; border-radius:4px;">HIGH</span>
-      <div class="repo-desc">Deep Reinforcement Learning for trading</div>
-    </div>
-    <div class="repo-item">
-      <a class="repo-name" href="https://github.com/edtechre/pybroker" target="_blank">edtechre/pybroker</a>
-      <span class="repo-stars"> 5K</span>
-      <span class="repo-priority badge-green" style="font-size:10px; padding:1px 6px; border-radius:4px;">HIGH</span>
-      <div class="repo-desc">ML-powered algo trading with NumPy+Numba speed</div>
-    </div>
-    <div class="sub-text" style="margin-top:10px; text-align:center;">+ 12 more repos indexed. Run <code style="background:#1a1a2e; color:#ff6b35; padding:2px 4px; border-radius:3px;">research_agent.py --action full</code> to update.</div>
-  </div>
-
-  <div class="card">
-    <div class="card-header">WOLF Growth Path</div>
-    <div class="phase-item">
-      <div class="phase-dot dot-done"></div>
-      <span class="phase-label" style="color:#4ade80;">Phase 1: Foundation — 9 scripts, 10 strategies, daily scan, launchd 24/7 cron ✓</span>
-    </div>
-    <div class="phase-item">
-      <div class="phase-dot dot-active pulse"></div>
-      <span class="phase-label active">Phase 2: Intelligence — Alpaca connected, congressional tracking, live signals ← ACTIVE</span>
-    </div>
-    <div class="phase-item">
-      <div class="phase-dot dot-pending"></div>
-      <span class="phase-label pending">Phase 3: Advanced — Options (PEAD-on-Options scaffolded 2026-05-06), intermarket analysis, sentiment</span>
-    </div>
-    <div class="phase-item">
-      <div class="phase-dot dot-pending"></div>
-      <span class="phase-label pending">Phase 4: Autonomous — Self-optimizing, regime detection, auto-rotation</span>
-    </div>
-
-    <div style="margin-top:24px;">
-
-    <!-- ═══════════════════ MERGED WOLF SUBSYSTEMS & EVOLUTION ═══════════════════ -->
-
-    <div class="card">
-      <div class="card-header">WOLF Subsystems Status</div>
-      <div style="margin-top: 16px;">
-      <div style="font-size:10px; color:#555; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px;">Subsystems</div>
-      <div class="status-row">
-        <div class="status-dot dot-live pulse"></div>
-        <div class="status-label">Market Scanner</div>
-        <div class="status-val">50+ instruments | Auto 6:33 AM + 9:30/12:30/4:15 ET</div>
-      </div>
-      <div class="status-row">
-        <div class="status-dot dot-ready"></div>
-        <div class="status-label">Strategy Engine</div>
-        <div class="status-val">10 strategies | 6 ACTIVE</div>
-      </div>
-      <div class="status-row">
-        <div class="status-dot dot-ready"></div>
-        <div class="status-label">Portfolio Manager</div>
-        <div class="status-val">Risk tracking + journal</div>
-      </div>
-      <div class="status-row">
-        <div class="status-dot dot-live"></div>
-        <div class="status-label">Alpaca Paper Trading</div>
-        <div class="status-val" style="color:#4ade80;">Auto-routing ON | $100K | $200K BP | <span id="gate-day-inline">Day ?/60</span> gate</div>
-      </div>
-      <div class="status-row">
-        <div class="status-dot dot-ready"></div>
-        <div class="status-label">Research Agent</div>
-        <div class="status-val">18 GitHub repos | 10 curated</div>
-      </div>
-      <div class="status-row">
-        <div class="status-dot dot-ready"></div>
-        <div class="status-label">Data Pipeline</div>
-        <div class="status-val">Multi-source w/ fallback</div>
-      </div>
-      <div class="status-row">
-        <div class="status-dot dot-ready"></div>
-        <div class="status-label">Backtesting Engine</div>
-        <div class="status-val">Tested across 4 regimes</div>
-      </div>
-      <div class="status-row">
-        <div class="status-dot dot-purple pulse"></div>
-        <div class="status-label" style="color:#c084fc;">Congressional Intel</div>
-        <div class="status-val" style="color:#c084fc;">Unusual Whales + Quiver + HSSW</div>
-      </div>
-      <div class="status-row">
-        <div class="status-dot dot-ready"></div>
-        <div class="status-label" style="color:#4ade80;">Consulting Intel</div>
-        <div class="status-val" style="color:#4ade80;">10 firms · daily 7 AM · disruption hunt</div>
-      </div>
-      <div class="status-row" style="border:none;">
-        <div class="status-dot dot-ready"></div>
-        <div class="status-label" style="color:#ff6b35;">AI Hedge Fund Committee</div>
-        <div class="status-val" style="color:#ff6b35;">12 analysts · llama3.1:8b · auto-routes to paper</div>
-      </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-header">Next Steps — Priority Queue <span class="badge badge-orange">IN PROGRESS</span></div>
-
-      <div class="step-card done">
-      <div class="step-num num-done">&#10003;</div>
-      <div class="step-content">
-        <div class="step-title done-text">Connect Alpaca Paper Trading</div>
-        <div class="step-desc" style="color:#2a5a2a;">Connected. $100K cash, $200K buying power, shorting enabled. Paper trading active.</div>
-        <div class="step-impact" style="color:#4ade80;">UNLOCKED: Live market scanning, real paper trades, position tracking, daily P&L</div>
-      </div>
-      </div>
-
-      <div class="step-card active">
-      <div class="step-num num-active">2</div>
-      <div class="step-content">
-        <div class="step-title">Execute First Signals — TSLA / NFLX / XLU</div>
-        <div class="step-desc">3 signals identified from today's 8:30 AM scan. TSLA SHORT (Breakdown), NFLX LONG (Momentum), XLU LONG (MACD). All at 2:1 R:R. Ready to execute on Alpaca paper account.</div>
-        <div class="step-impact">UNLOCKS: Real performance tracking, strategy validation with live data, P&L history</div>
-      </div>
-      </div>
-
-      <div class="step-card">
-      <div class="step-num num-pending">3</div>
-      <div class="step-content">
-        <div class="step-title">Optimize Strategies to A-Grade</div>
-        <div class="step-desc">Run Enhanced Mean Reversion + Volatility Breakout on live data. Tune parameters. Target: Sharpe >2.0, consistent across regimes.</div>
-        <div class="step-impact">UNLOCKS: Reliable edge, automated strategy rotation</div>
-      </div>
-      </div>
-
-      <div class="step-card">
-      <div class="step-num num-pending">4</div>
-      <div class="step-content">
-        <div class="step-title">Install ML Signal Layer (FinRL / PyBroker)</div>
-        <div class="step-desc">Integrate machine learning models from FinRL and PyBroker. Train on historical data. Use ML signals as confirmation filter on top of technical strategies.</div>
-        <div class="step-impact">UNLOCKS: Phase 3 capabilities, AI-enhanced signals, higher win rate</div>
-      </div>
-      </div>
-
-      <div class="step-card">
-      <div class="step-num num-pending">5</div>
-      <div class="step-content">
-        <div class="step-title">Deploy Companion Agents (Sentinel, Hawk)</div>
-        <div class="step-desc">Build Sentinel (real-time risk monitor + circuit breaker) and Hawk (news/events intelligence feed). Both feed signals to WOLF.</div>
-        <div class="step-impact">UNLOCKS: Multi-agent construct, 24/7 monitoring, event-driven trading</div>
-      </div>
-      </div>
-  </div>
-    </div>
-
-    <div class="card">
-      <div class="card-header">WOLF Evolution Timeline</div>
-    <div class="timeline">
-      <div class="tl-item">
-        <div class="tl-dot tl-done"></div>
-        <div class="tl-label" style="color:#4ade80;">Phase 1: Foundation ✓</div>
-        <div class="tl-detail">Skill built | 8 scripts | 5 market modules | Scanner + backtester operational</div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot tl-done"></div>
-        <div class="tl-label" style="color:#4ade80;">Strategy Research ✓</div>
-        <div class="tl-detail">18 GitHub repos indexed | 10 strategies built | 6 ACTIVE post-2026-05-06 backtest</div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot tl-done"></div>
-        <div class="tl-label" style="color:#4ade80;">Alpaca Connected ✓</div>
-        <div class="tl-detail">Paper trading live | $100K cash | $200K buying power | Shorting enabled</div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot tl-done"></div>
-        <div class="tl-label" style="color:#4ade80;">Congressional Intel ✓</div>
-        <div class="tl-detail">Unusual Whales MCP + Quiver + HSSW | Integrated into daily scan</div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot tl-now pulse"></div>
-        <div class="tl-label" style="color:#ff6b35;">Phase 2: Intelligence ← YOU ARE HERE</div>
-        <div class="tl-detail">3 signals live | Execute first trades | Strategy optimization | Performance tracking</div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot tl-future"></div>
-        <div class="tl-label">Phase 3: Advanced</div>
-        <div class="tl-detail">Options execution | ML signals (FinRL) | Intermarket analysis | Sentiment layer</div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-dot tl-future"></div>
-        <div class="tl-label">Phase 4: Autonomous</div>
-        <div class="tl-detail">Self-optimizing | Auto regime detection | Strategy rotation | Multi-agent swarm</div>
-      </div>
-    </div>
-
-    </div>
-
-    <!-- ═══════════════════ END MERGED SECTIONS ═══════════════════ -->
-
-    <div style="margin-top:24px;">
-      <div class="card-header" style="color:#4ade80;">Alpaca Status <span class="badge badge-green">CONNECTED</span></div>
-      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap:10px; margin-top:8px;">
-        <div style="padding:10px; background:#1a1a2e; border-radius:8px; border:1px solid #2a4a2a;">
-          <div style="color:#4ade80; font-size:14px; font-weight:900;">$100,000</div>
-          <div style="color:#555; font-size:10px; text-transform:uppercase; letter-spacing:1px; margin-top:2px;">Cash Balance</div>
-        </div>
-        <div style="padding:10px; background:#1a1a2e; border-radius:8px; border:1px solid #2a4a2a;">
-          <div style="color:#ff6b35; font-size:14px; font-weight:900;">$200,000</div>
-          <div style="color:#555; font-size:10px; text-transform:uppercase; letter-spacing:1px; margin-top:2px;">Buying Power</div>
-        </div>
-        <div style="padding:10px; background:#1a1a2e; border-radius:8px; border:1px solid #2a4a2a;">
-          <div style="color:#c084fc; font-size:14px; font-weight:900;">ENABLED</div>
-          <div style="color:#555; font-size:10px; text-transform:uppercase; letter-spacing:1px; margin-top:2px;">Short Selling</div>
-        </div>
-        <div style="padding:10px; background:#1a1a2e; border-radius:8px; border:1px solid #2a4a2a;">
-          <div style="color:#60a5fa; font-size:14px; font-weight:900;">PAPER</div>
-          <div style="color:#555; font-size:10px; text-transform:uppercase; letter-spacing:1px; margin-top:2px;">Account Mode</div>
-        </div>
-      </div>
-      <div style="margin-top:10px; padding:8px 12px; background:#1a2a1a; border-radius:8px; border:1px solid #2a5a2a; font-size:11px; color:#4ade80; text-align:center;">
-        &#10003; Paper trading active — next step: execute first signals
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Validated Strategies (post-backtest 2026-04-07 + 2026-05-06 expansion) -->
-<div style="padding: 0 20px 20px;">
-  <div class="card full-width">
-    <div class="card-header">
-      Validated Strategies — Real Backtest (Apr 7 + May 6 expansion)
-      <span class="badge badge-green">6 APPROVED</span>
-      <span class="badge badge-yellow" style="margin-left:6px;">1 MARGINAL</span>
-      <span class="badge badge-red" style="margin-left:6px;">2 DISABLED</span>
-      <span class="badge" style="background:#444; color:#aaa; margin-left:6px;">2 RETIRED</span>
-    </div>
-    <div style="font-size:11px; color:#888; margin-bottom:14px;">
-      Backtest period: 2024-04-07 → 2026-04-07 &bull; Data: Real Alpaca IEX &bull; Criteria: Sharpe &gt; 1.0 AND Max DD &lt; 25% &bull;
-      <a href="../Agent Wolf/backtest/results/real_backtest_2026-04-07.md" style="color:#4ade80; text-decoration:none;">Phase 2 Report</a>
-      &bull; <a href="../Agent Wolf/backtest/results/new_strategies_2026-04-07.md" style="color:#4ade80; text-decoration:none;">New Strategies (Apr 7)</a>
-      &bull; <a href="../Agent Wolf/backtest/results/april30_strategies_2026-05-06.md" style="color:#4ade80; text-decoration:none;">April-30 Strategies (May 6)</a>
-      &bull; Last expansion: <strong style="color:#4ade80;">May 6, 2026</strong>
-    </div>
-
-    <!-- APPROVED: 6 green cards -->
-    <div style="font-size:10px; color:#4ade80; text-transform:uppercase; letter-spacing:2px; margin-bottom:10px; font-weight:700;">&#9989; Approved — Trade Enabled</div>
-    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:12px; margin-bottom:20px;">
-
-      <div style="background:#0d1f0d; border:1px solid #2a5a2a; border-radius:10px; padding:16px; box-shadow:0 0 12px rgba(74,222,128,0.06);">
-        <div style="color:#4ade80; font-size:14px; font-weight:900; margin-bottom:6px;">Small Cap Catalyst</div>
-        <div style="display:flex; gap:16px; margin-bottom:8px;">
-          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Sharpe</div><div style="color:#4ade80; font-size:18px; font-weight:900;">1.50</div></div>
-          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Max DD</div><div style="color:#4ade80; font-size:18px; font-weight:900;">-3.3%</div></div>
-          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Ann. Return</div><div style="color:#4ade80; font-size:18px; font-weight:900;">+17.0%</div></div>
-        </div>
-        <div style="font-size:11px; color:#666;">Phase 2 survivor. Profit factor 3.59x. Minimal drawdown.</div>
-      </div>
-
-      <div style="background:#0d1f0d; border:1px solid #2a5a2a; border-radius:10px; padding:16px; box-shadow:0 0 12px rgba(74,222,128,0.06);">
-        <div style="color:#4ade80; font-size:14px; font-weight:900; margin-bottom:6px;">PEAD <span style="font-size:10px; color:#facc15; font-weight:600;">NEW</span></div>
-        <div style="display:flex; gap:16px; margin-bottom:8px;">
-          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Sharpe</div><div style="color:#4ade80; font-size:18px; font-weight:900;">1.76</div></div>
-          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Max DD</div><div style="color:#4ade80; font-size:18px; font-weight:900;">-12.5%</div></div>
-          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Ann. Return</div><div style="color:#4ade80; font-size:18px; font-weight:900;">+80.9%</div></div>
-        </div>
-        <div style="font-size:11px; color:#666;">Bernard &amp; Thomas (1989). Gap-up earnings proxy. Profit factor 2.15x. Approved 2026-04-07.</div>
-      </div>
-
-      <div style="background:#0d1f0d; border:1px solid #2a5a2a; border-radius:10px; padding:16px; box-shadow:0 0 12px rgba(74,222,128,0.06);">
-        <div style="color:#4ade80; font-size:14px; font-weight:900; margin-bottom:6px;">52-Week High Breakout <span style="font-size:10px; color:#facc15; font-weight:600;">NEW</span></div>
-        <div style="display:flex; gap:16px; margin-bottom:8px;">
-          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Sharpe</div><div style="color:#4ade80; font-size:18px; font-weight:900;">1.91</div></div>
-          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Max DD</div><div style="color:#4ade80; font-size:18px; font-weight:900;">-6.8%</div></div>
-          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Ann. Return</div><div style="color:#4ade80; font-size:18px; font-weight:900;">+39.0%</div></div>
-        </div>
-        <div style="font-size:11px; color:#666;">George &amp; Hwang (2004). Best Sharpe in portfolio. Win rate 60.3%. Approved 2026-04-07.</div>
-      </div>
-
-      <div style="background:#0d1f0d; border:1px solid #2a5a2a; border-radius:10px; padding:16px; box-shadow:0 0 12px rgba(74,222,128,0.06);">
-        <div style="color:#4ade80; font-size:14px; font-weight:900; margin-bottom:6px;">Insider Cluster (Form 4) <span style="font-size:10px; color:#facc15; font-weight:600;">NEW 2026-05-06</span></div>
-        <div style="display:flex; gap:16px; margin-bottom:8px;">
-          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Sharpe</div><div style="color:#4ade80; font-size:18px; font-weight:900;">1.86</div></div>
-          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Max DD</div><div style="color:#4ade80; font-size:18px; font-weight:900;">-21.6%</div></div>
-          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Trades / 2yr</div><div style="color:#4ade80; font-size:18px; font-weight:900;">2,663</div></div>
-        </div>
-        <div style="font-size:11px; color:#666;">Cohen, Malloy, Pomorski (2012). Highest signal volume — 5+/day expected. Total return +232.8%.</div>
-      </div>
-
-      <div style="background:#0d1f0d; border:1px solid #2a5a2a; border-radius:10px; padding:16px; box-shadow:0 0 12px rgba(74,222,128,0.06);">
-        <div style="color:#4ade80; font-size:14px; font-weight:900; margin-bottom:6px;">Sector ETF Rotation <span style="font-size:10px; color:#facc15; font-weight:600;">NEW 2026-05-06</span></div>
-        <div style="display:flex; gap:16px; margin-bottom:8px;">
-          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Sharpe</div><div style="color:#4ade80; font-size:18px; font-weight:900;">1.69</div></div>
-          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Max DD</div><div style="color:#4ade80; font-size:18px; font-weight:900;">-7.1%</div></div>
-          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Ann. Return</div><div style="color:#4ade80; font-size:18px; font-weight:900;">+36.6%</div></div>
-        </div>
-        <div style="font-size:11px; color:#666;">Faber 10-month MA momentum (adapted to 20d). Top-3 of 11 SPDR sectors, weekly Friday rebalance.</div>
-      </div>
-
-      <div style="background:#0d1f0d; border:1px solid #2a5a2a; border-radius:10px; padding:16px; box-shadow:0 0 12px rgba(74,222,128,0.06);">
-        <div style="color:#4ade80; font-size:14px; font-weight:900; margin-bottom:6px;">Congress Follower <span style="font-size:10px; color:#facc15; font-weight:600;">UNBLOCKED 2026-05-06</span></div>
-        <div style="display:flex; gap:16px; margin-bottom:8px;">
-          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Status</div><div style="color:#4ade80; font-size:14px; font-weight:900;">ACTIVE_PARTIAL</div></div>
-          <div><div style="color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px;">Data Source</div><div style="color:#4ade80; font-size:14px; font-weight:900;">House PTR + SEC</div></div>
-        </div>
-        <div style="font-size:11px; color:#666;">Ziobrowski et al. (2004, 2011). PTR-PDF parser ships free; replaces $50/mo Quiver. 5 qualifying ≥$50K equity buys in last 30d.</div>
-      </div>
-
-    </div>
-
-    <!-- MARGINAL: 1 yellow card -->
-    <div style="font-size:10px; color:#facc15; text-transform:uppercase; letter-spacing:2px; margin-bottom:10px; font-weight:700;">&#9888; Marginal — Below Threshold, Awaiting Redesign</div>
-    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:10px; margin-bottom:20px;">
-
-      <div style="background:#1f1a0d; border:1px solid #5a4a2a; border-radius:10px; padding:14px; opacity:0.9;">
-        <div style="color:#facc15; font-size:13px; font-weight:700; margin-bottom:4px;">Cross-Sectional Momentum</div>
-        <div style="display:flex; gap:12px; margin-bottom:6px;">
-          <div><div style="color:#555; font-size:10px;">Sharpe</div><div style="color:#facc15; font-size:14px; font-weight:700;">1.00</div></div>
-          <div><div style="color:#555; font-size:10px;">Max DD</div><div style="color:#ccc; font-size:14px; font-weight:700;">-13.8%</div></div>
-        </div>
-        <div style="font-size:10px; color:#facc15; background:#2a200d; padding:4px 8px; border-radius:4px;">Sharpe exactly 1.00 — just at the threshold. Jegadeesh-Titman momentum. Re-test after universe expansion.</div>
-      </div>
-
-    </div>
-
-    <!-- DISABLED: 2 red cards (real failures) -->
-    <div style="font-size:10px; color:#f87171; text-transform:uppercase; letter-spacing:2px; margin-bottom:10px; font-weight:700;">&#10060; Disabled — Real Backtest Failures (do not deploy)</div>
-    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:10px; margin-bottom:20px;">
-
-      <div style="background:#1a0d0d; border:1px solid #4a1a1a; border-radius:10px; padding:14px; opacity:0.85;">
-        <div style="color:#f87171; font-size:13px; font-weight:700; margin-bottom:4px;">Mean Reversion (BB+RSI) <span style="font-size:9px; color:#facc15;">NEW 2026-05-06</span></div>
-        <div style="display:flex; gap:12px; margin-bottom:6px;">
-          <div><div style="color:#555; font-size:10px;">Sharpe</div><div style="color:#ff4444; font-size:14px; font-weight:700;">-1.63</div></div>
-          <div><div style="color:#555; font-size:10px;">Max DD</div><div style="color:#ff4444; font-size:14px; font-weight:700;">-78.9%</div></div>
-        </div>
-        <div style="font-size:10px; color:#ff4444; background:#3a0505; padding:4px 8px; border-radius:4px; font-weight:700;">2,383 trades / 2yr blew up to -78.9%. Strategy fights trend. Possible regime-filter fix (only trade VIX&lt;20).</div>
-      </div>
-
-      <div style="background:#1a0d0d; border:1px solid #4a1a1a; border-radius:10px; padding:14px; opacity:0.85;">
-        <div style="color:#f87171; font-size:13px; font-weight:700; margin-bottom:4px;">Overnight Gap Reversal <span style="font-size:9px; color:#facc15;">NEW 2026-05-06</span></div>
-        <div style="display:flex; gap:12px; margin-bottom:6px;">
-          <div><div style="color:#555; font-size:10px;">Sharpe</div><div style="color:#ff4444; font-size:14px; font-weight:700;">-4.85</div></div>
-          <div><div style="color:#555; font-size:10px;">Max DD</div><div style="color:#ff4444; font-size:14px; font-weight:700;">-100%</div></div>
-        </div>
-        <div style="font-size:10px; color:#ff4444; background:#3a0505; padding:4px 8px; border-radius:4px; font-weight:700;">Total wipeout. Edge thesis appears wrong on liquid mid-large caps. DO NOT REVIVE.</div>
-      </div>
-
-    </div>
-
-    <!-- RETIRED: 2 grey cards (no .py implementation) -->
-    <div style="font-size:10px; color:#888; text-transform:uppercase; letter-spacing:2px; margin-bottom:10px; font-weight:700;">&#128465;&#65039; Retired — No Implementation</div>
-    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:10px;">
-
-      <div style="background:#1a1a1a; border:1px solid #333; border-radius:10px; padding:14px; opacity:0.6;">
-        <div style="color:#888; font-size:13px; font-weight:700; margin-bottom:4px;">Volatility Play</div>
-        <div style="font-size:10px; color:#666;">Retired 2026-05-06. Sharpe 0.65 in real backtest, no .py implementation in strategies/.</div>
-      </div>
-
-      <div style="background:#1a1a1a; border:1px solid #333; border-radius:10px; padding:14px; opacity:0.6;">
-        <div style="color:#888; font-size:13px; font-weight:700; margin-bottom:4px;">Macro Hedge</div>
-        <div style="font-size:10px; color:#666;">Retired 2026-05-06. Sharpe 0.43 in real backtest, no .py implementation in strategies/.</div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<!-- Market Coverage -->
-<div style="padding: 0 20px 20px;">
-  <div class="card full-width">
-    <div class="card-header">Market Coverage</div>
-    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; margin-top: 8px;">
-      <div style="text-align:center; padding:16px; background:#1a1a2e; border-radius:8px; border:1px solid #2a2a3e;">
-        <div style="font-size:24px; margin-bottom:8px;">&#128200;</div>
-        <div style="color:#fff; font-weight:700; font-size:14px;">US Equities</div>
-        <div style="color:#888; font-size:11px; margin-top:4px;">Long & Short</div>
-        <div style="color:#4ade80; font-size:11px; margin-top:4px;">40+ stocks + ETFs</div>
-      </div>
-      <div style="text-align:center; padding:16px; background:#1a1a2e; border-radius:8px; border:1px solid #2a2a3e;">
-        <div style="font-size:24px; margin-bottom:8px;">&#128202;</div>
-        <div style="color:#fff; font-weight:700; font-size:14px;">Options</div>
-        <div style="color:#888; font-size:11px; margin-top:4px;">Calls, Puts, Spreads</div>
-        <div style="color:#facc15; font-size:11px; margin-top:4px;">Analysis + Signals</div>
-      </div>
-      <div style="text-align:center; padding:16px; background:#1a1a2e; border-radius:8px; border:1px solid #2a2a3e;">
-        <div style="font-size:24px; margin-bottom:8px;">&#127760;</div>
-        <div style="color:#fff; font-weight:700; font-size:14px;">Futures</div>
-        <div style="color:#888; font-size:11px; margin-top:4px;">Via ETF Proxies</div>
-        <div style="color:#facc15; font-size:11px; margin-top:4px;">15 futures mapped</div>
-      </div>
-      <div style="text-align:center; padding:16px; background:#1a1a2e; border-radius:8px; border:1px solid #2a2a3e;">
-        <div style="font-size:24px; margin-bottom:8px;">&#9939;</div>
-        <div style="color:#fff; font-weight:700; font-size:14px;">Crypto</div>
-        <div style="color:#888; font-size:11px; margin-top:4px;">BTC, ETH, SOL+</div>
-        <div style="color:#4ade80; font-size:11px; margin-top:4px;">24/7 via Alpaca</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Risk Rules -->
-<div style="padding: 0 20px 20px;">
-  <div class="card">
-    <div class="card-header">Risk Management Rules (Non-Negotiable)</div>
-    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; margin-top: 8px;">
-      <div style="text-align:center; padding:12px; background:#1a1a2e; border-radius:8px;">
-        <div style="color:#ff6b35; font-size:20px; font-weight:900;">2%</div>
-        <div style="color:#666; font-size:10px; margin-top:4px;">MAX RISK PER TRADE</div>
-      </div>
-      <div style="text-align:center; padding:12px; background:#1a1a2e; border-radius:8px;">
-        <div style="color:#ff6b35; font-size:20px; font-weight:900;">10%</div>
-        <div style="color:#666; font-size:10px; margin-top:4px;">MAX PORTFOLIO HEAT</div>
-      </div>
-      <div style="text-align:center; padding:12px; background:#1a1a2e; border-radius:8px;">
-        <div style="color:#ff6b35; font-size:20px; font-weight:900;">20%</div>
-        <div style="color:#666; font-size:10px; margin-top:4px;">MAX SECTOR EXPOSURE</div>
-      </div>
-      <div style="text-align:center; padding:12px; background:#1a1a2e; border-radius:8px;">
-        <div style="color:#ff6b35; font-size:20px; font-weight:900;">3%</div>
-        <div style="color:#666; font-size:10px; margin-top:4px;">DAILY LOSS LIMIT</div>
-      </div>
-      <div style="text-align:center; padding:12px; background:#1a1a2e; border-radius:8px;">
-        <div style="color:#f87171; font-size:20px; font-weight:900;">10%</div>
-        <div style="color:#666; font-size:10px; margin-top:4px;">DRAWDOWN BREAKER</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="footer">WOLF v2.1 | Wealth-Optimized Leverage Framework | Alpaca Paper Connected | AI Hedge Fund 18-Analyst Vote Active | Graduation Gate Tracker Live | Risk Management Protocol Enforced | Project Ascension Phase 2 | Built for Bobby | One mission: earn money</div>
-
-<script>
-// WOLF Live Data Loader
-// Reads wolf_live_data.json every 60 seconds and updates the dashboard
-
-const fmt$ = (n) => '$' + Number(n).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
-const fmtPct = (n) => (n >= 0 ? '+' : '') + (Number(n) * 100).toFixed(2) + '%';
-const clr = (n) => n >= 0 ? '#4ade80' : '#f87171';
-
-function loadLiveData() {
-  const _safe = (fn, tag) => { try { fn(); } catch(e) { console.warn('[WOLF][' + tag + ']', e.message); } };
-  // Smart fetch: local JSON when on local server, raw GitHub when on Pages
-  const isLocal = location.hostname !== 'extracoffee13.github.io';
-  const jsonUrl = isLocal
-    ? 'wolf_live_data.json?t=' + Date.now()
-    : 'https://raw.githubusercontent.com/Extracoffee13/wolf-dashboards-repo/main/wolf_live_data.json?t=' + Date.now();
-  fetch(jsonUrl, { cache: 'no-store' })
-    .then(r => r.json())
-    .then(d => {
-      // LIVE status first — flip green immediately on successful fetch
-      _safe(() => { const ls = document.getElementById('live-status'); if (ls) { ls.textContent = 'LIVE'; ls.style.color = '#4ade80'; } }, 'live-status');
-
-      // === STALE DATA DETECTION ===
-      _safe(() => {
-        const luEl = document.getElementById('last-update');
-        const staleEl = document.getElementById('stale-warning');
-        const staleAge = document.getElementById('stale-age');
-        const ts = d.last_updated;
-        if (ts && luEl) {
-          const updated = new Date(ts);
-          const now = new Date();
-          const ageMs = now - updated;
-          const ageMins = Math.floor(ageMs / 60000);
-          const ageHrs = Math.floor(ageMins / 60);
-          const ageDays = Math.floor(ageHrs / 24);
-          // Display relative time
-          let ageStr;
-          if (ageDays > 0) ageStr = ageDays + 'd ' + (ageHrs % 24) + 'h ago';
-          else if (ageHrs > 0) ageStr = ageHrs + 'h ' + (ageMins % 60) + 'm ago';
-          else ageStr = ageMins + 'm ago';
-          luEl.textContent = new Date(ts).toLocaleString() + ' (' + ageStr + ')';
-          // Show stale warning if data >10min old
-          if (staleEl) {
-            if (ageMins > 10) {
-              staleEl.style.display = 'block';
-              if (staleAge) staleAge.textContent = ageStr;
-              luEl.style.color = '#f87171';
-            } else {
-              staleEl.style.display = 'none';
-              luEl.style.color = '#4ade80';
-            }
-          }
-        }
-      }, 'stale-detect');
-
-    // === HEADER DATE (dynamic from JSON) ===
-    _safe(() => {
-      const hd = document.getElementById('header-date');
-      const hv = document.getElementById('header-version');
-      if (hd && d.last_updated) {
-        const dt = new Date(d.last_updated);
-        const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-        hd.textContent = months[dt.getMonth()] + ' ' + dt.getDate() + ' ' + dt.getFullYear();
-      }
-      if (hv) hv.textContent = 'v2.1';
-    }, 'header-date');
-
-      // Wolf Capabilities FIRST so the card never stays on fallback values
-      _safe(() => {
-        const CAP_FALLBACK_EARLY = { capability_score: '...', score_max: 100, day_on_mission: '...', recent_lessons: [] };
-        const el2 = (id) => document.getElementById(id);
-        const cap = (d.wolf_capabilities && d.wolf_capabilities.capability_score) ? d.wolf_capabilities : CAP_FALLBACK_EARLY;
-        if (el2('cap-score')) el2('cap-score').innerHTML = cap.capability_score + '<span style="font-size:18px; color:#6ab;">/' + (cap.score_max||100) + '</span>';
-        if (el2('cap-bar'))   el2('cap-bar').style.width = cap.capability_score + '%';
-        if (el2('cap-day'))   el2('cap-day').textContent = cap.day_on_mission || '—';
-        if (cap.recent_lessons && cap.recent_lessons.length && el2('cap-lessons')) {
-          el2('cap-lessons').innerHTML = cap.recent_lessons.map(l => '<div style="font-size:12px; color:#cde; margin-top:4px;">• <b>' + l.date + '</b> — ' + l.lesson + '</div>').join('');
-        }
-      }, 'capabilities');
-
-      // === GRADUATION GATE TRACKER ===
-      _safe(() => {
-        const el2 = (id) => document.getElementById(id);
-        const ws = d.wolf_status || {};
-        const cap = d.wolf_capabilities || {};
-        const ms = cap.mission_start || '2026-04-08';
-        const now = new Date(); now.setHours(0,0,0,0);
-        const dayOn = Math.max(1, Math.floor((now - new Date(ms + 'T00:00:00')) / 86400000) + 1);
-        const totalTrades = ws.total_trades_all_time || 0;
-        const winRate = (ws.win_rate_all_time || 0) * 100;
-        const bestSharpe = (d.backtest && d.backtest.best_sharpe) || 0;
-        const bestPF = (d.strategy_performance && d.strategy_performance.small_cap_catalyst) ? d.strategy_performance.small_cap_catalyst.profit_factor || 0 : 0;
-        // Max DD from best strategy backtest
-        const maxDD = (d.strategy_performance && d.strategy_performance.small_cap_catalyst) ? Math.abs(d.strategy_performance.small_cap_catalyst.max_dd_backtest || 0) * 100 : 0;
-
-        // Helper: set bar + value + color
-        const setGate = (id, current, target, unit, inverse) => {
-          const pct = inverse ? Math.max(0, Math.min(100, (1 - current/target) * 100)) : Math.min(100, (current/target) * 100);
-          const pass = inverse ? (current <= target) : (current >= target);
-          const color = pass ? '#4ade80' : (pct >= 50 ? '#fbbf24' : '#f87171');
-          if (el2(id + '-bar')) el2(id + '-bar').style.width = pct + '%';
-          if (el2(id + '-val')) { el2(id + '-val').style.color = color; }
-          return pass;
-        };
-
-        // Days
-        if (el2('gate-countdown')) el2('gate-countdown').textContent = 'Day ' + dayOn + '/60';
-        if (el2('gate-days-val')) el2('gate-days-val').textContent = dayOn + '/60';
-        if (el2('gate-day-inline')) el2('gate-day-inline').textContent = 'Day ' + dayOn + '/60';
-        setGate('gate-days', dayOn, 60, '');
-
-        // Trades
-        if (el2('gate-trades-val')) el2('gate-trades-val').textContent = totalTrades + '/40';
-        setGate('gate-trades', totalTrades, 40, '');
-
-        // Win Rate
-        if (el2('gate-wr-val')) el2('gate-wr-val').textContent = winRate.toFixed(1) + '% / 45%';
-        setGate('gate-wr', winRate, 45, '%');
-
-        // Sharpe
-        if (el2('gate-sharpe-val')) el2('gate-sharpe-val').textContent = bestSharpe.toFixed(2) + ' / 1.5';
-        setGate('gate-sharpe', bestSharpe, 1.5, '');
-
-        // Profit Factor
-        if (el2('gate-pf-val')) el2('gate-pf-val').textContent = bestPF.toFixed(2) + ' / 1.5';
-        setGate('gate-pf', bestPF, 1.5, '');
-
-        // Max DD (inverse — lower is better)
-        if (el2('gate-dd-val')) el2('gate-dd-val').textContent = maxDD.toFixed(1) + '% / ≤15%';
-        setGate('gate-dd', maxDD, 15, '%', true);
-
-        // Verdict
-        const gates = [dayOn >= 60, totalTrades >= 40, winRate >= 45, bestSharpe >= 1.5, bestPF >= 1.5, maxDD <= 15];
-        const passed = gates.filter(Boolean).length;
-        const verdict = el2('gate-verdict');
-        if (verdict) {
-          if (passed === 6) { verdict.textContent = '✅ ALL GATES PASSED — READY FOR REAL MONEY'; verdict.style.color = '#4ade80'; }
-          else if (passed >= 4) { verdict.textContent = passed + '/6 gates passed — almost there'; verdict.style.color = '#fbbf24'; }
-          else { verdict.textContent = passed + '/6 gates passed — keep grinding'; verdict.style.color = '#f87171'; }
-        }
-
-        // Pace calculator
-        const daysLeft = Math.max(1, 30 - dayOn);
-        const tradesNeeded = Math.max(0, 40 - totalTrades);
-        const pace = el2('gate-pace');
-        if (pace) {
-          if (tradesNeeded === 0) { pace.textContent = '✅ Trade count met'; pace.style.color = '#4ade80'; }
-          else { pace.textContent = 'Need ~' + (tradesNeeded / daysLeft).toFixed(1) + ' trades/day (' + tradesNeeded + ' in ' + daysLeft + ' days)'; }
-        }
-      }, 'graduation-gate');
-
-      // === MARKET REGIME AUTO-DETECT ===
-      _safe(() => {
-        const el2 = (id) => document.getElementById(id);
-        const regime = d.market_regime || {};
-        const badge = el2('regime-badge');
-
-        // If pipeline provides real values, use them
-        if (regime.current && regime.current !== 'UNKNOWN') {
-          if (badge) {
-            badge.textContent = regime.current;
-            const rc = { 'BULL': '#4ade80', 'BEAR': '#f87171', 'SIDEWAYS': '#fbbf24', 'HIGH_VOL': '#f87171' };
-            badge.style.color = rc[regime.current] || '#888';
-            badge.style.borderColor = rc[regime.current] || '#1a2a3a';
-            badge.style.border = '1px solid ' + (rc[regime.current] || '#1a2a3a');
-          }
-          if (el2('regime-vix')) el2('regime-vix').textContent = regime.vix || '—';
-          if (el2('regime-spy')) el2('regime-spy').textContent = regime.spy_trend || '—';
-          if (el2('regime-time')) el2('regime-time').textContent = regime.last_assessed ? new Date(regime.last_assessed).toLocaleString() : '—';
-        } else {
-          // Auto-estimate from portfolio P&L
-          const weekPct = (d.weekly_pnl && d.weekly_pnl.pct) || 0;
-          let est = 'SIDEWAYS';
-          if (weekPct > 0.03) est = 'BULL';
-          else if (weekPct < -0.03) est = 'BEAR';
-          if (badge) {
-            badge.textContent = est + ' (est.)';
-            const rc2 = { 'BULL': '#4ade80', 'BEAR': '#f87171', 'SIDEWAYS': '#fbbf24' };
-            badge.style.color = rc2[est];
-            badge.style.border = '1px solid ' + rc2[est];
-          }
-          if (el2('regime-vix')) el2('regime-vix').textContent = '— (add to pipeline)';
-          if (el2('regime-spy')) el2('regime-spy').textContent = weekPct >= 0 ? 'Positive (' + (weekPct*100).toFixed(1) + '% wk)' : 'Negative (' + (weekPct*100).toFixed(1) + '% wk)';
-          if (el2('regime-time')) el2('regime-time').textContent = 'Auto-estimated';
-        }
-      }, 'market-regime');
-
-      _safe(() => {
-      // Last updated
-      const ts = new Date(d.last_updated);
-      document.getElementById('last-update').textContent = ts.toLocaleTimeString();
-
-      // Account
-      if (d.account) {
-        const pv = d.account.portfolio_value || 100000;
-        document.getElementById('portfolio-value').textContent = fmt$(pv);
-        document.getElementById('portfolio-value').style.color = '#4ade80';
-        document.getElementById('portfolio-cash').textContent = 'Cash: ' + fmt$(d.account.cash || 0) + ' — Alpaca Paper Trading';
-        document.getElementById('buying-power').textContent = fmt$(d.account.buying_power || 0);
-        const upl = d.account.unrealized_pl || 0;
-        document.getElementById('unrealized-pl').textContent = fmt$(upl);
-        document.getElementById('unrealized-pl').style.color = clr(upl);
-      }
-
-      // Daily P&L
-      if (d.daily_pnl) {
-        const dp = d.daily_pnl.amount || 0;
-        document.getElementById('daily-pnl').textContent = fmt$(dp);
-        document.getElementById('daily-pnl').style.color = clr(dp);
-        document.getElementById('daily-pnl-pct').textContent = fmtPct(d.daily_pnl.pct || 0) + ' today';
-
-        // Daily CB badge
-        const cbStatus = d.daily_pnl.circuit_breaker_status || 'green';
-        const cbBadge = document.getElementById('daily-cb-badge');
-        if (cbStatus === 'red') { cbBadge.className='badge'; cbBadge.style.cssText='background:#3a1a1a;color:#f87171;border:1px solid #5a2a2a;'; cbBadge.textContent='HALTED'; }
-        else if (cbStatus === 'yellow') { cbBadge.className='badge'; cbBadge.style.cssText='background:#3a3a1a;color:#facc15;border:1px solid #5a5a2a;'; cbBadge.textContent='WARNING'; }
-        else { cbBadge.className='badge'; cbBadge.style.cssText='background:#1a3a1a;color:#4ade80;border:1px solid #2a5a2a;'; cbBadge.textContent='CLEAR'; }
-      }
-
-      // Weekly P&L
-      if (d.weekly_pnl) {
-        const wp = d.weekly_pnl.amount || 0;
-        document.getElementById('weekly-pnl').textContent = fmt$(wp);
-        document.getElementById('weekly-pnl').style.color = clr(wp);
-        document.getElementById('weekly-pnl-pct').textContent = fmtPct(d.weekly_pnl.pct || 0);
-        document.getElementById('weekly-pnl-pct').style.color = clr(wp);
-      }
-
-      // Circuit Breaker
-      if (d.circuit_breaker) {
-        const cb = d.circuit_breaker;
-        const statusBox = document.getElementById('cb-status-box');
-        const cbBadge2 = document.getElementById('cb-badge');
-        if (cb.weekly_triggered) {
-          statusBox.className='cb-badge cb-red'; statusBox.textContent='WEEKLY HALT';
-          cbBadge2.style.cssText='background:#3a1a1a;color:#f87171;border:1px solid #5a2a2a;animation:pulse 1s infinite;'; cbBadge2.textContent='RED';
-        } else if (cb.daily_triggered) {
-          statusBox.className='cb-badge cb-yellow'; statusBox.textContent='DAILY HALT';
-          cbBadge2.style.cssText='background:#3a3a1a;color:#facc15;border:1px solid #5a5a2a;'; cbBadge2.textContent='YELLOW';
-        } else {
-          statusBox.className='cb-badge cb-green'; statusBox.textContent='CLEAR';
-          cbBadge2.style.cssText='background:#1a3a1a;color:#4ade80;border:1px solid #2a5a2a;'; cbBadge2.textContent='GREEN';
-        }
-        document.getElementById('cb-message').textContent = cb.message || 'All systems nominal.';
-      }
-
-      // Positions
-      const posDiv = document.getElementById('positions-table');
-      const positions = d.positions || [];
-      document.getElementById('positions-count').textContent = positions.length + ' OPEN';
-      if (positions.length === 0) {
-        posDiv.innerHTML = '<div class="positions-empty">No open positions</div>';
-      } else {
-        let html = '<table><thead><tr><th>Ticker</th><th>Side</th><th>Qty</th><th>Avg Entry</th><th>Current</th><th>Mkt Value</th><th>Unreal P&L</th><th>P&L %</th></tr></thead><tbody>';
-        positions.forEach(p => {
-          const plColor = p.unrealized_pl >= 0 ? '#4ade80' : '#f87171';
-          html += `<tr>
-            <td style="font-weight:700;color:#fff;">${p.ticker}</td>
-            <td><span style="color:${p.side==='long'?'#4ade80':'#f87171'};font-weight:700;">${p.side.toUpperCase()}</span></td>
-            <td>${p.qty}</td>
-            <td>${fmt$(p.avg_entry)}</td>
-            <td>${fmt$(p.current_price)}</td>
-            <td>${fmt$(p.market_value)}</td>
-            <td style="color:${plColor};font-weight:700;">${fmt$(p.unrealized_pl)}</td>
-            <td style="color:${plColor};">${(p.unrealized_plpc*100).toFixed(2)}%</td>
-          </tr>`;
-        });
-        html += '</tbody></table>';
-        posDiv.innerHTML = html;
-      }
-
-      // Today's trades
-      const tradesDiv = document.getElementById('todays-trades');
-      const trades = d.todays_trades || [];
-      document.getElementById('trades-count').textContent = trades.length + ' TRADES';
-      if (trades.length === 0) {
-        tradesDiv.innerHTML = '<div class="positions-empty">No trades executed today</div>';
-      } else {
-        let html = '<table><thead><tr><th>Ticker</th><th>Side</th><th>Qty</th><th>Filled @</th><th>Status</th><th>Type</th></tr></thead><tbody>';
-        trades.forEach(t => {
-          html += `<tr>
-            <td style="font-weight:700;color:#fff;">${t.ticker}</td>
-            <td style="color:${t.side==='buy'?'#4ade80':'#f87171'};font-weight:700;">${t.side.toUpperCase()}</td>
-            <td>${t.qty}</td>
-            <td>${t.filled_price > 0 ? fmt$(t.filled_price) : '—'}</td>
-            <td style="color:#facc15;">${t.status}</td>
-            <td style="color:#888;">${t.order_class||'market'}</td>
-          </tr>`;
-        });
-        html += '</tbody></table>';
-        tradesDiv.innerHTML = html;
-      }
-
-      // Today's Signals — emitted by wolf-task-runner.sh post_today_update
-      const tsBlock = d.today_signals;
-      const tsCount = document.getElementById('today-signals-count');
-      const tsStamp = document.getElementById('today-signals-stamp');
-      const tsBody  = document.getElementById('today-signals-body');
-      if (tsBlock && tsBody) {
-        const sigs = tsBlock.signals || [];
-        if (tsCount) tsCount.textContent = (tsBlock.count || sigs.length || 0) + ' SIGNALS';
-        if (tsStamp) tsStamp.textContent = (tsBlock.last_task ? tsBlock.last_task + ' · ' : '') + (tsBlock.as_of || '');
-        if (sigs.length === 0) {
-          tsBody.innerHTML = '<div class="positions-empty">Clean scan — no signals on the most recent fire.</div>';
-        } else {
-          let h = '<table><thead><tr><th>#</th><th>Ticker</th><th>Direction</th><th>Strategy</th><th>Conf</th><th>Entry</th><th>Stop</th><th>Target</th><th>R:R</th></tr></thead><tbody>';
-          sigs.forEach((s, i) => {
-            const sym = s.ticker || s.symbol || '?';
-            const dir = (s.direction || '').toUpperCase();
-            const strat = s.strategy || '—';
-            const conf = (s.confidence !== undefined && s.confidence !== null) ? (s.confidence + '/10') : '—';
-            const dirColor = dir === 'LONG' ? '#4ade80' : (dir === 'SHORT' ? '#f87171' : '#888');
-            const fmtN = v => (v === undefined || v === null) ? '—' : (typeof v === 'number' ? '$' + v.toFixed(2) : v);
-            const rr = (s.risk_reward !== undefined && s.risk_reward !== null) ? (Number(s.risk_reward).toFixed(1) + ':1') : '—';
-            h += `<tr>
-              <td style="color:#666;">${i+1}</td>
-              <td style="font-weight:700;color:#fff;">${sym}</td>
-              <td style="color:${dirColor};font-weight:700;">${dir}</td>
-              <td style="color:#aaa;font-size:11px;">${strat}</td>
-              <td style="color:#facc15;">${conf}</td>
-              <td>${fmtN(s.entry)}</td>
-              <td style="color:#f87171;">${fmtN(s.stop)}</td>
-              <td style="color:#4ade80;">${fmtN(s.target)}</td>
-              <td style="color:#00d4ff;">${rr}</td>
-            </tr>`;
-          });
-          h += '</tbody></table>';
-          tsBody.innerHTML = h;
-        }
-      }
-
-      // Strategy P&L
-      // Rejected Signals viewer
-      if (d.daily_summary && d.daily_summary.rejected) {
-        const rj = d.daily_summary.rejected;
-        const badge = document.getElementById('rejected-count-badge');
-        if (badge) badge.textContent = (rj.count || 0) + ' today';
-        const list = document.getElementById('rejected-list');
-        if (list) {
-          const recent = rj.recent || [];
-          if (recent.length === 0) {
-            list.innerHTML = '<div style="color:#666; padding:8px 0;">No filtered signals today.</div>';
-          } else {
-            list.innerHTML = recent.map(r => {
-              const time = r.rejected_at ? new Date(r.rejected_at).toLocaleTimeString() : '';
-              return `<div style="padding:6px 8px; margin-bottom:4px; background:#1a1a2e; border-left:2px solid #facc15; border-radius:4px;">
-                <div style="display:flex; justify-content:space-between; font-size:11px;">
-                  <span><strong style="color:#fff;">${r.ticker || '?'}</strong> <span style="color:#666;">· ${r.strategy || '?'}</span></span>
-                  <span style="color:#888; font-size:10px;">${time}</span>
-                </div>
-                <div style="color:#facc15; font-size:10px; margin-top:2px;">${r.reason || 'unknown'}</div>
-              </div>`;
-            }).join('');
-          }
-        }
-      }
-      // Today's Activity widget — populated from daily_summary block
-      if (d.daily_summary) {
-        const ds = d.daily_summary;
-        const fires = ds.log && ds.log.task_fires ? ds.log.task_fires : {};
-        const totalFires = Object.values(fires).reduce((a,b) => a + (Number(b)||0), 0);
-        const fireDetail = Object.entries(fires).map(([k,v]) => `${k.replace('wolf-','')}×${v}`).join(' · ') || '—';
-        const cm = ds.committee || {};
-        const rj = ds.rejected || {};
-        const errs = (ds.log && ds.log.errors) || 0;
-        const setText = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
-        setText('activity-fires', totalFires);
-        setText('activity-fires-detail', fireDetail);
-        setText('activity-committee', cm.runs || 0);
-        setText('activity-committee-detail', `${cm.tickers_voted || 0} tickers voted`);
-        setText('activity-rejected', rj.count || 0);
-        const reasonText = Object.entries(rj.reasons || {}).map(([k,v]) => `${k}×${v}`).join(' · ') || '—';
-        setText('activity-rejected-detail', reasonText);
-        setText('activity-errors', errs);
-        if (d.daily_summary_updated_at) {
-          setText('activity-updated', `Last updated: ${new Date(d.daily_summary_updated_at).toLocaleString()}`);
-        }
-      }
-      if (d.strategy_performance) {
-        const sp = d.strategy_performance;
-        if (sp.small_cap_catalyst) document.getElementById('scc-pnl').textContent = fmt$(sp.small_cap_catalyst.pnl_today||0);
-        if (sp.volatility_play) document.getElementById('vp-pnl').textContent = fmt$(sp.volatility_play.pnl_today||0);
-        if (sp.macro_hedge) document.getElementById('mh-pnl').textContent = fmt$(sp.macro_hedge.pnl_today||0);
-      }
-
-      // Backtest info
-      if (d.backtest) {
-        document.getElementById('backtest-date').textContent = d.backtest.last_run_date || '—';
-        document.getElementById('backtest-source').textContent = d.backtest.data_source || '—';
-        document.getElementById('backtest-passed').textContent = (d.backtest.strategies_passed||0) + ' / 9';
-        document.getElementById('backtest-best').textContent = d.backtest.best_strategy + ' (Sharpe ' + d.backtest.best_sharpe + ')';
-      }
-
-      }, 'main-blocks');
-
-      //       // capabilities handled at top of .then()
-      //       // ── Wolf Capabilities (progress bar at top) ──
-      //       const CAP_FALLBACK = {
-      //         capability_score: 49, score_max: 100, day_on_mission: 6,
-      //         mission_start: "2026-04-08", streak_days: 6,
-      //         totals: { total_scripts: 58, strategies_implemented: 3, strategies_known: 18,
-      //                   skills_acquired: 2, lessons_learned: 22, improvement_cycles: 2, free_data_sources: 5 },
-      //         latest_improvement: { name: "null-safe dashboards + HBR pipeline",
-      //           description: "Dashboard JS hardened, dynamic capabilities bar, daily HBR intelligence pipeline active." },
-      //         recent_lessons: [
-      //           { date: "2026-04-13", lesson: "Use null-safe getElementById helpers to prevent false OFFLINE status on dashboards." },
-      //           { date: "2026-04-13", lesson: "Terminal windows accumulate — use exit 0, never interactive prompts in .command scripts." },
-      //           { date: "2026-04-13", lesson: "macOS TCC blocks launchd-spawned python3 from ~/Documents — use nohup from Terminal instead." },
-      //           { date: "2026-04-08", lesson: "WOLF can now enumerate his own 14 scripts for self-aware planning." }
-      //         ]
-      //       };
-      //       const cap = (d.wolf_capabilities && d.wolf_capabilities.capability_score) ? d.wolf_capabilities : CAP_FALLBACK;
-      //       const el = id => document.getElementById(id);
-
-      //       // Score + bar
-      //       if (el('cap-score')) el('cap-score').innerHTML = cap.capability_score + '<span style="font-size:18px; color:#6ab;">/' + (cap.score_max||100) + '</span>';
-      //       if (el('cap-bar'))   el('cap-bar').style.width = cap.capability_score + '%';
-
-      //       // Day / streak
-      //       if (el('cap-day'))    el('cap-day').textContent = cap.day_on_mission || '—';
-      //       if (el('cap-start'))  el('cap-start').textContent = 'Started ' + (cap.mission_start || '2026-04-08');
-      //       if (el('cap-streak')) el('cap-streak').textContent = 'Streak: ' + (cap.streak_days||0) + ' days';
-
-      //       // Latest improvement
-      //       if (cap.latest_improvement && el('cap-improvement')) {
-      //         el('cap-improvement').textContent = '+ ' + cap.latest_improvement.name;
-      //         el('cap-improvement-desc').textContent = cap.latest_improvement.description;
-      //       }
-
-      //       // Totals
-      //       if (cap.totals && el('cap-totals')) {
-      //         const t = cap.totals;
-      //         el('cap-totals').innerHTML =
-      //           '<div>Scripts: <b style="color:#4ade80;">' + (t.total_scripts||0) + '</b></div>' +
-      //           '<div>Strategies: <b style="color:#4ade80;">' + (t.strategies_implemented||0) + '/' + (t.strategies_known||18) + '</b></div>' +
-      //           '<div>Skills: <b style="color:#4ade80;">' + (t.skills_acquired||0) + '</b></div>' +
-      //           '<div>Lessons: <b style="color:#4ade80;">' + (t.lessons_learned||0) + '</b></div>' +
-      //           '<div>Cycles: <b style="color:#4ade80;">' + (t.improvement_cycles||0) + '</b></div>' +
-      //           '<div>Data Sources: <b style="color:#4ade80;">' + (t.free_data_sources||0) + '</b></div>';
-      //       }
-
-      //       // Recent lessons
-      //       if (cap.recent_lessons && cap.recent_lessons.length && el('cap-lessons')) {
-      //         el('cap-lessons').innerHTML = cap.recent_lessons.map(l =>
-      //           '<div style="font-size:12px; color:#cde; margin-top:4px;">• <b>' + l.date + '</b> — ' + l.lesson + '</div>'
-      //         ).join('');
-      //       }
-
-    })
-    .catch(err => {
-      console.warn('[WOLF][fetch]', err.message);
-      const ls = document.getElementById('live-status');
-      if (ls) { ls.textContent = 'OFFLINE — ' + err.message; ls.style.color = '#f87171'; }
-    });
-}
-
-// Initial load + refresh every 60s
-loadLiveData();
-setInterval(loadLiveData, 60000);
-</script>
-
-<script>
-// ===== AUDIT COMPLIANCE BANNER (2026-06-16, audit P0-3 / P1-1) =====
-// Self-contained: own fetch, own render. Surfaces the truth the rest of the
-// dashboard buried — mandate compliance + control health — and ALARMS on breach
-// instead of painting everything green. Independent of loadLiveData() above.
-(function(){
-  var ETF = {XLE:1,VOO:1,SHV:1,BIL:1,TLT:1,SPY:1,QQQ:1,IWM:1,DIA:1,XLF:1,XLK:1,XLV:1,XLI:1,XLP:1,XLU:1,XLY:1,XLB:1,XLRE:1,XLC:1};
-  var VAULT = {SHV:1,VOO:1,BIL:1,TLT:1};
-  var HALT_SINCE = new Date("2026-05-13T00:00:00Z");
-  var GREEN="#4ade80", AMBER="#fbbf24", RED="#f87171", MUTED="#8a94a6";
-  function f$(n){return "$"+Number(n).toLocaleString("en-US",{maximumFractionDigits:0});}
-  function tile(k,val,color,lim){
-    return '<div style="background:#11161e;border:1px solid #1f2630;border-left:3px solid '+color+';border-radius:8px;padding:10px 12px;min-width:150px;flex:1;">'+
-      '<div style="font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:'+MUTED+';">'+k+'</div>'+
-      '<div style="font-size:21px;font-weight:700;font-family:ui-monospace,Menlo,monospace;color:'+color+';margin-top:3px;">'+val+'</div>'+
-      '<div style="font-size:10px;color:#6b7688;font-family:ui-monospace,Menlo,monospace;margin-top:3px;">'+(lim||'')+'</div></div>';
-  }
-  function chip(label,state,detail){
-    var c = state==='bad'?RED:(state==='warn'?AMBER:GREEN);
-    return '<div style="display:flex;align-items:center;gap:8px;padding:7px 10px;background:#11161e;border:1px solid #1f2630;border-radius:7px;font-size:11.5px;">'+
-      '<span style="width:8px;height:8px;border-radius:50%;background:'+c+';flex:none;"></span>'+
-      '<span style="color:#e6e9ef;">'+label+'</span><span style="color:'+MUTED+';">— '+detail+'</span></div>';
-  }
-  function render(d, liveStr){
-    var a = d.account||{}, eq=+(a.equity||a.portfolio_value||0), cash=+(a.cash||0);
-    var lev = eq>0 ? (eq+Math.max(0,-cash))/eq : 0;
-    var pos = (d.positions||[]).map(function(p){return {t:p.ticker,mv:+(p.market_value||0)};}).sort(function(x,y){return y.mv-x.mv;});
-    var top = pos[0]||{t:'—',mv:0}, topPct = eq>0?top.mv/eq*100:0;
-    var vault = pos.filter(function(p){return VAULT[p.t];}).reduce(function(s,p){return s+p.mv;},0);
-    var vaultPct = eq>0?vault/eq*100:0;
-    var over = pos.filter(function(p){var c=ETF[p.t]?15:8;return eq>0&&p.mv/eq*100>c;}).length;
-    var halt = !!(d.circuit_breaker&&d.circuit_breaker.halt_new_entries);
-    var haltDays = Math.floor((Date.now()-HALT_SINCE)/864e5);
-    var regime = (d.market_regime&&d.market_regime.current)||'UNKNOWN';
-    var trades = +((d.wolf_status&&d.wolf_status.total_trades_all_time)||0);
-    var wr = +((d.wolf_status&&d.wolf_status.win_rate_all_time)||0)*100;
-    var breaches = [lev>1.01, topPct>8, vaultPct<60, cash<0, over>0].filter(Boolean).length;
-    var hdrColor = breaches>=3?RED:(breaches>0?AMBER:GREEN);
-    var msg = breaches>=3
-      ? 'NON-COMPLIANT — '+breaches+'/5 mandate pillars breached. Rebalance overdue '+haltDays+' days.'
-      : (breaches>0 ? breaches+'/5 mandate pillars breached.' : 'Compliant under mandate v1.0.');
-    var html =
-      '<div style="background:#0f1217;border:1px solid '+hdrColor+';border-radius:12px;padding:14px 16px;margin:14px 0 4px;">'+
-        '<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:10px;">'+
-          '<div style="font-size:13px;font-weight:700;letter-spacing:.04em;color:'+hdrColor+';">⚠ MANDATE COMPLIANCE — '+msg+'</div>'+
-          '<div style="font-size:10.5px;color:'+MUTED+';font-family:ui-monospace,Menlo,monospace;">audit overlay · '+liveStr+'</div>'+
-        '</div>'+
-        '<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;">'+
-          tile('Leverage', lev.toFixed(2)+'×', lev>1.01?RED:GREEN, 'limit 1.00×')+
-          tile('Margin / cash', f$(cash), cash<0?RED:GREEN, 'limit ≥ $0')+
-          tile('Largest', topPct.toFixed(0)+'% '+top.t, topPct>8?RED:GREEN, 'limit 8%')+
-          tile('Vault', vaultPct.toFixed(0)+'%', vaultPct<60?RED:GREEN, 'floor 60%')+
-          tile('Names over cap', over+'/'+pos.length, over>0?RED:GREEN, 'target 0')+
-        '</div>'+
-        '<div style="display:flex;gap:8px;flex-wrap:wrap;">'+
-          chip('Rebalance control', haltDays>2&&halt?'bad':'ok', haltDays>2&&halt?('halt stuck '+haltDays+'d — verify rebalance ran'):'ok')+
-          chip('Entry halt', halt?'bad':'ok', halt?'ON — no new entries permitted':'clear')+
-          chip('Regime detector', regime==='UNKNOWN'?'warn':'ok', regime)+
-          chip('Live performance', trades<10?'warn':'ok', wr.toFixed(0)+'% win over '+trades+' trades')+
-          chip('Graduation gates', 'warn', 'below reflect BACKTEST, not live results')+
-        '</div>'+
-      '</div>';
-    var el = document.getElementById('wolf-audit-banner');
-    if (el) el.innerHTML = html;
-  }
-  function load(){
-    var isLocal = location.hostname !== 'extracoffee13.github.io';
-    var url = isLocal ? 'wolf_live_data.json?t='+Date.now()
-      : 'https://raw.githubusercontent.com/Extracoffee13/wolf-dashboards-repo/main/wolf_live_data.json?t='+Date.now();
-    fetch(url,{cache:'no-store'}).then(function(r){return r.json();})
-      .then(function(d){ render(d, new Date().toLocaleTimeString()); })
-      .catch(function(e){
-        var el=document.getElementById('wolf-audit-banner');
-        if(el) el.innerHTML='<div style="background:#0f1217;border:1px solid '+AMBER+';border-radius:12px;padding:12px 16px;margin:14px 0 4px;color:'+AMBER+';font-size:12px;">⚠ audit overlay: live feed unreachable ('+e.message+')</div>';
-      });
-  }
-  load();
-  setInterval(load, 60000);
-})();
-</script>
-
 </body>
 </html>
