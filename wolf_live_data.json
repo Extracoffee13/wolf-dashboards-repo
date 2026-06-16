@@ -311,10 +311,14 @@
     "note": "Real data sharpe ratios 45-61% lower than synthetic. Only Small Cap Catalyst passes."
   },
   "market_regime": {
-    "current": "UNKNOWN",
-    "vix": null,
-    "spy_trend": null,
-    "last_assessed": null
+    "current": "BULL",
+    "vix": 17.68,
+    "spy_trend": "Above 50/200d MA",
+    "atr_pct": 1.273,
+    "trend_bias": "long",
+    "recommendation": "Run trend / momentum strategies. Size up on breakouts. Prefer calls and long equities. Avoid mean-reversion shorts.",
+    "last_assessed": "2026-06-16T13:31:17Z",
+    "source": "regime.py + FRED VIXCLS"
   },
   "wolf_status": {
     "mode": "PAPER",
