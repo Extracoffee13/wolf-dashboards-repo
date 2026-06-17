@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-06-17T09:30:23.859698",
+  "last_updated": "2026-06-17T09:35:30.465947",
   "update_interval_seconds": 300,
   "account": {
-    "portfolio_value": 97012.74,
-    "cash": -1151.11,
-    "buying_power": 263833.62,
-    "equity": 97012.74,
+    "portfolio_value": 97003.33,
+    "cash": -380.12,
+    "buying_power": 264749.02,
+    "equity": 97003.33,
     "last_equity": 97555.2377953739,
     "unrealized_pl": 0.0,
     "unrealized_plpc": 0.0,
     "status": "ACTIVE"
   },
   "daily_pnl": {
-    "amount": -542.5,
-    "pct": -0.0056,
+    "amount": -551.91,
+    "pct": -0.0057,
     "circuit_breaker_status": "green",
     "circuit_breaker_message": "CLEAR \u2014 Daily: -0.6% (buf: 2.4%) | Weekly: +1.9% (buf: 7.0%)"
   },
@@ -27,43 +27,43 @@
       "qty": 48.0,
       "side": "long",
       "avg_entry": 174.131168,
-      "current_price": 164.4125,
-      "market_value": 7891.8,
-      "unrealized_pl": -466.496064,
-      "unrealized_plpc": -0.05581,
+      "current_price": 164.19,
+      "market_value": 7881.12,
+      "unrealized_pl": -477.176064,
+      "unrealized_plpc": -0.05709,
       "cost_basis": 8358.296064
     },
     {
       "ticker": "JPM",
-      "qty": 25.0,
+      "qty": 24.0,
       "side": "long",
       "avg_entry": 306.73,
-      "current_price": 332.15,
-      "market_value": 8303.75,
-      "unrealized_pl": 635.5,
-      "unrealized_plpc": 0.08287,
-      "cost_basis": 7668.25
+      "current_price": 334.075,
+      "market_value": 8017.8,
+      "unrealized_pl": 656.28,
+      "unrealized_plpc": 0.08915,
+      "cost_basis": 7361.52
     },
     {
       "ticker": "MDT",
-      "qty": 98.0,
+      "qty": 96.0,
       "side": "long",
       "avg_entry": 75.842613,
-      "current_price": 80.62,
-      "market_value": 7900.76,
-      "unrealized_pl": 468.183926,
-      "unrealized_plpc": 0.06299,
-      "cost_basis": 7432.576074
+      "current_price": 81.14,
+      "market_value": 7789.44,
+      "unrealized_pl": 508.549152,
+      "unrealized_plpc": 0.06985,
+      "cost_basis": 7280.890848
     },
     {
       "ticker": "MSFT",
       "qty": 20.0,
       "side": "long",
       "avg_entry": 421.673333,
-      "current_price": 388.76,
-      "market_value": 7775.2,
-      "unrealized_pl": -658.26666,
-      "unrealized_plpc": -0.07805,
+      "current_price": 387.63,
+      "market_value": 7752.6,
+      "unrealized_pl": -680.86666,
+      "unrealized_plpc": -0.08073,
       "cost_basis": 8433.46666
     },
     {
@@ -71,10 +71,10 @@
       "qty": 77.0,
       "side": "long",
       "avg_entry": 105.688223,
-      "current_price": 99.95,
-      "market_value": 7696.15,
-      "unrealized_pl": -441.843171,
-      "unrealized_plpc": -0.05429,
+      "current_price": 99.44,
+      "market_value": 7656.88,
+      "unrealized_pl": -481.113171,
+      "unrealized_plpc": -0.05912,
       "cost_basis": 8137.993171
     },
     {
@@ -82,10 +82,10 @@
       "qty": 38.0,
       "side": "long",
       "avg_entry": 207.39,
-      "current_price": 207.8,
-      "market_value": 7896.4,
-      "unrealized_pl": 15.58,
-      "unrealized_plpc": 0.00198,
+      "current_price": 208.34,
+      "market_value": 7916.92,
+      "unrealized_pl": 36.1,
+      "unrealized_plpc": 0.00458,
       "cost_basis": 7880.82
     },
     {
@@ -93,10 +93,10 @@
       "qty": 60.0,
       "side": "long",
       "avg_entry": 136.767115,
-      "current_price": 131.0699,
-      "market_value": 7864.194,
-      "unrealized_pl": -341.8329,
-      "unrealized_plpc": -0.04166,
+      "current_price": 131.13,
+      "market_value": 7867.8,
+      "unrealized_pl": -338.2269,
+      "unrealized_plpc": -0.04122,
       "cost_basis": 8206.0269
     },
     {
@@ -104,10 +104,10 @@
       "qty": 90.649065505,
       "side": "long",
       "avg_entry": 110.22,
-      "current_price": 110.23,
-      "market_value": 9992.246491,
-      "unrealized_pl": 0.906491,
-      "unrealized_plpc": 9e-05,
+      "current_price": 110.22,
+      "market_value": 9991.34,
+      "unrealized_pl": 0.0,
+      "unrealized_plpc": 0.0,
       "cost_basis": 9991.34
     },
     {
@@ -115,10 +115,10 @@
       "qty": 20.0,
       "side": "long",
       "avg_entry": 442.450455,
-      "current_price": 401.295,
-      "market_value": 8025.9,
-      "unrealized_pl": -823.1091,
-      "unrealized_plpc": -0.09302,
+      "current_price": 400.25,
+      "market_value": 8005.0,
+      "unrealized_pl": -844.0091,
+      "unrealized_plpc": -0.09538,
       "cost_basis": 8849.0091
     },
     {
@@ -126,25 +126,56 @@
       "qty": 14.389693809,
       "side": "long",
       "avg_entry": 694.34,
-      "current_price": 690.19,
-      "market_value": 9931.62277,
-      "unrealized_pl": -59.717229,
-      "unrealized_plpc": -0.00598,
+      "current_price": 690.1646,
+      "market_value": 9931.257272,
+      "unrealized_pl": -60.082727,
+      "unrealized_plpc": -0.00601,
       "cost_basis": 9991.339999
     },
     {
       "ticker": "XLE",
-      "qty": 270.0,
+      "qty": 265.0,
       "side": "long",
       "avg_entry": 56.408675,
-      "current_price": 55.15,
-      "market_value": 14890.5,
-      "unrealized_pl": -339.84225,
-      "unrealized_plpc": -0.02231,
-      "cost_basis": 15230.34225
+      "current_price": 54.9569,
+      "market_value": 14563.5785,
+      "unrealized_pl": -384.720375,
+      "unrealized_plpc": -0.02574,
+      "cost_basis": 14948.298875
     }
   ],
-  "todays_trades": [],
+  "todays_trades": [
+    {
+      "id": "e4eb2677-5230-4da7-a8ab-15f96425ec5d",
+      "ticker": "XLE",
+      "side": "sell",
+      "qty": 5.0,
+      "filled_price": 55.022,
+      "status": "filled",
+      "created_at": "2026-06-17T13:30:03.949486Z",
+      "order_class": ""
+    },
+    {
+      "id": "c8150731-2aed-4c44-95e5-eb61ceefade6",
+      "ticker": "MDT",
+      "side": "sell",
+      "qty": 2.0,
+      "filled_price": 80.79,
+      "status": "filled",
+      "created_at": "2026-06-17T13:30:03.40978Z",
+      "order_class": ""
+    },
+    {
+      "id": "56ad56e3-fa22-44c9-8e87-eed0c13f4557",
+      "ticker": "JPM",
+      "side": "sell",
+      "qty": 1.0,
+      "filled_price": 334.3,
+      "status": "filled",
+      "created_at": "2026-06-17T13:30:02.933421Z",
+      "order_class": ""
+    }
+  ],
   "strategy_performance": {
     "small_cap_catalyst": {
       "name": "Small Cap Catalyst",
