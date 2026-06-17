@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: construct-standup
+decision: ran end-of-day standup synthesis across all active agents
+outcome: WOLF stood up the entire repo and ran 50 live-data commits today while 19 other agents stayed silent and the mandate compliance halt entered its 36th day with no clear resolution path
+lesson: a rebalance gate that halts new entries (including vault buys) while requiring vault allocation to clear the halt is self-blocking — mechanical loops need an escape valve for circular compliance conditions
+tags: standup,construct,daily,synthesis
+confidence: 0.7
+~~~
