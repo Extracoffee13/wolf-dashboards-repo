@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Anthropic Advisor Tool (advisor_20260301)
+lesson: The highest-leverage new capability this cycle is architectural (executor+advisor model pairing), not a new domain tool — cost/quality trade-offs at the API layer now outpace skill-level additions
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
