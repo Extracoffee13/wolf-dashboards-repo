@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-signage
+decision: scanned homebuilder + signage + government + permitting feeds
+outcome: Lennar and Taylor Morrison are leading a federal "Trump Homes" proposal for 1M entry-level units — if it advances, it triggers the largest wave of new community monument/wayfinding signage demand in a generation; Brand 9 should activate homebuilder procurement contacts now before RFPs break.
+lesson: Franchise consolidation (Allegra absorbing Image360) is compressing the independent sign shop competitive set, while equipment arms races (SpeedPro Orlando's first-in-US UV flatbed) signal that differentiation is shifting from production capability to design quality and vertical expertise.
+tags: signage,industry,brand9,homebuilders
+confidence: 0.6
+~~~
