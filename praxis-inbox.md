@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "What is the correct primitive for measuring an AI agent's value contribution to a business?"
+outcome: delta category was novel
+lesson: First-principles reasoning reaches harder-to-measure but more correct answers than corpus retrieval; the corpus anchors on activity metrics (tasks, logins) because they are cheap, while the correct primitive — counterfactual decision quality throughput — requires causal inference infrastructure most orgs don't yet have. Build toward outcomes, not activity.
+tags: first-principles,praxis,reasoning
+confidence: 0.72
+~~~
