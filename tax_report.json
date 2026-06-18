@@ -1,10 +1,10 @@
 {
-  "as_of": "2026-06-17T20:50:08Z",
+  "as_of": "2026-06-18T20:50:03Z",
   "tax_year": 2026,
   "realized": {
-    "short_term_gain": -942.16,
+    "short_term_gain": -980.36,
     "long_term_gain": 0.0,
-    "total_realized": -942.16,
+    "total_realized": -980.36,
     "estimated_tax": 0.0,
     "stcg_rate": 0.37,
     "ltcg_rate": 0.2
@@ -12,70 +12,60 @@
   "wash_sale_flags": [],
   "wash_sale_blocklist": {
     "NOW": "2026-07-16",
-    "TSLA": "2026-07-16",
-    "XLE": "2026-07-17",
-    "PLTR": "2026-07-16",
+    "TSLA": "2026-07-18",
+    "XLE": "2026-07-18",
+    "PLTR": "2026-07-18",
     "MSFT": "2026-07-16",
-    "ACN": "2026-07-16"
+    "ACN": "2026-07-16",
+    "NVDA": "2026-07-18"
   },
   "approaching_ltcg": [],
   "tax_loss_harvest_candidates": [
-    {
-      "ticker": "TSLA",
-      "qty": 20.0,
-      "buy_px": 442.450455,
-      "buy_dt": "2026-05-12",
-      "days_held": 36,
-      "term": "ST",
-      "days_to_ltcg": 329,
-      "current_px": 396.77,
-      "unrealized_loss": -913.61
-    },
     {
       "ticker": "MSFT",
       "qty": 20.0,
       "buy_px": 421.673333,
       "buy_dt": "2026-05-07",
-      "days_held": 41,
+      "days_held": 42,
       "term": "ST",
-      "days_to_ltcg": 324,
+      "days_to_ltcg": 323,
       "current_px": 379.95,
       "unrealized_loss": -834.47
     },
     {
+      "ticker": "TSLA",
+      "qty": 19.0,
+      "buy_px": 442.450455,
+      "buy_dt": "2026-05-12",
+      "days_held": 37,
+      "term": "ST",
+      "days_to_ltcg": 328,
+      "current_px": 399.65,
+      "unrealized_loss": -813.21
+    },
+    {
       "ticker": "XLE",
-      "qty": 265.0,
+      "qty": 261.0,
       "buy_px": 56.408675,
       "buy_dt": "2026-04-08",
-      "days_held": 70,
+      "days_held": 71,
       "term": "ST",
-      "days_to_ltcg": 295,
-      "current_px": 54.61,
-      "unrealized_loss": -476.65
+      "days_to_ltcg": 294,
+      "current_px": 53.82,
+      "unrealized_loss": -675.64
     },
     {
       "ticker": "PLTR",
-      "qty": 60.0,
+      "qty": 58.0,
       "buy_px": 136.744231,
       "buy_dt": "2026-05-12",
-      "days_held": 36,
+      "days_held": 37,
       "term": "ST",
-      "days_to_ltcg": 329,
-      "current_px": 131.5,
-      "unrealized_loss": -314.65
-    },
-    {
-      "ticker": "NVDA",
-      "qty": 38.0,
-      "buy_px": 207.39,
-      "buy_dt": "2026-05-07",
-      "days_held": 41,
-      "term": "ST",
-      "days_to_ltcg": 324,
-      "current_px": 205.0,
-      "unrealized_loss": -90.82
+      "days_to_ltcg": 328,
+      "current_px": 128.6,
+      "unrealized_loss": -472.37
     }
   ],
-  "open_lot_count": 11,
+  "open_lot_count": 12,
   "note": "Estimate only \u2014 not tax advice. FIFO basis; consult a CPA before filing."
 }
