@@ -316,11 +316,11 @@
     "status": "yellow",
     "daily_triggered": false,
     "weekly_triggered": false,
-    "halt_new_entries": true,
+    "halt_new_entries": false,
     "halt_all_activity": false,
     "message": "MANUAL HALT \u2014 WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13).",
-    "halt_reason": "WOLF mandate v1.0 enforcement \u2014 portfolio non-compliant (PLTR 47.6%, NVDA/MSFT/TSLA/JPM each over 8%, MDT 25%, cash -$100K margin). Auto-rebalance fires at next market-open via wolf-task-runner.sh \u2192 mandate_rebalance.py. halt_new_entries clears after compliance achieved. Now preserved across polls (poll updated 2026-05-13).",
-    "halt_until": "post-rebalance"
+    "halt_reason": null,
+    "halt_until": null
   },
   "backtest": {
     "last_run_date": "2026-04-07",
@@ -452,5 +452,6 @@
         }
       ]
     }
-  }
+  },
+  "mandate_rebalance_last_run": "2026-06-19T13:30:10Z"
 }
