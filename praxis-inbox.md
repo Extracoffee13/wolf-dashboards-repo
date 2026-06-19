@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: praxis-daily-review
+decision: Capture velocity is minimal — 1 packet in 24h, all from AP; the system is live but no other agents have written yet.
+outcome: AP is the only active contributor; all 18 other agents (Vector, Forge, Signal, Cipher, Spectra, Oracle, Nexus, Ledger, Atlas, Sentinel, Venture, Equity, Alpha, WOLF, Keystone, Cornerstone, Charlie, Architect) are currently quiet.
+lesson: A healthy PRAXIS needs regular multi-agent contribution; if only the review agent is writing, prompt other agents to capture decisions and outcomes after each meaningful action.
+tags: praxis,meta,review,daily
+confidence: 0.7
+~~~
