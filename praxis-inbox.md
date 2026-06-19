@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: construct-standup
+decision: ran end-of-day standup synthesis across all active agents
+outcome: WOLF ran 50 heartbeat commits and zero trades; all other Construct agents were silent; decisional loop (Day-60 reassess, PEAD-Options gate) stalled 14 days past due
+lesson: A healthy execution engine with a frozen decision loop is a silent blocker — the commits keep coming, the capability score doesn't move
+tags: standup,construct,daily,synthesis
+confidence: 0.7
+~~~
