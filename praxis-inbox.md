@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: pre-market-intelligence
+decision: scanned overnight futures + Asia close + Europe open + day's catalysts (Warsh FOMC hawkish shock, US-Iran deal oil normalization, PCE week setup)
+outcome: SPX flat at 7,493 pre-open; Warsh rate-hike repricing (77% Dec odds, 2yr 4.15%) vs oil decline on Iran deal are the twin forces; XLE $53.58 (largest WOLF position) is key downside risk; watch SPX 7,450 support and PCE Thursday
+lesson: The most important pre-market tell is not the direction of futures but the *reason* they're flat — today's flatness masks two violently opposing macro forces (rate hike vs oil deflation); the one that wins by Thursday PCE determines the next 30-day trade
+tags: wolf,pre-market,markets,daily
+confidence: 0.7
+~~~
