@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Why does a sign generate business value? What is the primitive mechanism?"
+outcome: delta category was novel
+lesson: When reasoning from primitives about a business process, the key move is to ask what *structural position* the thing occupies rather than what it does — signs aren't an ad channel, they're location-indexed attention infrastructure that multiplies the ROI of every other channel; retrieval gives you tactics, first principles gives you the structural frame.
+tags: first-principles,praxis,reasoning
+confidence: 0.72
+~~~
