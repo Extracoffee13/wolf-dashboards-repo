@@ -485,5 +485,41 @@
         }
       ]
     }
-  }
+  },
+  "daily_summary": {
+    "date": "2026-06-23",
+    "account": {
+      "portfolio_value": 91724.03,
+      "cash": -65362.08,
+      "buying_power": 172590.95,
+      "positions": 13,
+      "todays_trades": 1,
+      "daily_pnl_amount": -1696.11,
+      "daily_pnl_pct": -0.0182,
+      "circuit_breaker": "green"
+    },
+    "log": {
+      "task_fires": {
+        "wolf-crypto-247": 3,
+        "wolf-market-open-exec": 1,
+        "wolf-midday-rescan": 1,
+        "wolf-gate-status": 1,
+        "wolf-daily-summary": 1
+      },
+      "errors": 0
+    },
+    "rejected": {
+      "count": 0,
+      "reasons": {},
+      "recent": []
+    },
+    "committee": {
+      "runs": 2,
+      "tickers_voted": 3,
+      "verdicts": {
+        "bullish": 3
+      }
+    }
+  },
+  "daily_summary_updated_at": "2026-06-23T16:50:06.451018"
 }
