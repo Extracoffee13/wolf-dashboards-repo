@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-06-22T20:50:01Z",
+  "as_of": "2026-06-23T20:50:07Z",
   "tax_year": 2026,
   "realized": {
     "short_term_gain": -971.62,
@@ -22,50 +22,61 @@
   "approaching_ltcg": [],
   "tax_loss_harvest_candidates": [
     {
-      "ticker": "MSFT",
-      "qty": 20.0,
-      "buy_px": 421.673333,
-      "buy_dt": "2026-05-07",
-      "days_held": 46,
-      "term": "ST",
-      "days_to_ltcg": 319,
-      "current_px": 367.7,
-      "unrealized_loss": -1079.47
-    },
-    {
       "ticker": "PLTR",
       "qty": 58.0,
       "buy_px": 136.744231,
       "buy_dt": "2026-05-12",
-      "days_held": 41,
+      "days_held": 42,
       "term": "ST",
-      "days_to_ltcg": 324,
-      "current_px": 119.6599,
-      "unrealized_loss": -990.89
+      "days_to_ltcg": 323,
+      "current_px": 116.3,
+      "unrealized_loss": -1185.77
     },
     {
       "ticker": "TSLA",
       "qty": 19.0,
       "buy_px": 442.450455,
       "buy_dt": "2026-05-12",
-      "days_held": 41,
+      "days_held": 42,
       "term": "ST",
-      "days_to_ltcg": 324,
-      "current_px": 404.31,
-      "unrealized_loss": -724.67
+      "days_to_ltcg": 323,
+      "current_px": 381.7,
+      "unrealized_loss": -1154.26
+    },
+    {
+      "ticker": "MSFT",
+      "qty": 20.0,
+      "buy_px": 421.673333,
+      "buy_dt": "2026-05-07",
+      "days_held": 47,
+      "term": "ST",
+      "days_to_ltcg": 318,
+      "current_px": 373.88,
+      "unrealized_loss": -955.87
     },
     {
       "ticker": "XLE",
       "qty": 261.0,
       "buy_px": 56.408675,
       "buy_dt": "2026-04-08",
-      "days_held": 75,
+      "days_held": 76,
       "term": "ST",
-      "days_to_ltcg": 290,
-      "current_px": 54.0019,
-      "unrealized_loss": -628.17
+      "days_to_ltcg": 289,
+      "current_px": 54.5315,
+      "unrealized_loss": -489.94
+    },
+    {
+      "ticker": "NVDA",
+      "qty": 36.0,
+      "buy_px": 207.39,
+      "buy_dt": "2026-05-07",
+      "days_held": 47,
+      "term": "ST",
+      "days_to_ltcg": 318,
+      "current_px": 200.5,
+      "unrealized_loss": -248.04
     }
   ],
-  "open_lot_count": 15,
+  "open_lot_count": 16,
   "note": "Estimate only \u2014 not tax advice. FIFO basis; consult a CPA before filing."
 }
