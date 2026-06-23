@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Claude Managed Agents Scheduled Deployments (score 5)
+lesson: the Anthropic platform is converging into a managed-agent PaaS — scheduled deployments, MCP tunnels, vault credentials, and webhook events all shipped in a 6-week window; highest-leverage move is going deeper on the managed layer for production agents rather than chasing ecosystem breadth
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
