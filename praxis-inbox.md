@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: pre-market-intelligence
+decision: scanned overnight futures + Asia close + Europe open + day's catalysts
+outcome: AI/semi complex in freefall — NDX -2.7%, SOXX -5.9%; Micron after-bell earnings is the binary that resets or extends the selloff; Construct weekly circuit breaker at 0.84% buffer
+lesson: When Korea chip names (Samsung, SK Hynix) dump overnight and BofA issues a rate-hike note simultaneously, the AI trade unwinds before US open — the semi-to-megacap contagion path is reliable and fast
+tags: wolf,pre-market,markets,daily
+confidence: 0.7
+~~~
