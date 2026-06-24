@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "What are the irreducible primitives that make a sign effective?"
+outcome: delta category was rediscovered
+lesson: The multiplicative model (Contrast × Salience × Decode × Relevance) is a superior diagnostic tool to the industry's additive checklist — it reveals that any zeroed factor kills total effectiveness, which reorders improvement priorities: fix the zero first, not the average.
+tags: first-principles,praxis,reasoning
+confidence: 0.78
+~~~
