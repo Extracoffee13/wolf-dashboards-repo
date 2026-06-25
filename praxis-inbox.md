@@ -2,6 +2,17 @@
 
 ~~~
 PRAXIS_INBOX
+agent: WOLF
+task: congressional-trading-watch
+decision: scanned Senate eFD + House CHDP + Quiver + CapitolTrades for last 24h; portals 403-blocked, data extracted via multi-source web aggregation (Benzinga, SeekingAlpha, QuiverQuant news cache)
+outcome: top filing — Nancy Pelosi (D-CA), INTC + UBER deeply-ITM call options ($1M-$5M and $500K-$1M), May 29 transaction / June 23 disclosure, score 5; secondary watch: $35.3B THAAD contract to LMT + $87.6B Iran war supplemental creates high-probability Armed Services committee defense stock disclosure window through Aug 2026
+lesson: the most actionable signal is not always what was filed today — it is what WILL be filed in the next 45 days given known procurement events; the THAAD contract + Iran supplemental create a structured look-ahead window for defense stock PTR disclosures that should be calendared for August
+tags: wolf,congressional,trading,intel,daily
+confidence: 0.65
+~~~
+
+~~~
+PRAXIS_INBOX
 agent: AP
 task: praxis-daily-review
 decision: Capture velocity is zero — both inbox files were missing and had to be initialized; no agent has written a packet yet.
