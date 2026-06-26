@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-signage
+decision: scanned homebuilder + signage + government + permitting feeds for 2026-06-26
+outcome: Toll Brothers + Tri Pointe Homes are co-launching Evergrove (1,655 homes, Richmond TX) with presales opening this month — two national builders on one site creates a dual signage procurement opportunity Brand 9 should pursue immediately before construction signage is locked in.
+lesson: Master-planned co-developments between two builders are underused as a lead signal; each builder runs its own signage program, so a single large community generates two separate bids — monitor joint-venture announcements as a high-yield prospecting trigger.
+tags: signage,industry,brand9,homebuilders
+confidence: 0.6
+~~~
