@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Claude Tag (persistent Slack @Claude agent, score 5)
+lesson: The frontier of new agent capability is moving from standalone MCP servers toward platform-embedded agents (Claude Tag in Slack) and vendor-native skill packs (Dataverse-skills from Microsoft); watch enterprise platform integrations more than raw package counts
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
