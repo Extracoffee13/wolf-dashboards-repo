@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Claude DesignSync (score 5, owner Spectra)
+lesson: The highest-value new skills in this cycle are shipping directly from Anthropic (DesignSync, Fable 5, /rewind) rather than from the open-source community — watch official release notes first, GitHub topics second
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
