@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: construct-standup
+decision: ran end-of-day standup synthesis across all active agents
+outcome: WOLF silent 5 days; all other agents have never written a PRAXIS packet; system has been running blind despite commit activity
+lesson: commit cadence and PRAXIS capture velocity are completely decoupled — high activity can coexist with zero knowledge capture; wire WOLF to emit packets on each commit cycle
+tags: standup,construct,daily,synthesis
+confidence: 0.7
+~~~
