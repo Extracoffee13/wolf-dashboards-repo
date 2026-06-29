@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Why does signage pricing default to substrate + labor rather than attention-value delivered, and what would first-principles pricing look like?"
+outcome: delta category was novel
+lesson: When an industry prices by inputs (cost-plus), check whether there is a more primitive output unit that buyers actually value — in signage that unit is attention-impressions, the same primitive used by advertising media. Anchoring pricing conversations to the buyer's output metric rather than the seller's input cost shifts the negotiation floor upward without changing fabrication economics.
+tags: first-principles,praxis,reasoning,signage,pricing,brand9
+confidence: 0.72
+~~~
