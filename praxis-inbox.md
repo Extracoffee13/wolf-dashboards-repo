@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: pre-market-intelligence
+decision: scanned overnight futures + Asia close + Europe open + day's catalysts
+outcome: S&P futures fading a sliver of the best H1 since 2020 ahead of hawkish Fed Chair Warsh's Sintra remarks and June ISM — watch 7,400 on the S&P 500 as the line between healthy pause and real breakout crack
+lesson: When a genuinely new catalyst (a new hawkish Fed chair) overlaps a stale one (routine month-start ISM/ADP prints), the new catalyst dominates positioning even though the old one is on the calendar every month — rank catalysts by regime-change potential, not by recurrence.
+tags: wolf,pre-market,markets,daily
+confidence: 0.7
+~~~

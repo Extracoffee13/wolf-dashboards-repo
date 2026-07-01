@@ -1,0 +1,11 @@
+# WOLF Pre-Market — July 1, 2026
+
+**Headline: The melt-up takes a breather in front of a hawkish Fed chair.** Futures are fading a sliver of the best first half since 2020–21 (S&P +9.6%, Dow 52,319 record close) ahead of Kevin Warsh's Sintra remarks and June ISM Manufacturing at 10am ET. Dow/S&P/Nasdaq futures all down modestly (-0.1% to -0.2%) — not a risk-off move, just the market taking a breath.
+
+- **Level to watch: S&P 500 7,400.** That's the line between "healthy pause" and "first crack in the H1 breakout." Warsh has already killed 2026 rate-cut hopes once (June 17 FOMC: hawkish dots, 9 officials want higher rates, forward guidance dropped). If he leans hawkish again today and ISM disappoints, 7,400 gets tested for real.
+- **The real overnight story isn't the index tape — it's semis.** Burry disclosed fresh shorts in NVDA, AMAT, and SOXX, calling Korean chip capex "the beginning of the end" of the AI buildout. That's a direct hit on NVDA and AMD, both live in the book. Watch for follow-through selling in the semi complex regardless of what the S&P does.
+- **Homebuilders are done reporting — and the news was bad.** LEN and KBH both already posted Q2: LEN margins compressed to 15.6% with orders down 4% and incentives at 12.9% of price; KBH revenue fell 27% YoY with margins down to 15.2% from 19.3%. No builder catalysts this week, but the margin-compression story is now confirmed across two bellwethers — treat that as the sector's base case until proven otherwise.
+- **Pre-market names with real catalysts, not just noise:** BE and FCEL both extending double-digit rallies (Brookfield AI-infra tie-up; $49M South Korea financing, respectively) — FCEL is explicitly being comped to BE's playbook, which is a crowded-trade warning sign, not a reason to chase. NKE down 3%+ on China weakness despite a Q4 beat. LUNR +8% on a real $148.3M NASA contract. NIO -4% on a delivery miss.
+- **What would change my view:** a genuinely dovish Warsh line today, or a strong ISM beat (above 54 again), flips this from "cautious pause" to "melt-up resumes" — in which case 7,400 holds easily and the semis selloff (if any) gets bought. Conversely, a hawkish Warsh combined with a soft ISM print is the combo that actually breaks 7,400.
+
+*Full receipts, sourcing, and the complete book read-through: `wolf-intel/2026-07-01/pre-market.md`.*
