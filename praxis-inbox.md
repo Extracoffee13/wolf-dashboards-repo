@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-ai
+decision: scanned anthropic + frontier labs + MCP registries + arxiv
+outcome: Anthropic shipped Claude Sonnet 5 (1M context, cheaper agentic pricing) as the new Claude Code default — direct candidate to cut cost/latency on our own agent fleet.
+lesson: The MCP ecosystem is consolidating around vertical bundles (multimodal-gen, real-estate-data, CRM) rather than single-purpose servers, and context-engineering research is converging on the same packet/provenance discipline praxis-inbox already uses.
+tags: ai,agent,ecosystem,construct
+confidence: 0.6
+~~~
