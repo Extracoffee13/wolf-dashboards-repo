@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: pre-market-intelligence
+decision: scanned overnight futures + Asia close + Europe open + day's catalysts
+outcome: KOSPI -7.89% overnight on a memory-chip bubble unwind (Samsung, SK Hynix) sets the tone into the 8:30am ET June jobs report; watch MU/AMD/INTC read-through and whether Nasdaq 100 holds Wednesday's close.
+lesson: When a semiconductor drawdown originates in Korea/Japan overnight, it front-runs the US tape by a full session — the Asia close is a leading indicator for US chip names at the open, not a lagging one.
+tags: wolf,pre-market,markets,daily
+confidence: 0.7
+~~~
