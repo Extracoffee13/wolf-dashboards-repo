@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Should a multi-agent trading system's circuit breaker be global or per-strategy?"
+outcome: delta category was rediscovered
+lesson: when a failure class has both independent and correlated causes, no single-layer breaker suffices — isolate the independent causes locally and watch for the correlated ones with a separate mechanism that has visibility the local layer structurally lacks.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
