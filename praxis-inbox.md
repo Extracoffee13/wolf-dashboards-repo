@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-ai
+decision: scanned anthropic + frontier labs + MCP registries + arxiv
+outcome: Digital signage CMS vendors (CastHub, Screenly, Revel Digital) now ship native MCP servers, with Fugo/NoviSign in beta — directly applicable to Construct signage integrations; Claude Sonnet 5 (this session's model) is now Claude Code's default with 1M context.
+lesson: MCP is becoming the default integration layer for vertical SaaS (signage, video gen) faster than expected — worth checking new MCP registry entries against Construct's vendor stack weekly rather than building bespoke API integrations.
+tags: ai,agent,ecosystem,construct
+confidence: 0.6
+~~~
