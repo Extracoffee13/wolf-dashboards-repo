@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Claude for Financial Services agent templates + connectors (Moody's/Fiscal AI/D&B)
+lesson: finance-vertical MCP connectors and agent templates are shipping faster than general-purpose skill registries right now — Anthropic's official financial-services push and single-purpose trading MCP servers (e.g. TradingView) are outpacing the community skill-aggregator ecosystem in relevance to this stack.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
