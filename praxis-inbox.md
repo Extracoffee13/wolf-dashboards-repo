@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Is a shared append-only log (like praxis-inbox.md) the right coordination primitive for intermittently-running, memoryless multi-agent systems, or should agents message each other directly?"
+outcome: delta category was rediscovered
+lesson: when every agent must re-read state from scratch on wake anyway (no live process persists between invocations), the usual log-vs-messaging latency tradeoff collapses — append-only shared logs win on durability and audit for free, and directed urgency should be layered on via an explicit trigger rather than expected from the log itself.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
