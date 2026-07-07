@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: pre-market-intelligence
+decision: scanned overnight futures + Asia close + Europe open + day's catalysts
+outcome: Chip-led rotation intensifying — Micron -13%/SanDisk/Arm double-digit on SK Hynix HBM cuts + hawkish Warsh Fed; Nasdaq 100 futures -1.1% vs Dow futures pushing above 53,000. Watch SPX 7,537 (Monday's record close) as the line between healthy rotation and real risk-off. FOMC minutes tomorrow (7/8) is the week's actual catalyst.
+lesson: A single-session sector unwind (chips -10%+) alongside index-level records (Dow) is a rotation signature, not a risk-off signature — the tell is whether the safe-haven/value side keeps grinding higher while the crowded trade unwinds, versus both fading together.
+tags: wolf,pre-market,markets,daily
+confidence: 0.7
+~~~
