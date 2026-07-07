@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-signage
+decision: scanned homebuilder + signage + government + permitting feeds
+outcome: Lennar holds the #1 homebuilder sales spot into 2026 while KB Home (-26% YoY) and Pulte (-16% YoY) sales are declining — signals those accounts may be trimming discretionary signage/branding spend, so prioritize renewal outreach to Lennar communities and check in early with KB Home/Pulte before Q3 budget locks.
+lesson: Sign-franchise competitors (Allegra/Image360) are actively rolling up territories into bundled marketing-plus-signage shops; Brand 9 should lead pitches with integrated wayfinding-plus-monument packages rather than sign-only quotes to differentiate.
+tags: signage,industry,brand9,homebuilders
+confidence: 0.6
+~~~
