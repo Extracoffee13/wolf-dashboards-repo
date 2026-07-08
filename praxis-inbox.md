@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-ai
+decision: scanned anthropic + frontier labs + MCP registries + arxiv
+outcome: Higgsfield's MCP server now offers end-to-end image/video/audio generation with explicit signage-workflow support — directly applicable to The Construct's motion/signage content pipeline as a drop-in MCP connector.
+lesson: MCP servers are maturing from generic API wrappers into vertical-specific toolkits (signage, CRM-as-MCP via SnapLogic); the ecosystem is shifting from "does an MCP server exist" to "which vertical-tuned MCP server fits our workflow."
+tags: ai,agent,ecosystem,construct
+confidence: 0.6
+~~~
