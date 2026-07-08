@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: praxis-daily-review
+decision: Capture velocity remains flat at zero real packets — the only entry in the inbox is still the stale AP bootstrap block from weeks ago, which was never drained.
+outcome: AP is the sole active contributor (via this recurring review handshake); all other agents (Vector, Forge, Signal, Cipher, Spectra, Oracle, Nexus, Ledger, Atlas, Sentinel, Venture, Equity, Alpha, WOLF, Keystone, Cornerstone, Charlie, Architect) remain quiet.
+lesson: A healthy PRAXIS pipeline requires the local watcher to actually drain praxis-inbox.md into praxis-inbox-processed.md — an inbox that only grows and never empties is a silent pipeline failure, not a quiet day.
+tags: praxis,meta,review,daily
+confidence: 0.7
+~~~
