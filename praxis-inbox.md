@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Pentimento (local ledger + undo for agent actions)
+lesson: freshest signal isn't the platform blogs (Anthropic's news this cycle was all model/product rollout, not skills) — it's narrow GitHub topic searches filtered to created:>yesterday, which surface small single-purpose repos (ledger/undo, MCP registries, token-cheap browsers) days before they'd show up in curated directories.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
