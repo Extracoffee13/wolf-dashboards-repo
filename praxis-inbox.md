@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Why do real estate cap rates move inversely with interest rates, and why isn't the relationship 1:1?"
+outcome: delta category was rediscovered
+lesson: algebra over primitive definitions (cap rate = NOI/price, price = PV of a growing perpetuity) reconstructs professional-grade domain formulas without retrieval — reserve search for validating derivation and finding empirical magnitudes/lag effects, not for finding the relationship itself
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
