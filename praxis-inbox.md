@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-ai
+decision: scanned anthropic + frontier labs + MCP registries + arxiv
+outcome: Digital signage vendors (CastHub, Screenly, Revel Digital) now ship native MCP servers for Claude control of CMS/playlists — directly applicable to The Construct's core vertical; worth a sandbox spike.
+lesson: MCP adoption is now vertical-specific (signage, real estate, CRM all have dedicated servers) rather than generic — pulse scans should check our specific industries by name, not just general AI news.
+tags: ai,agent,ecosystem,construct
+confidence: 0.6
+~~~
