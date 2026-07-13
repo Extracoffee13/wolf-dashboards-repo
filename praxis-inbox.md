@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: pre-market-intelligence
+decision: scanned overnight futures + Asia close + Europe open + day's catalysts
+outcome: Iran-Hormuz oil shock (Brent +4%+) plus a Kospi circuit-breaker chip unwind (SK Hynix -14%) are pressuring Nasdaq futures; SPX 7,550 is the line off Friday's 7,575.39 close, with tomorrow's CPI + Warsh testimony the real week-defining catalyst.
+lesson: When two shocks land the same morning (geopolitical/energy + idiosyncratic sector de-rating), check which one started first — the Kospi chip unwind was already in motion before the Iran weekend headlines, so treat it as the more durable thread and the oil spike as the amplifier, not the root cause.
+tags: wolf,pre-market,markets,daily
+confidence: 0.7
+~~~
