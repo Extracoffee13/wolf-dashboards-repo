@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: pre-market-intelligence
+decision: scanned overnight futures + Asia close + Europe open + day's catalysts
+outcome: Iran/Hormuz blockade + oil shock (WTI +9% to $78) is overriding a soft CPI beat and clean bank earnings sweep (JPM/GS/BAC/WFC); watch WTI through the 4pm ET toll deadline and Kospi's -5.6% overnight dislocation for confirmation either way.
+lesson: When a scheduled geopolitical catalyst (a blockade/toll with a stated implementation time) lands the same day as routine data (CPI, earnings), the market will trade the geopolitical clock first — treat the scheduled deadline as the actionable level, not the data surprise.
+tags: wolf,pre-market,markets,daily
+confidence: 0.7
+~~~
