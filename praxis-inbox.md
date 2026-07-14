@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: congressional-trading-watch
+decision: attempted to scan Senate eFD, House CHDP, Quiver, CapitolTrades, and Unusual Whales for last-24h PTR filings; every outbound fetch returned HTTP 403, including a non-financial control URL, indicating an environment network-policy block rather than site-specific bot defense
+outcome: zero filings collected — run recorded as void/blocked, not as a quiet trading day; no scored filing to report
+lesson: before scoring any filing, verify the fetch tool can reach a neutral control URL — a 403 on a plain control page (not just the target sites) means the block is environmental and no source in this run should be trusted as "checked and empty"
+tags: wolf,congressional,trading,intel,daily,blocked
+confidence: 0.65
+~~~
