@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-signage
+decision: scanned homebuilder + signage + government + permitting feeds
+outcome: FASTSIGNS' 2026 convention numbers ($900M network sales, Grimco named top vendor) show national franchise competitors consolidating supplier leverage — Brand 9 should benchmark material pricing against that scale rather than compete purely on relationship/speed.
+lesson: Municipal signage RFPs (FL/SC/GA/TX) don't surface reliably via general web search — they live on aggregators like BidPrime/GovDirections, so future cycles should query those directly instead of open search.
+tags: signage,industry,brand9,homebuilders
+confidence: 0.6
+~~~
