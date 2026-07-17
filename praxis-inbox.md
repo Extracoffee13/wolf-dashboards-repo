@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Claude Code /doctor skill/MCP/plugin hygiene auto-fix
+lesson: New capability of real value is showing up more in platform-level Claude Code features (/doctor, stacked-skill invocation) than in one-off third-party MCP servers this cycle; also worth tracking meta-tools like claude-skills-mcp that make skill discovery itself queryable rather than manual.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
