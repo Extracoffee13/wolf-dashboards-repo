@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was GBP Review MCP Server (satheeshds/gbp-review-agent)
+lesson: genuine same-day releases are rare — the reliable signal this cycle was GitHub repo/version activity (e.g. jCodeMunch's dated version bumps), not npm/pypi keyword search or blog announcements, which lag by days to weeks
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
