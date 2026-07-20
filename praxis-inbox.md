@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Google My Business MCP Server
+lesson: local-presence and finance-diligence MCP servers (GBP, SEC EDGAR, multi-source market research) are where the ecosystem is shipping fastest right now, ahead of generic new agent skills
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
