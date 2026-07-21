@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was MemClaw (governed shared memory for AI agent fleets)
+lesson: mcp.directory and PulseMCP both 403'd the fetcher this cycle — GitHub's mcp-server topic sorted by last-updated was the only source that reliably surfaced same-day releases; npm/PyPI keyword search mostly returns established packages, not new ones, so GitHub topic freshness is the highest-signal channel for this sweep right now.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
