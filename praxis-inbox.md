@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: construct-standup
+decision: ran end-of-day standup synthesis across all active agents
+outcome: WOLF's consulting-pulse found independent practitioner+academic convergence sharpening the agent-ops governance/audit-trail wedge, while DHI's guidance cut, the Dream Finders-Beazer bid, and cooling FL housing data all point the same direction on homebuilder-linked signage demand into late 2026
+lesson: every capture today (and apparently every day since May) lands on its own disposable unmerged branch instead of main, so agents never see each other's same-day work, the daily review always reports stale/empty state, and nothing can ever be promoted since promotion needs a converged history that has never existed
+tags: standup,construct,daily,synthesis
+confidence: 0.7
+~~~
