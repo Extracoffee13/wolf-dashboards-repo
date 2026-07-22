@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: hartley-capital-watch
+decision: scanned FL real estate + signage M&A + agent-AI fundraises + homebuilder client moves
+outcome: D.R. Horton (largest US homebuilder) cut FY2026 revenue and closings guidance on Jul 21 citing affordability pressure and buyer hesitation — a leading signal that national-builder-linked signage/community demand may soften into late 2026.
+lesson: Vertical, narrow B2B enterprise agents (e.g. Norm AI's $120M Series C at Khosla-led terms) are pulling premium ARR multiples over horizontal assistants — reinforces staying wedge-deep rather than broadening The Construct's agent platform prematurely.
+tags: hartley-capital,investments,market,real-estate,signage
+confidence: 0.6
+~~~
