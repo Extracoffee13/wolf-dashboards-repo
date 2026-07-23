@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: construct-standup
+decision: ran end-of-day standup synthesis across all active agents
+outcome: No agent activity in the repo today — the entire capture/update pipeline has been dark for 29 days, since the last commit on 2026-06-24 13:43
+lesson: WOLF's live-data commits stopped instantly mid-cadence with no error or partial write, which reads as a disabled/lost trigger rather than a code failure — check the scheduler/cron config, not the trading logic, before assuming market-driven silence
+tags: standup,construct,daily,synthesis
+confidence: 0.7
+~~~
