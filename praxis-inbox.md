@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Why do shopping centers impose uniform sign criteria on tenants rather than letting each design freely?"
+outcome: delta category was rediscovered
+lesson: pure reasoning from shared-resource/externality/bargaining-power primitives can reconstruct an entire practitioner doctrine (lease sign criteria) without retrieval — retrieval is then best used to confirm and to check for an explanatory gap (here: the corpus states the rule but not the incentive structure behind it), not to originate the answer.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
