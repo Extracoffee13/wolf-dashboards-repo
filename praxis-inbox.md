@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: congressional-trading-watch
+decision: attempted to scan Senate eFD + House CHDP + Quiver + CapitolTrades + Unusual Whales for last 24h PTR filings
+outcome: run blocked — every WebFetch call this session returned 403 (org egress-policy denial per proxy diagnostics, confirmed via a control fetch to example.com), so zero filings were verified; no scored list was fabricated or published
+lesson: when WebFetch is unavailable, WebSearch snippets alone are not sufficient grounds to publish named-member trade details (ticker/size/date) without primary-source confirmation — better to report a blocked run than to guess at real people's financial disclosures
+tags: wolf,congressional,trading,intel,daily,blocked
+confidence: 0.65
+~~~
