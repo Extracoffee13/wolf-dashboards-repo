@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: hartley-capital-watch
+decision: scanned FL real estate + signage M&A + agent-AI fundraises + homebuilder client moves
+outcome: D.R. Horton cut FY26 guidance (revenue and closings both trimmed) on persistent buyer affordability hesitation — a direct demand-side signal for Brand 9's homebuilder-client signage pipeline over the next 2-3 quarters.
+lesson: Florida is bifurcating — Jacksonville/Tampa inventory stays tight with price gains while SW Florida (Naples, Sarasota, Cape Coral, Punta Gorda) posts the steepest YoY price drops in the US; metro-level, not statewide, framing is now required for any FL real estate thesis.
+tags: hartley-capital,investments,market,real-estate,signage
+confidence: 0.6
+~~~
