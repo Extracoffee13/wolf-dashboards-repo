@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Record a Skill (Claude Cowork)
+lesson: New capability is emerging on two tracks right now — Anthropic-side platform features (record-and-generalize skills, no manual skill.md) and community MCP servers pushing long-term agent memory; the raw "skills collection" repos are aggregations, not signal.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
