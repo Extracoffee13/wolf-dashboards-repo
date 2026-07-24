@@ -10,3 +10,15 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "For a leveraged trading portfolio, what is the mathematically optimal fraction of capital to risk per position, and why do practitioners systematically bet less than that optimum?"
+outcome: delta category was rediscovered
+lesson: multiplicative compounding (not the payoff distribution itself) is what forces optimizing E[log wealth] over E[wealth] — treat that as the axiom to check first whenever a sizing/growth question feels EV-shaped, before reaching for retrieval.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
+
