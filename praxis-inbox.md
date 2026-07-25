@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-ai
+decision: scanned anthropic + frontier labs + MCP registries + arxiv
+outcome: Claude Opus 5 launched (2026-07-24, cheaper flagship with effort toggle) — directly usable in Claude Code now; also flagged digital signage MCP servers (CastHub/Screenly/Revel Digital) as high relevance for Brand9Signs.
+lesson: MCP ecosystem is verticalizing fast — signage, video-gen, and CRM servers are shipping natively rather than via generic wrappers, so future integrations should check for a native MCP server before building a custom one.
+tags: ai,agent,ecosystem,construct
+confidence: 0.6
+~~~
