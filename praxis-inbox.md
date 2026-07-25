@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 4 candidates found scoring >=3, top one was Timeline MCP (multi-platform content calendar/scheduler)
+lesson: mcp.directory blocks automated fetch (403), so GitHub's mcp-server/claude-skill topic pages are the more reliable discovery surface right now; precise "last 24h" publish timestamps are rarely verifiable from search results alone, so recency claims should stay best-effort.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
