@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Claude Opus 5
+lesson: true last-24h-published skills/MCP servers are rare in search results — most real signal this cycle came from trending/recently-updated projects (Hallmark, Trends-MCP) and platform-level releases (Opus 5) rather than net-new repos, so the sweep should weight recency-of-relevance over strict publish-timestamp freshness.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
