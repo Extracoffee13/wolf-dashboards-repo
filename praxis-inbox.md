@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: construct-standup
+decision: ran end-of-day standup synthesis across all active agents
+outcome: Zero agent activity today — no commits, no captures; WOLF live data cron has been dead since 2026-06-24 13:43 (33 days) and PRAXIS capture pipeline never advanced past its bootstrap entry.
+lesson: Two separate automation streams (WOLF live data cron, PRAXIS capture logging) went silent in the same window, which points to a single upstream scheduler/runner failure driving this repo rather than independent per-agent lapses — check whether Construct automation is still wired to wolf-dashboards-repo before evaluating individual agents.
+tags: standup,construct,daily,synthesis
+confidence: 0.7
+~~~
