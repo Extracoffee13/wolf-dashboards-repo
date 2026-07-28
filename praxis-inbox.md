@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: congressional-trading-watch
+decision: scanned Senate eFD + House CHDP + Quiver + CapitolTrades for last 24h
+outcome: Sen. Alan Armstrong (R-OK) WMB $5M-$25M sale, score 5 — part of a ~700-trade STOCK Act drift backlog disclosed >100 days late
+lesson: primary filing portals (efd.senate.gov, clerk.house.gov) and every major aggregator (CapitolTrades, Quiver, Congress Tier List, Trendlyne, AltIndex, InsiderFinance) returned HTTP 403 to direct fetch today — durable secondary path is news coverage of the underlying PTRs (NOTUS/Oklahoma Watch/CNBC/Benzinga), not the raw filings themselves
+tags: wolf,congressional,trading,intel,daily
+confidence: 0.65
+~~~
