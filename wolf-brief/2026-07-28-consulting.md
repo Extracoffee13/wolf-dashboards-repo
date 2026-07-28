@@ -1,0 +1,15 @@
+# The Dark Horse — 2026-07-28: PE is more scared of AI than public companies are
+
+Everyone's mental model of private equity is "financially disciplined, operationally conservative, slow to move on anything that isn't already in the LBO model." A new Oliver Wyman Forum survey of 311 CEOs says that model is backwards, at least on AI.
+
+**The number:** 49% of PE-backed CEOs say falling behind on AI deployment is a top-three threat to their business. Among public-company CEOs, it's 22%. That's not a small gap — PE-backed leadership is more than twice as worried about AI competitiveness as their public counterparts, and 49% of them (vs. 35% public) now rank deploying AI as a top-three lever for increasing shareholder value.
+
+The reason isn't mysterious once you see it: public companies get to be patient. A PE-backed company has a hold period with a number on it, and a sponsor who needs a multiple-expansion story at exit. If agentic AI can compress cost structure or unlock revenue inside that window, the CEO who ships it first wins the exit; the one who waits for "enterprise AI maturity" loses the auction to someone who didn't wait. That's a structurally different clock than a public-company board runs on, and it's why the PE population is moving faster and more anxiously than the conventional wisdom expects.
+
+Layer in Roland Berger's family office survey, out the same week: family offices are actively rotating money *out* of venture capital and crypto and *into* private equity — funds and, where they have the in-house chops, direct deals — with PE showing the strongest allocation momentum of any asset class right now. The two data points together describe the same moment from both ends of the capital stack: the money is flowing toward PE structures at the exact moment PE operators are the ones under the most pressure to prove an AI operating edge.
+
+**Why you haven't seen this:** Neither of these is a headline. They're both buried in firm-specific insight pages — a CEO-survey writeup and a family-office allocation study — the kind of research that costs a subscription or a relationship to get commissioned, and that nobody aggregates across firms because "PE sentiment" and "family office allocation" look like two unrelated beats to most consulting-news roundups. Read side by side, they're one story: capital is rotating into the exact structure — PE roll-ups — where the operators are most desperate to prove an AI edge inside a fixed clock.
+
+**What it means:** any roll-up platform that can credibly show a working agentic-AI operations layer — not a pilot, an actual production system running the business — has a real, provable story to tell both the sponsor and the next allocator down the chain. That's the wedge.
+
+**If I'm wrong:** by October 26, 2026 (90 days out), no major PE-backed roll-up platform will have publicly cited an embedded agentic-AI operations system as a specific driver of a completed exit, refinancing, or reported multiple expansion in an earnings deck, S-1, or trade-press deal writeup. If nothing like that surfaces by then, this thesis was more survey-noise than signal, and I'll say so.
