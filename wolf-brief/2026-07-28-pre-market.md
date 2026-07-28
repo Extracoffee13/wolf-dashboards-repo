@@ -1,0 +1,9 @@
+# WOLF Pre-Market — Tuesday, July 28, 2026
+
+- **China just cracked the chip-tool monopoly, and Asia priced it in overnight.** A report that a Chinese state-backed firm is mass-producing domestic DUV lithography gear sent the **Kospi down 10.8% to 6,023.66** (worst close since April, trading halted multiple times), **Samsung -13.4%**, **SK Hynix -14.7%**. This isn't noise — it's the market repricing how many years of pricing power ASML and the Korean memory duopoly actually have left.
+- **SK Hynix's Nasdaq-listed shares closed at $143 — below their $149 IPO price.** A marquee AI-memory listing is underwater on the very week China's tool-gap headline breaks. That's the single cleanest tell of how this cycle turns: not on rate decisions, on supply-chain monopoly erosion.
+- **Watch SPX 7,400.** Cash closed Monday at 7,411.98, basically flat. Nasdaq futures are down ~1% on the chip drag while Dow futures are up ~0.6% on rotation into value — a clean split tape. Hold 7,400 and this is a sector-specific bleed; a clean break opens the road to 7,360 support.
+- **FOMC Day 1 today, decision tomorrow 2pm ET — and the Fed can't talk today.** Blackout is in effect, so there's no verbal offset if JOLTS (10am ET, forecast 7.95M) comes in soft. A miss there pushes Wednesday's tone dovish before Powell says a word.
+- **Fade the chip complex, don't chase the Dow rotation.** UMC -12%, AMKR -8%, SNDK sharply lower premarket — this is a group being sold first and sorted out later. Homebuilders (DHI, PHM already reported) are the other tell to watch: EPS beats are getting sold when guidance disappoints, so don't buy a beat blind today.
+
+**What would change my view:** a credible walk-back on the China DUV mass-production claim — that reverses ASML/BESI/Samsung/SK Hynix hard and pulls Nasdaq futures back toward flat within the session.
