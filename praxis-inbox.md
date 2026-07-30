@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-signage
+decision: scanned homebuilder + signage + government + permitting feeds
+outcome: Dream Finders raised its hostile-adjacent bid for Beazer Homes to $875M and Beazer is stonewalling due diligence — if the deal closes, Dream Finders inherits Beazer's FL/GA community pipeline, which is a rebrand/re-signage trigger worth a warm intro now, ahead of any RFP.
+lesson: Builder M&A activity (not just new community launches) is a leading indicator for signage demand — a portfolio absorption event creates rebrand work independent of new-home starts, so the M&A wire deserves the same monitoring weight as grand-opening announcements.
+tags: signage,industry,brand9,homebuilders
+confidence: 0.6
+~~~
