@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: construct-standup
+decision: ran end-of-day standup synthesis across all active agents
+outcome: pipeline dark for 36 days — zero commits, zero PRAXIS captures, zero daily reviews since 2026-06-24; no agent activity to summarize
+lesson: staleness is layered, not uniform — WOLF's internal learning log froze 2026-04-13, scout_state stopped 2026-06-16, the commit bot stopped 2026-06-24, and PRAXIS capture never restarted after its 2026-06-23 bootstrap; each layer of the feedback loop went quiet before the one above it, suggesting a slow unwind rather than a single outage
+tags: standup,construct,daily,synthesis,blocker
+confidence: 0.7
+~~~
