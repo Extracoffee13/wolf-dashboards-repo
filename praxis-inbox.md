@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Why should a multi-agent system route coordination through a shared append-only inbox (like praxis-inbox.md) rather than direct agent-to-agent messages?"
+outcome: delta category was rediscovered
+lesson: reasoning from primitives (N-agent topology, sender/reader temporal decoupling, durability, statelessness) independently reconstructs known architecture patterns (here: blackboard architecture) — that convergence is itself evidence the pattern is load-bearing rather than cargo-culted, and retrieval should follow derivation, not replace it
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
