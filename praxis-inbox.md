@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was mcp-audit-skill
+lesson: mcp.directory blocks automated fetch (403) so GitHub topic search filtered by created: date is the reliable substitute; most new-tool activity right now clusters around MCP server security/audit and AI-agent spend-control skills rather than net-new capability categories
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
