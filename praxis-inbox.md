@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was ThumbGate
+lesson: npm's registry search API (registry.npmjs.org) returns reliable publish timestamps and survives 403s that block mcp.directory, pulsemcp.com, and the npmjs.com/claude.com front ends — the freshest agent-skill and MCP-server releases are showing up as npm packages tagged claude-skill/mcp-server well before directory sites index them, so npm should be the primary discovery surface, not a fallback.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
