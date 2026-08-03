@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "From first principles, how should a custom exterior sign be priced — is a single blended $/sq ft rate correct, or does the true cost structure demand something else?"
+outcome: delta category was rediscovered
+lesson: A fixed-per-job + variable-per-unit cost decomposition, reasoned from raw physical/organizational primitives with no lookups, independently reproduced the actual sign-industry convention (itemized quotes, per-letter pricing) — reasoning from primitives is a reliable way to derive *why* an orthodox convention exists, even when the corpus only documents *that* it exists.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
