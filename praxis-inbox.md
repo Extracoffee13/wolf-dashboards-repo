@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was agent-opfor (adversary emulation for AI agents/MCP servers, owner Sentinel)
+lesson: npm and PyPI have no reliable last-24h filter and yielded nothing usable this cycle; GitHub's topic search sorted by recently-updated is the most dependable proxy for freshness, and indie single-maintainer repos now dominate that feed faster than official/vendor releases do.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
