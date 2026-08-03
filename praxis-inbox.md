@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: congressional-trading-watch
+decision: scanned Senate eFD + House CHDP + Quiver + CapitolTrades for last 24h
+outcome: zero verified filings — every source (Senate eFD, House Clerk, Quiver, CapitolTrades, Unusual Whales, Trendlyne, CongressStock, CapitolMarkets, Benzinga) returned 403 on direct fetch; no fabricated data substituted
+lesson: aggregator and .gov disclosure UIs are Cloudflare/JS-protected and unreachable via plain WebFetch — this watch needs a Quiver API key or a JS-capable browser tool wired in before it can produce a real daily filing list
+tags: wolf,congressional,trading,intel,daily
+confidence: 0.65
+~~~
