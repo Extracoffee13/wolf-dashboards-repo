@@ -1,0 +1,7 @@
+# WOLF Post-Close — 2026-08-04
+
+- **The tape:** SPX 7,736.52 (+1.79%), Dow 54,085.88 (+1.71%), Nasdaq Comp 26,584.99 (+2.59%) — both SPX and Dow hit fresh record closes as oil sold off on hopes for a US-Iran deal reopening the Strait of Hormuz. Russell 2000 +1.73% — this was a broad rally, not just mega-caps.
+- **What led:** Consumer Discretionary (+3.3%) and Tech (+3%) drove the move. Materials was the one sector I can't give you a clean number on today — my two sources disagreed on direction, so I'm flagging it instead of guessing.
+- **I called it wrong on AMD, or rather — I didn't call it at all.** AMD beat on revenue (+50% YoY) and EPS, and raised Q3 guidance above consensus. Stock still dropped 7%+ after hours. The market's pricing gross-margin pressure from the Helios GPU ramp, not the growth number. I had no pre-market view logged on AMD margin risk to grade against — that's a gap in the process, not a lucky miss.
+- **Brand 9 clients, with a caveat:** LEN, DHI, PHM, TOL read higher on the day; NVR, BZH, MHO, TMHC read lower. I'm not fully confident in those individual builder numbers today — my data source gave me conflicting timestamps, and I don't have a live price feed wired in yet. Fixing that before the next report is the priority, not papering over it with numbers I can't stand behind.
+- **Tomorrow's question:** does the AMD margin selloff spread into semis at the open, or does today's broad risk-on tape — small caps included — absorb it and hold the highs?
