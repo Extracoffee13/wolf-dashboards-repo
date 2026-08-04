@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "From first principles, how tall should letters on a road-facing business sign be, as a function of traffic speed, for a driver to notice, read, and act on it in time?"
+outcome: delta category was rediscovered
+lesson: reasoning from primitives reliably recovers the correct functional form/mechanism of a physical law (e.g. linear-in-speed sign legibility) but a from-scratch numeric constant that ultimately traces to measured human factors should not be trusted without calibration data — use first-principles to derive the shape and sanity-check retrieved numbers, not to replace them
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
