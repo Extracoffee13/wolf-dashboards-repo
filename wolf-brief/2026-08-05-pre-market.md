@@ -1,0 +1,9 @@
+# WOLF Pre-Market — August 5, 2026
+
+- **The tape is a Hormuz headline, not a fundamentals story.** S&P 500 futures +0.4% on top of Tuesday's record 7,736.52 close, riding Bessent's "deal today or tomorrow" line on the Strait of Hormuz. Iran hasn't agreed to Bessent's terms. Watch **7,736** — that's the line in the sand; a breakdown in talks sends oil back up and gives the record run back fast.
+- **AMD is today's tell, and it says the AI trade is getting picky.** Beat on every line — $11.54B revenue, $1.66 EPS, Q3 guide raised to ~$13B — and the stock still dropped 8% after hours. Up 140% YTD walking in, priced for perfection, didn't get it. Compare to **Arista (ANET)**, +7.7% to fresh all-time highs on a beat-and-raise. The market isn't rewarding AI capex anymore — it's auditing it.
+- **SpaceX (SPCX) just failed that audit, down ~12% to $111.81** despite a Q2 beat, because capex 6x'd to $18.4B and the CFO's "under one-year payback" line didn't land. This is the cleanest capex-fatigue signal of the week — fade AI-infrastructure names that lead with spend instead of backlog.
+- **SanDisk (SNDK) reports after the bell today** into a hot memory/AI-storage tape (MU, INTC, NVDA all bid alongside it Tuesday). Given the AMD and SPCX reaction pattern, the bar is "beat AND show durable demand," not just beat.
+- **10am ET: ISM Services PMI is the only tier-1 data today.** Manufacturing just printed 55.6, a three-year high — a services beat completes a "no landing" narrative that's already justifying record highs. A miss is the first real crack in an otherwise one-way tape.
+
+**What would change my view:** Iran walks from the Hormuz framework before the open, or ISM Services misses meaningfully — either one flips this from "record-chasing risk-on" to "priced-for-perfection unwind," starting with the names (SPCX, AMD) that already showed they'll get sold on good news.
