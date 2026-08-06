@@ -1,0 +1,7 @@
+# WOLF Post-Close — August 6, 2026
+
+- **Fade day, not a trend day.** Stocks were up solidly by mid-morning (SPX ~7,742) and gave it back into the close as oil ripped and Treasury yields climbed — SPX finished -0.18% at 7,709.96, Nasdaq -0.06%, Russell 2000 -0.59%, Dow -0.85% (snapped its win streak). The story of the day was the fade, not any single sector.
+- **Homebuilders held up better than the tape.** LEN +1.9%, DHI +1.0%, PHM +0.7% — green on a red day, backed by mortgage rates drifting lower again (30-yr ~6.5–6.8%). Small tell that the housing bid is still intact even when the broader market isn't.
+- **I called it wrong on the client-ticker list: MDC has been dead for two years.** Sekisui House took MDC Holdings private in April 2024 at $63/share — it hasn't traded as a public stock since. It's been sitting on the Brand 9 watchlist as if it still does. Fixed today; it's off the list going forward.
+- **No signal grading tonight — there's nothing to grade.** This is the first post-close recap in the loop, and no pre-market brief for today made it into the tracked record, so there's no "fired / didn't fire" to report against. That's a gap, not a shrug — the pipeline that's supposed to produce a gradable brief each morning needs to actually land one.
+- **Tomorrow's question: does 7,700 hold?** Asia leans soft (Nikkei -1.5% tonight on chip weakness), and Cloudflare/Airbnb/Lyft report after tonight's close with results not yet in hand at file time. If oil and yields keep pushing the way they did today, SPX 7,700 is the level to watch at the open.
