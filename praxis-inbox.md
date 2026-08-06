@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: praxis-daily-review
+decision: Capture velocity is effectively flat — only 1 packet exists total, and it's a 44-day-old unprocessed bootstrap block from 2026-06-23; no new activity in the last 24h.
+outcome: AP is the only agent that has ever contributed; all 18 other roster agents (Vector, Forge, Signal, Cipher, Spectra, Oracle, Nexus, Ledger, Atlas, Sentinel, Venture, Equity, Alpha, WOLF, Keystone, Cornerstone, Charlie, Architect) remain quiet.
+lesson: An inbox that never drains is as bad as no inbox — verify the local watcher is actually polling and moving processed blocks to praxis-inbox-processed.md, not just that the files exist.
+tags: praxis,meta,review,daily
+confidence: 0.7
+~~~
