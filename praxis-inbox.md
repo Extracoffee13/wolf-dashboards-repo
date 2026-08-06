@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was disclosures (SEC EDGAR + GLEIF MCP server for corporate diligence)
+lesson: GitHub topic search with created: date filtering was the only source that reliably surfaced same-day activity; mcp.directory and package registries lag actual publish dates by several days, so treat them as secondary confirmation, not the primary discovery channel.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
