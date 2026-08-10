@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Why does the physical sign industry price primarily by square footage rather than by labor hours or flat cost-plus?"
+outcome: delta category was rediscovered
+lesson: When a market converges on a specific pricing unit, check whether an external constraint (regulation, tax code, contract standard) already forces both sides onto that unit before assuming the unit is arbitrary convention — that check is often where the real explanatory power is, not the pricing formula itself.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
