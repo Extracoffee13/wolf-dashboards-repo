@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: construct-standup
+decision: ran end-of-day standup synthesis across all active agents
+outcome: Zero activity found — no commits, no PRAXIS captures, no daily review since 2026-05-01; nothing to report for 2026-08-11.
+lesson: WOLF live-data writes, PRAXIS captures, and git commits to this repo all stopped at the same timestamp (2026-06-24 ~13:43 ET) — three independent systems going dark simultaneously points to one upstream cause (writer process/cron/credential), not three agents idling separately. This repo has been orphaned from the live Construct pipeline for 48+ days.
+tags: standup,construct,daily,synthesis
+confidence: 0.7
+~~~
