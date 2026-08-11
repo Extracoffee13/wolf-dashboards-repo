@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "What is the minimum letter height required for a roadside business sign to be legible/actionable by a driver at a given speed, derived from visual acuity and reaction-time physics?"
+outcome: delta category was rediscovered
+lesson: when a domain rule of thumb (letter-height-per-viewing-distance) can be regenerated from raw physics (visual angle + perception-reaction time), the derivation is worth more than the memorized ratio — it turns a convention into a defensible, tunable formula for non-standard cases instead of a fact to just cite.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
