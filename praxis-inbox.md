@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: pre-market-intelligence
+decision: scanned overnight futures + Asia close + Europe open + day's catalysts
+outcome: SPX/NDX futures flat-to-firm 0.4% under record highs, but the tape is one 8:30am PPI print from re-pricing September Fed odds — watch SPX 7,795 as the pivot and RTY (fresh all-time highs) as the real risk gauge; AMAT after the close is the relevant catalyst for our AMD/NVDA book.
+lesson: When two data providers disagree materially on the same Fed-odds number in the same morning (35% vs 52% Sept hike probability today), that disagreement is itself the signal — it means the print hasn't happened yet and any single-source confidence is false precision. Report the range, not a point estimate.
+tags: wolf,pre-market,markets,daily
+confidence: 0.7
+~~~
