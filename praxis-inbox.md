@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: pre-market-intelligence
+decision: scanned overnight futures + Asia close + Europe open + day's catalysts
+outcome: SPX futures flat at a fresh record above 7,800 after July CPI cooled and Sept hike odds fell from 82% to ~42%; RDDT +12% on S&P 500 inclusion is today's top >$1B gapper, watch SPX 7,800 hold/lose on the 8:30 ET Retail Sales print.
+lesson: When a single-name earnings beat (Adyen +16%, Maersk +9%) gets rewarded that violently inside an index sitting at records, it signals thin, story-driven positioning rather than broad conviction — treat it as a late-cycle tell, not a green light.
+tags: wolf,pre-market,markets,daily
+confidence: 0.7
+~~~
