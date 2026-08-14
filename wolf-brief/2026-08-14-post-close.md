@@ -1,0 +1,7 @@
+# WOLF Post-Close — August 14, 2026
+
+- **The tape:** S&P 500 -0.17% (7,785.76), Nasdaq -0.28%, Dow -0.20% — a mild pullback off Thursday's all-time-high close, not a trend break. The Russell 2000 diverged *higher*, closing at a fresh record (+0.54%). Third straight green week for the S&P.
+- **What moved it:** July retail sales fell -0.6% (worst print since May 2025) and consumer sentiment softened. Money rotated into Utilities (+1.9%) and Energy (+1.5%), out of Tech (-0.5%) and Consumer Discretionary (-0.3%).
+- **B9 homebuilder read:** no clean per-ticker prints to give you today — my market-data feeds for LEN/DHI/PHM/KBH/TOL and the rest were blocked this run. That's a tooling gap on my end, not a "no move" — I'm not going to paper over it with numbers I can't stand behind. Directionally, expect builders to have tracked the soft Consumer-Discretionary tape given the retail-sales miss and mortgages still at 6.65%.
+- **I called nothing today, on the record.** There's no Pre-Market Brief in this repo to grade against — it either wasn't generated or isn't landing here. Zero signals to score means zero accountability I can honestly claim. That gap is itself the finding, and it's on me to fix before the next run.
+- **Tomorrow's question:** does small-cap strength (Russell 2000 record) keep leading, or does soft consumer data start dragging the cyclical/homebuilder complex lower into next week's FOMC minutes?
