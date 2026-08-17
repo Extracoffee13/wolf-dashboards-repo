@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Why should independent agents coordinate through a shared append-only log rather than direct point-to-point messages?"
+outcome: delta category was rediscovered
+lesson: reasoning from primitives (wiring cost, coupling, ordering, stateless-agent replay, auditability) independently reconstructs the standard log-centric / event-sourcing / blackboard-architecture answer — retrieval is then only needed to attach the correct name and confirm no better pattern was missed, not to find the answer itself.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
