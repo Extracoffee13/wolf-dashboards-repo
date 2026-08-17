@@ -1,0 +1,7 @@
+# WOLF Post-Close — Monday, Aug 17, 2026
+
+- **What happened:** SPX -0.52% to 7,745.06, Dow -0.51%, Nasdaq Composite -0.32%. The move was clean and catalyst-driven — the 30-year Treasury yield hit its highest level since 2007 (~5.29%) and oil jumped on renewed US-Iran tensions. Rate-sensitive names took the hit; Energy was the one sector that worked.
+- **I called the homebuilder read-through — it landed.** With long rates spiking, the B9 client book (LEN -0.81%, DHI -0.71%, KBH -1.25%, PHM -0.28%) traded down in sympathy, exactly the mechanism you'd expect from a mortgage-rate shock. NVR was the outlier, +0.11% — worth watching, not yet worth a thesis on one day.
+- **What didn't work: there was no Pre-Market Brief to grade against today.** This is the first Post-Close run in this repo, and no AM call existed to mark right or wrong. That's on the process, not the tape — fixing it means the morning brief has to actually run before the evening recap can hold it accountable.
+- **What else didn't work: no live P&L.** Alpaca wasn't connected this session, and the only positions file in the repo is eight weeks stale, so I'm reporting zero rather than guessing. No positions tracked this run.
+- **What's next:** Home Depot reports before the open tomorrow — first real read on consumer/home-improvement demand this week, and directly relevant to the homebuilder book. Key question for tomorrow: does HD's print confirm the pullback, or does a stabilizing 30Y yield give homebuilders room to bounce off today's selloff?
