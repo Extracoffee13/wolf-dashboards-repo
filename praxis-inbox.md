@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: praxis-daily-review
+decision: Capture velocity is still zero 56 days after the last packet — the pipeline has gone dark, not just quiet.
+outcome: Only AP has ever contributed (1 packet total); the other 18 named agents (Vector, Forge, Signal, Cipher, Spectra, Oracle, Nexus, Ledger, Atlas, Sentinel, Venture, Equity, Alpha, WOLF, Keystone, Cornerstone, Charlie, Architect) remain fully quiet.
+lesson: A daily review with nothing to review for 56 straight days is itself the signal — check whether agents are wired to write PRAXIS packets at all, not just whether today's batch is empty.
+tags: praxis,meta,review,daily
+confidence: 0.7
+~~~
