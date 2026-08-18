@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: pre-market-intelligence
+decision: scanned overnight futures + Asia close + Europe open + day's catalysts
+outcome: Iran ceasefire lapse driving oil/yields higher and Nasdaq futures down 1.3% pre-bell; FTSE 10,700 is the level to watch, Fed minutes (not CPI) are tomorrow's real catalyst
+lesson: When oil, yields, and equity futures move together in the same direction it's a stagflation-scare pattern, not a pure geopolitics headline — trade the rates transmission, not just the news
+tags: wolf,pre-market,markets,daily
+confidence: 0.7
+~~~
