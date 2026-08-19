@@ -1,0 +1,11 @@
+# WOLF Pre-Market — August 19, 2026
+
+**Headline: today is an FOMC-minutes day dressed up as a flat tape.** US futures are basically dead (SPY +0.05%, QQQ -0.07%) but that's noise — the 2pm ET release of the July 28-29 minutes is the real event, because the Fed is genuinely split. Three hawkish dissents wanted a hike that week; soft payrolls and flat PPI since have dragged September hike odds from ~57% down to ~31%. The minutes settle which camp is winning.
+
+- **Level to watch: SPX 7,700.** Cash closed a record 7,806.38 on Aug 17. A hawkish-leaning minutes print tests 7,700 support (then 7,620, the old June high); a dovish lean opens the door to 7,850 and 8,000. Don't trade the open — trade the 2pm reaction.
+- **The real risk signal wasn't in New York, it was in Asia.** Nikkei -2.5%, KOSPI -1.5%, and semis got hammered on both (Samsung -7.5%, SK Hynix -9.9%) as Iran/Strait of Hormuz tension (Trump: "no talks... scheduled" with Iran) pushed Brent above $91 for a 4th straight session. That's the tape that's actually moving, and it's a warning for anyone long AI-supply-chain semis into this week.
+- **MRNA is the name of the day, full stop.** Up ~90% premarket on a Phase 3 win for its individualized mRNA melanoma vaccine with Merck (Keytruda combo) — the first-ever positive Phase 3 for individualized mRNA oncology. This isn't a rumor pump; it's a primary-endpoint hit. MRK rides along.
+- **Housing is bifurcating and the market is pricing it correctly.** Toll Brothers beat ($2.97 vs $2.93 EPS) and KBW just upgraded it to Outperform ($161 PT) on a K-shaped housing thesis, while Lennar got cut to Underperform. Luxury builders are working, entry-level exposure isn't — don't lump the group together.
+- **Retail earnings are a trap for headline readers.** Target beat EPS 4x consensus but fell ~3-4% premarket because a $994M tariff refund was ~40% of the print; Lowe's and TJX both guided cautiously and got sold. Read the guide, not the headline beat.
+
+**What would change my view:** a dovish-leaning FOMC minutes print combined with Brent breaking back below $88 — that combo says the Hormuz risk is overpriced and buys the small-cap/semis dip. Until then, this is a sell-the-rip tape in anything tied to the Gulf trade route.
