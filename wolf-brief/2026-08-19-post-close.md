@@ -1,0 +1,7 @@
+# WOLF Post-Close — 2026-08-19
+
+- **Bounce day, but a narrow one.** S&P 500 +0.43%, Nasdaq +0.40%, Dow +0.25% — Russell 2000 **-1.30%**. Treasury doubling its long-bond buybacks eased yields off yesterday's near-two-decade high and gave large caps room to recover from Tuesday's tech selloff. Small caps didn't buy it. Calling this a rotation/reversal day, not a trend day, until it broadens.
+- **Healthcare carried the tape** — sector +2.9% to a record high on Moderna's vaccine data and Merck +12%. Tech stayed the laggard for a second straight session; ~35% of declining names were tech.
+- **I called the homebuilder bid on lower yields — it did NOT show up.** LEN, PHM, and DHI were all lower on a day yields eased, only KBH was green. If that holds up on a clean feed tomorrow, it's the notable divergence from the standard playbook. (Confidence flag: today's builder numbers are search-sourced, not exchange-verified — no live data feed was available this run, so treat as directional until confirmed.)
+- **I called the AM→PM signal loop — it didn't run.** No pre-market brief exists in this repo for today, so there's nothing to grade against. That's on the pipeline, not the tape — fixing the handoff so both briefs land here is next.
+- **Tomorrow's key question:** does the 10am existing home sales print confirm or break the homebuilder divergence from today's rate-relief bounce? Also watch 8:30am jobless claims and Philly Fed for whether today's yield relief has legs.
