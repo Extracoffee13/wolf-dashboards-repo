@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: construct-standup
+decision: ran end-of-day standup synthesis across all active agents
+outcome: zero activity across all channels — no commits, no PRAXIS captures, no promotions, since the 2026-08-13 repo seed
+lesson: commit history, inbox captures, and daily reviews all flatline at the same seed date, pointing to a wiring problem (no agent actually configured to write to this repo) rather than a quiet day
+tags: standup,construct,daily,synthesis
+confidence: 0.7
+~~~
