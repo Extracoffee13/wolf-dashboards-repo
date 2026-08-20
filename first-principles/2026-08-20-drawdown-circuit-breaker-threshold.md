@@ -201,9 +201,17 @@ The live config in `wolf_live_data.json` is **daily 3.0%, weekly 7.0%** — a ra
 correct already, which was not expected. Two open items:
 
 - The daily gate at 3% sits at the loose end of the derived 2–3% band.
-- **The re-arm rule is unverified.** If WOLF re-arms on a calendar rollover, Step 6 says
-  the breaker is metering a leak at 3%/day rather than stopping one — the single
-  highest-leverage thing to check in the risk stack. Worth an explicit look.
+- **Re-arm rule — checked, partially resolved.** `WOLF_Command_Center.html:165-166`
+  consumes `circuit_breaker.halt_new_entries` from the feed and renders a **`haltDays`
+  counter**, which implies the halt is intended to *persist across days* rather than
+  reset on calendar rollover. That's the Step 6 answer, and it's the right one. Caveat:
+  the trip/re-arm logic itself lives in the WOLF engine, not this repo, so this is
+  inference from the dashboard contract, not confirmation. Worth verifying at the source.
+- **Dashboard bug found while checking.** `HALT_SINCE` is a hardcoded constant
+  (`new Date("2026-05-13T00:00:00Z")`, line 145) rather than being read from the feed, so
+  whenever a halt is active the displayed duration will be wrong — it counts from a fixed
+  date in the past, not from the actual trip. Currently invisible because the breaker is
+  green (`halt_new_entries: false`).
 
 ### Commentary
 

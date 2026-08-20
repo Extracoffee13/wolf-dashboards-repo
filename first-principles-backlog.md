@@ -13,8 +13,10 @@ the corpus. Move a question to **Spiked** when its artifact lands in `first-prin
 - What is the correct failure mode for an agent that cannot verify its own output?
 
 ### Hartley Capital / WOLF
-- Does WOLF's circuit breaker re-arm on calendar rollover? *(Direct follow-up from the
-  2026-08-20 spike — flagged as the highest-leverage unverified item in the risk stack.)*
+- Confirm at the WOLF engine source whether the circuit breaker re-arms on calendar
+  rollover. *(2026-08-20 spike checked the dashboard: the `haltDays` counter implies the
+  halt persists across days, which is correct — but the trip/re-arm logic is not in this
+  repo, so it remains inference.)*
 - What is the right position-sizing rule for a portfolio whose edge decays at an unknown
   rate?
 - What makes a position size "too large" independent of any volatility estimate?
