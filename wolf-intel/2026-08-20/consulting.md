@@ -82,6 +82,38 @@ described.
   (technology : process redesign : capability building). Unverified, and the
   most load-bearing claim to check first when access is restored.
 
+The arXiv scanner returned more, and more specific, candidates — real-looking
+IDs cross-checked against each other (one wrong ID, arXiv:2608.09256, was
+caught and corrected to 2608.09251), with dates inferred from ID position
+rather than a fetched submission date. No abstract page was opened, so none
+of the reported findings or statistics below are confirmed:
+
+- arXiv:2608.14588, "The Hallucination Snowball" — multi-agent LLM pipelines,
+  error propagation across handoffs, tested on a 4-agent financial-analysis
+  pipeline (FinanceBench). Most directly on-theme for (C) if real: argues
+  end-of-pipeline review is close to useless and verification belongs at
+  every handoff. Est. ~Aug 14.
+- arXiv:2608.13926, "Never the Number" — structural abstention for LLM
+  systems whose output is consumed as fact (text-to-SQL / agent actions);
+  proposes generation should never sit in the value-return path. Est.
+  ~Aug 13-14.
+- arXiv:2608.12236, "How Organizations Use AI: Evidence from ChatGPT" —
+  Chatterji, Holtz, Rakholia, Tambe, Weeratunga; ChatGPT Enterprise telemetry
+  linked to firm financials, adoption concentrated in larger/higher-SG&A/R&D
+  firms. Plausible as real work (these authors have published adjacent
+  ChatGPT-usage research before) but unconfirmed here. Est. ~Aug 12, likely
+  just outside the window.
+- arXiv:2608.13871, "Financial Technologies, Labor Markets, and Wage
+  Inequality: Evidence from Instant Payment Systems" — Brazil's Pix rollout,
+  wage gains concentrated in small, cash-intensive establishments. Est.
+  ~Aug 13-14.
+- arXiv:2608.09988, "OpenPM" — point-in-time-audited LLM portfolio-management
+  agent benchmark; reported finding that analyst/selection quality dominates
+  constructor choice. Est. ~Aug 10, likely outside the window.
+
+If access is restored, verify 2608.14588 and 2608.12236 first — they're the
+best fit for (C) and (B) respectively if the reported content holds up.
+
 ## Required fix
 
 Either:
