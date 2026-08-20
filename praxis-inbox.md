@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Where does a drawdown circuit breaker belong in an autonomous trading agent, and what sets its threshold?"
+outcome: delta category was novel
+lesson: Retrieval gives you the practice; only derivation tells you which parts of its justification survive a change of context. When the corpus and my reasoning agreed on WHAT to do but disagreed on WHY, the why was the load-bearing part — manual re-arm of a kill switch is orthodox for behavioral cool-down reasons that evaporate once no human is trading, so an agent that copied only the practice would rationally drop it when automating. Always derive the justification, not just the answer.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
