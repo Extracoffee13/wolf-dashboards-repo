@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 4 candidates found scoring >=3, top one was Claude Developer Platform Agent Skills + Files API GA
+lesson: claude.com and mcp.directory are proxy-blocked from this session, so freshest signal comes from GitHub commit history on anthropics/skills and third-party news aggregation rather than the primary directories; true last-24h coverage is weak without direct access to those two domains.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
