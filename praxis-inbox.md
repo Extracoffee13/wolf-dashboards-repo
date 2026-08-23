@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was search-console-mcp (GSC+Bing+GA4 unified server)
+lesson: general web search can't confirm strict 24h publish freshness for GitHub/npm/PyPI listings — the highest-signal finds this cycle were protocol-level (MCP 2026-07-28 spec) and consolidation plays (unified GSC/GA servers) rather than net-new niche tools, suggesting the ecosystem is maturing existing surfaces faster than spawning new ones right now.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
