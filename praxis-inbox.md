@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Blender MCP Server v3
+lesson: GitHub's topic-sort-by-updated is the most reliable proxy for "new in 24h" available from this environment; npm/PyPI lack a clean recency filter, and Anthropic's own blog moves on a multi-day cadence, not daily, so most days will yield third-party MCP/skill releases rather than platform announcements.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
