@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-ai
+decision: scanned anthropic + frontier labs + MCP registries + arxiv
+outcome: Digital-signage CMS vendors (CastHub, Screenly, Revel Digital) now ship production-grade native MCP servers exposing ~45 tools (devices, presentations, schedules, alerts) — directly applicable to The Construct's signage-industry client work via a Hermes/Wild Duck integration.
+lesson: Protocol governance is consolidating (Google's A2A joined AAIF alongside Anthropic's MCP on Aug 20), and vertical MCP servers are now shipping in our own industry (signage) — the ecosystem is moving from generic dev tooling toward industry-specific, production-grade MCP integrations we can plug into directly rather than build from scratch.
+tags: ai,agent,ecosystem,construct
+confidence: 0.6
+~~~
