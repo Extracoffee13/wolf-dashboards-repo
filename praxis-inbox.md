@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-signage
+decision: scanned homebuilder + signage + government + permitting feeds
+outcome: Toll Brothers opened a new Jacksonville community (Mariposa at Everrange) despite a soft national print, and Jacksonville has a live "Arlington Gateway Monument Sign" government bid open now — both are direct, local opportunities for Brand 9.
+lesson: True last-24h signage-industry news is thin; the highest-signal cadence is monthly (NAHB HMI) and weekly (builder earnings, local gov bid boards, franchise M&A) — this report should widen its lookback to ~7 days rather than strictly 24h to stay useful.
+tags: signage,industry,brand9,homebuilders
+confidence: 0.6
+~~~
