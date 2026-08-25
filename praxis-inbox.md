@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: construct-standup
+decision: ran end-of-day standup synthesis across all active agents
+outcome: no agent activity or commits landed today; standup instead surfaced that the capture pipeline has been dormant for 62 days (one bootstrap packet since 2026-06-23, no commits since 2026-06-24)
+lesson: a self-improving loop with no scheduled trigger driving it isn't self-improving, it's idle — the 2026-05-01 daily review predicted exactly this dormancy and nothing was watching until this external standup job came looking
+tags: standup,construct,daily,synthesis
+confidence: 0.7
+~~~
