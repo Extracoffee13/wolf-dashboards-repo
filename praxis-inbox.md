@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: pre-market-intelligence
+decision: scanned overnight futures + Asia close + Europe open + day's catalysts
+outcome: SPX futures ~7,672 grinding green into NVDA's Wednesday print; DKS -13% on a guide cut (EPS $3.50 miss, FY guide $11-12 vs $14.28 street) is the consumer-discretionary tell to watch.
+lesson: Asia chip weakness (KOSPI -3.1%, Hang Seng Tech -3.9%) showed up a full session before NVDA's earnings print — overnight Asia chip tape is a leading signal into a US mega-cap semis print, not just a post-print confirmation.
+tags: wolf,pre-market,markets,daily
+confidence: 0.7
+~~~
