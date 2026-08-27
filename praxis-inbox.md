@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was away-mode (autonomous task-list skill)
+lesson: GitHub's created:> date filter is the only reliable way to bound results to 24h; npm/PyPI/anthropic.com/news lack a clean recency filter this cycle, so most fresh signal is showing up as new claude-skill/mcp-server topic repos on GitHub rather than blog announcements
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
