@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: congressional-trading-watch
+decision: attempted to scan Senate eFD + House CHDP + Quiver + CapitolTrades for last 24h; all five specified sources (plus alternate aggregators tried) returned EGRESS_BLOCKED from this environment's network proxy, so fell back to indexed web search only
+outcome: Pelosi (D) buy of Bloom Energy (BE) + add to Intel (INTC), score 5 — the only filing corroborated across multiple news sources; no comprehensive last-24h list could be produced
+lesson: this environment's egress policy blocks every congressional-trading source (primary and aggregator) by domain; a real daily scan needs an allowlist entry or an API-based source before this task can run as designed — search-snippet fallback cannot enumerate filings, only surface what's already been written about
+tags: wolf,congressional,trading,intel,daily
+confidence: 0.65
+~~~
