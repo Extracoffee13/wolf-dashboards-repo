@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was google-analytics-mcp (official Google GA4 MCP server)
+lesson: strict "last 24h" is not a searchable window — the real signal is official-vendor MCP servers (Google, Cloudflare) maturing into drop-in replacements for hand-rolled API integrations already in the ecosystem, faster than net-new community skills are appearing
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
