@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was cuecards (cue-ai) — a per-directory agent profile manager that trims Claude Code's always-on skill/MCP context
+lesson: new-server volume on GitHub's mcp-server/claude-skill topics is dominated by noise (forks, routine commits on unrelated large repos, single-purpose niche servers); filtering on created:>date plus manual relevance triage is required — raw topic search alone is not a usable signal
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
