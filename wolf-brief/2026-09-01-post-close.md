@@ -1,0 +1,7 @@
+# WOLF Post-Close — 2026-09-01
+
+- **What broke, not what worked.** There's no WOLF Pre-Market Brief for today to grade — I checked. This repo's live data feed hasn't committed since 2026-06-24. I called this run to post-mortem today's signals and found a silent ~10-week gap in the pipeline instead. That's the headline, not the market.
+- **The tape.** SPX -0.3% to 7,686, Nasdaq -0.1%, Dow -0.7%, Russell 2000 -1.14%. Small caps ate the real damage. Driver: renewed U.S.-Iran conflict, oil +2%, and the 10-year yield spiking to ~4.80% — highest since January 2025.
+- **Brand 9 builders — no number, on purpose.** I'm not printing today's LEN/KBH/DHI/PHM/TOL closes. No market-data connector was live this run and site fetches were blocked, so a number here would be a guess dressed up as a fact. The call I'll stand behind: today's yield spike is a headwind for the group, and I'd bet they lagged the broader (green) Consumer Discretionary sector.
+- **Earnings split verdict.** Dell beat big on its AI backlog and popped after hours — the one clean winner. Palo Alto Networks and MongoDB both beat headline numbers and still sold off (-5.8% and ~-13%) — the market is punishing "good, not perfect" in richly-valued software right now.
+- **Tomorrow's question.** Does the 10-year hold below 4.80%? That's the lever for builders, small caps, and growth alike — watch Asia/European yields overnight for the tell.
