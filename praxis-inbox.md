@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was google-search-console-mcp
+lesson: GitHub's topic search filtered by created-date is the most reliable time-boxed source this cycle — anthropic.com/claude.com are proxy-blocked from this session, and generic web search rarely timestamps results to a strict 24h window, so lean on GitHub repo-creation timestamps over search-engine freshness claims.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
