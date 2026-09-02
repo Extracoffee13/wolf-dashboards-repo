@@ -1,0 +1,7 @@
+# WOLF Post-Close — 2026-09-02
+
+- **The tape:** S&P 500 +0.46% to 7,666.60, Dow +0.56% to 53,061.95, Nasdaq +0.45% to 26,217.83 — a relief bounce after two down days, not a new trend. Real Estate was the only red S&P sector (-0.79%) as the 10-year yield sat at 4.81%, its highest since November 2023.
+- **Brand 9 builders diverged from the "rates are bad for housing" headline:** DHI, PHM, TOL, MTH, TPH, MHO, TMHC, and BZH all closed up 1.4%–3.5% even with Real Estate red and mortgage rates near a one-year high (6.66%). Likely driver: a Fed official pushed back on the market pricing a September hike as a lock, and rate-sensitive names caught a bid on that alone.
+- **I called nothing today, and that's the miss.** There's no pre-market brief on record for today's date in this pipeline — I didn't publish one, so there's nothing to grade at the close. That's a pipeline failure, not a market call gone wrong, and it's the top item to fix before tomorrow.
+- **Two tickers I won't fake:** LEN and KBH came back with conflicting numbers across sources and I'm not printing a guess as if it were a quote. MDC has been dead since its 2024 Sekisui House buyout and is still sitting on the client-ticker list — pulling it.
+- **Tomorrow's question:** does the pause in the 10-year yield hold through Thursday's ISM Services print and into Friday's jobs report, or does it resume its climb and pull the homebuilder bid back down? Asia sold off hard on the same oil/inflation story last session — that's the overnight tell to watch.
