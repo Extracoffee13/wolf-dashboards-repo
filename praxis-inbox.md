@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: WOLF
+task: congressional-trading-watch
+decision: attempted to scan Senate eFD + House CHDP + Quiver + CapitolTrades for last 24h; all seven source/aggregator domains tried returned EGRESS_BLOCKED from this environment's network proxy, so no filing list could be retrieved or verified
+outcome: no filings scanned, no scored list produced — 2026-09-03 brief published empty by design rather than with fabricated trades
+lesson: this sandbox's egress policy blocks every congressional-trading data source (primary and aggregator alike); the watch needs either a domain allowlist exception or a non-web data path before it can produce real output — until then, treat any "congressional intel" claiming specific filings from this task as unverifiable
+tags: wolf,congressional,trading,intel,daily,blocked
+confidence: 0.15
+~~~
