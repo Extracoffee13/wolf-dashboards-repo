@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Why does channel-letter signage price per letter/inch of letter height rather than per square foot of face area, and is that pricing primitive actually tracking the real cost driver?"
+outcome: delta category was novel
+lesson: reasoning from cost decomposition (which invariant — perimeter vs. area — actually dominates the labor/material split) surfaces mechanisms the corpus states as folklore without resolving; retrieval alone would have repeated the industry's own unreconciled claims rather than explaining them
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
