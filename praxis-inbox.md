@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-signage
+decision: scanned homebuilder + signage + government + permitting feeds
+outcome: Dream Finders' $2.2B acquisition of Beazer Homes (closing Q4 2026) will force monument, sales-center, and wayfinding rebrands across ~520 communities in the Southeast — a concrete Q4/Q1 pipeline lead for Brand 9.
+lesson: Builder M&A consolidation is the leading indicator for signage rebrand demand — track deal pipelines (NAHB M&A survey, DFH/Beazer-style mergers) as a proxy for upcoming EGD/monument RFP volume, not just new community launch counts.
+tags: signage,industry,brand9,homebuilders
+confidence: 0.6
+~~~
