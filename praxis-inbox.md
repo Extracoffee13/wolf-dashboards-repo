@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Why do commercial real estate leases commonly use a triple-net (NNN) structure instead of a gross lease?"
+outcome: delta category was rediscovered
+lesson: incentive/agency-theory primitives (least-cost avoider, adverse selection, risk-premium pricing) reliably reconstruct standard contract structures; jurisdiction-specific facts (tax treatment, statutory rules) are lookups, not derivable, so reasoning and retrieval are complements, not substitutes.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
