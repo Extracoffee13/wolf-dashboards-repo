@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 4 candidates found scoring >=3, top one was Claude Commerce Agents (anthropics/commerce-agents)
+lesson: direct fetches to anthropic.com/news and mcp.directory are egress-blocked from this environment, so the sweep depends on web search coverage of those sources rather than reading them first-hand — treat freshness as best-effort, not guaranteed 24h.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
