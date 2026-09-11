@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was tallybook
+lesson: PulseMCP has paused new listings and Anthropic's own news cycle moves in bursts (nothing in the last 24h since the Sept 1 Fable 5.1 drop), so GitHub repo-creation search (topics claude-skill/mcp-server, created:>yesterday) is currently the highest-signal channel for daily discovery, not the directory sites.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
