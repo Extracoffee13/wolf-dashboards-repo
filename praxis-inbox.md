@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: hartley-capital-watch
+decision: scanned FL real estate + signage M&A + agent-AI fundraises + homebuilder client moves
+outcome: Dream Finders Homes (Jacksonville) is pressing a $2.2B Beazer Homes takeover while Lennar reports Q3 earnings Sep 16-17 with EPS consensus down ~35% YoY — builder consolidation is concentrating future signage/branding spend into fewer, larger accounts right as the largest client relationship shows margin strain.
+lesson: Homebuilder M&A activity (Dream Finders/Beazer) is a leading indicator for where future signage account volume will concentrate — watch acquirer pipelines, not just existing client health, when sizing the homebuilder-client thesis.
+tags: hartley-capital,investments,market,real-estate,signage
+confidence: 0.6
+~~~
