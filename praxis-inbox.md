@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was skills-mcp (gengirish, MCP server aggregating ~9,000 agent skills for search/install)
+lesson: no source cleanly filters to a true 24h window right now (PulseMCP/mcp.directory has new-listing ingestion paused), and several "trending" skill-catalog repos are the same template forked across many personal accounts rather than independent traction — verify fork/star provenance before trusting a repo's apparent popularity.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
