@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Why do standard real-estate appraisal frameworks split valuation into cost, sales-comparison, and income approaches instead of one canonical value, and which should dominate for a given asset class?"
+outcome: delta category was rediscovered
+lesson: cheapest-substitute reasoning (a buyer never pays more than the best available substitute) reliably regenerates market-structure doctrine from scratch — retrieval is only needed to confirm coverage and catch the one extension (here, cost/income gap as a supply-arbitrage signal) that the corpus doesn't already state
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
