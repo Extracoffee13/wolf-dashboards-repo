@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 4 candidates found scoring >=3, top one was anthropics/claude-plugins-official (Anthropic's own curated plugin directory)
+lesson: The highest-signal new releases this cycle are agent-coordination infrastructure (Anthropic's official plugin directory, agentproto's inter-session message_send/inbox_wait primitives) rather than single-purpose task skills — future sweeps should check claude-plugins-official first as a trusted source, and watch agentproto's inbox_wait pattern as a possible backbone for Construct's dispatch/verify loop.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
