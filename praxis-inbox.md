@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Why do municipal sign ordinances cap monument/pole sign height and require setback from roads/intersections?"
+outcome: delta category was rediscovered
+lesson: Framing a "why does this rule exist" question as a constrained engineering problem (moving observer, fixed hazard, limited attention budget) recovers the real regulatory structure (two independent mechanisms, not one) faster than trying to recall the rule itself — reasoning from mechanism beats reasoning from memory of the rule.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
