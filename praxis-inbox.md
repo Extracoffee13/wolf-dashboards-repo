@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: construct-standup
+decision: ran end-of-day standup synthesis across all active agents
+outcome: Quiet day — zero commits, zero agent captures; repo silent since 2026-06-24
+lesson: Routines keep firing on an empty repo (~96 days since last commit), so a quiet standup can't distinguish "no work" from "capture sync broken"; verify the watcher-to-repo path.
+tags: standup,construct,daily,synthesis
+confidence: 0.7
+~~~
