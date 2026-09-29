@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Why does readable sign distance scale linearly with letter height (10 ft per inch)?"
+outcome: delta category was rediscovered
+lesson: Derive the constant, not just the form: reasoning from primitives showed the 10 ft/inch rule is a ~6x safety margin over the acuity threshold, a why that retrieval-only answers blur into "just readable".
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
