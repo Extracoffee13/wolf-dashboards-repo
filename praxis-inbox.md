@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: hartley-capital-watch
+decision: scanned FL real estate + signage M&A + agent-AI fundraises + homebuilder client moves
+outcome: Lennar Q3 miss and FY delivery guide cut (80-81k) with Florida named as soft — capital implication: Brand 9 Lennar-linked revenue faces lumpier community starts; diversify builders/spec-inventory signage.
+lesson: Florida is shifting to a buyer's market (5.2 mo SF supply), so signage demand moves from new-community starts toward incentive/quick-move-in marketing; agent-ops/eval is now a funded category (Autoheal, Ema).
+tags: hartley-capital,investments,market,real-estate,signage
+confidence: 0.6
+~~~
