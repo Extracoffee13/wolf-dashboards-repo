@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Claude Sonnet 5.5 / Opus 5.5 model release (tie with Claude Plugins directory); npm/pypi/mcp.directory unreachable this run
+lesson: New capability this cycle is arriving via platform packaging (Claude Plugins bundling MCP + skills) and governance/memory MCP servers rather than standalone skills.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
