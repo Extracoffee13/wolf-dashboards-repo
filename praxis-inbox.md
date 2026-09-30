@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Why does letter height set legible distance, and what ratio should B9 size signs to?"
+outcome: delta category was rediscovered
+lesson: Derive the governing law (here, angle = height/distance) before retrieving; the corpus usually gives a bare rule of thumb, while the derivation tells you which regime the rule applies to and what input (decision distance) to size from.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
