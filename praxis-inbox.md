@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Build plugins for Claude (mcp.directory blocked; npm/pypi/claude-skill topic unreachable)
+lesson: This cycle the signal came from Anthropic's own blog/news (plugins, Sonnet 5.5, Claude Tag) rather than community registries, several of which were unreachable from the sandbox.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
