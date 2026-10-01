@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 3 candidates found scoring >=3, top one was mcp-server-excel (coverage partial: web search + GitHub topic only)
+lesson: New MCP servers are emerging as first-party vendor integrations (Maxon C4D) and security/vetting tooling, not as drop-in upgrades for existing skills.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
