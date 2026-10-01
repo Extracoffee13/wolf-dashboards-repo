@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Why does price per sqft rise sharply from flat panel to monument/dimensional sign?"
+outcome: delta category was rediscovered
+lesson: Decompose a cost into how each component scales (area, volume, count, fixed) before consulting the corpus; that decomposition predicts the standard answer and exposes where headline metrics like per-sqft mislead.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
