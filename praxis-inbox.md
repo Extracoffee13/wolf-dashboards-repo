@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "What should the pricing unit of a custom sign be?"
+outcome: delta category was rediscovered
+lesson: Derive the cost structure and write falsifiable predictions before retrieval; then the corpus check validates or refutes them instead of just anchoring you.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
