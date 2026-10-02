@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-ai
+decision: scanned anthropic + frontier labs + MCP registries + arxiv
+outcome: Claude Code 2.1.287 (Oct 1) ships "mods" (TypeScript plugins that replace or extend CLI behavior) plus MCP URL-prompt changes — applicable to The Construct: yes, could host Praxis/gatekeeper hooks; verify MCP servers still connect after the update.
+lesson: The agent ecosystem is moving toward extensible harnesses (mods/plugins/MCP) and vertical MCP servers, with real-estate CRMs and video tools already exposing them; our leverage is in wiring them, not in model choice.
+tags: ai,agent,ecosystem,construct
+confidence: 0.6
+~~~
