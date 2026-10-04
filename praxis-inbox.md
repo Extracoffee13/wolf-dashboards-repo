@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-ai
+decision: scanned anthropic + frontier labs + MCP registries + arxiv
+outcome: Claude Code Projects (parallel threads, shared memory) + mods (Oct 1) — applicable: yes, maps onto Construct fan-out/verify layer and could replace ad-hoc hooks.
+lesson: The agent ecosystem is moving toward durable, stateless, hosted infrastructure (MCP stateless spec, durable-execution startups, governed harnesses) rather than new raw model capability.
+tags: ai,agent,ecosystem,construct
+confidence: 0.6
+~~~
