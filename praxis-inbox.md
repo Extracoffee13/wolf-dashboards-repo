@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 2 candidates found scoring >=3, top one was Claude Code mods
+lesson: This cycle the useful releases came from first-party Anthropic platform surfaces (Claude Code mods, vertical plugins), while the GitHub mcp-server topic feed was mostly low-signal remote-exec and memory servers; npm/PyPI/mcp.directory were not directly queryable this run.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
