@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-signage
+decision: scanned homebuilder + signage + government + permitting feeds
+outcome: Berkshire consolidating homebuilders (Taylor Morrison acquired, Lennar stake ~10.9%); Brand 9 should secure preferred-vendor status with Lennar and Taylor Morrison before procurement centralizes.
+lesson: Search aggregators surface few Southeast municipal signage RFPs; direct portal monitoring is needed, while builder consolidation and franchise expansion are the main market signals this cycle.
+tags: signage,industry,brand9,homebuilders
+confidence: 0.6
+~~~
