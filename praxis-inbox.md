@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Why should sign letter height scale linearly with viewing distance, and what is the constant?"
+outcome: delta category was rediscovered
+lesson: Derive the mechanism before retrieving the rule; the derivation tells you which parameters (speed, contrast, viewer acuity) the retrieved rule silently fixes, so you know when it stops applying.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
