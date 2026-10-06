@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 3 candidates found scoring >=3 (all marginal, score 3), top one was comfyui-mcp; mcp.directory blocked by proxy, pypi not scanned, nothing scoring 4-5
+lesson: New tooling this cycle is clustering in agent-harness/context-config tooling (mcp-ts-core, ctxlint, harness generators) rather than domain skills for signage or finance.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
