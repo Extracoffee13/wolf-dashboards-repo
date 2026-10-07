@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: construct-standup
+decision: ran end-of-day standup synthesis across all active agents
+outcome: Quiet day: no commits or agent captures; WOLF live-data feed silent since 2026-06-24.
+lesson: The inbox, daily review and standup only report on each other, so a dead capture pipeline looks identical to a quiet day; add a heartbeat check independent of content.
+tags: standup,construct,daily,synthesis
+confidence: 0.7
+~~~
