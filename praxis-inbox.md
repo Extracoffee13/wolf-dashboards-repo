@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "What letter height is needed to read a sign at distance d?"
+outcome: delta category was rediscovered
+lesson: Derive the physical limit first, then treat each corpus rule of thumb as a point on a context-dependent safety-factor family; retrieval gives the numbers but reasoning explains why they disagree.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
