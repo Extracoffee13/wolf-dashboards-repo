@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Why does a custom sign cost what it costs? What is the minimal primitive pricing model?"
+outcome: delta category was rediscovered
+lesson: Write the first-principles derivation to disk before issuing any search call; otherwise the "independent" derivation can't be verified as uncontaminated, and the spike's validation value is weakened.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
