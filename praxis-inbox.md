@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 4 candidates found scoring >=3, top one was seoonpage/seo-mcp-server (coverage partial: only GitHub topic feed returned usable data; creation dates unverified)
+lesson: New MCP servers are emerging almost entirely as GitHub repos tagged mcp-server (SEO, analytics, memory, security tooling); no new Anthropic skill releases surfaced, and vendor adoption of the 2026-07-28 MCP spec is the dominant ecosystem story.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
