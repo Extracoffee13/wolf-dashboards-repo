@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was caura-ai/caura (shared agent-fleet memory)
+lesson: New agent tooling is emerging mostly as GitHub-first MCP servers around agent memory, accountability and computer-use; npm/pypi/directory listings lag and were not directly queryable this cycle.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
