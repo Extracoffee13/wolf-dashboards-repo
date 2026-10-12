@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "What is the minimal correct pricing primitive for a custom sign job?"
+outcome: delta category was rediscovered
+lesson: Reasoning from primitives reliably recovers the structure of a domain but not its empirical constants (burdened labor %, category markups); use first-principles for architecture and retrieval for calibration numbers.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
