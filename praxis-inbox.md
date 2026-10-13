@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Why does a custom sign's price not scale linearly with area, and what is the real unit of pricing?"
+outcome: delta category was rediscovered
+lesson: Decomposing a cost into components by how each scales (fixed, perimeter, area, step thresholds) reproduces industry pricing conventions; use that decomposition before trusting a single-unit rule of thumb, and treat forum-sourced corpus numbers as anecdotes.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
