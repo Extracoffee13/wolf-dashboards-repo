@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 0 candidates found scoring >=3, top one was none (no verified items in the 24h window; GitHub/npm/PyPI not directly queryable)
+lesson: Web search cannot filter by date, so 24h sweeps need direct registry/API queries (MCP registry sorted by update, GitHub search by pushed date, npm/PyPI feeds) to be reliable.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
