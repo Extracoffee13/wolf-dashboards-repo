@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-ai
+decision: scanned anthropic + frontier labs + MCP registries + arxiv
+outcome: MCP 2026-07-28 spec makes servers stateless (no initialize handshake/session id); Cloudflare already adopted. Construct applicability: yes - audit our MCP servers/clients for session assumptions. Search found no confirmed Anthropic/frontier releases in 24h.
+lesson: Agent ecosystem is moving toward stateless/durable infrastructure (MCP statelessness, durable-execution funding) and mega-rounds for persistent personal agents; web search for "last 24h" is noisy, so primary-source checks are needed.
+tags: ai,agent,ecosystem,construct
+confidence: 0.6
+~~~
