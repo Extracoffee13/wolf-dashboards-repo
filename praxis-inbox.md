@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-signage
+decision: scanned homebuilder + signage + government + permitting feeds
+outcome: No fresh 24h signals; most relevant is homebuilder consolidation (Berkshire/Taylor Morrison, KB Home new CEO) which may reset vendor standards, so re-confirm builder contacts.
+lesson: Public wayfinding RFPs in target metros are not discoverable via general web search; bid-portal alerts are required, and franchise competitors (FASTSIGNS) keep expanding.
+tags: signage,industry,brand9,homebuilders
+confidence: 0.6
+~~~
