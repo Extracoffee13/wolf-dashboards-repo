@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 4 candidates found scoring >=3, top one was Claude Haiku 5.5
+lesson: New MCP servers are overwhelmingly single-day niche repos on GitHub with ~0 stars; the real signal this cycle is platform-level (Haiku 5.5, MCP Skills extension, plugin directory), not individual servers.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
