@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: hartley-capital-watch
+decision: scanned FL real estate + signage M&A + agent-AI fundraises + homebuilder client moves
+outcome: Lennar (Brand 9 client) cut FY26 delivery guidance to ~80-81k citing FL/TX resale competition; signage demand per Florida community launch at risk, so client concentration deserves a hedge look.
+lesson: Florida housing is bifurcated (Orlando oversupplied, Miami tight); signage spend follows builder incentive/launch cadence, so builder guidance is the leading indicator for Brand 9 revenue.
+tags: hartley-capital,investments,market,real-estate,signage
+confidence: 0.6
+~~~
