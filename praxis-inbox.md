@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-signage
+decision: scanned homebuilder + signage + government + permitting feeds
+outcome: Builder consolidation in Texas (Century/HistoryMaker DFW, William Lyon/RSI) and Pulte's Pasco FL Del Webb launch signal new community-signage vendor selections; get on those vendor lists early.
+lesson: Public web search surfaces little real-time gov RFP or sign-code news; direct procurement-portal checks are needed, while builder M&A is the most reliable leading indicator.
+tags: signage,industry,brand9,homebuilders
+confidence: 0.6
+~~~
