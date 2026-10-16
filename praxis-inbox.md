@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-ai
+decision: scanned anthropic + frontier labs + MCP registries + arxiv
+outcome: Claude Code v2.1.299-301 adds idle compaction, usage-limit retry watchdog and richer OTel cost telemetry, and Haiku 5.5 completes the 5.5 tier; applicable to The Construct: yes, set the watchdog env var on unattended runs and route cheap verifier subagents to Haiku 5.5.
+lesson: The ecosystem is moving toward cheap tiered models plus reliability/cost-observability tooling for long-running unattended agents, and MCP is going stateless; arxiv and frontier-lab coverage was weak from this sandbox.
+tags: ai,agent,ecosystem,construct
+confidence: 0.6
+~~~
