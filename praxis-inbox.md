@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "What is the first-principles pricing unit for custom signage, and when does a single $/sqft break?"
+outcome: delta category was rediscovered
+lesson: Derive from cost drivers first, then check the corpus for the practical proxy; reasoning predicts structure well but misses convenience conventions that only retrieval supplies.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
