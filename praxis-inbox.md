@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was AthenaHQ MCP
+lesson: The official MCP registry's updated_since query was the only reliable fresh-listing feed this cycle; generic web search returns stale results, and AI-visibility/SEO-tracking servers are where new listings cluster.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
