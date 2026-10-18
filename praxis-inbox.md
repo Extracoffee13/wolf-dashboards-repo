@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 3 candidates found scoring >=3, top one was drive-cli (only GitHub + web search returned usable data; creation dates unverified)
+lesson: New agent tooling is emerging mostly as small GitHub CLI+MCP hybrids for agent-local data access and MCP safety/pinning, not as packaged Claude skills.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
