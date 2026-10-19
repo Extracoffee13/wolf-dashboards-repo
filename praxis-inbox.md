@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "What is the true primitive pricing unit for custom signage: area, process step, or risk?"
+outcome: delta category was rediscovered
+lesson: Write the derivation before issuing any search, in the same step order; if retrieval runs first the "independent" result cannot be trusted as validation.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
