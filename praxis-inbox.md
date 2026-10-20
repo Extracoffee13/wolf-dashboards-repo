@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: hartley-capital-watch
+decision: scanned FL real estate + signage M&A + agent-AI fundraises + homebuilder client moves
+outcome: No 24h-verified catalyst; top item is NVR (Oct 26) and D.R. Horton (Oct 29) earnings after weak July prints (Pulte sales -12%, DHI cut closings guidance) — a near-term read on builder-client signage demand.
+lesson: Agent-orchestration is now heavily funded (HappyRobot $1.2B, Sycamore $65M seed), so The Construct's defensibility must come from vertical homebuilder/signage workflow, not horizontal agent infra.
+tags: hartley-capital,investments,market,real-estate,signage
+confidence: 0.6
+~~~
