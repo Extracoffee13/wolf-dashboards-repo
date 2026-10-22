@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Why does sign letter height scale linearly with viewing distance, and what ratio should B9 use?"
+outcome: delta category was rediscovered
+lesson: When a derivation yields a threshold figure, also derive the design margin separately; the orthodox answer often bundles both and the gap between them is where the real decision lives.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
