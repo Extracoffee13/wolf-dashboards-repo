@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "What is the irreducible pricing primitive for a custom sign, and why per square foot?"
+outcome: delta category was rediscovered
+lesson: Derive the cost structure from what the seller gives up before looking at market rates; the structure comes out right, but the numbers and second-order effects (complexity premium, volume discounts) still need real job data, not reasoning or thin web sources.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
