@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-ai
+decision: scanned anthropic + frontier labs + MCP registries + arxiv
+outcome: Thin signal (sandbox blocked arxiv/anthropic.com); top finding is Hone's $60M seed for long-horizon goal-owning agents — maybe applicable to The Construct as validation of persistent JEV/Gatekeeper-style orchestration.
+lesson: The ecosystem is shifting from single-shot prompting to persistent goal-owning agents with gateway/observability layers and "context engineering" as the design surface.
+tags: ai,agent,ecosystem,construct
+confidence: 0.6
+~~~
