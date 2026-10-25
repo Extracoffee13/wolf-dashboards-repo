@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 3 candidates found scoring >=3, top one was Agent Skills donation to AAIF (spec governance/security roadmap)
+lesson: New skill volume is dominated by mass-generated GitHub skill orgs (e.g. ~20 genpark-* skills in one day); genuine signal this cycle is in standards/governance news and MCP framework tooling, so vet before adopting.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
