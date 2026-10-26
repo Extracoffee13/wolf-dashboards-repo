@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 3 candidates found scoring >=3, top one was @serdnaley/metabase-mcp (mcp.directory, claude.com/blog and PyPI were unreachable)
+lesson: New activity this cycle is mostly generic MCP servers on npm and the Agent Skills standard moving to Linux Foundation governance; GitHub skill topics are flooded with duplicate mirrored repos.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
