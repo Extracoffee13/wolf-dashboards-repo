@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-ai
+decision: scanned anthropic + frontier labs + MCP registries + arxiv
+outcome: Thin signal today; only unverified report of Claude Duet preview and Claude Security Enterprise beta (Oct 21) - maybe applicable to Construct verification layer, needs confirmation on Anthropic release notes.
+lesson: Capital and attention keep concentrating on agent platforms while primary-source news is hard to reach via generic search; Construct pulses need direct feeds (release notes, MCP registry, arxiv listings).
+tags: ai,agent,ecosystem,construct
+confidence: 0.6
+~~~
