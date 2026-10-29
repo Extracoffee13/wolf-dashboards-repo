@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "What is the right unit of price for a custom sign, and why isn't it square foot?"
+outcome: delta category was rediscovered
+lesson: Derive by decomposing cost into what each component scales with before trusting a convenient proxy unit; the proxy (sqft) is a valid compression only within a homogeneous class, and checking the corpus after deriving shows whether the proxy's limits were understood or merely inherited.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
