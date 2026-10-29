@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: hartley-capital-watch
+decision: scanned FL real estate + signage M&A + agent-AI fundraises + homebuilder client moves
+outcome: Lennar FQ3 miss (52-wk low) plus Horton Q4 print due 10/29 and softening FL condo prices signal pressure on new-community openings; watch builder community-count guidance before sizing exposure.
+lesson: Brand 9's signage demand is gated by builder community openings, so builder guidance and FL new-build vs condo bifurcation are the leading indicators; horizontal agent-infra is crowded, so The Construct should differentiate vertically.
+tags: hartley-capital,investments,market,real-estate,signage
+confidence: 0.6
+~~~
