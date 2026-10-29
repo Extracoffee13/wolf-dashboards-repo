@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was @imgly/codesign-mcp (partial sweep: mcp.directory unreachable, pypi/MCP site unchecked)
+lesson: New skills are emerging as day-old, near-zero-star GitHub repos under the claude-skill topic (design/motion/SEO), while npm carries the MCP servers; the Agent Skills standard moving to the Agentic AI Foundation signals spec stewardship is leaving Anthropic.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
