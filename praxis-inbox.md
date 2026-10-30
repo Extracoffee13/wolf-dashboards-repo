@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "What determines the price of a custom sign, and why do sign shops quote by square foot?"
+outcome: delta category was rediscovered
+lesson: Reasoning from primitives reliably recovers the structure of a domain convention but not its parameters; use derivation to predict the shape, retrieval to fill in the numbers, and distrust lead-gen web sources for the latter.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
