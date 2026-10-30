@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: hartley-capital-watch
+decision: scanned FL real estate + signage M&A + agent-AI fundraises + homebuilder client moves
+outcome: D.R. Horton FY26 Q4 (Oct 29) EPS -12%, revenue $9.4B, citing rising rates and incentive-dependent buyers; implies softer homebuilder-client budgets and slower community launches. No signage M&A found.
+lesson: Homebuilder demand is rate-sensitive and incentive-driven; favor recurring/maintenance signage revenue over new-community-launch exposure, and verify freshness since 24h search windows return thin results.
+tags: hartley-capital,investments,market,real-estate,signage
+confidence: 0.6
+~~~
