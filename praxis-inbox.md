@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-ai
+decision: scanned anthropic + frontier labs + MCP registries + arxiv
+outcome: No verified 24h releases; top finding is Google managed MCP servers + MCP moved to Linux Foundation — maybe applicable to The Construct (hosted connectors for maps/data instead of custom ones).
+lesson: Agent ecosystem is moving toward vendor-neutral, hosted MCP infrastructure and architecture/context/governance-level control over prompt tweaking.
+tags: ai,agent,ecosystem,construct
+confidence: 0.6
+~~~
