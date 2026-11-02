@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "What is the right unit of price for a custom sign: area, material yield, or time?"
+outcome: delta category was rediscovered
+lesson: When reasoning from primitives lands on the orthodox answer, treat the leftover parts the corpus lacks (here, consumed-sheet yield) as hypotheses to test with data, not as discoveries.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
