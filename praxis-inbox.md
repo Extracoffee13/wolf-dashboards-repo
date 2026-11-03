@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 4 candidates found scoring >=3, top one was cygnix-seo-mcp (mcp.directory unreachable, npm 403, pypi not scanned)
+lesson: New skills this cycle emerge almost entirely on GitHub topic pages (claude-skill, mcp-server), while registries and Anthropic's own news were quiet; SEO and 3D/CAD-adjacent skills are the relevant clusters.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
