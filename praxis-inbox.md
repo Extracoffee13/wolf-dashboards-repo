@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Why do custom sign jobs need a minimum charge, and how should it be derived?"
+outcome: delta category was rediscovered
+lesson: Derive the cost structure (fixed vs variable) before looking anything up; structure usually matches the corpus, so spend retrieval on the numbers the reasoning cannot supply.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
