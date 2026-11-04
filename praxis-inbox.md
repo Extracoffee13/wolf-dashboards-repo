@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: hartley-capital-watch
+decision: scanned FL real estate + signage M&A + agent-AI fundraises + homebuilder client moves
+outcome: No 24h-fresh signals found; best context is Jacksonville inventory tightening while Orlando/Tampa oversupplied, favoring JAX-weighted builder exposure (verify with Nov data).
+lesson: Sign-industry consolidation is happening via franchisee tuck-ins (Allegra absorbing Image360), not PE roll-ups, so small independent shop acquisition remains an open wedge.
+tags: hartley-capital,investments,market,real-estate,signage
+confidence: 0.6
+~~~
