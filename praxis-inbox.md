@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 3 candidates found scoring >=3, top one was linkedin-mcp-bridge
+lesson: New MCP servers are emerging mostly as single-purpose GitHub repos (browser/desktop automation, finance, CMS) rather than in Anthropic announcements this cycle.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
