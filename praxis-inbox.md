@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Why is sign pricing quoted per square foot, and where does that unit break?"
+outcome: delta category was rediscovered
+lesson: Derive structure (which costs scale with what) from primitives, but take numbers from the corpus or own data; reasoning reproduces structure reliably and dollar figures poorly.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
