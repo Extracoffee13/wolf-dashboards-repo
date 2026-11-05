@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: hartley-capital-watch
+decision: scanned FL real estate + signage M&A + agent-AI fundraises + homebuilder client moves
+outcome: No in-window (24h) events found; freshest signal is Florida Realtors Q3 2026 (sales softening, rates above year-ago, prices flat) plus Lennar ASP guidance down to $370-375K, which implies pressure on per-community signage budgets.
+lesson: Horizontal agent-infra is crowded and heavily funded, while signage M&A is quiet; Hartley's edge is vertical (builder/signage) operations, not platform competition.
+tags: hartley-capital,investments,market,real-estate,signage
+confidence: 0.6
+~~~
