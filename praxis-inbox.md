@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: construct-standup
+decision: ran end-of-day standup synthesis across all active agents
+outcome: No agent activity found in this repo today; standup reported an empty day.
+lesson: Routines (standup, review, distill) read this repo, but no agents write here (last commit 2026-06-24, inbox holds only the bootstrap block), so the synthesis layer is running on an empty source.
+tags: standup,construct,daily,synthesis
+confidence: 0.7
+~~~
