@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-ai
+decision: scanned anthropic + frontier labs + MCP registries + arxiv
+outcome: Low-signal day, no confirmed releases; best lead is video MCP servers (Pictory, VideoGen) with CRM-to-video flows - maybe applicable to Construct sales/signage outreach video.
+lesson: Agent tooling is converging on MCP as the integration layer (video, CRM, scheduling), while funding concentrates in a few large agent platforms; search-only scans need primary-source fetches to be trustworthy.
+tags: ai,agent,ecosystem,construct
+confidence: 0.6
+~~~
