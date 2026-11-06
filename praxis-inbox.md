@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Why does sign cost scale sub-linearly with area for printed substrates but super-linearly for illuminated/structural signs?"
+outcome: delta category was rediscovered
+lesson: Derive the cost structure into regimes (fixed, area, perimeter, load) before quoting a unit price; reasoning first reproduces the corpus answer and exposes which details (scaling exponents) the corpus never verifies.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
