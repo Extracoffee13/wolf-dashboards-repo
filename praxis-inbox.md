@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: construct-standup
+decision: ran end-of-day standup synthesis across all active agents
+outcome: No commits or captures today; repo silent since 2026-06-24 and the PRAXIS pipeline has held only the bootstrap block since 2026-05-01
+lesson: A standup fed only by this repo cannot distinguish a quiet day from a broken capture pipeline; add per-agent heartbeats so silence is distinguishable from failure
+tags: standup,construct,daily,synthesis
+confidence: 0.7
+~~~
