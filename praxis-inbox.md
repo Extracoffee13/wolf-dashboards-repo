@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 4 candidates found scoring >=3, top one was copy-taste
+lesson: New skills this cycle are emerging as low-star single-author GitHub repos (topic search by creation date beats registries/news); Anthropic news was quiet and mcp.directory/PyPI were not directly scannable.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
