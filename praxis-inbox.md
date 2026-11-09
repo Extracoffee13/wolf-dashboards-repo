@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "How tall must sign letters be for a given viewing distance?"
+outcome: delta category was rediscovered
+lesson: Derive the physical constraint (angle, acuity, dwell time) first and treat corpus numbers as calibration constants; a derivation that reproduces the standard validates the model and exposes which inputs the standard silently assumes.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
