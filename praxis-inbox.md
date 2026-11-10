@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-ai
+decision: scanned anthropic + frontier labs + MCP registries + arxiv
+outcome: No confirmed 24h breakthroughs (search results were stale or conflicting). Best lead: Revel Digital signage MCP server, applicable to The Construct as a Brand 9 signage-network integration candidate (maybe/yes after evaluation).
+lesson: Agent tooling is converging on MCP as the integration layer, including vertical ones like signage, video and CRM, while model news is fast-moving and poorly dated, so primary-source verification is required.
+tags: ai,agent,ecosystem,construct
+confidence: 0.6
+~~~
