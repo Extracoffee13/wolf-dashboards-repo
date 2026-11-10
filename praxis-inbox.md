@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "Why is 4'x8' the default size for community / real-estate signs, and is it optimal?"
+outcome: delta category was rediscovered
+lesson: When a standard can be derived independently from two unrelated primitives (perception and supply chain) and both give the same number, treat it as a coordination equilibrium. Reasoning predicts that equilibrium; retrieval is still needed for the jurisdiction-specific tiers.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
