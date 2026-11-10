@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 0 candidates found scoring >=3, top one was none (nothing verifiably dated within 24h)
+lesson: General web search can't date-filter registries; new skills are emerging via aggregators/marketplaces and the gh skill CLI, so future sweeps should hit the GitHub, npm and PyPI APIs directly.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
