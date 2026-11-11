@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "How tall must sign letters be for a given viewing distance and traffic speed?"
+outcome: delta category was rediscovered
+lesson: Before calling a folk rule wrong, list the geometric or situational variable that would make it right (here: parallel-mount viewing angle); reasoning gets the formula, retrieval finds the edge cases.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
