@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: construct-standup
+decision: ran end-of-day standup synthesis across all active agents
+outcome: Four independent AP routines converged on "runtime, plumbing and dashboards are commoditizing (Hermes $90M, Claude Data, Navori roll-up); the moat is vertical playbooks", and Dream Finders–Beazer is the near-term B9 rebrand play.
+lesson: When unrelated scans (capital, AI, skills, signage) converge on one thesis in a day, that is the promotion signal. Here it says to invest in vertical playbooks and Gatekeeper, not runtime. But branch-scattered memory (the first-principles backlog was re-seeded from scratch today) is losing exactly that playbook layer, so fix the shared inbox before building more.
+tags: standup,construct,daily,synthesis
+confidence: 0.7
+~~~
