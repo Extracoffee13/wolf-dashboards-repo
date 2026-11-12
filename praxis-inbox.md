@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was search-os (SEO/AEO/GEO AI-visibility Claude Code skill, score 4, owner Signal)
+lesson: New items cluster in the official MCP Registry and in GitHub keyword search, not in the GitHub topic tags (claude-skill/anthropic-skill topic queries returned zero). Sweeps should query the registry API first, and PyPI needs a different method because it has no keyword search.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
