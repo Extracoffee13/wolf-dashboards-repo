@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: construct-standup
+decision: ran end-of-day standup synthesis across all active agents
+outcome: AP ran 5 routines solo. Toll Sagebrush (JAX pre-sale) and the Collier County pool (due 11/20) are the live B9 openings, and no lessons were promoted because the PRAXIS distill loop never ran.
+lesson: Macro (rates above 7% squeeze per-community budgets), market (lead with standard deck pricing) and first-principles (cost steps at 4x8 sheet yield) independently converge on one product: a fixed-price community sign package sized to whole-sheet yield. Cross-routine synthesis yields products, not just insights, but only if captures land in one shared inbox.
+tags: standup,construct,daily,synthesis
+confidence: 0.7
+~~~
