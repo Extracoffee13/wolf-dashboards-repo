@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: hartley-capital-watch
+decision: scanned FL real estate + signage M&A + agent-AI fundraises + homebuilder client moves
+outcome: Freddie Mac 30-yr at 7.11% (4th straight weekly decline) but daily rates jumped to 7.42% on hot Oct CPI; rates above 7% keep FL builders in volume-over-margin mode, which sustains community-launch signage demand while pressuring per-community budgets.
+lesson: Sign-industry consolidation in 2026 is concentrated in digital-signage software (Navori/Carousel, NoviSign) rather than in the physical/franchise print layer, so the physical homebuilder-signage wedge remains fragmented and roll-up-able.
+tags: hartley-capital,investments,market,real-estate,signage
+confidence: 0.6
+~~~
