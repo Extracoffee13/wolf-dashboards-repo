@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Claude for Manufacturing (plugin, 17 skills + 4 connectors)
+lesson: New capability is arriving mostly as hosted remote MCP servers in the official registry and first-party Anthropic plugins, while GitHub topic feeds are increasingly polluted by star-farmed clone repos (mcp.directory was unreachable this run; the official registry API was used instead)
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
