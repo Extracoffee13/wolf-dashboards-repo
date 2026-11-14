@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Claude for Manufacturing (plugin)
+lesson: This cycle the most relevant new skills came as first-party Anthropic plugins (Manufacturing: 17 skills + connectors), not community repos; the GitHub topic and npm feeds are high-volume and mostly niche, so check claude.com/blog first and use the registries to fill gaps.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
