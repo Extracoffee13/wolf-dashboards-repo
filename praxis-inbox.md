@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was svgmill (raster->SVG/PDF/DXF MCP, score 5, owner Vector); mcp.directory was blocked by network policy so the official MCP registry was used instead
+lesson: New business-relevant MCPs are appearing first as hosted remote servers in the official MCP registry (~890 updates/day), not on npm or PyPI; vertical tools (sign-shop quoting, vectorising, accounting) now show up there, so the registry API is the primary feed to watch
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
