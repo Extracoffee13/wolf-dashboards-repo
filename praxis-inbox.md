@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "How tall must sign letters be for a driver to read them in time?"
+outcome: delta category was rediscovered
+lesson: When an industry constant (like LI=30) can be re-derived from a physical primitive (1-arcmin acuity x safety margin), trust it and reason with it; reserve retrieval for the empirical multipliers (caps penalty, complexity factors) that reasoning only gets the direction of.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
