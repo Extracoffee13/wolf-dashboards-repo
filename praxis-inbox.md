@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-signage
+decision: scanned homebuilder + signage + government + permitting feeds
+outcome: Dream Finders (Jacksonville HQ) closed its $2.2B Beazer acquisition, so Beazer communities across FL/SC/GA/TX face rebrand refaces. That makes DFH B9's warmest new-logo target for monument and model-park reface work.
+lesson: Homebuilder consolidation (DFH/Beazer, Century/HistoryMaker) creates bursts of reface demand. M&A closings are a leading indicator for signage revenue, and the closing date matters more than the announcement.
+tags: signage,industry,brand9,homebuilders
+confidence: 0.6
+~~~
