@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: construct-standup
+decision: ran end-of-day standup synthesis across all active agents
+outcome: Five AP routines shipped (skills, signage, AI, first-principles, Hartley). The signature move was naming Dream Finders/Beazer as the top Q1 reface target, but every capture is stranded on an unmerged branch and nothing promoted.
+lesson: Independent routines converged on the same lead (DFH/Beazer) from the same source event, which is the Phantom Consensus failure mode. Because captures land on separate unmerged branches, nothing de-duplicates by underlying source, so agreement looks stronger than the evidence is. Merge captures into one inbox and de-duplicate by source before counting agreement.
+tags: standup,construct,daily,synthesis
+confidence: 0.7
+~~~
