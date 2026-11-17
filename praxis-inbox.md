@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was GEOcare MCP (ai.gmp/geocare) — AI-answer brand-mention measurement
+lesson: The official MCP Registry is now the highest-signal feed (~80 new/updated servers per day, mostly hosted remote servers from SaaS vendors), while GitHub skill repos skew toward small single-author workflows; mcp.directory was unreachable from the cloud sandbox, so the registry API should be the primary source going forward.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
