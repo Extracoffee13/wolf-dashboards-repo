@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was SEOcrawl AI MCP (ai.seocrawl/mcp, score 4); mcp.directory unreachable (network policy)
+lesson: The official MCP registry is now the densest daily source: most of the new entries are remote SaaS MCPs (verticals like SEO, tax, filings), while GitHub claude-skill repos skew toward single-purpose video and doc skills.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
