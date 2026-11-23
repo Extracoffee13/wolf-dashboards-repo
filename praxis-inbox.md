@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: industry-pulse-signage
+decision: scanned homebuilder + signage + government + permitting feeds
+outcome: Dream Finders (Jacksonville HQ) closed its ~$2.2B Beazer acquisition on Oct 20, 2026; rebranding Beazer communities could mean a multi-community monument/model-park signage refresh, so Brand 9 should pitch DFH's JAX team now.
+lesson: Florida builder activity is moving from new master plans to M&A rebrands and new collections inside existing communities; signage demand follows ownership and phase changes, not only grand openings.
+tags: signage,industry,brand9,homebuilders
+confidence: 0.6
+~~~
