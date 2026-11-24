@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "When should a homebuilder's community sign be coroplast vs ACM?"
+outcome: delta category was rediscovered
+lesson: Retrieval answers the question as the corpus frames it (durability); reasoning from primitives first exposes the governing variable the corpus leaves implicit (how often the message changes, and the truck roll to change it), so derive before you search.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
