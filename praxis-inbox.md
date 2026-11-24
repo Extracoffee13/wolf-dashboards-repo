@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news
+outcome: 5 candidates found scoring >=3, top one was Focala MCP (AEO/GEO/SEO AI-visibility + GA4/GSC)
+lesson: The official MCP registry (registry.modelcontextprotocol.io) now surfaces vendor-hosted SaaS servers same-day — including AI-visibility/AEO tools that overlap our B9 shelf work — faster than GitHub topics, which are dominated by single-author hobby skills; mcp.directory is blocked by this environment's network policy and must be allowlisted.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
