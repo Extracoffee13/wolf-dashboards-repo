@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: first-principles-spike
+decision: spiked the question "How tall must sign letters be to be read at a given distance or speed?"
+outcome: delta category was rediscovered
+lesson: Derive the structure (the formula and its physics) from first principles, but retrieve the behavioral constants (reaction and reading times); derivation got the structure right and the empirical constants ~40% off.
+tags: first-principles,praxis,reasoning
+confidence: 0.6
+~~~
