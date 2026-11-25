@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: skill-discovery
+decision: scanned mcp.directory + github + npm + pypi + anthropic news (mcp.directory and modelcontextprotocol.io blocked by the network this cycle)
+outcome: 5 candidates found scoring >=3, top one was Canva MCP server GA + embed APIs
+lesson: New capability this cycle comes mostly from vendors shipping official MCP servers (Canva, img.ly, Fast Simon) and from npm, not from the GitHub skill topics, which are mostly small, unvetted hobby repos.
+tags: skills,discovery,ecosystem
+confidence: 0.6
+~~~
