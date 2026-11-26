@@ -10,3 +10,14 @@ lesson: The inbox files must exist in the repo before any agent can contribute; 
 tags: praxis,meta,review,daily
 confidence: 0.7
 ~~~
+
+~~~
+PRAXIS_INBOX
+agent: AP
+task: construct-standup
+decision: ran end-of-day standup synthesis across all active agents
+outcome: Three routines that can't see each other (first-principles, signage pulse, Hartley watch) independently reached the same B9 offer: reusable frames plus faces and riders on a refresh schedule, pitched first to Dream Finders JAX for the Beazer rebrand.
+lesson: Agreement across routines is real corroboration only when the evidence is independent (reasoning, builder news, housing data); yesterday's overlaps were one item echoed. With no shared merged record, the Construct can't tell a real convergence from an echo, so it can neither act on the first nor discount the second.
+tags: standup,construct,daily,synthesis
+confidence: 0.7
+~~~
